@@ -1,0 +1,52 @@
+*.font:	Inconsolata for Powerline:size=12:antialias=true:autohint=true;
+*.alpha: 10
+
+! "lovelace" color theme
+!*background:	#13131e
+! *background:	#0B090E
+! *foreground:	#FDFDFD
+! *cursorColor:	#C574DD
+! *color0:	#282A36
+! *color1:	#F37F97
+! *color2:	#5ADECD
+! *color3:	#F2A272
+! *color4:	#8897F4
+! *color5:	#C574DD
+! *color6:	#79E6F3
+! *color7:	#FDFDFD
+! *color8:	#414458
+! *color9:	#FF4971
+! *color10:	#18E3C8
+! *color11:	#FF8037
+! *color12:	#556FFF
+! *color13:	#B043D1
+! *color14:	#3FDCEE
+! *color15:	#BEBEC1
+
+! "skyfall" color theme
+*background:  #282F37
+*foreground:  #F1FCF9
+*cursorColor: #F1FCF9
+*color0:      #20262C
+*color1:      #DB86BA
+*color2:      #74DD91
+*color3:      #E49186
+*color4:      #75DBE1
+*color5:      #B4A1DB
+*color6:      #9EE9EA
+*color7:      #F1FCF9
+*color8:      #465463
+*color9:      #D04E9D
+*color10:     #4BC66D
+*color11:     #DB695B
+*color12:     #3DBAC2
+*color13:     #825ECE
+*color14:     #62CDCD
+*color15:     #E0E5E5
+
+! rxvt-unicode settings and perl extensions
+URxvt.font: xft:monospace:size=12:antialias=true
+URxvt.boldFont: xft:monospace:bold:size=12:antialias=true
+Rxvt.scrollBar: false
+URxvt.transparent:   true
+URxvt.shading:       30

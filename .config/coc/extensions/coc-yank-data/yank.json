@@ -1,0 +1,56 @@
+[
+  {
+    "id": "f93505f0-7cb4-11e9-a431-5b65806ad50a",
+    "content": [
+      "#0B090E"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/termite/config\t57\t16",
+    "filetype": "conf"
+  },
+  {
+    "id": "7b7fee90-7cb4-11e9-98fe-85d9a516772b",
+    "content": [
+      "hi SignColumn ctermbg=black"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t44\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "7a258eb0-7cb4-11e9-98fe-85d9a516772b",
+    "content": [
+      "hi SignColumn ctermbg=black"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t44\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "2004a290-7caa-11e9-bee4-93a9d0320c79",
+    "content": [
+      "aliases"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t10\t3",
+    "filetype": "sh"
+  },
+  {
+    "id": "1c360e60-7caa-11e9-bee4-93a9d0320c79",
+    "content": [
+      "# If not running interactively, don't do anything"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t5\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "191f5880-7caa-11e9-bee4-93a9d0320c79",
+    "content": [
+      "# ~/.ba"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t2\t1",
+    "filetype": "sh"
+  }
+]

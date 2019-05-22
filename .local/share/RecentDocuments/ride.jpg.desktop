@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=image-jpeg
+Name=ride.jpg
+Type=Link
+URL[$e]=file:$HOME/pictures/ride.jpg
+X-KDE-LastOpenedWith=feh

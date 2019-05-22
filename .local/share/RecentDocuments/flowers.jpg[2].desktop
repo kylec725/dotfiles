@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=image-jpeg
+Name=flowers.jpg
+Type=Link
+URL[$e]=file:$HOME/pictures/flowers.jpg
+X-KDE-LastOpenedWith=feh

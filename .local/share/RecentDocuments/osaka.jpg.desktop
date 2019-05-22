@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=image-jpeg
+Name=osaka.jpg
+Type=Link
+URL[$e]=file:$HOME/pictures/osaka.jpg
+X-KDE-LastOpenedWith=feh

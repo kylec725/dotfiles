@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/kyle/school/resume/Unofficial%20Transcript.pdf" added="2019-03-26T15:29:08Z" modified="2019-05-09T22:13:50Z" visited="2019-03-26T15:29:08Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-09T22:13:50Z" count="12"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_kyle0/SYL-SPR19-289I-1A.pdf" added="2019-04-09T01:03:13Z" modified="2019-05-17T18:02:43Z" visited="2019-04-09T01:03:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-17T18:02:43Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/school/resume/Kyle%20Chan%20Resume.docx" added="2019-04-12T21:15:52Z" modified="2019-04-24T22:24:54Z" visited="2019-04-12T21:15:52Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-04-24T22:24:54Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/caliprofilepic.jpg" added="2019-04-17T03:08:11Z" modified="2019-05-15T02:33:19Z" visited="2019-04-17T03:08:11Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-15T02:33:19Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/abreaks.jpg" added="2019-04-17T03:12:04Z" modified="2019-05-14T19:39:31Z" visited="2019-04-17T03:12:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-14T19:39:31Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/downloads/abreaksgroup.jpg" added="2019-04-17T03:33:34Z" modified="2019-05-15T03:03:09Z" visited="2019-04-17T03:33:34Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-15T03:03:09Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/downloads/abreaksrail.jpg" added="2019-04-17T03:33:48Z" modified="2019-05-15T02:31:45Z" visited="2019-04-17T03:33:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-15T02:31:45Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/resume/resume.pdf" added="2019-04-25T00:45:56Z" modified="2019-05-09T22:13:43Z" visited="2019-04-25T00:45:56Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-09T22:13:43Z" count="10"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/school/ethics/ethics.pdf" added="2019-04-26T03:07:31Z" modified="2019-04-26T03:07:31Z" visited="2019-04-26T03:07:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-04-26T03:07:31Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/school/stat400/STAT%20400%20HW10.pdf" added="2019-04-26T08:38:54Z" modified="2019-04-26T08:40:51Z" visited="2019-04-26T08:38:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-04-26T08:40:51Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/school/351/hw9/homework%209.pdf" added="2019-04-28T19:21:49Z" modified="2019-04-28T19:28:45Z" visited="2019-04-28T19:21:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-04-28T19:28:45Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_kyle0/Global%20Citizenship.pdf" added="2019-04-30T22:10:29Z" modified="2019-05-21T02:24:30Z" visited="2019-04-30T22:10:29Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-21T02:24:30Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/school/351/hw10/homework%2010.pdf" added="2019-05-04T17:35:56Z" modified="2019-05-04T17:37:15Z" visited="2019-05-04T17:35:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-04T17:37:15Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/kathy_resume/resume.pdf" added="2019-05-05T17:23:25Z" modified="2019-05-05T17:56:58Z" visited="2019-05-05T17:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-05T17:56:58Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/bokeh.png" added="2019-05-08T03:38:43Z" modified="2019-05-09T15:54:20Z" visited="2019-05-08T03:38:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-09T15:54:20Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/ride.jpg" added="2019-05-08T05:14:48Z" modified="2019-05-08T06:40:40Z" visited="2019-05-08T05:14:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-08T06:40:40Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/train.jpg" added="2019-05-08T05:22:36Z" modified="2019-05-08T06:15:53Z" visited="2019-05-08T05:22:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-08T06:15:53Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/stars.jpg" added="2019-05-08T05:38:29Z" modified="2019-05-08T05:57:15Z" visited="2019-05-08T05:38:29Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-08T05:57:15Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/sakura.png" added="2019-05-08T06:03:52Z" modified="2019-05-08T06:17:18Z" visited="2019-05-08T06:03:52Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-08T06:17:18Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/path.jpg" added="2019-05-08T06:12:31Z" modified="2019-05-08T06:34:14Z" visited="2019-05-08T06:12:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-08T06:34:14Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/osaka.jpg" added="2019-05-08T06:29:30Z" modified="2019-05-08T06:39:56Z" visited="2019-05-08T06:29:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-08T06:39:56Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/dinerprofilepic.jpg" added="2019-05-08T06:31:11Z" modified="2019-05-08T06:34:52Z" visited="2019-05-08T06:31:11Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-08T06:34:52Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_kyle0/resume.pdf" added="2019-05-09T00:30:28Z" modified="2019-05-09T00:30:28Z" visited="2019-05-09T00:30:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-09T00:30:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/city.jpg" added="2019-05-09T15:33:31Z" modified="2019-05-09T17:15:59Z" visited="2019-05-09T15:33:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-09T17:15:59Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/bokeh.jpg" added="2019-05-09T15:34:13Z" modified="2019-05-09T17:15:37Z" visited="2019-05-09T15:34:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-09T17:15:37Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/birds.jpg" added="2019-05-09T15:44:52Z" modified="2019-05-09T15:44:52Z" visited="2019-05-09T15:44:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-09T15:44:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/tutor_resume/resume.pdf" added="2019-05-10T02:45:38Z" modified="2019-05-12T21:26:55Z" visited="2019-05-10T02:45:38Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-12T21:26:55Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/school/351/hw11/homework%2011.pdf" added="2019-05-10T21:02:28Z" modified="2019-05-10T21:46:42Z" visited="2019-05-10T21:02:29Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-10T21:46:42Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_kyle0/genericcoveronline.tex" added="2019-05-11T20:18:02Z" modified="2019-05-11T20:18:02Z" visited="2019-05-11T20:18:03Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-tex"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-11T20:18:02Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/downloads/genericcoveronline.tex" added="2019-05-11T20:18:19Z" modified="2019-05-11T20:18:19Z" visited="2019-05-11T20:18:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-tex"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-11T20:18:19Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/coverletter/coverletter.pdf" added="2019-05-12T21:26:22Z" modified="2019-05-12T21:26:22Z" visited="2019-05-12T21:26:22Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-12T21:26:22Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_kyle0/BMGT289I-SPR19-Part2.pdf" added="2019-05-13T18:27:23Z" modified="2019-05-17T03:27:35Z" visited="2019-05-13T18:27:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-17T03:27:35Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/solidaritycenter2" added="2019-05-14T22:13:29Z" modified="2019-05-14T22:13:30Z" visited="2019-05-14T22:13:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-14T22:13:30Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/solidaritycenter1.jpg" added="2019-05-14T22:13:45Z" modified="2019-05-14T22:14:05Z" visited="2019-05-14T22:13:46Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-14T22:14:05Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/solidaritycenter2.jpg" added="2019-05-14T22:14:51Z" modified="2019-05-14T22:14:51Z" visited="2019-05-14T22:14:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-14T22:14:51Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_kyle0/BSGC398A%20E-Presentation.pdf" added="2019-05-15T03:05:25Z" modified="2019-05-15T03:05:25Z" visited="2019-05-15T03:05:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-15T03:05:25Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/windows/Users/kylec/Downloads/BSGC398A%20E-Presentation.pptx" added="2019-05-15T03:06:16Z" modified="2019-05-15T03:06:16Z" visited="2019-05-15T03:06:16Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-15T03:06:16Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_kyle0/BMGT289-SPR19-Part1-A.pdf" added="2019-05-17T03:27:16Z" modified="2019-05-17T03:27:16Z" visited="2019-05-17T03:27:16Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-17T03:27:16Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_kyle0/BMGT289I-SPR19-Part1-B.pdf" added="2019-05-17T03:27:25Z" modified="2019-05-17T03:27:25Z" visited="2019-05-17T03:27:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-17T03:27:25Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_kyle0/Holding%20up%20the%20Mirror_%20Recognizing%20and%20Dismantling%20the%20%E2%80%9CWhite%20Savior%20Complex%E2%80%9D.pdf" added="2019-05-21T01:30:17Z" modified="2019-05-21T01:30:17Z" visited="2019-05-21T01:30:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-21T01:30:17Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/school/bsgc398/final/final.pdf" added="2019-05-21T03:45:48Z" modified="2019-05-21T03:45:48Z" visited="2019-05-21T03:45:48Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-21T03:45:48Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/school/stat400/Practice%20Final%20Exam%20Spring%202019.pdf" added="2019-05-21T04:04:36Z" modified="2019-05-21T04:04:36Z" visited="2019-05-21T04:04:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-21T04:04:36Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_kyle0/Stat400PracticeFinalSpring2019.pdf" added="2019-05-21T04:05:25Z" modified="2019-05-21T04:05:25Z" visited="2019-05-21T04:05:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-21T04:05:25Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/school/stat400/Stat400PracticeFinalSpring2019.pdf" added="2019-05-21T04:05:34Z" modified="2019-05-21T04:05:34Z" visited="2019-05-21T04:05:34Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-21T04:05:34Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_kyle0/SolutionstoPracticeFinalSpring2019.pdf" added="2019-05-21T06:57:02Z" modified="2019-05-21T06:57:02Z" visited="2019-05-21T06:57:02.958230Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-21T06:57:02Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

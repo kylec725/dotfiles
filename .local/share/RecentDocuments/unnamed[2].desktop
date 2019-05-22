@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=folder
+Name=
+Type=Link
+URL[$e]=file:$HOME/pictures/
+X-KDE-LastOpenedWith=ranger
