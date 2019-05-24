@@ -38,7 +38,7 @@ set hidden
 set number relativenumber
 " Current line number color
 hi LineNr ctermfg=12
-hi CursorLineNR ctermfg=red
+hi CursorLineNR ctermfg=lightgreen
 
 " Visual Wrapping
 set nowrap
@@ -108,9 +108,9 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 map <C-n> :NERDTreeToggle<CR>
 
 " tagbar
-nnoremap <C-o> :TagbarToggle<CR> <bar> <C-w>w
-let g:tagbar_show_linenumbers = 2
-let g:tagbar_iconchars = ['▸', '▾']
+" nnoremap <C-o> :TagbarToggle<CR> <bar> <C-w>w
+" let g:tagbar_show_linenumbers = 2
+" let g:tagbar_iconchars = ['▸', '▾']
 
 " goyo
 function! s:goyo_enter()
@@ -127,3 +127,18 @@ nnoremap <C-g> :Goyo<CR>
 
 " indent guide
 let g:indentLine_char = '▏'
+
+" coc.vim settings
+" use <tab> for trigger completion and navigate to the next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+" assign tab and s-tab
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"

@@ -71,6 +71,8 @@ bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle && pkill -RTMIN+10 i3
 bindsym XF86AudioPlay exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym XF86AudioNext exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next && pkill -RTMIN+3 i3blocks
 bindsym XF86AudioPrev exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous && pkill -RTMIN+3 i3blocks
+# toggle audio between speakers and hdmi
+bindsym $mod+Shift+a exec audio-toggle
 
 # screen brightness control
 bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
@@ -218,7 +220,7 @@ bar {
 }
 
 # Set volume at 50%
-exec amixer set Master 70%
+exec amixer set Master 50%
 
 # Restore feh background
 exec --no-startup-id ~/.fehbg &

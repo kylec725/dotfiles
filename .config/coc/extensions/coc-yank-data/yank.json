@@ -1,5 +1,97 @@
 [
   {
+    "id": "eb498630-7dce-11e9-95dc-2d3ea499eb3e",
+    "content": [
+      "pacmd list-cards | grep \"active profile\" | cut -d ' ' -f 3-"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/audio-toggle\t3\t19",
+    "filetype": "sh"
+  },
+  {
+    "id": "4954f3f0-7dce-11e9-950c-0d8e7cfd38d8",
+    "content": [
+      "pacmd list-cards | grep \"active profile\" | cut -d ' ' -f 3-"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/audio-toggle\t3\t19",
+    "filetype": "sh"
+  },
+  {
+    "id": "e51c6ff0-7dcb-11e9-a50b-81f8999b96cb",
+    "content": [
+      "pacmd set-card-profile 0 \"output:analog-stereo+input:analog-stereo\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/autorandr/mobile/postswitch\t3\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "df730140-7dcb-11e9-b5a6-0deb3213f846",
+    "content": [
+      "pacmd set-card-profile 0 \"output:hdmi-stereo\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/autorandr/docked/postswitch\t3\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "a09ae690-7dcb-11e9-a50b-81f8999b96cb",
+    "content": [
+      "pacmd set-card-profile 0 \"output:analog-stereo+input:analog-stereo\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/autorandr/mobile/postswitch\t3\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "392240d0-7dcb-11e9-88de-332fc4aec581",
+    "content": [
+      "pacmd set-card-profile 0 \"output:analog-stereo+input:analog-stereo\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/autorandr/mobile/postswitch\t3\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "33495db0-7dcb-11e9-bdca-b55504ea831a",
+    "content": [
+      "pacmd set-card-profile 0 \"output:hdmi-stereo\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/autorandr/docked/postswitch\t3\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "4abae960-7dca-11e9-85f6-2dcb94afa17a",
+    "content": [
+      "pacmd set-card-profile 0 \"output:hdmi-stereo\"",
+      ""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/audio-toggle\t8\t9",
+    "filetype": "sh"
+  },
+  {
+    "id": "2522e360-7dca-11e9-85f6-2dcb94afa17a",
+    "content": [
+      "pacmd set-card-profile 0 \"output:analog-stereo+input:analog-stereo\"",
+      ""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/audio-toggle\t6\t9",
+    "filetype": "sh"
+  },
+  {
+    "id": "1f79c2d0-7dca-11e9-85f6-2dcb94afa17a",
+    "content": [
+      "        pacmd set-card-profile 0 \"output:analog-stereo+input:analog-stereo\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.bin/audio-toggle\t6\t1",
+    "filetype": "sh"
+  },
+  {
     "id": "f93505f0-7cb4-11e9-a431-5b65806ad50a",
     "content": [
       "#0B090E"
