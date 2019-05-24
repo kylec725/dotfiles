@@ -17,6 +17,7 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'w0rp/ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 "----------------------"

@@ -26,6 +26,10 @@ label=
 interval=once
 signal=10
 
+# [diskspace]
+# label=
+# interval=60
+
 [battery]
 interval=30
 
