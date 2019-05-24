@@ -18,6 +18,7 @@ Plug 'w0rp/ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
+Plug 'KabbAmine/zeavim.vim'
 call plug#end()
 
 "----------------------"
