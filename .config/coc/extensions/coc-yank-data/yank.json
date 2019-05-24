@@ -1,5 +1,84 @@
 [
   {
+    "id": "ceada672-7e49-11e9-a650-83ed5b2717b6",
+    "content": [
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/school/year2sem2/cmsc330spring19-public/project1/maze.rb\t57\t1",
+    "filetype": "ruby"
+  },
+  {
+    "id": "229b0690-7df7-11e9-9619-4fab010d6242",
+    "content": [
+      "  \" powerline symbols",
+      "  let g:airline_left_sep = ''",
+      "  let g:airline_left_alt_sep = ''",
+      "  let g:airline_right_sep = ''",
+      "  let g:airline_right_alt_sep = ''",
+      "  let g:airline_symbols.branch = ''",
+      "  let g:airline_symbols.readonly = ''",
+      "  let g:airline_symbols.linenr = '☰'",
+      "  let g:airline_symbols.maxlinenr = ''",
+      "  let g:airline_symbols.dirty=⚡"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-airline/doc/airline.txt\t329\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "47ce0e60-7de5-11e9-b189-03ee7057c806",
+    "content": [
+      "#endif",
+      "",
+      "xdnamespace aoiejfwp",
+      "{",
+      "    enum color { white, black };",
+      "",
+      "    // parent piece class",
+      "    class "
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/chess/pieces.hpp\t6\t1",
+    "filetype": "cpp"
+  },
+  {
+    "id": "130bbb00-7dd6-11e9-b5ad-fdf198ab64d3",
+    "content": [
+      "P1k4p331213!"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/netflix\t2\t1",
+    "filetype": ""
+  },
+  {
+    "id": "0ed404c0-7dd6-11e9-b5ad-fdf198ab64d3",
+    "content": [
+      "kc.chan27@gmail.com"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/netflix\t1\t1",
+    "filetype": ""
+  },
+  {
+    "id": "0cc43790-7dd6-11e9-b5ad-fdf198ab64d3",
+    "content": [
+      "P1k4p331213!"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/netflix\t2\t1",
+    "filetype": ""
+  },
+  {
+    "id": "a930f110-7dcf-11e9-a97b-d3c9a1ecd705",
+    "content": [
+      "\tnotify-send \"Auto-Lock On\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.bin/lock-toggle\t6\t1",
+    "filetype": "sh"
+  },
+  {
     "id": "eb498630-7dce-11e9-95dc-2d3ea499eb3e",
     "content": [
       "pacmd list-cards | grep \"active profile\" | cut -d ' ' -f 3-"
@@ -144,5 +223,7 @@
     "regtype": "v",
     "path": "file:///home/kyle/.bashrc\t2\t1",
     "filetype": "sh"
+  }
+]pe": "sh"
   }
 ]

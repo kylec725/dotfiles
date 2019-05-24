@@ -15,6 +15,8 @@ Plug 'tpope/vim-repeat'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'w0rp/ale'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 "----------------------"
@@ -24,9 +26,6 @@ call plug#end()
 " Change clipboard register for vim
 set clipboard=unnamedplus
 
-" Cursor
-set guicursor=a:blinkon100
-
 " Important settings
 syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
@@ -34,20 +33,17 @@ filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 set hidden
 
+" Mode switch delay
+set timeoutlen=1000 ttimeoutlen=0
+
+" Preview search and replace
+set inccommand=nosplit
+
 " Line numbers
 set number relativenumber
 " Current line number color
 hi LineNr ctermfg=12
 hi CursorLineNR ctermfg=lightgreen
-
-" Visual Wrapping
-set nowrap
-
-" Set gutter color
-hi SignColumn ctermbg=black
-
-" Mode switch delay
-set timeoutlen=1000 ttimeoutlen=0
 
 " Disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -55,13 +51,22 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Enable spell check functionality
 set spelllang=en
 
+" Map buffer navigation keys
+nnoremap - :bprevious<ENTER>
+nnoremap = :bnext<ENTER>
+
 " Set folding to indent
 set foldmethod=indent
 set foldlevelstart=99
 
-" Map buffer navigation keys
-nnoremap - :bprevious<ENTER>
-nnoremap = :bnext<ENTER>
+" Visual Wrapping
+set nowrap
+
+" Set gutter color
+hi SignColumn ctermbg=black
+
+" Cursor
+set guicursor=a:blinkon100
 
 " Remove pane pipes
 :set fillchars+=vert:\ 
@@ -91,14 +96,16 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
-" airline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
+" powerline symbols
+" let g:airline_left_sep = ''
+" let g:airline_left_alt_sep = ''
+" let g:airline_right_sep = ''
+" let g:airline_right_alt_sep = ''
+" let g:airline_symbols.branch = ''
+" let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = '☰'
+" let g:airline_symbols.maxlinenr = ''
+" let g:airline_symbols.dirty='⚡'
 "let g:airline_symbols.space = "\ua0"
 
 " nerdtree
@@ -142,3 +149,7 @@ inoremap <silent><expr> <TAB>
 " assign tab and s-tab
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" ale
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
