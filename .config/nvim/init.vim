@@ -64,8 +64,8 @@ set foldlevelstart=99
 " Visual Wrapping
 set nowrap
 
-" Set gutter color
-hi SignColumn ctermbg=black
+" Clear SignColumn/Gutter color
+hi clear SignColumn
 
 " Cursor
 set guicursor=a:blinkon100
@@ -155,3 +155,6 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " ale
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
+" lint after leaving insert mode
+let g:ale_lint_on_text_changed = 'normal'
+let g:ale_lint_on_insert_leave = 1
