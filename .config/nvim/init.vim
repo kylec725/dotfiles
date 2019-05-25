@@ -13,7 +13,7 @@ Plug 'gregsexton/MatchTag'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-repeat'
 Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'w0rp/ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -108,6 +108,8 @@ endif
 let g:airline_symbols.linenr = '☰'
 " let g:airline_symbols.maxlinenr = ''
 " let g:airline_symbols.dirty='⚡'
+let g:airline_symbols.dirty=''
+let g:airline_symbols.notexists = ''
 "let g:airline_symbols.space = "\ua0"
 
 " nerdtree
