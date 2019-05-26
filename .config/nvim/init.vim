@@ -15,7 +15,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-repeat'
 Plug 'octol/vim-cpp-enhanced-highlight'
 " Intellisense engine
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'w0rp/ale'
 " Show git status in gutter
 Plug 'airblade/vim-gitgutter'

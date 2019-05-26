@@ -18,6 +18,7 @@ boost
 bumblebee
 bzip2
 calcurse
+ccls
 clang
 cmatrix
 cndrvcups-common-lb
@@ -90,7 +91,9 @@ lightdm-webkit-theme-litarvan
 lightdm-webkit2-greeter
 linux
 linux-firmware
+llvm
 logrotate
+luarocks
 lvm2
 m4
 make
