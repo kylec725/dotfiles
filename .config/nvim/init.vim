@@ -6,6 +6,7 @@ Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/goyo.vim'
 Plug 'bling/vim-airline'
+" Airline to replace status line
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-commentary'
 Plug 'Yggdroot/indentLine'
@@ -13,14 +14,20 @@ Plug 'gregsexton/MatchTag'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-repeat'
 Plug 'octol/vim-cpp-enhanced-highlight'
+" Intellisense engine
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'w0rp/ale'
+" Show git status in gutter
 Plug 'airblade/vim-gitgutter'
+" Git wrapper
 Plug 'tpope/vim-fugitive'
+" Language pack support
 Plug 'sheerun/vim-polyglot'
+" Documentation integration
 Plug 'KabbAmine/zeavim.vim'
+" Position indicator
+Plug 'gcavallanti/vim-noscrollbar'
 call plug#end()
-
 "----------------------"
 " General Vim Settings "
 "----------------------"
@@ -37,6 +44,9 @@ set hidden
 
 " Mode switch delay
 set timeoutlen=1000 ttimeoutlen=0
+
+" Update time for gitgutter
+set updatetime=500
 
 " Preview search and replace
 set inccommand=nosplit
@@ -160,3 +170,12 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " lint after leaving insert mode
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
+
+" noscrollbar
+" let g:airline_section_x = '%{&filetype}'
+" let g:airline_section_y = '%#__accent_bold#%{noscrollbar#statusline()}%#__restore__#'
+" let g:airline_section_z = ':%2c'
+    function! Noscrollbar(...)
+        let w:airline_section_z = '%{noscrollbar#statusline()} :%2c'
+    endfunction
+    call airline#add_statusline_func('Noscrollbar')

@@ -26,15 +26,6 @@ scrollback_lines = 10000
 # "block", "underline" or "ibeam"
 cursor_shape = block
 
-# Hide links that are no longer valid in url select overlay mode
-#filter_unmatched_urls = true
-
-# Emit escape sequences for extra modified keys
-#modify_other_keys = false
-
-# set size hints for the window
-#size_hints = false
-
 # "off", "left" or "right"
 scrollbar = off
 
@@ -100,10 +91,11 @@ color15= #E0E5E5
 padding = 2
 #border = #3f3f3f
 #border_width = 0.5
-#roundness = 2.0
+# roundness = 2.0
 
 # vim: ft=dosini cms=#%s
 
+# Nord color override
 [colors]
 cursor = #d8dee9
 cursor_foreground = #2e3440
