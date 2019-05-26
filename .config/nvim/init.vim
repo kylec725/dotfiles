@@ -46,7 +46,7 @@ set hidden
 set timeoutlen=1000 ttimeoutlen=0
 
 " Update time for gitgutter
-set updatetime=500
+set updatetime=200
 
 " Preview search and replace
 set inccommand=nosplit
