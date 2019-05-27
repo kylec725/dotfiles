@@ -167,9 +167,9 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " ale
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
-" lint while editing text
+" lint after exiting insert mode
 let g:ale_lint_on_text_changed = 'always'
-let g:ale_lint_on_insert_leave = 0
+let g:ale_lint_on_insert_leave = 1
 nnoremap <LEADER>a :ALEDetail<CR>
 
 " noscrollbar
