@@ -1,5 +1,50 @@
 [
   {
+    "id": "191b4ca0-8096-11e9-be93-957a9f54179d",
+    "content": [
+      "guibg=#111111"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/coc.nvim/doc/coc.txt\t1543\t41",
+    "filetype": "help"
+  },
+  {
+    "id": "13e11a80-8096-11e9-be93-957a9f54179d",
+    "content": [
+      "  The highlight used for document highlight feature. Normally used for"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/coc.nvim/doc/coc.txt\t1545\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "10ab43e0-8096-11e9-be93-957a9f54179d",
+    "content": [
+      "guibg=#111111"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/coc.nvim/doc/coc.txt\t1543\t41",
+    "filetype": "help"
+  },
+  {
+    "id": "fb8906c0-8093-11e9-96ff-57bffbfc4c20",
+    "content": [
+      "hi default CocHighlightText  guibg=#111111 ctermbg=223"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/coc.nvim/doc/coc.txt\t1543\t12",
+    "filetype": "help"
+  },
+  {
+    "id": "c1149a20-802c-11e9-b956-f902c79a6556",
+    "content": [
+      "\t\t    moves.push_back(std::make_tuple(this->get_x(), this->get_y() + difference));"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/chess/pieces.hpp\t61\t1",
+    "filetype": "cpp"
+  },
+  {
     "id": "797659b0-8027-11e9-b078-f9b3583bf011",
     "content": [
       "let g:ale_lint_on_insert_leave = 1"

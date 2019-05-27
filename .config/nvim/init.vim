@@ -155,6 +155,8 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~ '\s'
 endfunction
+" enable highlighting on cursor hold
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -171,6 +173,7 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 let g:ale_lint_on_text_changed = 'always'
 let g:ale_lint_on_insert_leave = 1
 nnoremap <LEADER>a :ALEDetail<CR>
+hi default CocHighlightText  ctermbg=131 ctermfg=0
 
 " noscrollbar
 " let g:airline_section_x = '%{&filetype}'
