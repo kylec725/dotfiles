@@ -167,9 +167,10 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " ale
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
-" lint after leaving insert mode
-let g:ale_lint_on_text_changed = 'normal'
-let g:ale_lint_on_insert_leave = 1
+" lint while editing text
+let g:ale_lint_on_text_changed = 'always'
+let g:ale_lint_on_insert_leave = 0
+nnoremap <LEADER>a :ALEDetail<CR>
 
 " noscrollbar
 " let g:airline_section_x = '%{&filetype}'

@@ -1,5 +1,23 @@
 [
   {
+    "id": "797659b0-8027-11e9-b078-f9b3583bf011",
+    "content": [
+      "let g:ale_lint_on_insert_leave = 1"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t172\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "6bd7d410-8026-11e9-b078-f9b3583bf011",
+    "content": [
+      "Linting"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/ale/doc/ale.txt\t11\t6",
+    "filetype": "help"
+  },
+  {
     "id": "4c1fa290-7fc4-11e9-abbc-47788b5eeba7",
     "content": [
       "#endif"
