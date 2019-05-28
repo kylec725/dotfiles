@@ -66,8 +66,8 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set spelllang=en
 
 " Map buffer navigation keys
-nnoremap - :bprevious<ENTER>
-nnoremap = :bnext<ENTER>
+nnoremap <silent> - :bprevious<ENTER>
+nnoremap <silent> = :bnext<ENTER>
 
 " Set folding to indent
 set foldmethod=indent
@@ -130,7 +130,7 @@ let g:airline_symbols.notexists = ''
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
-map <C-n> :NERDTreeToggle<CR>
+map <silent> <C-n> :NERDTreeToggle<CR>
 
 " tagbar
 " nnoremap <C-o> :TagbarToggle<CR> <bar> <C-w>w
@@ -187,3 +187,9 @@ hi default CocHighlightText  ctermbg=131 ctermfg=0
         let w:airline_section_z = '%{noscrollbar#statusline()} :%2c'
     endfunction
     call airline#add_statusline_func('Noscrollbar')
+
+" fugitive settings
+nnoremap <leader>ga :Gwrite<CR>
+nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gu :Gpush<CR>
+nnoremap <leader>gd :Gpull<CR>
