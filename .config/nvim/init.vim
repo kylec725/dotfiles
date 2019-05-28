@@ -194,5 +194,4 @@ nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>ga :Gwrite<CR>
 nnoremap <leader>gc :Gcommit<CR>
 " nnoremap <leader>gu :Gpush<CR>
-nnoremap <leader>gu :!git push<CR>
 nnoremap <leader>gd :Gpull<CR>
