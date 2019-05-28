@@ -73,6 +73,12 @@ nnoremap <silent> - :bprevious<CR>
 nnoremap <silent> = :bnext<CR>
 nnoremap <silent> <leader>q :bd<CR>
 
+" map shift + hjkl
+nnoremap <S-h> ^
+nnoremap <S-j> L
+nnoremap <S-k> H
+nnoremap <S-L> $
+
 " Set folding to indent
 set foldmethod=indent
 set foldlevelstart=99
@@ -194,4 +200,4 @@ nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>ga :Gwrite<CR>
 nnoremap <leader>gc :Gcommit<CR>
 " nnoremap <leader>gu :Gpush<CR>
-nnoremap <leader>gd :Gpull<CR>
+" nnoremap <leader>gd :Gpull<CR>
