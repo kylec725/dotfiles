@@ -57,7 +57,7 @@ set inccommand=nosplit
 set number relativenumber
 " Current line number color
 hi LineNr ctermfg=12
-hi CursorLineNR ctermfg=lightgreen
+hi CursorLineNR ctermfg=11
 
 " Disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -66,8 +66,9 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set spelllang=en
 
 " Map buffer navigation keys
-nnoremap <silent> - :bprevious<ENTER>
-nnoremap <silent> = :bnext<ENTER>
+nnoremap <silent> - :bprevious<CR>
+nnoremap <silent> = :bnext<CR>
+nnoremap <silent> <leader>q :bd<CR>
 
 " Set folding to indent
 set foldmethod=indent
@@ -193,4 +194,5 @@ nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>ga :Gwrite<CR>
 nnoremap <leader>gc :Gcommit<CR>
 " nnoremap <leader>gu :Gpush<CR>
+nnoremap <leader>gu :!git push<CR>
 nnoremap <leader>gd :Gpull<CR>
