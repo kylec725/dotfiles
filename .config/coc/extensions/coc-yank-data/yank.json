@@ -1,5 +1,68 @@
 [
   {
+    "id": "b8b964f0-8108-11e9-91a4-b57e167aadce",
+    "content": [
+      "\\e[38;5;195m\\"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t9\t144",
+    "filetype": "sh"
+  },
+  {
+    "id": "a6916a20-8108-11e9-91a4-b57e167aadce",
+    "content": [
+      "\\e[38;5;195m\\"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t9\t8",
+    "filetype": "sh"
+  },
+  {
+    "id": "078e2b70-8108-11e9-bab2-0ba1c5526341",
+    "content": [
+      "background #0B090E"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t439\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "1b871d10-8105-11e9-bab2-0ba1c5526341",
+    "content": [
+      "E5E9F0"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t511\t10",
+    "filetype": "conf"
+  },
+  {
+    "id": "47a54810-8103-11e9-bf9f-4fb49058fe5f",
+    "content": [
+      "#0B090E"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/termite/config\t48\t16",
+    "filetype": "conf"
+  },
+  {
+    "id": "e0cb96e0-8101-11e9-bf9f-4fb49058fe5f",
+    "content": [
+      "#2e3440"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/termite/config\t101\t21",
+    "filetype": "conf"
+  },
+  {
+    "id": "d66f0060-8101-11e9-bf9f-4fb49058fe5f",
+    "content": [
+      "#d8dee9"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/termite/config\t100\t10",
+    "filetype": "conf"
+  },
+  {
     "id": "839852f0-80fd-11e9-9ec6-1b80b76eeed5",
     "content": [
       "let g:airline_theme='term'"

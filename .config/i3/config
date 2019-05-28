@@ -52,7 +52,7 @@ client.urgent		$darkred	$darkred	$black		$darkred		$darkred
 client.background $black
 
 # ---Terminal Emulator--- # 
-bindsym $mod+Return exec termite 
+bindsym $mod+Return exec kitty 
 
 # ---Keybinds--- #
 
@@ -97,13 +97,13 @@ bindsym $mod+w exec firefox
 bindsym $mod+e exec thunderbird
 
 # ranger
-bindsym $mod+r exec termite -e ranger
+bindsym $mod+r exec kitty -e ranger
 
 # spotify
 bindsym $mod+s exec spotify --force-device-scale-factor=1.5
 
 # python
-bindsym $mod+p exec termite -e python
+bindsym $mod+p exec kitty -e python
 
 # vlc
 bindsym $mod+v exec vlc
@@ -112,10 +112,10 @@ bindsym $mod+v exec vlc
 bindsym $mod+z exec zathura
 
 # calcurse
-bindsym $mod+c exec termite -e calcurse
+bindsym $mod+c exec kitty -e calcurse
 
 # ocaml shell
-bindsym $mod+o exec termite -e utop
+bindsym $mod+o exec kitty -e utop
 
 # i3 Functionality
 

@@ -27,6 +27,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'KabbAmine/zeavim.vim'
 " Position indicator
 Plug 'gcavallanti/vim-noscrollbar'
+" Nord colorscheme (only used for airline)
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
 "----------------------"
 " General Vim Settings "
@@ -94,7 +96,7 @@ let g:tex_conceal = ""
 let g:airline_extensions = ["tabline", "branch", "ale", "hunks", "tagbar"]
 set laststatus=2
 " let g:airline_theme='term'
-let g:airline_theme='bubblegum'
+let g:airline_theme='nord'
 let g:airline_detect_paste=1
 set encoding=utf-8
 let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
