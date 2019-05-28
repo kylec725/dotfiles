@@ -77,7 +77,7 @@ set nowrap
 " Clear SignColumn/Gutter color
 hi clear SignColumn
 
-" Cursor
+" Cursor blinking
 set guicursor=a:blinkon100
 
 " Remove pane pipes
@@ -91,14 +91,16 @@ let g:tex_conceal = ""
 "-----------------"
 
 " vim airline
-let g:airline#extensions#tabline#enabled = 1
+let g:airline_extensions = ["tabline", "branch", "ale", "hunks", "tagbar"]
 set laststatus=2
-let g:airline_theme='term'
+" let g:airline_theme='term'
+let g:airline_theme='bubblegum'
 let g:airline_detect_paste=1
 set encoding=utf-8
 let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
 " let g:airline#parts#ffenc#skip_expected_string='utf-8[dos]'
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#ale#enabled = 1

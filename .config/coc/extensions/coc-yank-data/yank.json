@@ -1,5 +1,41 @@
 [
   {
+    "id": "839852f0-80fd-11e9-9ec6-1b80b76eeed5",
+    "content": [
+      "let g:airline_theme='term'"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t96\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "9b906930-80fb-11e9-8c14-d5920b384dd9",
+    "content": [
+      "ale"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t94\t50",
+    "filetype": "vim"
+  },
+  {
+    "id": "99f297b0-80fb-11e9-8c14-d5920b384dd9",
+    "content": [
+      "branch"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t94\t40",
+    "filetype": "vim"
+  },
+  {
+    "id": "8656e8a0-80fb-11e9-a79c-f572874f0d90",
+    "content": [
+      "tabline"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t94\t29",
+    "filetype": "vim"
+  },
+  {
     "id": "191b4ca0-8096-11e9-be93-957a9f54179d",
     "content": [
       "guibg=#111111"

@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "coc-highlight": "^1.1.2",
     "coc-json": "^1.0.17",
     "coc-solargraph": "^1.0.7",
     "coc-yank": "^1.0.2"
