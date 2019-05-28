@@ -189,7 +189,8 @@ hi default CocHighlightText  ctermbg=131 ctermfg=0
     call airline#add_statusline_func('Noscrollbar')
 
 " fugitive settings
+nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>ga :Gwrite<CR>
 nnoremap <leader>gc :Gcommit<CR>
-nnoremap <leader>gu :Gpush<CR>
+" nnoremap <leader>gu :Gpush<CR>
 nnoremap <leader>gd :Gpull<CR>
