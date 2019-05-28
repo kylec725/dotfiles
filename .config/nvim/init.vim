@@ -34,6 +34,9 @@ call plug#end()
 " General Vim Settings "
 "----------------------"
 
+" map the leader key
+let mapleader=','
+
 " Change clipboard register for vim
 set clipboard=unnamedplus
 
