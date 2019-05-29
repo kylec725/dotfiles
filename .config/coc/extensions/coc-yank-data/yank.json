@@ -1,5 +1,124 @@
 [
   {
+    "id": "18cefeb0-81c5-11e9-a34d-1517a064c03c",
+    "content": [
+      "nnoremap <silent> <C-h> :bprevious<CR>",
+      "nnoremap <silent> <C-l> :bnext<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t76\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "3aed8ad0-81c4-11e9-ab0d-79f214a18aa3",
+    "content": [
+      "inoremap <silent> <C-h> :bprevious<CR>",
+      "inoremap <silent> <C-l> :bnext<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t78\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "39653d20-81c4-11e9-ab0d-79f214a18aa3",
+    "content": [
+      "inoremap <silent> <C-l> :bnext<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t79\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "38240a90-81c4-11e9-ab0d-79f214a18aa3",
+    "content": [
+      "inoremap <silent> <C-h> :bprevious<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t78\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "17fe84c0-81c4-11e9-9313-b381ec7b2573",
+    "content": [
+      "nnoremap <silent> <C-l> :bnext<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t77\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "16b0a800-81c4-11e9-9313-b381ec7b2573",
+    "content": [
+      "nnoremap <silent> <C-h> :bprevious<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t76\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "354d3c20-817d-11e9-b373-4d51eb83635a",
+    "content": [
+      "*board[x][y]"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/chess/pieces.hpp\t78\t21",
+    "filetype": "cpp"
+  },
+  {
+    "id": "32898840-817d-11e9-b373-4d51eb83635a",
+    "content": [
+      "*board[x][y]"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/chess/pieces.hpp\t74\t21",
+    "filetype": "cpp"
+  },
+  {
+    "id": "936b3cf0-817b-11e9-a347-25524a4f5b36",
+    "content": [
+      "nnoremap <LEADER>ad :ALEDetail<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t181\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "750b1e90-815f-11e9-bb36-49071a085f90",
+    "content": [
+      "let g:ale_lint_on_text_changed = 'always'"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t178\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "5f0cb240-815d-11e9-9cab-8326d2ec80ec",
+    "content": [
+      "nnoremap <leader>gu :!git push<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t196\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "1c1b7430-810d-11e9-9343-17e952616246",
+    "content": [
+      "nnoremap <leader>gc :Gcommit<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t193\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "dcb7bb50-810c-11e9-9343-17e952616246",
+    "content": [
+      "nnoremap <leader>ga :Gwrite<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t192\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "b8b964f0-8108-11e9-91a4-b57e167aadce",
     "content": [
       "\\e[38;5;195m\\"
