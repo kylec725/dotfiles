@@ -47,6 +47,10 @@ filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 set hidden
 
+" indent settings
+set expandtab
+set softtabstop=-1
+
 " Mode switch delay
 set timeoutlen=1000 ttimeoutlen=0
 
@@ -71,6 +75,8 @@ set spelllang=en
 " Map buffer navigation keys
 nnoremap <silent> - :bprevious<CR>
 nnoremap <silent> = :bnext<CR>
+nnoremap <silent> <C-h> :bprevious<CR>
+nnoremap <silent> <C-l> :bnext<CR>
 nnoremap <silent> <leader>q :bd<CR>
 
 " map shift + hjkl
