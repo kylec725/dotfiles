@@ -29,6 +29,7 @@ Plug 'KabbAmine/zeavim.vim'
 Plug 'gcavallanti/vim-noscrollbar'
 " Nord colorscheme (only used for airline)
 Plug 'arcticicestudio/nord-vim'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 "----------------------"
 " General Vim Settings "
@@ -98,8 +99,11 @@ hi clear SignColumn
 " Cursor blinking
 set guicursor=a:blinkon100
 
-" Remove pane pipes
-:set fillchars+=vert:\ 
+" Remove pane pipes and adjust pane separator color
+" :set fillchars+=vert:\ 
+set fillchars+=vert:│
+" :hi VertSplit ctermbg=0 ctermfg=0
+hi VertSplit cterm=NONE ctermfg=12
 
 " remove latex concealment
 let g:tex_conceal = ""
@@ -122,6 +126,9 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#ale#enabled = 1
+" devicon setttings
+let g:webdevicons_enable_airline_tabline = 0
+let g:webdevicons_enable_airline_statusline = 0
 
 " replace powerline fonts if they are missing
 if !exists('g:airline_symbols')
