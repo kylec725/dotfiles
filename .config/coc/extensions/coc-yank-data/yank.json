@@ -1,5 +1,14 @@
 [
   {
+    "id": "544a2280-8314-11e9-985c-9772313bebea",
+    "content": [
+      "nnoremap <S-e> be"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t129\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "2cfc3ee0-8303-11e9-a10e-cb6ec3a47916",
     "content": [
       "wincmd h"

@@ -125,6 +125,10 @@ vnoremap <S-j> L
 vnoremap <S-k> H
 vnoremap <S-L> g_
 
+" <S-e> to backwards end of word
+nnoremap <S-e> ge
+vnoremap <S-e> ge
+
 "replace the word under cursor
 nnoremap <leader>s :%s/\<<c-r><c-w>\>//g<left><left>
 
