@@ -113,11 +113,11 @@ nnoremap <silent> <leader>bd :bd<CR>
 nnoremap <S-h> ^
 nnoremap <S-j> L
 nnoremap <S-k> H
-nnoremap <S-L> $
+nnoremap <S-L> g_
 vnoremap <S-h> ^
 vnoremap <S-j> L
 vnoremap <S-k> H
-vnoremap <S-L> $
+vnoremap <S-L> g_
 
 "-----------------"
 " Plugin Settings "
