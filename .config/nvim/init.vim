@@ -98,15 +98,16 @@ let g:tex_conceal = ""
 " map the leader key
 let mapleader=','
 
-" map :w
+" map :w and :q
 nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
 
 " map buffer navigation keys
 nnoremap <silent> - :bprevious<CR>
 nnoremap <silent> = :bnext<CR>
 " nnoremap <silent> <C-h> :bprevious<CR>
 " nnoremap <silent> <C-l> :bnext<CR>
-nnoremap <silent> <leader>q :bd<CR>
+nnoremap <silent> <leader>bd :bd<CR>
 
 " map shift + hjkl
 nnoremap <S-h> ^
