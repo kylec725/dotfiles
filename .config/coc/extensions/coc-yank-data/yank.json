@@ -1,5 +1,247 @@
 [
   {
+    "id": "6b2e6090-828a-11e9-81cb-29351f3115d2",
+    "content": [
+      "\t\t\t:setlocal nobuflisted"
+    ],
+    "regtype": "V",
+    "path": "file:///usr/share/nvim/runtime/doc/windows.txt\t1273\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "db7f11f0-8285-11e9-aa9a-bb3ea16faa92",
+    "content": [
+      "winnr(\"$\") == 1 && win_getid() == g:term_win"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t264\t23",
+    "filetype": "vim"
+  },
+  {
+    "id": "d4199b60-8285-11e9-aa9a-bb3ea16faa92",
+    "content": [
+      "(winnr(\"$\") == 1 && exists(\"b:NERDTree\")"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t157\t23",
+    "filetype": "vim"
+  },
+  {
+    "id": "7e3124a0-8282-11e9-aa9a-bb3ea16faa92",
+    "content": [
+      "map <silent> <leader>nt :NERDTreeToggle<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t172\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "36836190-8282-11e9-aa9a-bb3ea16faa92",
+    "content": [
+      "function! TermSwitch()",
+      "    if g:term_win == win_getid()",
+      "        vertical resize 50",
+      "        wincmd w",
+      "    else",
+      "        if win_gotoid(g:term_win)",
+      "            vertical resize 50",
+      "            startinsert!",
+      "        endif",
+      "    endif",
+      "endfunction"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t235\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "46ab1500-8281-11e9-aa9a-bb3ea16faa92",
+    "content": [
+      "autocmd bufenter * if (winnr(\"$\") == 1 && exists(\"b:NERDTree\") && b:NERDTree.isTabTree()) | q | endif"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t157\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "13efde70-8281-11e9-aa9a-bb3ea16faa92",
+    "content": [
+      "autocmd bufenter * if (winnr(\"$\") == 1 && exists(\"b:NERDTree\") && b:NERDTree.isTabTree()) | q | endif"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t157\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "73ac0970-8280-11e9-aa9a-bb3ea16faa92",
+    "content": [
+      "        vertical resize 50"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t237\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "abbc10f0-827e-11e9-aa9a-bb3ea16faa92",
+    "content": [
+      "    let w:airline_section_z = ''"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t215\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "a2d72650-827e-11e9-aa9a-bb3ea16faa92",
+    "content": [
+      "    let w:airline_section_z = '%{noscrollbar#statusline()} :%2c'"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t211\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "9f9b4720-827c-11e9-aa9a-bb3ea16faa92",
+    "content": [
+      "nnoremap <leader>tt :call TermToggle()<CR>",
+      "tnoremap <leader>tt <C-\\><C-n>:call TermToggle()<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t253\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "11cebae0-827b-11e9-8bd6-5d72d2a448a7",
+    "content": [
+      "setlocal shiftwidth=4",
+      "setlocal softtabstop=4",
+      "setlocal expandtab"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/ftplugin/c.vim\t1\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "6594e020-8279-11e9-a694-abd8fcc91633",
+    "content": [
+      "nnoremap <S-h> ^",
+      "nnoremap <S-j> L",
+      "nnoremap <S-k> H",
+      "nnoremap <S-L> $"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t84\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "45eb8f30-8279-11e9-a694-abd8fcc91633",
+    "content": [
+      "<leader>t :call TermToggle()<CR>",
+      "t"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t237\t10",
+    "filetype": "vim"
+  },
+  {
+    "id": "431df040-8279-11e9-a694-abd8fcc91633",
+    "content": [
+      "tnoremap <Esc> <C-\\><C-n>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t238\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "40817370-8279-11e9-a694-abd8fcc91633",
+    "content": [
+      "nnoremap <leader>t :call TermToggle()<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t237\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "3f953eb0-8279-11e9-a694-abd8fcc91633",
+    "content": [
+      "nnoremap <leader>t :call TermToggle()<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t237\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "3d90e330-8279-11e9-a694-abd8fcc91633",
+    "content": [
+      "nnoremap <leader>t :call TermToggle()<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t237\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "d02a1b10-826c-11e9-92d1-0564228e1c0d",
+    "content": [
+      "                                                                *g:neoterm_size*"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/neoterm/doc/neoterm.txt\t145\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "38d5fb90-826b-11e9-a694-abd8fcc91633",
+    "content": [
+      "Plug 'ryanoasis/vim-devicons'"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t32\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "5c6c9b00-8265-11e9-a461-072301d86da0",
+    "content": [
+      "\" hi VertSplit ctermbg=NONE guibg=NONE"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t106\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "0fc68310-8260-11e9-9123-c151fa32d7a1",
+    "content": [
+      "  let g:webdevicons_enable_airline_statusline = 1"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-devicons/doc/webdevicons.txt\t378\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "9a693180-825f-11e9-a988-ed14241d1248",
+    "content": [
+      "  let g:webdevicons_enable_airline_tabline = 1"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-devicons/doc/webdevicons.txt\t373\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "596714b0-81cc-11e9-89d9-c7af70ea9688",
+    "content": [
+      "malloc(sizeof(piece))"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/chess/pieces.hpp\t70\t29",
+    "filetype": "cpp"
+  },
+  {
+    "id": "176d8b30-81cb-11e9-89d9-c7af70ea9688",
+    "content": [
+      "\t\t\tdelete board[x][y];"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/chess/pieces.hpp\t82\t1",
+    "filetype": "cpp"
+  },
+  {
     "id": "18cefeb0-81c5-11e9-a34d-1517a064c03c",
     "content": [
       "nnoremap <silent> <C-h> :bprevious<CR>",
