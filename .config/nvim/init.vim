@@ -125,7 +125,7 @@ vnoremap <S-L> g_
 
 " Airline !!!!!
 
-let g:airline_extensions = ["tabline", "branch", "ale", "hunks", "tagbar"]
+let g:airline_extensions = ["tabline", "branch", "ale", "hunks"]
 set laststatus=2
 " let g:airline_theme='term'
 let g:airline_theme='nord'
