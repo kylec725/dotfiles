@@ -5,11 +5,11 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/goyo.vim'
-Plug 'bling/vim-airline'
 " Airline to replace status line
+Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-commentary'
-Plug 'Yggdroot/indentLine'
+" Plug 'Yggdroot/indentLine'
 Plug 'gregsexton/MatchTag'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-repeat'
@@ -29,7 +29,7 @@ Plug 'KabbAmine/zeavim.vim'
 Plug 'gcavallanti/vim-noscrollbar'
 " Nord colorscheme (only used for airline)
 Plug 'arcticicestudio/nord-vim'
-Plug 'ryanoasis/vim-devicons'
+Plug 'vimlab/split-term.vim'
 call plug#end()
 "----------------------"
 " General Vim Settings "
@@ -76,8 +76,8 @@ set spelllang=en
 " Map buffer navigation keys
 nnoremap <silent> - :bprevious<CR>
 nnoremap <silent> = :bnext<CR>
-nnoremap <silent> <C-h> :bprevious<CR>
-nnoremap <silent> <C-l> :bnext<CR>
+" nnoremap <silent> <C-h> :bprevious<CR>
+" nnoremap <silent> <C-l> :bnext<CR>
 nnoremap <silent> <leader>q :bd<CR>
 
 " map shift + hjkl
@@ -85,6 +85,10 @@ nnoremap <S-h> ^
 nnoremap <S-j> L
 nnoremap <S-k> H
 nnoremap <S-L> $
+vnoremap <S-h> ^
+vnoremap <S-j> L
+vnoremap <S-k> H
+vnoremap <S-L> $
 
 " Set folding to indent
 set foldmethod=indent
@@ -112,7 +116,8 @@ let g:tex_conceal = ""
 " Plugin Settings "
 "-----------------"
 
-" vim airline
+" airline !!!!!
+
 let g:airline_extensions = ["tabline", "branch", "ale", "hunks", "tagbar"]
 set laststatus=2
 " let g:airline_theme='term'
@@ -126,9 +131,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#ale#enabled = 1
-" devicon setttings
-let g:webdevicons_enable_airline_tabline = 0
-let g:webdevicons_enable_airline_statusline = 0
 
 " replace powerline fonts if they are missing
 if !exists('g:airline_symbols')
@@ -149,18 +151,31 @@ let g:airline_symbols.dirty=''
 let g:airline_symbols.notexists = ''
 "let g:airline_symbols.space = "\ua0"
 
-" nerdtree
+" nerdtree !!!!!
+
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
-map <silent> <C-n> :NERDTreeToggle<CR>
+let g:nerd_win = 0
+" function to toggle nerdtree but track window id
+function! NerdToggle()
+    NERDTreeToggle
+    let g:nerd_win = win_getid()
+endfunction
+" function to switch between last window and nerdtree
+function! NerdSwitch()
+    if g:nerd_win == win_getid()
+        wincmd l
+    else
+        call win_gotoid(g:nerd_win)
+    endif
+endfunction
+" nerdtree mappings
+nnoremap <silent> <leader>nt :exec NerdToggle()<CR>
+nnoremap <silent> <leader>ns :exec NerdSwitch()<CR>
 
-" tagbar
-" nnoremap <C-o> :TagbarToggle<CR> <bar> <C-w>w
-" let g:tagbar_show_linenumbers = 2
-" let g:tagbar_iconchars = ['▸', '▾']
+" goyo !!!!!
 
-" goyo
 function! s:goyo_enter()
 	set wrap
 endfunction
@@ -173,10 +188,8 @@ autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 nnoremap <C-g> :Goyo<CR>
 
-" indent guide
-let g:indentLine_char = '▏'
+" coc.vim !!!!!
 
-" coc.vim settings
 " use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -191,7 +204,8 @@ inoremap <silent><expr> <TAB>
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" ale
+" ale !!!!!
+
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " lint after exiting insert mode
@@ -199,18 +213,63 @@ let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 nnoremap <LEADER>a :ALEDetail<CR>
 
-" noscrollbar
-" let g:airline_section_x = '%{&filetype}'
-" let g:airline_section_y = '%#__accent_bold#%{noscrollbar#statusline()}%#__restore__#'
-" let g:airline_section_z = ':%2c'
-    function! Noscrollbar(...)
-        let w:airline_section_z = '%{noscrollbar#statusline()} :%2c'
-    endfunction
-    call airline#add_statusline_func('Noscrollbar')
+" noscrollbar !!!!!
 
-" fugitive settings
+function! Noscrollbar(...)
+    let w:airline_section_z = '%{noscrollbar#statusline()} :%2c'
+endfunction
+call airline#add_statusline_func('Noscrollbar')
+
+" fugitive !!!!!
+
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>ga :Gwrite<CR>
 nnoremap <leader>gc :Gcommit<CR>
 " nnoremap <leader>gu :Gpush<CR>
 " nnoremap <leader>gd :Gpull<CR>
+
+" terminal settings !!!!!
+
+" split-term.vim settings
+set splitright
+
+" Terminal Function (from /u/andreyorst) was modified
+" let g:term_buf = 0
+let g:term_win = 0
+function! TermToggle()
+    if win_gotoid(g:term_win)
+        bd!
+    else
+        50VTerm
+        " let g:term_buf = bufnr("")
+        set nonumber
+        set norelativenumber
+        set signcolumn=no
+        " hides the buffer from airline's tabline
+        setlocal nobuflisted
+        startinsert!
+        let g:term_win = win_getid()
+    endif
+endfunction
+" Switch to Terminal Window Function (from me)
+function! TermSwitch()
+    if g:term_win == win_getid()
+        vertical resize 50
+        wincmd h
+    else
+        if win_gotoid(g:term_win)
+            vertical resize 50
+            startinsert!
+        endif
+    endif
+endfunction
+
+" exit terminal window if it is the last window
+autocmd bufenter * if winnr("$") == 1 && win_getid() == g:term_win | q | endif
+
+" Terminal bindings
+nnoremap <silent> <leader>tt :call TermToggle()<CR>
+tnoremap <silent> <leader>tt <C-\><C-n>:call TermToggle()<CR>
+nnoremap <silent> <leader>ts :call TermSwitch()<CR>
+tnoremap <silent> <leader>ts <C-\><C-n>:call TermSwitch()<CR>
+autocmd TermOpen * setlocal bufhidden=hide
