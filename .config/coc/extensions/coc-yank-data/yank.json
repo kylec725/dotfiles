@@ -1,5 +1,209 @@
 [
   {
+    "id": "2cfc3ee0-8303-11e9-a10e-cb6ec3a47916",
+    "content": [
+      "wincmd h"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t273\t14",
+    "filetype": "vim"
+  },
+  {
+    "id": "1e5fdbd0-8303-11e9-a10e-cb6ec3a47916",
+    "content": [
+      "        exec \"vertical resize \" g:term_size"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t272\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "15c73c70-8303-11e9-a10e-cb6ec3a47916",
+    "content": [
+      "vertical resize"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t272\t14",
+    "filetype": "vim"
+  },
+  {
+    "id": "a844b880-8302-11e9-a10e-cb6ec3a47916",
+    "content": [
+      "        exec \"vertical resize \" g:term_size"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t272\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "a3086380-8302-11e9-a10e-cb6ec3a47916",
+    "content": [
+      "vertical resize"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t272\t14",
+    "filetype": "vim"
+  },
+  {
+    "id": "b1286010-8301-11e9-a10e-cb6ec3a47916",
+    "content": [
+      "bufnr(g:term_buf) > 0"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t250\t34",
+    "filetype": "vim"
+  },
+  {
+    "id": "20adae50-8301-11e9-a10e-cb6ec3a47916",
+    "content": [
+      "vsplit"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t254\t18",
+    "filetype": "vim"
+  },
+  {
+    "id": "21c1d2e0-8300-11e9-a10e-cb6ec3a47916",
+    "content": [
+      "VTerm"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t258\t25",
+    "filetype": "vim"
+  },
+  {
+    "id": "db6b6270-82ff-11e9-a10e-cb6ec3a47916",
+    "content": [
+      "            exec \"resize\" . a:size"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t255\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "f61f4f40-82fb-11e9-a65b-7bd139317bbb",
+    "content": [
+      "            auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop1 - start1); "
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/test.cpp\t41\t1",
+    "filetype": "cpp"
+  },
+  {
+    "id": "f31e1d30-82fb-11e9-a65b-7bd139317bbb",
+    "content": [
+      "            std::cout << \"head recursion duration: \" << duration.count() << \"\\n\";"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/test.cpp\t44\t1",
+    "filetype": "cpp"
+  },
+  {
+    "id": "cf86c930-82fb-11e9-a65b-7bd139317bbb",
+    "content": [
+      "            std::cout << argv[1] << \"! = \" << head << \"\\n\";"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/test.cpp\t49\t1",
+    "filetype": "cpp"
+  },
+  {
+    "id": "b0531d70-82fb-11e9-a65b-7bd139317bbb",
+    "content": [
+      "            auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start); "
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/test.cpp\t46\t1",
+    "filetype": "cpp"
+  },
+  {
+    "id": "16b93730-82fb-11e9-a65b-7bd139317bbb",
+    "content": [
+      "            head = head_factorial(num);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/test.cpp\t39\t1",
+    "filetype": "cpp"
+  },
+  {
+    "id": "d954f7d0-82fa-11e9-a65b-7bd139317bbb",
+    "content": [
+      "            auto start1 = std::chrono::high_resolution_clock::now(); ",
+      "            std::cout << argv[1] << \"! = \" << tail_factorial(num) << \"\\n\";",
+      "            auto stop1 = std::chrono::high_resolution_clock::now(); "
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/test.cpp\t37\t1",
+    "filetype": "cpp"
+  },
+  {
+    "id": "caedae80-82fa-11e9-a65b-7bd139317bbb",
+    "content": [
+      "            auto start = std::chrono::high_resolution_clock::now(); "
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/test.cpp\t37\t1",
+    "filetype": "cpp"
+  },
+  {
+    "id": "3456f620-82fa-11e9-a65b-7bd139317bbb",
+    "content": [
+      "int tail_factorial(int n) {",
+      "    if (n == 1 || n == 0) {",
+      "        return 1;",
+      "    }",
+      "    else if (n < 0) {",
+      "        return -1;",
+      "    }",
+      "    else {",
+      "        return n * tail_factorial(n -1);",
+      "    }",
+      "}",
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/test.cpp\t4\t1",
+    "filetype": "cpp"
+  },
+  {
+    "id": "754865d0-82f8-11e9-8c9a-e7471467cef6",
+    "content": [
+      "            std::istringstream ss(argv[1]);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/test.cpp\t23\t1",
+    "filetype": "cpp"
+  },
+  {
+    "id": "466f3db0-82f3-11e9-801c-9f58adc98b26",
+    "content": [
+      "let g:ale_lint_on_text_changed = 'normal'"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t219\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "263c5cf0-829c-11e9-bbe5-91673d7bd438",
+    "content": [
+      "set inccommand=nosplit"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t60\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "b9da6c90-828d-11e9-aaa8-27d5a0c5989b",
+    "content": [
+      "\"----------------------\"",
+      "\" General Vim Settings \"",
+      "\"----------------------\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t35\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "6b2e6090-828a-11e9-81cb-29351f3115d2",
     "content": [
       "\t\t\t:setlocal nobuflisted"

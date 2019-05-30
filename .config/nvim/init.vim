@@ -46,6 +46,12 @@ filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 set hidden
 
+" enable .h files to be set to filetype c
+augroup project
+    autocmd!
+    autocmd BufRead,BufNewFile *.h,*.c set filetype=c
+augroup END
+
 " indent settings
 set expandtab
 set softtabstop=-1
@@ -287,4 +293,3 @@ nnoremap <silent> <leader>tt :call TermToggle()<CR>
 tnoremap <silent> <leader>tt <C-\><C-n>:call TermToggle()<CR>
 nnoremap <silent> <leader>ts :call TermSwitch()<CR>
 tnoremap <silent> <leader>ts <C-\><C-n>:call TermSwitch()<CR>
-autocmd TermOpen * setlocal bufhidden=hide
