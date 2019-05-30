@@ -119,6 +119,9 @@ vnoremap <S-j> L
 vnoremap <S-k> H
 vnoremap <S-L> g_
 
+"replace the word under cursor
+nnoremap <leader>s :%s/\<<c-r><c-w>\>//g<left><left>
+
 "-----------------"
 " Plugin Settings "
 "-----------------"
@@ -239,31 +242,38 @@ nnoremap <leader>gc :Gcommit<CR>
 
 " split-term.vim settings
 set splitright
+let g:term_size = 50
 
 " terminal function (from /u/andreyorst) was modified
+let g:term_buf = 0
 let g:term_win = 0
 function! TermToggle()
-    if win_gotoid(g:term_win)
-        bd!
+    if win_gotoid(g:term_win) || g:term_buf == bufnr("")
+        hide
     else
-        50VTerm
-        set nonumber
-        set norelativenumber
-        set signcolumn=no
-        " hides the buffer from airline's tabline
-        setlocal nobuflisted
+        if bufnr(g:term_buf) > 0
+            exec g:term_size "vsplit | buffer " g:term_buf
+        else
+            exec g:term_size "VTerm"
+            set nonumber
+            set norelativenumber
+            set signcolumn=no
+            " hides the buffer from airline's tabline
+            setlocal nobuflisted
+            let g:term_buf = bufnr("")
+            let g:term_win = win_getid()
+        endif
         startinsert!
-        let g:term_win = win_getid()
     endif
 endfunction
 " switch to terminal window function (from me)
 function! TermSwitch()
     if g:term_win == win_getid()
-        vertical resize 50
-        wincmd h
+        exec "vertical resize " g:term_size
+        exec "wincmd h"
     else
         if win_gotoid(g:term_win)
-            vertical resize 50
+            exec "vertical resize " g:term_size
             startinsert!
         endif
     endif
