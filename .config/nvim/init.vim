@@ -31,12 +31,10 @@ Plug 'gcavallanti/vim-noscrollbar'
 Plug 'arcticicestudio/nord-vim'
 Plug 'vimlab/split-term.vim'
 call plug#end()
+
 "----------------------"
 " General Vim Settings "
 "----------------------"
-
-" map the leader key
-let mapleader=','
 
 " Change clipboard register for vim
 set clipboard=unnamedplus
@@ -73,7 +71,37 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Enable spell check functionality
 set spelllang=en
 
-" Map buffer navigation keys
+" Set folding to indent
+set foldmethod=indent
+set foldlevelstart=99
+
+" Visual Wrapping
+set nowrap
+
+" Clear SignColumn/Gutter color
+hi clear SignColumn
+
+" Cursor blinking
+set guicursor=a:blinkon100
+
+" Change window pane separator to a single line
+set fillchars+=vert:│
+hi VertSplit cterm=NONE ctermfg=12
+
+" remove latex concealment
+let g:tex_conceal = ""
+
+"-------------------------"
+" General Vim Keybindings "
+"-------------------------"
+
+" map the leader key
+let mapleader=','
+
+" map :w
+nnoremap <leader>w :w<CR>
+
+" map buffer navigation keys
 nnoremap <silent> - :bprevious<CR>
 nnoremap <silent> = :bnext<CR>
 " nnoremap <silent> <C-h> :bprevious<CR>
@@ -90,33 +118,11 @@ vnoremap <S-j> L
 vnoremap <S-k> H
 vnoremap <S-L> $
 
-" Set folding to indent
-set foldmethod=indent
-set foldlevelstart=99
-
-" Visual Wrapping
-set nowrap
-
-" Clear SignColumn/Gutter color
-hi clear SignColumn
-
-" Cursor blinking
-set guicursor=a:blinkon100
-
-" Remove pane pipes and adjust pane separator color
-" :set fillchars+=vert:\ 
-set fillchars+=vert:│
-" :hi VertSplit ctermbg=0 ctermfg=0
-hi VertSplit cterm=NONE ctermfg=12
-
-" remove latex concealment
-let g:tex_conceal = ""
-
 "-----------------"
 " Plugin Settings "
 "-----------------"
 
-" airline !!!!!
+" Airline !!!!!
 
 let g:airline_extensions = ["tabline", "branch", "ale", "hunks", "tagbar"]
 set laststatus=2
@@ -151,7 +157,7 @@ let g:airline_symbols.dirty=''
 let g:airline_symbols.notexists = ''
 "let g:airline_symbols.space = "\ua0"
 
-" nerdtree !!!!!
+" Nerdtree !!!!!
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let g:NERDTreeDirArrowExpandable = '▸'
@@ -174,7 +180,7 @@ endfunction
 nnoremap <silent> <leader>nt :exec NerdToggle()<CR>
 nnoremap <silent> <leader>ns :exec NerdSwitch()<CR>
 
-" goyo !!!!!
+" Goyo !!!!!
 
 function! s:goyo_enter()
 	set wrap
@@ -188,7 +194,7 @@ autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 nnoremap <C-g> :Goyo<CR>
 
-" coc.vim !!!!!
+" Coc !!!!!
 
 " use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
@@ -204,7 +210,7 @@ inoremap <silent><expr> <TAB>
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" ale !!!!!
+" Ale !!!!!
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
@@ -213,14 +219,14 @@ let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 nnoremap <LEADER>a :ALEDetail<CR>
 
-" noscrollbar !!!!!
+" Noscrollbar !!!!!
 
 function! Noscrollbar(...)
     let w:airline_section_z = '%{noscrollbar#statusline()} :%2c'
 endfunction
 call airline#add_statusline_func('Noscrollbar')
 
-" fugitive !!!!!
+" Fugitive !!!!!
 
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>ga :Gwrite<CR>
@@ -228,20 +234,18 @@ nnoremap <leader>gc :Gcommit<CR>
 " nnoremap <leader>gu :Gpush<CR>
 " nnoremap <leader>gd :Gpull<CR>
 
-" terminal settings !!!!!
+" Terminal settings !!!!!
 
 " split-term.vim settings
 set splitright
 
-" Terminal Function (from /u/andreyorst) was modified
-" let g:term_buf = 0
+" terminal function (from /u/andreyorst) was modified
 let g:term_win = 0
 function! TermToggle()
     if win_gotoid(g:term_win)
         bd!
     else
         50VTerm
-        " let g:term_buf = bufnr("")
         set nonumber
         set norelativenumber
         set signcolumn=no
@@ -251,7 +255,7 @@ function! TermToggle()
         let g:term_win = win_getid()
     endif
 endfunction
-" Switch to Terminal Window Function (from me)
+" switch to terminal window function (from me)
 function! TermSwitch()
     if g:term_win == win_getid()
         vertical resize 50
@@ -267,7 +271,7 @@ endfunction
 " exit terminal window if it is the last window
 autocmd bufenter * if winnr("$") == 1 && win_getid() == g:term_win | q | endif
 
-" Terminal bindings
+" terminal bindings
 nnoremap <silent> <leader>tt :call TermToggle()<CR>
 tnoremap <silent> <leader>tt <C-\><C-n>:call TermToggle()<CR>
 nnoremap <silent> <leader>ts :call TermSwitch()<CR>
