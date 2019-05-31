@@ -1,5 +1,35 @@
 [
   {
+    "id": "728a0fe0-834a-11e9-9e4e-8f378a966ac4",
+    "content": [
+      "nnoremap <C-h> <C-w>h",
+      "nnoremap <C-j> <C-w>j",
+      "nnoremap <C-k> <C-w>k",
+      "nnoremap <C-l> <C-w>l"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t129\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "648706a0-834a-11e9-9e4e-8f378a966ac4",
+    "content": [
+      "nnoremap <C-h> <C-w>h"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t129\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "91409930-8346-11e9-9540-e5cc293b5e8e",
+    "content": [
+      "i3-msg exit"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/i3exit-prompt\t3\t39",
+    "filetype": "sh"
+  },
+  {
     "id": "e53a2a80-8344-11e9-8e36-150366529e70",
     "content": [
       "            let g:term_win = win_getid()"

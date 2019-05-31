@@ -181,7 +181,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+Shift+q exec "i3-msg exit"
+bindsym $mod+Shift+q exec i3exit-prompt
 
 # resize window
 # Pressing left will shrink the window’s width.

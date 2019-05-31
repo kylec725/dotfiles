@@ -125,6 +125,17 @@ vnoremap <S-j> L
 vnoremap <S-k> H
 vnoremap <S-L> g_
 
+" window navigation keys
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+vnoremap <C-h> <C-w>h
+vnoremap <C-j> <C-w>j
+vnoremap <C-k> <C-w>k
+vnoremap <C-l> <C-w>l
+
+
 " <S-e> to backwards end of word
 nnoremap <S-e> ge
 vnoremap <S-e> ge
@@ -178,21 +189,22 @@ let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let g:nerd_win = 0
 " function to toggle nerdtree but track window id
-function! NerdToggle()
-    NERDTreeToggle
-    let g:nerd_win = win_getid()
-endfunction
+" function! NerdToggle()
+"     NERDTreeToggle
+"     let g:nerd_win = win_getid()
+" endfunction
 " function to switch between last window and nerdtree
-function! NerdSwitch()
-    if g:nerd_win == win_getid()
-        wincmd l
-    else
-        call win_gotoid(g:nerd_win)
-    endif
-endfunction
+" function! NerdSwitch()
+"     if g:nerd_win == win_getid()
+"         wincmd l
+"     else
+"         wincmd h
+"         " call win_gotoid(g:nerd_win)
+"     endif
+" endfunction
 " nerdtree mappings
-nnoremap <silent> <leader>nt :exec NerdToggle()<CR>
-nnoremap <silent> <leader>ns :exec NerdSwitch()<CR>
+nnoremap <silent> <leader>n :NERDTreeToggle<CR>
+" nnoremap <silent> <leader>ns :exec NerdSwitch()<CR>
 
 " Goyo !!!!!
 
@@ -226,8 +238,8 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " Ale !!!!!
 
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
+nmap <silent> <leader>k <Plug>(ale_previous_wrap)
+nmap <silent> <leader>j <Plug>(ale_next_wrap)
 " lint after exiting insert mode
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
