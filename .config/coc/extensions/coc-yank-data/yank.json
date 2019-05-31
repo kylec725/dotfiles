@@ -1,5 +1,37 @@
 [
   {
+    "id": "6f698740-8350-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "+\trunAutostart();"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-autostart.diff\t36\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "57990820-8350-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "+runAutostart(void) {",
+      "+\tsystem(\"cd ~/.dwm; ./autostart_blocking.sh\");",
+      "+\tsystem(\"cd ~/.dwm; ./autostart.sh &\");",
+      "+}",
+      "+",
+      "+void"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-autostart.diff\t23\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "4036db30-8350-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "+static void runAutostart(void);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-autostart.diff\t15\t1",
+    "filetype": "diff"
+  },
+  {
     "id": "728a0fe0-834a-11e9-9e4e-8f378a966ac4",
     "content": [
       "nnoremap <C-h> <C-w>h",

@@ -267,13 +267,13 @@ set splitright
 let g:term_size = 50
 
 " terminal function (from /u/andreyorst) was modified
-let g:term_buf = 0
+let g:term_buf = -1
 let g:term_win = 0
 function! TermToggle()
     if win_gotoid(g:term_win) || g:term_buf == bufnr("")
         hide
     else
-        if bufnr(g:term_buf) > 0
+        if bufexists(g:term_buf) == 1
             exec g:term_size "vsplit | buffer " g:term_buf
             let g:term_win = win_getid()
         else
