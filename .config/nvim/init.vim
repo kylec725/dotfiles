@@ -263,6 +263,7 @@ function! TermToggle()
     else
         if bufnr(g:term_buf) > 0
             exec g:term_size "vsplit | buffer " g:term_buf
+            let g:term_win = win_getid()
         else
             exec g:term_size "VTerm"
             set nonumber

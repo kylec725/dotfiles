@@ -1,5 +1,90 @@
 [
   {
+    "id": "e53a2a80-8344-11e9-8e36-150366529e70",
+    "content": [
+      "            let g:term_win = win_getid()"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t274\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "3af93990-8343-11e9-879b-d3b02c2c2ec5",
+    "content": [
+      "std::nullptr_t"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/test.cpp\t4\t10",
+    "filetype": "cpp"
+  },
+  {
+    "id": "b3f0af60-8323-11e9-8b40-33a18d8ebffa",
+    "content": [
+      "bindsym $mod+Shift+q exec \"i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/i3/config\t183\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "af97f910-8322-11e9-8de7-cf53a714787a",
+    "content": [
+      "~/.fehbg &"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t226\t22",
+    "filetype": "conf"
+  },
+  {
+    "id": "5ea55110-8322-11e9-ad03-0bdbda1a18d4",
+    "content": [
+      "|ShiftMask"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.h\t82\t10",
+    "filetype": "c"
+  },
+  {
+    "id": "4c9dfda0-8322-11e9-ad03-0bdbda1a18d4",
+    "content": [
+      "\t{ MODKEY|ShiftMask,             XK_s,      setlayout,      {.v = &layouts[3]} },"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.h\t82\t1",
+    "filetype": "c"
+  },
+  {
+    "id": "33b13910-8322-11e9-ad03-0bdbda1a18d4",
+    "content": [
+      "\t{ MODKEY,                       XK_s,      setlayout,      {.v = &layouts[2]} },"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.h\t82\t1",
+    "filetype": "c"
+  },
+  {
+    "id": "2f000d10-8322-11e9-ad03-0bdbda1a18d4",
+    "content": [
+      "\t{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.h\t81\t1",
+    "filetype": "c"
+  },
+  {
+    "id": "582fb9c0-8317-11e9-a086-6558d8ed185d",
+    "content": [
+      "[Desktop Entry]",
+      "Encoding=UTF-8",
+      "Name=Dynamic Window Manager",
+      "Comment=Starts dwm",
+      "Exec=/usr/local/bin/dwm"
+    ],
+    "regtype": "V",
+    "path": "file:///usr/share/xsessions/dwm.desktop\t1\t1",
+    "filetype": "desktop"
+  },
+  {
     "id": "544a2280-8314-11e9-985c-9772313bebea",
     "content": [
       "nnoremap <S-e> be"
