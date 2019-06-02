@@ -1,0 +1,8 @@
+#!/bin/sh
+
+FILE=$(fzf --no-mouse -q "'.pdf " --prompt="Open PDF: " --bind=tab:up,btab:down)
+
+# nohup allows the terminal to be closed without zathura dying
+nohup zathura "$FILE" &
+sleep .001
+kill -9 $PPID

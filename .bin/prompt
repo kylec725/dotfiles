@@ -1,0 +1,3 @@
+#!/bin/sh
+
+[ "$(printf "No\\nYes" | rofi -theme material -dmenu -i -p "$1" -nb "#282A36" -sb lightblue -sf black -nf gray )" == "Yes" ] && $2

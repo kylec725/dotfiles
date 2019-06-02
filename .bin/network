@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+echo $(nmcli -t -f active,ssid dev wifi | egrep '^yes' | cut -d\' -f2 | cut -c 5-)

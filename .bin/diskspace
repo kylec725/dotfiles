@@ -1,0 +1,6 @@
+#!/bin/sh
+
+USE=$(df -h | grep '/dev/nvme0n1p9' | awk '{ print $3 }')
+TOTAL=$(df -h | grep '/dev/nvme0n1p9' | awk '{ print $4 }')
+
+echo "$USE/$TOTAL"

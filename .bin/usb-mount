@@ -1,0 +1,17 @@
+#!/bin/sh
+
+if [[ -d ~/usb ]]
+then
+	if [[ -z $(findmnt /dev/sda1) ]]
+	then
+		sudo -k mount /dev/sda1 ~/usb
+		echo USB Partition Mounted
+	else
+		sudo -k umount ~/usb
+		echo USB Partition Unmounted
+	fi
+else
+	mkdir ~/usb
+	sudo -k mount /dev/sda1 ~/usb
+	echo USB Partition Mounted
+fi

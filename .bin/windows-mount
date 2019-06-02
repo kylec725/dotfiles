@@ -1,0 +1,17 @@
+#!/bin/sh
+
+if [[ -d ~/windows ]]
+then
+	if [[ -z $(findmnt /dev/nvme0n1p3) ]]
+	then
+		sudo -k mount /dev/nvme0n1p3 ~/windows
+		echo Windows Partition Mounted
+	else
+		sudo -k umount ~/windows
+		echo Windows Partition Unmounted
+	fi
+else
+	mkdir ~/windows
+	sudo -k mount /dev/nvme0n1p3 ~/windows
+	echo Windows Partition Mounted
+fi
