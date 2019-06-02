@@ -23,6 +23,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 " Language pack support
 Plug 'sheerun/vim-polyglot'
+Plug 'tbastos/vim-lua'
 " Documentation integration
 Plug 'KabbAmine/zeavim.vim'
 " Position indicator
@@ -135,6 +136,18 @@ vnoremap <C-j> <C-w>j
 vnoremap <C-k> <C-w>k
 vnoremap <C-l> <C-w>l
 
+" window resize keys
+" nnoremap <silent> <C-y> :vertical resize -5<CR>
+" nnoremap <silent> <C-u> :resize -5<CR>
+" nnoremap <silent> <C-i> :resize +5<CR>
+" nnoremap <silent> <C-o> :vertical resize +5<CR>
+" vnoremap <silent> <C-y> :vertical resize -5<CR>
+" vnoremap <silent> <C-u> :resize -5<CR>
+" vnoremap <silent> <C-i> :resize +5<CR>
+" vnoremap <silent> <C-o> :vertical resize +5<CR>
+
+" make Y behave like C and D
+nnoremap Y y$
 
 " <S-e> to backwards end of word
 nnoremap <S-e> ge
