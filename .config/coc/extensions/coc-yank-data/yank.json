@@ -1,5 +1,1366 @@
 [
   {
+    "id": "71c3cbf0-85b6-11e9-99a2-0d1968738bce",
+    "content": [
+      "--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t16\t26",
+    "filetype": "sh"
+  },
+  {
+    "id": "2a1322b0-85b6-11e9-8f8c-57e741d625c8",
+    "content": [
+      "#18E3C8"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/termite/config\t60\t13",
+    "filetype": "conf"
+  },
+  {
+    "id": "f6606cc0-85b5-11e9-8f8c-57e741d625c8",
+    "content": [
+      "#B043D1"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/termite/config\t63\t13",
+    "filetype": "conf"
+  },
+  {
+    "id": "d11a0930-85b5-11e9-99a2-0d1968738bce",
+    "content": [
+      "#18E3C8"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t16\t88",
+    "filetype": "sh"
+  },
+  {
+    "id": "c969a6f0-85b5-11e9-8f8c-57e741d625c8",
+    "content": [
+      "#18E3C8"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/termite/config\t60\t13",
+    "filetype": "conf"
+  },
+  {
+    "id": "9b78c9b0-85b5-11e9-99a2-0d1968738bce",
+    "content": [
+      "--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t16\t26",
+    "filetype": "sh"
+  },
+  {
+    "id": "62ae0fa0-85b5-11e9-8f8c-57e741d625c8",
+    "content": [
+      "#C574DD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/termite/config\t55\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "39165350-85b5-11e9-99a2-0d1968738bce",
+    "content": [
+      "#5ADECD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t16\t88",
+    "filetype": "sh"
+  },
+  {
+    "id": "295100a0-85b5-11e9-99a2-0d1968738bce",
+    "content": [
+      ",hl:#B48EAD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t16\t95",
+    "filetype": "sh"
+  },
+  {
+    "id": "25779700-85b5-11e9-99a2-0d1968738bce",
+    "content": [
+      "hl:#B48EAD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t16\t96",
+    "filetype": "sh"
+  },
+  {
+    "id": "f77b2100-85b4-11e9-8cf3-2f98515e6e27",
+    "content": [
+      "#5ADECD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/termite/config\t52\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "5d76b920-85b4-11e9-b5ca-8bdf7fa57ee3",
+    "content": [
+      "#B48EAD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t481\t10",
+    "filetype": "conf"
+  },
+  {
+    "id": "2245fb90-85b4-11e9-b5ca-8bdf7fa57ee3",
+    "content": [
+      "#0B090E"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t453\t14",
+    "filetype": "conf"
+  },
+  {
+    "id": "f91824a0-85b3-11e9-b5ca-8bdf7fa57ee3",
+    "content": [
+      "#A3BE8C"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t469\t10",
+    "filetype": "conf"
+  },
+  {
+    "id": "efc3af50-85b3-11e9-b5ca-8bdf7fa57ee3",
+    "content": [
+      "#A3BE8C"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t469\t10",
+    "filetype": "conf"
+  },
+  {
+    "id": "72295dd0-85b1-11e9-bcb4-1d1807924b28",
+    "content": [
+      "$FILE"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/yank\t5\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "657b3630-85b1-11e9-bcb4-1d1807924b28",
+    "content": [
+      "$FILE"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/yank\t7\t6",
+    "filetype": "sh"
+  },
+  {
+    "id": "39f394f0-85aa-11e9-a48b-414df6b0b164",
+    "content": [
+      "--bind=tab:up,btab:down"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/pdf\t3\t57",
+    "filetype": "sh"
+  },
+  {
+    "id": "2e485e60-85aa-11e9-a48b-414df6b0b164",
+    "content": [
+      "--no-mouse "
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/pdf\t3\t12",
+    "filetype": "sh"
+  },
+  {
+    "id": "64df7060-857a-11e9-bb3b-e5e8ffbd312a",
+    "content": [
+      "$FILE | xargs nohup zathura --fork"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.bin/pdf\t7\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "0acede50-8578-11e9-a15c-79d2947719b0",
+    "content": [
+      "fzf -i -q \"'.pdf \" --prompt=\"Open PDF: \" --bind=tab:up,btab:down"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/pdf\t3\t8",
+    "filetype": "sh"
+  },
+  {
+    "id": "a14767b0-8575-11e9-a15c-79d2947719b0",
+    "content": [
+      "FILE"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/pdf\t6\t16",
+    "filetype": "sh"
+  },
+  {
+    "id": "1a4b96a0-8575-11e9-a15c-79d2947719b0",
+    "content": [
+      "fzf -q \"'.pdf \" --bind=tab:up,btab:down"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/pdf\t3\t8",
+    "filetype": "sh"
+  },
+  {
+    "id": "0d28db40-8575-11e9-a15c-79d2947719b0",
+    "content": [
+      "$FILE"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/pdf\t6\t16",
+    "filetype": "sh"
+  },
+  {
+    "id": "09efa940-8575-11e9-a15c-79d2947719b0",
+    "content": [
+      "$FILE"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/pdf\t6\t15",
+    "filetype": "sh"
+  },
+  {
+    "id": "7a1e2ca0-8570-11e9-859e-89f3c84ccc43",
+    "content": [
+      "kitty -e pdf"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t112\t29",
+    "filetype": "conf"
+  },
+  {
+    "id": "61d5f430-856a-11e9-86f0-eb4dbaf4aedf",
+    "content": [
+      "fzf -q \"'.pdf \" --bind=tab:up,btab:down | xargs zathura --fork"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t17\t7",
+    "filetype": "sh"
+  },
+  {
+    "id": "3cf3f7c0-856a-11e9-a69a-6bd46b489720",
+    "content": [
+      "fzf -q \"'.pdf \" --bind=tab:up,btab:down "
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/pdf\t3\t8",
+    "filetype": "sh"
+  },
+  {
+    "id": "180ac4d0-8569-11e9-a69a-6bd46b489720",
+    "content": [
+      "fzf -q \"'.pdf \" --bind=tab:up,btab:down "
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/pdf\t3\t8",
+    "filetype": "sh"
+  },
+  {
+    "id": "e0328970-855a-11e9-b6b9-755678e2d79e",
+    "content": [
+      "kitty -e pdf"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t112\t21",
+    "filetype": "conf"
+  },
+  {
+    "id": "9927cf10-8558-11e9-8ef9-e1bcb5942286",
+    "content": [
+      "fzf -q \"'.pdf \" --bind=tab:up,btab:down "
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/pdf\t3\t8",
+    "filetype": "sh"
+  },
+  {
+    "id": "cfbe1260-8557-11e9-8ef9-e1bcb5942286",
+    "content": [
+      "zathura $FILE & && exit"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/pdf\t5\t6",
+    "filetype": "sh"
+  },
+  {
+    "id": "d44d8cf0-8554-11e9-9ead-ef52358b6209",
+    "content": [
+      "fzf"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/pdf\t3\t8",
+    "filetype": "sh"
+  },
+  {
+    "id": "2a1e3e50-854a-11e9-85af-51fff780267f",
+    "content": [
+      "plug#begin('~/.config/nvim/plugged')"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t4\t6",
+    "filetype": "vim"
+  },
+  {
+    "id": "49d350c0-8426-11e9-a752-dd37cc3eadcd",
+    "content": [
+      "#74DD91"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t465\t22",
+    "filetype": "lua"
+  },
+  {
+    "id": "47b8d530-8426-11e9-a752-dd37cc3eadcd",
+    "content": [
+      "#74DD91"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t465\t22",
+    "filetype": "lua"
+  },
+  {
+    "id": "42984590-8426-11e9-a752-dd37cc3eadcd",
+    "content": [
+      "#74DD91"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t37\t41",
+    "filetype": "lua"
+  },
+  {
+    "id": "737ab9f0-8425-11e9-aaa3-c11e6e192a61",
+    "content": [
+      "    -- Titlebars OFF (explicitly)",
+      "    -- Titlebars of these clients will be hidden regardless of the theme setting",
+      "    { rule_any = {",
+      "        class = {",
+      "            \"qutebrowser\",",
+      "            \"Sublime_text\",",
+      "            \"Subl3\",",
+      "            --\"discord\",",
+      "            --\"TelegramDesktop\",",
+      "            \"Firefox\",",
+      "            \"Steam\",",
+      "            \"Lutris\",",
+      "            \"Chromium\",",
+      "            \"Thunderbird\",",
+      "        },",
+      "    }, properties = {},",
+      "    callback = function (c)",
+      "        if not beautiful.titlebars_imitate_borders then",
+      "            awful.titlebar.hide(c)",
+      "        end",
+      "    end",
+      "    },"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles/config/awesome/rc.lua\t443\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "7158eb60-8425-11e9-aaa3-c11e6e192a61",
+    "content": [
+      "    { rule_any = {",
+      "        class = {",
+      "            \"qutebrowser\",",
+      "            \"Sublime_text\",",
+      "            \"Subl3\",",
+      "            --\"discord\",",
+      "            --\"TelegramDesktop\",",
+      "            \"Firefox\",",
+      "            \"Steam\",",
+      "            \"Lutris\",",
+      "            \"Chromium\",",
+      "            \"Thunderbird\",",
+      "        },",
+      "    }, properties = {},",
+      "    callback = function (c)",
+      "        if not beautiful.titlebars_imitate_borders then",
+      "            awful.titlebar.hide(c)",
+      "        end",
+      "    end",
+      "    },"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles/config/awesome/rc.lua\t445\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "9f52e5d0-8424-11e9-aaa3-c11e6e192a61",
+    "content": [
+      "local helpers = require(\"helpers\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles/config/awesome/rc.lua\t68\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "a38d77b0-8423-11e9-aaa3-c11e6e192a61",
+    "content": [
+      "-- Rounded corners",
+      "if beautiful.border_radius ~= 0 then",
+      "    client.connect_signal(\"manage\", function (c, startup)",
+      "        if not c.fullscreen then",
+      "            c.shape = helpers.rrect(beautiful.border_radius)",
+      "        end",
+      "    end)",
+      "",
+      "    -- Fullscreen & maximised clients should not have rounded corners",
+      "    local function no_round_corners (c)",
+      "        if c.fullscreen or c.maximized then",
+      "            c.shape = helpers.rect()",
+      "        else",
+      "            c.shape = helpers.rrect(beautiful.border_radius)",
+      "        end",
+      "    end",
+      "",
+      "    client.connect_signal(\"property::fullscreen\", no_round_corners)",
+      "    client.connect_signal(\"property::maximized\", no_round_corners)",
+      "",
+      "end",
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles/config/awesome/rc.lua\t757\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "fcc1f3e0-8420-11e9-9c47-8df63972c204",
+    "content": [
+      "beautiful.init(awful.util.getdir(\"config\") .. \"/themes/skyfall/theme.lua\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t56\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "23152900-8420-11e9-8bee-f5b3746aa8d7",
+    "content": [
+      "local theme_dir = os.getenv(\"HOME\") .. \"/.config/awesome/themes/\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles/config/awesome/rc.lua\t40\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "f0d711b0-841f-11e9-8bee-f5b3746aa8d7",
+    "content": [
+      "local bar_theme_collection = {",
+      "    \"manta\",        -- 1 -- Taglist, client counter, date, time, layout",
+      "    \"lovelace\",     -- 2 -- Start button, taglist, layout",
+      "    \"skyfall\",      -- 3 -- Weather, taglist, window buttons, pop-up tray",
+      "}",
+      "",
+      "-- Change this number to use a different bar theme",
+      "local bar_theme_name = bar_theme_collection[3]"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles/config/awesome/rc.lua\t23\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "ef1da1e0-841f-11e9-8bee-f5b3746aa8d7",
+    "content": [
+      "local bar_theme_collection = {",
+      "    \"manta\",        -- 1 -- Taglist, client counter, date, time, layout",
+      "    \"lovelace\",     -- 2 -- Start button, taglist, layout",
+      "    \"skyfall\",      -- 3 -- Weather, taglist, window buttons, pop-up tray",
+      "}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles/config/awesome/rc.lua\t23\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "d6ae23a0-841f-11e9-8bee-f5b3746aa8d7",
+    "content": [
+      "local bars = require(\"bar_themes.\"..bar_theme_name)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles/config/awesome/rc.lua\t73\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "9544d6c0-841f-11e9-9c47-8df63972c204",
+    "content": [
+      "-- Theme handling library",
+      "local beautiful = require(\"beautiful\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t17\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "d12fc3f0-841c-11e9-bf2c-7114df98d7bd",
+    "content": [
+      "beautiful.init(awful.util.getdir(\"config\") .. \"/themes/default/theme.lua\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t51\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "66b80bd0-8418-11e9-ac90-eb08d221ca5b",
+    "content": [
+      "Shift"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t355\t25",
+    "filetype": "lua"
+  },
+  {
+    "id": "ae6c7b10-8417-11e9-ac90-eb08d221ca5b",
+    "content": [
+      "    awful.key({ modkey,           }, \"v\",       function () awful.spawn(vlc) end,",
+      "              {description = \"open vlc\", group = \"launcher\"}),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t300\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "9a817380-8417-11e9-ac90-eb08d221ca5b",
+    "content": [
+      "    awful.key({ modkey,           }, \"p\",       function () awful.spawn(python) end,",
+      "              {description = \"open python\", group = \"launcher\"}),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t297\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "8bb770c0-8417-11e9-ac90-eb08d221ca5b",
+    "content": [
+      "    awful.key({ modkey,           }, \"s\",       function () awful.spawn(spotify) end,",
+      "              {description = \"open spotify\", group = \"launcher\"}),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t294\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "8545a900-8417-11e9-8622-17fc333f1175",
+    "content": [
+      "kitty -e python"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t106\t21",
+    "filetype": "conf"
+  },
+  {
+    "id": "69f21da0-8417-11e9-8622-17fc333f1175",
+    "content": [
+      "spotify --force-device-scale-factor=1.5"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t103\t21",
+    "filetype": "conf"
+  },
+  {
+    "id": "613cce80-8417-11e9-ac90-eb08d221ca5b",
+    "content": [
+      "    awful.key({ modkey,           }, \"d\",       function () awful.spawn(launcher) end,",
+      "              {description = \"open rofi\", group = \"launcher\"}),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t290\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "570bb4d0-8417-11e9-ac90-eb08d221ca5b",
+    "content": [
+      "    awful.key({ modkey,           }, \"w\",       function () awful.spawn(browser) end,",
+      "              {description = \"open firefox\", group = \"launcher\"}),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t288\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "4539c940-8417-11e9-8622-17fc333f1175",
+    "content": [
+      "--no-startup-id rofi -show drun"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t91\t21",
+    "filetype": "conf"
+  },
+  {
+    "id": "161a5710-8417-11e9-ac90-eb08d221ca5b",
+    "content": [
+      "    awful.key({ modkey,           }, \"r\",       function () awful.spawn(filemanager) end,",
+      "              {description = \"open ranger file manager\", group = \"launcher\"}),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t285\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "4eff1e40-8416-11e9-9c15-1312581ed959",
+    "content": [
+      "theme.awesome_icon = theme_assets.awesome_icon(",
+      "    theme.menu_height, theme.bg_focus, theme.fg_focus",
+      ")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/themes/default/theme.lua\t121\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "49ef9880-83bc-11e9-acaa-4d9d5ae76ac8",
+    "content": [
+      "                "
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t312\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "fa18d2b0-83b9-11e9-850a-2f3989b2ee45",
+    "content": [
+      "nnoremap <C-h> :vertical resize -5<CR>",
+      "nnoremap <C-j> :resize -5<CR>",
+      "nnoremap <C-k> :resize +5<CR>",
+      "nnoremap <C-l> :vertical resize +5<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t140\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "e9f53360-83b9-11e9-850a-2f3989b2ee45",
+    "content": [
+      ":vertical resize -5<CR>"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t140\t16",
+    "filetype": "vim"
+  },
+  {
+    "id": "e6875cd0-83b9-11e9-850a-2f3989b2ee45",
+    "content": [
+      "nnoremap <C-h> :vertical resize -5<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t140\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "d2a9e9d0-83b9-11e9-850a-2f3989b2ee45",
+    "content": [
+      "nnoremap <C-h> <C-w>h",
+      "nnoremap <C-j> <C-w>j",
+      "nnoremap <C-k> <C-w>k",
+      "nnoremap <C-l> <C-w>l",
+      "vnoremap <C-h> <C-w>h",
+      "vnoremap <C-j> <C-w>j",
+      "vnoremap <C-k> <C-w>k",
+      "vnoremap <C-l> <C-w>l"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t130\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "0797dbb0-83b6-11e9-989c-ff28af15ac97",
+    "content": [
+      "="
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t285\t28",
+    "filetype": "lua"
+  },
+  {
+    "id": "876ac6d0-83b2-11e9-bf05-bfe2ab68fe8d",
+    "content": [
+      "九"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t153\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "84de4f90-83b2-11e9-bf05-bfe2ab68fe8d",
+    "content": [
+      "八"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t152\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "82ac7b70-83b2-11e9-bf05-bfe2ab68fe8d",
+    "content": [
+      "七"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t151\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "808c3380-83b2-11e9-bf05-bfe2ab68fe8d",
+    "content": [
+      "六"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t150\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "7e5a5f60-83b2-11e9-bf05-bfe2ab68fe8d",
+    "content": [
+      "五"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t149\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "7bbcf830-83b2-11e9-bf05-bfe2ab68fe8d",
+    "content": [
+      "四"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t148\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "7903f2b0-83b2-11e9-bf05-bfe2ab68fe8d",
+    "content": [
+      "三"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t147\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "75c394c0-83b2-11e9-bf05-bfe2ab68fe8d",
+    "content": [
+      "二"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t146\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "7234c8b0-83b2-11e9-bf05-bfe2ab68fe8d",
+    "content": [
+      "一"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t145\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "fbe09400-83b1-11e9-bf05-bfe2ab68fe8d",
+    "content": [
+      "# Set volume at 50%",
+      "exec amixer set Master 50%",
+      "",
+      "# Restore feh background",
+      "exec --no-startup-id ~/.fehbg &",
+      "",
+      "# Compton",
+      "exec --no-startup-id compton -b ",
+      "",
+      "# Dunst",
+      "exec --no-startup-id dunst &",
+      "",
+      "# Start libinput-gestures",
+      "exec --no-startup-id libinput-gestures-setup start",
+      "",
+      "# Start xss-lock",
+      "exec --no-startup-id xss-lock -l fade-lock +resetsaver &",
+      "",
+      "# Set redshift value",
+      "exec --no-startup-id redshift"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/i3/config\t223\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "ff6e0780-8364-11e9-b266-1380d54efac8",
+    "content": [
+      "九"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t153\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "fb3a48e0-8364-11e9-b266-1380d54efac8",
+    "content": [
+      "八"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t152\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "f7c609b0-8364-11e9-b266-1380d54efac8",
+    "content": [
+      "七"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t151\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "f4a17120-8364-11e9-b266-1380d54efac8",
+    "content": [
+      "六"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t150\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "f1c21ef0-8364-11e9-b266-1380d54efac8",
+    "content": [
+      "五"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t149\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "ede2c1e0-8364-11e9-b266-1380d54efac8",
+    "content": [
+      "四"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t148\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "ea10ab40-8364-11e9-b266-1380d54efac8",
+    "content": [
+      "三"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t147\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "e60c12f0-8364-11e9-b266-1380d54efac8",
+    "content": [
+      "二"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t146\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "dddc2070-8364-11e9-b266-1380d54efac8",
+    "content": [
+      "一"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t145\t12",
+    "filetype": "conf"
+  },
+  {
+    "id": "50604910-835f-11e9-a821-312e5d882f74",
+    "content": [
+      "+\t\t\th = (m->wh - ty) / (n - i) - m->gappx;",
+      "+\t\t\tresize(c, m->wx + mw + m->gappx, m->wy + ty, m->ww - mw - (2*c->bw) - 2*m->gappx, h - (2*c->bw), 0);",
+      "+\t\t\tty += HEIGHT(c) + m->gappx;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/temp.diff\t87\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "488888b0-835f-11e9-a821-312e5d882f74",
+    "content": [
+      "+\t\t\th = (m->wh - my) / (MIN(n, m->nmaster) - i) - m->gappx;",
+      "+\t\t\tresize(c, m->wx + m->gappx, m->wy + my, mw - (2*c->bw) - m->gappx, h - (2*c->bw), 0);",
+      "+\t\t\tmy += HEIGHT(c) + m->gappx;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/temp.diff\t80\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "2d225fb0-835f-11e9-a821-312e5d882f74",
+    "content": [
+      "+\t\tmw = m->ww - m->gappx;",
+      "+\tfor (i = 0, my = ty = m->gappx, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/temp.diff\t74\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "07e7bbf0-835f-11e9-a821-312e5d882f74",
+    "content": [
+      "+\t\tmw = m->ww - m->gappx;",
+      "+\tfor (i = 0, my = ty = m->gappx, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/temp.diff\t74\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "ea8ca0c0-835e-11e9-a821-312e5d882f74",
+    "content": [
+      "+void",
+      "+setgaps(const Arg *arg)",
+      "+{",
+      "+\tif ((arg->i == 0) || (selmon->gappx + arg->i < 0))",
+      "+\t\tselmon->gappx = 0;",
+      "+\telse",
+      "+\t\tselmon->gappx += arg->i;",
+      "+\tarrange(selmon);",
+      "+}",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/temp.diff\t55\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "d10b3d50-835e-11e9-a821-312e5d882f74",
+    "content": [
+      "+\tm->gappx = gappx;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/temp.diff\t47\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "c9564730-835e-11e9-a821-312e5d882f74",
+    "content": [
+      "+static void setgaps(const Arg *arg);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/temp.diff\t39\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "9677f840-835e-11e9-9a48-c959dfa69333",
+    "content": [
+      "-\t\t\th = (m->wh - ty) / (n - i);",
+      "-\t\t\tresize(c, m->wx + mw, m->wy + ty, m->ww - mw - (2*c->bw), h - (2*c->bw), False);",
+      "-\t\t\tty += HEIGHT(c);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-gaps.diff\t44\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "8f5026f0-835e-11e9-9a48-c959dfa69333",
+    "content": [
+      "-\t\t\th = (m->wh - my) / (MIN(n, m->nmaster) - i);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-gaps.diff\t36\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "8bc02260-835e-11e9-9a48-c959dfa69333",
+    "content": [
+      "-\t\t\tmy += HEIGHT(c);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-gaps.diff\t40\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "826c7060-835e-11e9-9a48-c959dfa69333",
+    "content": [
+      "-\t\t\th = (m->wh - my) / (MIN(n, m->nmaster) - i);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-gaps.diff\t36\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "79677aa0-835e-11e9-9a48-c959dfa69333",
+    "content": [
+      "-\t\tmw = m->nmaster ? m->ww * m->mfact : 0;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-gaps.diff\t30\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "714bac60-835e-11e9-9a48-c959dfa69333",
+    "content": [
+      "-\tunsigned int i, n, h, mw, my, ty;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-gaps.diff\t21\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "e3f118a0-8358-11e9-896d-5fda2d229864",
+    "content": [
+      "+void",
+      "+fibonacci(Monitor *mon, int s) {",
+      "+\tunsigned int i, n, nx, ny, nw, nh;",
+      "+\tClient *c;",
+      "+",
+      "+\tfor(n = 0, c = nexttiled(mon->clients); c; c = nexttiled(c->next), n++);",
+      "+\tif(n == 0)",
+      "+\t\treturn;",
+      "+\t",
+      "+\tnx = mon->wx;",
+      "+\tny = 0;",
+      "+\tnw = mon->ww;",
+      "+\tnh = mon->wh;",
+      "+\t",
+      "+\tfor(i = 0, c = nexttiled(mon->clients); c; c = nexttiled(c->next)) {",
+      "+\t\tif((i % 2 && nh / 2 > 2 * c->bw)",
+      "+\t\t   || (!(i % 2) && nw / 2 > 2 * c->bw)) {",
+      "+\t\t\tif(i < n - 1) {",
+      "+\t\t\t\tif(i % 2)",
+      "+\t\t\t\t\tnh /= 2;",
+      "+\t\t\t\telse",
+      "+\t\t\t\t\tnw /= 2;",
+      "+\t\t\t\tif((i % 4) == 2 && !s)",
+      "+\t\t\t\t\tnx += nw;",
+      "+\t\t\t\telse if((i % 4) == 3 && !s)",
+      "+\t\t\t\t\tny += nh;",
+      "+\t\t\t}",
+      "+\t\t\tif((i % 4) == 0) {",
+      "+\t\t\t\tif(s)",
+      "+\t\t\t\t\tny += nh;",
+      "+\t\t\t\telse",
+      "+\t\t\t\t\tny -= nh;",
+      "+\t\t\t}",
+      "+\t\t\telse if((i % 4) == 1)",
+      "+\t\t\t\tnx += nw;",
+      "+\t\t\telse if((i % 4) == 2)",
+      "+\t\t\t\tny += nh;",
+      "+\t\t\telse if((i % 4) == 3) {",
+      "+\t\t\t\tif(s)",
+      "+\t\t\t\t\tnx += nw;",
+      "+\t\t\t\telse",
+      "+\t\t\t\t\tnx -= nw;",
+      "+\t\t\t}",
+      "+\t\t\tif(i == 0)",
+      "+\t\t\t{",
+      "+\t\t\t\tif(n != 1)",
+      "+\t\t\t\t\tnw = mon->ww * mon->mfact;",
+      "+\t\t\t\tny = mon->wy;",
+      "+\t\t\t}",
+      "+\t\t\telse if(i == 1)",
+      "+\t\t\t\tnw = mon->ww - nw;",
+      "+\t\t\ti++;",
+      "+\t\t}",
+      "+\t\tresize(c, nx, ny, nw - 2 * c->bw, nh - 2 * c->bw, False);",
+      "+\t}",
+      "+}",
+      "+",
+      "+void",
+      "+dwindle(Monitor *mon) {",
+      "+\tfibonacci(mon, 1);",
+      "+}",
+      "+",
+      "+void",
+      "+spiral(Monitor *mon) {",
+      "+\tfibonacci(mon, 0);",
+      "+}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-fibonacci.diff\t20\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "79ab4920-8358-11e9-ab22-0907bcf6eaa5",
+    "content": [
+      "static const char *tags[] = { \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\" };"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.def.h\t24\t1",
+    "filetype": "c"
+  },
+  {
+    "id": "4ed1be00-8358-11e9-8931-b3c2f92b2dd8",
+    "content": [
+      "+\t\t\tdrw_rect(drw, x + boxw, 0, w - ( 2 * boxw + 1), boxw,",
+      "+\t\t\t    m == selmon && selmon->sel && selmon->sel->tags & 1 << i,",
+      "+\t\t\t    urg & 1 << i);",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-tagindicator.diff\t11\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "c58afd70-8355-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "\t{ MODKEY,\t                XK_Return, spawn,          {.v = termcmd } },"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.def.h\t78\t1",
+    "filetype": "c"
+  },
+  {
+    "id": "813a9630-8355-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "|ShiftMask"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.def.h\t83\t10",
+    "filetype": "c"
+  },
+  {
+    "id": "8043da20-8355-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "|ShiftMask,             XK_k,      incnmaster,     {"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.def.h\t83\t10",
+    "filetype": "c"
+  },
+  {
+    "id": "62919e40-8355-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "|ShiftMask"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.def.h\t89\t10",
+    "filetype": "c"
+  },
+  {
+    "id": "30c8b6f0-8355-11e9-81db-8bce47546a42",
+    "content": [
+      "bindsym $mod+o exec kitty -e utop"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/i3/config\t118\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "1ba49320-8355-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "static const char *pdfcmd[]  = { \"zathura\", NULL };"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.def.h\t72\t1",
+    "filetype": "c"
+  },
+  {
+    "id": "13e2f2d0-8355-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "static const char *vlccmd[]  = { \"vlc\", NULL };"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.def.h\t71\t1",
+    "filetype": "c"
+  },
+  {
+    "id": "09edf7c0-8355-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "static const char *pythoncmd[]  = { \"kitty -e python\", NULL };"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.def.h\t70\t1",
+    "filetype": "c"
+  },
+  {
+    "id": "00596c30-8355-11e9-81db-8bce47546a42",
+    "content": [
+      "spotify --force-device-scale-factor=1.5"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t103\t21",
+    "filetype": "conf"
+  },
+  {
+    "id": "f85c4980-8354-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "static const char *rangercmd[]  = { \"kitty -e ranger\", NULL };"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.def.h\t68\t1",
+    "filetype": "c"
+  },
+  {
+    "id": "ee002830-8354-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "static const char *rangercmd[]  = { \"kitty -e ranger\", NULL };"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.def.h\t68\t1",
+    "filetype": "c"
+  },
+  {
+    "id": "e6bdf110-8354-11e9-81db-8bce47546a42",
+    "content": [
+      "--no-startup-id rofi -show drun"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t91\t21",
+    "filetype": "conf"
+  },
+  {
+    "id": "d74e8690-8354-11e9-81db-8bce47546a42",
+    "content": [
+      "--no-startup-id rofi -show drun"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/i3/config\t91\t21",
+    "filetype": "conf"
+  },
+  {
+    "id": "b0c4f4a0-8354-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "static const char *webcmd[]  = { \"firefox\", NULL };"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.def.h\t66\t1",
+    "filetype": "c"
+  },
+  {
+    "id": "1862a400-8354-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "static const char *termcmd[]  = { \"kitty\", NULL };"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.def.h\t65\t1",
+    "filetype": "c"
+  },
+  {
+    "id": "aa7f8980-8353-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "\t{ MODKEY|ShiftMask,             XK_m,      setlayout,      {.v = &layouts[2]} },"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/config.def.h\t83\t1",
+    "filetype": "c"
+  },
+  {
+    "id": "05623570-8352-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "+\t\t\tr = n - i;",
+      "+\t\t\th = (m->wh - ty - gappx * (r - 1)) / r;",
+      "+\t\t\tresize(c, m->wx + mw + g, m->wy + ty, m->ww - mw - g - (2*c->bw), h - (2*c->bw), False);",
+      "+\t\t\tty += HEIGHT(c) + gappx;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-gaps.diff\t47\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "fd9c9d80-8351-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "+\t\t\tmy += HEIGHT(c) + gappx;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-gaps.diff\t41\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "f0892460-8351-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "+\t\t\tr = MIN(n, m->nmaster) - i;",
+      "+\t\t\th = (m->wh - my - gappx * (r - 1)) / r;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-gaps.diff\t37\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "e7040220-8351-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "+\t\tmw = m->nmaster ? (m->ww - (g = gappx)) * m->mfact : 0;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-gaps.diff\t31\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "d642c340-8351-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "+\tunsigned int i, n, h, r, g = 0, mw, my, ty;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-gaps.diff\t22\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "c8b07d30-8351-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      " tile(Monitor *m) {"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-gaps.diff\t20\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "bce00b60-8351-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "+\tunsigned int i, n, h, r, g = 0, mw, my, ty;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-gaps.diff\t22\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "97057e20-8351-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "+static const unsigned int gappx     = 1;        /* gap pixel between windows */"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-gaps.diff\t9\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "244322c0-8351-11e9-9c19-e3d6b3df4f47",
+    "content": [
+      "+\tunsigned int i, n, h, r, g = 0, mw, my, ty;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/dwm-6.2/patch-gaps.diff\t22\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "f8d21290-8350-11e9-8d4f-53681d002568",
+    "content": [
+      "# Set volume at 50%",
+      "exec amixer set Master 50%",
+      "",
+      "# Restore feh background",
+      "exec --no-startup-id ~/.fehbg &",
+      "",
+      "# Compton",
+      "exec --no-startup-id compton -b ",
+      "",
+      "# Dunst",
+      "exec --no-startup-id dunst &",
+      "",
+      "# Start libinput-gestures",
+      "exec --no-startup-id libinput-gestures-setup start",
+      "",
+      "# Start xss-lock",
+      "exec --no-startup-id xss-lock -l fade-lock +resetsaver &",
+      "",
+      "# Set redshift value",
+      "exec --no-startup-id redshift"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/i3/config\t223\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "ebda10b0-8350-11e9-8d4f-53681d002568",
+    "content": [
+      "exec amixer set Master 50%"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/i3/config\t224\t1",
+    "filetype": "conf"
+  },
+  {
     "id": "6f698740-8350-11e9-9c19-e3d6b3df4f47",
     "content": [
       "+\trunAutostart();"
@@ -701,203 +2062,5 @@
     "regtype": "V",
     "path": "file:///home/kyle/.config/nvim/init.vim\t196\t1",
     "filetype": "vim"
-  },
-  {
-    "id": "1c1b7430-810d-11e9-9343-17e952616246",
-    "content": [
-      "nnoremap <leader>gc :Gcommit<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t193\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "dcb7bb50-810c-11e9-9343-17e952616246",
-    "content": [
-      "nnoremap <leader>ga :Gwrite<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t192\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "b8b964f0-8108-11e9-91a4-b57e167aadce",
-    "content": [
-      "\\e[38;5;195m\\"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bashrc\t9\t144",
-    "filetype": "sh"
-  },
-  {
-    "id": "a6916a20-8108-11e9-91a4-b57e167aadce",
-    "content": [
-      "\\e[38;5;195m\\"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bashrc\t9\t8",
-    "filetype": "sh"
-  },
-  {
-    "id": "078e2b70-8108-11e9-bab2-0ba1c5526341",
-    "content": [
-      "background #0B090E"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t439\t1",
-    "filetype": "conf"
-  },
-  {
-    "id": "1b871d10-8105-11e9-bab2-0ba1c5526341",
-    "content": [
-      "E5E9F0"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t511\t10",
-    "filetype": "conf"
-  },
-  {
-    "id": "47a54810-8103-11e9-bf9f-4fb49058fe5f",
-    "content": [
-      "#0B090E"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/termite/config\t48\t16",
-    "filetype": "conf"
-  },
-  {
-    "id": "e0cb96e0-8101-11e9-bf9f-4fb49058fe5f",
-    "content": [
-      "#2e3440"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/termite/config\t101\t21",
-    "filetype": "conf"
-  },
-  {
-    "id": "d66f0060-8101-11e9-bf9f-4fb49058fe5f",
-    "content": [
-      "#d8dee9"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/termite/config\t100\t10",
-    "filetype": "conf"
-  },
-  {
-    "id": "839852f0-80fd-11e9-9ec6-1b80b76eeed5",
-    "content": [
-      "let g:airline_theme='term'"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t96\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "9b906930-80fb-11e9-8c14-d5920b384dd9",
-    "content": [
-      "ale"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t94\t50",
-    "filetype": "vim"
-  },
-  {
-    "id": "99f297b0-80fb-11e9-8c14-d5920b384dd9",
-    "content": [
-      "branch"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t94\t40",
-    "filetype": "vim"
-  },
-  {
-    "id": "8656e8a0-80fb-11e9-a79c-f572874f0d90",
-    "content": [
-      "tabline"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t94\t29",
-    "filetype": "vim"
-  },
-  {
-    "id": "191b4ca0-8096-11e9-be93-957a9f54179d",
-    "content": [
-      "guibg=#111111"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/coc.nvim/doc/coc.txt\t1543\t41",
-    "filetype": "help"
-  },
-  {
-    "id": "13e11a80-8096-11e9-be93-957a9f54179d",
-    "content": [
-      "  The highlight used for document highlight feature. Normally used for"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/coc.nvim/doc/coc.txt\t1545\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "10ab43e0-8096-11e9-be93-957a9f54179d",
-    "content": [
-      "guibg=#111111"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/coc.nvim/doc/coc.txt\t1543\t41",
-    "filetype": "help"
-  },
-  {
-    "id": "fb8906c0-8093-11e9-96ff-57bffbfc4c20",
-    "content": [
-      "hi default CocHighlightText  guibg=#111111 ctermbg=223"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/coc.nvim/doc/coc.txt\t1543\t12",
-    "filetype": "help"
-  },
-  {
-    "id": "c1149a20-802c-11e9-b956-f902c79a6556",
-    "content": [
-      "\t\t    moves.push_back(std::make_tuple(this->get_x(), this->get_y() + difference));"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/chess/pieces.hpp\t61\t1",
-    "filetype": "cpp"
-  },
-  {
-    "id": "797659b0-8027-11e9-b078-f9b3583bf011",
-    "content": [
-      "let g:ale_lint_on_insert_leave = 1"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t172\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "6bd7d410-8026-11e9-b078-f9b3583bf011",
-    "content": [
-      "Linting"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/ale/doc/ale.txt\t11\t6",
-    "filetype": "help"
-  },
-  {
-    "id": "4c1fa290-7fc4-11e9-abbc-47788b5eeba7",
-    "content": [
-      "#endif"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/chess/pieces.hpp\t6\t1",
-    "filetype": "cpp"
-  },
-  {
-    "id": "4ac8ec30-7fc4-11e9-abbc-47788b5eeba7",
-    "content": [
-      "#ifndef"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/chess/pieces.hpp\t2\t1",
-    "filetype": "cpp"
   }
 ]

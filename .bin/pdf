@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FILE=$(fzf --no-mouse -q ".pdf$ " --prompt="Open PDF: " --bind=tab:up,btab:down)
+FILE=$(fzf --no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD -q ".pdf$ " --prompt="Open PDF: ")
 
 # nohup allows the terminal to be closed without zathura dying
 nohup zathura "$FILE" &

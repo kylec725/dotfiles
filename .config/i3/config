@@ -109,7 +109,7 @@ bindsym $mod+p exec kitty -e python
 bindsym $mod+v exec vlc
 
 # zathura
-bindsym $mod+z exec zathura
+bindsym $mod+z exec kitty -e pdf
 
 # calcurse
 bindsym $mod+c exec kitty -e calcurse

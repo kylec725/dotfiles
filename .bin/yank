@@ -1,3 +1,3 @@
 #!/bin/sh
 
-find ~/ | fzf --prompt="Yank file: " | xclip -selection clipboard
+find ~/ | fzf --no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD --prompt="Yank file: " | xclip -selection clipboard

@@ -31,6 +31,8 @@ Plug 'gcavallanti/vim-noscrollbar'
 " Nord colorscheme (only used for airline)
 Plug 'arcticicestudio/nord-vim'
 Plug 'vimlab/split-term.vim'
+" fzf
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 "----------------------"
@@ -323,3 +325,6 @@ nnoremap <silent> <leader>tt :call TermToggle()<CR>
 tnoremap <silent> <leader>tt <C-\><C-n>:call TermToggle()<CR>
 nnoremap <silent> <leader>ts :call TermSwitch()<CR>
 tnoremap <silent> <leader>ts <C-\><C-n>:call TermSwitch()<CR>
+
+" fzf settings !!!!!
+
