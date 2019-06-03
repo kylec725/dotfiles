@@ -6,13 +6,6 @@ rc.lua
 -- Load Extra requirements
 local helpers = require("helpers")
 
--- Theme Settings
--- Theme handling library
-local beautiful = require("beautiful")
-
-
-
-
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
@@ -26,6 +19,16 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
+
+-- Theme Settings
+-- Theme handling library
+local beautiful = require("beautiful")
+
+beautiful.init(awful.util.getdir("config") .. "/themes/skyfall/theme.lua")
+-- beautiful.useless_gap = 10
+
+
+
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -56,15 +59,12 @@ end
 awful.spawn.with_shell("~/.config/awesome/autorun.sh")
 
 -- {{{ Variable definitions
-beautiful.init(awful.util.getdir("config") .. "/themes/skyfall/theme.lua")
--- beautiful.useless_gap = 10
-
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
 browser = "firefox"
 launcher = "--no-startup-id rofi -show drun"
 filemanager = "kitty -e ranger"
-pdf = "zathura"
+pdf = "kitty -e pdf"
 spotify = "spotify --force-device-scale-factor=1.5"
 python = "kitty -e python"
 vlc = "vlc"
@@ -245,7 +245,7 @@ root.buttons(gears.table.join(
 
 -- {{{ Key bindings
 globalkeys = gears.table.join(
-    awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
+    awful.key({ modkey, "Shift"   }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
               {description = "view previous", group = "tag"}),

@@ -77,12 +77,12 @@ theme.border_normal = theme.xcolor0
 theme.border_width = 4
 theme.border_focus = theme.xcolor7
 -- Rounded corners
-theme.border_radius = dpi(6)
+theme.border_radius = dpi(8)
 
 -- Titlebars
 -- (Titlebar items can be customized in titlebars.lua)
 theme.titlebars_enabled = true
-theme.titlebar_size = dpi(10)
+theme.titlebar_size = dpi(12)
 theme.titlebar_title_enabled = true
 theme.titlebar_font = "sans bold 9"
 -- Window title alignment: left, right, center
@@ -305,7 +305,7 @@ theme.taglist_text_color_urgent   = { theme.xcolor9, theme.xcolor10, theme.xcolo
 theme.prompt_fg = theme.xcolor12
 
 -- Text Taglist (default)
-theme.taglist_font = "monospace bold 9"
+theme.taglist_font = "monospace bold 13"
 theme.taglist_bg_focus = theme.xbackground
 theme.taglist_fg_focus = theme.xcolor12
 theme.taglist_bg_occupied = theme.xbackground
@@ -323,7 +323,7 @@ theme.taglist_squares_sel = theme_assets.taglist_squares_sel(
     taglist_square_size, theme.fg_focus
 )
 theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
-    taglist_square_size, theme.fg_normal
+    taglist_square_size, theme.fg_focus
 )
 
 -- Variables set for theming the menu:
@@ -454,9 +454,9 @@ theme.brightness_bar_active_color = theme.xcolor14
 theme.brightness_bar_background_color = theme.xcolor14 .. "33"
 
 -- Generate Awesome icon:
-theme.awesome_icon = theme_assets.awesome_icon(
-    theme.menu_height, theme.bg_focus, theme.fg_focus
-)
+-- theme.awesome_icon = theme_assets.awesome_icon(
+--     theme.menu_height, theme.bg_focus, theme.fg_focus
+-- )
 
 -- Define the icon theme for application icons. If not set then the icons
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.

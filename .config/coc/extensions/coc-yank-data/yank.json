@@ -1,5 +1,59 @@
 [
   {
+    "id": "200d1cf0-8640-11e9-85a1-fd4e9a63620a",
+    "content": [
+      "beautiful.init(awful.util.getdir(\"config\") .. \"/themes/skyfall/theme.lua\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t59\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "f328ea30-863e-11e9-85a1-fd4e9a63620a",
+    "content": [
+      "beautiful.init(awful.util.getdir(\"config\") .. \"/themes/skyfall/theme.lua\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t59\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "87810bf0-8639-11e9-b4e5-5bda20142a3d",
+    "content": [
+      "■"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-noscrollbar/plugin/noscrollbar.vim\t15\t24",
+    "filetype": "vim"
+  },
+  {
+    "id": "7e9d80e0-8639-11e9-b4e5-5bda20142a3d",
+    "content": [
+      "■"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-noscrollbar/plugin/noscrollbar.vim\t15\t24",
+    "filetype": "vim"
+  },
+  {
+    "id": "78c958b0-8639-11e9-b4e5-5bda20142a3d",
+    "content": [
+      "■"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-noscrollbar/plugin/noscrollbar.vim\t15\t24",
+    "filetype": "vim"
+  },
+  {
+    "id": "66ffd190-8639-11e9-b4e5-5bda20142a3d",
+    "content": [
+      "■"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-noscrollbar/plugin/noscrollbar.vim\t15\t24",
+    "filetype": "vim"
+  },
+  {
     "id": "7f7ba0c0-85c9-11e9-863c-ef73f25ff23c",
     "content": [
       "--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD"
@@ -2007,61 +2061,5 @@
     "regtype": "V",
     "path": "file:///home/kyle/.config/nvim/plugged/vim-devicons/doc/webdevicons.txt\t378\t1",
     "filetype": "help"
-  },
-  {
-    "id": "9a693180-825f-11e9-a988-ed14241d1248",
-    "content": [
-      "  let g:webdevicons_enable_airline_tabline = 1"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/vim-devicons/doc/webdevicons.txt\t373\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "596714b0-81cc-11e9-89d9-c7af70ea9688",
-    "content": [
-      "malloc(sizeof(piece))"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/chess/pieces.hpp\t70\t29",
-    "filetype": "cpp"
-  },
-  {
-    "id": "176d8b30-81cb-11e9-89d9-c7af70ea9688",
-    "content": [
-      "\t\t\tdelete board[x][y];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/chess/pieces.hpp\t82\t1",
-    "filetype": "cpp"
-  },
-  {
-    "id": "18cefeb0-81c5-11e9-a34d-1517a064c03c",
-    "content": [
-      "nnoremap <silent> <C-h> :bprevious<CR>",
-      "nnoremap <silent> <C-l> :bnext<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t76\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "3aed8ad0-81c4-11e9-ab0d-79f214a18aa3",
-    "content": [
-      "inoremap <silent> <C-h> :bprevious<CR>",
-      "inoremap <silent> <C-l> :bnext<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t78\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "39653d20-81c4-11e9-ab0d-79f214a18aa3",
-    "content": [
-      "inoremap <silent> <C-l> :bnext<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t79\t1",
-    "filetype": "vim"
   }
 ]
