@@ -1,0 +1,3 @@
+#!/bin/sh
+
+find ~/ | fzf --prompt="Yank file: " | xclip -selection clipboard
