@@ -1,5 +1,78 @@
 [
   {
+    "id": "7f7ba0c0-85c9-11e9-863c-ef73f25ff23c",
+    "content": [
+      "--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t16\t26",
+    "filetype": "sh"
+  },
+  {
+    "id": "c51ff4b0-85c8-11e9-863c-ef73f25ff23c",
+    "content": [
+      "--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t16\t26",
+    "filetype": "sh"
+  },
+  {
+    "id": "1ca9e340-85c8-11e9-863c-ef73f25ff23c",
+    "content": [
+      "--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t16\t26",
+    "filetype": "sh"
+  },
+  {
+    "id": "fb02bbf0-85c6-11e9-863c-ef73f25ff23c",
+    "content": [
+      "--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t16\t26",
+    "filetype": "sh"
+  },
+  {
+    "id": "dc48a270-85c5-11e9-8e19-db02416a643e",
+    "content": [
+      "<C-\\><C-n>"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t325\t30",
+    "filetype": "vim"
+  },
+  {
+    "id": "85390970-85c5-11e9-8e19-db02416a643e",
+    "content": [
+      "nnoremap <leader>f :Files<CR>",
+      "tnoremap <leader>f :Files<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t334\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "7cd47260-85c5-11e9-8e19-db02416a643e",
+    "content": [
+      "nnoremap <leader>f :Files<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t334\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "8cd655b0-85c1-11e9-ab2a-83cc564845de",
+    "content": [
+      "ps -e | fzf | awk '{ print $1 }'"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/merk\t3\t1",
+    "filetype": "sh"
+  },
+  {
     "id": "71c3cbf0-85b6-11e9-99a2-0d1968738bce",
     "content": [
       "--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD"
@@ -1989,78 +2062,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/nvim/init.vim\t79\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "38240a90-81c4-11e9-ab0d-79f214a18aa3",
-    "content": [
-      "inoremap <silent> <C-h> :bprevious<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t78\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "17fe84c0-81c4-11e9-9313-b381ec7b2573",
-    "content": [
-      "nnoremap <silent> <C-l> :bnext<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t77\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "16b0a800-81c4-11e9-9313-b381ec7b2573",
-    "content": [
-      "nnoremap <silent> <C-h> :bprevious<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t76\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "354d3c20-817d-11e9-b373-4d51eb83635a",
-    "content": [
-      "*board[x][y]"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/chess/pieces.hpp\t78\t21",
-    "filetype": "cpp"
-  },
-  {
-    "id": "32898840-817d-11e9-b373-4d51eb83635a",
-    "content": [
-      "*board[x][y]"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/chess/pieces.hpp\t74\t21",
-    "filetype": "cpp"
-  },
-  {
-    "id": "936b3cf0-817b-11e9-a347-25524a4f5b36",
-    "content": [
-      "nnoremap <LEADER>ad :ALEDetail<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t181\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "750b1e90-815f-11e9-bb36-49071a085f90",
-    "content": [
-      "let g:ale_lint_on_text_changed = 'always'"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t178\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "5f0cb240-815d-11e9-9cab-8326d2ec80ec",
-    "content": [
-      "nnoremap <leader>gu :!git push<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t196\t1",
     "filetype": "vim"
   }
 ]

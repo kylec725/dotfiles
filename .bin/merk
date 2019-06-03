@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ps -ef | fzf | awk '{ print $2 }' | xargs kill
