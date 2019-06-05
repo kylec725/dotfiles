@@ -46,4 +46,6 @@ awful.widget.watch(bat_script, update_interval, function(widget, stdout)
                      update_widget(bat)
 end)
 
+update_widget(bat_script)
+
 return battery

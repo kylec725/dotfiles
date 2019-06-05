@@ -9,7 +9,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-commentary'
-" Plug 'Yggdroot/indentLine'
+Plug 'Yggdroot/indentLine'
 Plug 'gregsexton/MatchTag'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-repeat'
@@ -23,7 +23,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 " Language pack support
 Plug 'sheerun/vim-polyglot'
-Plug 'tbastos/vim-lua'
 " Documentation integration
 Plug 'KabbAmine/zeavim.vim'
 " Position indicator
@@ -355,3 +354,6 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
+
+" indent line
+let g:indentLine_char = '▏'

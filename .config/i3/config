@@ -93,9 +93,6 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 # firefox
 bindsym $mod+w exec firefox
 
-# thunderbird
-bindsym $mod+e exec thunderbird
-
 # ranger
 bindsym $mod+r exec kitty -e ranger
 

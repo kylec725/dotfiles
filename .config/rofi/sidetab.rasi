@@ -12,7 +12,7 @@ configuration {
 }
 
 * {
-	background-color:            #080808;
+	background-color:            transparent;
 	text-color:                  #d3d7cf;
 	selbg:                       #215d9c;
 	actbg:                       #262626;
@@ -49,6 +49,8 @@ window {
 	width:		 22%;
 	orientation: horizontal;
 	children:	 [mainbox];
+	transparency: "real";
+	background-color: #20262CE6; /*base00 + CC (80% opacity)*/
 }
 
 mainbox {

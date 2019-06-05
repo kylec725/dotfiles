@@ -9,6 +9,7 @@ function run {
 }
 
 # Set volume at 50%
+amixer set Master unmute
 amixer set Master 50%
 
 # Restore feh background
@@ -21,10 +22,10 @@ run compton -b
 # dunst &
 
 # Start libinput-gestures
-# libinput-gestures-setup start
+libinput-gestures-setup start
 
 # Start xss-lock
 run xss-lock -l fade-lock +resetsaver &
 
 # Set redshift value
-# run redshift
+run redshift -c ~/.config/redshift/redshift.conf

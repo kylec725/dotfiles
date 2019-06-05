@@ -1,6 +1,6 @@
 audio.sync_bitrate_enumeration=4
 ui.track_notifications_enabled=false
-audio.play_bitrate_enumeration=4
 gaia.known_zeroconf="{\"4b244a0eb955c87944c3bedd4f9214d42c6cc022\":{\"known\":false,\"popularity\":3,\"prio\":\"connect\",\"shown\":0}}"
+audio.play_bitrate_enumeration=4
 app.browser.zoom-level=-50
 app.player.volume=36207

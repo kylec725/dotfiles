@@ -13,11 +13,11 @@ local keygrabber = require("awful.keygrabber")
 local icon_size = beautiful.exit_screen_icon_size or 140
 local text_font = beautiful.exit_screen_font or "sans 14"
 local icon_font = "Typicons 90"
-local poweroff_text_icon = ""
-local reboot_text_icon = ""
-local suspend_text_icon = ""
-local exit_text_icon = ""
-local lock_text_icon = ""
+local poweroff_text_icon = ""
+local reboot_text_icon = ""
+local suspend_text_icon = ""
+local exit_text_icon = ""
+local lock_text_icon = ""
 
 -- Commands
 local poweroff_command = function()
@@ -37,7 +37,7 @@ local exit_command = function()
   awesome.quit()
 end
 local lock_command = function()
-  awful.spawn.with_shell("i3lock")
+  awful.spawn.with_shell("fade-lock")
   exit_screen_hide()
 end
 
@@ -48,7 +48,7 @@ goodbye_widget.font = "sans 70"
 
 local poweroff_icon = wibox.widget.textbox(poweroff_text_icon)
 poweroff_icon.font = icon_font
-poweroff_icon.markup = helpers.colorize_text(poweroff_icon.text, beautiful.xcolor1)
+poweroff_icon.markup = helpers.colorize_text(poweroff_icon.text, "#DB86BA")
 local poweroff_text = wibox.widget.textbox("Poweroff")
 poweroff_text.font = text_font
 
@@ -78,7 +78,7 @@ poweroff:buttons(gears.table.join(
 
 local reboot_icon = wibox.widget.textbox(reboot_text_icon)
 reboot_icon.font = icon_font
-reboot_icon.markup = helpers.colorize_text(reboot_icon.text, beautiful.xcolor2)
+reboot_icon.markup = helpers.colorize_text(reboot_icon.text, "#74DD91")
 local reboot_text = wibox.widget.textbox("Reboot")
 reboot_text.font = text_font
 
@@ -108,7 +108,7 @@ reboot:buttons(gears.table.join(
 
 local suspend_icon = wibox.widget.textbox(suspend_text_icon)
 suspend_icon.font = icon_font
-suspend_icon.markup = helpers.colorize_text(suspend_icon.text, beautiful.xcolor3)
+suspend_icon.markup = helpers.colorize_text(suspend_icon.text, "#E49186")
 local suspend_text = wibox.widget.textbox("Suspend")
 suspend_text.font = text_font
 
@@ -139,7 +139,7 @@ suspend:buttons(gears.table.join(
 
 local exit_icon = wibox.widget.textbox(exit_text_icon)
 exit_icon.font = icon_font
-exit_icon.markup = helpers.colorize_text(exit_icon.text, beautiful.xcolor4)
+exit_icon.markup = helpers.colorize_text(exit_icon.text, "#75DBE1")
 local exit_text = wibox.widget.textbox("Exit")
 exit_text.font = text_font
 
@@ -169,7 +169,7 @@ exit:buttons(gears.table.join(
 
 local lock_icon = wibox.widget.textbox(lock_text_icon)
 lock_icon.font = icon_font
-lock_icon.markup = helpers.colorize_text(lock_icon.text, beautiful.xcolor5)
+lock_icon.markup = helpers.colorize_text(lock_icon.text, "#B4A1DB")
 local lock_text = wibox.widget.textbox("Lock")
 lock_text.font = text_font
 
@@ -262,6 +262,12 @@ exit_screen:setup {
       nil,
       expand = "none",
       layout = wibox.layout.align.horizontal
+    },
+    {
+        pad(10),
+        pad(10),
+        pad(10),
+        layout = wibox.layout.fixed.vertical
     },
     {
       nil,

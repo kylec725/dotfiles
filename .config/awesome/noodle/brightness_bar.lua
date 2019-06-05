@@ -46,7 +46,7 @@ local brightness_bar = wibox.widget{
 -- ))
 
 local function update_widget()
-    awful.spawn.easy_async_with_shell("xbacklight -get", function(out)
+    awful.spawn.easy_async_with_shell("light", function(out)
         -- Remove trailing whitespaces
         -- out = out:gsub('^%s*(.-)%s*$', '%1')
         -- host_text.markup = helpers.colorize_text("@"..out, xcolor8)
@@ -58,6 +58,10 @@ end
 awesome.connect_signal("brightness_changed", function ()
     update_widget()
 end)
+
+brightness_bar.update = function ()
+    update_widget()
+end
 
 update_widget()
 
