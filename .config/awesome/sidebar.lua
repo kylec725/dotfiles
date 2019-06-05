@@ -176,13 +176,14 @@ cpu:buttons(
           return awful.rules.match(c, {name = 'htop'})
         end
         awful.client.run_or_raise(terminal .." -e htop", matcher)
-    end),
-    awful.button({ }, 3, function ()
-        local matcher = function (c)
-          return awful.rules.match(c, {class = 'Lxtask'})
-        end
-        awful.client.run_or_raise("lxtask", matcher)
+        sidebar.visible = false
     end)
+    -- awful.button({ }, 3, function ()
+    --     local matcher = function (c)
+    --       return awful.rules.match(c, {class = 'Lxtask'})
+    --     end
+    --     awful.client.run_or_raise("lxtask", matcher)
+    -- end)
 ))
 
 local ram_icon = wibox.widget.imagebox(beautiful.ram_icon)
@@ -214,13 +215,14 @@ ram:buttons(
           return awful.rules.match(c, {name = 'htop'})
         end
         awful.client.run_or_raise(terminal .." -e htop", matcher)
-    end),
-    awful.button({ }, 3, function ()
-        local matcher = function (c)
-          return awful.rules.match(c, {class = 'Lxtask'})
-        end
-        awful.client.run_or_raise("lxtask", matcher)
+        sidebar.visible = false
     end)
+    -- awful.button({ }, 3, function ()
+    --     local matcher = function (c)
+    --       return awful.rules.match(c, {class = 'Lxtask'})
+    --     end
+    --     awful.client.run_or_raise("lxtask", matcher)
+    -- end)
 ))
 
 
@@ -353,6 +355,7 @@ local disk = wibox.widget{
 disk:buttons(gears.table.join(
                        awful.button({ }, 1, function ()
                            awful.spawn(filemanager, {floating = false})
+                           sidebar.visible = false
                        end)
                        -- awful.button({ }, 3, function ()
                        --     awful.spawn(filemanager .. " /data", {floating = true})
@@ -372,7 +375,7 @@ local search = wibox.widget{
   layout = wibox.layout.fixed.horizontal
 }
 search:buttons(gears.table.join(
-                 awful.button({ }, 1, function ()
+                 awful.button({ }, 3, function ()
                      awful.spawn.with_shell("rofi -show drun")
                      sidebar.visible = false
                  end)
@@ -453,18 +456,18 @@ sidebar:buttons(gears.table.join(
 ))
 
 -- Hide sidebar when mouse leaves
--- if beautiful.sidebar_hide_on_mouse_leave then
---   sidebar:connect_signal("mouse::leave", function ()
---                            sidebar.visible = false
---   end)
--- end
--- Activate sidebar by moving the mouse at the edge of the screen
 if beautiful.sidebar_hide_on_mouse_leave then
+  sidebar:connect_signal("mouse::leave", function ()
+                           sidebar.visible = false
+  end)
+end
+-- Activate sidebar by moving the mouse at the edge of the screen
+if beautiful.sidebar_show_on_mouse_edge then
   local sidebar_activator = wibox({y = sidebar.y, width = 1, visible = true, ontop = false, opacity = 0, below = true})
   sidebar_activator.height = sidebar.height
   -- sidebar_activator.height = sidebar.height - beautiful.wibar_height
   sidebar_activator:connect_signal("mouse::enter", function ()
-                                     sidebar.visible = false
+                                     sidebar.visible = true
   end)
 
   if beautiful.sidebar_position == "right" then
