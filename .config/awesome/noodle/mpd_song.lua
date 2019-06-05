@@ -119,8 +119,6 @@ local function update_widget()
   --       .. artist .. "</span>"
   --   end
 
-  local old_title = mpd_title.text
-  local old_artist = mpd_artist.text
   -- send two requests, one for artist and one for title
   awful.spawn.easy_async_with_shell(title_request, -- title request
     function(stdout)
@@ -148,15 +146,18 @@ local function update_widget()
         if (artist == nil) then
             mpd_artist.text = "---------"
         else
+            -- send notification if both artist and title have changed
+            if (artist ~= mpd_artist.text) then
+                new_song = true
+                -- sleep to allow the title request to finish
+                os.execute("sleep 1")
+                send_notification(artist, mpd_title.text)
+            end
             mpd_artist.text = artist
     end
     end
   )
 
-  -- send notification if both artist and title have changed
-  if (mpd_title.text ~= old_title and mpd_artist.text ~= old_artist) then
-      send_notification(mpd_artist.text, mpd_title.text)
-  end
 end
 
 -- Signals
@@ -180,7 +181,7 @@ end
 --                                    update_widget()
 --                                  end
 -- })
-awful.widget.watch(mpd_script, 5, function(stdout)
+awful.widget.watch(mpd_script, 3, function(stdout)
     update_widget()
 end, mpd_song)
 

@@ -1,5 +1,25 @@
 [
   {
+    "id": "735bc0c0-87c9-11e9-a417-0305942bc585",
+    "content": [
+      "      send_notification(mpd_artist.text, mpd_title.text)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t163\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "d8025030-87c8-11e9-a417-0305942bc585",
+    "content": [
+      " (title ~= mpd_title.text) then",
+      "                mpd_title.text = title",
+      "            end"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t135\t15",
+    "filetype": "lua"
+  },
+  {
     "id": "a003a440-87be-11e9-b312-8f69a673b6a8",
     "content": [
       "amixer set Master 50%"
@@ -2542,39 +2562,5 @@
     "regtype": "v",
     "path": "file:///home/kyle/.config/i3/config\t151\t14",
     "filetype": "conf"
-  },
-  {
-    "id": "8efec100-86df-11e9-b3dc-af70ed45ef4f",
-    "content": [
-      "local awful = require(\"awful\")",
-      "local naughty = require(\"naughty\")",
-      "local gears = require(\"gears\")",
-      "local beautiful = require(\"beautiful\")",
-      "local xresources = require(\"beautiful.xresources\")",
-      "local dpi = xresources.apply_dpi",
-      "",
-      "local helpers = require(\"helpers\")",
-      "",
-      "local keys = {}",
-      "",
-      "-- Mod keys",
-      "superkey = \"Mod4\"",
-      "altkey = \"Mod1\"",
-      "ctrlkey = \"Control\"",
-      "shiftkey = \"Shift\"",
-      ""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/dotfiles/config/awesome/keys.lua\t1\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "f6954470-86de-11e9-b3dc-af70ed45ef4f",
-    "content": [
-      "local keys = require(\"keys\")"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/dotfiles/config/awesome/rc.lua\t69\t1",
-    "filetype": "lua"
   }
 ]

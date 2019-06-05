@@ -207,7 +207,7 @@ theme.sidebar_y = 0
 theme.sidebar_border_radius = 0
 -- theme.sidebar_border_radius = theme.border_radius
 theme.sidebar_hide_on_mouse_leave = true
-theme.sidebar_show_on_mouse_edge = true
+theme.sidebar_show_on_mouse_edge = false
 
 -- Exit screen
 theme.exit_screen_bg = theme.xcolor0 .. "CC"
