@@ -225,6 +225,33 @@ ram:buttons(
     -- end)
 ))
 
+local mpd_song = require("noodle.mpd_song")
+local mpd_widget_children = mpd_song:get_all_children()
+local mpd_title = mpd_widget_children[1]
+local mpd_artist = mpd_widget_children[2]
+mpd_title.font = "sans medium 14"
+mpd_artist.font = "sans italic 12"
+
+-- Set forced height in order to limit the widgets to one line.
+-- Might need to be adjusted depending on the font.
+-- mpd_title.forced_height = dpi(24)
+-- mpd_artist.forced_height = dpi(16)
+
+mpd_song:buttons(gears.table.join(
+                awful.button({ }, 1, function ()
+                    awful.spawn.with_shell("mpc toggle")
+                end),
+                awful.button({ }, 3, function ()
+                    -- Spawn music terminal
+                    awful.spawn("music_terminal")
+                end),
+                awful.button({ }, 4, function ()
+                    awful.spawn.with_shell("mpc prev")
+                end),
+                awful.button({ }, 5, function ()
+                    awful.spawn.with_shell("mpc next")
+                end)
+))
 
 local playerctl_toggle_icon = wibox.widget.imagebox(beautiful.playerctl_toggle_icon)
 -- local playerctl_toggle_icon = wibox.widget.imagebox(beautiful.playerctl_toggle_icon)
@@ -254,6 +281,7 @@ playerctl_prev_icon.forced_height = playerctl_button_size
 playerctl_prev_icon:buttons(gears.table.join(
                          awful.button({ }, 1, function ()
                              awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
+                             mpd_song.update()
                          end)
                          -- awful.button({ }, 3, function ()
                          --     awful.spawn.with_shell("mpvc prev")
@@ -267,6 +295,7 @@ playerctl_next_icon.forced_height = playerctl_button_size
 playerctl_next_icon:buttons(gears.table.join(
                          awful.button({ }, 1, function ()
                              awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next")
+                             mpd_song.update()
                          end)
                          -- awful.button({ }, 3, function ()
                          --     awful.spawn.with_shell("mpvc next")
@@ -306,33 +335,6 @@ fancy_date.align = "center"
 fancy_date.valign = "center"
 fancy_date.font = "sans italic 14"
 
-local mpd_song = require("noodle.mpd_song")
-local mpd_widget_children = mpd_song:get_all_children()
-local mpd_title = mpd_widget_children[1]
-local mpd_artist = mpd_widget_children[2]
-mpd_title.font = "sans medium 14"
-mpd_artist.font = "sans italic 12"
-
--- Set forced height in order to limit the widgets to one line.
--- Might need to be adjusted depending on the font.
--- mpd_title.forced_height = dpi(24)
--- mpd_artist.forced_height = dpi(16)
-
-mpd_song:buttons(gears.table.join(
-                awful.button({ }, 1, function ()
-                    awful.spawn.with_shell("mpc toggle")
-                end),
-                awful.button({ }, 3, function ()
-                    -- Spawn music terminal
-                    awful.spawn("music_terminal")
-                end),
-                awful.button({ }, 4, function ()
-                    awful.spawn.with_shell("mpc prev")
-                end),
-                awful.button({ }, 5, function ()
-                    awful.spawn.with_shell("mpc next")
-                end)
-))
 
 local disk_space = require("noodle.disk")
 disk_space.font = "sans 14"
@@ -445,7 +447,7 @@ end
 
 sidebar:buttons(gears.table.join(
                   -- Middle click - Hide sidebar
-                  awful.button({ }, 3, function ()
+                  awful.button({ }, 2, function ()
                       sidebar.visible = false
                   end)
                   -- Right click - Hide sidebar

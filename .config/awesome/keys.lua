@@ -290,14 +290,19 @@ end
 keys.clientbuttons = gears.table.join(
     awful.button({ }, 1, function (c)
         c:emit_signal("request::activate", "mouse_click", {raise = true})
+        sidebar.visible = false
     end),
-    awful.button({ modkey }, 1, function (c)
+    awful.button({ modkey }, 2, function (c)
         c:emit_signal("request::activate", "mouse_click", {raise = true})
         awful.mouse.client.move(c)
     end),
     awful.button({ modkey }, 3, function (c)
         c:emit_signal("request::activate", "mouse_click", {raise = true})
         awful.mouse.client.resize(c)
+    end),
+    awful.button({}, 2, function (c)
+        -- c:emit_signal("request::activate", "mouse_click", {raise = true})
+        sidebar.visible = not sidebar.visible
     end)
 )
 
@@ -318,20 +323,26 @@ keys.desktopbuttons = gears.table.join(
         end
         helpers.single_double_tap(function() end, double_tap)
     end),
-    awful.button({ }, 3, function ()
-        mymainmenu:toggle()
+    awful.button({ }, 2, function ()
         sidebar.visible = not sidebar.visible
     end),
-
-    -- Middle button - Toggle start scren
-    awful.button({ }, 2, function ()
-        start_screen_show()
+    awful.button({ }, 3, function ()
+        mymainmenu:toggle()
         -- sidebar.visible = not sidebar.visible
     end),
 
+    -- Middle button - Toggle start scren
+-- {{{ Mouse bindings
+root.buttons(gears.table.join(
+    -- awful.button({ }, 3, function () mymainmenu:toggle() end),
+    awful.button({ }, 4, awful.tag.viewnext),
+    awful.button({ }, 5, awful.tag.viewprev)
+)),
+-- }}}
+
     -- Scrolling - Switch tags
-    awful.button({ }, 4, awful.tag.viewprev),
-    awful.button({ }, 5, awful.tag.viewnext),
+    -- awful.button({ }, 4, awful.tag.viewprev),
+    -- awful.button({ }, 5, awful.tag.viewnext),
 
     -- Side buttons - Control volume
     awful.button({ }, 9, function () awful.spawn.with_shell("volume-control.sh up") end),

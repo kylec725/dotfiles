@@ -1,5 +1,85 @@
 [
   {
+    "id": "ef513e10-87da-11e9-ab44-53a3f8d05c43",
+    "content": [
+      "    awful.button({ modkey }, 2, function (c)",
+      "        c:emit_signal(\"request::activate\", \"mouse_click\", {raise = true})",
+      "        awful.mouse.client.move(c)",
+      "    end),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t295\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "d85add30-87d8-11e9-ab44-53a3f8d05c43",
+    "content": [
+      "    awful.button({ }, 3, function ()",
+      "        mymainmenu:toggle()",
+      "        -- sidebar.visible = not sidebar.visible",
+      "    end),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t321\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "73f44450-87d6-11e9-ad15-57b405c2fc70",
+    "content": [
+      "sidebar"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t14\t25",
+    "filetype": "lua"
+  },
+  {
+    "id": "1d7966b0-87d5-11e9-ad15-57b405c2fc70",
+    "content": [
+      "    awful.key({ modkey }, \"semicolon\", function() sidebar.visible = not sidebar.visible end,",
+      "              {description = \"show or hide sidebar\", group = \"awesome\"}),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t174\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "e3939fb0-87d4-11e9-ad15-57b405c2fc70",
+    "content": [
+      "        sidebar.visible = not sidebar.visible"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t323\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "bb5f8780-87d3-11e9-ad15-57b405c2fc70",
+    "content": [
+      "    awful.key({ modkey }, \"semicolon\", function() sidebar.visible = not sidebar.visible end,",
+      "              {description = \"show or hide sidebar\", group = \"awesome\"}),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t174\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "04ca9250-87d1-11e9-b30b-b978f5cc3f70",
+    "content": [
+      "                             mpd_song.update()"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t284\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "0c4ab9a0-87cd-11e9-8621-c78e86cd9e6b",
+    "content": [
+      "theme.music_icon = icon_path .. \"music.png\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t243\t1",
+    "filetype": "lua"
+  },
+  {
     "id": "735bc0c0-87c9-11e9-a417-0305942bc585",
     "content": [
       "      send_notification(mpd_artist.text, mpd_title.text)"
@@ -2490,77 +2570,5 @@
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/keys.lua\t93\t1",
     "filetype": "lua"
-  },
-  {
-    "id": "a53f6cd0-86e9-11e9-9b8f-15e7ccca8820",
-    "content": [
-      "launcher"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t94\t57",
-    "filetype": "lua"
-  },
-  {
-    "id": "37bdefc0-86e8-11e9-b83d-b736f9db0d71",
-    "content": [
-      "amixer -q sset Master,0 toggle"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t68\t29",
-    "filetype": "conf"
-  },
-  {
-    "id": "2a37deb0-86e8-11e9-9b8f-15e7ccca8820",
-    "content": [
-      "    awful.key({}, \"XF86AudioLowerVolume\", awful.spawn.with_shell(\"amixer set Master -q 5%-\")),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t94\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "18d5a4e0-86e8-11e9-9b8f-15e7ccca8820",
-    "content": [
-      "    awful.key({}, \"XF86AudioRaiseVolume\", awful.spawn.with_shell(\"amixer set Master -q 5%+\")),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t93\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "14777ae0-86e8-11e9-b83d-b736f9db0d71",
-    "content": [
-      "amixer set Master -q 5%+"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t66\t36",
-    "filetype": "conf"
-  },
-  {
-    "id": "0195a5f0-86e8-11e9-b83d-b736f9db0d71",
-    "content": [
-      "XF86AudioRaiseVolume"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t66\t9",
-    "filetype": "conf"
-  },
-  {
-    "id": "764c3ef0-86e2-11e9-b3dc-af70ed45ef4f",
-    "content": [
-      "local ntags = 10"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/dotfiles/config/awesome/keys.lua\t784\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "42f05b90-86e2-11e9-8952-4337e3537e39",
-    "content": [
-      "十"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t151\t14",
-    "filetype": "conf"
   }
 ]

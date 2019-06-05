@@ -7,7 +7,7 @@ off
 output HDMI-2
 off
 output eDP-1
-gamma 1.0:0.714:0.526
+gamma 1.0:0.833:0.769
 mode 1920x1080
 pos 0x0
 primary
