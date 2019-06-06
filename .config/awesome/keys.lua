@@ -173,6 +173,8 @@ keys.globalkeys = gears.table.join(
     -- Toggle sidebar
     awful.key({ modkey }, "semicolon", function() sidebar.visible = not sidebar.visible end,
               {description = "show or hide sidebar", group = "awesome"}),
+    awful.key({}, "Escape", function() sidebar.visible = false end,
+              {description = "hide sidebar", group = "awesome"}),
 
     awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
         {description = "increase master width factor", group = "layout"}),

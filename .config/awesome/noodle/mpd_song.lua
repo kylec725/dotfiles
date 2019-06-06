@@ -34,6 +34,7 @@ local mpd_artist = wibox.widget{
 -- Title request
 local title_request = "dbus-send --print-reply --session --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata' | grep -A 2 title | grep variant"
 local artist_request = "dbus-send --print-reply --session --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata' | grep -A 2 artist | tail +3"
+local song_request = "dbus-send --print-reply --session --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata' | grep -A 2 -e title -e artist | sed -n -e '3p' -e '6p'"
 
 -- Main widget
 local mpd_song = wibox.widget{
@@ -82,82 +83,25 @@ local function send_notification(artist, title)
 end
 
 local function update_widget()
-  -- awful.spawn.easy_async({"sh", "-c", "mpc"},
-  -- awful.spawn.easy_async({"mpc", "-f", "[[%artist%@@%title%@]]"},
-  --   function(stdout)
-  --     -- naughty.notify({text = stdout})
-  --     -- local artist = stdout:match('(.*)-.*$')
-  --     -- artist = string.gsub(artist, '^%s*(.-)%s*$', '%1')
-  --     -- local title = stdout:match('- (.*)%[')
-  --     -- title = string.gsub(title, '^%s*(.-)%s*$', '%1')
-  --     local artist = stdout:match('(.*)@@')
-  --     local title = stdout:match('@@(.*)@')
-  --     title = string.gsub(title, '^%s*(.-)%s*$', '%1')
-  --     local status = stdout:match('%[(.*)%]')
-  --     status = string.gsub(status, '^%s*(.-)%s*$', '%1')
-  --     if status == "paused" then
-  --       artist_fg = paused_color
-  --       title_fg = paused_color
-  --     else
-        artist_fg = artist_color
-        title_fg = title_color
-  --       if sidebar.visible == false then
-  --         send_notification(artist, title)
-  --       end
-  --     end
-
-  --     -- escape &'s
-  --     title = string.gsub(title, "&", "&amp;")
-  --     artist = string.gsub(artist, "&", "&amp;")
-
-  --     -- naughty.notify({text = artist .. " - " .. title})
-  --     mpd_title.markup =
-  --       "<span foreground='" .. title_fg .."'>"
-  --       .. title .. "</span>"
-  --     mpd_artist.markup =
-  --       "<span foreground='" .. artist_fg .."'>"
-  --       .. artist .. "</span>"
-  --   end
-
-  -- send two requests, one for artist and one for title
-  awful.spawn.easy_async_with_shell(title_request, -- title request
-    function(stdout)
-      local title = stdout:match('"(.+)"')
-
-      -- naughty.notify({text = artist .. " - " .. title})
-      -- mpd_title.markup =
-        -- "<span foreground='" .. title_fg .."'>"
-        -- .. title .. "</span>"
-        if (title == nil) then
-            mpd_title.text = "---------"
-        else
-            mpd_title.text = title
-        end
-    end
-  )
-  awful.spawn.easy_async_with_shell(artist_request, -- artist request
-    function(stdout)
-      local artist = stdout:match('"(.+)"')
-
-      -- naughty.notify({text = artist .. " - " .. title})
-      -- mpd_artist.markup =
-        -- "<span foreground='" .. artist_fg .."'>"
-        -- .. artist .. "</span>"
-        if (artist == nil) then
-            mpd_artist.text = "---------"
-        else
-            -- send notification if both artist and title have changed
-            if (artist ~= mpd_artist.text) then
-                new_song = true
-                -- sleep to allow the title request to finish
-                os.execute("sleep 1")
-                send_notification(artist, mpd_title.text)
+    -- extract artist and title
+    awful.spawn.easy_async_with_shell(song_request, -- artist request
+        function(stdout)
+            local artist, title = stdout:match('"(.+)".*"(.+)"')
+            if (artist == nil) then
+                mpd_artist.text = "---------"
+            end
+            if (title == nil) then
+                mpd_title.text = "---------"
+            end
+            -- send notification on next song (if text field have changed)
+            if (artist ~= mpd_artist.text and title ~= mpd_title.text) then
+                send_notification(artist, title)
             end
             mpd_artist.text = artist
-    end
-    end
-  )
+            mpd_title.text = title
 
+        end
+        )
 end
 
 -- Signals

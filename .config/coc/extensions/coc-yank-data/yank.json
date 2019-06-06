@@ -1,5 +1,150 @@
 [
   {
+    "id": "a9a84680-87ec-11e9-85d9-611b616a48b1",
+    "content": [
+      "            artist = one:match('\"(.+)\"')"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t166\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "9c051080-87ec-11e9-85d9-611b616a48b1",
+    "content": [
+      "        local one = io.read(\"*line\")",
+      "        local two = io.read(\"*line\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t17\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "95dd9830-87ec-11e9-85d9-611b616a48b1",
+    "content": [
+      "        local one = io.read(\"*line\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t17\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "c743d800-87ea-11e9-85d9-611b616a48b1",
+    "content": [
+      "  --       if (title == nil) then",
+      "  --           mpd_title.text = \"---------\"",
+      "  --       else",
+      "  --           mpd_title.text = title"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t132\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "c5fd4e40-87ea-11e9-85d9-611b616a48b1",
+    "content": [
+      "  --       if (title == nil) then",
+      "  --           mpd_title.text = \"---------\"",
+      "  --       else"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t132\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "325d8ec0-87ea-11e9-85d9-611b616a48b1",
+    "content": [
+      "  awful.spawn.easy_async_with_shell(artist_request, -- artist request",
+      "    function(stdout)",
+      "      local artist = stdout:match('\"(.+)\"')",
+      "",
+      "      -- naughty.notify({text = artist .. \" - \" .. title})",
+      "      -- mpd_artist.markup =",
+      "        -- \"<span foreground='\" .. artist_fg ..\"'>\"",
+      "        -- .. artist .. \"</span>\"",
+      "        if (artist == nil) then",
+      "            mpd_artist.text = \"---------\"",
+      "        else",
+      "            -- send notification if both artist and title have changed",
+      "            -- if (artist ~= mpd_artist.text) then",
+      "                -- sleep to allow the title request to finish",
+      "                -- os.execute(\"sleep 1\")",
+      "                -- send_notification(artist, mpd_title.text)",
+      "            mpd_artist.text = artist",
+      "    end",
+      "    end",
+      "  )"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t139\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "3d0d43c0-87e9-11e9-85d9-611b616a48b1",
+    "content": [
+      "dbus-send --print-reply --session --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata' | grep -A 2 title | grep variant"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t35\t24",
+    "filetype": "lua"
+  },
+  {
+    "id": "3bc5ec20-87e8-11e9-85d9-611b616a48b1",
+    "content": [
+      " (title ~= mpd_title.text) then",
+      "                new_title = true",
+      "            end"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t136\t15",
+    "filetype": "lua"
+  },
+  {
+    "id": "ef76d100-87e6-11e9-b0d9-fb5b74244cff",
+    "content": [
+      "                send_notification(artist, mpd_title.text)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t156\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "24b67ea0-87de-11e9-ab17-affd0feadf88",
+    "content": [
+      "    awful.key({ modkey }, \"semicolon\", function() sidebar.visible = not sidebar.visible end,",
+      "              {description = \"show or hide sidebar\", group = \"awesome\"}),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t174\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "d2459b10-87dd-11e9-8b10-ed5fd98c6546",
+    "content": [
+      "inoremap <MiddleMouse> <Esc>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t105\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "a580bab0-87dd-11e9-bcd6-69a597e94ffd",
+    "content": [
+      "noremap <MiddleMouse> <LeftMouse>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t103\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "185979b0-87dd-11e9-ac95-71ac29aa4fdc",
+    "content": [
+      "map <MiddleMouse> <MiddleMouse>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t103\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "ef513e10-87da-11e9-ab44-53a3f8d05c43",
     "content": [
       "    awful.button({ modkey }, 2, function (c)",
@@ -2443,132 +2588,6 @@
     ],
     "regtype": "v",
     "path": "file:///home/kyle/.config/awesome/keys.lua\t116\t33",
-    "filetype": "lua"
-  },
-  {
-    "id": "93036d70-86ec-11e9-ab44-ff15cc3100d0",
-    "content": [
-      "xss-lock -l fade-lock +resetsaver &"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bin/lock-toggle\t5\t2",
-    "filetype": "sh"
-  },
-  {
-    "id": "87db2280-86ec-11e9-ab44-ff15cc3100d0",
-    "content": [
-      "\txss-lock -l fade-lock +resetsaver &"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.bin/lock-toggle\t5\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "12e89620-86eb-11e9-9b8f-15e7ccca8820",
-    "content": [
-      "    awful.key({}, \"Print\", function ()",
-      "        awful.spawn.with_shell(scrot)",
-      "        naughty.notify({ text = \"Screenshot Taken\", title = \"Scrot\" })",
-      "    end,",
-      "    {description = \"take a screenshot with scrot\", group = \"launcher\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t86\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "97a65380-86ea-11e9-b83d-b736f9db0d71",
-    "content": [
-      "light -U 5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t79\t36",
-    "filetype": "conf"
-  },
-  {
-    "id": "90e22600-86ea-11e9-b83d-b736f9db0d71",
-    "content": [
-      "light -A 5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t78\t34",
-    "filetype": "conf"
-  },
-  {
-    "id": "8957c250-86ea-11e9-9b8f-15e7ccca8820",
-    "content": [
-      "    awful.key({}, \"XF86MonBrightnessUp\",       function () awful.spawn.with_shell(\"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous\") end,",
-      "        {description = \"previous song in spotify\", group = \"launcher\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t109\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "77960360-86ea-11e9-9b8f-15e7ccca8820",
-    "content": [
-      "    awful.key({}, \"XF86AudioPrev\",       function () awful.spawn.with_shell(\"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous\") end,",
-      "        {description = \"previous song in spotify\", group = \"launcher\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t105\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "4a2fb2e0-86ea-11e9-b83d-b736f9db0d71",
-    "content": [
-      "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t73\t28",
-    "filetype": "conf"
-  },
-  {
-    "id": "3d0444f0-86ea-11e9-9b8f-15e7ccca8820",
-    "content": [
-      "    awful.key({}, \"XF86AudioNext\",       function () awful.spawn.with_shell(\"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next\") end,",
-      "        {description = \"play or pause spotify\", group = \"launcher\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t103\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "37119840-86ea-11e9-b83d-b736f9db0d71",
-    "content": [
-      "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t72\t28",
-    "filetype": "conf"
-  },
-  {
-    "id": "2d23a210-86ea-11e9-9b8f-15e7ccca8820",
-    "content": [
-      "    awful.key({}, \"XF86AudioPlay\",       function () awful.spawn.with_shell(\"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause\") end,",
-      "        {description = \"play or pause spotify\", group = \"launcher\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t101\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "22566f70-86ea-11e9-b83d-b736f9db0d71",
-    "content": [
-      "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t71\t28",
-    "filetype": "conf"
-  },
-  {
-    "id": "0ed8a8a0-86ea-11e9-9b8f-15e7ccca8820",
-    "content": [
-      "    awful.key({}, \"XF86AudioRaiseVolume\",       function () awful.spawn.with_shell(\"amixer -D pulse sset Master 5%+\") end,",
-      "        {description = \"increase volume by 5%\", group = \"launcher\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t93\t1",
     "filetype": "lua"
   }
 ]
