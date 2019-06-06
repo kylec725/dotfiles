@@ -34,6 +34,14 @@ exit:buttons(gears.table.join(
                  end)
 ))
 
+-- change text color on hover
+exit:connect_signal("mouse::enter", function()
+    exit_text.markup = helpers.colorize_text(exit_text.text, "#c9bff7")
+end)
+exit:connect_signal("mouse::leave", function()
+    exit_text.markup = helpers.colorize_text(exit_text.text, "#F1FCF9")
+end)
+
 -- local weather_widget = require("noodle.weather")
 -- local weather_widget_icon = weather_widget:get_all_children()[1]
 -- weather_widget_icon.forced_width = icon_size
@@ -354,6 +362,14 @@ time.align = "center"
 time.valign = "center"
 time.font = "sans 55"
 
+-- change text color on hover
+-- time:connect_signal("mouse::enter", function()
+--     time.markup = helpers.colorize_text(time.text, "#c9bff7")
+-- end)
+-- time:connect_signal("mouse::leave", function()
+--     time.markup = helpers.colorize_text(time.text, "#F1FCF9")
+-- end)
+
 local date = wibox.widget.textclock("%B %d")
 -- local date = wibox.widget.textclock("%A, %B %d")
 -- local date = wibox.widget.textclock("%A, %B %d, %Y")
@@ -361,11 +377,27 @@ date.align = "center"
 date.valign = "center"
 date.font = "sans medium 18"
 
+-- change text color on hover
+-- date:connect_signal("mouse::enter", function()
+--     date.markup = helpers.colorize_text(date.text, "#c9bff7")
+-- end)
+-- date:connect_signal("mouse::leave", function()
+--     date.markup = helpers.colorize_text(date.text, "#F1FCF9")
+-- end)
+
 -- local fancy_date = wibox.widget.textclock("%-j days around the sun")
 local fancy_date = wibox.widget.textclock("Knowing that today is %A fills you with determination.")
 fancy_date.align = "center"
 fancy_date.valign = "center"
 fancy_date.font = "sans italic 14"
+
+-- change text color on hover
+-- fancy_date:connect_signal("mouse::enter", function()
+--     fancy_date.markup = helpers.colorize_text(fancy_date.text, "#c9bff7")
+-- end)
+-- fancy_date:connect_signal("mouse::leave", function()
+--     fancy_date.markup = helpers.colorize_text(fancy_date.text, "#F1FCF9")
+-- end)
 
 
 local disk_space = require("noodle.disk")
@@ -396,6 +428,14 @@ disk:buttons(gears.table.join(
                        -- end)
 ))
 
+-- change text color on hover
+disk:connect_signal("mouse::enter", function()
+    disk_space.markup = helpers.colorize_text(disk_space.text, "#c9bff7")
+end)
+disk:connect_signal("mouse::leave", function()
+    disk_space.markup = helpers.colorize_text(disk_space.text, "#F1FCF9")
+end)
+
 local search_icon = wibox.widget.imagebox(beautiful.search_icon)
 search_icon.resize = true
 search_icon.forced_width = icon_size
@@ -416,6 +456,14 @@ search:buttons(gears.table.join(
                      sidebar.visible = false
                  end)
 ))
+
+-- change text color on hover
+search:connect_signal("mouse::enter", function()
+    search_text.markup = helpers.colorize_text(search_text.text, "#c9bff7")
+end)
+search:connect_signal("mouse::leave", function()
+    search_text.markup = helpers.colorize_text(search_text.text, "#F1FCF9")
+end)
 
 local volume_icon = wibox.widget.imagebox(beautiful.volume_icon)
 volume_icon.resize = true

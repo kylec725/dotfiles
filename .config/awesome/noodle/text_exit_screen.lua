@@ -76,6 +76,14 @@ poweroff:buttons(gears.table.join(
                  end)
 ))
 
+-- highlight during hover
+poweroff:connect_signal("mouse::enter", function()
+    poweroff_icon.markup = helpers.colorize_text(poweroff_icon.text, "#fa96d3")
+end)
+poweroff:connect_signal("mouse::leave", function()
+    poweroff_icon.markup = helpers.colorize_text(poweroff_icon.text, "#DB86BA")
+end)
+
 local reboot_icon = wibox.widget.textbox(reboot_text_icon)
 reboot_icon.font = icon_font
 reboot_icon.markup = helpers.colorize_text(reboot_icon.text, "#74DD91")
@@ -106,6 +114,14 @@ reboot:buttons(gears.table.join(
                    end)
 ))
 
+-- highlight during hover
+reboot:connect_signal("mouse::enter", function()
+    reboot_icon.markup = helpers.colorize_text(reboot_icon.text, "#7ffca2")
+end)
+reboot:connect_signal("mouse::leave", function()
+    reboot_icon.markup = helpers.colorize_text(reboot_icon.text, "#74DD91")
+end)
+
 local suspend_icon = wibox.widget.textbox(suspend_text_icon)
 suspend_icon.font = icon_font
 suspend_icon.markup = helpers.colorize_text(suspend_icon.text, "#E49186")
@@ -135,6 +151,14 @@ suspend:buttons(gears.table.join(
                      suspend_command()
                  end)
 ))
+
+-- highlight during hover
+suspend:connect_signal("mouse::enter", function()
+    suspend_icon.markup = helpers.colorize_text(suspend_icon.text, "#ffa195")
+end)
+suspend:connect_signal("mouse::leave", function()
+    suspend_icon.markup = helpers.colorize_text(suspend_icon.text, "#E49186")
+end)
 
 
 local exit_icon = wibox.widget.textbox(exit_text_icon)
@@ -167,6 +191,14 @@ exit:buttons(gears.table.join(
                   end)
 ))
 
+-- highlight during hover
+exit:connect_signal("mouse::enter", function()
+    exit_icon.markup = helpers.colorize_text(exit_icon.text, "#83f8ff")
+end)
+exit:connect_signal("mouse::leave", function()
+    exit_icon.markup = helpers.colorize_text(exit_icon.text, "#75DBE1")
+end)
+
 local lock_icon = wibox.widget.textbox(lock_text_icon)
 lock_icon.font = icon_font
 lock_icon.markup = helpers.colorize_text(lock_icon.text, "#B4A1DB")
@@ -196,6 +228,14 @@ lock:buttons(gears.table.join(
                        lock_command()
                    end)
 ))
+
+-- highlight during hover
+lock:connect_signal("mouse::enter", function()
+    lock_icon.markup = helpers.colorize_text(lock_icon.text, "#cab4f8")
+end)
+lock:connect_signal("mouse::leave", function()
+    lock_icon.markup = helpers.colorize_text(lock_icon.text, "#B4A1DB")
+end)
 
 -- Get screen geometry
 local screen_width = awful.screen.focused().geometry.width

@@ -1,5 +1,394 @@
 [
   {
+    "id": "1cf481d0-882e-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "7ef7a0"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t119\t68",
+    "filetype": "lua"
+  },
+  {
+    "id": "fb45eb00-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "DB86BA"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t84\t72",
+    "filetype": "lua"
+  },
+  {
+    "id": "ebe91e20-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "74DD91"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t122\t68",
+    "filetype": "lua"
+  },
+  {
+    "id": "d8bbe850-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "B4A1DB"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t237\t64",
+    "filetype": "lua"
+  },
+  {
+    "id": "d5723b90-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "B4A1DB"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t204\t60",
+    "filetype": "lua"
+  },
+  {
+    "id": "bd809fe0-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "-- highlight during hover",
+      "exit:connect_signal(\"mouse::enter\", function()",
+      "    exit_icon.markup = helpers.colorize_text(exit_icon.text, \"#83f8ff\")",
+      "end)",
+      "exit:connect_signal(\"mouse::leave\", function()",
+      "    exit_icon.markup = helpers.colorize_text(exit_icon.text, \"#75DBE1\")",
+      "end)",
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t194\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "af707740-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "E49186"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t160\t70",
+    "filetype": "lua"
+  },
+  {
+    "id": "a2dd2aa0-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "E49186"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t160\t70",
+    "filetype": "lua"
+  },
+  {
+    "id": "a18821f0-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "fa9b8f"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t157\t70",
+    "filetype": "lua"
+  },
+  {
+    "id": "7e5b9db0-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "75DBE1"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t199\t64",
+    "filetype": "lua"
+  },
+  {
+    "id": "7b61bea0-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "75DBE1"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t166\t60",
+    "filetype": "lua"
+  },
+  {
+    "id": "68a80b20-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "-- highlight during hover",
+      "suspend:connect_signal(\"mouse::enter\", function()",
+      "    suspend_icon.markup = helpers.colorize_text(suspend_icon.text, \"#fa9b8f\")",
+      "end)",
+      "suspend:connect_signal(\"mouse::leave\", function()",
+      "    suspend_icon.markup = helpers.colorize_text(suspend_icon.text, \"#E49186\")",
+      "end)",
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t155\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "4e65c8b0-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "E49186"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t127\t66",
+    "filetype": "lua"
+  },
+  {
+    "id": "39fd05a0-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "E49186"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t127\t66",
+    "filetype": "lua"
+  },
+  {
+    "id": "24b1aac0-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "",
+      "-- highlight during hover",
+      "reboot:connect_signal(\"mouse::enter\", function()",
+      "    reboot_icon.markup = helpers.colorize_text(reboot_icon.text, \"#83f4a2\")",
+      "end)",
+      "reboot:connect_signal(\"mouse::leave\", function()",
+      "    reboot_icon.markup = helpers.colorize_text(reboot_icon.text, \"#74DD91\")",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t116\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "10746480-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "74DD91"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t122\t68",
+    "filetype": "lua"
+  },
+  {
+    "id": "0ad8d880-882d-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "74DD91"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t89\t64",
+    "filetype": "lua"
+  },
+  {
+    "id": "f1d99d60-882c-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "-- highlight during hover",
+      "poweroff:connect_signal(\"mouse::enter\", function()",
+      "    poweroff_icon.markup = helpers.colorize_text(poweroff_icon.text, \"#f99bd4\")",
+      "end)",
+      "poweroff:connect_signal(\"mouse::leave\", function()",
+      "    poweroff_icon.markup = helpers.colorize_text(poweroff_icon.text, \"#DB86BA\")",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t79\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "e270e9a0-882c-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "DB86BA"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t84\t72",
+    "filetype": "lua"
+  },
+  {
+    "id": "c257e6f0-882c-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "DB86BA"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t84\t72",
+    "filetype": "lua"
+  },
+  {
+    "id": "bb024ee0-882c-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "DB86BA"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t51\t68",
+    "filetype": "lua"
+  },
+  {
+    "id": "8bf5ef80-882c-11e9-8bb3-73330d4fbbc2",
+    "content": [
+      "-- change text color on hover",
+      "time:connect_signal(\"mouse::enter\", function()",
+      "    time.markup = helpers.colorize_text(time.text, \"#c9bff7\")",
+      "end)",
+      "time:connect_signal(\"mouse::leave\", function()",
+      "    time.markup = helpers.colorize_text(time.text, \"#F1FCF9\")",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t365\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "6275a840-882b-11e9-a6c6-9bc23e1f0caa",
+    "content": [
+      "    mpd_title.markup = helpers.colorize_text(mpd_title.text, \"#c9bff7\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t298\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "61628a90-882b-11e9-a6c6-9bc23e1f0caa",
+    "content": [
+      "    mpd_title.markup = helpers.colorize_text(mpd_title.text, \"#F1FCF9\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t301\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "466d99f0-882b-11e9-a6c6-9bc23e1f0caa",
+    "content": [
+      "-- change text color on hover",
+      "exit:connect_signal(\"mouse::enter\", function()",
+      "    exit_text.markup = helpers.colorize_text(exit_text.text, \"#c9bff7\")",
+      "end)",
+      "exit:connect_signal(\"mouse::leave\", function()",
+      "    exit_text.markup = helpers.colorize_text(exit_text.text, \"#F1FCF9\")",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t37\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "dfafb8b0-882a-11e9-a6c6-9bc23e1f0caa",
+    "content": [
+      "",
+      "-- change text color on hover",
+      "search:connect_signal(\"mouse::enter\", function()",
+      "    search_text.markup = helpers.colorize_text(search_text.text, \"#c9bff7\")",
+      "end)",
+      "search:connect_signal(\"mouse::leave\", function()",
+      "    search_text.markup = helpers.colorize_text(disk_spacesearch_texttext, \"#F1FCF9\")",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t451\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "cc47c3d0-882a-11e9-a6c6-9bc23e1f0caa",
+    "content": [
+      "",
+      "-- change text color on hover",
+      "disk:connect_signal(\"mouse::enter\", function()",
+      "    disk_space.markup = helpers.colorize_text(disk_space.text, \"#c9bff7\")",
+      "end)",
+      "disk:connect_signal(\"mouse::leave\", function()",
+      "    disk_space.markup = helpers.colorize_text(disk_space.text, \"#F1FCF9\")",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t422\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "9e7f7d30-882a-11e9-a6c6-9bc23e1f0caa",
+    "content": [
+      "-- change text color on hover",
+      "fancy_date:connect_signal(\"mouse::enter\", function()",
+      "    fancy_date.markup = helpers.colorize_text(fancy_date.text, \"#c9bff7\")",
+      "end)",
+      "fancy_date:connect_signal(\"mouse::leave\", function()",
+      "    fancy_date.markup = helpers.colorize_text(fancy_date.text, \"#F1FCF9\")",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t386\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "7f4541c0-882a-11e9-a6c6-9bc23e1f0caa",
+    "content": [
+      "-- change text color on hover",
+      "date:connect_signal(\"mouse::enter\", function()",
+      "    date.markup = helpers.colorize_text(date.text, \"#c9bff7\")",
+      "end)",
+      "date:connect_signal(\"mouse::leave\", function()",
+      "    date.markup = helpers.colorize_text(date.text, \"#F1FCF9\")",
+      "end)",
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t372\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "6a54b110-882a-11e9-a6c6-9bc23e1f0caa",
+    "content": [
+      "-- change text color on hover",
+      "time:connect_signal(\"mouse::enter\", function()",
+      "    time.markup = helpers.colorize_text(time.text, \"#c9bff7\")",
+      "end)",
+      "time:connect_signal(\"mouse::leave\", function()",
+      "    time.markup = helpers.colorize_text(time.text, \"#F1FCF9\")",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t357\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "d09679f0-8829-11e9-a6c6-9bc23e1f0caa",
+    "content": [
+      "F1FCF9"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t34\t24",
+    "filetype": "lua"
+  },
+  {
+    "id": "ac371b00-8829-11e9-a6c6-9bc23e1f0caa",
+    "content": [
+      "EEFFFF"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/manta/theme.lua\t34\t42",
+    "filetype": "lua"
+  },
+  {
+    "id": "9c7571d0-8829-11e9-a6c6-9bc23e1f0caa",
+    "content": [
+      "    time.markup = helpers.colorize_text(time.text, \"#75DBE1\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t358\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "8cb2de40-8829-11e9-a6c6-9bc23e1f0caa",
+    "content": [
+      "exit_icon.markup = helpers.colorize_text(exit_icon.text, \"#75DBE1\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t142\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "850eff20-8829-11e9-a6c6-9bc23e1f0caa",
+    "content": [
+      "time.connect_signal(\"mouse_enter\", function()",
+      "    ",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t357\t1",
+    "filetype": "lua"
+  },
+  {
     "id": "f6b734c0-8825-11e9-9275-5158337f001d",
     "content": [
       "44ced6"
@@ -1767,356 +2156,5 @@
     "regtype": "v",
     "path": "file:///home/kyle/.config/i3/config\t208\t14",
     "filetype": "conf"
-  },
-  {
-    "id": "00fa6e60-874b-11e9-9731-71fda3341f60",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t208\t14",
-    "filetype": "conf"
-  },
-  {
-    "id": "a9abd090-874a-11e9-b1b5-d9b9c6105cfe",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t310\t26",
-    "filetype": "lua"
-  },
-  {
-    "id": "a6c4dd40-874a-11e9-9731-71fda3341f60",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t208\t14",
-    "filetype": "conf"
-  },
-  {
-    "id": "8895f750-874a-11e9-b1b5-d9b9c6105cfe",
-    "content": [
-      " \"#df9dc5\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t187\t26",
-    "filetype": "lua"
-  },
-  {
-    "id": "7ae9c0a0-874a-11e9-b1b5-d9b9c6105cfe",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t187\t27",
-    "filetype": "lua"
-  },
-  {
-    "id": "72d62fc0-874a-11e9-9731-71fda3341f60",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t208\t14",
-    "filetype": "conf"
-  },
-  {
-    "id": "e66ee030-8745-11e9-b1b5-d9b9c6105cfe",
-    "content": [
-      "  upower -i $(upower -e | grep BAT) | grep percentage | awk '{ print $2 }'"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/battery.lua\t40\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "de04cae0-8745-11e9-b1b5-d9b9c6105cfe",
-    "content": [
-      "  upower -i $(upower -e | grep BAT) | grep percentage"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/battery.lua\t40\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "77ed62d0-8745-11e9-b1b5-d9b9c6105cfe",
-    "content": [
-      "  upower -i $(upower -e | grep BAT) | grep percentage"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/battery.lua\t40\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "04482180-8745-11e9-b1b5-d9b9c6105cfe",
-    "content": [
-      "local exit_screen = require(\"noodle.text_exit_screen\")"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t30\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "69c98090-8744-11e9-b1b5-d9b9c6105cfe",
-    "content": [
-      "        brightness_bar.update()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t117\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "fac18a90-8742-11e9-b1b5-d9b9c6105cfe",
-    "content": [
-      "        brightness_bar.connect_signal()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t117\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "fe00f390-8741-11e9-b1b5-d9b9c6105cfe",
-    "content": [
-      "local brightness_bar = require(\"noodle.brightness_bar\")"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t92\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "de031a00-8741-11e9-b1b5-d9b9c6105cfe",
-    "content": [
-      "        brightness_bar.update_widget()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t118\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "64480910-8740-11e9-b1b5-d9b9c6105cfe",
-    "content": [
-      "local temperature_icon = wibox.widget.imagebox(beautiful.temperature_icon)",
-      "temperature_icon.resize = true",
-      "temperature_icon.forced_width = icon_size",
-      "temperature_icon.forced_height = icon_size",
-      "local temperature_bar = require(\"noodle.temperature_bar\")",
-      "temperature_bar.forced_width = progress_bar_width",
-      "-- temperature_bar.margins.top = progress_bar_margins",
-      "-- temperature_bar.margins.bottom = progress_bar_margins",
-      "local temperature = wibox.widget{",
-      "  nil,",
-      "  {",
-      "    temperature_icon,",
-      "    pad(1),",
-      "    temperature_bar,",
-      "    pad(1),",
-      "    layout = wibox.layout.fixed.horizontal",
-      "  },",
-      "  nil,",
-      "  expand = \"none\",",
-      "  layout = wibox.layout.align.horizontal",
-      "}",
-      "temperature:buttons(",
-      "  gears.table.join(",
-      "    awful.button({ }, 1, function ()",
-      "        -- local matcher = function (c)",
-      "        --   return awful.rules.match(c, {name = 'watch sensors'})",
-      "        -- end",
-      "        -- awful.client.run_or_raise(terminal ..\" -e 'watch sensors'\", matcher)",
-      "        -- awful.spawn(terminal .. \" -e 'watch sensors'\", {floating = true})",
-      "    end)",
-      "))"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t56\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "7136d8a0-873f-11e9-8d7a-83a53f7c0eeb",
-    "content": [
-      "amixer -q sset Master,0 toggle"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t100\t84",
-    "filetype": "lua"
-  },
-  {
-    "id": "e9eb5660-873d-11e9-8d7a-83a53f7c0eeb",
-    "content": [
-      "                position \"bottom_middle\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t126\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "46fd48f0-873d-11e9-bb74-c338290ce0f7",
-    "content": [
-      "#20262C"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.Xresources\t17\t15",
-    "filetype": "xdefaults"
-  },
-  {
-    "id": "2a0cd670-873d-11e9-8d7a-83a53f7c0eeb",
-    "content": [
-      "                icon = \"/home/kyle/.config/awesome/themes/skyfall/icons/lock.png\","
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t123\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "21a8dba0-873d-11e9-8d7a-83a53f7c0eeb",
-    "content": [
-      "                icon = \"/home/kyle/.config/awesome/themes/skyfall/icons/lock.png\","
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t123\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "120c1f90-873d-11e9-bb74-c338290ce0f7",
-    "content": [
-      "#F1FCF9"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.Xresources\t24\t15",
-    "filetype": "xdefaults"
-  },
-  {
-    "id": "c66ed2d0-873c-11e9-8d7a-83a53f7c0eeb",
-    "content": [
-      "module.circle"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t124\t36",
-    "filetype": "lua"
-  },
-  {
-    "id": "926da430-873b-11e9-8d7a-83a53f7c0eeb",
-    "content": [
-      "                  awful.button({ }, 2, function ()",
-      "                      sidebar.visible = false",
-      "                  end)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t417\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "4ce495e0-873b-11e9-8d7a-83a53f7c0eeb",
-    "content": [
-      "        -- sidebar.visible = not sidebar.visible"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t298\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "5193bb80-873a-11e9-8d7a-83a53f7c0eeb",
-    "content": [
-      "20262C"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t35\t24",
-    "filetype": "lua"
-  },
-  {
-    "id": "3ded8520-873a-11e9-8d7a-83a53f7c0eeb",
-    "content": [
-      "#20262C"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t35\t23",
-    "filetype": "lua"
-  },
-  {
-    "id": "e5a3be70-8739-11e9-bfbe-e7d97729830c",
-    "content": [
-      "\ttransparency: \"real\";"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/rofi/material.rasi\t37\t1",
-    "filetype": ""
-  },
-  {
-    "id": "e084dc80-8739-11e9-bfbe-e7d97729830c",
-    "content": [
-      "#080808"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/rofi/sidetab.rasi\t15\t31",
-    "filetype": ""
-  },
-  {
-    "id": "d8ac7fe0-8739-11e9-bfbe-e7d97729830c",
-    "content": [
-      "\tbackground-color: #263238CC; /*base00 + CC (80% opacity)*/"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/rofi/material.rasi\t39\t1",
-    "filetype": ""
-  },
-  {
-    "id": "d2478960-8739-11e9-bfbe-e7d97729830c",
-    "content": [
-      "\tbackground-color: #263238CC; /*base00 + CC (80% opacity)*/"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/rofi/material.rasi\t39\t1",
-    "filetype": ""
-  },
-  {
-    "id": "cecc6c60-8739-11e9-bfbe-e7d97729830c",
-    "content": [
-      "\ttransparency: \"real\";"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/rofi/material.rasi\t37\t1",
-    "filetype": ""
-  },
-  {
-    "id": "85e7a230-8734-11e9-95c0-69d79f2f7849",
-    "content": [
-      "        pad(10),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t267\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "75d89c50-8734-11e9-95c0-69d79f2f7849",
-    "content": [
-      "        wibox.widget{",
-      "            pad(10),",
-      "            layout = wibox.layout.align.horizontal",
-      "",
-      "        },"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t267\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "6c8e6030-8734-11e9-95c0-69d79f2f7849",
-    "content": [
-      "            pad(10),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t272\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "68ec8150-8734-11e9-95c0-69d79f2f7849",
-    "content": [
-      "            pad(10),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t270\t1",
-    "filetype": "lua"
   }
 ]
