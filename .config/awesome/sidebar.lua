@@ -377,7 +377,9 @@ local search = wibox.widget{
   layout = wibox.layout.fixed.horizontal
 }
 search:buttons(gears.table.join(
-                 awful.button({ }, 3, function ()
+                 awful.button({ }, 1, function ()
+                     -- sleep to prevent rofi from closing on the leftclick
+                     os.execute("sleep 0.1")
                      awful.spawn.with_shell("rofi -show drun")
                      sidebar.visible = false
                  end)

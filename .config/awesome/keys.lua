@@ -116,6 +116,14 @@ keys.globalkeys = gears.table.join(
         awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
         mpd_song.update()
     end, {description = "previous song in spotify", group = "launcher"}),
+    awful.key({ modkey,           }, "l",     function ()
+        awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next")
+        mpd_song.update()
+    end, {description = "next song in spotify", group = "layout"}),
+    awful.key({ modkey,           }, "h",     function ()
+        awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
+        mpd_song.update()
+    end, {description = "previous song in spotify", group = "layout"}),
 
     -- Screen brightness control
     awful.key({}, "XF86MonBrightnessUp",       function ()
@@ -176,10 +184,10 @@ keys.globalkeys = gears.table.join(
     awful.key({}, "Escape", function() sidebar.visible = false end,
               {description = "hide sidebar", group = "awesome"}),
 
-    awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
-        {description = "increase master width factor", group = "layout"}),
-    awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)          end,
-        {description = "decrease master width factor", group = "layout"}),
+    -- awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
+    --     {description = "increase master width factor", group = "layout"}),
+    -- awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)          end,
+    --     {description = "decrease master width factor", group = "layout"}),
     awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster( 1, nil, true) end,
               {description = "increase the number of master clients", group = "layout"}),
     awful.key({ modkey, "Shift"   }, "l",     function () awful.tag.incnmaster(-1, nil, true) end,
