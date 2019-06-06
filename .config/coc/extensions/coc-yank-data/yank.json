@@ -1,5 +1,84 @@
 [
   {
+    "id": "f6b734c0-8825-11e9-9275-5158337f001d",
+    "content": [
+      "44ced6"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t254\t23",
+    "filetype": "lua"
+  },
+  {
+    "id": "e4ab7480-8825-11e9-9275-5158337f001d",
+    "content": [
+      "6be0e0"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t122\t30",
+    "filetype": "lua"
+  },
+  {
+    "id": "ccb1e990-8825-11e9-9275-5158337f001d",
+    "content": [
+      "7fee9d"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t207\t23",
+    "filetype": "lua"
+  },
+  {
+    "id": "ac09ed50-8825-11e9-9275-5158337f001d",
+    "content": [
+      "c0abea"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t160\t27",
+    "filetype": "lua"
+  },
+  {
+    "id": "92e86250-8813-11e9-98b9-518e1031614b",
+    "content": [
+      "launcher = \"rofi -show drun\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t69\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "21c81e30-8813-11e9-baf1-8936e2da6cf9",
+    "content": [
+      "pgrep rofi"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/rofi-toggle\t3\t11",
+    "filetype": "sh"
+  },
+  {
+    "id": "fee685a0-8812-11e9-98b9-518e1031614b",
+    "content": [
+      "rofi -show drun"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t69\t13",
+    "filetype": "lua"
+  },
+  {
+    "id": "be707260-8812-11e9-a5d6-ff21f654c498",
+    "content": [
+      "if [ -z $(pgrep xss-lock) ]",
+      "then",
+      "\txss-lock -l fade-lock +resetsaver &",
+      "\tnotify-send \"Auto-Lock On\"",
+      "else",
+      "\tkillall xss-lock",
+      "\tnotify-send \"Auto-Lock Off\"",
+      "fi"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.bin/lock-toggle\t3\t1",
+    "filetype": "sh"
+  },
+  {
     "id": "cd072590-8811-11e9-9856-0931ba3adc7c",
     "content": [
       "%d+%%"
@@ -2038,78 +2117,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t270\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "5109b2b0-8734-11e9-95c0-69d79f2f7849",
-    "content": [
-      "      layout = wibox.layout.align.horizontal"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t264\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "46871da0-8734-11e9-95c0-69d79f2f7849",
-    "content": [
-      "  layout = wibox.layout.fixed.vertical"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t192\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "1990cd00-8734-11e9-95c0-69d79f2f7849",
-    "content": [
-      "            pad(9),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t269\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "123ae6d0-8734-11e9-95c0-69d79f2f7849",
-    "content": [
-      "            layout = wibox.layout.align.horizontal"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t271\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "ffed89b0-8733-11e9-95c0-69d79f2f7849",
-    "content": [
-      "            pad(9),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t268\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "f7c167c0-8733-11e9-95c0-69d79f2f7849",
-    "content": [
-      "      layout = wibox.layout.align.horizontal"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t264\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "9de4c180-8732-11e9-95c0-69d79f2f7849",
-    "content": [
-      "root.keys(keys.globalkeys)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t324\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "945231c0-8732-11e9-95c0-69d79f2f7849",
-    "content": [
-      "    -- awful.button({ }, 8, function()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t308\t1",
     "filetype": "lua"
   }
 ]

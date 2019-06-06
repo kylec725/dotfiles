@@ -119,7 +119,7 @@ brightness:buttons(
 
 -- lighten brightness color when hovering
 brightness:connect_signal("mouse::enter", function ()
-    brightness_bar.color = "#6be0e0"
+    brightness_bar.color = "#6de5e5"
 end)
 brightness:connect_signal("mouse::leave", function ()
     brightness_bar.color =  "#62CDCD"
@@ -157,7 +157,7 @@ local battery = wibox.widget{
 
 -- lighten battery color when hovering
 battery:connect_signal("mouse::enter", function ()
-    battery_bar.color = "#c0abea"
+    battery_bar.color = "#c6b0f1"
 end)
 battery:connect_signal("mouse::leave", function ()
     battery_bar.color = "#B4A1DB"
@@ -204,7 +204,7 @@ cpu:buttons(
 
 -- lighten cpu color when hovering
 cpu:connect_signal("mouse::enter", function ()
-    cpu_bar.color = "#7fee9d"
+    cpu_bar.color = "#82f2a0"
 end)
 cpu:connect_signal("mouse::leave", function ()
     cpu_bar.color =  "#74DD91"
@@ -251,7 +251,7 @@ ram:buttons(
 
 -- lighten ram color when hovering
 ram:connect_signal("mouse::enter", function ()
-    ram_bar.color = "#44ced6"
+    ram_bar.color = "#47d3dc"
 end)
 ram:connect_signal("mouse::leave", function ()
     ram_bar.color = "#3DBAC2"
