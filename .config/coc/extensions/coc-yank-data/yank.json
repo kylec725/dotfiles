@@ -1,5 +1,14 @@
 [
   {
+    "id": "298d6b00-87f2-11e9-a167-af82283e3afc",
+    "content": [
+      "dbus-send --print-reply --session --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata' | grep -A 2 -e title -e artist | sed -n -e '3p' -e '6p'"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t37\t23",
+    "filetype": "lua"
+  },
+  {
     "id": "a9a84680-87ec-11e9-85d9-611b616a48b1",
     "content": [
       "            artist = one:match('\"(.+)\"')"
@@ -2579,15 +2588,6 @@
     ],
     "regtype": "v",
     "path": "file:///home/kyle/.config/awesome/keys.lua\t116\t15",
-    "filetype": "lua"
-  },
-  {
-    "id": "bc7dcbd0-86ee-11e9-9b8f-15e7ccca8820",
-    "content": [
-      "pgrep xss-lock > tmp"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t116\t33",
     "filetype": "lua"
   }
 ]

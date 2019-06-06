@@ -17,6 +17,7 @@ local function update_widget()
         -- text = string.match(stdout, '%d+%%')
         local text = stdout:match('%w+')
         local icon = ""
+        -- icon = ""
         if (text == nil or text == "") then
             text = "-----"
         end

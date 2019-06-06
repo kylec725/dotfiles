@@ -57,7 +57,7 @@ theme.bg_normal     = theme.xcolor0
 theme.bg_focus      = theme.xcolor8
 theme.bg_urgent     = theme.xcolor8
 theme.bg_minimize   = theme.xcolor8
-theme.bg_systray    = theme.xbackground
+theme.bg_systray    = theme.xcolor0
 
 theme.fg_normal     = theme.xcolor8
 theme.fg_focus      = theme.xcolor4

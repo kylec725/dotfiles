@@ -86,7 +86,7 @@ local function update_widget()
     -- extract artist and title
     awful.spawn.easy_async_with_shell(song_request, -- artist request
         function(stdout)
-            local artist, title = stdout:match('"(.+)".*"(.+)"')
+            local artist, title = stdout:match('string "(.+)"\n.*string "(.+)"')
             if (artist == nil) then
                 mpd_artist.text = "---------"
             end

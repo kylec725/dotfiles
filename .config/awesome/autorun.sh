@@ -29,3 +29,6 @@ run xss-lock -l fade-lock +resetsaver &
 
 # Set redshift value
 run redshift -c ~/.config/redshift/redshift.conf
+
+# Run nm-applet
+# run nm-applet &
