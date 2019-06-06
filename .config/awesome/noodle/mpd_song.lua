@@ -92,14 +92,14 @@ local function update_widget()
             end
             if (title == nil) then
                 mpd_title.text = "---------"
+            else
+                -- send notification on next song (if text field have changed)
+                if (artist ~= mpd_artist.text and title ~= mpd_title.text) then
+                    send_notification(artist, title)
+                end
+                mpd_artist.text = artist
+                mpd_title.text = title
             end
-            -- send notification on next song (if text field have changed)
-            if (artist ~= mpd_artist.text and title ~= mpd_title.text) then
-                send_notification(artist, title)
-            end
-            mpd_artist.text = artist
-            mpd_title.text = title
-
         end
         )
 end

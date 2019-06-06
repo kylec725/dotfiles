@@ -391,9 +391,7 @@ volume_icon.forced_width = icon_size
 volume_icon.forced_height = icon_size
 local volume_bar = require("noodle.volume_bar")
 volume_bar.forced_width = progress_bar_width
--- volume_bar.shape = gears.shape.circle
--- volume_bar.margins.top = progress_bar_margins
--- volume_bar.margins.bottom = progress_bar_margins
+
 local volume = wibox.widget{
   nil,
   {
@@ -407,6 +405,13 @@ local volume = wibox.widget{
   expand = "none",
   layout = wibox.layout.align.horizontal
 }
+-- lighten color when hovering
+volume:connect_signal("mouse::enter", function ()
+    volume_bar.color = "#61b0dd"
+end)
+volume:connect_signal("mouse::leave", function ()
+    volume_bar.color = beautiful.volume_bar_active_color or "#5AA3CC"
+end)
 
 volume:buttons(gears.table.join(
                  -- Left click - Mute / Unmute

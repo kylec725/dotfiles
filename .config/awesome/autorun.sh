@@ -2,9 +2,9 @@
 
 # function to only run program if it is not already running
 function run {
-        if ! pgrep $1 > /dev/null ;
+        if [ -z $(pgrep $1) ]
         then
-                $@&
+                $@
         fi
 }
 
@@ -28,7 +28,7 @@ libinput-gestures-setup start
 run xss-lock -l fade-lock +resetsaver &
 
 # Set redshift value
-run redshift -c ~/.config/redshift/redshift.conf
+run redshift -c ~/.config/redshift/redshift.conf &
 
 # Run nm-applet
 # run nm-applet &

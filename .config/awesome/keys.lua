@@ -174,6 +174,7 @@ keys.globalkeys = gears.table.join(
         {description = "quit awesome", group = "awesome"}),
     awful.key({ modkey,         }, "Escape",
         function ()
+            sidebar.visible = false
             exit_screen_show()
         end,
         {description = "quit awesome", group = "awesome"}),
