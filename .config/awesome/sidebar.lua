@@ -568,7 +568,7 @@ awesome.connect_signal(
         sidebar:buttons(gears.table.join(
                 -- Middle click - Hide sidebar
                 awful.button({ }, 2, function ()
-                    sidebar.visible = false
+                    sidebar.visible = not sidebar.visible
                 end)
                 -- Right click - Hide sidebar
                 -- awful.button({ }, 3, function ()

@@ -1,5 +1,14 @@
 [
   {
+    "id": "9b960bb0-8894-11e9-8112-554b150949ad",
+    "content": [
+      "        naughty.destroy(lock_not)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t156\t1",
+    "filetype": "lua"
+  },
+  {
     "id": "4440bb50-888d-11e9-af80-577ef4a5d695",
     "content": [
       "            search_icon.image = beautiful.search_hover_icon"
@@ -2165,18 +2174,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/rc.lua\t137\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "270a5e50-875d-11e9-8517-091a8a96293a",
-    "content": [
-      "local bat_script = [[",
-      "  bash -c '",
-      "  upower -i $(upower -e | grep BAT) | grep percentage",
-      "  ']]"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/battery.lua\t38\t1",
     "filetype": "lua"
   }
 ]
