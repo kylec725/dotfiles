@@ -34,6 +34,8 @@ local volume_bar = wibox.widget{
     widget        = wibox.widget.progressbar,
 }
 
+local is_muted = false
+
 local function update_widget()
   awful.spawn.easy_async({"sh", "-c", "pactl list sinks"},
     function(stdout)
@@ -42,9 +44,11 @@ local function update_widget()
       local fill_color
       local bg_color
       if muted ~= nil then
+          is_muted = true
         fill_color = muted_color
         bg_color = muted_background_color
       else
+          is_muted = false
         fill_color = active_color
         bg_color = active_background_color
       end
@@ -53,6 +57,10 @@ local function update_widget()
       volume_bar.background_color = bg_color
     end
   )
+end
+
+volume_bar.muted = function ()
+    return is_muted
 end
 
 update_widget()

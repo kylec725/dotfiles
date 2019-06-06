@@ -1,5 +1,537 @@
 [
   {
+    "id": "cd072590-8811-11e9-9856-0931ba3adc7c",
+    "content": [
+      "%d+%%"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t16\t49",
+    "filetype": "lua"
+  },
+  {
+    "id": "a2d4d6f0-8811-11e9-9856-0931ba3adc7c",
+    "content": [
+      "acpi | awk '{ print $3 $4 }'"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t11\t21",
+    "filetype": "lua"
+  },
+  {
+    "id": "5f3369d0-8810-11e9-9856-0931ba3adc7c",
+    "content": [
+      "        brightness_bar:connect_signal(\"brightness_changed\", _)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t135\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "88f523b0-880d-11e9-95ab-f354f95d4913",
+    "content": [
+      "%B %d"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t374\t47",
+    "filetype": "lua"
+  },
+  {
+    "id": "94194560-880c-11e9-95ab-f354f95d4913",
+    "content": [
+      "exit:connect_signal(\"mouse::enter\", function ()",
+      "    exit_text.markup = \"<span foreground='#e2cdff'>Exit</span>\"",
+      "end)",
+      "exit:connect_signal(\"mouse::leave\", function ()",
+      "    exit_text.markup = \"<span foreground='#f1fcf9'>Exit</span>\"",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t38\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "2f1a2b20-880c-11e9-95ab-f354f95d4913",
+    "content": [
+      "ed9acc"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t187\t29",
+    "filetype": "lua"
+  },
+  {
+    "id": "2b8fcbe0-880c-11e9-95ab-f354f95d4913",
+    "content": [
+      "e2cdff"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t39\t44",
+    "filetype": "lua"
+  },
+  {
+    "id": "240456c0-880c-11e9-95ab-f354f95d4913",
+    "content": [
+      "ed9acc"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t187\t29",
+    "filetype": "lua"
+  },
+  {
+    "id": "98f917f0-880b-11e9-95ab-f354f95d4913",
+    "content": [
+      "e2cdff"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t39\t44",
+    "filetype": "lua"
+  },
+  {
+    "id": "761eab50-880b-11e9-95ab-f354f95d4913",
+    "content": [
+      "e2cdff"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t438\t46",
+    "filetype": "lua"
+  },
+  {
+    "id": "460dad30-880b-11e9-95ab-f354f95d4913",
+    "content": [
+      "-- lighten exit text when hovering",
+      "exit:connect_signal(\"mouse::enter\", function ()",
+      "    exit_text.markup = \"<span foreground='#dbc1ff'>Exit</span>\"",
+      "end)",
+      "exit:connect_signal(\"mouse::leave\", function ()",
+      "    exit_text.markup = \"<span foreground='#f1fcf9'>Exit</span>\"",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t37\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "228ec330-880b-11e9-95ab-f354f95d4913",
+    "content": [
+      "dbc1ff"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t374\t39",
+    "filetype": "lua"
+  },
+  {
+    "id": "73f0eb50-880a-11e9-95ab-f354f95d4913",
+    "content": [
+      "c1dcff"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t374\t39",
+    "filetype": "lua"
+  },
+  {
+    "id": "17214e60-880a-11e9-95ab-f354f95d4913",
+    "content": [
+      "-- lighten exit text when hovering",
+      "exit:connect_signal(\"mouse::enter\", function ()",
+      "    exit_text.markup = \"<span foreground='#ffffff'>Exit</span>\"",
+      "end)",
+      "exit:connect_signal(\"mouse::leave\", function ()",
+      "    exit_text.markup = \"<span foreground='#f1fcf9'>Exit</span>\"",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t37\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "b944fc60-8809-11e9-95ab-f354f95d4913",
+    "content": [
+      "    exit_text.markup = \"<span foreground=\"blue\">Exit</span>\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t39\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "413a6520-8809-11e9-95ab-f354f95d4913",
+    "content": [
+      "F1FCF9"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t34\t24",
+    "filetype": "lua"
+  },
+  {
+    "id": "dda53b20-8808-11e9-95ab-f354f95d4913",
+    "content": [
+      "-- lighten battery color when hovering",
+      "battery:connect_signal(\"mouse::enter\", function ()",
+      "    battery_bar.color = \"#c0abea\"",
+      "end)",
+      "battery:connect_signal(\"mouse::leave\", function ()",
+      "    battery_bar.color = \"#B4A1DB\"",
+      "end)",
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t158\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "a7fb2200-8808-11e9-95ab-f354f95d4913",
+    "content": [
+      "B4A1DB"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t163\t27",
+    "filetype": "lua"
+  },
+  {
+    "id": "a158fb70-8808-11e9-95ab-f354f95d4913",
+    "content": [
+      "  \"#B4A1DB\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t40\t20",
+    "filetype": "lua"
+  },
+  {
+    "id": "85912a70-8808-11e9-95ab-f354f95d4913",
+    "content": [
+      "-- lighten ram color when hovering",
+      "ram:connect_signal(\"mouse::enter\", function ()",
+      "    ram_bar.color = \"#44ced6\"",
+      "end)",
+      "ram:connect_signal(\"mouse::leave\", function ()",
+      "    ram_bar.color = \"#3DBAC2\"",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t244\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "6534b620-8808-11e9-95ab-f354f95d4913",
+    "content": [
+      "#3DBAC2"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t249\t29",
+    "filetype": "lua"
+  },
+  {
+    "id": "63b54210-8808-11e9-95ab-f354f95d4913",
+    "content": [
+      " \"#3DBAC2\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t249\t27",
+    "filetype": "lua"
+  },
+  {
+    "id": "5c7b4850-8808-11e9-95ab-f354f95d4913",
+    "content": [
+      "  \"#3DBAC2\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t47\t20",
+    "filetype": "lua"
+  },
+  {
+    "id": "4b79a510-8808-11e9-95ab-f354f95d4913",
+    "content": [
+      "-- lighten brightness color when hovering",
+      "brightness:connect_signal(\"mouse::enter\", function ()",
+      "    brightness_bar.color = \"#6be0e0\"",
+      "end)",
+      "brightness:connect_signal(\"mouse::leave\", function ()",
+      "    brightness_bar.color =  \"#62CDCD\"",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t120\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "29de2110-8808-11e9-95ab-f354f95d4913",
+    "content": [
+      "#62CDCD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t125\t23",
+    "filetype": "lua"
+  },
+  {
+    "id": "228de030-8808-11e9-95ab-f354f95d4913",
+    "content": [
+      "  \"#62CDCD\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t49\t20",
+    "filetype": "lua"
+  },
+  {
+    "id": "0577e450-8808-11e9-95ab-f354f95d4913",
+    "content": [
+      "-- lighten cpu color when hovering",
+      "cpu:connect_signal(\"mouse::enter\", function ()",
+      "    cpu_bar.color = \"#7fee9d\"",
+      "end)",
+      "cpu:connect_signal(\"mouse::leave\", function ()",
+      "    cpu_bar.color =  \"#74DD91\"",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t189\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "ec60db70-8807-11e9-95ab-f354f95d4913",
+    "content": [
+      "74DD91"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t194\t24",
+    "filetype": "lua"
+  },
+  {
+    "id": "e7f236b0-8807-11e9-95ab-f354f95d4913",
+    "content": [
+      "  \"#74DD91\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t37\t20",
+    "filetype": "lua"
+  },
+  {
+    "id": "9022f730-8807-11e9-95ab-f354f95d4913",
+    "content": [
+      "-- lighten color when hovering",
+      "volume:connect_signal(\"mouse::enter\", function ()",
+      "    if (not volume_bar.muted()) then",
+      "        volume_bar.color = \"#abfeff\"",
+      "    else",
+      "        volume_bar.color = \"#546577\"",
+      "    end",
+      "end)",
+      "volume:connect_signal(\"mouse::leave\", function ()",
+      "    if (not volume_bar.muted()) then",
+      "        volume_bar.color = beautiful.xcolor6",
+      "    else",
+      "        volume_bar.color = \"#465463\"",
+      "    end",
+      "end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t408\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "660edef0-8807-11e9-95ab-f354f95d4913",
+    "content": [
+      "        volume_bar.color = \"#465463\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t420\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "7e52fce0-8806-11e9-95ab-f354f95d4913",
+    "content": [
+      " \"#465463\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/tmp\t3\t31",
+    "filetype": ""
+  },
+  {
+    "id": "69637da0-8806-11e9-95ab-f354f95d4913",
+    "content": [
+      " \"#abfeff\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t411\t27",
+    "filetype": "lua"
+  },
+  {
+    "id": "32fbe0e0-8806-11e9-95ab-f354f95d4913",
+    "content": [
+      "    awful.key({}, \"XF86AudioPlay\",       function ()",
+      "        awful.spawn.with_shell(\"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause\")",
+      "    end, {description = \"play or pause spotify\", group = \"launcher\"}),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t108\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "bf51e4a0-8805-11e9-95ab-f354f95d4913",
+    "content": [
+      "        volume_bar.color = \"#abfeff\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t411\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "b61934b0-8805-11e9-95ab-f354f95d4913",
+    "content": [
+      "#465463"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/tmp\t3\t33",
+    "filetype": ""
+  },
+  {
+    "id": "8ae22040-8805-11e9-95ab-f354f95d4913",
+    "content": [
+      "\"#465463\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/tmp\t3\t32",
+    "filetype": ""
+  },
+  {
+    "id": "5a8d8970-8805-11e9-95ab-f354f95d4913",
+    "content": [
+      "9EE9EA"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t413\t63",
+    "filetype": "lua"
+  },
+  {
+    "id": "49bc9320-8805-11e9-95ab-f354f95d4913",
+    "content": [
+      "9EE9EA"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t413\t63",
+    "filetype": "lua"
+  },
+  {
+    "id": "3fdbbc50-8805-11e9-95ab-f354f95d4913",
+    "content": [
+      "9EE9EA"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/tmp\t2\t47",
+    "filetype": ""
+  },
+  {
+    "id": "20513e00-8805-11e9-95ab-f354f95d4913",
+    "content": [
+      "#9EE9EA"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/tmp\t1\t34",
+    "filetype": ""
+  },
+  {
+    "id": "177728d0-8805-11e9-95ab-f354f95d4913",
+    "content": [
+      " \"#9EE9EA\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/tmp\t1\t32",
+    "filetype": ""
+  },
+  {
+    "id": "13813680-8805-11e9-95ab-f354f95d4913",
+    "content": [
+      " \"#465463\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/tmp\t3\t31",
+    "filetype": ""
+  },
+  {
+    "id": "120ff340-8805-11e9-95ab-f354f95d4913",
+    "content": [
+      "#465463"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/tmp\t3\t32",
+    "filetype": ""
+  },
+  {
+    "id": "0d0b2900-8805-11e9-95ab-f354f95d4913",
+    "content": [
+      "#465463"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t43\t23",
+    "filetype": "lua"
+  },
+  {
+    "id": "09bd3680-8805-11e9-95ab-f354f95d4913",
+    "content": [
+      "#9EE9EA"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/tmp\t1\t33",
+    "filetype": ""
+  },
+  {
+    "id": "046c9630-8805-11e9-95ab-f354f95d4913",
+    "content": [
+      "#9EE9EA"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t41\t23",
+    "filetype": "lua"
+  },
+  {
+    "id": "f9b890e0-8804-11e9-95ab-f354f95d4913",
+    "content": [
+      "theme.volume_bar_active_color = theme.xcolor6",
+      "theme.volume_bar_active_background_color = theme.xcolor6 .. \"33\"",
+      "theme.volume_bar_muted_color = theme.xcolor8",
+      "theme.volume_bar_muted_background_color = theme.xcolor8 .. \"33\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t431\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "57fff630-8804-11e9-a01f-6728c247fad3",
+    "content": [
+      "awful.spawn.with_shell(\"~/.config/awesome/awesome-cleanup.sh\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles_git/config/awesome/rc.lua\t63\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "3b3a3d30-8804-11e9-a01f-6728c247fad3",
+    "content": [
+      "#!/bin/bash",
+      "# Noodle Cleanup Script",
+      "#   Some of my widgets (mpd, volume) rely on scripts that have to be",
+      "#   run persistently in the background.",
+      "#   They sleep until mpd/volume state changes, in an infinite loop.",
+      "#   As a result when awesome restarts, they keep running in background, along with the new ones that are created after the restart.",
+      "#   This script cleans up the old processes.",
+      "",
+      "# Mpd widget",
+      "ps aux | grep \"mpc idleloop player\" | grep -v grep | awk '{print $2}' | xargs kill",
+      "#ps aux | grep \"mpc idle player\" | grep -v grep | awk '{print $2}' | xargs kill",
+      "# Volume widget",
+      "ps aux | grep \"pactl subscribe\" | grep -v grep | awk '{print $2}' | xargs kill"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles_git/config/awesome/awesome-cleanup.sh\t1\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "afcc9310-8803-11e9-a9d3-bb356f31d22d",
+    "content": [
+      "pactl subscribe 2> /dev/null | grep --line-buffered \"sink #0\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t63\t3",
+    "filetype": "lua"
+  },
+  {
     "id": "c19aa380-8802-11e9-b7d8-bd96281c7273",
     "content": [
       "function run {",
@@ -1579,476 +2111,5 @@
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/keys.lua\t308\t1",
     "filetype": "lua"
-  },
-  {
-    "id": "94508410-8732-11e9-95c0-69d79f2f7849",
-    "content": [
-      "    -- awful.button({ }, 8, function()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t308\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "9442ef80-8732-11e9-95c0-69d79f2f7849",
-    "content": [
-      "    -- awful.button({ }, 8, function()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t308\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "94369370-8732-11e9-95c0-69d79f2f7849",
-    "content": [
-      "    -- awful.button({ }, 8, function()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t308\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "9429e940-8732-11e9-95c0-69d79f2f7849",
-    "content": [
-      "    -- awful.button({ }, 8, function()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t308\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "02ecaad0-8732-11e9-95c0-69d79f2f7849",
-    "content": [
-      "                {",
-      "                    pad(9),",
-      "                },"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/exit_screen.lua\t267\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "30ba3e10-8731-11e9-95c0-69d79f2f7849",
-    "content": [
-      "                pad(9),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/exit_screen.lua\t268\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "87db58b0-8730-11e9-95c0-69d79f2f7849",
-    "content": [
-      "            pad(9),",
-      "            pad(9),",
-      "            pad(9),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/exit_screen.lua\t265\t13",
-    "filetype": "lua"
-  },
-  {
-    "id": "6fabc9a0-8730-11e9-95c0-69d79f2f7849",
-    "content": [
-      "            pad(9),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/exit_screen.lua\t267\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "64863dd0-8730-11e9-95c0-69d79f2f7849",
-    "content": [
-      "    layout = wibox.layout.fixed.vertical"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t502\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "4ab92b60-8730-11e9-95c0-69d79f2f7849",
-    "content": [
-      "            pad(9)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/exit_screen.lua\t265\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "ca1ea750-872f-11e9-95c0-69d79f2f7849",
-    "content": [
-      "    pad(9)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/exit_screen.lua\t263\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "99762420-872f-11e9-95c0-69d79f2f7849",
-    "content": [
-      "        pad(3),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/exit_screen.lua\t264\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "8fe764f0-872f-11e9-95c0-69d79f2f7849",
-    "content": [
-      "          pad(3),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/exit_screen.lua\t268\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "794a35b0-872f-11e9-95c0-69d79f2f7849",
-    "content": [
-      "          pad(3),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/exit_screen.lua\t268\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "59361500-872f-11e9-95c0-69d79f2f7849",
-    "content": [
-      "          pad(3),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/exit_screen.lua\t264\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "543c2030-872f-11e9-95c0-69d79f2f7849",
-    "content": [
-      "          pad(3),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/exit_screen.lua\t268\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "4c815db0-872f-11e9-95c0-69d79f2f7849",
-    "content": [
-      "    pad(3),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/exit_screen.lua\t263\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "425fad50-872f-11e9-95c0-69d79f2f7849",
-    "content": [
-      "          pad(3),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/exit_screen.lua\t268\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "01c65aa0-872f-11e9-95c0-69d79f2f7849",
-    "content": [
-      "    pad(1),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/exit_screen.lua\t50\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "fd648720-872e-11e9-95c0-69d79f2f7849",
-    "content": [
-      "    pad(1),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/exit_screen.lua\t57\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "e9e4e100-872d-11e9-99c3-4951918dac5f",
-    "content": [
-      "                 awful.button({ }, 3, function ()",
-      "                     awful.spawn.with_shell(\"rofi -show drun\")",
-      "                     sidebar.visible = false",
-      "                 end)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t347\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "cc460610-872d-11e9-99c3-4951918dac5f",
-    "content": [
-      "rofi -show drun"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t66\t13",
-    "filetype": "lua"
-  },
-  {
-    "id": "6c173890-872d-11e9-99c3-4951918dac5f",
-    "content": [
-      "        pad(5),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t509\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "2a52c8d0-872c-11e9-99c3-4951918dac5f",
-    "content": [
-      "    pad(1),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t497\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "c32eabb0-872b-11e9-99c3-4951918dac5f",
-    "content": [
-      "    pad(1),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t467\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "b0f5f6c0-8725-11e9-ae60-61c820eae252",
-    "content": [
-      "\"#B4A1DB\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t40\t22",
-    "filetype": "lua"
-  },
-  {
-    "id": "a7bf90c0-8725-11e9-ae60-61c820eae252",
-    "content": [
-      "\"#75DBE1\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t39\t22",
-    "filetype": "lua"
-  },
-  {
-    "id": "9f827ee0-8725-11e9-ae60-61c820eae252",
-    "content": [
-      "\"#E49186\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t38\t22",
-    "filetype": "lua"
-  },
-  {
-    "id": "9286ac70-8725-11e9-ae60-61c820eae252",
-    "content": [
-      "  \"#74DD91\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t37\t20",
-    "filetype": "lua"
-  },
-  {
-    "id": "54eed9f0-8725-11e9-ae60-61c820eae252",
-    "content": [
-      "\"#DB86BA\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t36\t22",
-    "filetype": "lua"
-  },
-  {
-    "id": "a93954f0-8724-11e9-9a96-b54a950e76f9",
-    "content": [
-      "      function ()",
-      "        exit_screen_show()",
-      "      end,"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/dotfiles/config/awesome/keys.lua\t157\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "9ac895c0-8724-11e9-ae60-61c820eae252",
-    "content": [
-      "    awful.key({ modkey, \"Shift\"   }, \"q\", awesome.quit,",
-      "        {description = \"quit awesome\", group = \"awesome\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t137\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "7470c230-8724-11e9-9a96-b54a950e76f9",
-    "content": [
-      "local exit_screen = require(\"noodle.text_exit_screen\")"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/dotfiles/config/awesome/rc.lua\t75\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "dbe90d10-8714-11e9-ae60-61c820eae252",
-    "content": [
-      "%I:%M%P"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t135\t58",
-    "filetype": "lua"
-  },
-  {
-    "id": "bc33fc50-8714-11e9-ae60-61c820eae252",
-    "content": [
-      "%I:%M%P"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t135\t58",
-    "filetype": "lua"
-  },
-  {
-    "id": "79a87690-8714-11e9-9a5d-e73c77d96cba",
-    "content": [
-      ""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3blocks/config\t41\t7",
-    "filetype": "conf"
-  },
-  {
-    "id": "6bb63630-8714-11e9-8529-87c994ff6385",
-    "content": [
-      "%I:%M%P"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bin/clock\t3\t8",
-    "filetype": "sh"
-  },
-  {
-    "id": "4d4cb840-8714-11e9-9a5d-e73c77d96cba",
-    "content": [
-      ""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3blocks/config\t37\t7",
-    "filetype": "conf"
-  },
-  {
-    "id": "46e6a5c0-8713-11e9-9a96-b54a950e76f9",
-    "content": [
-      "    -- Toggle sidebar",
-      "    awful.key({ superkey }, \"grave\", function() sidebar.visible = not sidebar.visible end,",
-      "              {description = \"show or hide sidebar\", group = \"awesome\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/dotfiles/config/awesome/keys.lua\t563\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "8c349c50-8712-11e9-bf40-8967bb061927",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t208\t14",
-    "filetype": "conf"
-  },
-  {
-    "id": "7bfbc750-8712-11e9-bf40-8967bb061927",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t208\t14",
-    "filetype": "conf"
-  },
-  {
-    "id": "61a364d0-8712-11e9-bf40-8967bb061927",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t208\t14",
-    "filetype": "conf"
-  },
-  {
-    "id": "0d0037f0-8712-11e9-ae60-61c820eae252",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t224\t67",
-    "filetype": "lua"
-  },
-  {
-    "id": "f5c939b0-8711-11e9-9073-230fa9ff0f3c",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.Xresources\t33\t15",
-    "filetype": "xdefaults"
-  },
-  {
-    "id": "efce4fa0-8711-11e9-9073-230fa9ff0f3c",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.Xresources\t33\t15",
-    "filetype": "xdefaults"
-  },
-  {
-    "id": "cb9fc4b0-8711-11e9-9073-230fa9ff0f3c",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.Xresources\t33\t15",
-    "filetype": "xdefaults"
-  },
-  {
-    "id": "c7526390-8711-11e9-ae60-61c820eae252",
-    "content": [
-      "theme.xcolor15    = xrdb.color15    or \"#E0E5E5\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t50\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "b1aefda0-8711-11e9-8dc7-33f3c0a07a6a",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t208\t14",
-    "filetype": "conf"
-  },
-  {
-    "id": "86a42950-8711-11e9-8dc7-33f3c0a07a6a",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t208\t14",
-    "filetype": "conf"
-  },
-  {
-    "id": "4a00f000-8711-11e9-8dc7-33f3c0a07a6a",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t208\t14",
-    "filetype": "conf"
-  },
-  {
-    "id": "2b38fe60-8711-11e9-8dc7-33f3c0a07a6a",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t208\t14",
-    "filetype": "conf"
   }
 ]

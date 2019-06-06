@@ -53,37 +53,37 @@ exit:buttons(gears.table.join(
 --     expand = "none"
 -- }
 
-local temperature_icon = wibox.widget.imagebox(beautiful.temperature_icon)
-temperature_icon.resize = true
-temperature_icon.forced_width = icon_size
-temperature_icon.forced_height = icon_size
-local temperature_bar = require("noodle.temperature_bar")
-temperature_bar.forced_width = progress_bar_width
--- temperature_bar.margins.top = progress_bar_margins
--- temperature_bar.margins.bottom = progress_bar_margins
-local temperature = wibox.widget{
-  nil,
-  {
-    temperature_icon,
-    pad(1),
-    temperature_bar,
-    pad(1),
-    layout = wibox.layout.fixed.horizontal
-  },
-  nil,
-  expand = "none",
-  layout = wibox.layout.align.horizontal
-}
-temperature:buttons(
-  gears.table.join(
-    awful.button({ }, 1, function ()
-        -- local matcher = function (c)
-        --   return awful.rules.match(c, {name = 'watch sensors'})
-        -- end
-        -- awful.client.run_or_raise(terminal .." -e 'watch sensors'", matcher)
-        -- awful.spawn(terminal .. " -e 'watch sensors'", {floating = true})
-    end)
-))
+-- local temperature_icon = wibox.widget.imagebox(beautiful.temperature_icon)
+-- temperature_icon.resize = true
+-- temperature_icon.forced_width = icon_size
+-- temperature_icon.forced_height = icon_size
+-- local temperature_bar = require("noodle.temperature_bar")
+-- temperature_bar.forced_width = progress_bar_width
+-- -- temperature_bar.margins.top = progress_bar_margins
+-- -- temperature_bar.margins.bottom = progress_bar_margins
+-- local temperature = wibox.widget{
+--   nil,
+--   {
+--     temperature_icon,
+--     pad(1),
+--     temperature_bar,
+--     pad(1),
+--     layout = wibox.layout.fixed.horizontal
+--   },
+--   nil,
+--   expand = "none",
+--   layout = wibox.layout.align.horizontal
+-- }
+-- temperature:buttons(
+--   gears.table.join(
+--     awful.button({ }, 1, function ()
+--         -- local matcher = function (c)
+--         --   return awful.rules.match(c, {name = 'watch sensors'})
+--         -- end
+--         -- awful.client.run_or_raise(terminal .." -e 'watch sensors'", matcher)
+--         -- awful.spawn(terminal .. " -e 'watch sensors'", {floating = true})
+--     end)
+-- ))
 
 local brightness_icon = wibox.widget.imagebox(beautiful.redshift_icon)
 brightness_icon.resize = true
@@ -117,6 +117,14 @@ brightness:buttons(
     end)
 ))
 
+-- lighten brightness color when hovering
+brightness:connect_signal("mouse::enter", function ()
+    brightness_bar.color = "#6be0e0"
+end)
+brightness:connect_signal("mouse::leave", function ()
+    brightness_bar.color =  "#62CDCD"
+end)
+
 local battery_icon = wibox.widget.imagebox(beautiful.battery_icon)
 battery_icon.resize = true
 battery_icon.forced_width = icon_size
@@ -146,6 +154,14 @@ local battery = wibox.widget{
   expand = "none",
   layout = wibox.layout.align.horizontal
 }
+
+-- lighten battery color when hovering
+battery:connect_signal("mouse::enter", function ()
+    battery_bar.color = "#c0abea"
+end)
+battery:connect_signal("mouse::leave", function ()
+    battery_bar.color = "#B4A1DB"
+end)
 
 local cpu_icon = wibox.widget.imagebox(beautiful.cpu_icon)
 cpu_icon.resize = true
@@ -186,6 +202,14 @@ cpu:buttons(
     -- end)
 ))
 
+-- lighten cpu color when hovering
+cpu:connect_signal("mouse::enter", function ()
+    cpu_bar.color = "#7fee9d"
+end)
+cpu:connect_signal("mouse::leave", function ()
+    cpu_bar.color =  "#74DD91"
+end)
+
 local ram_icon = wibox.widget.imagebox(beautiful.ram_icon)
 ram_icon.resize = true
 ram_icon.forced_width = icon_size
@@ -224,6 +248,14 @@ ram:buttons(
     --     awful.client.run_or_raise("lxtask", matcher)
     -- end)
 ))
+
+-- lighten ram color when hovering
+ram:connect_signal("mouse::enter", function ()
+    ram_bar.color = "#44ced6"
+end)
+ram:connect_signal("mouse::leave", function ()
+    ram_bar.color = "#3DBAC2"
+end)
 
 local mpd_song = require("noodle.mpd_song")
 local mpd_widget_children = mpd_song:get_all_children()
@@ -405,19 +437,28 @@ local volume = wibox.widget{
   expand = "none",
   layout = wibox.layout.align.horizontal
 }
--- lighten color when hovering
+-- lighten volume color when hovering
 volume:connect_signal("mouse::enter", function ()
-    volume_bar.color = "#61b0dd"
+    if (not volume_bar.muted()) then
+        volume_bar.color = "#abfeff"
+    else
+        volume_bar.color = "#546577"
+    end
 end)
 volume:connect_signal("mouse::leave", function ()
-    volume_bar.color = beautiful.volume_bar_active_color or "#5AA3CC"
+    if (not volume_bar.muted()) then
+        volume_bar.color = beautiful.xcolor6
+    else
+        volume_bar.color = "#465463"
+    end
 end)
 
 volume:buttons(gears.table.join(
                  -- Left click - Mute / Unmute
                  awful.button({ }, 1, function ()
                      awful.spawn.with_shell("amixer -q sset Master,0 toggle")
-                 end),
+                     volume_bar.color = "#465463"
+                 end)
                  -- Right click - Run or raise pavucontrol
                  -- awful.button({ }, 3, function () 
                  --     local matcher = function (c)
@@ -426,12 +467,12 @@ volume:buttons(gears.table.join(
                  --     awful.client.run_or_raise("pavucontrol", matcher)
                  -- end),
                  -- Scroll - Increase / Decrease volume
-                 awful.button({ }, 4, function () 
-                     awful.spawn.with_shell("volume-control.sh up")
-                 end),
-                 awful.button({ }, 5, function () 
-                     awful.spawn.with_shell("volume-control.sh down")
-                 end)
+                 -- awful.button({ }, 4, function () 
+                 --     awful.spawn.with_shell("volume-control.sh up")
+                 -- end),
+                 -- awful.button({ }, 5, function () 
+                 --     awful.spawn.with_shell("volume-control.sh down")
+                 -- end)
 ))
 
 -- Create the sidebar

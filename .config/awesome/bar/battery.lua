@@ -8,15 +8,17 @@ local update_interval = 30            -- in seconds
 
 local battery = wibox.widget.textbox()
 
-local bat_script = "acpi | awk '{ print $4 }'"
+local bat_script = "acpi | awk '{ print $3 $4 }'"
 
 local function update_widget()
     awful.spawn.easy_async_with_shell(bat_script, function(stdout)
         -- local text = string.match(stdout, '%d+%%')
-        local text = stdout:match('%d+%%')
+        local status, text = stdout:match('(.+),(%d+%%),')
         charge = tonumber(string.match(text, '%d+'))
         local icon
-        if (charge >= 0 and charge < 15) then
+        if (status == "Charging") then
+            icon = ""
+        elseif (charge >= 0 and charge < 15) then
             icon = ""
         elseif (charge >= 15 and charge < 40) then
             icon = ""

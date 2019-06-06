@@ -10,7 +10,7 @@ local active_color = beautiful.cpu_bar_active_color or "#5AA3CC"
 local background_color = beautiful.cpu_bar_background_color or "#222222"
 
 -- Configuration
-local update_interval = 5            -- in seconds
+local update_interval = 15            -- in seconds
 
 local cpu_bar = wibox.widget{
   max_value     = 100,

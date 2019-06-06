@@ -17,6 +17,9 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
 
+-- cleanup script to prevent volume widget from crashing
+awful.spawn.with_shell("~/.config/awesome/awesome-cleanup.sh")
+
 -- Theme Settings
 -- Theme handling library
 local beautiful = require("beautiful")
@@ -240,7 +243,7 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             wibox.widget.systray(),
             mynetwork,
-            -- mybattery,
+            mybattery,
             mytextclock,
             s.mylayoutbox,
         },

@@ -116,6 +116,10 @@ keys.globalkeys = gears.table.join(
         awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
         mpd_song.update()
     end, {description = "previous song in spotify", group = "launcher"}),
+
+    awful.key({ modkey }, ".",       function ()
+        awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause")
+    end, {description = "play or pause spotify", group = "launcher"}),
     awful.key({ modkey,           }, "l",     function ()
         awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next")
         mpd_song.update()
