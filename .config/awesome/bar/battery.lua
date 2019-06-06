@@ -13,8 +13,8 @@ local bat_script = "acpi | awk '{ print $3 $4 }'"
 local function update_widget()
     awful.spawn.easy_async_with_shell(bat_script, function(stdout)
         -- local text = string.match(stdout, '%d+%%')
-        local status, text = stdout:match('(.+),(%d+%%),')
-        charge = tonumber(string.match(text, '%d+'))
+        local status, percent = stdout:match('(.+),(%d+%%).*')
+        charge = tonumber(string.match(percent, '%d+'))
         local icon
         if (status == "Charging") then
             icon = ""
@@ -29,7 +29,7 @@ local function update_widget()
         else
             icon = ""
         end
-        battery.text = icon .. " " .. text .. "  "
+        battery.text = icon .. " " .. percent .. "  "
     end)
 end
 

@@ -1,5 +1,258 @@
 [
   {
+    "id": "4440bb50-888d-11e9-af80-577ef4a5d695",
+    "content": [
+      "            search_icon.image = beautiful.search_hover_icon"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t483\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "2a08d920-888d-11e9-af80-577ef4a5d695",
+    "content": [
+      "            disk_icon.image = beautiful.files_hover_icon"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t454\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "0bbe2dd0-888d-11e9-af80-577ef4a5d695",
+    "content": [
+      "    exit_icon = beautiful.poweroff_hover_icon"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t39\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "7ebb64c0-888c-11e9-af80-577ef4a5d695",
+    "content": [
+      "theme.poweroff_icon = icon_path .. \"poweroff.png\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t276\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "7964f810-888c-11e9-af80-577ef4a5d695",
+    "content": [
+      "theme.files_icon = icon_path .. \"files.png\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t238\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "74a4d7f0-888c-11e9-af80-577ef4a5d695",
+    "content": [
+      "theme.poweroff_icon = icon_path .. \"poweroff.png\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t275\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "1a2322a0-888c-11e9-af80-577ef4a5d695",
+    "content": [
+      "theme.search_icon = icon_path .. \"search.png\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t226\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "d80c8a50-8881-11e9-af80-577ef4a5d695",
+    "content": [
+      "        -- change button color on hover",
+      "        playerctl_prev_icon:connect_signal(\"mouse::enter\", function()",
+      "            playerctl_prev_icon.image = beautiful.playerctl_prev_icon_hover",
+      "        end)",
+      "        playerctl_prev_icon:connect_signal(\"mouse::leave\", function()",
+      "            playerctl_prev_icon.image = beautiful.playerctl_prev_icon",
+      "        end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t337\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "a0470b40-8881-11e9-af80-577ef4a5d695",
+    "content": [
+      "        -- change button color on hover",
+      "        playerctl_toggle_icon:connect_signal(\"mouse::enter\", function()",
+      "            playerctl_toggle_icon.image = beautiful.playerctl_toggle_icon_hover",
+      "        end)",
+      "        playerctl_toggle_icon:connect_signal(\"mouse::leave\", function()",
+      "            playerctl_toggle_icon.image = beautiful.playerctl_toggle_icon",
+      "        end)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t316\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "5585c6a0-8881-11e9-af80-577ef4a5d695",
+    "content": [
+      "        -- change text color on hover",
+      "        -- time:connect_signal(\"mouse::enter\", function()",
+      "        --     time.markup = helpers.colorize_text(time.text, \"#c9bff7\")",
+      "        -- end)",
+      "        -- time:connect_signal(\"mouse::leave\", function()",
+      "        --     time.markup = helpers.colorize_text(time.text, \"#F1FCF9\")",
+      "        -- end)",
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t365\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "04ed2580-8881-11e9-af80-577ef4a5d695",
+    "content": [
+      "theme.playerctl_toggle_icon = icon_path .. \"playerctl_toggle.png\"",
+      "theme.playerctl_prev_icon = icon_path .. \"playerctl_prev.png\"",
+      "theme.playerctl_next_icon = icon_path .. \"playerctl_next.png\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t219\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "44ea9c70-8878-11e9-bd3b-d511b2be8fef",
+    "content": [
+      " \"#abfeff\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t60\t33",
+    "filetype": "lua"
+  },
+  {
+    "id": "225f8850-8878-11e9-bd3b-d511b2be8fef",
+    "content": [
+      "\"#546577\" "
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t52\t34",
+    "filetype": "lua"
+  },
+  {
+    "id": "f0c85f60-8877-11e9-bd3b-d511b2be8fef",
+    "content": [
+      " \"#abfeff\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t491\t27",
+    "filetype": "lua"
+  },
+  {
+    "id": "83bd7c70-8877-11e9-bd3b-d511b2be8fef",
+    "content": [
+      "local function update_widget()",
+      "    awful.spawn.easy_async({\"sh\", \"-c\", \"pactl list sinks\"},",
+      "        function(stdout)",
+      "            local volume = stdout:match('(%d+)%% /')",
+      "            local muted = stdout:match('Mute:(%s+)[yes]')",
+      "            local fill_color",
+      "            local bg_color",
+      "            if muted ~= nil then",
+      "                is_muted = true",
+      "                if hover then",
+      "                    fill_color = \"#546577\" ",
+      "                else",
+      "                    fill_color = muted_color",
+      "                end",
+      "                bg_color = muted_background_color",
+      "            else",
+      "                is_muted = false",
+      "                fill_color = active_color",
+      "                bg_color = active_background_color",
+      "            end",
+      "            volume_bar.value = tonumber(volume)",
+      "            volume_bar.color = fill_color",
+      "            volume_bar.background_color = bg_color",
+      "        end",
+      "  )",
+      "end"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t40\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "60699a10-8877-11e9-bd3b-d511b2be8fef",
+    "content": [
+      " \"#546577\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t494\t27",
+    "filetype": "lua"
+  },
+  {
+    "id": "3063bf80-8877-11e9-bd3b-d511b2be8fef",
+    "content": [
+      "        volume_bar.hover(true)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t492\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "795060a0-8876-11e9-bd3b-d511b2be8fef",
+    "content": [
+      "546577"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t493\t30",
+    "filetype": "lua"
+  },
+  {
+    "id": "4e369830-8876-11e9-bd3b-d511b2be8fef",
+    "content": [
+      "abfeff"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t491\t30",
+    "filetype": "lua"
+  },
+  {
+    "id": "4c38f370-8876-11e9-bd3b-d511b2be8fef",
+    "content": [
+      "465463"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t508\t43",
+    "filetype": "lua"
+  },
+  {
+    "id": "4a7857b0-8876-11e9-bd3b-d511b2be8fef",
+    "content": [
+      "abfeff"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t491\t30",
+    "filetype": "lua"
+  },
+  {
+    "id": "307233e0-8876-11e9-bd3b-d511b2be8fef",
+    "content": [
+      " \"#546577\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t493\t27",
+    "filetype": "lua"
+  },
+  {
+    "id": "454bfdb0-8875-11e9-98cc-4d68d488a7fe",
+    "content": [
+      "acpi | awk '{ print $3 $4 }'"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t11\t21",
+    "filetype": "lua"
+  },
+  {
     "id": "1cf481d0-882e-11e9-8bb3-73330d4fbbc2",
     "content": [
       "7ef7a0"
@@ -1925,236 +2178,5 @@
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/noodle/battery.lua\t38\t1",
     "filetype": "lua"
-  },
-  {
-    "id": "14941c70-875d-11e9-8517-091a8a96293a",
-    "content": [
-      "local bat_script = [[",
-      "  bash -c '",
-      "  upower -i $(upower -e | grep BAT) | grep percentage",
-      "  ']]"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/battery.lua\t38\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "08a4b0f0-875d-11e9-8517-091a8a96293a",
-    "content": [
-      "  upower -i $(upower -e | grep BAT) | grep percentage"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/battery.lua\t40\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "15da2670-875c-11e9-8517-091a8a96293a",
-    "content": [
-      "acpi | awk '{ print $4 }'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t17\t12",
-    "filetype": "lua"
-  },
-  {
-    "id": "dcdbb230-875b-11e9-8517-091a8a96293a",
-    "content": [
-      "  bash -c 'acpi | awk '{ print $4 }''"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t17\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "c22996f0-875b-11e9-8517-091a8a96293a",
-    "content": [
-      "  bash -c 'acpi | awk '{ print $4 }']]"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t17\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "8e6bd9f0-875a-11e9-8517-091a8a96293a",
-    "content": [
-      "        local tmp = os.execute(\"pgrep xss-lock > tmp\")"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t128\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "61d07a90-875a-11e9-8517-091a8a96293a",
-    "content": [
-      "[[",
-      "  bash -c '",
-      "  upower -i $(upower -e | grep BAT) | grep percentage | awk '{ print $2 }'",
-      "  ']]"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t16\t20",
-    "filetype": "lua"
-  },
-  {
-    "id": "984c5810-8759-11e9-8517-091a8a96293a",
-    "content": [
-      "out"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t33\t24",
-    "filetype": "lua"
-  },
-  {
-    "id": "7ebef8a0-8757-11e9-8517-091a8a96293a",
-    "content": [
-      "    awful.spawn.easy_async_with_shell(\"light\", function(out)",
-      "        -- Remove trailing whitespaces",
-      "        -- out = out:gsub('^%s*(.-)%s*$', '%1')",
-      "        -- host_text.markup = helpers.colorize_text(\"@\"..out, xcolor8)",
-      "        brightness_bar.value = tonumber(out)",
-      "    end)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/brightness_bar.lua\t49\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "1e64cad0-8756-11e9-8517-091a8a96293a",
-    "content": [
-      "  upower -i $(upower -e | grep BAT) | grep percentage | awk '{ print $2 }'"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t12\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "96cc6110-8754-11e9-8517-091a8a96293a",
-    "content": [
-      "                     local bat = stdout:match(':%s*(.*)..')"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/battery.lua\t44\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "311e4220-8754-11e9-8517-091a8a96293a",
-    "content": [
-      "  upower -i $(upower -e | grep BAT) | grep percentage | awk '{ print $2 }'"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t19\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "8b931ba0-8753-11e9-8517-091a8a96293a",
-    "content": [
-      "    local bat = stdout:match('%d*')"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t27\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "539b6900-8753-11e9-8517-091a8a96293a",
-    "content": [
-      "  battery.markup = bat .. \"%\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/battery.lua\t35\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "efe8a4e0-8752-11e9-8517-091a8a96293a",
-    "content": [
-      "  upower -i $(upower -e | grep BAT) | grep percentage | awk '{ print $2 }'"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t19\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "e378e5d0-8752-11e9-8517-091a8a96293a",
-    "content": [
-      "                     local bat = stdout:match(':%s*(.*)..')"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/battery.lua\t44\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "7e353df0-8751-11e9-8517-091a8a96293a",
-    "content": [
-      "local function update_widget(bat)",
-      "  battery.markup = bat .. \"%\"",
-      "end"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/battery.lua\t34\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "b12c6180-8750-11e9-8517-091a8a96293a",
-    "content": [
-      "local bat_script = [[",
-      "  bash -c '",
-      "  upower -i $(upower -e | grep BAT) | grep percentage",
-      "  ']]"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/battery.lua\t38\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "6b59c710-8750-11e9-8517-091a8a96293a",
-    "content": [
-      "local battery = wibox.widget{",
-      "    text = \"battery widget\",",
-      "    align  = 'center',",
-      "    valign = 'center',",
-      "    widget = wibox.widget.textbox"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/battery.lua\t9\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "66962480-8750-11e9-8517-091a8a96293a",
-    "content": [
-      "-- Configuration",
-      "local update_interval = 30            -- in seconds"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/battery.lua\t6\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "61a44600-8750-11e9-8517-091a8a96293a",
-    "content": [
-      "local awful = require(\"awful\")",
-      "local gears = require(\"gears\")",
-      "local wibox = require(\"wibox\")",
-      "local beautiful = require(\"beautiful\")"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/battery.lua\t1\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "23041d80-874b-11e9-b1b5-d9b9c6105cfe",
-    "content": [
-      "#ed9acc"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t310\t27",
-    "filetype": "lua"
-  },
-  {
-    "id": "0b7959f0-874b-11e9-9731-71fda3341f60",
-    "content": [
-      "#df9dc5"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/i3/config\t208\t14",
-    "filetype": "conf"
   }
 ]

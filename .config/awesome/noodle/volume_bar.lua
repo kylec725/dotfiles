@@ -15,14 +15,16 @@ local active_color = beautiful.volume_bar_active_color or "#5AA3CC"
 local muted_color = beautiful.volume_bar_muted_color or "#666666"
 local active_background_color = beautiful.volume_bar_active_background_color or "#222222"
 local muted_background_color = beautiful.volume_bar_muted_background_color or "#222222"
+local hover_color = "#abfeff"
+local hover_muted_color = "#546577"
 
 local volume_bar = wibox.widget{
     max_value     = 100,
     value         = 50,
     forced_height = dpi(10),
     margins       = {
-      top = dpi(8),
-      bottom = dpi(8),
+        top = dpi(8),
+        bottom = dpi(8),
     },
     forced_width  = dpi(200),
     shape         = gears.shape.rounded_bar,
@@ -35,32 +37,45 @@ local volume_bar = wibox.widget{
 }
 
 local is_muted = false
+local hover = false
 
 local function update_widget()
-  awful.spawn.easy_async({"sh", "-c", "pactl list sinks"},
-    function(stdout)
-      local volume = stdout:match('(%d+)%% /')
-      local muted = stdout:match('Mute:(%s+)[yes]')
-      local fill_color
-      local bg_color
-      if muted ~= nil then
-          is_muted = true
-        fill_color = muted_color
-        bg_color = muted_background_color
-      else
-          is_muted = false
-        fill_color = active_color
-        bg_color = active_background_color
-      end
-      volume_bar.value = tonumber(volume)
-      volume_bar.color = fill_color
-      volume_bar.background_color = bg_color
-    end
-  )
+    awful.spawn.easy_async({"sh", "-c", "pactl list sinks"},
+        function(stdout)
+            local volume = stdout:match('(%d+)%% /')
+            local muted = stdout:match('Mute:(%s+)[yes]')
+            local fill_color
+            local bg_color
+            if muted ~= nil then
+                is_muted = true
+                if hover then
+                    fill_color = hover_muted_color
+                else
+                    fill_color = muted_color
+                end
+                bg_color = muted_background_color
+            else
+                is_muted = false
+                if hover then
+                    fill_color = hover_color
+                else
+                    fill_color = active_color
+                end
+                bg_color = active_background_color
+            end
+            volume_bar.value = tonumber(volume)
+            volume_bar.color = fill_color
+            volume_bar.background_color = bg_color
+        end
+        )
 end
 
 volume_bar.muted = function ()
     return is_muted
+end
+
+volume_bar.hover = function (hover_in)
+    hover = hover_in
 end
 
 update_widget()
@@ -72,9 +87,9 @@ local volume_script = [[
   ']]
 
 awful.spawn.with_line_callback(volume_script, {
-                                 stdout = function(line)
-                                   update_widget()
-                                 end
-})
+        stdout = function(line)
+            update_widget()
+        end
+    })
 
 return volume_bar

@@ -57,6 +57,8 @@ augroup END
 " indent settings
 set expandtab
 set softtabstop=-1
+" auto indent command
+command Indent :normal! mQgg=G'Q
 
 " Mode switch delay
 set timeoutlen=1000 ttimeoutlen=0
@@ -78,6 +80,10 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Enable spell check functionality
 set spelllang=en
+
+" case insensitive search unless upper case is used
+set ignorecase
+set smartcase
 
 " Set folding to indent
 set foldmethod=indent
@@ -154,7 +160,7 @@ nnoremap Y y$
 nnoremap <S-e> ge
 vnoremap <S-e> ge
 
-"replace the word under cursor
+" replace the word under cursor
 nnoremap <leader>s :%s/\<<c-r><c-w>\>//g<left><left>
 
 "-----------------"

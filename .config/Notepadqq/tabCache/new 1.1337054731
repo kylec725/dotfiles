@@ -1,0 +1,26 @@
+local function update_widget()
+    awful.spawn.easy_async({"sh", "-c", "pactl list sinks"},
+        function(stdout)
+            local volume = stdout:match('(%d+)%% /')
+            local muted = stdout:match('Mute:(%s+)[yes]')
+            local fill_color
+            local bg_color
+            if muted ~= nil then
+                is_muted = true
+                if hover then
+                    fill_color = "#546577" 
+                else
+                    fill_color = muted_color
+                end
+                bg_color = muted_background_color
+            else
+                is_muted = false
+                fill_color = active_color
+                bg_color = active_background_color
+            end
+            volume_bar.value = tonumber(volume)
+            volume_bar.color = fill_color
+            volume_bar.background_color = bg_color
+        end
+  )
+end
