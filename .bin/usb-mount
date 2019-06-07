@@ -8,6 +8,7 @@ then
 		echo USB Partition Mounted
 	else
 		sudo -k umount ~/usb
+                rmdir ~/usb
 		echo USB Partition Unmounted
 	fi
 else

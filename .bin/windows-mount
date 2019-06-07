@@ -8,6 +8,7 @@ then
 		echo Windows Partition Mounted
 	else
 		sudo -k umount ~/windows
+                rmdir ~/windows
 		echo Windows Partition Unmounted
 	fi
 else
