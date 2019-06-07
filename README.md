@@ -1,6 +1,6 @@
 # Arch Linux Dotfiles
 Collection of configuration files on my arch system for stuff such as:
-- i3-gaps
+- awesomewm
 - neovim
 - termite
 - bash
