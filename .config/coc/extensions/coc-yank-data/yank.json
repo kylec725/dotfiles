@@ -1,5 +1,14 @@
 [
   {
+    "id": "03b55ea0-88ca-11e9-a587-e3f69809ab88",
+    "content": [
+      "            awful.titlebar.hide(client.focus)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t81\t1",
+    "filetype": "lua"
+  },
+  {
     "id": "0d4e89a0-88c0-11e9-8caa-b9e6c9f08ab4",
     "content": [
       "                    local tag = client.focus.screen.tags[i]"
@@ -2117,15 +2126,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t243\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "735bc0c0-87c9-11e9-a417-0305942bc585",
-    "content": [
-      "      send_notification(mpd_artist.text, mpd_title.text)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t163\t1",
     "filetype": "lua"
   }
 ]

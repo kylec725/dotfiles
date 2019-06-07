@@ -275,7 +275,6 @@ awful.rules.rules = {
             --"discord",
             --"TelegramDesktop",
             "Firefox",
-            "[Ss]potify",
             "kitty",
             "Zathura",
             "Steam",
