@@ -76,11 +76,8 @@ keys.globalkeys = gears.table.join(
         {description = "open rofi", group = "launcher"}),
     awful.key({ modkey,           }, "s",       function ()
         awful.spawn(spotify)
-        client.connect_signal("manage", function(c)
-            awful.titlebar.hide(c)
-            local tag = client.focus.screen.tags[10]
-            c:move_to_tag(tag)
-        end)
+        os.execute("sleep 0.5")
+        awful.titlebar.hide(client.focus)
     end,
         {description = "open spotify", group = "launcher"}),
     awful.key({ modkey,           }, "p",       function () awful.spawn(python) end,
