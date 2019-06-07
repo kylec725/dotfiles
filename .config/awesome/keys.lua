@@ -181,8 +181,8 @@ end,
     -- Restart and quit bindings
     awful.key({ modkey, "Shift" }, "r", awesome.restart,
         {description = "reload awesome", group = "awesome"}),
-    awful.key({ modkey, "Shift" }, "q", awesome.quit,
-        {description = "quit awesome", group = "awesome"}),
+    -- awful.key({ modkey, "Shift" }, "q", awesome.quit,
+    --     {description = "quit awesome", group = "awesome"}),
     awful.key({ modkey,         }, "Escape",
         function ()
             sidebar.visible = false

@@ -1,5 +1,41 @@
 [
   {
+    "id": "f8b96f50-88d3-11e9-b79a-d5df831312e3",
+    "content": [
+      "charger_unplugged"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t24\t34",
+    "filetype": "lua"
+  },
+  {
+    "id": "e87b1c10-88d3-11e9-b79a-d5df831312e3",
+    "content": [
+      "            awesome.emit_signal(\"charger_unplugged\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t27\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "c94fd4c0-88d3-11e9-b79a-d5df831312e3",
+    "content": [
+      "            awesome.emit_signal(\"charger_plugged\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t21\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "c4a0f2b0-88d3-11e9-b79a-d5df831312e3",
+    "content": [
+      "            awesome.emit_signal(\"charger_plugged\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t21\t1",
+    "filetype": "lua"
+  },
+  {
     "id": "03b55ea0-88ca-11e9-a587-e3f69809ab88",
     "content": [
       "            awful.titlebar.hide(client.focus)"
@@ -2089,43 +2125,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/keys.lua\t174\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "e3939fb0-87d4-11e9-ad15-57b405c2fc70",
-    "content": [
-      "        sidebar.visible = not sidebar.visible"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t323\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "bb5f8780-87d3-11e9-ad15-57b405c2fc70",
-    "content": [
-      "    awful.key({ modkey }, \"semicolon\", function() sidebar.visible = not sidebar.visible end,",
-      "              {description = \"show or hide sidebar\", group = \"awesome\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t174\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "04ca9250-87d1-11e9-b30b-b978f5cc3f70",
-    "content": [
-      "                             mpd_song.update()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t284\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "0c4ab9a0-87cd-11e9-8621-c78e86cd9e6b",
-    "content": [
-      "theme.music_icon = icon_path .. \"music.png\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t243\t1",
     "filetype": "lua"
   }
 ]
