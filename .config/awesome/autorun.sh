@@ -18,9 +18,6 @@ amixer set Master 50%
 # Compton
 run compton -b 
 
-# Dunst
-# dunst &
-
 # Start libinput-gestures
 libinput-gestures-setup start
 

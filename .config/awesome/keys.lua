@@ -74,7 +74,14 @@ keys.globalkeys = gears.table.join(
         {description = "open firefox", group = "launcher"}),
     awful.key({ modkey,           }, "d",       function () awful.spawn.with_shell(launcher) end,
         {description = "open rofi", group = "launcher"}),
-    awful.key({ modkey,           }, "s",       function () awful.spawn(spotify) end,
+    awful.key({ modkey,           }, "s",       function ()
+        awful.spawn(spotify)
+        client.connect_signal("manage", function(c)
+            awful.titlebar.hide(c)
+            local tag = client.focus.screen.tags[10]
+            c:move_to_tag(tag)
+        end)
+    end,
         {description = "open spotify", group = "launcher"}),
     awful.key({ modkey,           }, "p",       function () awful.spawn(python) end,
         {description = "open python", group = "launcher"}),
@@ -115,11 +122,11 @@ awful.key({}, "XF86AudioPlay",       function ()
 end, {description = "play or pause spotify", group = "launcher"}),
     awful.key({}, "XF86AudioNext",       function ()
         awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next")
-        mpd_song.update()
+        mpd_song.songupdate()
     end, {description = "next song in spotify", group = "launcher"}),
 awful.key({}, "XF86AudioPrev",       function ()
     awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
-    mpd_song.update()
+    mpd_song.songupdate()
 end, {description = "previous song in spotify", group = "launcher"}),
 
     awful.key({ modkey }, ".",       function ()
@@ -127,22 +134,22 @@ end, {description = "previous song in spotify", group = "launcher"}),
     end, {description = "play or pause spotify", group = "launcher"}),
 awful.key({ modkey,           }, "l",     function ()
     awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next")
-    mpd_song.update()
+    mpd_song.songupdate()
 end, {description = "next song in spotify", group = "layout"}),
     awful.key({ modkey,           }, "h",     function ()
         awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
-        mpd_song.update()
+        mpd_song.songupdate()
     end, {description = "previous song in spotify", group = "layout"}),
 
 -- Screen brightness control
 awful.key({}, "XF86MonBrightnessUp",       function ()
     awful.spawn.with_shell("light -A 5")
-    brightness_bar.update()
+    brightness_bar.brightnessupdate()
 end,
 {description = "increase brightness by 5%", group = "launcher"}),
     awful.key({}, "XF86MonBrightnessDown",       function ()
         awful.spawn.with_shell("light -U 5")
-        brightness_bar.update()
+        brightness_bar.brightnessupdate()
     end,
     {description = "decrease brightness by 5%", group = "launcher"}),
 
@@ -191,10 +198,9 @@ end,
         {description = "quit awesome", group = "awesome"}),
 
     -- Toggle sidebar
-    awful.key({ modkey }, "semicolon", function() sidebar.visible = not sidebar.visible end,
-        {description = "show or hide sidebar", group = "awesome"}),
-    awful.key({}, "Escape", function() sidebar.visible = false end,
-        {description = "hide sidebar", group = "awesome"}),
+    awful.key({ modkey }, "semicolon", function()
+        sidebar.visible = not sidebar.visible
+    end, {description = "show or hide sidebar", group = "awesome"}),
 
     -- awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
     --     {description = "increase master width factor", group = "layout"}),
@@ -332,7 +338,7 @@ keys.desktopbuttons = gears.table.join(
     awful.button({ }, 1, function ()
         mymainmenu:hide()
         sidebar.visible = false
-        naughty.destroy_all_notifications()
+        -- naughty.destroy_all_notifications()
 
         local function double_tap()
             uc = awful.client.urgent.get()
@@ -350,7 +356,6 @@ keys.desktopbuttons = gears.table.join(
     end),
     awful.button({ }, 3, function ()
         mymainmenu:toggle()
-        -- sidebar.visible = not sidebar.visible
     end),
 
     -- Middle button - Toggle start scren

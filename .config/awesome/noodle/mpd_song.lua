@@ -115,7 +115,7 @@ local mpd_script = [[
   bash -c '
   ']]
 
-mpd_song.update = function()
+mpd_song.songupdate = function()
     update_widget()
 end
 

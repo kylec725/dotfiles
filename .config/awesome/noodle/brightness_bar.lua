@@ -59,7 +59,7 @@ awesome.connect_signal("brightness_changed", function ()
     update_widget()
 end)
 
-brightness_bar.update = function ()
+brightness_bar.brightnessupdate = function ()
     update_widget()
 end
 

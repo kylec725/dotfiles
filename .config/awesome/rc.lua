@@ -1,7 +1,7 @@
---[[
-Kyle's awesomewm configuration
-rc.lua
---]]
+--------------------------------------
+--  Kyle's awesomewm configuration  --
+--     ~/.config/awesome/rc.lua     --
+--------------------------------------
 
 -- Standard awesome library
 local gears = require("gears")
@@ -12,27 +12,20 @@ local wibox = require("wibox")
 -- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
-local hotkeys_popup = require("awful.hotkeys_popup")
--- Enable hotkeys help widget for VIM and other apps
--- when client with a matching name is opened:
-require("awful.hotkeys_popup.keys")
 
 -- cleanup script to prevent volume widget from crashing
-awful.spawn.with_shell("~/.config/awesome/awesome-cleanup.sh")
+awful.spawn.with_shell("~/.config/awesome/cleanup.sh")
 
 -- Theme Settings
 -- Theme handling library
 local beautiful = require("beautiful")
 beautiful.init(awful.util.getdir("config") .. "/themes/skyfall/theme.lua")
--- beautiful.useless_gap = 10
 
 -- Load local requirements
 local helpers = require("helpers")
 local keys = require("keys")
 local sidebar = require("sidebar")
 local exit_screen = require("noodle.text_exit_screen")
-
-
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -124,15 +117,12 @@ mymainmenu = awful.menu({ items = {
 }
 })
 
-mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
-                                     menu = mymainmenu })
-
 -- Menubar configuration
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
 -- }}}
 
 -- Keyboard map indicator and switcher
-mykeyboardlayout = awful.widget.keyboardlayout()
+-- mykeyboardlayout = awful.widget.keyboardlayout()
 
 -- {{{ Wibar
 -- Create widgets to be added
@@ -202,8 +192,6 @@ awful.screen.connect_for_each_screen(function(s)
     -- Each screen has its own tag table.
     awful.tag({ "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" }, s, awful.layout.layouts[1])
 
-    -- Create a promptbox for each screen
-    s.mypromptbox = awful.widget.prompt()
     -- Create an imagebox widget which will contain an icon indicating which layout we're using.
     -- We need one layoutbox per screen.
     s.mylayoutbox = awful.widget.layoutbox(s)
@@ -234,7 +222,6 @@ awful.screen.connect_for_each_screen(function(s)
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
-            mylauncher,
             s.mytaglist,
             s.mypromptbox,
         },
@@ -288,6 +275,7 @@ awful.rules.rules = {
             --"discord",
             --"TelegramDesktop",
             "Firefox",
+            "[Ss]potify",
             "kitty",
             "Zathura",
             "Steam",

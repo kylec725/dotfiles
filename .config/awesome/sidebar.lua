@@ -61,38 +61,6 @@ end)
 --     expand = "none"
 -- }
 
--- local temperature_icon = wibox.widget.imagebox(beautiful.temperature_icon)
--- temperature_icon.resize = true
--- temperature_icon.forced_width = icon_size
--- temperature_icon.forced_height = icon_size
--- local temperature_bar = require("noodle.temperature_bar")
--- temperature_bar.forced_width = progress_bar_width
--- -- temperature_bar.margins.top = progress_bar_margins
--- -- temperature_bar.margins.bottom = progress_bar_margins
--- local temperature = wibox.widget{
---   nil,
---   {
---     temperature_icon,
---     pad(1),
---     temperature_bar,
---     pad(1),
---     layout = wibox.layout.fixed.horizontal
---   },
---   nil,
---   expand = "none",
---   layout = wibox.layout.align.horizontal
--- }
--- temperature:buttons(
---   gears.table.join(
---     awful.button({ }, 1, function ()
---         -- local matcher = function (c)
---         --   return awful.rules.match(c, {name = 'watch sensors'})
---         -- end
---         -- awful.client.run_or_raise(terminal .." -e 'watch sensors'", matcher)
---         -- awful.spawn(terminal .. " -e 'watch sensors'", {floating = true})
---     end)
--- ))
-
 local brightness_icon = wibox.widget.imagebox(beautiful.redshift_icon)
 brightness_icon.resize = true
 brightness_icon.forced_width = icon_size
@@ -117,11 +85,6 @@ local brightness = wibox.widget{
 brightness:buttons(
     gears.table.join(
         awful.button({ }, 1, function ()
-            -- local matcher = function (c)
-            --   return awful.rules.match(c, {name = 'watch sensors'})
-            -- end
-            -- awful.client.run_or_raise(terminal .." -e 'watch sensors'", matcher)
-            -- awful.spawn(terminal .. " -e 'watch sensors'", {floating = true})
         end)
     ))
 
@@ -202,12 +165,6 @@ awesome.connect_signal(
                     awful.client.run_or_raise(terminal .." -e htop", matcher)
                     sidebar.visible = false
                 end)
-                -- awful.button({ }, 3, function ()
-                --     local matcher = function (c)
-                --       return awful.rules.match(c, {class = 'Lxtask'})
-                --     end
-                --     awful.client.run_or_raise("lxtask", matcher)
-                -- end)
             ))
 
         -- lighten cpu color when hovering
@@ -249,12 +206,6 @@ awesome.connect_signal(
                     awful.client.run_or_raise(terminal .." -e htop", matcher)
                     sidebar.visible = false
                 end)
-                -- awful.button({ }, 3, function ()
-                --     local matcher = function (c)
-                --       return awful.rules.match(c, {class = 'Lxtask'})
-                --     end
-                --     awful.client.run_or_raise("lxtask", matcher)
-                -- end)
             ))
 
         -- lighten ram color when hovering
@@ -302,16 +253,6 @@ awesome.connect_signal(
                 awful.button({ }, 1, function ()
                     awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause")
                 end)
-                -- awful.button({ }, 3, function ()
-                --     awful.spawn.with_shell("mpvc toggle")
-                -- end),
-                -- awful.button({ }, 8, function ()
-                --     sidebar.visible = false
-                --     awful.spawn.with_shell("~/scr/Rofi/rofi_mpvtube")
-                -- end),
-                -- awful.button({ }, 9, function ()
-                --     awful.spawn.with_shell("~/scr/info/mpv-query.sh")
-                -- end)
             ))
         -- change button color on hover
         playerctl_toggle_icon:connect_signal("mouse::enter", function()
@@ -328,11 +269,8 @@ awesome.connect_signal(
         playerctl_prev_icon:buttons(gears.table.join(
                 awful.button({ }, 1, function ()
                     awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
-                    mpd_song.update()
+                    mpd_song.songupdate()
                 end)
-                -- awful.button({ }, 3, function ()
-                --     awful.spawn.with_shell("mpvc prev")
-                -- end)
             ))
         -- change button color on hover
         playerctl_prev_icon:connect_signal("mouse::enter", function()
@@ -349,11 +287,8 @@ awesome.connect_signal(
         playerctl_next_icon:buttons(gears.table.join(
                 awful.button({ }, 1, function ()
                     awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next")
-                    mpd_song.update()
+                    mpd_song.songupdate()
                 end)
-                -- awful.button({ }, 3, function ()
-                --     awful.spawn.with_shell("mpvc next")
-                -- end)
             ))
         -- change button color on hover
         playerctl_next_icon:connect_signal("mouse::enter", function()
@@ -383,43 +318,16 @@ awesome.connect_signal(
         time.valign = "center"
         time.font = "sans 55"
 
-        -- change text color on hover
-        -- time:connect_signal("mouse::enter", function()
-        --     time.markup = helpers.colorize_text(time.text, "#c9bff7")
-        -- end)
-        -- time:connect_signal("mouse::leave", function()
-        --     time.markup = helpers.colorize_text(time.text, "#F1FCF9")
-        -- end)
-
         local date = wibox.widget.textclock("%B %d")
-        -- local date = wibox.widget.textclock("%A, %B %d")
-        -- local date = wibox.widget.textclock("%A, %B %d, %Y")
         date.align = "center"
         date.valign = "center"
         date.font = "sans medium 18"
-
-        -- change text color on hover
-        -- date:connect_signal("mouse::enter", function()
-        --     date.markup = helpers.colorize_text(date.text, "#c9bff7")
-        -- end)
-        -- date:connect_signal("mouse::leave", function()
-        --     date.markup = helpers.colorize_text(date.text, "#F1FCF9")
-        -- end)
 
         -- local fancy_date = wibox.widget.textclock("%-j days around the sun")
         local fancy_date = wibox.widget.textclock("Knowing that today is %A fills you with determination.")
         fancy_date.align = "center"
         fancy_date.valign = "center"
         fancy_date.font = "sans italic 14"
-
-        -- change text color on hover
-        -- fancy_date:connect_signal("mouse::enter", function()
-        --     fancy_date.markup = helpers.colorize_text(fancy_date.text, "#c9bff7")
-        -- end)
-        -- fancy_date:connect_signal("mouse::leave", function()
-        --     fancy_date.markup = helpers.colorize_text(fancy_date.text, "#F1FCF9")
-        -- end)
-
 
         local disk_space = require("noodle.disk")
         disk_space.font = "sans 14"
@@ -444,9 +352,6 @@ awesome.connect_signal(
                     awful.spawn(filemanager, {floating = false})
                     sidebar.visible = false
                 end)
-                -- awful.button({ }, 3, function ()
-                --     awful.spawn(filemanager .. " /data", {floating = true})
-                -- end)
             ))
 
         -- change icon color on hover
@@ -531,13 +436,6 @@ awesome.connect_signal(
                 awful.button({ }, 1, function ()
                     awful.spawn.with_shell("amixer -q sset Master,0 toggle")
                 end)
-                -- Right click - Run or raise pavucontrol
-                -- awful.button({ }, 3, function () 
-                --     local matcher = function (c)
-                --       return awful.rules.match(c, {class = 'Pavucontrol'})
-                --     end
-                --     awful.client.run_or_raise("pavucontrol", matcher)
-                -- end),
                 -- Scroll - Increase / Decrease volume
                 -- awful.button({ }, 4, function () 
                 --     awful.spawn.with_shell("volume-control.sh up")
@@ -567,9 +465,9 @@ awesome.connect_signal(
 
         sidebar:buttons(gears.table.join(
                 -- Middle click - Hide sidebar
-                awful.button({ }, 2, function ()
-                    sidebar.visible = not sidebar.visible
-                end)
+                -- awful.button({ }, 2, function ()
+                --     sidebar.visible = not sidebar.visible
+                -- end)
                 -- Right click - Hide sidebar
                 -- awful.button({ }, 3, function ()
                 --     sidebar.visible = false

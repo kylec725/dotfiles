@@ -15,8 +15,8 @@ local active_color = beautiful.volume_bar_active_color or "#5AA3CC"
 local muted_color = beautiful.volume_bar_muted_color or "#666666"
 local active_background_color = beautiful.volume_bar_active_background_color or "#222222"
 local muted_background_color = beautiful.volume_bar_muted_background_color or "#222222"
-local hover_color = "#abfeff"
-local hover_muted_color = "#546577"
+local hover_color = "#546577"
+local hover_muted_color = "#abfeff"
 
 local volume_bar = wibox.widget{
     max_value     = 100,
@@ -47,21 +47,21 @@ local function update_widget()
             local fill_color
             local bg_color
             if muted ~= nil then
-                is_muted = true
                 if hover then
-                    fill_color = hover_muted_color
+                    fill_color = "#546577" 
                 else
                     fill_color = muted_color
                 end
                 bg_color = muted_background_color
+                is_muted = true
             else
-                is_muted = false
                 if hover then
-                    fill_color = hover_color
+                    fill_color = "#abfeff"
                 else
                     fill_color = active_color
                 end
                 bg_color = active_background_color
+                is_muted = false
             end
             volume_bar.value = tonumber(volume)
             volume_bar.color = fill_color
