@@ -76,8 +76,10 @@ keys.globalkeys = gears.table.join(
         {description = "open rofi", group = "launcher"}),
     awful.key({ modkey,           }, "s",       function ()
         awful.spawn(spotify)
-        os.execute("sleep 0.5")
-        awful.titlebar.hide(client.focus)
+        os.execute("sleep 0.4")
+        if client.focus then
+            awful.titlebar.hide(client.focus)
+        end
     end,
         {description = "open spotify", group = "launcher"}),
     awful.key({ modkey,           }, "p",       function () awful.spawn(python) end,
