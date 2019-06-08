@@ -1,5 +1,17 @@
 [
   {
+    "id": "08d6ea40-8a2b-11e9-927b-9bf496835ba2",
+    "content": [
+      "    -- Add titlebars to normal clients and dialogs",
+      "    { rule_any = {type = { \"normal\", \"dialog\" }",
+      "      }, properties = { titlebars_enabled = false }",
+      "    },"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t325\t1",
+    "filetype": "lua"
+  },
+  {
     "id": "0d8fd3e0-8a2a-11e9-bdc0-bd9e76d6864b",
     "content": [
       "#ed9acc"
@@ -2094,17 +2106,6 @@
       "  --           mpd_title.text = \"---------\"",
       "  --       else",
       "  --           mpd_title.text = title"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t132\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "c5fd4e40-87ea-11e9-85d9-611b616a48b1",
-    "content": [
-      "  --       if (title == nil) then",
-      "  --           mpd_title.text = \"---------\"",
-      "  --       else"
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t132\t1",
