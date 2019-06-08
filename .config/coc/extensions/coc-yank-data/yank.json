@@ -1,5 +1,50 @@
 [
   {
+    "id": "0d8fd3e0-8a2a-11e9-bdc0-bd9e76d6864b",
+    "content": [
+      "#ed9acc"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t187\t28",
+    "filetype": "lua"
+  },
+  {
+    "id": "0c2dd2e0-8a2a-11e9-bdc0-bd9e76d6864b",
+    "content": [
+      "\"#ed9acc"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t187\t27",
+    "filetype": "lua"
+  },
+  {
+    "id": "48980230-8a27-11e9-bdc0-bd9e76d6864b",
+    "content": [
+      "cal -3"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t134\t47",
+    "filetype": "lua"
+  },
+  {
+    "id": "dc2ad0c0-8a24-11e9-83ca-61b91c46a4e0",
+    "content": [
+      "    client.connect_signal(\"property::maximized\", no_round_corners)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t407\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "cf6d8df0-8a24-11e9-83ca-61b91c46a4e0",
+    "content": [
+      "            c.shape = helpers.rect()"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t400\t1",
+    "filetype": "lua"
+  },
+  {
     "id": "e625b4b0-8a23-11e9-8042-910dd30e2322",
     "content": [
       "    callback = function (c)",
@@ -2063,73 +2108,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t132\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "325d8ec0-87ea-11e9-85d9-611b616a48b1",
-    "content": [
-      "  awful.spawn.easy_async_with_shell(artist_request, -- artist request",
-      "    function(stdout)",
-      "      local artist = stdout:match('\"(.+)\"')",
-      "",
-      "      -- naughty.notify({text = artist .. \" - \" .. title})",
-      "      -- mpd_artist.markup =",
-      "        -- \"<span foreground='\" .. artist_fg ..\"'>\"",
-      "        -- .. artist .. \"</span>\"",
-      "        if (artist == nil) then",
-      "            mpd_artist.text = \"---------\"",
-      "        else",
-      "            -- send notification if both artist and title have changed",
-      "            -- if (artist ~= mpd_artist.text) then",
-      "                -- sleep to allow the title request to finish",
-      "                -- os.execute(\"sleep 1\")",
-      "                -- send_notification(artist, mpd_title.text)",
-      "            mpd_artist.text = artist",
-      "    end",
-      "    end",
-      "  )"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t139\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "3d0d43c0-87e9-11e9-85d9-611b616a48b1",
-    "content": [
-      "dbus-send --print-reply --session --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata' | grep -A 2 title | grep variant"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t35\t24",
-    "filetype": "lua"
-  },
-  {
-    "id": "3bc5ec20-87e8-11e9-85d9-611b616a48b1",
-    "content": [
-      " (title ~= mpd_title.text) then",
-      "                new_title = true",
-      "            end"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t136\t15",
-    "filetype": "lua"
-  },
-  {
-    "id": "ef76d100-87e6-11e9-b0d9-fb5b74244cff",
-    "content": [
-      "                send_notification(artist, mpd_title.text)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t156\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "24b67ea0-87de-11e9-ab17-affd0feadf88",
-    "content": [
-      "    awful.key({ modkey }, \"semicolon\", function() sidebar.visible = not sidebar.visible end,",
-      "              {description = \"show or hide sidebar\", group = \"awesome\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t174\t1",
     "filetype": "lua"
   }
 ]
