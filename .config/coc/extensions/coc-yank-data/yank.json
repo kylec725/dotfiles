@@ -1,5 +1,28 @@
 [
   {
+    "id": "efa54490-8a16-11e9-a969-034798c7ad2e",
+    "content": [
+      "run compton --backend glx --blur-method kawase  --blur-background --blur-strength 0 -b"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/autorun.sh\t19\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "ebbc98b0-8a16-11e9-a969-034798c7ad2e",
+    "content": [
+      "function run {",
+      "        if [ -z $(pgrep $1) ]",
+      "        then",
+      "                $@",
+      "        fi",
+      "}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/autorun.sh\t4\t1",
+    "filetype": "sh"
+  },
+  {
     "id": "f8b96f50-88d3-11e9-b79a-d5df831312e3",
     "content": [
       "charger_unplugged"
@@ -2106,25 +2129,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/keys.lua\t321\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "73f44450-87d6-11e9-ad15-57b405c2fc70",
-    "content": [
-      "sidebar"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t14\t25",
-    "filetype": "lua"
-  },
-  {
-    "id": "1d7966b0-87d5-11e9-ad15-57b405c2fc70",
-    "content": [
-      "    awful.key({ modkey }, \"semicolon\", function() sidebar.visible = not sidebar.visible end,",
-      "              {description = \"show or hide sidebar\", group = \"awesome\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t174\t1",
     "filetype": "lua"
   }
 ]

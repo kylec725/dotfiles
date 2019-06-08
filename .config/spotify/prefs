@@ -1,7 +1,7 @@
-autologin.username="kylec725@gmail.com"
-autologin.blob="O2Bf0Gm1BUYTWXm8A8JuGOBOfben6U1n4Yz67eWr137EbM2/TTgcuy2zmKx7o04LBJ/rnAHQtf/RSJ3k4zJYYA6nEZ560y2ZNnGpxbYunWh4Xq58aNRsFeZeSMoiWuDOSve6/OlilctYA6tBahfKIi3srA09Ig0hA23G9vaVgPSlmL2Q4M59v7ijN317FJ1w32k8WmajRfUs+00Wz+n5oQ5diMQJSoxfRyq50fllv+lTp2Aq5mQYiOihB9Vx7adf"
-autologin.saved_credentials="{\"ujtr3gfac7w7t2gzoc5s650k0\":[\"kylec725@gmail.com\",\"O2Bf0Gm1BUYTWXm8A8JuGOBOfben6U1n4Yz67eWr137EbM2/TTgcuy2zmKx7o04LBJ/rnAHQtf/RSJ3k4zJYYA6nEZ560y2ZNnGpxbYunWh4Xq58aNRsFeZeSMoiWuDOSve6/OlilctYA6tBahfKIi3srA09Ig0hA23G9vaVgPSlmL2Q4M59v7ijN317FJ1w32k8WmajRfUs+00Wz+n5oQ5diMQJSoxfRyq50fllv+lTp2Aq5mQYiOihB9Vx7adf\"]}"
+autologin.blob="OuK1SaXP7UBnHA1vjnuhheUABKcBPifRfLvu61Bq3vlT/pF1dn/j+QeRbn3fkby7N/lqbeaGysWsoPmMCFwwha4LryX2D40IhJ2ZgiHpW9tQcAfN9/NzV/LY+gkyDt9lUx1cM46j3d9udSzHM05Uqx8E41IVkESjvC3h4m2HouuD8xggMTt/4yEzhQRbI4qTXn0DMduGDus/LXZQ1QiO8DjZ3pYgFpFc1PBsEYXbFiKjUhciervHs/uO2X7zTMpz"
+autologin.saved_credentials="{\"ujtr3gfac7w7t2gzoc5s650k0\":[\"ujtr3gfac7w7t2gzoc5s650k0\",\"OuK1SaXP7UBnHA1vjnuhheUABKcBPifRfLvu61Bq3vlT/pF1dn/j+QeRbn3fkby7N/lqbeaGysWsoPmMCFwwha4LryX2D40IhJ2ZgiHpW9tQcAfN9/NzV/LY+gkyDt9lUx1cM46j3d9udSzHM05Uqx8E41IVkESjvC3h4m2HouuD8xggMTt/4yEzhQRbI4qTXn0DMduGDus/LXZQ1QiO8DjZ3pYgFpFc1PBsEYXbFiKjUhciervHs/uO2X7zTMpz\"]}"
 app.window.position.x=20
+autologin.username="ujtr3gfac7w7t2gzoc5s650k0"
 app.window.position.saved=true
 app.window.position.height=973
 app.autostart-mode=""
@@ -10,5 +10,5 @@ autologin.canonical_username="ujtr3gfac7w7t2gzoc5s650k0"
 storage.last-location="/home/kyle/.cache/spotify/Storage"
 app.window.position.width=1880
 core.clock_delta=0
-app.last-launched-version="1.0.96.181.gf6bc1b6b"
+app.last-launched-version="1.1.5.153.gf614956d"
 app.autostart-configured=true

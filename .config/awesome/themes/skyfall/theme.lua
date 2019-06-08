@@ -154,7 +154,7 @@ theme.wibar_detached = false
 theme.wibar_height = dpi(35)
 theme.wibar_fg = theme.xcolor7
 theme.wibar_bg = theme.xcolor0
-theme.wibar_opacity = 0.9
+theme.wibar_opacity = 0.75
 theme.wibar_border_color = theme.xcolor0
 theme.wibar_border_width = dpi(0)
 theme.wibar_border_radius = dpi(0)
@@ -198,7 +198,7 @@ theme.tasklist_align = "center"
 -- (Sidebar items can be customized in sidebar.lua)
 theme.sidebar_bg = theme.xcolor0
 theme.sidebar_fg = theme.xcolor7
-theme.sidebar_opacity = 0.9
+theme.sidebar_opacity = 0.7
 theme.sidebar_position = "right" -- left or right
 theme.sidebar_width = dpi(450)
 theme.sidebar_height = screen_height
@@ -210,7 +210,7 @@ theme.sidebar_hide_on_mouse_leave = false
 theme.sidebar_show_on_mouse_edge = false
 
 -- Exit screen
-theme.exit_screen_bg = theme.xcolor0 .. "CC"
+theme.exit_screen_bg = theme.xcolor0 .. "B3"
 theme.exit_screen_fg = theme.xcolor7
 theme.exit_screen_font = "sans 20"
 theme.exit_screen_icon_size = dpi(180)

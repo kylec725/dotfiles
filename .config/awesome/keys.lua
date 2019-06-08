@@ -162,6 +162,7 @@ awful.key({modkey, "Shift"}, "p", function ()
                 bg = "#F1FCF9",
                 fg = "#20262C",
                 position = "bottom_middle",
+                opacity = 1
             })
     else
         awful.spawn.with_shell("killall xss-lock")
