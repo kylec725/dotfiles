@@ -1,5 +1,57 @@
 [
   {
+    "id": "e625b4b0-8a23-11e9-8042-910dd30e2322",
+    "content": [
+      "    callback = function (c)",
+      "        if not beautiful.titlebars_imitate_borders then",
+      "            awful.titlebar.hide(c)",
+      "        end",
+      "    end",
+      "    },"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t285\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "9cf86870-8a21-11e9-a935-230e500cb6a3",
+    "content": [
+      "compton --backend glx --blur-method kawase  --blur-background --blur-strength 12 --config ~/.config/compton/compton.conf -b"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/autorun.sh\t19\t5",
+    "filetype": "sh"
+  },
+  {
+    "id": "4cb2c950-8a21-11e9-b879-7fa4c631b95d",
+    "content": [
+      "opacity-rule = [",
+      "      \"70:class_g = 'Spotify'\"",
+      "];"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/compton/tmpcompton.conf\t134\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "57ff3380-8a20-11e9-bc19-ada970836736",
+    "content": [
+      "compton --backend glx --blur-method kawase  --blur-background --blur-strength 12 -b"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/autorun.sh\t19\t5",
+    "filetype": "sh"
+  },
+  {
+    "id": "cb1e3530-8a1d-11e9-9509-590eb79a03ef",
+    "content": [
+      " \"#ed9acc\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t187\t26",
+    "filetype": "lua"
+  },
+  {
     "id": "efa54490-8a16-11e9-a969-034798c7ad2e",
     "content": [
       "run compton --backend glx --blur-method kawase  --blur-background --blur-strength 0 -b"
@@ -2078,57 +2130,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/keys.lua\t174\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "d2459b10-87dd-11e9-8b10-ed5fd98c6546",
-    "content": [
-      "inoremap <MiddleMouse> <Esc>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t105\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "a580bab0-87dd-11e9-bcd6-69a597e94ffd",
-    "content": [
-      "noremap <MiddleMouse> <LeftMouse>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t103\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "185979b0-87dd-11e9-ac95-71ac29aa4fdc",
-    "content": [
-      "map <MiddleMouse> <MiddleMouse>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t103\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "ef513e10-87da-11e9-ab44-53a3f8d05c43",
-    "content": [
-      "    awful.button({ modkey }, 2, function (c)",
-      "        c:emit_signal(\"request::activate\", \"mouse_click\", {raise = true})",
-      "        awful.mouse.client.move(c)",
-      "    end),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t295\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "d85add30-87d8-11e9-ab44-53a3f8d05c43",
-    "content": [
-      "    awful.button({ }, 3, function ()",
-      "        mymainmenu:toggle()",
-      "        -- sidebar.visible = not sidebar.visible",
-      "    end),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t321\t1",
     "filetype": "lua"
   }
 ]

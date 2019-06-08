@@ -73,7 +73,7 @@ theme.screen_margin = dpi(3)
 -- Borders
 -- theme.border_width  = dpi(0)
 theme.border_color = theme.xcolor0
-theme.border_normal = theme.xcolor0
+theme.border_normal = theme.xcolor0 .. "80"
 theme.border_width = 4
 theme.border_focus = theme.xcolor7
 -- Rounded corners
@@ -81,7 +81,7 @@ theme.border_radius = dpi(8)
 
 -- Titlebars
 -- (Titlebar items can be customized in titlebars.lua)
-theme.titlebars_enabled = true
+theme.titlebars_enabled = false
 theme.titlebar_size = dpi(12)
 theme.titlebar_title_enabled = true
 theme.titlebar_font = "sans bold 9"
@@ -154,7 +154,7 @@ theme.wibar_detached = false
 theme.wibar_height = dpi(35)
 theme.wibar_fg = theme.xcolor7
 theme.wibar_bg = theme.xcolor0
-theme.wibar_opacity = 0.75
+theme.wibar_opacity = 0.8
 theme.wibar_border_color = theme.xcolor0
 theme.wibar_border_width = dpi(0)
 theme.wibar_border_radius = dpi(0)

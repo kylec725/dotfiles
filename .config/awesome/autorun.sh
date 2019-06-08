@@ -16,7 +16,7 @@ amixer set Master 50%
 # ~/.fehbg &
 
 # Compton
-run compton --backend glx --blur-method kawase  --blur-background --blur-strength 12 -b
+run compton --config ~/.config/compton/compton.conf -b
 
 # Start libinput-gestures
 libinput-gestures-setup start
