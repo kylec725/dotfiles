@@ -2,6 +2,7 @@ local awful = require("awful")
 local gears = require("gears")
 local wibox = require("wibox")
 local beautiful = require("beautiful")
+local naughty = require("naughty")
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 
@@ -34,7 +35,7 @@ exit:buttons(gears.table.join(
         end)
     ))
 
--- change icon color on hover
+-- highlight icon on hover
 exit:connect_signal("mouse::enter", function()
     exit_icon.image = beautiful.poweroff_hover_icon
 end)
@@ -65,7 +66,7 @@ local brightness_icon = wibox.widget.imagebox(beautiful.redshift_icon)
 brightness_icon.resize = true
 brightness_icon.forced_width = icon_size
 brightness_icon.forced_height = icon_size
-local brightness_bar = require("noodle.brightness_bar")
+brightness_bar = require("noodle.brightness_bar")
 brightness_bar.forced_width = progress_bar_width
 -- brightness_bar.margins.top = progress_bar_margins
 -- brightness_bar.margins.bottom = progress_bar_margins
@@ -219,7 +220,7 @@ ram:connect_signal("mouse::leave", function ()
 end)
 
 -- mpd and spotify song retrieval
-local song = require("noodle.song")
+song = require("noodle.song")
 local song_children = song:get_all_children()
 local song_title = song_children[1]
 local song_artist = song_children[2]
@@ -233,11 +234,7 @@ playerctl_toggle_icon.forced_width = playerctl_button_size
 playerctl_toggle_icon.forced_height = playerctl_button_size
 playerctl_toggle_icon:buttons(gears.table.join(
         awful.button({ }, 1, function ()
-            if spotify_bool then
-                awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause")
-            else
-                awful.spawn.with_shell("mpc toggle")
-            end
+            song.playpause()
         end)
     ))
 -- change button color on hover
@@ -262,11 +259,7 @@ playerctl_prev_icon.forced_width = playerctl_button_size
 playerctl_prev_icon.forced_height = playerctl_button_size
 playerctl_prev_icon:buttons(gears.table.join(
         awful.button({ }, 1, function ()
-            if spotify_bool then
-                awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
-            else
-                awful.spawn.with_shell("mpc prev")
-            end
+            song.previous()
         end)
     ))
 -- change button color on hover
@@ -283,11 +276,7 @@ playerctl_next_icon.forced_width = playerctl_button_size
 playerctl_next_icon.forced_height = playerctl_button_size
 playerctl_next_icon:buttons(gears.table.join(
         awful.button({ }, 1, function ()
-            if spotify_bool then
-                awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next")
-            else
-                awful.spawn.with_shell("mpc next")
-            end
+            song.next()
         end)
     ))
 -- change button color on hover
@@ -315,14 +304,7 @@ local playerctl_buttons = wibox.widget {
 
 song:buttons(gears.table.join(
         awful.button({ }, 1, function ()
-            -- awful.spawn.with_shell("mpc toggle")
-            if spotify_bool then
-                playerctl_toggle_icon.image = beautiful.playerctl_toggle_icon
-            else
-                playerctl_toggle_icon.image = beautiful.spotify_icon
-            end
-            spotify_bool = not spotify_bool
-            song.songupdate()
+            sidebar.music_toggle()
         end)
     ))
 
@@ -367,7 +349,7 @@ disk:buttons(gears.table.join(
         end)
     ))
 
--- change icon color on hover
+-- highlight icon on hover
 disk:connect_signal("mouse::enter", function()
     disk_icon.image = beautiful.files_hover_icon
 end)
@@ -396,7 +378,7 @@ search:buttons(gears.table.join(
         end)
     ))
 
--- change icon color on hover
+-- highlight icon on hover
 search:connect_signal("mouse::enter", function()
     search_icon.image = beautiful.search_hover_icon
 end)
@@ -522,6 +504,32 @@ if beautiful.sidebar_show_on_mouse_edge then
                 awful.tag.viewnext()
             end)
         ))
+end
+
+-- music toggle function
+local music_toggle_id
+sidebar.music_toggle = function ()
+    if spotify_bool then
+        playerctl_toggle_icon.image = beautiful.playerctl_toggle_icon
+        notification = naughty.notify({
+                text = "MPD Mode",
+                icon = beautiful.music_icon,
+                position = "bottom_middle",
+                replaces_id = music_toggle_id
+            })
+        music_toggle_id = notification.id
+    else
+        playerctl_toggle_icon.image = beautiful.spotify_icon
+        notification = naughty.notify({
+                text = "Spotify Mode",
+                icon = beautiful.spotify_icon,
+                position = "bottom_middle",
+                replaces_id = music_toggle_id
+            })
+        music_toggle_id = notification.id
+    end
+    spotify_bool = not spotify_bool
+    song.update()
 end
 
 -- Item placement

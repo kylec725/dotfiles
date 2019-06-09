@@ -67,7 +67,7 @@ set timeoutlen=1000 ttimeoutlen=0
 set updatetime=200
 
 " Preview search and replace
-set inccommand=nosplit
+set inccommand=split
 
 " Line numbers
 set number relativenumber
@@ -162,6 +162,9 @@ vnoremap <S-e> ge
 
 " replace the word under cursor
 nnoremap <leader>s :%s/\<<c-r><c-w>\>//g<left><left>
+
+" auto indent command
+nnoremap <leader>i :Indent<CR>
 
 "-----------------"
 " Plugin Settings "

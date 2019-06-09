@@ -18,18 +18,21 @@ local paused_color = beautiful.mpd_song_paused_color or beautiful.normal_fg
 local mpd_icon = beautiful.music_icon
 local spotify_icon = beautiful.spotify_icon
 
+-- spotify bool to be shared sidebar.lua and keys.lua
+spotify_bool = true
+
 local song_title = wibox.widget{
-  text = "---------",
-  align = "center",
-  valign = "center",
-  widget = wibox.widget.textbox
+    text = "---------",
+    align = "center",
+    valign = "center",
+    widget = wibox.widget.textbox
 }
 
 local song_artist = wibox.widget{
-  text = "---------",
-  align = "center",
-  valign = "center",
-  widget = wibox.widget.textbox,
+    text = "---------",
+    align = "center",
+    valign = "center",
+    widget = wibox.widget.textbox,
 }
 
 -- Title request
@@ -37,8 +40,8 @@ local title_request = "dbus-send --print-reply --session --dest=org.mpris.MediaP
 local artist_request = "dbus-send --print-reply --session --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata' | grep -A 2 artist | tail +3"
 local song_request = "dbus-send --print-reply --session --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata' | grep -A 2 -e title -e artist | sed -n -e '3p' -e '6p'"
 
--- spotify_song widget
-local spotify_song = wibox.widget{
+-- song widget
+local song = wibox.widget{
     song_title,
     song_artist,
     layout = wibox.layout.fixed.vertical
@@ -46,26 +49,26 @@ local spotify_song = wibox.widget{
 
 local last_mpd_id
 local function send_mpd_notification(artist, title)
-  notification = naughty.notify({
-      title = title,
-      text = artist,
-      icon = mpd_icon,
-      position = "bottom_middle",
-      replaces_id = last_mpd_id
-  })
-  last_mpd_id = notification.id
+    notification = naughty.notify({
+            title = title,
+            text = artist,
+            icon = mpd_icon,
+            position = "bottom_middle",
+            replaces_id = last_mpd_id
+        })
+    last_mpd_id = notification.id
 end
 
 local last_spotify_id
 local function send_spotify_notification(artist, title)
-  notification = naughty.notify({
-      title = title,
-      text = artist,
-      icon = spotify_icon,
-      position = "bottom_middle",
-      replaces_id = last_spotify_id
-  })
-  last_spotify_id = notification.id
+    notification = naughty.notify({
+            title = title,
+            text = artist,
+            icon = spotify_icon,
+            position = "bottom_middle",
+            replaces_id = last_spotify_id
+        })
+    last_spotify_id = notification.id
 end
 
 -- mpd update
@@ -132,13 +135,41 @@ local spotify_script = [[
   bash -c '
   ']]
 
-spotify_song.songupdate = function()
+-- used so that the sidebar can manually update when the music mode is toggled
+song.update = function()
+    update_widget()
+end
+
+-- player controls
+song.playpause = function()
+    if spotify_bool then
+        awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause")
+    else
+        awful.spawn.with_shell("mpc toggle")
+    end
+end
+
+song.previous = function()
+    if spotify_bool then
+        awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
+    else
+        awful.spawn.with_shell("mpc prev")
+    end
+    update_widget()
+end
+
+song.next = function()
+    if spotify_bool then
+        awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next")
+    else
+        awful.spawn.with_shell("mpc next")
+    end
     update_widget()
 end
 
 awful.widget.watch(spotify_script, 3, function(stdout)
     update_widget()
-end, spotify_song)
+end, song)
 
 
-return spotify_song
+return song

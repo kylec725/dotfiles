@@ -25,8 +25,6 @@ local beautiful = require("beautiful")
 beautiful.init(awful.util.getdir("config") .. "/themes/skyfall/theme.lua")
 
 -- Load local requirements
--- spotify var to allow the sidebar player widget to work properly
-spotify_bool = true
 local helpers = require("helpers")
 local keys = require("keys")
 local sidebar = require("sidebar")

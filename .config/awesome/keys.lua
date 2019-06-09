@@ -8,10 +8,6 @@ local xresources = require("beautiful.xresources")
 
 local helpers = require("helpers")
 
--- Requirements so widgets can be updated
-local brightness_bar = require("noodle.brightness_bar")
-local song = require("noodle.song")
-
 -- xss-lock notification id
 local lock_not
 local scrot_not
@@ -103,8 +99,7 @@ keys.globalkeys = gears.table.join(
                 icon = "/home/kyle/.config/awesome/themes/skyfall/icons/screenshot.png",
                 position = "bottom_middle",
             })
-    end,
-    {description = "take a screenshot with scrot", group = "launcher"}),
+    end, {description = "take a screenshot with scrot", group = "launcher"}),
 
 -- Volume control
 awful.key({}, "XF86AudioRaiseVolume",       function () awful.spawn.with_shell("amixer -D pulse sset Master 5%+") end,
@@ -114,30 +109,29 @@ awful.key({}, "XF86AudioLowerVolume",       function () awful.spawn.with_shell("
 awful.key({}, "XF86AudioMute",              function ()awful.spawn.with_shell("amixer -q sset Master,0 toggle") end,
     {description = "toggle volume mute", group = "launcher"}),
 
--- Spotify control
+-- Music control
 awful.key({}, "XF86AudioPlay",       function ()
-    awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause")
-end, {description = "play or pause spotify", group = "launcher"}),
+    song.playpause()
+end, {description = "play or pause music", group = "launcher"}),
     awful.key({}, "XF86AudioNext",       function ()
-        awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next")
-        song.songupdate()
-    end, {description = "next song in spotify", group = "launcher"}),
+        song.next()
+    end, {description = "next song in music", group = "launcher"}),
 awful.key({}, "XF86AudioPrev",       function ()
-    awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
-    song.songupdate()
-end, {description = "previous song in spotify", group = "launcher"}),
+    song.previous()
+end, {description = "previous song in music", group = "launcher"}),
 
-    awful.key({ modkey }, ".",       function ()
-        awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause")
-    end, {description = "play or pause spotify", group = "launcher"}),
+awful.key({ modkey, "Shift" }, ".",       function ()
+    sidebar.music_toggle()
+end, {description = "play or pause music", group = "launcher"}),
+awful.key({ modkey }, ".",       function ()
+    song.playpause()
+end, {description = "play or pause music", group = "launcher"}),
 awful.key({ modkey,           }, "l",     function ()
-    awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next")
-    song.songupdate()
-end, {description = "next song in spotify", group = "layout"}),
-    awful.key({ modkey,           }, "h",     function ()
-        awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
-        song.songupdate()
-    end, {description = "previous song in spotify", group = "layout"}),
+    song.next()
+end, {description = "next song in music", group = "layout"}),
+awful.key({ modkey,           }, "h",     function ()
+    song.previous()
+end, {description = "previous song in music", group = "layout"}),
 
 -- Screen brightness control
 awful.key({}, "XF86MonBrightnessUp",       function ()
@@ -201,41 +195,41 @@ end,
         sidebar.visible = not sidebar.visible
     end, {description = "show or hide sidebar", group = "awesome"}),
 
-    -- awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
-    --     {description = "increase master width factor", group = "layout"}),
-    -- awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)          end,
-    --     {description = "decrease master width factor", group = "layout"}),
-    awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster( 1, nil, true) end,
-        {description = "increase the number of master clients", group = "layout"}),
-    awful.key({ modkey, "Shift"   }, "l",     function () awful.tag.incnmaster(-1, nil, true) end,
-        {description = "decrease the number of master clients", group = "layout"}),
-    awful.key({ modkey, "Control" }, "h",     function () awful.tag.incncol( 1, nil, true)    end,
-        {description = "increase the number of columns", group = "layout"}),
-    awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol(-1, nil, true)    end,
-        {description = "decrease the number of columns", group = "layout"}),
-    awful.key({ modkey,           }, "space", function () awful.layout.inc( 1)                end,
-        {description = "select next", group = "layout"}),
-    awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
-        {description = "select previous", group = "layout"})
+-- awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
+--     {description = "increase master width factor", group = "layout"}),
+-- awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)          end,
+--     {description = "decrease master width factor", group = "layout"}),
+awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster( 1, nil, true) end,
+    {description = "increase the number of master clients", group = "layout"}),
+awful.key({ modkey, "Shift"   }, "l",     function () awful.tag.incnmaster(-1, nil, true) end,
+    {description = "decrease the number of master clients", group = "layout"}),
+awful.key({ modkey, "Control" }, "h",     function () awful.tag.incncol( 1, nil, true)    end,
+    {description = "increase the number of columns", group = "layout"}),
+awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol(-1, nil, true)    end,
+    {description = "decrease the number of columns", group = "layout"}),
+awful.key({ modkey,           }, "space", function () awful.layout.inc( 1)                end,
+    {description = "select next", group = "layout"}),
+awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
+    {description = "select previous", group = "layout"})
 
-    -- Prompt
-    -- awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
-    --           {description = "run prompt", group = "launcher"}),
+-- Prompt
+-- awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
+--           {description = "run prompt", group = "launcher"}),
 
-    -- awful.key({ modkey }, "x",
-    --           function ()
-    --               awful.prompt.run {
-    --                 prompt       = "Run Lua code: ",
-    --                 textbox      = awful.screen.focused().mypromptbox.widget,
-    --                 exe_callback = awful.util.eval,
-    --                 history_path = awful.util.get_cache_dir() .. "/history_eval"
-    --               }
-    --           end,
-    --           {description = "lua execute prompt", group = "awesome"})
-    -- Menubar
-    -- awful.key({ modkey, "Shift" }, "p", function() menubar.show() end,
-    --           {description = "show the menubar", group = "launcher"})
-    )
+-- awful.key({ modkey }, "x",
+--           function ()
+--               awful.prompt.run {
+--                 prompt       = "Run Lua code: ",
+--                 textbox      = awful.screen.focused().mypromptbox.widget,
+--                 exe_callback = awful.util.eval,
+--                 history_path = awful.util.get_cache_dir() .. "/history_eval"
+--               }
+--           end,
+--           {description = "lua execute prompt", group = "awesome"})
+-- Menubar
+-- awful.key({ modkey, "Shift" }, "p", function() menubar.show() end,
+--           {description = "show the menubar", group = "launcher"})
+)
 
 keys.clientkeys = gears.table.join(
     -- awful.key({ modkey,           }, "f",
