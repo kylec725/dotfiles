@@ -158,6 +158,14 @@ def_key "j"
 def_key "k"
   scroll_up
 #
+def_key "J"
+  require_screen "browser"
+  push_characters "jjj"
+#
+def_key "K"
+  require_screen "browser"
+  push_characters "kkk"
+#
 def_key "ctrl-u"
   page_up
 #
