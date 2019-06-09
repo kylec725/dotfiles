@@ -1,5 +1,82 @@
 [
   {
+    "id": "af417040-8a57-11e9-be33-7b8481437b91",
+    "content": [
+      "(20)[black]{:          }"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.ncmpcpp/config\t266\t28",
+    "filetype": "conf"
+  },
+  {
+    "id": "481a1110-8a52-11e9-be33-7b8481437b91",
+    "content": [
+      "(6f)[green]{NE}"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.ncmpcpp/config\t265\t39",
+    "filetype": "conf"
+  },
+  {
+    "id": "aa9614d0-8a50-11e9-be33-7b8481437b91",
+    "content": [
+      "def_key \"space\"",
+      "  pause"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.ncmpcpp/bindings\t302\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "47c96af0-8a50-11e9-be33-7b8481437b91",
+    "content": [
+      "#song_columns_list_format = (20)[]{a} (6f)[green]{NE} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.ncmpcpp/config\t265\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "5862a1b0-8a4b-11e9-878f-85953f338274",
+    "content": [
+      "    awful.key({ modkey,           }, \"v\",       function () awful.spawn(vlc) end,",
+      "        {description = \"open vlc\", group = \"launcher\"}),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t81\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "b6513dd0-8a38-11e9-a1f4-2d9c9f8923d3",
+    "content": [
+      "# symbol_map U+E0A0-U+E0A2,U+E0B0-U+E0B3 PowerlineSymbols"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t40\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "e5f77390-8a35-11e9-bb6a-1591f8d76409",
+    "content": [
+      "\"ue0c2\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t198\t27",
+    "filetype": "vim"
+  },
+  {
+    "id": "30051510-8a35-11e9-bb6a-1591f8d76409",
+    "content": [
+      "\" let g:airline_left_sep = ''",
+      "\" let g:airline_left_alt_sep = ''",
+      "\" let g:airline_right_sep = ''",
+      "\" let g:airline_right_alt_sep = ''"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t192\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "08d6ea40-8a2b-11e9-927b-9bf496835ba2",
     "content": [
       "    -- Add titlebars to normal clients and dialogs",
@@ -2028,87 +2105,6 @@
     ],
     "regtype": "v",
     "path": "file:///home/kyle/.config/awesome/keys.lua\t118\t26",
-    "filetype": "lua"
-  },
-  {
-    "id": "dc664d20-87f5-11e9-af3a-011e1482ddbc",
-    "content": [
-      "        awful.spawn.with_shell(\"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous\")",
-      "        mpd_song.update()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t116\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "c6a3c670-87f5-11e9-af3a-011e1482ddbc",
-    "content": [
-      "        awful.spawn.with_shell(\"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next\")",
-      "        mpd_song.update()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t112\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "be376730-87f5-11e9-af3a-011e1482ddbc",
-    "content": [
-      "    -- awful.key({ modkey,           }, \"l\",     function () awful.tag.incmwfact( 0.05)          end,",
-      "    --     {description = \"increase master width factor\", group = \"layout\"}),",
-      "    -- awful.key({ modkey,           }, \"h\",     function () awful.tag.incmwfact(-0.05)          end,",
-      "    --     {description = \"decrease master width factor\", group = \"layout\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t179\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "298d6b00-87f2-11e9-a167-af82283e3afc",
-    "content": [
-      "dbus-send --print-reply --session --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata' | grep -A 2 -e title -e artist | sed -n -e '3p' -e '6p'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t37\t23",
-    "filetype": "lua"
-  },
-  {
-    "id": "a9a84680-87ec-11e9-85d9-611b616a48b1",
-    "content": [
-      "            artist = one:match('\"(.+)\"')"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t166\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "9c051080-87ec-11e9-85d9-611b616a48b1",
-    "content": [
-      "        local one = io.read(\"*line\")",
-      "        local two = io.read(\"*line\")"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t17\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "95dd9830-87ec-11e9-85d9-611b616a48b1",
-    "content": [
-      "        local one = io.read(\"*line\")"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t17\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "c743d800-87ea-11e9-85d9-611b616a48b1",
-    "content": [
-      "  --       if (title == nil) then",
-      "  --           mpd_title.text = \"---------\"",
-      "  --       else",
-      "  --           mpd_title.text = title"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t132\t1",
     "filetype": "lua"
   }
 ]

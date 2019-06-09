@@ -65,6 +65,7 @@ pdf = "kitty -e pdf"
 spotify = "spotify --force-device-scale-factor=1.5"
 python = "kitty -e python"
 vlc = "vlc"
+mpd = "kitty -e ncmpcpp"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 scrot = "scrot ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png"

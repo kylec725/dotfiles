@@ -80,6 +80,8 @@ keys.globalkeys = gears.table.join(
         {description = "open python", group = "launcher"}),
     awful.key({ modkey,           }, "v",       function () awful.spawn(vlc) end,
         {description = "open vlc", group = "launcher"}),
+    awful.key({ modkey,           }, "m",       function () awful.spawn(mpd) end,
+        {description = "open mpd client ncmpcpp", group = "launcher"}),
     awful.key({ modkey,           }, "z", -- have the pdf script spawn in a floating window
         function () awful.spawn(pdf,{
                     -- floating = true,

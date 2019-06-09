@@ -6,6 +6,7 @@ asciiquarium
 autoconf
 automake
 autorandr
+awesome
 bash
 bbswitch
 biber
@@ -22,8 +23,7 @@ ccls
 clang
 cmatrix
 cndrvcups-common-lb
-cndrvcups-lb
-compton
+compton-tryone-git
 coreutils
 cryptsetup
 cups
@@ -77,8 +77,8 @@ jdk8-openjdk
 jfsutils
 jre-openjdk-headless
 jre8-openjdk
+kitty
 kvantum-theme-materia
-lemonbar-git
 less
 libinput-gestures
 libtool
@@ -136,6 +136,7 @@ ranger
 redshift
 refind-efi
 reiserfsprogs
+ripgrep
 rofi
 rsync
 ruby
@@ -152,7 +153,6 @@ sysfsutils
 systemd
 systemd-sysvcompat
 tar
-termite
 texinfo
 texlive-bibtexextra
 texlive-core
@@ -166,7 +166,6 @@ texlive-pictures
 texlive-pstricks
 texlive-publishers
 texlive-science
-thunderbird
 tlp
 tmux
 ttf-inconsolata
@@ -176,17 +175,20 @@ unzip
 usbutils
 util-linux
 vi
-vim-tagbar
 vlc
 w3m
 which
+xclip
 xfsprogs
 xorg-server
 xorg-server-xephyr
 xorg-xbacklight
 xorg-xdpyinfo
+xorg-xev
 xorg-xinit
 xorg-xinput
+xorg-xprop
+xorg-xwininfo
 xss-lock
 youtube-dl
 zathura

@@ -29,3 +29,6 @@ run redshift -c ~/.config/redshift/redshift.conf &
 
 # Run nm-applet
 # run nm-applet &
+
+# Start MPD
+run mpd
