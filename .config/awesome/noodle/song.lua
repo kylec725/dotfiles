@@ -9,19 +9,14 @@ local wibox = require("wibox")
 local beautiful = require("beautiful")
 local naughty = require("naughty")
 
--- pull in mpd_song.lua
-local mpd_song = require("noodle.mpd_song")
-local mpd_widget_children = mpd_song:get_all_children()
-local mpd_title = mpd_widget_children[1]
-local mpd_artist = mpd_widget_children[2]
-
 -- Set colors
 local title_color =  beautiful.mpd_song_title_color or beautiful.wibar_fg
 local artist_color = beautiful.mpd_song_artist_color or beautiful.wibar_fg
 local paused_color = beautiful.mpd_song_paused_color or beautiful.normal_fg
 
 -- Set notification icon path
-local notification_icon = beautiful.spotify_icon
+local mpd_icon = beautiful.music_icon
+local spotify_icon = beautiful.spotify_icon
 
 local song_title = wibox.widget{
   text = "---------",
@@ -51,35 +46,91 @@ local spotify_song = wibox.widget{
 
 local artist_fg
 local artist_bg
-local spotify_title = "---------"
-local spotify_artist = "---------"
 
-local last_notification_id
-local function send_notification(artist, title)
+local last_mpd_id
+local function send_mpd_notification(artist, title)
   notification = naughty.notify({
       -- title = "Now playing:",
       -- text = title .. " -- " .. artist,
       title = title,
       text = artist,
-      icon = notification_icon,
+      icon = mpd_icon,
       -- width = 360,
       -- height = 90,
       -- icon_size = 60,
       -- timeout = 4,
       position = "bottom_middle",
-      replaces_id = last_notification_id
+      replaces_id = last_mpd_id
   })
-  last_notification_id = notification.id
+  last_mpd_id = notification.id
 end
 
+local last_spotify_id
+local function send_spotify_notification(artist, title)
+  notification = naughty.notify({
+      -- title = "Now playing:",
+      -- text = title .. " -- " .. artist,
+      title = title,
+      text = artist,
+      icon = spotify_icon,
+      -- width = 360,
+      -- height = 90,
+      -- icon_size = 60,
+      -- timeout = 4,
+      position = "bottom_middle",
+      replaces_id = last_spotify_id
+  })
+  last_spotify_id = notification.id
+end
+
+-- mpd update
+local mpd_title = "---------"
+local mpd_artist = "---------"
+local function mpd_update()
+    -- awful.spawn.easy_async({"sh", "-c", "mpc"},
+    awful.spawn.easy_async({"mpc", "-f", "[[%artist%@@%title%@]]"},
+        function(stdout)
+            -- naughty.notify({text = stdout})
+            -- local artist = stdout:match('(.*)-.*$')
+            -- artist = string.gsub(artist, '^%s*(.-)%s*$', '%1')
+            -- local title = stdout:match('- (.*)%[')
+            -- title = string.gsub(title, '^%s*(.-)%s*$', '%1')
+            local artist = stdout:match('(.*)@@')
+            local title = stdout:match('@@(.*)@')
+            title = string.gsub(title, '^%s*(.-)%s*$', '%1')
+            local status = stdout:match('%[(.*)%]')
+            status = string.gsub(status, '^%s*(.-)%s*$', '%1')
+            if (artist == nil) then
+                local mpd_title = "---------"
+                local mpd_artist = "---------"
+            else
+                if status ~= "paused" then
+                    artist_fg = artist_color
+                    title_fg = title_color
+                    if (artist ~= mpd_artist and title ~= mpd_title) then
+                        send_mpd_notification(artist, title)
+                        mpd_artist = artist
+                        mpd_title = title
+                    end
+                end
+            end
+        end
+        )
+
+end
+
+local spotify_title = "---------"
+local spotify_artist = "---------"
 local function update_widget()
+    -- update mpd title and artist
+    mpd_update()
     -- extract artist and title
     awful.spawn.easy_async_with_shell(song_request, -- artist request
         function(stdout)
             local artist, title = stdout:match('string "(.+)"\n.*string "(.+)"')
             -- send notification on next song (if text field have changed)
             if (artist ~= spotify_artist and title ~= spotify_title and artist ~= nil) then
-                send_notification(artist, title)
+                send_spotify_notification(artist, title)
                 spotify_artist = artist
                 spotify_title = title
             end
@@ -92,8 +143,8 @@ local function update_widget()
                     song_title.text = title
                 end
             else
-                song_artist.text = mpd_artist.text
-                song_title.text = mpd_title.text
+                song_artist.text = mpd_artist
+                song_title.text = mpd_title
             end
         end
         )

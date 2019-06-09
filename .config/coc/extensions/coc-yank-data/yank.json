@@ -1,5 +1,183 @@
 [
   {
+    "id": "9dafbd00-8a8e-11e9-9898-e37393fab916",
+    "content": [
+      "local spotify_title = \"---------\"",
+      "local spotify_artist = \"---------\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t49\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "45e69800-8a8e-11e9-9898-e37393fab916",
+    "content": [
+      "local function send_notification(artist, title)",
+      "  notification = naughty.notify({",
+      "      -- title = \"Now playing:\",",
+      "      -- text = title .. \" -- \" .. artist,",
+      "      title = title,",
+      "      text = artist,",
+      "      icon = mpd_icon,",
+      "      -- width = 360,",
+      "      -- height = 90,",
+      "      -- icon_size = 60,",
+      "      -- timeout = 4,",
+      "      position = \"bottom_middle\",",
+      "      replaces_id = last_notification_id",
+      "  })",
+      "  last_notification_id = notification.id",
+      "end"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t53\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "d07151a0-8a8d-11e9-9898-e37393fab916",
+    "content": [
+      "local notification_icon = beautiful.music_icon"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t18\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "cb43f0c0-8a8d-11e9-9898-e37393fab916",
+    "content": [
+      "local notification_icon = beautiful.spotify_icon"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t18\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "aa06aed0-8a8c-11e9-ad5b-4f1849fbb093",
+    "content": [
+      "local mpd_title = \"---------\"",
+      "local mpd_artist = \"---------\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t70\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "a92c0640-8a8c-11e9-ad5b-4f1849fbb093",
+    "content": [
+      "local mpd_title = \"---------\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t70\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "d89ebe00-8a8b-11e9-ad5b-4f1849fbb093",
+    "content": [
+      "local spotify_title = \"---------\"",
+      "local spotify_artist = \"---------\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t48\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "50091310-8a8b-11e9-ad5b-4f1849fbb093",
+    "content": [
+      "local function update_widget()",
+      "  -- awful.spawn.easy_async({\"sh\", \"-c\", \"mpc\"},",
+      "  awful.spawn.easy_async({\"mpc\", \"-f\", \"[[%artist%@@%title%@]]\"},",
+      "    function(stdout)",
+      "      -- naughty.notify({text = stdout})",
+      "      -- local artist = stdout:match('(.*)-.*$')",
+      "      -- artist = string.gsub(artist, '^%s*(.-)%s*$', '%1')",
+      "      -- local title = stdout:match('- (.*)%[')",
+      "      -- title = string.gsub(title, '^%s*(.-)%s*$', '%1')",
+      "      local artist = stdout:match('(.*)@@')",
+      "      local title = stdout:match('@@(.*)@')",
+      "      title = string.gsub(title, '^%s*(.-)%s*$', '%1')",
+      "      local status = stdout:match('%[(.*)%]')",
+      "      status = string.gsub(status, '^%s*(.-)%s*$', '%1')",
+      "      if status == \"paused\" then",
+      "        artist_fg = paused_color",
+      "        title_fg = paused_color",
+      "      else",
+      "        artist_fg = artist_color",
+      "        title_fg = title_color",
+      "        -- if sidebar.visible == false then",
+      "      send_notification(artist, title)",
+      "        -- end",
+      "      end",
+      "",
+      "      -- Escape &'s",
+      "      title = string.gsub(title, \"&\", \"&amp;\")",
+      "      artist = string.gsub(artist, \"&\", \"&amp;\")",
+      "",
+      "      -- naughty.notify({text = artist .. \" - \" .. title})",
+      "      mpd_title.markup =",
+      "        \"<span foreground='\" .. title_fg ..\"'>\"",
+      "        .. title .. \"</span>\"",
+      "      mpd_artist.markup =",
+      "        \"<span foreground='\" .. artist_fg ..\"'>\"",
+      "        .. artist .. \"</span>\"",
+      "    end",
+      "  )",
+      "",
+      "end"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t61\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "5f4d60d0-8a89-11e9-a0d1-25b6fc33bb36",
+    "content": [
+      "spotify_song.songupdate = function()",
+      "    update_widget()",
+      "end"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t108\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "4e6fc050-8a89-11e9-a0d1-25b6fc33bb36",
+    "content": [
+      "awful.widget.watch(spotify_script, 3, function(stdout)",
+      "    update_widget()",
+      "end, spotify_song)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t112\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "89ea2680-8a88-11e9-a91b-6fe1e8b1bc4e",
+    "content": [
+      "update_widget()"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t107\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "67ea3b60-8a88-11e9-a91b-6fe1e8b1bc4e",
+    "content": [
+      "            spotify_song.songupdate()"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t336\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "65215760-8a88-11e9-a91b-6fe1e8b1bc4e",
+    "content": [
+      "            spotify_song.songupdate()"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t335\t1",
+    "filetype": "lua"
+  },
+  {
     "id": "f0686e10-8a85-11e9-9cac-a1b168572f9e",
     "content": [
       "                song_title.text = \"---------\""
@@ -1994,151 +2172,6 @@
     ],
     "regtype": "v",
     "path": "file:///home/kyle/.config/awesome/sidebar.lua\t249\t27",
-    "filetype": "lua"
-  },
-  {
-    "id": "5c7b4850-8808-11e9-95ab-f354f95d4913",
-    "content": [
-      "  \"#3DBAC2\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t47\t20",
-    "filetype": "lua"
-  },
-  {
-    "id": "4b79a510-8808-11e9-95ab-f354f95d4913",
-    "content": [
-      "-- lighten brightness color when hovering",
-      "brightness:connect_signal(\"mouse::enter\", function ()",
-      "    brightness_bar.color = \"#6be0e0\"",
-      "end)",
-      "brightness:connect_signal(\"mouse::leave\", function ()",
-      "    brightness_bar.color =  \"#62CDCD\"",
-      "end)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t120\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "29de2110-8808-11e9-95ab-f354f95d4913",
-    "content": [
-      "#62CDCD"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t125\t23",
-    "filetype": "lua"
-  },
-  {
-    "id": "228de030-8808-11e9-95ab-f354f95d4913",
-    "content": [
-      "  \"#62CDCD\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t49\t20",
-    "filetype": "lua"
-  },
-  {
-    "id": "0577e450-8808-11e9-95ab-f354f95d4913",
-    "content": [
-      "-- lighten cpu color when hovering",
-      "cpu:connect_signal(\"mouse::enter\", function ()",
-      "    cpu_bar.color = \"#7fee9d\"",
-      "end)",
-      "cpu:connect_signal(\"mouse::leave\", function ()",
-      "    cpu_bar.color =  \"#74DD91\"",
-      "end)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t189\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "ec60db70-8807-11e9-95ab-f354f95d4913",
-    "content": [
-      "74DD91"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t194\t24",
-    "filetype": "lua"
-  },
-  {
-    "id": "e7f236b0-8807-11e9-95ab-f354f95d4913",
-    "content": [
-      "  \"#74DD91\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t37\t20",
-    "filetype": "lua"
-  },
-  {
-    "id": "9022f730-8807-11e9-95ab-f354f95d4913",
-    "content": [
-      "-- lighten color when hovering",
-      "volume:connect_signal(\"mouse::enter\", function ()",
-      "    if (not volume_bar.muted()) then",
-      "        volume_bar.color = \"#abfeff\"",
-      "    else",
-      "        volume_bar.color = \"#546577\"",
-      "    end",
-      "end)",
-      "volume:connect_signal(\"mouse::leave\", function ()",
-      "    if (not volume_bar.muted()) then",
-      "        volume_bar.color = beautiful.xcolor6",
-      "    else",
-      "        volume_bar.color = \"#465463\"",
-      "    end",
-      "end)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t408\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "660edef0-8807-11e9-95ab-f354f95d4913",
-    "content": [
-      "        volume_bar.color = \"#465463\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t420\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "7e52fce0-8806-11e9-95ab-f354f95d4913",
-    "content": [
-      " \"#465463\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/tmp\t3\t31",
-    "filetype": ""
-  },
-  {
-    "id": "69637da0-8806-11e9-95ab-f354f95d4913",
-    "content": [
-      " \"#abfeff\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t411\t27",
-    "filetype": "lua"
-  },
-  {
-    "id": "32fbe0e0-8806-11e9-95ab-f354f95d4913",
-    "content": [
-      "    awful.key({}, \"XF86AudioPlay\",       function ()",
-      "        awful.spawn.with_shell(\"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause\")",
-      "    end, {description = \"play or pause spotify\", group = \"launcher\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t108\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "bf51e4a0-8805-11e9-95ab-f354f95d4913",
-    "content": [
-      "        volume_bar.color = \"#abfeff\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t411\t1",
     "filetype": "lua"
   }
 ]

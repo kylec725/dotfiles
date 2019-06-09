@@ -16,6 +16,9 @@ local menubar = require("menubar")
 -- cleanup script to prevent volume widget from crashing
 awful.spawn.with_shell("~/.config/awesome/cleanup.sh")
 
+-- run ~/.config/awesome/autorun.sh for startup programs
+awful.spawn.with_shell("~/.config/awesome/autorun.sh")
+
 -- Theme Settings
 -- Theme handling library
 local beautiful = require("beautiful")
@@ -53,9 +56,6 @@ do
     end)
 end
 -- }}}
-
--- run ~/.config/awesome/autorun.sh for startup programs
-awful.spawn.with_shell("~/.config/awesome/autorun.sh")
 
 -- {{{ Variable definitions
 -- This is used later as the default terminal and editor to run.

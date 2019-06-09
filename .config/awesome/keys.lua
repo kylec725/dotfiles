@@ -10,7 +10,7 @@ local helpers = require("helpers")
 
 -- Requirements so widgets can be updated
 local brightness_bar = require("noodle.brightness_bar")
-local spotify_song = require("noodle.spotify_song")
+local song = require("noodle.song")
 
 -- xss-lock notification id
 local lock_not
@@ -120,11 +120,11 @@ awful.key({}, "XF86AudioPlay",       function ()
 end, {description = "play or pause spotify", group = "launcher"}),
     awful.key({}, "XF86AudioNext",       function ()
         awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next")
-        spotify_song.songupdate()
+        song.songupdate()
     end, {description = "next song in spotify", group = "launcher"}),
 awful.key({}, "XF86AudioPrev",       function ()
     awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
-    spotify_song.songupdate()
+    song.songupdate()
 end, {description = "previous song in spotify", group = "launcher"}),
 
     awful.key({ modkey }, ".",       function ()
@@ -132,11 +132,11 @@ end, {description = "previous song in spotify", group = "launcher"}),
     end, {description = "play or pause spotify", group = "launcher"}),
 awful.key({ modkey,           }, "l",     function ()
     awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next")
-    spotify_song.songupdate()
+    song.songupdate()
 end, {description = "next song in spotify", group = "layout"}),
     awful.key({ modkey,           }, "h",     function ()
         awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
-        spotify_song.songupdate()
+        song.songupdate()
     end, {description = "previous song in spotify", group = "layout"}),
 
 -- Screen brightness control

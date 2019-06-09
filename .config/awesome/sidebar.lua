@@ -219,12 +219,12 @@ ram:connect_signal("mouse::leave", function ()
 end)
 
 -- mpd and spotify song retrieval
-local spotify_song = require("noodle.spotify_song")
-local spotify_children = spotify_song:get_all_children()
-local spotify_title = spotify_children[1]
-local spotify_artist = spotify_children[2]
-spotify_title.font = "sans medium 14"
-spotify_artist.font = "sans italic 12"
+local song = require("noodle.song")
+local song_children = song:get_all_children()
+local song_title = song_children[1]
+local song_artist = song_children[2]
+song_title.font = "sans medium 14"
+song_artist.font = "sans italic 12"
 
 -- local playerctl_toggle_icon = wibox.widget.imagebox(beautiful.playerctl_toggle_icon)
 local playerctl_toggle_icon = wibox.widget.imagebox(beautiful.spotify_icon)
@@ -264,7 +264,6 @@ playerctl_prev_icon:buttons(gears.table.join(
         awful.button({ }, 1, function ()
             if spotify_bool then
                 awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
-                spotify_song.songupdate()
             else
                 awful.spawn.with_shell("mpc prev")
             end
@@ -286,7 +285,6 @@ playerctl_next_icon:buttons(gears.table.join(
         awful.button({ }, 1, function ()
             if spotify_bool then
                 awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next")
-                spotify_song.songupdate()
             else
                 awful.spawn.with_shell("mpc next")
             end
@@ -313,13 +311,6 @@ local playerctl_buttons = wibox.widget {
     nil,
     expand = "none",
     layout = wibox.layout.align.horizontal,
-}
-
--- song wrapper widget
-local song = wibox.widget{
-    spotify_title,
-    spotify_artist,
-    layout = wibox.layout.fixed.vertical
 }
 
 song:buttons(gears.table.join(

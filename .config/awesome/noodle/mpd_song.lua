@@ -111,12 +111,17 @@ local mpd_script = [[
     mpc idleloop player
   ']]
 
+mpd_song.songupdate = function()
+    update_widget()
+end
+
 awful.spawn.with_line_callback(mpd_script, {
                                  stdout = function(line)
                                    -- naughty.notify { text = "LINE:"..line }
                                    update_widget()
                                  end
 })
+update_widget()
 
 
 return mpd_song
