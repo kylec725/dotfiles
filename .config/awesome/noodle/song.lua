@@ -44,21 +44,12 @@ local spotify_song = wibox.widget{
     layout = wibox.layout.fixed.vertical
 }
 
-local artist_fg
-local artist_bg
-
 local last_mpd_id
 local function send_mpd_notification(artist, title)
   notification = naughty.notify({
-      -- title = "Now playing:",
-      -- text = title .. " -- " .. artist,
       title = title,
       text = artist,
       icon = mpd_icon,
-      -- width = 360,
-      -- height = 90,
-      -- icon_size = 60,
-      -- timeout = 4,
       position = "bottom_middle",
       replaces_id = last_mpd_id
   })
@@ -68,15 +59,9 @@ end
 local last_spotify_id
 local function send_spotify_notification(artist, title)
   notification = naughty.notify({
-      -- title = "Now playing:",
-      -- text = title .. " -- " .. artist,
       title = title,
       text = artist,
       icon = spotify_icon,
-      -- width = 360,
-      -- height = 90,
-      -- icon_size = 60,
-      -- timeout = 4,
       position = "bottom_middle",
       replaces_id = last_spotify_id
   })
@@ -90,28 +75,19 @@ local function mpd_update()
     -- awful.spawn.easy_async({"sh", "-c", "mpc"},
     awful.spawn.easy_async({"mpc", "-f", "[[%artist%@@%title%@]]"},
         function(stdout)
-            -- naughty.notify({text = stdout})
-            -- local artist = stdout:match('(.*)-.*$')
-            -- artist = string.gsub(artist, '^%s*(.-)%s*$', '%1')
-            -- local title = stdout:match('- (.*)%[')
-            -- title = string.gsub(title, '^%s*(.-)%s*$', '%1')
             local artist = stdout:match('(.*)@@')
             local title = stdout:match('@@(.*)@')
-            title = string.gsub(title, '^%s*(.-)%s*$', '%1')
-            local status = stdout:match('%[(.*)%]')
-            status = string.gsub(status, '^%s*(.-)%s*$', '%1')
             if (artist == nil) then
                 local mpd_title = "---------"
                 local mpd_artist = "---------"
             else
-                if status ~= "paused" then
-                    artist_fg = artist_color
-                    title_fg = title_color
-                    if (artist ~= mpd_artist and title ~= mpd_title) then
-                        send_mpd_notification(artist, title)
-                        mpd_artist = artist
-                        mpd_title = title
-                    end
+                title = string.gsub(title, '^%s*(.-)%s*$', '%1')
+                local status = stdout:match('%[(.*)%]')
+                status = string.gsub(status, '^%s*(.-)%s*$', '%1')
+                if (artist ~= mpd_artist and title ~= mpd_title) then
+                    send_mpd_notification(artist, title)
+                    mpd_artist = artist
+                    mpd_title = title
                 end
             end
         end
