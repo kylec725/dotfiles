@@ -16,6 +16,9 @@ local mpd_song = require("noodle.mpd_song")
 local lock_not
 local scrot_not
 
+-- layout holder
+local old_layout
+
 local keys = {}
 
 -- Set modifier key
@@ -247,7 +250,7 @@ keys.clientkeys = gears.table.join(
         {description = "toggle floating", group = "client"}),
     awful.key({ modkey,           }, "m", function (c) c:swap(awful.client.getmaster()) end,
         {description = "move to master", group = "client"}),
-    awful.key({ modkey,           }, "f",
+    awful.key({ modkey, "Shift"  }, "f",
         function (c)
             c.maximized = not c.maximized
             if c.maximized then
@@ -256,6 +259,16 @@ keys.clientkeys = gears.table.join(
                 c.border_width = beautiful.border_width
             end
             c:raise()
+        end ,
+        {description = "(un)maximize", group = "client"}),
+    awful.key({ modkey,           }, "f",
+        function (c)
+            if (awful.layout.get(c.screen) ~= awful.layout.suit.max) then
+                old_layout = awful.layout.get(c.screen)
+                awful.layout.set(awful.layout.suit.max)
+            else
+                awful.layout.set(old_layout)
+            end
         end ,
         {description = "(un)maximize", group = "client"})
     )

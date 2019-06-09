@@ -1,5 +1,24 @@
 [
   {
+    "id": "62ab9910-8a5f-11e9-b7f7-9de144a7e481",
+    "content": [
+      "    awful.key({ modkey,           }, \"f\",",
+      "        function (c)",
+      "            c.maximized = not c.maximized",
+      "            if c.maximized then",
+      "                c.border_width = 0",
+      "            else",
+      "                c.border_width = beautiful.border_width",
+      "            end",
+      "            c:raise()",
+      "        end ,",
+      "        {description = \"(un)maximize\", group = \"client\"})"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t250\t1",
+    "filetype": "lua"
+  },
+  {
     "id": "9243f6b0-8a5d-11e9-bbb6-31c3b6232bc6",
     "content": [
       "!mime ^text, label editor, ext xml|json|csv|tex|py|pl|rb|js|sh|php = ${VISUAL:-$EDITOR} -- \"$@\""
@@ -2096,15 +2115,6 @@
     ],
     "regtype": "v",
     "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t14\t60",
-    "filetype": "lua"
-  },
-  {
-    "id": "4f8172b0-87fd-11e9-8624-79afee4caac1",
-    "content": [
-      "            sidebar.visible = false"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t177\t1",
     "filetype": "lua"
   }
 ]
