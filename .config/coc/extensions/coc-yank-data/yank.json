@@ -1,5 +1,14 @@
 [
   {
+    "id": "e6f7de70-8af7-11e9-87e0-db34888ab7f0",
+    "content": [
+      "nnoremap <leader>sg :%s/\\<<c-r><c-w>\\>//g<left><left>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t164\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "9d2870b0-8af3-11e9-872f-27fbbe161a71",
     "content": [
       "            if spotify_bool then",
@@ -2161,21 +2170,6 @@
     ],
     "regtype": "v",
     "path": "file:///home/kyle/.config/awesome/sidebar.lua\t374\t39",
-    "filetype": "lua"
-  },
-  {
-    "id": "17214e60-880a-11e9-95ab-f354f95d4913",
-    "content": [
-      "-- lighten exit text when hovering",
-      "exit:connect_signal(\"mouse::enter\", function ()",
-      "    exit_text.markup = \"<span foreground='#ffffff'>Exit</span>\"",
-      "end)",
-      "exit:connect_signal(\"mouse::leave\", function ()",
-      "    exit_text.markup = \"<span foreground='#f1fcf9'>Exit</span>\"",
-      "end)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t37\t1",
     "filetype": "lua"
   }
 ]
