@@ -322,7 +322,7 @@ song:buttons(gears.table.join(
                 playerctl_toggle_icon.image = beautiful.spotify_icon
             end
             spotify_bool = not spotify_bool
-            spotify_song.songupdate()
+            song.songupdate()
         end)
     ))
 
