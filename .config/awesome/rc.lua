@@ -22,6 +22,8 @@ local beautiful = require("beautiful")
 beautiful.init(awful.util.getdir("config") .. "/themes/skyfall/theme.lua")
 
 -- Load local requirements
+-- spotify var to allow the sidebar player widget to work properly
+spotify_bool = true
 local helpers = require("helpers")
 local keys = require("keys")
 local sidebar = require("sidebar")
@@ -65,7 +67,7 @@ pdf = "kitty -e pdf"
 spotify = "spotify --force-device-scale-factor=1.5"
 python = "kitty -e python"
 vlc = "vlc"
-mpd = "kitty -e ncmpcpp"
+mpd = "kitty -o window_padding_width=40 -e ncmpcpp"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 scrot = "scrot ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png"

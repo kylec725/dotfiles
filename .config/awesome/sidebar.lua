@@ -218,50 +218,42 @@ ram:connect_signal("mouse::leave", function ()
     ram_bar.color = "#3DBAC2"
 end)
 
-local mpd_song = require("noodle.mpd_song")
-local mpd_widget_children = mpd_song:get_all_children()
-local mpd_title = mpd_widget_children[1]
-local mpd_artist = mpd_widget_children[2]
-mpd_title.font = "sans medium 14"
-mpd_artist.font = "sans italic 12"
+-- mpd and spotify song retrieval
+local spotify_song = require("noodle.spotify_song")
+local spotify_children = spotify_song:get_all_children()
+local spotify_title = spotify_children[1]
+local spotify_artist = spotify_children[2]
+spotify_title.font = "sans medium 14"
+spotify_artist.font = "sans italic 12"
 
--- Set forced height in order to limit the widgets to one line.
--- Might need to be adjusted depending on the font.
--- mpd_title.forced_height = dpi(24)
--- mpd_artist.forced_height = dpi(16)
-
-mpd_song:buttons(gears.table.join(
-        awful.button({ }, 1, function ()
-            awful.spawn.with_shell("mpc toggle")
-        end),
-        awful.button({ }, 3, function ()
-            -- Spawn music terminal
-            awful.spawn("music_terminal")
-        end),
-        awful.button({ }, 4, function ()
-            awful.spawn.with_shell("mpc prev")
-        end),
-        awful.button({ }, 5, function ()
-            awful.spawn.with_shell("mpc next")
-        end)
-    ))
-
-local playerctl_toggle_icon = wibox.widget.imagebox(beautiful.playerctl_toggle_icon)
 -- local playerctl_toggle_icon = wibox.widget.imagebox(beautiful.playerctl_toggle_icon)
+local playerctl_toggle_icon = wibox.widget.imagebox(beautiful.spotify_icon)
 playerctl_toggle_icon.resize = true
 playerctl_toggle_icon.forced_width = playerctl_button_size
 playerctl_toggle_icon.forced_height = playerctl_button_size
 playerctl_toggle_icon:buttons(gears.table.join(
         awful.button({ }, 1, function ()
-            awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause")
+            if spotify_bool then
+                awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause")
+            else
+                awful.spawn.with_shell("mpc toggle")
+            end
         end)
     ))
 -- change button color on hover
 playerctl_toggle_icon:connect_signal("mouse::enter", function()
-    playerctl_toggle_icon.image = beautiful.playerctl_toggle_icon_hover
+    if spotify_bool then
+        playerctl_toggle_icon.image = beautiful.spotify_hover_icon
+    else
+        playerctl_toggle_icon.image = beautiful.playerctl_toggle_icon_hover
+    end
 end)
 playerctl_toggle_icon:connect_signal("mouse::leave", function()
-    playerctl_toggle_icon.image = beautiful.playerctl_toggle_icon
+    if spotify_bool then
+        playerctl_toggle_icon.image = beautiful.spotify_icon
+    else
+        playerctl_toggle_icon.image = beautiful.playerctl_toggle_icon
+    end
 end)
 
 local playerctl_prev_icon = wibox.widget.imagebox(beautiful.playerctl_prev_icon)
@@ -270,8 +262,12 @@ playerctl_prev_icon.forced_width = playerctl_button_size
 playerctl_prev_icon.forced_height = playerctl_button_size
 playerctl_prev_icon:buttons(gears.table.join(
         awful.button({ }, 1, function ()
-            awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
-            mpd_song.songupdate()
+            if spotify_bool then
+                awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous")
+                spotify_song.songupdate()
+            else
+                awful.spawn.with_shell("mpc prev")
+            end
         end)
     ))
 -- change button color on hover
@@ -288,8 +284,12 @@ playerctl_next_icon.forced_width = playerctl_button_size
 playerctl_next_icon.forced_height = playerctl_button_size
 playerctl_next_icon:buttons(gears.table.join(
         awful.button({ }, 1, function ()
-            awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next")
-            mpd_song.songupdate()
+            if spotify_bool then
+                awful.spawn.with_shell("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next")
+                spotify_song.songupdate()
+            else
+                awful.spawn.with_shell("mpc next")
+            end
         end)
     ))
 -- change button color on hover
@@ -314,6 +314,26 @@ local playerctl_buttons = wibox.widget {
     expand = "none",
     layout = wibox.layout.align.horizontal,
 }
+
+-- song wrapper widget
+local song = wibox.widget{
+    spotify_title,
+    spotify_artist,
+    layout = wibox.layout.fixed.vertical
+}
+
+song:buttons(gears.table.join(
+        awful.button({ }, 1, function ()
+            -- awful.spawn.with_shell("mpc toggle")
+            if spotify_bool then
+                playerctl_toggle_icon.image = beautiful.playerctl_toggle_icon
+            else
+                playerctl_toggle_icon.image = beautiful.spotify_icon
+            end
+            spotify_bool = not spotify_bool
+            spotify_song.songupdate()
+        end)
+    ))
 
 local time = wibox.widget.textclock("%I:%M %P")
 time.align = "center"
@@ -536,7 +556,7 @@ sidebar:setup {
             -- Put some padding at the left and right edge so that
             -- it looks better with extremely long titles/artists
             pad(2),
-            mpd_song,
+            song,
             pad(2),
             layout = wibox.layout.align.horizontal,
         },
