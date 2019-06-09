@@ -109,7 +109,7 @@ mpd_music_dir = ~/music
 ## Time of inactivity (in seconds) after playlist highlighting will be disabled
 ## (0 = always on).
 ##
-#playlist_disable_highlight_delay = 5
+playlist_disable_highlight_delay = 0
 #
 ## Defines how long messages are supposed to be visible.
 ##
@@ -263,7 +263,7 @@ mpd_music_dir = ~/music
 ##
 #
 #song_columns_list_format = (20)[]{a} (6f)[green]{NE} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}
-song_columns_list_format = (10f)[black]{: } (35)[white]{t|f:Title} (20)[blue]{a} (15)[cyan]{b} (7f)[magenta]{l} (10f)[black]{: }
+song_columns_list_format = (10f)[black]{: } (35)[white]{t|f:Title} (20)[blue]{a} (15)[cyan]{b} (6f)[magenta]{l} (10f)[black]{: }
 #
 ##### various settings #####
 #
@@ -308,7 +308,7 @@ browser_display_mode = classic
 #
 #seek_time = 1
 #
-#volume_change_step = 2
+volume_change_step = 2
 #
 #autocenter_mode = no
 #
@@ -350,7 +350,7 @@ user_interface = alternative
 #
 #header_text_scrolling = yes
 #
-#cyclic_scrolling = no
+cyclic_scrolling = yes
 #
 #lines_scrolled = 2
 #
