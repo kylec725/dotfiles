@@ -1,5 +1,23 @@
 [
   {
+    "id": "9243f6b0-8a5d-11e9-bbb6-31c3b6232bc6",
+    "content": [
+      "!mime ^text, label editor, ext xml|json|csv|tex|py|pl|rb|js|sh|php = ${VISUAL:-$EDITOR} -- \"$@\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/ranger/rifle.conf\t91\t1",
+    "filetype": "cfg"
+  },
+  {
+    "id": "8a4d8ac0-8a5d-11e9-bbb6-31c3b6232bc6",
+    "content": [
+      "# mime ^text,  label editor = ${VISUAL:-$EDITOR} -- \"$@\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/ranger/rifle.conf\t88\t1",
+    "filetype": "cfg"
+  },
+  {
     "id": "af417040-8a57-11e9-be33-7b8481437b91",
     "content": [
       "(20)[black]{:          }"
@@ -2087,24 +2105,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/keys.lua\t177\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "e5eaac10-87f5-11e9-af3a-011e1482ddbc",
-    "content": [
-      "next song in spotify"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t114\t26",
-    "filetype": "lua"
-  },
-  {
-    "id": "e09ccae0-87f5-11e9-af3a-011e1482ddbc",
-    "content": [
-      "previous song in spotify"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t118\t26",
     "filetype": "lua"
   }
 ]
