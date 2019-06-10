@@ -1,5 +1,15 @@
 [
   {
+    "id": "058cadb0-8b9e-11e9-a0d7-8fd247bc73ad",
+    "content": [
+      "def_key \"p\"",
+      "  play_item"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.ncmpcpp/bindings\t180\t1",
+    "filetype": "conf"
+  },
+  {
     "id": "7972da80-8b9c-11e9-9486-af191e0c37ff",
     "content": [
       "                bat_not = naughty.notify({",
@@ -2144,21 +2154,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/sidebar.lua\t301\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "466d99f0-882b-11e9-a6c6-9bc23e1f0caa",
-    "content": [
-      "-- change text color on hover",
-      "exit:connect_signal(\"mouse::enter\", function()",
-      "    exit_text.markup = helpers.colorize_text(exit_text.text, \"#c9bff7\")",
-      "end)",
-      "exit:connect_signal(\"mouse::leave\", function()",
-      "    exit_text.markup = helpers.colorize_text(exit_text.text, \"#F1FCF9\")",
-      "end)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t37\t1",
     "filetype": "lua"
   }
 ]
