@@ -1,5 +1,87 @@
 [
   {
+    "id": "53ec7b70-8b12-11e9-b5d8-9f3400a577e0",
+    "content": [
+      "/home/kyle/.config/mpd/database"
+    ],
+    "regtype": "v",
+    "path": "file:///var/tmp/mpdXXHJvytO.conf\t4\t11",
+    "filetype": "conf"
+  },
+  {
+    "id": "e8a3d430-8b0c-11e9-8576-bd62abdc92f1",
+    "content": [
+      "[[%artist%@@%title%@]]"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/noodle/song.lua\t79\t43",
+    "filetype": "lua"
+  },
+  {
+    "id": "51452a30-8b07-11e9-a548-b1b1b02992e8",
+    "content": [
+      "def_key \"J\"",
+      "  require_screen \"browser\"",
+      "  push_characters \"jjjjj\"",
+      "#"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.ncmpcpp/bindings\t227\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "27c20750-8b07-11e9-a548-b1b1b02992e8",
+    "content": [
+      "##    - require_screen \"screen\" - checks whether given screen is"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.ncmpcpp/bindings\t90\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "da0b1ed0-8b05-11e9-8d04-c55cfea3285d",
+    "content": [
+      "map gd cd ~/downloads"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/ranger/rc.conf\t427\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "847861d0-8b05-11e9-823a-09169464a39f",
+    "content": [
+      "map gd cd ~/downloads"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/ranger/rc.conf\t426\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "850a0ff0-8b04-11e9-9dc6-47c796e56540",
+    "content": [
+      "#  jump_to_playing_song"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.ncmpcpp/bindings\t432\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "c3f229d0-8afc-11e9-9817-b500f4b35061",
+    "content": [
+      "#def_key \"space\"",
+      "#  add_item_to_playlist",
+      "#",
+      "#def_key \"space\"",
+      "#  toggle_lyrics_update_on_song_change",
+      "#",
+      "#def_key \"space\"",
+      "#  toggle_visualization_type"
+    ],
+    "regtype": "V",
+    "path": "file:///usr/share/doc/ncmpcpp/bindings\t208\t1",
+    "filetype": "conf"
+  },
+  {
     "id": "e6f7de70-8af7-11e9-87e0-db34888ab7f0",
     "content": [
       "nnoremap <leader>sg :%s/\\<<c-r><c-w>\\>//g<left><left>"
@@ -2092,84 +2174,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/sidebar.lua\t38\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "2f1a2b20-880c-11e9-95ab-f354f95d4913",
-    "content": [
-      "ed9acc"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t187\t29",
-    "filetype": "lua"
-  },
-  {
-    "id": "2b8fcbe0-880c-11e9-95ab-f354f95d4913",
-    "content": [
-      "e2cdff"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t39\t44",
-    "filetype": "lua"
-  },
-  {
-    "id": "240456c0-880c-11e9-95ab-f354f95d4913",
-    "content": [
-      "ed9acc"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t187\t29",
-    "filetype": "lua"
-  },
-  {
-    "id": "98f917f0-880b-11e9-95ab-f354f95d4913",
-    "content": [
-      "e2cdff"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t39\t44",
-    "filetype": "lua"
-  },
-  {
-    "id": "761eab50-880b-11e9-95ab-f354f95d4913",
-    "content": [
-      "e2cdff"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t438\t46",
-    "filetype": "lua"
-  },
-  {
-    "id": "460dad30-880b-11e9-95ab-f354f95d4913",
-    "content": [
-      "-- lighten exit text when hovering",
-      "exit:connect_signal(\"mouse::enter\", function ()",
-      "    exit_text.markup = \"<span foreground='#dbc1ff'>Exit</span>\"",
-      "end)",
-      "exit:connect_signal(\"mouse::leave\", function ()",
-      "    exit_text.markup = \"<span foreground='#f1fcf9'>Exit</span>\"",
-      "end)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t37\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "228ec330-880b-11e9-95ab-f354f95d4913",
-    "content": [
-      "dbc1ff"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t374\t39",
-    "filetype": "lua"
-  },
-  {
-    "id": "73f0eb50-880a-11e9-95ab-f354f95d4913",
-    "content": [
-      "c1dcff"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t374\t39",
     "filetype": "lua"
   }
 ]

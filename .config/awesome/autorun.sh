@@ -31,4 +31,4 @@ run redshift -c ~/.config/redshift/redshift.conf &
 # run nm-applet &
 
 # Start Music Player Daemon
-run mpd &
+# run mpd &

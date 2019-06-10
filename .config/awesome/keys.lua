@@ -120,7 +120,7 @@ awful.key({}, "XF86AudioPrev",       function ()
     song.previous()
 end, {description = "previous song in music", group = "launcher"}),
 
-awful.key({ modkey, "Shift" }, ".",       function ()
+awful.key({ modkey,  }, "t",       function ()
     sidebar.music_toggle()
 end, {description = "play or pause music", group = "launcher"}),
 awful.key({ modkey }, ".",       function ()
