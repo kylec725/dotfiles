@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pidof dunst && killall dunst
-dunst &
+# pidof dunst && killall dunst
+# dunst &
 
-notify-send "Notification Test"
+notify-send "Notification Test xD i am speed"
