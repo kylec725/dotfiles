@@ -184,7 +184,7 @@ def_key "q"
   add_item_to_playlist
   scroll_up
 #
-def_key "d"
+def_key "D"
   delete_playlist_items
 #
 #def_key "delete"
