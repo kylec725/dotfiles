@@ -259,6 +259,9 @@ def_key "c"
 def_key "ctrl-c"
   clear_main_playlist
 #
+def_key "t"
+  toggle_display_mode
+#
 #def_key "1"
 #  show_playlist
 #

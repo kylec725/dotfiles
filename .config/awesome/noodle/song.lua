@@ -80,17 +80,21 @@ local function mpd_update()
         function(stdout)
             local artist = stdout:match('(.*)@@')
             local title = stdout:match('@@(.*)@')
-            if (artist == nil) then
-                local mpd_title = "---------"
-                local mpd_artist = "---------"
+            if (title == nil) then
+                mpd_title = "---------"
+                mpd_artist = "---------"
             else
                 title = string.gsub(title, '^%s*(.-)%s*$', '%1')
                 local status = stdout:match('%[(.*)%]')
                 status = string.gsub(status, '^%s*(.-)%s*$', '%1')
                 if (artist ~= mpd_artist and title ~= mpd_title) then
-                    send_mpd_notification(artist, title)
-                    mpd_artist = artist
                     mpd_title = title
+                    if (artist == nil) then
+                        mpd_artist = "---------"
+                    else
+                        mpd_artist = artist
+                    end
+                    send_mpd_notification(artist, title)
                 end
             end
         end

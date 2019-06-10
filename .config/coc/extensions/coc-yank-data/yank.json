@@ -1,5 +1,74 @@
 [
   {
+    "id": "b1c69370-8b26-11e9-8fad-1d8a4e4cf853",
+    "content": [
+      "#def_key \"P\"",
+      "#  toggle_display_mode",
+      "#"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.ncmpcpp/bindings\t457\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "c1e9f360-8b20-11e9-ac8b-3b3f98251a27",
+    "content": [
+      "audio_output {",
+      "\ttype\t\t\"pulse\"",
+      "\tname\t\t\"pulse audio\"",
+      "#\tdevice\t\t\"hw:0,0\"\t# optional",
+      "#\tmixer_type      \"hardware\"\t# optional",
+      "#\tmixer_device\t\"default\"\t# optional",
+      "#\tmixer_control\t\"PCM\"\t\t# optional",
+      "#\tmixer_index\t\"0\"\t\t# optional",
+      "}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/mpd/mpd.conf\t206\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "bcfbe570-8b20-11e9-ac8b-3b3f98251a27",
+    "content": [
+      "input {",
+      "        plugin \"curl\"",
+      "#       proxy \"proxy.isp.com:8080\"",
+      "#       proxy_user \"user\"",
+      "#       proxy_password \"password\"",
+      "}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/mpd/mpd.conf\t187\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "b7a096c0-8b20-11e9-ac8b-3b3f98251a27",
+    "content": [
+      "auto_update\t\"yes\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/mpd/mpd.conf\t121\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "aa945520-8b16-11e9-a46d-2b63b7fdc294",
+    "content": [
+      "auto_update\t\"yes\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/mpd/mpd.conf\t121\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "41699290-8b16-11e9-9db9-f1288faba4e3",
+    "content": [
+      "                local mpd_artist = \"---------\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/song.lua\t85\t1",
+    "filetype": "lua"
+  },
+  {
     "id": "53ec7b70-8b12-11e9-b5d8-9f3400a577e0",
     "content": [
       "/home/kyle/.config/mpd/database"
@@ -2108,72 +2177,6 @@
     ],
     "regtype": "v",
     "path": "file:///home/kyle/.config/awesome/rc.lua\t69\t13",
-    "filetype": "lua"
-  },
-  {
-    "id": "be707260-8812-11e9-a5d6-ff21f654c498",
-    "content": [
-      "if [ -z $(pgrep xss-lock) ]",
-      "then",
-      "\txss-lock -l fade-lock +resetsaver &",
-      "\tnotify-send \"Auto-Lock On\"",
-      "else",
-      "\tkillall xss-lock",
-      "\tnotify-send \"Auto-Lock Off\"",
-      "fi"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.bin/lock-toggle\t3\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "cd072590-8811-11e9-9856-0931ba3adc7c",
-    "content": [
-      "%d+%%"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t16\t49",
-    "filetype": "lua"
-  },
-  {
-    "id": "a2d4d6f0-8811-11e9-9856-0931ba3adc7c",
-    "content": [
-      "acpi | awk '{ print $3 $4 }'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t11\t21",
-    "filetype": "lua"
-  },
-  {
-    "id": "5f3369d0-8810-11e9-9856-0931ba3adc7c",
-    "content": [
-      "        brightness_bar:connect_signal(\"brightness_changed\", _)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t135\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "88f523b0-880d-11e9-95ab-f354f95d4913",
-    "content": [
-      "%B %d"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t374\t47",
-    "filetype": "lua"
-  },
-  {
-    "id": "94194560-880c-11e9-95ab-f354f95d4913",
-    "content": [
-      "exit:connect_signal(\"mouse::enter\", function ()",
-      "    exit_text.markup = \"<span foreground='#e2cdff'>Exit</span>\"",
-      "end)",
-      "exit:connect_signal(\"mouse::leave\", function ()",
-      "    exit_text.markup = \"<span foreground='#f1fcf9'>Exit</span>\"",
-      "end)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t38\t1",
     "filetype": "lua"
   }
 ]
