@@ -137,13 +137,12 @@ end, {description = "previous song in music", group = "layout"}),
 awful.key({}, "XF86MonBrightnessUp",       function ()
     awful.spawn.with_shell("light -A 5")
     brightness_bar.brightnessupdate()
+end, {description = "increase brightness by 5%", group = "launcher"}),
+awful.key({}, "XF86MonBrightnessDown",       function ()
+    awful.spawn.with_shell("light -U 5")
+    brightness_bar.brightnessupdate()
 end,
-{description = "increase brightness by 5%", group = "launcher"}),
-    awful.key({}, "XF86MonBrightnessDown",       function ()
-        awful.spawn.with_shell("light -U 5")
-        brightness_bar.brightnessupdate()
-    end,
-    {description = "decrease brightness by 5%", group = "launcher"}),
+{description = "decrease brightness by 5%", group = "launcher"}),
 
 -- Lock control
 awful.key({modkey, "Shift"}, "p", function ()
@@ -210,23 +209,6 @@ awful.key({ modkey,           }, "space", function () awful.layout.inc( 1)      
 awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
     {description = "select previous", group = "layout"})
 
--- Prompt
--- awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
---           {description = "run prompt", group = "launcher"}),
-
--- awful.key({ modkey }, "x",
---           function ()
---               awful.prompt.run {
---                 prompt       = "Run Lua code: ",
---                 textbox      = awful.screen.focused().mypromptbox.widget,
---                 exe_callback = awful.util.eval,
---                 history_path = awful.util.get_cache_dir() .. "/history_eval"
---               }
---           end,
---           {description = "lua execute prompt", group = "awesome"})
--- Menubar
--- awful.key({ modkey, "Shift" }, "p", function() menubar.show() end,
---           {description = "show the menubar", group = "launcher"})
 )
 
 keys.clientkeys = gears.table.join(
