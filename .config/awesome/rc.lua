@@ -440,7 +440,8 @@ naughty.config.presets.normal = {
     bg           = beautiful.notification_bg,
     border_width = beautiful.notification_border_width,
     margin       = beautiful.notification_margin,
-    position     = beautiful.notification_position
+    position     = beautiful.notification_position,
+    shape        = helpers.rrect(beautiful.border_radius)
 }
 
 naughty.config.presets.low = {
@@ -449,7 +450,8 @@ naughty.config.presets.low = {
     bg           = beautiful.notification_bg,
     border_width = beautiful.notification_border_width,
     margin       = beautiful.notification_margin,
-    position     = beautiful.notification_position
+    position     = beautiful.notification_position,
+    shape        = helpers.rrect(beautiful.border_radius)
 }
 
 naughty.config.presets.ok = naughty.config.presets.low
@@ -462,7 +464,8 @@ naughty.config.presets.critical = {
     bg           = beautiful.notification_crit_bg,
     border_width = beautiful.notification_border_width,
     margin       = beautiful.notification_margin,
-    position     = beautiful.notification_position
+    position     = beautiful.notification_position,
+    shape        = helpers.rrect(beautiful.border_radius)
 }
 
 -- }}}

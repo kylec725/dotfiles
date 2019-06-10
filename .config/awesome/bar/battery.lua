@@ -10,6 +10,8 @@ local battery = wibox.widget.textbox()
 
 local bat_script = "acpi | awk '{ print $3 $4 }'"
 
+local first_warning = true
+local bat_not = nil
 local function update_widget()
     awful.spawn.easy_async_with_shell(bat_script, function(stdout)
         -- local text = string.match(stdout, '%d+%%')
@@ -20,8 +22,31 @@ local function update_widget()
             icon = ""
         elseif (charge >= 0 and charge < 15) then
             icon = ""
+            if (charge <= 10 and bat_not == nil) then
+                bat_not = naughty.notify({
+                        text = "Battery Critical",
+                        icon = beautiful.battery_icon,
+                        preset = naughty.config.presets.critical,
+                        timeout = 0,
+                        position = "bottom_middle"
+                    }).id
+            else
+                bat_not = nil
+            end
         elseif (charge >= 15 and charge < 40) then
             icon = ""
+            if (charge == 20 and first_warning) then
+                naughty.notify({
+                        text = "Battery Low",
+                        icon = beautiful.battery_icon,
+                        preset = naughty.config.presets.critical,
+                        timeout = 12,
+                        position = "bottom_middle"
+                    })
+                first_warning = false
+            elseif (charge > 20) then
+                first_warning = true
+            end
         elseif (charge >= 40 and charge < 60) then
             icon = ""
         elseif (charge >= 60 and charge < 80) then

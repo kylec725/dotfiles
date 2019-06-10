@@ -49,26 +49,26 @@ local song = wibox.widget{
 
 local last_mpd_id
 local function send_mpd_notification(artist, title)
-    notification = naughty.notify({
+    song_notification = naughty.notify({
             title = title,
             text = artist,
             icon = mpd_icon,
             position = "bottom_middle",
             replaces_id = last_mpd_id
         })
-    last_mpd_id = notification.id
+    last_mpd_id = song_notification.id
 end
 
 local last_spotify_id
 local function send_spotify_notification(artist, title)
-    notification = naughty.notify({
+    song_notification = naughty.notify({
             title = title,
             text = artist,
             icon = spotify_icon,
             position = "bottom_middle",
             replaces_id = last_spotify_id
         })
-    last_spotify_id = notification.id
+    last_spotify_id = song_notification.id
 end
 
 -- mpd update

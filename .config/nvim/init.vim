@@ -58,7 +58,7 @@ augroup END
 set expandtab
 set softtabstop=-1
 " auto indent command
-command Indent :normal! MmQgg=G'Q
+command Indent :normal! MmQgg=G'Qzz
 
 " Mode switch delay
 set timeoutlen=1000 ttimeoutlen=0

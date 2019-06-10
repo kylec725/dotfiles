@@ -9,7 +9,7 @@ local xresources = require("beautiful.xresources")
 local helpers = require("helpers")
 
 -- xss-lock notification id
-local lock_not
+local lock_id
 local scrot_not
 
 -- layout holder
@@ -147,32 +147,30 @@ end,
 
 -- Lock control
 awful.key({modkey, "Shift"}, "p", function ()
-    local tmp = os.execute("pgrep xss-lock > tmp")
-    file = io.open("tmp")
-    io.input(file)
-    lock_pid = io.read()
-    io.close(file)
-    if lock_pid == nil or lock_pid == "" then
-        awful.spawn.with_shell("xss-lock -l fade-lock +resetsaver &")
-        naughty.destroy(lock_not)
-        lock_not = naughty.notify({
-                text = "Lock On",
-                icon = "/home/kyle/.config/awesome/themes/skyfall/icons/lock.png",
-                bg = "#F1FCF9",
-                fg = "#20262C",
-                position = "bottom_middle",
-                opacity = 1
-            })
-    else
-        awful.spawn.with_shell("killall xss-lock")
-        naughty.destroy(lock_not)
-        lock_not = naughty.notify({
-                text = "Lock Off",
-                icon = "/home/kyle/.config/awesome/themes/skyfall/icons/lock.png",
-                position = "bottom_middle",
-            })
-    end
-    os.remove("tmp")
+    awful.spawn.easy_async_with_shell("pgrep xss-lock", function (stdout)
+        local xss_pid = stdout:match('(%d+)')
+        if xss_pid == nil then
+            awful.spawn.with_shell("xss-lock -l fade-lock +resetsaver &")
+            lock_notification = naughty.notify({
+                    text = "Lock On",
+                    icon = "/home/kyle/.config/awesome/themes/skyfall/icons/lock.png",
+                    bg = "#F1FCF980",
+                    fg = "#20262C",
+                    position = "bottom_middle",
+                    replaces_id = lock_id
+                })
+            lock_id = lock_notification.id
+        else
+            awful.spawn.with_shell("killall xss-lock")
+            lock_notification = naughty.notify({
+                    text = "Lock Off",
+                    icon = "/home/kyle/.config/awesome/themes/skyfall/icons/lock.png",
+                    position = "bottom_middle",
+                    replaces_id = lock_id
+                })
+            lock_id = lock_notification.id
+        end
+    end)
 end,
 {description = "toggle auto lock", group = "launcher"}),
     awful.key({modkey, "Shift"}, "semicolon",       function () awful.spawn.with_shell("fade-lock") end,
