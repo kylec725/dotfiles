@@ -154,7 +154,7 @@ awful.key({modkey, "Shift"}, "p", function ()
             lock_notification = naughty.notify({
                     text = "Lock On",
                     icon = "/home/kyle/.config/awesome/themes/skyfall/icons/lock.png",
-                    bg = "#F1FCF980",
+                    bg = "#F1FCF9" .. "B3",
                     fg = "#20262C",
                     position = "bottom_middle",
                     replaces_id = lock_id

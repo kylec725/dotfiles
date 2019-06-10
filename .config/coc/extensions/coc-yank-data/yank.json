@@ -1,5 +1,58 @@
 [
   {
+    "id": "7972da80-8b9c-11e9-9486-af191e0c37ff",
+    "content": [
+      "                bat_not = naughty.notify({",
+      "                        text = \"Battery Critical\",",
+      "                        icon = beautiful.battery_icon,",
+      "                        preset = naughty.config.presets.critical,",
+      "                        timeout = 0,",
+      "                        position = \"bottom_middle\"",
+      "                    }).id"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t26\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "7297a290-8b9c-11e9-9486-af191e0c37ff",
+    "content": [
+      "awful.key({ modkey,  }, \"t\",       function ()",
+      "    sidebar.music_toggle()",
+      "end, {description = \"play or pause music\", group = \"launcher\"}),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t123\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "63fd3b50-8b9c-11e9-9486-af191e0c37ff",
+    "content": [
+      "                        preset = naughty.config.presets.critical,"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t29\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "95c94c60-8b9b-11e9-9486-af191e0c37ff",
+    "content": [
+      "theme.notification_bg = theme.xcolor0 .. \"80\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t108\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "93121ba0-8b9b-11e9-9486-af191e0c37ff",
+    "content": [
+      "theme.notification_crit_bg = theme.xcolor3 .. \"99\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t110\t1",
+    "filetype": "lua"
+  },
+  {
     "id": "f10ffaa0-8b33-11e9-87fa-6d67c82024bb",
     "content": [
       "                naughty.notify({",
@@ -2106,84 +2159,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/sidebar.lua\t37\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "dfafb8b0-882a-11e9-a6c6-9bc23e1f0caa",
-    "content": [
-      "",
-      "-- change text color on hover",
-      "search:connect_signal(\"mouse::enter\", function()",
-      "    search_text.markup = helpers.colorize_text(search_text.text, \"#c9bff7\")",
-      "end)",
-      "search:connect_signal(\"mouse::leave\", function()",
-      "    search_text.markup = helpers.colorize_text(disk_spacesearch_texttext, \"#F1FCF9\")",
-      "end)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t451\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "cc47c3d0-882a-11e9-a6c6-9bc23e1f0caa",
-    "content": [
-      "",
-      "-- change text color on hover",
-      "disk:connect_signal(\"mouse::enter\", function()",
-      "    disk_space.markup = helpers.colorize_text(disk_space.text, \"#c9bff7\")",
-      "end)",
-      "disk:connect_signal(\"mouse::leave\", function()",
-      "    disk_space.markup = helpers.colorize_text(disk_space.text, \"#F1FCF9\")",
-      "end)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t422\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "9e7f7d30-882a-11e9-a6c6-9bc23e1f0caa",
-    "content": [
-      "-- change text color on hover",
-      "fancy_date:connect_signal(\"mouse::enter\", function()",
-      "    fancy_date.markup = helpers.colorize_text(fancy_date.text, \"#c9bff7\")",
-      "end)",
-      "fancy_date:connect_signal(\"mouse::leave\", function()",
-      "    fancy_date.markup = helpers.colorize_text(fancy_date.text, \"#F1FCF9\")",
-      "end)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t386\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "7f4541c0-882a-11e9-a6c6-9bc23e1f0caa",
-    "content": [
-      "-- change text color on hover",
-      "date:connect_signal(\"mouse::enter\", function()",
-      "    date.markup = helpers.colorize_text(date.text, \"#c9bff7\")",
-      "end)",
-      "date:connect_signal(\"mouse::leave\", function()",
-      "    date.markup = helpers.colorize_text(date.text, \"#F1FCF9\")",
-      "end)",
-      ""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t372\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "6a54b110-882a-11e9-a6c6-9bc23e1f0caa",
-    "content": [
-      "-- change text color on hover",
-      "time:connect_signal(\"mouse::enter\", function()",
-      "    time.markup = helpers.colorize_text(time.text, \"#c9bff7\")",
-      "end)",
-      "time:connect_signal(\"mouse::leave\", function()",
-      "    time.markup = helpers.colorize_text(time.text, \"#F1FCF9\")",
-      "end)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t357\t1",
     "filetype": "lua"
   }
 ]
