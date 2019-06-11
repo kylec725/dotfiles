@@ -8,7 +8,7 @@ Plug 'junegunn/goyo.vim'
 " Airline to replace status line
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-commentary'
+Plug 'tomtom/tcomment_vim'
 Plug 'Yggdroot/indentLine'
 Plug 'gregsexton/MatchTag'
 Plug 'jiangmiao/auto-pairs'
