@@ -13,7 +13,7 @@ amixer set Master unmute
 amixer set Master 50%
 
 # Restore feh background
-# ~/.fehbg &
+~/.fehbg &
 
 # Compton
 run compton --config ~/.config/compton/compton.conf -b

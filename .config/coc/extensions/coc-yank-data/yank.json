@@ -1,5 +1,80 @@
 [
   {
+    "id": "2d8638b0-8d72-11e9-9252-a731cc3198d2",
+    "content": [
+      "        awful.spawn.with_shell(os.getenv(\"HOME\") .. \"/.fehbg\")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles_git/config/awesome/rc.lua\t285\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "0041f470-8bd8-11e9-b92a-a34477372028",
+    "content": [
+      "        pacmd set-card-profile 0 \"output:hdmi-stereo\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.bin/audio-toggle\t9\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "fc60c2a0-8bd7-11e9-b92a-a34477372028",
+    "content": [
+      "        pacmd set-card-profile 0 \"output:analog-stereo+input:analog-stereo\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.bin/audio-toggle\t6\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "2e67e0e0-8bd7-11e9-bf5c-311cb2ce521a",
+    "content": [
+      "            if (charge == 20 and first_warning) then",
+      "                naughty.notify({",
+      "                        text = \"Battery Low\",",
+      "                        icon = beautiful.battery_icon,",
+      "                        preset = naughty.config.presets.critical,",
+      "                        timeout = 12,",
+      "                        position = \"bottom_middle\"",
+      "                    })",
+      "                first_warning = false",
+      "            elseif (charge > 20) then",
+      "                first_warning = true",
+      "            end"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t38\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "1e7e3d50-8bd7-11e9-bf5c-311cb2ce521a",
+    "content": [
+      "            if (charge <= 10 and bat_not == nil) then",
+      "                bat_not = naughty.notify({",
+      "                        text = \"Battery Critical\",",
+      "                        icon = beautiful.battery_icon,",
+      "                        preset = naughty.config.presets.critical,",
+      "                        timeout = 0,",
+      "                        position = \"bottom_middle\"",
+      "                    }).id",
+      "            else",
+      "                bat_not = nil",
+      "            end"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t25\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "f0c3db60-8bc0-11e9-89da-872f3c56c991",
+    "content": [
+      "  pactl subscribe 2> /dev/null | grep --line-buffered \"sink #0\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t86\t1",
+    "filetype": "lua"
+  },
+  {
     "id": "058cadb0-8b9e-11e9-a0d7-8fd247bc73ad",
     "content": [
       "def_key \"p\"",
@@ -2094,66 +2169,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t79\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "e270e9a0-882c-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "DB86BA"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t84\t72",
-    "filetype": "lua"
-  },
-  {
-    "id": "c257e6f0-882c-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "DB86BA"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t84\t72",
-    "filetype": "lua"
-  },
-  {
-    "id": "bb024ee0-882c-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "DB86BA"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t51\t68",
-    "filetype": "lua"
-  },
-  {
-    "id": "8bf5ef80-882c-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "-- change text color on hover",
-      "time:connect_signal(\"mouse::enter\", function()",
-      "    time.markup = helpers.colorize_text(time.text, \"#c9bff7\")",
-      "end)",
-      "time:connect_signal(\"mouse::leave\", function()",
-      "    time.markup = helpers.colorize_text(time.text, \"#F1FCF9\")",
-      "end)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t365\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "6275a840-882b-11e9-a6c6-9bc23e1f0caa",
-    "content": [
-      "    mpd_title.markup = helpers.colorize_text(mpd_title.text, \"#c9bff7\")"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t298\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "61628a90-882b-11e9-a6c6-9bc23e1f0caa",
-    "content": [
-      "    mpd_title.markup = helpers.colorize_text(mpd_title.text, \"#F1FCF9\")"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t301\t1",
     "filetype": "lua"
   }
 ]
