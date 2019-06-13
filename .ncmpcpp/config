@@ -308,7 +308,7 @@ browser_display_mode = columns
 #
 seek_time = 3
 #
-volume_change_step = 2
+volume_change_step = 5
 #
 #autocenter_mode = no
 #
@@ -350,7 +350,7 @@ user_interface = alternative
 #
 #header_text_scrolling = yes
 #
-cyclic_scrolling = yes
+cyclic_scrolling = no
 #
 #lines_scrolled = 2
 #
@@ -529,7 +529,8 @@ main_window_color = white
 #
 progressbar_color = black:b
 #
-progressbar_elapsed_color = magenta:b
+# progressbar_elapsed_color = magenta:b
+progressbar_elapsed_color = yellow:b
 #
 #statusbar_color = default
 #
