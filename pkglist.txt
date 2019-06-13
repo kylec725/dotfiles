@@ -34,7 +34,6 @@ dialog
 diffutils
 dmenu
 dune
-dunst
 e2fsprogs
 easy-rsa
 efibootmgr
@@ -104,7 +103,10 @@ materia-kde
 mdadm
 mesa-demos
 mlocate
+mpc
+mpd
 nano
+ncmpcpp
 neovim
 netctl
 network-manager-applet
