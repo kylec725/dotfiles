@@ -34,4 +34,14 @@ run redshift -c ~/.config/redshift/redshift.conf &
 run mpd &
 
 # Clipboard manager
-run clipster -d --config ~/.config/clipster/clipster.ini &
+clear_clipboard=false
+if [ -z $(pgrep clipster) ]; then
+        clear_clipboard=true
+fi
+run clipster -d -f ~/.config/clipster/clipster.ini &
+# clear clipboard history on restart of clipster
+if [ "$clear_clipboard" = true ]; then
+        sleep 0.02
+        clipster -c --erase-entire-board
+        clipster -p --erase-entire-board
+fi
