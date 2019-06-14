@@ -192,6 +192,16 @@ end,
         sidebar.visible = not sidebar.visible
     end, {description = "show or hide sidebar", group = "awesome"}),
 
+awful.key({ modkey }, "c", function()
+    awful.spawn(clipboard,{
+            -- floating = true,
+            -- placement = awful.placement.centered,
+            -- width = 1400,
+            -- height = 800,
+            fullscreen = true
+    }) end,
+{description = "open up clipster history", group = "launcher"}),
+
 -- awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
 --     {description = "increase master width factor", group = "layout"}),
 -- awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)          end,

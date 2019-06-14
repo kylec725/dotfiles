@@ -35,4 +35,3 @@ run mpd &
 
 # Clipboard manager
 run clipster -d --config ~/.config/clipster/clipster.ini &
-clipster --erase-entire-board

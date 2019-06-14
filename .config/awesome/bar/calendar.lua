@@ -39,7 +39,7 @@ end
 
 function calendar:init(args)
     self.num_lines   = 0
-    self.today_color = args.today_color or "#ed9acc"
+    self.today_color = args.today_color or "#ffff8a"
     -- first day of week: monday=1, …, sunday=7
     self.fdow        = args.fdow        or 7
     -- notification area:

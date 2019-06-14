@@ -1,2174 +1,2644 @@
 [
   {
-    "id": "2d8638b0-8d72-11e9-9252-a731cc3198d2",
+    "id": "4dc3e7d0-8eda-11e9-9d83-4dda61aafb69",
     "content": [
-      "        awful.spawn.with_shell(os.getenv(\"HOME\") .. \"/.fehbg\")"
+      "#!/bin/sh",
+      "",
+      "# Verify clipster is running, fail otherwise",
+      "clipster -o > /dev/null 2>&1",
+      "if [ $? -ne 0 ]; then",
+      "  echo 'Failed to retrieve history from Clipster, please ensure daemon is running!'",
+      "  exit 1",
+      "fi",
+      "",
+      "# Extract clipboard history from clipster and format for rofi",
+      "#  - Remove Newlines from clips",
+      "#  - Limit line length to 200 chars (for display in rofi)",
+      "#  - Split into lines based on NUL byte",
+      "#  - Remove Leading whitespace",
+      "#  - Remove empty clipboard items",
+      "#  - Add line numbers to clip items",
+      "# NOTE: This is all done in a single line because bash can't store a NUL byte",
+      "C_HIST=\"$(clipster -p -o -n 10 -0 \\",
+      "        | gawk 'BEGIN {RS = \"\\0\"; ORS = \"\\0\"} NF > 0 { print substr($0, 1, 250) }' \\",
+      "        | gawk 'BEGIN {RS = \"\\0\"; FS=\"\\n\"; OFS=\" \" } { $1=$1; print $0 }'  \\",
+      "        | sed 's/^ *//' \\",
+      "        | gawk '{printf(\"%003d %s\\n\", NR, $0)}')\"",
+      "",
+      "# Make selection using fzf",
+      "SELECTION=\"$(echo \"$C_HIST\" | fzf --no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD --prompt=\"Copy to Clipboard: \")\"",
+      "",
+      "# Verify user made a selection",
+      "if [ -n \"$SELECTION\" ]; then",
+      "",
+      "  # Retrieve the line number from the beginning of selection and remove leading zeros",
+      "  NUMBER=\"$(echo \"$SELECTION\" | cut -c1-3 | sed 's/^0*//')\"",
+      "",
+      "  # Extract clipboard history from clipster and find the nth non-empty clip based selected line number",
+      "  EXACT_SELECTION=\"$(clipster -p -o -n 10 -0 \\",
+      "                   | gawk 'BEGIN {RS = \"\\0\"; ORS = \"\\0\"} NF > 0 { print }' \\",
+      "                   | gawk 'BEGIN {RS = \"\\0\"}'\"NR == $NUMBER { print; exit }\")\"",
+      "",
+      "  # Echo the selection back to clipster",
+      "  echo -n \"$EXACT_SELECTION\" | clipster -c",
+      "fi"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/dotfiles_git/config/awesome/rc.lua\t285\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "0041f470-8bd8-11e9-b92a-a34477372028",
-    "content": [
-      "        pacmd set-card-profile 0 \"output:hdmi-stereo\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.bin/audio-toggle\t9\t1",
+    "path": "file:///home/kyle/.bin/fzfclip\t1\t1",
     "filetype": "sh"
   },
   {
-    "id": "fc60c2a0-8bd7-11e9-b92a-a34477372028",
+    "id": "b9c0d2a0-8ed9-11e9-9d83-4dda61aafb69",
     "content": [
-      "        pacmd set-card-profile 0 \"output:analog-stereo+input:analog-stereo\""
+      "--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD --prompt=\"Open PDF: \""
     ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.bin/audio-toggle\t6\t1",
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/pdf\t3\t36",
     "filetype": "sh"
   },
   {
-    "id": "2e67e0e0-8bd7-11e9-bf5c-311cb2ce521a",
+    "id": "46a29ba0-8ed9-11e9-9cdb-83ef43a422a6",
     "content": [
-      "            if (charge == 20 and first_warning) then",
-      "                naughty.notify({",
-      "                        text = \"Battery Low\",",
-      "                        icon = beautiful.battery_icon,",
-      "                        preset = naughty.config.presets.critical,",
-      "                        timeout = 12,",
-      "                        position = \"bottom_middle\"",
-      "                    })",
-      "                first_warning = false",
-      "            elseif (charge > 20) then",
-      "                first_warning = true",
-      "            end"
+      "        function () awful.spawn(pdf,{",
+      "                    -- floating = true,",
+      "                    -- placement = awful.placement.centered,",
+      "                    -- width = 1200,",
+      "                    -- height = 1000,",
+      "                    fullscreen = true",
+      "            }) end,"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t38\t1",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t85\t1",
     "filetype": "lua"
   },
   {
-    "id": "1e7e3d50-8bd7-11e9-bf5c-311cb2ce521a",
+    "id": "f230c9e0-8ed6-11e9-8320-3fe582f75148",
     "content": [
-      "            if (charge <= 10 and bat_not == nil) then",
-      "                bat_not = naughty.notify({",
-      "                        text = \"Battery Critical\",",
-      "                        icon = beautiful.battery_icon,",
-      "                        preset = naughty.config.presets.critical,",
-      "                        timeout = 0,",
-      "                        position = \"bottom_middle\"",
-      "                    }).id",
-      "            else",
-      "                bat_not = nil",
-      "            end"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t25\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "f0c3db60-8bc0-11e9-89da-872f3c56c991",
-    "content": [
-      "  pactl subscribe 2> /dev/null | grep --line-buffered \"sink #0\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t86\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "058cadb0-8b9e-11e9-a0d7-8fd247bc73ad",
-    "content": [
-      "def_key \"p\"",
-      "  play_item"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.ncmpcpp/bindings\t180\t1",
-    "filetype": "conf"
-  },
-  {
-    "id": "7972da80-8b9c-11e9-9486-af191e0c37ff",
-    "content": [
-      "                bat_not = naughty.notify({",
-      "                        text = \"Battery Critical\",",
-      "                        icon = beautiful.battery_icon,",
-      "                        preset = naughty.config.presets.critical,",
-      "                        timeout = 0,",
-      "                        position = \"bottom_middle\"",
-      "                    }).id"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t26\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "7297a290-8b9c-11e9-9486-af191e0c37ff",
-    "content": [
-      "awful.key({ modkey,  }, \"t\",       function ()",
-      "    sidebar.music_toggle()",
-      "end, {description = \"play or pause music\", group = \"launcher\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t123\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "63fd3b50-8b9c-11e9-9486-af191e0c37ff",
-    "content": [
-      "                        preset = naughty.config.presets.critical,"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t29\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "95c94c60-8b9b-11e9-9486-af191e0c37ff",
-    "content": [
-      "theme.notification_bg = theme.xcolor0 .. \"80\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t108\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "93121ba0-8b9b-11e9-9486-af191e0c37ff",
-    "content": [
-      "theme.notification_crit_bg = theme.xcolor3 .. \"99\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t110\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "f10ffaa0-8b33-11e9-87fa-6d67c82024bb",
-    "content": [
-      "                naughty.notify({",
-      "                        text = \"Battery Low\",",
-      "                        icon = beautiful.battery_icon,",
-      "                        preset = naughty.config.presets.critical,",
-      "                        timeout = 12,",
-      "                        position = \"bottom_middle\"",
-      "                    })"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t30\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "9657f310-8b33-11e9-87fa-6d67c82024bb",
-    "content": [
-      "                naughty.notify({",
-      "                        text = \"Battery Low\","
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t27\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "cc5319c0-8b30-11e9-9508-3fd028b60d7b",
-    "content": [
-      "naughty.config.presets.critical.timeout"
+      "clipster -c -o -n 10 -0 \\",
+      "        | gawk 'BEGIN {RS = \"\\0\"; ORS = \"\\0\"} NF > 0 { print substr($0, 1, 250) }'"
     ],
     "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t429\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/.bin/roficlip\t18\t11",
+    "filetype": "sh"
   },
   {
-    "id": "c3a98a70-8b30-11e9-9508-3fd028b60d7b",
+    "id": "ec0ab120-8ed6-11e9-8320-3fe582f75148",
     "content": [
-      "naughty.config.presets.critical.timeout = 12"
+      "C_HIST=\"$(clipster -c -o -n 10 -0 \\",
+      "        | gawk 'BEGIN {RS = \"\\0\"; ORS = \"\\0\"} NF > 0 { print substr($0, 1, 250) }' \\"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t429\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/.bin/roficlip\t18\t1",
+    "filetype": "sh"
   },
   {
-    "id": "ebcbb330-8b2f-11e9-9508-3fd028b60d7b",
+    "id": "407ec9a0-8ed5-11e9-8320-3fe582f75148",
     "content": [
-      "naughty.config.presets.critical"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t461\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "8e3d3310-8b2f-11e9-9508-3fd028b60d7b",
-    "content": [
-      "    awful.key({ modkey }, \"semicolon\", function()",
-      "        sidebar.visible = not sidebar.visible",
-      "    end, {description = \"show or hide sidebar\", group = \"awesome\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t194\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "adeb29d0-8b2d-11e9-9508-3fd028b60d7b",
-    "content": [
-      "helpers.rrect(beautiful.border_radius)"
+      "clipster -c -o -n 500 -0 \\",
+      "        | gawk 'BEGIN {RS = \"\\0\"; ORS = \"\\0\"} NF > 0 { print substr($0, 1, 250) }'"
     ],
     "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t410\t23",
-    "filetype": "lua"
+    "path": "file:///home/kyle/.bin/roficlip\t18\t11",
+    "filetype": "sh"
   },
   {
-    "id": "04c04750-8b2d-11e9-9508-3fd028b60d7b",
+    "id": "6a27e080-8ed4-11e9-8320-3fe582f75148",
     "content": [
-      "    shape        = helpers.rrect(beautiful.border_radius)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t454\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "0102a310-8b2d-11e9-9508-3fd028b60d7b",
-    "content": [
-      "    shape        = helpers.rrect(beautiful.border_radius)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t444\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "5afc8030-8b2c-11e9-9508-3fd028b60d7b",
-    "content": [
-      "            shape = helpers.rrect(beautiful.border_radius),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/song.lua\t59\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "0802bd90-8b2c-11e9-9508-3fd028b60d7b",
-    "content": [
-      "            shape = helpers.rrect(beautiful.border_radius),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/song.lua\t57\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "a8dcd490-8b2b-11e9-9508-3fd028b60d7b",
-    "content": [
-      "dpi(8)"
+      "clipster -c -o -n 500 -0 \\",
+      "        | gawk 'BEGIN {RS = \"\\0\"; ORS = \"\\0\"} NF > 0 { print substr($0, 1, 250) }' \\",
+      "        | gawk 'BEGIN {RS = \"\\0\"; FS=\"\\n\"; OFS=\" \" } { $1=$1; print $0 }'  \\",
+      "        | sed 's/^ *//' \\",
+      "        | gawk '{printf(\"%003d %s\\n\", NR, $0)}'"
     ],
     "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t80\t23",
-    "filetype": "lua"
+    "path": "file:///home/kyle/.bin/roficlip\t18\t11",
+    "filetype": "sh"
   },
   {
-    "id": "b1c69370-8b26-11e9-8fad-1d8a4e4cf853",
+    "id": "09e30f70-8ed3-11e9-9cdb-83ef43a422a6",
     "content": [
-      "#def_key \"P\"",
-      "#  toggle_display_mode",
-      "#"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.ncmpcpp/bindings\t457\t1",
-    "filetype": "conf"
-  },
-  {
-    "id": "c1e9f360-8b20-11e9-ac8b-3b3f98251a27",
-    "content": [
-      "audio_output {",
-      "\ttype\t\t\"pulse\"",
-      "\tname\t\t\"pulse audio\"",
-      "#\tdevice\t\t\"hw:0,0\"\t# optional",
-      "#\tmixer_type      \"hardware\"\t# optional",
-      "#\tmixer_device\t\"default\"\t# optional",
-      "#\tmixer_control\t\"PCM\"\t\t# optional",
-      "#\tmixer_index\t\"0\"\t\t# optional",
-      "}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/mpd/mpd.conf\t206\t1",
-    "filetype": "conf"
-  },
-  {
-    "id": "bcfbe570-8b20-11e9-ac8b-3b3f98251a27",
-    "content": [
-      "input {",
-      "        plugin \"curl\"",
-      "#       proxy \"proxy.isp.com:8080\"",
-      "#       proxy_user \"user\"",
-      "#       proxy_password \"password\"",
-      "}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/mpd/mpd.conf\t187\t1",
-    "filetype": "conf"
-  },
-  {
-    "id": "b7a096c0-8b20-11e9-ac8b-3b3f98251a27",
-    "content": [
-      "auto_update\t\"yes\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/mpd/mpd.conf\t121\t1",
-    "filetype": "conf"
-  },
-  {
-    "id": "aa945520-8b16-11e9-a46d-2b63b7fdc294",
-    "content": [
-      "auto_update\t\"yes\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/mpd/mpd.conf\t121\t1",
-    "filetype": "conf"
-  },
-  {
-    "id": "41699290-8b16-11e9-9db9-f1288faba4e3",
-    "content": [
-      "                local mpd_artist = \"---------\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/song.lua\t85\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "53ec7b70-8b12-11e9-b5d8-9f3400a577e0",
-    "content": [
-      "/home/kyle/.config/mpd/database"
+      "ffff8a"
     ],
     "regtype": "v",
-    "path": "file:///var/tmp/mpdXXHJvytO.conf\t4\t11",
-    "filetype": "conf"
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t188\t29",
+    "filetype": "lua"
   },
   {
-    "id": "e8a3d430-8b0c-11e9-8576-bd62abdc92f1",
+    "id": "e7998da0-8ed1-11e9-9b7c-4f1466b90ad3",
     "content": [
-      "[[%artist%@@%title%@]]"
+      "clipster -d --config ~/.config/clipster/clipster.ini &"
     ],
     "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/song.lua\t79\t43",
-    "filetype": "lua"
+    "path": "file:///home/kyle/.config/awesome/autorun.sh\t37\t5",
+    "filetype": "sh"
   },
   {
-    "id": "51452a30-8b07-11e9-a548-b1b1b02992e8",
+    "id": "e555b820-8ed1-11e9-9b7c-4f1466b90ad3",
     "content": [
-      "def_key \"J\"",
-      "  require_screen \"browser\"",
-      "  push_characters \"jjjjj\"",
-      "#"
+      "run clipster -d --config ~/.config/clipster/clipster.ini &"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.ncmpcpp/bindings\t227\t1",
-    "filetype": "conf"
+    "path": "file:///home/kyle/.config/awesome/autorun.sh\t37\t1",
+    "filetype": "sh"
   },
   {
-    "id": "27c20750-8b07-11e9-a548-b1b1b02992e8",
+    "id": "05e89b30-8ed1-11e9-9b7c-4f1466b90ad3",
     "content": [
-      "##    - require_screen \"screen\" - checks whether given screen is"
+      "        run clipster -d --config ~/.config/clipster/clipster.ini &"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.ncmpcpp/bindings\t90\t1",
-    "filetype": "conf"
+    "path": "file:///home/kyle/.config/awesome/autorun.sh\t39\t1",
+    "filetype": "sh"
   },
   {
-    "id": "da0b1ed0-8b05-11e9-8d04-c55cfea3285d",
+    "id": "8be20de0-8ec5-11e9-9f2d-972f177b2a9e",
     "content": [
-      "map gd cd ~/downloads"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/ranger/rc.conf\t427\t1",
-    "filetype": "conf"
-  },
-  {
-    "id": "847861d0-8b05-11e9-823a-09169464a39f",
-    "content": [
-      "map gd cd ~/downloads"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/ranger/rc.conf\t426\t1",
-    "filetype": "conf"
-  },
-  {
-    "id": "850a0ff0-8b04-11e9-9dc6-47c796e56540",
-    "content": [
-      "#  jump_to_playing_song"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.ncmpcpp/bindings\t432\t1",
-    "filetype": "conf"
-  },
-  {
-    "id": "c3f229d0-8afc-11e9-9817-b500f4b35061",
-    "content": [
-      "#def_key \"space\"",
-      "#  add_item_to_playlist",
-      "#",
-      "#def_key \"space\"",
-      "#  toggle_lyrics_update_on_song_change",
-      "#",
-      "#def_key \"space\"",
-      "#  toggle_visualization_type"
-    ],
-    "regtype": "V",
-    "path": "file:///usr/share/doc/ncmpcpp/bindings\t208\t1",
-    "filetype": "conf"
-  },
-  {
-    "id": "e6f7de70-8af7-11e9-87e0-db34888ab7f0",
-    "content": [
-      "nnoremap <leader>sg :%s/\\<<c-r><c-w>\\>//g<left><left>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t164\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "9d2870b0-8af3-11e9-872f-27fbbe161a71",
-    "content": [
-      "            if spotify_bool then",
-      "                awful.spawn.with_shell(\"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous\")",
-      "            else",
-      "                awful.spawn.with_shell(\"mpc prev\")",
-      "            end"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t266\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "7b3c0d90-8af3-11e9-872f-27fbbe161a71",
-    "content": [
-      "spotify_bool"
+      "e"
     ],
     "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/song.lua\t141\t8",
-    "filetype": "lua"
+    "path": "file:///home/kyle/chess/chess.hpp\t16\t11",
+    "filetype": "cpp"
   },
   {
-    "id": "46d39c30-8af3-11e9-872f-27fbbe161a71",
+    "id": "a29f17a0-8eb9-11e9-8a5c-0f90d4083154",
     "content": [
-      "            if spotify_bool then",
-      "                awful.spawn.with_shell(\"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause\")",
-      "            else",
-      "                awful.spawn.with_shell(\"mpc toggle\")",
-      "            end"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t237\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "dc312dc0-8af2-11e9-872f-27fbbe161a71",
-    "content": [
-      "    awful.key({ modkey }, \".\",       function ()",
-      "        awful.spawn.with_shell(\"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause\")",
-      "    end, {description = \"play or pause spotify\", group = \"launcher\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t126\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "23a93040-8af2-11e9-872f-27fbbe161a71",
-    "content": [
-      "                shape = helpers.rrect(beautiful.border_radius),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t529\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "f0b3a540-8af0-11e9-872f-27fbbe161a71",
-    "content": [
-      "local naughty = require(\"naughty\")"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/song.lua\t10\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "5ac0a6f0-8af0-11e9-872f-27fbbe161a71",
-    "content": [
-      "        music_toggle_id = naughty.notify({",
-      "                text = \"MPD Mode\",",
-      "                icon = beautiful.mpd_icon,",
-      "                position = \"bottom_middle\",",
-      "                replaces_id = music_toggle_id",
-      "            }).id"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t320\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "f3305a80-8aef-11e9-872f-27fbbe161a71",
-    "content": [
-      "-- Set notification icon path",
-      "local mpd_icon = beautiful.music_icon",
-      "local spotify_icon = beautiful.spotify_icon"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/song.lua\t17\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "9dafbd00-8a8e-11e9-9898-e37393fab916",
-    "content": [
-      "local spotify_title = \"---------\"",
-      "local spotify_artist = \"---------\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t49\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "45e69800-8a8e-11e9-9898-e37393fab916",
-    "content": [
-      "local function send_notification(artist, title)",
-      "  notification = naughty.notify({",
-      "      -- title = \"Now playing:\",",
-      "      -- text = title .. \" -- \" .. artist,",
-      "      title = title,",
-      "      text = artist,",
-      "      icon = mpd_icon,",
-      "      -- width = 360,",
-      "      -- height = 90,",
-      "      -- icon_size = 60,",
-      "      -- timeout = 4,",
-      "      position = \"bottom_middle\",",
-      "      replaces_id = last_notification_id",
-      "  })",
-      "  last_notification_id = notification.id",
-      "end"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t53\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "d07151a0-8a8d-11e9-9898-e37393fab916",
-    "content": [
-      "local notification_icon = beautiful.music_icon"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t18\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "cb43f0c0-8a8d-11e9-9898-e37393fab916",
-    "content": [
-      "local notification_icon = beautiful.spotify_icon"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t18\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "aa06aed0-8a8c-11e9-ad5b-4f1849fbb093",
-    "content": [
-      "local mpd_title = \"---------\"",
-      "local mpd_artist = \"---------\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t70\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "a92c0640-8a8c-11e9-ad5b-4f1849fbb093",
-    "content": [
-      "local mpd_title = \"---------\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t70\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "d89ebe00-8a8b-11e9-ad5b-4f1849fbb093",
-    "content": [
-      "local spotify_title = \"---------\"",
-      "local spotify_artist = \"---------\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t48\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "50091310-8a8b-11e9-ad5b-4f1849fbb093",
-    "content": [
-      "local function update_widget()",
-      "  -- awful.spawn.easy_async({\"sh\", \"-c\", \"mpc\"},",
-      "  awful.spawn.easy_async({\"mpc\", \"-f\", \"[[%artist%@@%title%@]]\"},",
-      "    function(stdout)",
-      "      -- naughty.notify({text = stdout})",
-      "      -- local artist = stdout:match('(.*)-.*$')",
-      "      -- artist = string.gsub(artist, '^%s*(.-)%s*$', '%1')",
-      "      -- local title = stdout:match('- (.*)%[')",
-      "      -- title = string.gsub(title, '^%s*(.-)%s*$', '%1')",
-      "      local artist = stdout:match('(.*)@@')",
-      "      local title = stdout:match('@@(.*)@')",
-      "      title = string.gsub(title, '^%s*(.-)%s*$', '%1')",
-      "      local status = stdout:match('%[(.*)%]')",
-      "      status = string.gsub(status, '^%s*(.-)%s*$', '%1')",
-      "      if status == \"paused\" then",
-      "        artist_fg = paused_color",
-      "        title_fg = paused_color",
-      "      else",
-      "        artist_fg = artist_color",
-      "        title_fg = title_color",
-      "        -- if sidebar.visible == false then",
-      "      send_notification(artist, title)",
-      "        -- end",
-      "      end",
-      "",
-      "      -- Escape &'s",
-      "      title = string.gsub(title, \"&\", \"&amp;\")",
-      "      artist = string.gsub(artist, \"&\", \"&amp;\")",
-      "",
-      "      -- naughty.notify({text = artist .. \" - \" .. title})",
-      "      mpd_title.markup =",
-      "        \"<span foreground='\" .. title_fg ..\"'>\"",
-      "        .. title .. \"</span>\"",
-      "      mpd_artist.markup =",
-      "        \"<span foreground='\" .. artist_fg ..\"'>\"",
-      "        .. artist .. \"</span>\"",
-      "    end",
-      "  )",
-      "",
-      "end"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t61\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "5f4d60d0-8a89-11e9-a0d1-25b6fc33bb36",
-    "content": [
-      "spotify_song.songupdate = function()",
-      "    update_widget()",
-      "end"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t108\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "4e6fc050-8a89-11e9-a0d1-25b6fc33bb36",
-    "content": [
-      "awful.widget.watch(spotify_script, 3, function(stdout)",
-      "    update_widget()",
-      "end, spotify_song)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t112\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "89ea2680-8a88-11e9-a91b-6fe1e8b1bc4e",
-    "content": [
-      "update_widget()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t107\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "67ea3b60-8a88-11e9-a91b-6fe1e8b1bc4e",
-    "content": [
-      "            spotify_song.songupdate()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t336\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "65215760-8a88-11e9-a91b-6fe1e8b1bc4e",
-    "content": [
-      "            spotify_song.songupdate()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t335\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "f0686e10-8a85-11e9-9cac-a1b168572f9e",
-    "content": [
-      "                song_title.text = \"---------\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t84\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "e49c1af0-8a85-11e9-9cac-a1b168572f9e",
-    "content": [
-      " \"---------\""
+      "e"
     ],
     "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t81\t35",
-    "filetype": "lua"
+    "path": "file:///home/kyle/chess/chess.hpp\t8\t11",
+    "filetype": "cpp"
   },
   {
-    "id": "ff314a40-8a83-11e9-9cac-a1b168572f9e",
+    "id": "3b320b10-8e3f-11e9-91cc-05dbbfb20066",
     "content": [
-      "---------"
+      "titlebars_enabled = false"
     ],
     "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t54\t23",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t328\t25",
     "filetype": "lua"
   },
   {
-    "id": "fad65490-8a83-11e9-9cac-a1b168572f9e",
+    "id": "2d1c8b40-8e3f-11e9-91cc-05dbbfb20066",
     "content": [
-      "---------"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t27\t11",
-    "filetype": "lua"
-  },
-  {
-    "id": "f442d400-8a83-11e9-9cac-a1b168572f9e",
-    "content": [
-      "---------"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t34\t11",
-    "filetype": "lua"
-  },
-  {
-    "id": "5bdf71f0-8a83-11e9-9cac-a1b168572f9e",
-    "content": [
-      "local spotify_title"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t54\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "44e85850-8a82-11e9-9cac-a1b168572f9e",
-    "content": [
-      "                spotify_song.songupdate()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t289\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "db187190-8a80-11e9-9cac-a1b168572f9e",
-    "content": [
-      "local mpd_widget_children = mpd_song:get_all_children()",
-      "local mpd_title = mpd_widget_children[1]",
-      "local mpd_artist = mpd_widget_children[2]"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t223\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "750a7f60-8a80-11e9-9cac-a1b168572f9e",
-    "content": [
-      "local function update_widget()",
-      "  -- awful.spawn.easy_async({\"sh\", \"-c\", \"mpc\"},",
-      "  awful.spawn.easy_async({\"mpc\", \"-f\", \"[[%artist%@@%title%@]]\"},",
-      "    function(stdout)",
-      "      -- naughty.notify({text = stdout})",
-      "      -- local artist = stdout:match('(.*)-.*$')",
-      "      -- artist = string.gsub(artist, '^%s*(.-)%s*$', '%1')",
-      "      -- local title = stdout:match('- (.*)%[')",
-      "      -- title = string.gsub(title, '^%s*(.-)%s*$', '%1')",
-      "      local artist = stdout:match('(.*)@@')",
-      "      local title = stdout:match('@@(.*)@')",
-      "      title = string.gsub(title, '^%s*(.-)%s*$', '%1')",
-      "      local status = stdout:match('%[(.*)%]')",
-      "      status = string.gsub(status, '^%s*(.-)%s*$', '%1')",
-      "      if status == \"paused\" then",
-      "        artist_fg = paused_color",
-      "        title_fg = paused_color",
-      "      else",
-      "        artist_fg = artist_color",
-      "        title_fg = title_color",
-      "        if sidebar.visible == false then",
-      "          send_notification(artist, title)",
-      "        end",
-      "      end",
-      "",
-      "      -- Escape &'s",
-      "      title = string.gsub(title, \"&\", \"&amp;\")",
-      "      artist = string.gsub(artist, \"&\", \"&amp;\")",
-      "",
-      "      -- naughty.notify({text = artist .. \" - \" .. title})",
-      "      mpd_title.markup =",
-      "        \"<span foreground='\" .. title_fg ..\"'>\"",
-      "        .. title .. \"</span>\"",
-      "      mpd_artist.markup =",
-      "        \"<span foreground='\" .. artist_fg ..\"'>\"",
-      "        .. artist .. \"</span>\"",
-      "    end",
-      "  )",
-      "",
-      "end",
-      ""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t61\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "d5572760-8a7b-11e9-8b06-c34fd5ad0828",
-    "content": [
-      "dbus-send --print-reply --session --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata' | grep -A 2 -e title -e artist | sed -n -e '3p' -e '6p'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t37\t23",
-    "filetype": "lua"
-  },
-  {
-    "id": "6e714bc0-8a7b-11e9-8b06-c34fd5ad0828",
-    "content": [
-      "dbus-send --print-reply --session --dest=org.mpris.MediaPlayer2.spotify_song /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata' | grep -A 2 -e title -e artist | sed -n -e '3p' -e '6p'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t37\t23",
-    "filetype": "lua"
-  },
-  {
-    "id": "1ce9b6c0-8a7b-11e9-aca2-779f22ff3a70",
-    "content": [
-      "dbus-send --print-reply --session --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata' | grep -A 2 -e title -e artist | sed -n -e '3p' -e '6p'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t37\t23",
-    "filetype": "lua"
-  },
-  {
-    "id": "31502550-8a7a-11e9-9e0f-f9b86ec9c5c1",
-    "content": [
-      "dbus-send --print-reply --session --dest=org.mpris.MediaPlayer2.spotify_song /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata' | grep -A 2 title | grep variant"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t35\t24",
-    "filetype": "lua"
-  },
-  {
-    "id": "a437b160-8a79-11e9-9e0f-f9b86ec9c5c1",
-    "content": [
-      "dbus-send --print-reply --session --dest=org.mpris.MediaPlayer2.spotify_song /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata' | grep -A 2 -e title -e artist | sed -n -e '3p' -e '6p'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t37\t23",
-    "filetype": "lua"
-  },
-  {
-    "id": "1958a820-8a78-11e9-a518-efcea5c57a13",
-    "content": [
-      "                    send_notification(artist, title)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify_song.lua\t98\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "eb710490-8a75-11e9-b129-416a33d3f386",
-    "content": [
-      "                playerctl_toggle_icon.image = beautiful.spotify_icon"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t356\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "cd217740-8a75-11e9-b129-416a33d3f386",
-    "content": [
-      "            spotify_bool = not spotify_bool"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t355\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "2495baf0-8a75-11e9-b129-416a33d3f386",
-    "content": [
-      "                song_title.text = spotify.text"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t361\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "1b8f8cb0-8a75-11e9-b129-416a33d3f386",
-    "content": [
-      "                song_title.text = mpd_title.text"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t357\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "abaf42a0-8a74-11e9-b129-416a33d3f386",
-    "content": [
-      "local mpd_title = wibox.widget{",
-      "  text = \"---------\",",
-      "  align = \"center\",",
-      "  valign = \"center\",",
-      "  widget = wibox.widget.textbox",
-      "}",
-      "",
-      "local mpd_artist = wibox.widget{",
-      "  text = \"---------\",",
-      "  align = \"center\",",
-      "  valign = \"center\",",
-      "  widget = wibox.widget.textbox",
-      "}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t20\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "5a557460-8a74-11e9-b129-416a33d3f386",
-    "content": [
-      "  layout = wibox.layout.fixed.vertical"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t38\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "5ee02210-8a73-11e9-b129-416a33d3f386",
-    "content": [
-      "                song.widget = spotify"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t342\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "385afcf0-8a73-11e9-b129-416a33d3f386",
-    "content": [
-      "local mpd_song = wibox.widget{",
-      "  mpd_title,",
-      "  mpd_artist,",
-      "  layout = wibox.layout.fixed.vertical",
-      "}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t35\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "a99a3030-8a72-11e9-b129-416a33d3f386",
-    "content": [
-      "",
-      "-- Spotify widget",
-      "local spotify_song = wibox.widget{",
-      "    spotify_title,",
-      "    spotify_artist,",
-      "    layout = wibox.layout.fixed.vertical",
-      "}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/mpd_song.lua\t40\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "fbf4a260-8a6e-11e9-b129-416a33d3f386",
-    "content": [
-      "theme.spotify_icon = icon_path .. \"spotify.png\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t231\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "48294290-8a6e-11e9-b129-416a33d3f386",
-    "content": [
-      "        --     awful.spawn.with_shell(\"mpc next\")"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t255\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "2e38a290-8a6e-11e9-b129-416a33d3f386",
-    "content": [
-      "        --     awful.spawn.with_shell(\"mpc prev\")"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t252\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "11cd3e90-8a6e-11e9-b129-416a33d3f386",
-    "content": [
-      "            awful.spawn.with_shell(\"mpc toggle\")"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t245\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "285df970-8a68-11e9-b129-416a33d3f386",
-    "content": [
-      "      position = \"bottom_middle\","
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/spotify.lua\t79\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "62ab9910-8a5f-11e9-b7f7-9de144a7e481",
-    "content": [
-      "    awful.key({ modkey,           }, \"f\",",
-      "        function (c)",
-      "            c.maximized = not c.maximized",
-      "            if c.maximized then",
-      "                c.border_width = 0",
-      "            else",
-      "                c.border_width = beautiful.border_width",
-      "            end",
-      "            c:raise()",
-      "        end ,",
-      "        {description = \"(un)maximize\", group = \"client\"})"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t250\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "9243f6b0-8a5d-11e9-bbb6-31c3b6232bc6",
-    "content": [
-      "!mime ^text, label editor, ext xml|json|csv|tex|py|pl|rb|js|sh|php = ${VISUAL:-$EDITOR} -- \"$@\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/ranger/rifle.conf\t91\t1",
-    "filetype": "cfg"
-  },
-  {
-    "id": "8a4d8ac0-8a5d-11e9-bbb6-31c3b6232bc6",
-    "content": [
-      "# mime ^text,  label editor = ${VISUAL:-$EDITOR} -- \"$@\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/ranger/rifle.conf\t88\t1",
-    "filetype": "cfg"
-  },
-  {
-    "id": "af417040-8a57-11e9-be33-7b8481437b91",
-    "content": [
-      "(20)[black]{:          }"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.ncmpcpp/config\t266\t28",
-    "filetype": "conf"
-  },
-  {
-    "id": "481a1110-8a52-11e9-be33-7b8481437b91",
-    "content": [
-      "(6f)[green]{NE}"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.ncmpcpp/config\t265\t39",
-    "filetype": "conf"
-  },
-  {
-    "id": "aa9614d0-8a50-11e9-be33-7b8481437b91",
-    "content": [
-      "def_key \"space\"",
-      "  pause"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.ncmpcpp/bindings\t302\t1",
-    "filetype": "conf"
-  },
-  {
-    "id": "47c96af0-8a50-11e9-be33-7b8481437b91",
-    "content": [
-      "#song_columns_list_format = (20)[]{a} (6f)[green]{NE} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.ncmpcpp/config\t265\t1",
-    "filetype": "conf"
-  },
-  {
-    "id": "5862a1b0-8a4b-11e9-878f-85953f338274",
-    "content": [
-      "    awful.key({ modkey,           }, \"v\",       function () awful.spawn(vlc) end,",
-      "        {description = \"open vlc\", group = \"launcher\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t81\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "b6513dd0-8a38-11e9-a1f4-2d9c9f8923d3",
-    "content": [
-      "# symbol_map U+E0A0-U+E0A2,U+E0B0-U+E0B3 PowerlineSymbols"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t40\t1",
-    "filetype": "conf"
-  },
-  {
-    "id": "e5f77390-8a35-11e9-bb6a-1591f8d76409",
-    "content": [
-      "\"ue0c2\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t198\t27",
-    "filetype": "vim"
-  },
-  {
-    "id": "30051510-8a35-11e9-bb6a-1591f8d76409",
-    "content": [
-      "\" let g:airline_left_sep = ''",
-      "\" let g:airline_left_alt_sep = ''",
-      "\" let g:airline_right_sep = ''",
-      "\" let g:airline_right_alt_sep = ''"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t192\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "08d6ea40-8a2b-11e9-927b-9bf496835ba2",
-    "content": [
-      "    -- Add titlebars to normal clients and dialogs",
-      "    { rule_any = {type = { \"normal\", \"dialog\" }",
-      "      }, properties = { titlebars_enabled = false }",
-      "    },"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t325\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "0d8fd3e0-8a2a-11e9-bdc0-bd9e76d6864b",
-    "content": [
-      "#ed9acc"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t187\t28",
-    "filetype": "lua"
-  },
-  {
-    "id": "0c2dd2e0-8a2a-11e9-bdc0-bd9e76d6864b",
-    "content": [
-      "\"#ed9acc"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t187\t27",
-    "filetype": "lua"
-  },
-  {
-    "id": "48980230-8a27-11e9-bdc0-bd9e76d6864b",
-    "content": [
-      "cal -3"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t134\t47",
-    "filetype": "lua"
-  },
-  {
-    "id": "dc2ad0c0-8a24-11e9-83ca-61b91c46a4e0",
-    "content": [
-      "    client.connect_signal(\"property::maximized\", no_round_corners)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t407\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "cf6d8df0-8a24-11e9-83ca-61b91c46a4e0",
-    "content": [
-      "            c.shape = helpers.rect()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t400\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "e625b4b0-8a23-11e9-8042-910dd30e2322",
-    "content": [
-      "    callback = function (c)",
+      "function (c)",
       "        if not beautiful.titlebars_imitate_borders then",
       "            awful.titlebar.hide(c)",
       "        end",
-      "    end",
-      "    },"
+      "    end"
     ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t285\t1",
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t288\t16",
     "filetype": "lua"
   },
   {
-    "id": "9cf86870-8a21-11e9-a935-230e500cb6a3",
+    "id": "25d8aed0-8e31-11e9-afbb-612a6f4bd17b",
     "content": [
-      "compton --backend glx --blur-method kawase  --blur-background --blur-strength 12 --config ~/.config/compton/compton.conf -b"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/autorun.sh\t19\t5",
-    "filetype": "sh"
-  },
-  {
-    "id": "4cb2c950-8a21-11e9-b879-7fa4c631b95d",
-    "content": [
-      "opacity-rule = [",
-      "      \"70:class_g = 'Spotify'\"",
-      "];"
+      "awful.key({ modkey }, \"c\", function()",
+      "    awful.spawn.with_shell(\"clipster -s\")",
+      "end, {description = \"open up clipster history\", group = \"launcher\"}),"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/compton/tmpcompton.conf\t134\t1",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t195\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "cfb964e0-8e12-11e9-ab9e-251ca1f424a4",
+    "content": [
+      "#B48EAD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t489\t9",
     "filetype": "conf"
   },
   {
-    "id": "57ff3380-8a20-11e9-bc19-ada970836736",
+    "id": "cb42d0e0-8e12-11e9-ab9e-251ca1f424a4",
     "content": [
-      "compton --backend glx --blur-method kawase  --blur-background --blur-strength 12 -b"
+      "#E5E9F0"
     ],
     "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/autorun.sh\t19\t5",
-    "filetype": "sh"
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t488\t10",
+    "filetype": "conf"
   },
   {
-    "id": "cb1e3530-8a1d-11e9-9509-590eb79a03ef",
+    "id": "c7b4a110-8e12-11e9-b877-e380f46f8cc7",
     "content": [
-      " \"#ed9acc\""
+      "#88C0D0"
     ],
     "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t187\t26",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/config.def.h\t109\t3",
+    "filetype": "c"
   },
   {
-    "id": "efa54490-8a16-11e9-a969-034798c7ad2e",
+    "id": "c4d66050-8e12-11e9-ab9e-251ca1f424a4",
     "content": [
-      "run compton --backend glx --blur-method kawase  --blur-background --blur-strength 0 -b"
+      "#88C0D0"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t484\t10",
+    "filetype": "conf"
+  },
+  {
+    "id": "c0da2c70-8e12-11e9-b877-e380f46f8cc7",
+    "content": [
+      "#B48EAD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/packages/st-0.8.2/config.def.h\t108\t3",
+    "filetype": "c"
+  },
+  {
+    "id": "bd587fc0-8e12-11e9-ab9e-251ca1f424a4",
+    "content": [
+      "#B48EAD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t480\t10",
+    "filetype": "conf"
+  },
+  {
+    "id": "b9997bf0-8e12-11e9-b877-e380f46f8cc7",
+    "content": [
+      "#81A1C1"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/packages/st-0.8.2/config.def.h\t107\t3",
+    "filetype": "c"
+  },
+  {
+    "id": "b5946e70-8e12-11e9-ab9e-251ca1f424a4",
+    "content": [
+      "#81A1C1"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t476\t9",
+    "filetype": "conf"
+  },
+  {
+    "id": "af9c6a90-8e12-11e9-ab9e-251ca1f424a4",
+    "content": [
+      "#EBCB8B"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t472\t10",
+    "filetype": "conf"
+  },
+  {
+    "id": "ad6454e0-8e12-11e9-ab9e-251ca1f424a4",
+    "content": [
+      "#EBCB8B"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t472\t10",
+    "filetype": "conf"
+  },
+  {
+    "id": "a861ad80-8e12-11e9-b877-e380f46f8cc7",
+    "content": [
+      "#A3BE8C"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/packages/st-0.8.2/config.def.h\t105\t3",
+    "filetype": "c"
+  },
+  {
+    "id": "a69cf310-8e12-11e9-b877-e380f46f8cc7",
+    "content": [
+      "green"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/packages/st-0.8.2/config.def.h\t115\t3",
+    "filetype": "c"
+  },
+  {
+    "id": "a51a71c0-8e12-11e9-b877-e380f46f8cc7",
+    "content": [
+      "A3BE8C"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/packages/st-0.8.2/config.def.h\t105\t4",
+    "filetype": "c"
+  },
+  {
+    "id": "a230bf50-8e12-11e9-ab9e-251ca1f424a4",
+    "content": [
+      "#A3BE8C"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t468\t10",
+    "filetype": "conf"
+  },
+  {
+    "id": "9d7a8a40-8e12-11e9-ab9e-251ca1f424a4",
+    "content": [
+      "#BF616A"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t465\t10",
+    "filetype": "conf"
+  },
+  {
+    "id": "9974b970-8e12-11e9-ab9e-251ca1f424a4",
+    "content": [
+      "#BF616A"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t464\t10",
+    "filetype": "conf"
+  },
+  {
+    "id": "94221d50-8e12-11e9-ab9e-251ca1f424a4",
+    "content": [
+      "#4C566A"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t461\t10",
+    "filetype": "conf"
+  },
+  {
+    "id": "90803e70-8e12-11e9-ab9e-251ca1f424a4",
+    "content": [
+      "#3B4252"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t460\t10",
+    "filetype": "conf"
+  },
+  {
+    "id": "20e513b0-8e12-11e9-9ce2-fdffe50063c0",
+    "content": [
+      "Meslo LG S DZ for Powerline"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/fontconfig/fonts.conf\t21\t25",
+    "filetype": "xml"
+  },
+  {
+    "id": "3baafa80-8e11-11e9-901f-8f1bdc0b98ea",
+    "content": [
+      "+void kscrolldown(const Arg *);",
+      "+void kscrollup(const Arg *);"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/autorun.sh\t19\t1",
-    "filetype": "sh"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t331\t1",
+    "filetype": "diff"
   },
   {
-    "id": "ebbc98b0-8a16-11e9-a969-034798c7ad2e",
+    "id": "2e2ab5d0-8e11-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "function run {",
-      "        if [ -z $(pgrep $1) ]",
-      "        then",
-      "                $@",
-      "        fi",
-      "}"
+      "+\tif (term.scr == 0)",
+      "+\t\txdrawcursor(cx, term.c.y, term.line[term.c.y][cx],",
+      "+\t\t\t\tterm.ocx, term.ocy, term.line[term.ocy][term.ocx]);"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/autorun.sh\t4\t1",
-    "filetype": "sh"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t317\t1",
+    "filetype": "diff"
   },
   {
-    "id": "f8b96f50-88d3-11e9-b79a-d5df831312e3",
+    "id": "290e1dd0-8e11-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "charger_unplugged"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t24\t34",
-    "filetype": "lua"
-  },
-  {
-    "id": "e87b1c10-88d3-11e9-b79a-d5df831312e3",
-    "content": [
-      "            awesome.emit_signal(\"charger_unplugged\")"
+      "+\t\txdrawline(TLINE(y), x1, y, x2);"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t27\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t307\t1",
+    "filetype": "diff"
   },
   {
-    "id": "c94fd4c0-88d3-11e9-b79a-d5df831312e3",
+    "id": "1bf74950-8e11-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "            awesome.emit_signal(\"charger_plugged\")"
+      "+\tfor (i = 0; i < HISTSIZE; i++) {",
+      "+\t\tterm.hist[i] = xrealloc(term.hist[i], col * sizeof(Glyph));",
+      "+\t\tfor (j = mincol; j < col; j++) {",
+      "+\t\t\tterm.hist[i][j] = term.c.attr;",
+      "+\t\t\tterm.hist[i][j].u = ' ';",
+      "+\t\t}",
+      "+\t}",
+      "+"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t21\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t291\t1",
+    "filetype": "diff"
   },
   {
-    "id": "c4a0f2b0-88d3-11e9-b79a-d5df831312e3",
+    "id": "b35d06f0-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "            awesome.emit_signal(\"charger_plugged\")"
+      "+\tfor (i = 0; i < HISTSIZE; i++) {",
+      "+\t\tterm.hist[i] = xrealloc(term.hist[i], col * sizeof(Glyph));",
+      "+\t\tfor (j = mincol; j < col; j++) {",
+      "+\t\t\tterm.hist[i][j] = term.c.attr;",
+      "+\t\t\tterm.hist[i][j].u = ' ';",
+      "+\t\t}",
+      "+\t}",
+      "+"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t21\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t291\t1",
+    "filetype": "diff"
   },
   {
-    "id": "03b55ea0-88ca-11e9-a587-e3f69809ab88",
+    "id": "aaadd250-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "            awful.titlebar.hide(client.focus)"
+      "+\tint i, j;"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t81\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t283\t1",
+    "filetype": "diff"
   },
   {
-    "id": "0d4e89a0-88c0-11e9-8caa-b9e6c9f08ab4",
+    "id": "a717da50-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "                    local tag = client.focus.screen.tags[i]"
+      "+\t\t\ttscrolldown(term.top, 1, 1);"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t296\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t274\t1",
+    "filetype": "diff"
   },
   {
-    "id": "5b086a40-88bf-11e9-8caa-b9e6c9f08ab4",
+    "id": "9fe47040-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "十"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t81\t35",
-    "filetype": "lua"
-  },
-  {
-    "id": "56732ab0-88bf-11e9-8caa-b9e6c9f08ab4",
-    "content": [
-      "十"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t193\t81",
-    "filetype": "lua"
-  },
-  {
-    "id": "7e4f97e0-88be-11e9-b35a-1334349c32d0",
-    "content": [
-      "            awful.titlebar.hide(c)"
+      "+\t\t\ttscrolldown(term.top, 1, 1);"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t295\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t274\t1",
+    "filetype": "diff"
   },
   {
-    "id": "fdbd2a20-88bd-11e9-b35a-1334349c32d0",
+    "id": "9a14b4e0-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "            awful.titlebar.hide(c)"
+      "+\t\t\ttscrollup(term.top, 1, 1);"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t295\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t265\t1",
+    "filetype": "diff"
   },
   {
-    "id": "71755e90-88bb-11e9-b35a-1334349c32d0",
+    "id": "94dcf3c0-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "十"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t193\t81",
-    "filetype": "lua"
-  },
-  {
-    "id": "611d1ab0-88bb-11e9-b35a-1334349c32d0",
-    "content": [
-      "    { rule_any = {",
-      "        class = {",
-      "            -- \"qutebrowser\",",
-      "            --\"discord\",",
-      "            --\"TelegramDesktop\",",
-      "            \"Firefox\",",
-      "            \"Spotify\",",
-      "            \"kitty\",",
-      "            \"Zathura\",",
-      "            \"Steam\",",
-      "            \"Chromium\",",
-      "            \"Thunderbird\",",
-      "        },",
-      "    }, properties = {},",
-      "    callback = function (c)",
-      "        if not beautiful.titlebars_imitate_borders then",
-      "            awful.titlebar.hide(c)",
-      "        end",
-      "    end",
-      "    },"
+      "+\t\ttscrolldown(term.top, csiescseq.arg[0], 0);"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t276\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t256\t1",
+    "filetype": "diff"
   },
   {
-    "id": "2c9190f0-88bb-11e9-b35a-1334349c32d0",
+    "id": "8e1e6b90-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "四"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t193\t39",
-    "filetype": "lua"
-  },
-  {
-    "id": "fa3458e0-88ba-11e9-b35a-1334349c32d0",
-    "content": [
-      "十"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t193\t81",
-    "filetype": "lua"
-  },
-  {
-    "id": "eb7d8570-88b9-11e9-93ab-3fe437fa66e3",
-    "content": [
-      "    properties = { tag = \"三\" } },"
+      "+\t\ttscrollup(term.top, csiescseq.arg[0], 0);"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t258\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t251\t1",
+    "filetype": "diff"
   },
   {
-    "id": "cdc926b0-88b9-11e9-93ab-3fe437fa66e3",
+    "id": "84f63660-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "三"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t193\t32",
-    "filetype": "lua"
-  },
-  {
-    "id": "7101c720-88b9-11e9-93ab-3fe437fa66e3",
-    "content": [
-      "三"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t193\t32",
-    "filetype": "lua"
-  },
-  {
-    "id": "dc76e120-88b4-11e9-933c-35e7e54f84c7",
-    "content": [
-      "十"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t193\t81",
-    "filetype": "lua"
-  },
-  {
-    "id": "778bc1e0-88a5-11e9-b124-37b14d3b84c3",
-    "content": [
-      " \"#abfeff\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t512\t35",
-    "filetype": "lua"
-  },
-  {
-    "id": "652cd890-88a5-11e9-b124-37b14d3b84c3",
-    "content": [
-      " \"#546577\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t515\t35",
-    "filetype": "lua"
-  },
-  {
-    "id": "36bde720-88a4-11e9-b124-37b14d3b84c3",
-    "content": [
-      "abfeff"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t512\t38",
-    "filetype": "lua"
-  },
-  {
-    "id": "0a873d00-88a4-11e9-a5b4-3b37536db6d0",
-    "content": [
-      "  awful.spawn.easy_async({\"sh\", \"-c\", \"pactl list sinks\"},"
+      "+\t\ttscrollup(term.c.y, n, 0);"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/dotfiles_git/config/awesome/noodle/volume_bar.lua\t38\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t242\t1",
+    "filetype": "diff"
   },
   {
-    "id": "051224c0-88a4-11e9-a5b4-3b37536db6d0",
+    "id": "78eb7ab0-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "  awful.spawn.easy_async({\"sh\", \"-c\", \"pactl list sinks\"},"
+      "+\t\ttscrolldown(term.c.y, n, 0);"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/dotfiles_git/config/awesome/noodle/volume_bar.lua\t38\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t234\t1",
+    "filetype": "diff"
   },
   {
-    "id": "fa53e640-88a3-11e9-a5b4-3b37536db6d0",
+    "id": "6d1f4ea0-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "local function update_widget()",
-      "  awful.spawn.easy_async({\"sh\", \"-c\", \"pactl list sinks\"},",
-      "    function(stdout)",
-      "      local volume = stdout:match('(%d+)%% /')",
-      "      local muted = stdout:match('Mute:(%s+)[yes]')",
-      "      local fill_color",
-      "      local bg_color",
-      "      if muted ~= nil then",
-      "        fill_color = muted_color",
-      "        bg_color = muted_background_color",
-      "      else",
-      "        fill_color = active_color",
-      "        bg_color = active_background_color",
-      "      end",
-      "      volume_bar.value = tonumber(volume)",
-      "      volume_bar.color = fill_color",
-      "      volume_bar.background_color = bg_color",
-      "    end",
-      "  )",
-      "end"
+      "+\t\ttscrollup(term.top, 1, 1);"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/dotfiles_git/config/awesome/noodle/volume_bar.lua\t37\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t225\t1",
+    "filetype": "diff"
   },
   {
-    "id": "b6425cc0-88a3-11e9-a5b4-3b37536db6d0",
+    "id": "61877900-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "local function update_widget()",
-      "  awful.spawn.easy_async({\"sh\", \"-c\", \"pactl list sinks\"},",
-      "    function(stdout)",
-      "      local volume = stdout:match('(%d+)%% /')",
-      "      local muted = stdout:match('Mute:(%s+)[yes]')",
-      "      local fill_color",
-      "      local bg_color",
-      "      if muted ~= nil then",
-      "        fill_color = muted_color",
-      "        bg_color = muted_background_color",
-      "      else",
-      "        fill_color = active_color",
-      "        bg_color = active_background_color",
-      "      end",
-      "      volume_bar.value = tonumber(volume)",
-      "      volume_bar.color = fill_color",
-      "      volume_bar.background_color = bg_color",
-      "    end",
-      "  )",
-      "end"
+      "+\tif (copyhist) {",
+      "+\t\tterm.histi = (term.histi + 1) % HISTSIZE;",
+      "+\t\ttemp = term.hist[term.histi];",
+      "+\t\tterm.hist[term.histi] = term.line[orig];",
+      "+\t\tterm.line[orig] = temp;",
+      "+\t}",
+      "+",
+      "+\tif (term.scr > 0 && term.scr < HISTSIZE)",
+      "+\t\tterm.scr = MIN(term.scr + n, HISTSIZE-1);",
+      "+"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/dotfiles_git/config/awesome/noodle/volume_bar.lua\t37\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t207\t1",
+    "filetype": "diff"
   },
   {
-    "id": "947eb750-88a3-11e9-b124-37b14d3b84c3",
+    "id": "58572d80-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "abfeff"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t60\t36",
-    "filetype": "lua"
-  },
-  {
-    "id": "8e8aab10-88a3-11e9-b124-37b14d3b84c3",
-    "content": [
-      "546577"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t52\t36",
-    "filetype": "lua"
-  },
-  {
-    "id": "399f78b0-88a3-11e9-b124-37b14d3b84c3",
-    "content": [
-      "546577"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t53\t36",
-    "filetype": "lua"
-  },
-  {
-    "id": "2c2352b0-88a3-11e9-b124-37b14d3b84c3",
-    "content": [
-      "465463"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t43\t24",
-    "filetype": "lua"
-  },
-  {
-    "id": "16ac2ce0-88a3-11e9-b124-37b14d3b84c3",
-    "content": [
-      "666666"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t15\t59",
-    "filetype": "lua"
-  },
-  {
-    "id": "0acc9fe0-88a3-11e9-b124-37b14d3b84c3",
-    "content": [
-      "#abfeff"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t61\t35",
-    "filetype": "lua"
-  },
-  {
-    "id": "fe238150-88a2-11e9-b124-37b14d3b84c3",
-    "content": [
-      "546577"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t53\t36",
-    "filetype": "lua"
-  },
-  {
-    "id": "4ec9fa90-88a2-11e9-b124-37b14d3b84c3",
-    "content": [
-      "noodle.volume_bar"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t149\t28",
-    "filetype": "lua"
-  },
-  {
-    "id": "01d550a0-88a1-11e9-9088-19754f98778a",
-    "content": [
-      "ps aux | grep \"pactl subscribe\" | grep -v grep | awk '{print $2}' "
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/dotfiles_git/config/awesome/awesome-cleanup.sh\t13\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "dc7d0830-889f-11e9-b94f-470a392309c1",
-    "content": [
-      "  pactl subscribe 2> /dev/null | grep --line-buffered \"sink #0\""
+      "+tscrollup(int orig, int n, int copyhist)"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/dotfiles_git/config/awesome/noodle/volume_bar.lua\t63\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t200\t1",
+    "filetype": "diff"
   },
   {
-    "id": "cf48e7b0-889f-11e9-b94f-470a392309c1",
+    "id": "4da09020-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "pactl list sinks"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/dotfiles_git/config/awesome/noodle/volume_bar.lua\t38\t40",
-    "filetype": "lua"
-  },
-  {
-    "id": "936c0ba0-889f-11e9-b94f-470a392309c1",
-    "content": [
-      "      local muted = stdout:match('Mute:(%s+)[yes]')"
+      "+\tif (copyhist) {",
+      "+\t\tterm.histi = (term.histi - 1 + HISTSIZE) % HISTSIZE;",
+      "+\t\ttemp = term.hist[term.histi];",
+      "+\t\tterm.hist[term.histi] = term.line[term.bot];",
+      "+\t\tterm.line[term.bot] = temp;",
+      "+\t}",
+      "+"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/dotfiles_git/config/awesome/noodle/volume_bar.lua\t41\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t185\t1",
+    "filetype": "diff"
   },
   {
-    "id": "06cefeb0-889e-11e9-8274-b165d9d4b499",
+    "id": "3e136470-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "                    if sidebar.ontop then",
-      "                        sidebar.visible = false",
-      "                        sidebar.ontop = false",
-      "                    else",
-      "                        sidebar.visible = true",
-      "                        sidebar.ontop = true",
-      "                    end"
+      "+kscrolldown(const Arg* a)",
+      "+{",
+      "+\tint n = a->i;",
+      "+",
+      "+\tif (n < 0)",
+      "+\t\tn = term.row + n;",
+      "+",
+      "+\tif (n > term.scr)",
+      "+\t\tn = term.scr;",
+      "+",
+      "+\tif (term.scr > 0) {",
+      "+\t\tterm.scr -= n;",
+      "+\t\tselscroll(0, -n);",
+      "+\t\ttfulldirt();",
+      "+\t}",
+      "+}",
+      "+",
+      "+void",
+      "+kscrollup(const Arg* a)",
+      "+{",
+      "+\tint n = a->i;",
+      "+",
+      "+\tif (n < 0)",
+      "+\t\tn = term.row + n;",
+      "+",
+      "+\tif (term.scr <= HISTSIZE-n) {",
+      "+\t\tterm.scr += n;",
+      "+\t\tselscroll(0, n);",
+      "+\t\ttfulldirt();",
+      "+\t}",
+      "+}",
+      "+",
+      "+void",
+      "+tscrolldown(int orig, int n, int copyhist)"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t576\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t145\t1",
+    "filetype": "diff"
   },
   {
-    "id": "f5cb98a0-889b-11e9-abeb-c7d49c32f37a",
+    "id": "2ac4eb00-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "pactl list sinks"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t43\t42",
-    "filetype": "lua"
-  },
-  {
-    "id": "c5bfe720-889a-11e9-abeb-c7d49c32f37a",
-    "content": [
-      "546577"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t515\t38",
-    "filetype": "lua"
-  },
-  {
-    "id": "c2b58d50-889a-11e9-abeb-c7d49c32f37a",
-    "content": [
-      "#abfeff"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t60\t34",
-    "filetype": "lua"
-  },
-  {
-    "id": "bc31eb40-889a-11e9-abeb-c7d49c32f37a",
-    "content": [
-      "#abfeff"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t512\t37",
-    "filetype": "lua"
-  },
-  {
-    "id": "fe89d350-8899-11e9-abeb-c7d49c32f37a",
-    "content": [
-      "abfeff"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t52\t34",
-    "filetype": "lua"
-  },
-  {
-    "id": "f0a6d530-8899-11e9-abeb-c7d49c32f37a",
-    "content": [
-      "abfeff"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t512\t38",
-    "filetype": "lua"
-  },
-  {
-    "id": "a212ddb0-8899-11e9-abeb-c7d49c32f37a",
-    "content": [
-      "546577"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t515\t38",
-    "filetype": "lua"
-  },
-  {
-    "id": "9b960bb0-8894-11e9-8112-554b150949ad",
-    "content": [
-      "        naughty.destroy(lock_not)"
+      "+\tArg arg = (Arg) { .i = term.scr };",
+      "+",
+      "+\tkscrolldown(&arg);"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t156\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t134\t1",
+    "filetype": "diff"
   },
   {
-    "id": "4440bb50-888d-11e9-af80-577ef4a5d695",
+    "id": "23333450-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "            search_icon.image = beautiful.search_hover_icon"
+      "+\t\tlast = &TLINE(y)[MIN(lastx, linelen-1)];"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t483\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t126\t1",
+    "filetype": "diff"
   },
   {
-    "id": "2a08d920-888d-11e9-af80-577ef4a5d695",
+    "id": "21066940-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "            disk_icon.image = beautiful.files_hover_icon"
+      "+\t\t\tgp = &TLINE(y)[sel.nb.y == y ? sel.nb.x : 0];"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t454\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t122\t1",
+    "filetype": "diff"
   },
   {
-    "id": "0bbe2dd0-888d-11e9-af80-577ef4a5d695",
+    "id": "16d59db0-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "    exit_icon = beautiful.poweroff_hover_icon"
+      "+\t\t\tgp = &TLINE(y)[sel.nb.x];"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t39\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t118\t1",
+    "filetype": "diff"
   },
   {
-    "id": "7ebb64c0-888c-11e9-af80-577ef4a5d695",
+    "id": "11c42940-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "theme.poweroff_icon = icon_path .. \"poweroff.png\""
+      "+\t\t\t\tif (!(TLINE(*y)[term.col-1].mode"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t276\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t109\t1",
+    "filetype": "diff"
   },
   {
-    "id": "7964f810-888c-11e9-af80-577ef4a5d695",
+    "id": "0f1fe440-8e10-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "theme.files_icon = icon_path .. \"files.png\""
+      "+\t\t\t\tif (!(TLINE(*y-1)[term.col-1].mode"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t238\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t101\t1",
+    "filetype": "diff"
   },
   {
-    "id": "74a4d7f0-888c-11e9-af80-577ef4a5d695",
+    "id": "ff25ed00-8e0f-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "theme.poweroff_icon = icon_path .. \"poweroff.png\""
+      "+\t\t\t\tif (!(TLINE(*y-1)[term.col-1].mode"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t275\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t101\t1",
+    "filetype": "diff"
   },
   {
-    "id": "1a2322a0-888c-11e9-af80-577ef4a5d695",
+    "id": "f65af300-8e0f-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "theme.search_icon = icon_path .. \"search.png\""
+      "+\t\t\tgp = &TLINE(newy)[newx];"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t226\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t92\t1",
+    "filetype": "diff"
   },
   {
-    "id": "d80c8a50-8881-11e9-af80-577ef4a5d695",
+    "id": "ea0ec180-8e0f-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "        -- change button color on hover",
-      "        playerctl_prev_icon:connect_signal(\"mouse::enter\", function()",
-      "            playerctl_prev_icon.image = beautiful.playerctl_prev_icon_hover",
-      "        end)",
-      "        playerctl_prev_icon:connect_signal(\"mouse::leave\", function()",
-      "            playerctl_prev_icon.image = beautiful.playerctl_prev_icon",
-      "        end)"
+      "+\t\t\t\tif (!(TLINE(yt)[xt].mode & ATTR_WRAP))"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t337\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t84\t1",
+    "filetype": "diff"
   },
   {
-    "id": "a0470b40-8881-11e9-af80-577ef4a5d695",
+    "id": "e1e33bd0-8e0f-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "        -- change button color on hover",
-      "        playerctl_toggle_icon:connect_signal(\"mouse::enter\", function()",
-      "            playerctl_toggle_icon.image = beautiful.playerctl_toggle_icon_hover",
-      "        end)",
-      "        playerctl_toggle_icon:connect_signal(\"mouse::leave\", function()",
-      "            playerctl_toggle_icon.image = beautiful.playerctl_toggle_icon",
-      "        end)"
+      "+\t\tprevgp = &TLINE(*y)[*x];"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t316\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t75\t1",
+    "filetype": "diff"
   },
   {
-    "id": "5585c6a0-8881-11e9-af80-577ef4a5d695",
+    "id": "ddf6bf60-8e0f-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "        -- change text color on hover",
-      "        -- time:connect_signal(\"mouse::enter\", function()",
-      "        --     time.markup = helpers.colorize_text(time.text, \"#c9bff7\")",
-      "        -- end)",
-      "        -- time:connect_signal(\"mouse::leave\", function()",
-      "        --     time.markup = helpers.colorize_text(time.text, \"#F1FCF9\")",
-      "        -- end)",
-      ""
+      "+\twhile (i > 0 && TLINE(y)[i - 1].u == ' ')"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t365\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t66\t1",
+    "filetype": "diff"
   },
   {
-    "id": "04ed2580-8881-11e9-af80-577ef4a5d695",
+    "id": "d4826600-8e0f-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "theme.playerctl_toggle_icon = icon_path .. \"playerctl_toggle.png\"",
-      "theme.playerctl_prev_icon = icon_path .. \"playerctl_prev.png\"",
-      "theme.playerctl_next_icon = icon_path .. \"playerctl_next.png\""
+      "+\tif (TLINE(y)[i - 1].mode & ATTR_WRAP)"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t219\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t62\t1",
+    "filetype": "diff"
   },
   {
-    "id": "44ea9c70-8878-11e9-bd3b-d511b2be8fef",
+    "id": "c7a47bd0-8e0f-11e9-901f-8f1bdc0b98ea",
     "content": [
-      " \"#abfeff\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t60\t33",
-    "filetype": "lua"
-  },
-  {
-    "id": "225f8850-8878-11e9-bd3b-d511b2be8fef",
-    "content": [
-      "\"#546577\" "
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t52\t34",
-    "filetype": "lua"
-  },
-  {
-    "id": "f0c85f60-8877-11e9-bd3b-d511b2be8fef",
-    "content": [
-      " \"#abfeff\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t491\t27",
-    "filetype": "lua"
-  },
-  {
-    "id": "83bd7c70-8877-11e9-bd3b-d511b2be8fef",
-    "content": [
-      "local function update_widget()",
-      "    awful.spawn.easy_async({\"sh\", \"-c\", \"pactl list sinks\"},",
-      "        function(stdout)",
-      "            local volume = stdout:match('(%d+)%% /')",
-      "            local muted = stdout:match('Mute:(%s+)[yes]')",
-      "            local fill_color",
-      "            local bg_color",
-      "            if muted ~= nil then",
-      "                is_muted = true",
-      "                if hover then",
-      "                    fill_color = \"#546577\" ",
-      "                else",
-      "                    fill_color = muted_color",
-      "                end",
-      "                bg_color = muted_background_color",
-      "            else",
-      "                is_muted = false",
-      "                fill_color = active_color",
-      "                bg_color = active_background_color",
-      "            end",
-      "            volume_bar.value = tonumber(volume)",
-      "            volume_bar.color = fill_color",
-      "            volume_bar.background_color = bg_color",
-      "        end",
-      "  )",
-      "end"
+      "+static void tscrollup(int, int, int);",
+      "+static void tscrolldown(int, int, int);"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t40\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t52\t1",
+    "filetype": "diff"
   },
   {
-    "id": "60699a10-8877-11e9-bd3b-d511b2be8fef",
+    "id": "bb9d4290-8e0f-11e9-901f-8f1bdc0b98ea",
     "content": [
-      " \"#546577\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t494\t27",
-    "filetype": "lua"
-  },
-  {
-    "id": "3063bf80-8877-11e9-bd3b-d511b2be8fef",
-    "content": [
-      "        volume_bar.hover(true)"
+      "+\tLine hist[HISTSIZE]; /* history buffer */",
+      "+\tint histi;    /* history index */",
+      "+\tint scr;      /* scroll back */"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t492\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t40\t1",
+    "filetype": "diff"
   },
   {
-    "id": "795060a0-8876-11e9-bd3b-d511b2be8fef",
+    "id": "b2521c10-8e0f-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "546577"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t493\t30",
-    "filetype": "lua"
-  },
-  {
-    "id": "4e369830-8876-11e9-bd3b-d511b2be8fef",
-    "content": [
-      "abfeff"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t491\t30",
-    "filetype": "lua"
-  },
-  {
-    "id": "4c38f370-8876-11e9-bd3b-d511b2be8fef",
-    "content": [
-      "465463"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t508\t43",
-    "filetype": "lua"
-  },
-  {
-    "id": "4a7857b0-8876-11e9-bd3b-d511b2be8fef",
-    "content": [
-      "abfeff"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t491\t30",
-    "filetype": "lua"
-  },
-  {
-    "id": "307233e0-8876-11e9-bd3b-d511b2be8fef",
-    "content": [
-      " \"#546577\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/sidebar.lua\t493\t27",
-    "filetype": "lua"
-  },
-  {
-    "id": "454bfdb0-8875-11e9-98cc-4d68d488a7fe",
-    "content": [
-      "acpi | awk '{ print $3 $4 }'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t11\t21",
-    "filetype": "lua"
-  },
-  {
-    "id": "1cf481d0-882e-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "7ef7a0"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t119\t68",
-    "filetype": "lua"
-  },
-  {
-    "id": "fb45eb00-882d-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "DB86BA"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t84\t72",
-    "filetype": "lua"
-  },
-  {
-    "id": "ebe91e20-882d-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "74DD91"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t122\t68",
-    "filetype": "lua"
-  },
-  {
-    "id": "d8bbe850-882d-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "B4A1DB"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t237\t64",
-    "filetype": "lua"
-  },
-  {
-    "id": "d5723b90-882d-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "B4A1DB"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t204\t60",
-    "filetype": "lua"
-  },
-  {
-    "id": "bd809fe0-882d-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "-- highlight during hover",
-      "exit:connect_signal(\"mouse::enter\", function()",
-      "    exit_icon.markup = helpers.colorize_text(exit_icon.text, \"#83f8ff\")",
-      "end)",
-      "exit:connect_signal(\"mouse::leave\", function()",
-      "    exit_icon.markup = helpers.colorize_text(exit_icon.text, \"#75DBE1\")",
-      "end)",
-      ""
+      "+#define TLINE(y)\t\t((y) < term.scr ? term.hist[((y) + term.histi - \\",
+      "+\t\t\t\tterm.scr + HISTSIZE + 1) % HISTSIZE] : \\",
+      "+\t\t\t\tterm.line[(y) - term.scr])"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t194\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t30\t1",
+    "filetype": "diff"
   },
   {
-    "id": "af707740-882d-11e9-8bb3-73330d4fbbc2",
+    "id": "ab454cd0-8e0f-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "E49186"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t160\t70",
-    "filetype": "lua"
-  },
-  {
-    "id": "a2dd2aa0-882d-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "E49186"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t160\t70",
-    "filetype": "lua"
-  },
-  {
-    "id": "a18821f0-882d-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "fa9b8f"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t157\t70",
-    "filetype": "lua"
-  },
-  {
-    "id": "7e5b9db0-882d-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "75DBE1"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t199\t64",
-    "filetype": "lua"
-  },
-  {
-    "id": "7b61bea0-882d-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "75DBE1"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t166\t60",
-    "filetype": "lua"
-  },
-  {
-    "id": "68a80b20-882d-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "-- highlight during hover",
-      "suspend:connect_signal(\"mouse::enter\", function()",
-      "    suspend_icon.markup = helpers.colorize_text(suspend_icon.text, \"#fa9b8f\")",
-      "end)",
-      "suspend:connect_signal(\"mouse::leave\", function()",
-      "    suspend_icon.markup = helpers.colorize_text(suspend_icon.text, \"#E49186\")",
-      "end)",
-      ""
+      "+#define HISTSIZE      2000"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t155\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t22\t1",
+    "filetype": "diff"
   },
   {
-    "id": "4e65c8b0-882d-11e9-8bb3-73330d4fbbc2",
+    "id": "a03a4de0-8e0f-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "E49186"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t127\t66",
-    "filetype": "lua"
-  },
-  {
-    "id": "39fd05a0-882d-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "E49186"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t127\t66",
-    "filetype": "lua"
-  },
-  {
-    "id": "24b1aac0-882d-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "",
-      "-- highlight during hover",
-      "reboot:connect_signal(\"mouse::enter\", function()",
-      "    reboot_icon.markup = helpers.colorize_text(reboot_icon.text, \"#83f4a2\")",
-      "end)",
-      "reboot:connect_signal(\"mouse::leave\", function()",
-      "    reboot_icon.markup = helpers.colorize_text(reboot_icon.text, \"#74DD91\")",
-      "end)"
+      "+#define HISTSIZE      2000"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t116\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t22\t1",
+    "filetype": "diff"
   },
   {
-    "id": "10746480-882d-11e9-8bb3-73330d4fbbc2",
+    "id": "8ecf8890-8e0f-11e9-901f-8f1bdc0b98ea",
     "content": [
-      "74DD91"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t122\t68",
-    "filetype": "lua"
-  },
-  {
-    "id": "0ad8d880-882d-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "74DD91"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t89\t64",
-    "filetype": "lua"
-  },
-  {
-    "id": "f1d99d60-882c-11e9-8bb3-73330d4fbbc2",
-    "content": [
-      "-- highlight during hover",
-      "poweroff:connect_signal(\"mouse::enter\", function()",
-      "    poweroff_icon.markup = helpers.colorize_text(poweroff_icon.text, \"#f99bd4\")",
-      "end)",
-      "poweroff:connect_signal(\"mouse::leave\", function()",
-      "    poweroff_icon.markup = helpers.colorize_text(poweroff_icon.text, \"#DB86BA\")",
-      "end)"
+      "+\t{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },",
+      "+\t{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },"
     ],
     "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/text_exit_screen.lua\t79\t1",
-    "filetype": "lua"
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t9\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "6cb0a3c0-8e0f-11e9-8e93-573ba7e765ac",
+    "content": [
+      "+\tif (xw.pointerisvisible) {",
+      "+\t\tXDefineCursor(xw.dpy, xw.win, xw.bpointer);",
+      "+\t\txsetpointermotion(1);",
+      "+\t\txw.pointerisvisible = 0;",
+      "+\t}",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t80\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "60f4a450-8e0f-11e9-8e93-573ba7e765ac",
+    "content": [
+      "+\tif (!set && !xw.pointerisvisible)",
+      "+\t\treturn;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t71\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "570e7650-8e0f-11e9-8e93-573ba7e765ac",
+    "content": [
+      "+\tXRecolorCursor(xw.dpy, xw.vpointer, &xmousefg, &xmousebg);",
+      "+\tblankpm = XCreateBitmapFromData(xw.dpy, xw.win, &(char){0}, 1, 1);",
+      "+\txw.bpointer = XCreatePixmapCursor(xw.dpy, blankpm, blankpm,",
+      "+\t\t\t\t\t  &xmousefg, &xmousebg, 0, 0);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t60\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "56349110-8e0f-11e9-8e93-573ba7e765ac",
+    "content": [
+      "+\tXRecolorCursor(xw.dpy, xw.vpointer, &xmousefg, &xmousebg);",
+      "+\tblankpm = XCreateBitmapFromData(xw.dpy, xw.win, &(char){0}, 1, 1);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t60\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "48c95b00-8e0f-11e9-8e93-573ba7e765ac",
+    "content": [
+      "+\txw.pointerisvisible = 1;",
+      "+\txw.vpointer = XCreateFontCursor(xw.dpy, mouseshape);",
+      "+\tXDefineCursor(xw.dpy, xw.win, xw.vpointer);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t49\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "426fd630-8e0f-11e9-8e93-573ba7e765ac",
+    "content": [
+      "+\tPixmap blankpm;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t39\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "2fa1d760-8e0f-11e9-8e93-573ba7e765ac",
+    "content": [
+      "+\tif (!xw.pointerisvisible) {",
+      "+\t\tXDefineCursor(xw.dpy, xw.win, xw.vpointer);",
+      "+\t\txw.pointerisvisible = 1;",
+      "+\t\tif (!IS_SET(MODE_MOUSEMANY))",
+      "+\t\t\txsetpointermotion(0);",
+      "+\t}",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t21\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "24906fd0-8e0f-11e9-8e93-573ba7e765ac",
+    "content": [
+      "+\t/* Here, we use the term *pointer* to differentiate the cursor",
+      "+\t * one sees when hovering the mouse over the terminal from, e.g.,",
+      "+\t * a green rectangle where text would be entered. */",
+      "+\tCursor vpointer, bpointer; /* visible and hidden pointers */",
+      "+\tint pointerisvisible;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t9\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "159041e0-8e0f-11e9-9723-b169454598b5",
+    "content": [
+      "+\tcase 'A':",
+      "+\t\topt_alpha = EARGF(usage());",
+      "+\t\tbreak;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t158\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "0f6435b0-8e0f-11e9-9723-b169454598b5",
+    "content": [
+      "+\tcase 'A':",
+      "+\t\topt_alpha = EARGF(usage());",
+      "+\t\tbreak;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t158\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "fb0b0300-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+\txw.buf = XCreatePixmap(xw.dpy, xw.win, win.w, win.h, xw.depth);",
+      "+\tdc.gc = XCreateGC(xw.dpy, xw.buf, GCGraphicsExposures, &gcvalues);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t149\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "e448bf90-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+\t\t\twin.w, win.h, 0, xw.depth, InputOutput,"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t139\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "da7444d0-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+\txw.cmap = XCreateColormap(xw.dpy, parent, xw.vis, None);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t127\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "cb8e0780-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+",
+      "+\tif (!(opt_embed && (parent = strtol(opt_embed, NULL, 0)))) {",
+      "+\t\tparent = XRootWindow(xw.dpy, xw.scr);",
+      "+\t\txw.depth = 32;",
+      "+\t} else {",
+      "+\t\tXGetWindowAttributes(xw.dpy, parent, &attr);",
+      "+\t\txw.depth = attr.depth;",
+      "+\t}",
+      "+",
+      "+\tXMatchVisualInfo(xw.dpy, xw.scr, xw.depth, TrueColor, &vis);",
+      "+\txw.vis = vis.visual;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t108\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "c0fea130-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+\tXWindowAttributes attr;",
+      "+\tXVisualInfo vis;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t101\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "b2ab2e00-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+",
+      "+\t/* set alpha value of bg color */",
+      "+\tif (opt_alpha)",
+      "+\t\talpha = strtof(opt_alpha, NULL);",
+      "+\tdc.col[defaultbg].color.alpha = (unsigned short)(0xffff * alpha);",
+      "+\tdc.col[defaultbg].pixel &= 0x00FFFFFF;",
+      "+\tdc.col[defaultbg].pixel |= (unsigned char)(0xff * alpha) << 24;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t87\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "adfb3a80-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+\t\t\txw.depth);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t79\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "a42252f0-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+\t\t\txw.depth);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t79\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "9ccba970-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+static char *opt_alpha = NULL;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t70\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "94becf50-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+\tint depth; /* bit depth */"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t62\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "7defe1b0-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+extern float alpha;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t53\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "73f122a0-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft -lXrender\\"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t41\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "634d2fc0-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft -lXrender\\"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t41\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "5a08e710-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+unsigned int defaultbg = 258;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t28\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "4ee30d20-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+\t\"black\","
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t19\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "3fe6d6d0-8e0e-11e9-9723-b169454598b5",
+    "content": [
+      "+/* bg opacity */",
+      "+float alpha = 0.8;",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t9\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "b94dbf30-8e0d-11e9-b0c1-e5a1cdf927ef",
+    "content": [
+      "+",
+      "+\tboxdraw_xinit(xw.dpy, xw.cmap, xw.draw, xw.vis);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw.diff\t551\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "9ff20c30-8e0d-11e9-b0c1-e5a1cdf927ef",
+    "content": [
+      "+extern const int boxdraw, boxdraw_bold, boxdraw_braille;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw.diff\t542\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "92f157c0-8e0d-11e9-b0c1-e5a1cdf927ef",
+    "content": [
+      "+int isboxdraw(Rune);",
+      "+ushort boxdrawindex(const Glyph *);",
+      "+#ifdef XFT_VERSION",
+      "+/* only exposed to x.c, otherwise we'll need Xft.h for the types */",
+      "+void boxdraw_xinit(Display *, Colormap, XftDraw *, Visual *);",
+      "+void drawboxes(int, int, int, int, XftColor *, XftColor *, const XftGlyphFontSpec *, int);",
+      "+#endif",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw.diff\t527\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "7d0a0b00-8e0d-11e9-b0c1-e5a1cdf927ef",
+    "content": [
+      "+\tATTR_BOXDRAW    = 1 << 11,"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw.diff\t519\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "2bb63030-8e0d-11e9-a949-39cb795696d0",
+    "content": [
+      "+/* bg opacity */",
+      "+float alpha = 0.8;",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t9\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "34ca5da0-8e0c-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tif (term.scr == 0)",
+      "+\t\txdrawcursor(cx, term.c.y, term.line[term.c.y][cx],",
+      "+\t\t\t\tterm.ocx, term.ocy, term.line[term.ocy][term.ocx]);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t317\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "2c6885b0-8e0c-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\txdrawline(TLINE(y), x1, y, x2);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t307\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "04f53000-8e0c-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tfor (i = 0; i < HISTSIZE; i++) {",
+      "+\t\tterm.hist[i] = xrealloc(term.hist[i], col * sizeof(Glyph));",
+      "+\t\tfor (j = mincol; j < col; j++) {",
+      "+\t\t\tterm.hist[i][j] = term.c.attr;",
+      "+\t\t\tterm.hist[i][j].u = ' ';",
+      "+\t\t}",
+      "+\t}",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t291\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "f3890b20-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tfor (i = 0; i < HISTSIZE; i++) {",
+      "+\t\tterm.hist[i] = xrealloc(term.hist[i], col * sizeof(Glyph));",
+      "+\t\tfor (j = mincol; j < col; j++) {",
+      "+\t\t\tterm.hist[i][j] = term.c.attr;",
+      "+\t\t\tterm.hist[i][j].u = ' ';",
+      "+\t\t}",
+      "+\t}",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t291\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "eb62dca0-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tint i, j;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t283\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "e2e82580-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\ttscrolldown(term.top, 1, 1);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t274\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "d491f330-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\ttscrollup(term.top, 1, 1);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t265\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "d088c700-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\ttscrolldown(term.top, csiescseq.arg[0], 0);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t256\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "c2c29fb0-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\ttscrollup(term.top, csiescseq.arg[0], 0);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t251\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "bac94d90-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\ttscrollup(term.c.y, n, 0);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t242\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "b2050a50-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\ttscrolldown(term.c.y, n, 0);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t234\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "a57259f0-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\ttscrollup(term.top, 1, 1);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t225\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "9f8c3060-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+",
+      "+",
+      "+",
+      "+",
+      "+",
+      "+",
+      "+",
+      "+",
+      "+",
+      "+"
+    ],
+    "regtype": "^v",
+    "path": "file:///home/kyle/packages/st-0.8.2/st.c\t1140\t1",
+    "filetype": "c"
+  },
+  {
+    "id": "9ab728b0-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tif (copyhist) {",
+      "+\t\tterm.histi = (term.histi + 1) % HISTSIZE;",
+      "+\t\ttemp = term.hist[term.histi];",
+      "+\t\tterm.hist[term.histi] = term.line[orig];",
+      "+\t\tterm.line[orig] = temp;",
+      "+\t}",
+      "+",
+      "+\tif (term.scr > 0 && term.scr < HISTSIZE)",
+      "+\t\tterm.scr = MIN(term.scr + n, HISTSIZE-1);",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t207\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "8b7fbe20-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+tscrollup(int orig, int n, int copyhist)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t200\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "83953910-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tif (copyhist) {",
+      "+\t\tterm.histi = (term.histi - 1 + HISTSIZE) % HISTSIZE;",
+      "+\t\ttemp = term.hist[term.histi];",
+      "+\t\tterm.hist[term.histi] = term.line[term.bot];",
+      "+\t\tterm.line[term.bot] = temp;",
+      "+\t}",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t185\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "605246a0-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tif (copyhist) {",
+      "+\t\tterm.histi = (term.histi - 1 + HISTSIZE) % HISTSIZE;",
+      "+\t\ttemp = term.hist[term.histi];",
+      "+\t\tterm.hist[term.histi] = term.line[term.bot];",
+      "+\t\tterm.line[term.bot] = temp;",
+      "+\t}",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t185\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "4aa7b4c0-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+kscrolldown(const Arg* a)",
+      "+{",
+      "+\tint n = a->i;",
+      "+",
+      "+\tif (n < 0)",
+      "+\t\tn = term.row + n;",
+      "+",
+      "+\tif (n > term.scr)",
+      "+\t\tn = term.scr;",
+      "+",
+      "+\tif (term.scr > 0) {",
+      "+\t\tterm.scr -= n;",
+      "+\t\tselscroll(0, -n);",
+      "+\t\ttfulldirt();",
+      "+\t}",
+      "+}",
+      "+",
+      "+void",
+      "+kscrollup(const Arg* a)",
+      "+{",
+      "+\tint n = a->i;",
+      "+",
+      "+\tif (n < 0)",
+      "+\t\tn = term.row + n;",
+      "+",
+      "+\tif (term.scr <= HISTSIZE-n) {",
+      "+\t\tterm.scr += n;",
+      "+\t\tselscroll(0, n);",
+      "+\t\ttfulldirt();",
+      "+\t}",
+      "+}",
+      "+",
+      "+void",
+      "+tscrolldown(int orig, int n, int copyhist)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t145\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "3e4a9350-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tArg arg = (Arg) { .i = term.scr };",
+      "+",
+      "+\tkscrolldown(&arg);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t134\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "2f4f4760-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tArg arg = (Arg) { .i = term.scr };",
+      "+",
+      "+\tkscrolldown(&arg);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t134\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "25b8c000-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\tlast = &TLINE(y)[MIN(lastx, linelen-1)];"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t126\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "2045a390-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\tgp = &TLINE(y)[sel.nb.y == y ? sel.nb.x : 0];"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t122\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "1b8116a0-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\tgp = &TLINE(y)[sel.nb.x];"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t118\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "0e89ff20-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\tgp = &TLINE(y)[sel.nb.x];"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t118\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "09f64630-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\t\tif (!(TLINE(*y)[term.col-1].mode"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t109\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "0624cbd0-8e0b-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\t\tif (!(TLINE(*y-1)[term.col-1].mode"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t101\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "eaef4fc0-8e0a-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\t\tif (!(TLINE(*y-1)[term.col-1].mode"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t101\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "d37ad350-8e0a-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\t\tif (!(TLINE(*y-1)[term.col-1].mode"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t101\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "ce1dfe00-8e0a-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\tgp = &TLINE(newy)[newx];"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t92\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "c9e25020-8e0a-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\t\tif (!(TLINE(yt)[xt].mode & ATTR_WRAP))"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t84\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "9d8c8540-8e0a-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\t\tif (!(TLINE(yt)[xt].mode & ATTR_WRAP))"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t84\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "95ef0ec0-8e0a-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\tprevgp = &TLINE(*y)[*x];"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t75\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "91999750-8e0a-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\twhile (i > 0 && TLINE(y)[i - 1].u == ' ')"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t66\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "87e74a90-8e0a-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tif (TLINE(y)[i - 1].mode & ATTR_WRAP)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t62\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "7cb2a390-8e0a-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+static void tscrollup(int, int, int);",
+      "+static void tscrolldown(int, int, int);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t52\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "6adf7f80-8e0a-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tLine hist[HISTSIZE]; /* history buffer */",
+      "+\tint histi;    /* history index */",
+      "+\tint scr;      /* scroll back */"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t40\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "63e6d480-8e0a-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tLine hist[HISTSIZE]; /* history buffer */",
+      "+\tint histi;    /* history index */",
+      "+\tint scr;      /* scroll back */"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t40\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "5da4a840-8e0a-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+#define TLINE(y)\t\t((y) < term.scr ? term.hist[((y) + term.histi - \\",
+      "+\t\t\t\tterm.scr + HISTSIZE + 1) % HISTSIZE] : \\",
+      "+\t\t\t\tterm.line[(y) - term.scr])"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t30\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "55f68ff0-8e0a-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+#define HISTSIZE      2000"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t22\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "2a7f3e30-8e0a-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+kscrolldown(const Arg* a)",
+      "+{",
+      "+\tint n = a->i;",
+      "+",
+      "+\tif (n < 0)",
+      "+\t\tn = term.row + n;",
+      "+",
+      "+\tif (n > term.scr)",
+      "+\t\tn = term.scr;",
+      "+",
+      "+\tif (term.scr > 0) {",
+      "+\t\tterm.scr -= n;",
+      "+\t\tselscroll(0, -n);",
+      "+\t\ttfulldirt();",
+      "+\t}",
+      "+}",
+      "+",
+      "+void",
+      "+kscrollup(const Arg* a)",
+      "+{",
+      "+\tint n = a->i;",
+      "+",
+      "+\tif (n < 0)",
+      "+\t\tn = term.row + n;",
+      "+",
+      "+\tif (term.scr <= HISTSIZE-n) {",
+      "+\t\tterm.scr += n;",
+      "+\t\tselscroll(0, n);",
+      "+\t\ttfulldirt();",
+      "+\t}",
+      "+}",
+      "+",
+      "+void",
+      "+tscrolldown(int orig, int n, int copyhist)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t145\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "f3a6de40-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+void kscrolldown(const Arg *);",
+      "+void kscrollup(const Arg *);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t331\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "e459efe0-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tif (term.scr == 0)",
+      "+\t\txdrawcursor(cx, term.c.y, term.line[term.c.y][cx],",
+      "+\t\t\t\tterm.ocx, term.ocy, term.line[term.ocy][term.ocx]);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t317\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "daa05020-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\txdrawline(TLINE(y), x1, y, x2);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t307\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "ce195f90-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tfor (i = 0; i < HISTSIZE; i++) {",
+      "+\t\tterm.hist[i] = xrealloc(term.hist[i], col * sizeof(Glyph));",
+      "+\t\tfor (j = mincol; j < col; j++) {",
+      "+\t\t\tterm.hist[i][j] = term.c.attr;",
+      "+\t\t\tterm.hist[i][j].u = ' ';",
+      "+\t\t}",
+      "+\t}",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t291\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "c6005070-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tint i, j;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t283\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "bc590030-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\ttscrolldown(term.top, 1, 1);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t274\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "acca9c00-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\ttscrollup(term.top, 1, 1);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t265\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "a9301020-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\ttscrolldown(term.top, csiescseq.arg[0], 0);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t256\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "9cfc2190-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\ttscrollup(term.top, csiescseq.arg[0], 0);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t251\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "905b1950-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\ttscrollup(term.c.y, n, 0);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t242\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "89f670f0-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\ttscrolldown(term.c.y, n, 0);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t234\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "8062cfc0-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\ttscrollup(term.top, 1, 1);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t225\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "7484c960-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tif (copyhist) {",
+      "+\t\tterm.histi = (term.histi + 1) % HISTSIZE;",
+      "+\t\ttemp = term.hist[term.histi];",
+      "+\t\tterm.hist[term.histi] = term.line[orig];",
+      "+\t\tterm.line[orig] = temp;",
+      "+\t}",
+      "+",
+      "+\tif (term.scr > 0 && term.scr < HISTSIZE)",
+      "+\t\tterm.scr = MIN(term.scr + n, HISTSIZE-1);",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t207\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "66404a50-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+tscrollup(int orig, int n, int copyhist)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t200\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "5b2bfc90-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tif (copyhist) {",
+      "+\t\tterm.histi = (term.histi - 1 + HISTSIZE) % HISTSIZE;",
+      "+\t\ttemp = term.hist[term.histi];",
+      "+\t\tterm.hist[term.histi] = term.line[term.bot];",
+      "+\t\tterm.line[term.bot] = temp;",
+      "+\t}",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t185\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "48c264e0-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+kscrolldown(const Arg* a)",
+      "+{",
+      "+\tint n = a->i;",
+      "+",
+      "+\tif (n < 0)",
+      "+\t\tn = term.row + n;",
+      "+",
+      "+\tif (n > term.scr)",
+      "+\t\tn = term.scr;",
+      "+",
+      "+\tif (term.scr > 0) {",
+      "+\t\tterm.scr -= n;",
+      "+\t\tselscroll(0, -n);",
+      "+\t\ttfulldirt();",
+      "+\t}",
+      "+}",
+      "+",
+      "+void",
+      "+kscrollup(const Arg* a)",
+      "+{",
+      "+\tint n = a->i;",
+      "+",
+      "+\tif (n < 0)",
+      "+\t\tn = term.row + n;",
+      "+",
+      "+\tif (term.scr <= HISTSIZE-n) {",
+      "+\t\tterm.scr += n;",
+      "+\t\tselscroll(0, n);",
+      "+\t\ttfulldirt();",
+      "+\t}",
+      "+}",
+      "+",
+      "+void",
+      "+tscrolldown(int orig, int n, int copyhist)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t145\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "33446140-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tArg arg = (Arg) { .i = term.scr };",
+      "+",
+      "+\tkscrolldown(&arg);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t134\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "2dc5ac10-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\tlast = &TLINE(y)[MIN(lastx, linelen-1)];"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t126\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "2ab4e9a0-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\tgp = &TLINE(y)[sel.nb.y == y ? sel.nb.x : 0];"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t122\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "2340cd10-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\tgp = &TLINE(y)[sel.nb.x];"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t118\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "1ca8dfb0-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\t\tif (!(TLINE(*y)[term.col-1].mode"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t109\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "173d8b70-8e09-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\t\tif (!(TLINE(*y-1)[term.col-1].mode"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t101\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "e470efc0-8e08-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\t\tif (!(TLINE(*y-1)[term.col-1].mode"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t101\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "dc26e590-8e08-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\tgp = &TLINE(newy)[newx];"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t92\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "c81a2530-8e08-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\t\t\tif (!(TLINE(yt)[xt].mode & ATTR_WRAP))"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t84\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "bd6e5d40-8e08-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\t\tprevgp = &TLINE(*y)[*x];"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t75\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "b66dc300-8e08-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\twhile (i > 0 && TLINE(y)[i - 1].u == ' ')"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t66\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "a742b480-8e08-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tif (TLINE(y)[i - 1].mode & ATTR_WRAP)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t62\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "98877ed0-8e08-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+static void tscrollup(int, int, int);",
+      "+static void tscrolldown(int, int, int);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t52\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "927e3ce0-8e08-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tLine hist[HISTSIZE]; /* history buffer */",
+      "+\tint histi;    /* history index */",
+      "+\tint scr;      /* scroll back */"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t40\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "7fbe6ee0-8e08-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+\tLine hist[HISTSIZE]; /* history buffer */",
+      "+\tint histi;    /* history index */",
+      "+\tint scr;      /* scroll back */"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t40\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "73da26f0-8e08-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+#define TLINE(y)\t\t((y) < term.scr ? term.hist[((y) + term.histi - \\",
+      "+\t\t\t\tterm.scr + HISTSIZE + 1) % HISTSIZE] : \\",
+      "+\t\t\t\tterm.line[(y) - term.scr])"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t30\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "661474d0-8e08-11e9-9492-dbec5a574ae2",
+    "content": [
+      "+#define HISTSIZE      2000"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t22\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "da582060-8e05-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+#define HISTSIZE      2000"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t22\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "c1d39380-8e05-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+\t{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },",
+      "+\t{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t9\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "41ada330-8e05-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+\tif (xw.pointerisvisible) {",
+      "+\t\tXDefineCursor(xw.dpy, xw.win, xw.bpointer);",
+      "+\t\txsetpointermotion(1);",
+      "+\t\txw.pointerisvisible = 0;",
+      "+\t}",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t80\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "315b04a0-8e05-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+\tif (!set && !xw.pointerisvisible)",
+      "+\t\treturn;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t71\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "206680c0-8e05-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+\tif (!set && !xw.pointerisvisible)",
+      "+\t\treturn;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t71\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "12829840-8e05-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+\tXRecolorCursor(xw.dpy, xw.vpointer, &xmousefg, &xmousebg);",
+      "+\tblankpm = XCreateBitmapFromData(xw.dpy, xw.win, &(char){0}, 1, 1);",
+      "+\txw.bpointer = XCreatePixmapCursor(xw.dpy, blankpm, blankpm,",
+      "+\t\t\t\t\t  &xmousefg, &xmousebg, 0, 0);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t60\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "09433190-8e05-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+\txw.pointerisvisible = 1;",
+      "+\txw.vpointer = XCreateFontCursor(xw.dpy, mouseshape);",
+      "+\tXDefineCursor(xw.dpy, xw.win, xw.vpointer);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t49\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "f9c0b440-8e04-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+\tPixmap blankpm;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t39\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "e91f3260-8e04-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+\tif (!xw.pointerisvisible) {",
+      "+\t\tXDefineCursor(xw.dpy, xw.win, xw.vpointer);",
+      "+\t\txw.pointerisvisible = 1;",
+      "+\t\tif (!IS_SET(MODE_MOUSEMANY))",
+      "+\t\t\txsetpointermotion(0);",
+      "+\t}",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t21\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "da773690-8e04-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+\t/* Here, we use the term *pointer* to differentiate the cursor",
+      "+\t * one sees when hovering the mouse over the terminal from, e.g.,",
+      "+\t * a green rectangle where text would be entered. */",
+      "+\tCursor vpointer, bpointer; /* visible and hidden pointers */",
+      "+\tint pointerisvisible;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t9\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "c1248440-8e04-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+\t/* Here, we use the term *pointer* to differentiate the cursor",
+      "+\t * one sees when hovering the mouse over the terminal from, e.g.,",
+      "+\t * a green rectangle where text would be entered. */",
+      "+\tCursor vpointer, bpointer; /* visible and hidden pointers */",
+      "+\tint pointerisvisible;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t9\t1",
+    "filetype": "diff"
+  },
+  {
+    "id": "93f2ff60-8e04-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+boxdraw.o: config.h st.h boxdraw_data.h"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t50\t1",
+    "filetype": ""
+  },
+  {
+    "id": "75d46d20-8e04-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+SRC = st.c x.c boxdraw.c"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t42\t1",
+    "filetype": ""
+  },
+  {
+    "id": "5da52c30-8e04-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+\tg.mode &= ATTR_BOLD|ATTR_ITALIC|ATTR_UNDERLINE|ATTR_STRUCK|ATTR_WIDE|ATTR_BOXDRAW;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t592\t1",
+    "filetype": ""
+  },
+  {
+    "id": "51caa840-8e04-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+\tif (base.mode & ATTR_BOXDRAW) {",
+      "+\t\tdrawboxes(winx, winy, width / len, win.ch, fg, bg, specs, len);",
+      "+\t} else {",
+      "+\t\t/* Render the glyphs. */",
+      "+\t\tXftDrawGlyphFontSpec(xw.draw, fg, specs, len);",
+      "+\t}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t578\t1",
+    "filetype": ""
+  },
+  {
+    "id": "46f73410-8e04-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+\t\tif (mode & ATTR_BOXDRAW) {",
+      "+\t\t\t/* minor shoehorning: boxdraw uses only this ushort */",
+      "+\t\t\tglyphidx = boxdrawindex(&glyphs[i]);",
+      "+\t\t} else {",
+      "+\t\t\t/* Lookup character index with default font. */",
+      "+\t\t\tglyphidx = XftCharIndex(xw.dpy, font->match, rune);",
+      "+\t\t}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t562\t1",
+    "filetype": ""
+  },
+  {
+    "id": "1426eee0-8e04-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+",
+      "+\tboxdraw_xinit(xw.dpy, xw.cmap, xw.draw, xw.vis);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t551\t1",
+    "filetype": ""
+  },
+  {
+    "id": "e6f40a70-8e03-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+extern const int boxdraw, boxdraw_bold, boxdraw_braille;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t542\t1",
+    "filetype": ""
+  },
+  {
+    "id": "d7b12e30-8e03-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+int isboxdraw(Rune);",
+      "+ushort boxdrawindex(const Glyph *);",
+      "+#ifdef XFT_VERSION",
+      "+/* only exposed to x.c, otherwise we'll need Xft.h for the types */",
+      "+void boxdraw_xinit(Display *, Colormap, XftDraw *, Visual *);",
+      "+void drawboxes(int, int, int, int, XftColor *, XftColor *, const XftGlyphFontSpec *, int);",
+      "+#endif",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t527\t1",
+    "filetype": ""
+  },
+  {
+    "id": "c2c160d0-8e03-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+\tATTR_BOXDRAW    = 1 << 11,"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t519\t1",
+    "filetype": ""
+  },
+  {
+    "id": "850d05a0-8e03-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+",
+      "+\tif (isboxdraw(u))",
+      "+\t\tterm.line[y][x].mode |= ATTR_BOXDRAW;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t505\t1",
+    "filetype": ""
+  },
+  {
+    "id": "67369ff0-8e03-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+/*",
+      "+ * 1: render most of the lines/blocks characters without using the font for",
+      "+ *    perfect alignment between cells (U2500 - U259F except dashes/diagonals).",
+      "+ *    Bold affects lines thickness if boxdraw_bold is not 0. Italic is ignored.",
+      "+ * 0: disable (render all U25XX glyphs normally from the font).",
+      "+ */",
+      "+const int boxdraw = 0;",
+      "+const int boxdraw_bold = 0;",
+      "+",
+      "+/* braille (U28XX):  1: render as adjacent \"pixels\",  0: use font */",
+      "+const int boxdraw_braille = 0;",
+      "+"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t482\t1",
+    "filetype": ""
+  },
+  {
+    "id": "4f27b840-8e03-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+/*",
+      "+ * Copyright 2018 Avi Halachmi (:avih) avihpit@yahoo.com https://github.com/avih",
+      "+ * MIT/X Consortium License",
+      "+ */",
+      "+",
+      "+/*",
+      "+ * U+25XX codepoints data",
+      "+ *",
+      "+ * References:",
+      "+ *   http://www.unicode.org/charts/PDF/U2500.pdf",
+      "+ *   http://www.unicode.org/charts/PDF/U2580.pdf",
+      "+ *",
+      "+ * Test page:",
+      "+ *   https://github.com/GNOME/vte/blob/master/doc/boxes.txt",
+      "+ */",
+      "+",
+      "+/* Each shape is encoded as 16-bits. Higher bits are category, lower are data */",
+      "+/* Categories (mutually exclusive except BDB): */",
+      "+/* For convenience, BDL/BDA/BBS/BDB are 1 bit each, the rest are enums */",
+      "+#define BDL (1<<8)   /* Box Draw Lines (light/double/heavy) */",
+      "+#define BDA (1<<9)   /* Box Draw Arc (light) */",
+      "+",
+      "+#define BBD (1<<10)  /* Box Block Down (lower) X/8 */",
+      "+#define BBL (2<<10)  /* Box Block Left X/8 */",
+      "+#define BBU (3<<10)  /* Box Block Upper X/8 */",
+      "+#define BBR (4<<10)  /* Box Block Right X/8 */",
+      "+#define BBQ (5<<10)  /* Box Block Quadrants */",
+      "+#define BRL (6<<10)  /* Box Braille (data is lower byte of U28XX) */",
+      "+",
+      "+#define BBS (1<<14)  /* Box Block Shades */",
+      "+#define BDB (1<<15)  /* Box Draw is Bold */",
+      "+",
+      "+/* (BDL/BDA) Light/Double/Heavy x Left/Up/Right/Down/Horizontal/Vertical      */",
+      "+/* Heavy is light+double (literally drawing light+double align to form heavy) */",
+      "+#define LL (1<<0)",
+      "+#define LU (1<<1)",
+      "+#define LR (1<<2)",
+      "+#define LD (1<<3)",
+      "+#define LH (LL+LR)",
+      "+#define LV (LU+LD)",
+      "+",
+      "+#define DL (1<<4)",
+      "+#define DU (1<<5)",
+      "+#define DR (1<<6)",
+      "+#define DD (1<<7)",
+      "+#define DH (DL+DR)",
+      "+#define DV (DU+DD)",
+      "+",
+      "+#define HL (LL+DL)",
+      "+#define HU (LU+DU)",
+      "+#define HR (LR+DR)",
+      "+#define HD (LD+DD)",
+      "+#define HH (HL+HR)",
+      "+#define HV (HU+HD)",
+      "+",
+      "+/* (BBQ) Quadrants Top/Bottom x Left/Right */",
+      "+#define TL (1<<0)",
+      "+#define TR (1<<1)",
+      "+#define BL (1<<2)",
+      "+#define BR (1<<3)",
+      "+",
+      "+/* Data for U+2500 - U+259F except dashes/diagonals */",
+      "+static const unsigned short boxdata[256] = {",
+      "+\t/* light lines */",
+      "+\t[0x00] = BDL + LH,       /* light horizontal */",
+      "+\t[0x02] = BDL + LV,       /* light vertical */",
+      "+\t[0x0c] = BDL + LD + LR,  /* light down and right */",
+      "+\t[0x10] = BDL + LD + LL,  /* light down and left */",
+      "+\t[0x14] = BDL + LU + LR,  /* light up and right */",
+      "+\t[0x18] = BDL + LU + LL,  /* light up and left */",
+      "+\t[0x1c] = BDL + LV + LR,  /* light vertical and right */",
+      "+\t[0x24] = BDL + LV + LL,  /* light vertical and left */",
+      "+\t[0x2c] = BDL + LH + LD,  /* light horizontal and down */",
+      "+\t[0x34] = BDL + LH + LU,  /* light horizontal and up */",
+      "+\t[0x3c] = BDL + LV + LH,  /* light vertical and horizontal */",
+      "+\t[0x74] = BDL + LL,       /* light left */",
+      "+\t[0x75] = BDL + LU,       /* light up */",
+      "+\t[0x76] = BDL + LR,       /* light right */",
+      "+\t[0x77] = BDL + LD,       /* light down */",
+      "+",
+      "+\t/* heavy [+light] lines */",
+      "+\t[0x01] = BDL + HH,",
+      "+\t[0x03] = BDL + HV,",
+      "+\t[0x0d] = BDL + HR + LD,",
+      "+\t[0x0e] = BDL + HD + LR,",
+      "+\t[0x0f] = BDL + HD + HR,",
+      "+\t[0x11] = BDL + HL + LD,",
+      "+\t[0x12] = BDL + HD + LL,",
+      "+\t[0x13] = BDL + HD + HL,",
+      "+\t[0x15] = BDL + HR + LU,",
+      "+\t[0x16] = BDL + HU + LR,",
+      "+\t[0x17] = BDL + HU + HR,",
+      "+\t[0x19] = BDL + HL + LU,",
+      "+\t[0x1a] = BDL + HU + LL,",
+      "+\t[0x1b] = BDL + HU + HL,",
+      "+\t[0x1d] = BDL + HR + LV,",
+      "+\t[0x1e] = BDL + HU + LD + LR,",
+      "+\t[0x1f] = BDL + HD + LR + LU,",
+      "+\t[0x20] = BDL + HV + LR,",
+      "+\t[0x21] = BDL + HU + HR + LD,",
+      "+\t[0x22] = BDL + HD + HR + LU,",
+      "+\t[0x23] = BDL + HV + HR,",
+      "+\t[0x25] = BDL + HL + LV,",
+      "+\t[0x26] = BDL + HU + LD + LL,",
+      "+\t[0x27] = BDL + HD + LU + LL,",
+      "+\t[0x28] = BDL + HV + LL,",
+      "+\t[0x29] = BDL + HU + HL + LD,",
+      "+\t[0x2a] = BDL + HD + HL + LU,",
+      "+\t[0x2b] = BDL + HV + HL,",
+      "+\t[0x2d] = BDL + HL + LD + LR,",
+      "+\t[0x2e] = BDL + HR + LL + LD,",
+      "+\t[0x2f] = BDL + HH + LD,",
+      "+\t[0x30] = BDL + HD + LH,",
+      "+\t[0x31] = BDL + HD + HL + LR,",
+      "+\t[0x32] = BDL + HR + HD + LL,",
+      "+\t[0x33] = BDL + HH + HD,",
+      "+\t[0x35] = BDL + HL + LU + LR,",
+      "+\t[0x36] = BDL + HR + LU + LL,",
+      "+\t[0x37] = BDL + HH + LU,",
+      "+\t[0x38] = BDL + HU + LH,",
+      "+\t[0x39] = BDL + HU + HL + LR,",
+      "+\t[0x3a] = BDL + HU + HR + LL,",
+      "+\t[0x3b] = BDL + HH + HU,",
+      "+\t[0x3d] = BDL + HL + LV + LR,",
+      "+\t[0x3e] = BDL + HR + LV + LL,",
+      "+\t[0x3f] = BDL + HH + LV,",
+      "+\t[0x40] = BDL + HU + LH + LD,",
+      "+\t[0x41] = BDL + HD + LH + LU,",
+      "+\t[0x42] = BDL + HV + LH,",
+      "+\t[0x43] = BDL + HU + HL + LD + LR,",
+      "+\t[0x44] = BDL + HU + HR + LD + LL,",
+      "+\t[0x45] = BDL + HD + HL + LU + LR,",
+      "+\t[0x46] = BDL + HD + HR + LU + LL,",
+      "+\t[0x47] = BDL + HH + HU + LD,",
+      "+\t[0x48] = BDL + HH + HD + LU,",
+      "+\t[0x49] = BDL + HV + HL + LR,",
+      "+\t[0x4a] = BDL + HV + HR + LL,",
+      "+\t[0x4b] = BDL + HV + HH,",
+      "+\t[0x78] = BDL + HL,",
+      "+\t[0x79] = BDL + HU,",
+      "+\t[0x7a] = BDL + HR,",
+      "+\t[0x7b] = BDL + HD,",
+      "+\t[0x7c] = BDL + HR + LL,",
+      "+\t[0x7d] = BDL + HD + LU,",
+      "+\t[0x7e] = BDL + HL + LR,",
+      "+\t[0x7f] = BDL + HU + LD,",
+      "+",
+      "+\t/* double [+light] lines */",
+      "+\t[0x50] = BDL + DH,",
+      "+\t[0x51] = BDL + DV,",
+      "+\t[0x52] = BDL + DR + LD,",
+      "+\t[0x53] = BDL + DD + LR,",
+      "+\t[0x54] = BDL + DR + DD,",
+      "+\t[0x55] = BDL + DL + LD,",
+      "+\t[0x56] = BDL + DD + LL,",
+      "+\t[0x57] = BDL + DL + DD,",
+      "+\t[0x58] = BDL + DR + LU,",
+      "+\t[0x59] = BDL + DU + LR,",
+      "+\t[0x5a] = BDL + DU + DR,",
+      "+\t[0x5b] = BDL + DL + LU,",
+      "+\t[0x5c] = BDL + DU + LL,",
+      "+\t[0x5d] = BDL + DL + DU,",
+      "+\t[0x5e] = BDL + DR + LV,",
+      "+\t[0x5f] = BDL + DV + LR,",
+      "+\t[0x60] = BDL + DV + DR,",
+      "+\t[0x61] = BDL + DL + LV,",
+      "+\t[0x62] = BDL + DV + LL,",
+      "+\t[0x63] = BDL + DV + DL,",
+      "+\t[0x64] = BDL + DH + LD,",
+      "+\t[0x65] = BDL + DD + LH,",
+      "+\t[0x66] = BDL + DD + DH,",
+      "+\t[0x67] = BDL + DH + LU,",
+      "+\t[0x68] = BDL + DU + LH,",
+      "+\t[0x69] = BDL + DH + DU,",
+      "+\t[0x6a] = BDL + DH + LV,",
+      "+\t[0x6b] = BDL + DV + LH,",
+      "+\t[0x6c] = BDL + DH + DV,",
+      "+",
+      "+\t/* (light) arcs */",
+      "+\t[0x6d] = BDA + LD + LR,",
+      "+\t[0x6e] = BDA + LD + LL,",
+      "+\t[0x6f] = BDA + LU + LL,",
+      "+\t[0x70] = BDA + LU + LR,",
+      "+",
+      "+\t/* Lower (Down) X/8 block (data is 8 - X) */",
+      "+\t[0x81] = BBD + 7, [0x82] = BBD + 6, [0x83] = BBD + 5, [0x84] = BBD + 4,",
+      "+\t[0x85] = BBD + 3, [0x86] = BBD + 2, [0x87] = BBD + 1, [0x88] = BBD + 0,",
+      "+",
+      "+\t/* Left X/8 block (data is X) */",
+      "+\t[0x89] = BBL + 7, [0x8a] = BBL + 6, [0x8b] = BBL + 5, [0x8c] = BBL + 4,",
+      "+\t[0x8d] = BBL + 3, [0x8e] = BBL + 2, [0x8f] = BBL + 1,",
+      "+",
+      "+\t/* upper 1/2 (4/8), 1/8 block (X), right 1/2, 1/8 block (8-X) */",
+      "+\t[0x80] = BBU + 4, [0x94] = BBU + 1,",
+      "+\t[0x90] = BBR + 4, [0x95] = BBR + 7,",
+      "+",
+      "+\t/* Quadrants */",
+      "+\t[0x96] = BBQ + BL,",
+      "+\t[0x97] = BBQ + BR,",
+      "+\t[0x98] = BBQ + TL,",
+      "+\t[0x99] = BBQ + TL + BL + BR,",
+      "+\t[0x9a] = BBQ + TL + BR,",
+      "+\t[0x9b] = BBQ + TL + TR + BL,",
+      "+\t[0x9c] = BBQ + TL + TR + BR,",
+      "+\t[0x9d] = BBQ + TR,",
+      "+\t[0x9e] = BBQ + BL + TR,",
+      "+\t[0x9f] = BBQ + BL + TR + BR,",
+      "+",
+      "+\t/* Shades, data is an alpha value in 25% units (1/4, 1/2, 3/4) */",
+      "+\t[0x91] = BBS + 1, [0x92] = BBS + 2, [0x93] = BBS + 3,",
+      "+",
+      "+\t/* U+2504 - U+250B, U+254C - U+254F: unsupported (dashes) */",
+      "+\t/* U+2571 - U+2573: unsupported (diagonals) */",
+      "+};"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t260\t1",
+    "filetype": ""
+  },
+  {
+    "id": "3ffe5770-8e03-11e9-ba4e-3baf28be39db",
+    "content": [
+      "+/*",
+      "+ * Copyright 2018 Avi Halachmi (:avih) avihpit@yahoo.com https://github.com/avih",
+      "+ * MIT/X Consortium License",
+      "+ */",
+      "+",
+      "+#include <X11/Xft/Xft.h>",
+      "+#include \"st.h\"",
+      "+#include \"boxdraw_data.h\"",
+      "+",
+      "+/* Rounded non-negative integers division of n / d  */",
+      "+#define DIV(n, d) (((n) + (d) / 2) / (d))",
+      "+",
+      "+static Display *xdpy;",
+      "+static Colormap xcmap;",
+      "+static XftDraw *xd;",
+      "+static Visual *xvis;",
+      "+",
+      "+static void drawbox(int, int, int, int, XftColor *, XftColor *, ushort);",
+      "+static void drawboxlines(int, int, int, int, XftColor *, ushort);",
+      "+",
+      "+/* public API */",
+      "+",
+      "+void",
+      "+boxdraw_xinit(Display *dpy, Colormap cmap, XftDraw *draw, Visual *vis)",
+      "+{",
+      "+\txdpy = dpy; xcmap = cmap; xd = draw, xvis = vis;",
+      "+}",
+      "+",
+      "+int",
+      "+isboxdraw(Rune u)",
+      "+{",
+      "+\tRune block = u & ~0xff;",
+      "+\treturn (boxdraw && block == 0x2500 && boxdata[(uint8_t)u]) ||",
+      "+\t       (boxdraw_braille && block == 0x2800);",
+      "+}",
+      "+",
+      "+/* the \"index\" is actually the entire shape data encoded as ushort */",
+      "+ushort",
+      "+boxdrawindex(const Glyph *g)",
+      "+{",
+      "+\tif (boxdraw_braille && (g->u & ~0xff) == 0x2800)",
+      "+\t\treturn BRL | (uint8_t)g->u;",
+      "+\tif (boxdraw_bold && (g->mode & ATTR_BOLD))",
+      "+\t\treturn BDB | boxdata[(uint8_t)g->u];",
+      "+\treturn boxdata[(uint8_t)g->u];",
+      "+}",
+      "+",
+      "+void",
+      "+drawboxes(int x, int y, int cw, int ch, XftColor *fg, XftColor *bg,",
+      "+          const XftGlyphFontSpec *specs, int len)",
+      "+{",
+      "+\tfor ( ; len-- > 0; x += cw, specs++)",
+      "+\t\tdrawbox(x, y, cw, ch, fg, bg, (ushort)specs->glyph);",
+      "+}",
+      "+",
+      "+/* implementation */",
+      "+",
+      "+void",
+      "+drawbox(int x, int y, int w, int h, XftColor *fg, XftColor *bg, ushort bd)",
+      "+{",
+      "+\tushort cat = bd & ~(BDB | 0xff);  /* mask out bold and data */",
+      "+\tif (bd & (BDL | BDA)) {",
+      "+\t\t/* lines (light/double/heavy/arcs) */",
+      "+\t\tdrawboxlines(x, y, w, h, fg, bd);",
+      "+",
+      "+\t} else if (cat == BBD) {",
+      "+\t\t/* lower (8-X)/8 block */",
+      "+\t\tint d = DIV((uint8_t)bd * h, 8);",
+      "+\t\tXftDrawRect(xd, fg, x, y + d, w, h - d);",
+      "+",
+      "+\t} else if (cat == BBU) {",
+      "+\t\t/* upper X/8 block */",
+      "+\t\tXftDrawRect(xd, fg, x, y, w, DIV((uint8_t)bd * h, 8));",
+      "+",
+      "+\t} else if (cat == BBL) {",
+      "+\t\t/* left X/8 block */",
+      "+\t\tXftDrawRect(xd, fg, x, y, DIV((uint8_t)bd * w, 8), h);",
+      "+",
+      "+\t} else if (cat == BBR) {",
+      "+\t\t/* right (8-X)/8 block */",
+      "+\t\tint d = DIV((uint8_t)bd * w, 8);",
+      "+\t\tXftDrawRect(xd, fg, x + d, y, w - d, h);",
+      "+",
+      "+\t} else if (cat == BBQ) {",
+      "+\t\t/* Quadrants */",
+      "+\t\tint w2 = DIV(w, 2), h2 = DIV(h, 2);",
+      "+\t\tif (bd & TL)",
+      "+\t\t\tXftDrawRect(xd, fg, x, y, w2, h2);",
+      "+\t\tif (bd & TR)",
+      "+\t\t\tXftDrawRect(xd, fg, x + w2, y, w - w2, h2);",
+      "+\t\tif (bd & BL)",
+      "+\t\t\tXftDrawRect(xd, fg, x, y + h2, w2, h - h2);",
+      "+\t\tif (bd & BR)",
+      "+\t\t\tXftDrawRect(xd, fg, x + w2, y + h2, w - w2, h - h2);",
+      "+",
+      "+\t} else if (bd & BBS) {",
+      "+\t\t/* Shades - data is 1/2/3 for 25%/50%/75% alpha, respectively */",
+      "+\t\tint d = (uint8_t)bd;",
+      "+\t\tXftColor xfc;",
+      "+\t\tXRenderColor xrc = { .alpha = 0xffff };",
+      "+",
+      "+\t\txrc.red = DIV(fg->color.red * d + bg->color.red * (4 - d), 4);",
+      "+\t\txrc.green = DIV(fg->color.green * d + bg->color.green * (4 - d), 4);",
+      "+\t\txrc.blue = DIV(fg->color.blue * d + bg->color.blue * (4 - d), 4);",
+      "+",
+      "+\t\tXftColorAllocValue(xdpy, xvis, xcmap, &xrc, &xfc);",
+      "+\t\tXftDrawRect(xd, &xfc, x, y, w, h);",
+      "+\t\tXftColorFree(xdpy, xvis, xcmap, &xfc);",
+      "+",
+      "+\t} else if (cat == BRL) {",
+      "+\t\t/* braille, each data bit corresponds to one dot at 2x4 grid */",
+      "+\t\tint w1 = DIV(w, 2);",
+      "+\t\tint h1 = DIV(h, 4), h2 = DIV(h, 2), h3 = DIV(3 * h, 4);",
+      "+",
+      "+\t\tif (bd & 1)   XftDrawRect(xd, fg, x, y, w1, h1);",
+      "+\t\tif (bd & 2)   XftDrawRect(xd, fg, x, y + h1, w1, h2 - h1);",
+      "+\t\tif (bd & 4)   XftDrawRect(xd, fg, x, y + h2, w1, h3 - h2);",
+      "+\t\tif (bd & 8)   XftDrawRect(xd, fg, x + w1, y, w - w1, h1);",
+      "+\t\tif (bd & 16)  XftDrawRect(xd, fg, x + w1, y + h1, w - w1, h2 - h1);",
+      "+\t\tif (bd & 32)  XftDrawRect(xd, fg, x + w1, y + h2, w - w1, h3 - h2);",
+      "+\t\tif (bd & 64)  XftDrawRect(xd, fg, x, y + h3, w1, h - h3);",
+      "+\t\tif (bd & 128) XftDrawRect(xd, fg, x + w1, y + h3, w - w1, h - h3);",
+      "+",
+      "+\t}",
+      "+}",
+      "+",
+      "+void",
+      "+drawboxlines(int x, int y, int w, int h, XftColor *fg, ushort bd)",
+      "+{",
+      "+\t/* s: stem thickness. width/8 roughly matches underscore thickness. */",
+      "+\t/* We draw bold as 1.5 * normal-stem and at least 1px thicker.      */",
+      "+\t/* doubles draw at least 3px, even when w or h < 3. bold needs 6px. */",
+      "+\tint mwh = MIN(w, h);",
+      "+\tint base_s = MAX(1, DIV(mwh, 8));",
+      "+\tint bold = (bd & BDB) && mwh >= 6;  /* possibly ignore boldness */",
+      "+\tint s = bold ? MAX(base_s + 1, DIV(3 * base_s, 2)) : base_s;",
+      "+\tint w2 = DIV(w - s, 2), h2 = DIV(h - s, 2);",
+      "+\t/* the s-by-s square (x + w2, y + h2, s, s) is the center texel.    */",
+      "+\t/* The base length (per direction till edge) includes this square.  */",
+      "+",
+      "+\tint light = bd & (LL | LU | LR | LD);",
+      "+\tint double_ = bd & (DL | DU | DR | DD);",
+      "+",
+      "+\tif (light) {",
+      "+\t\t/* d: additional (negative) length to not-draw the center   */",
+      "+\t\t/* texel - at arcs and avoid drawing inside (some) doubles  */",
+      "+\t\tint arc = bd & BDA;",
+      "+\t\tint multi_light = light & (light - 1);",
+      "+\t\tint multi_double = double_ & (double_ - 1);",
+      "+\t\t/* light crosses double only at DH+LV, DV+LH (ref. shapes)  */",
+      "+\t\tint d = arc || (multi_double && !multi_light) ? -s : 0;",
+      "+",
+      "+\t\tif (bd & LL)",
+      "+\t\t\tXftDrawRect(xd, fg, x, y + h2, w2 + s + d, s);",
+      "+\t\tif (bd & LU)",
+      "+\t\t\tXftDrawRect(xd, fg, x + w2, y, s, h2 + s + d);",
+      "+\t\tif (bd & LR)",
+      "+\t\t\tXftDrawRect(xd, fg, x + w2 - d, y + h2, w - w2 + d, s);",
+      "+\t\tif (bd & LD)",
+      "+\t\t\tXftDrawRect(xd, fg, x + w2, y + h2 - d, s, h - h2 + d);",
+      "+\t}",
+      "+",
+      "+\t/* double lines - also align with light to form heavy when combined */",
+      "+\tif (double_) {",
+      "+\t\t/*",
+      "+\t\t* going clockwise, for each double-ray: p is additional length",
+      "+\t\t* to the single-ray nearer to the previous direction, and n to",
+      "+\t\t* the next. p and n adjust from the base length to lengths",
+      "+\t\t* which consider other doubles - shorter to avoid intersections",
+      "+\t\t* (p, n), or longer to draw the far-corner texel (n).",
+      "+\t\t*/",
+      "+\t\tint dl = bd & DL, du = bd & DU, dr = bd & DR, dd = bd & DD;",
+      "+\t\tif (dl) {",
+      "+\t\t\tint p = dd ? -s : 0, n = du ? -s : dd ? s : 0;",
+      "+\t\t\tXftDrawRect(xd, fg, x, y + h2 + s, w2 + s + p, s);",
+      "+\t\t\tXftDrawRect(xd, fg, x, y + h2 - s, w2 + s + n, s);",
+      "+\t\t}",
+      "+\t\tif (du) {",
+      "+\t\t\tint p = dl ? -s : 0, n = dr ? -s : dl ? s : 0;",
+      "+\t\t\tXftDrawRect(xd, fg, x + w2 - s, y, s, h2 + s + p);",
+      "+\t\t\tXftDrawRect(xd, fg, x + w2 + s, y, s, h2 + s + n);",
+      "+\t\t}",
+      "+\t\tif (dr) {",
+      "+\t\t\tint p = du ? -s : 0, n = dd ? -s : du ? s : 0;",
+      "+\t\t\tXftDrawRect(xd, fg, x + w2 - p, y + h2 - s, w - w2 + p, s);",
+      "+\t\t\tXftDrawRect(xd, fg, x + w2 - n, y + h2 + s, w - w2 + n, s);",
+      "+\t\t}",
+      "+\t\tif (dd) {",
+      "+\t\t\tint p = dr ? -s : 0, n = dl ? -s : dr ? s : 0;",
+      "+\t\t\tXftDrawRect(xd, fg, x + w2 + s, y + h2 - p, s, h - h2 + p);",
+      "+\t\t\tXftDrawRect(xd, fg, x + w2 - s, y + h2 - n, s, h - h2 + n);",
+      "+\t\t}",
+      "+\t}",
+      "+}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t60\t1",
+    "filetype": ""
+  },
+  {
+    "id": "e7953340-8d91-11e9-a7a1-f9aa2493453a",
+    "content": [
+      "#ffff8a"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t472\t10",
+    "filetype": "conf"
   }
 ]
