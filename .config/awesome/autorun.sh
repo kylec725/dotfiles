@@ -34,4 +34,5 @@ run redshift -c ~/.config/redshift/redshift.conf &
 run mpd &
 
 # Clipboard manager
-run clipster -d &
+run clipster -d --config ~/.config/clipster/clipster.ini &
+clipster --erase-entire-board
