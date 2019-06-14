@@ -1,5 +1,28 @@
 [
   {
+    "id": "47f8aa30-8ee3-11e9-8c45-31880e6fb53a",
+    "content": [
+      "",
+      "# aliases",
+      "alias ls='ls --color=auto'",
+      "alias vim='nvim'",
+      "alias awm='cd ~/.config/awesome'",
+      "alias at='audio-toggle'"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.bashrc\t10\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "4045afe0-8ee3-11e9-8c45-31880e6fb53a",
+    "content": [
+      "PS1='\\[\\e[38;5;195m\\]\\342\\224\\214\\342\\224\\200[\\[\\e[0m\\] \\[\\e[38;5;74m\\]加油\\[\\e[0m\\] \\[\\e[38;5;69m\\]\\u\\[\\e[0m\\] \\[\\e[38;5;74m\\]\\w\\[\\e[0m\\] \\[\\e[38;5;195m\\]]\\n\\[\\e[38;5;195m\\]\\342\\224\\224\\342\\224\\200\\342\\224\\200>\\[\\e[0m\\] '"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.bashrc\t9\t1",
+    "filetype": "sh"
+  },
+  {
     "id": "751a4d60-8edf-11e9-ac6f-a316cbc2ea51",
     "content": [
       "run clipster -d -f ~/.config/clipster/clipster.ini &"
@@ -2188,31 +2211,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t578\t1",
-    "filetype": ""
-  },
-  {
-    "id": "46f73410-8e04-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+\t\tif (mode & ATTR_BOXDRAW) {",
-      "+\t\t\t/* minor shoehorning: boxdraw uses only this ushort */",
-      "+\t\t\tglyphidx = boxdrawindex(&glyphs[i]);",
-      "+\t\t} else {",
-      "+\t\t\t/* Lookup character index with default font. */",
-      "+\t\t\tglyphidx = XftCharIndex(xw.dpy, font->match, rune);",
-      "+\t\t}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t562\t1",
-    "filetype": ""
-  },
-  {
-    "id": "1426eee0-8e04-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+",
-      "+\tboxdraw_xinit(xw.dpy, xw.cmap, xw.draw, xw.vis);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t551\t1",
     "filetype": ""
   }
 ]
