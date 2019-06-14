@@ -13,7 +13,10 @@ function fish_prompt
     printf " ]\n└──> "
 end
 
+# remove greeting message when fish starts
 set fish_greeting
+# remove underline of paths
+set fish_color_valid_path
 
 # aliases
 abbr vim 'nvim'
