@@ -32,6 +32,8 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'vimlab/split-term.vim'
 " fzf
 Plug 'junegunn/fzf.vim'
+" Highlight current line
+Plug 'miyakogi/conoline.vim'
 call plug#end()
 
 "----------------------"
@@ -367,3 +369,10 @@ let g:fzf_colors =
 
 " indent line
 let g:indentLine_char = '▏'
+
+" Conoline settings !!!!!
+let g:conoline_auto_enable = 1
+let g:conoline_color_normal_dark = 'ctermbg=black'
+let g:conoline_color_normal_nr_dark = 'ctermfg=11'
+let g:conoline_color_insert_dark = 'ctermbg=black'
+let g:conoline_color_insert_nr_dark = 'ctermfg=11'

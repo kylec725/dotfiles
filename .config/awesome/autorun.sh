@@ -32,3 +32,6 @@ run redshift -c ~/.config/redshift/redshift.conf &
 
 # Start Music Player Daemon
 run mpd &
+
+# Clipboard manager
+run clipster -d &
