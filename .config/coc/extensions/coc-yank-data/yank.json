@@ -1,5 +1,77 @@
 [
   {
+    "id": "dd5f7f30-8f11-11e9-b44b-0510b0f76942",
+    "content": [
+      "set fish_color_autosuggestion black"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/fish/config.fish\t66\t1",
+    "filetype": "fish"
+  },
+  {
+    "id": "7a7d7890-8f11-11e9-8280-afb4cdf8289a",
+    "content": [
+      "0B090E"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t453\t17",
+    "filetype": "conf"
+  },
+  {
+    "id": "5bfc05d0-8f11-11e9-8280-afb4cdf8289a",
+    "content": [
+      "0B090E"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t454\t15",
+    "filetype": "conf"
+  },
+  {
+    "id": "56d5f7f0-8f11-11e9-8280-afb4cdf8289a",
+    "content": [
+      "background \t\t#0B090E"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/kitty/kitty.conf\t453\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "64ce6f50-8f10-11e9-a724-cddb7aeff5ea",
+    "content": [
+      "#  - Split into lines based on NUL byte"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.bin/fzfclip\t13\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "50c7c970-8f10-11e9-a724-cddb7aeff5ea",
+    "content": [
+      "#  - Remove empty clipboard items"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.bin/fzfclip\t15\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "4d736e50-8f10-11e9-a724-cddb7aeff5ea",
+    "content": [
+      "#  - Add line numbers to clip items"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.bin/fzfclip\t16\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "4b1d2240-8f10-11e9-a724-cddb7aeff5ea",
+    "content": [
+      "# NOTE: This is all done in a single line because bash can't store a NUL byte"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.bin/fzfclip\t17\t1",
+    "filetype": "sh"
+  },
+  {
     "id": "c01c2b60-8f09-11e9-be77-7d501c14d9c8",
     "content": [
       "2e3440"
@@ -2101,85 +2173,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t75\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "b66dc300-8e08-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\twhile (i > 0 && TLINE(y)[i - 1].u == ' ')"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t66\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "a742b480-8e08-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tif (TLINE(y)[i - 1].mode & ATTR_WRAP)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t62\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "98877ed0-8e08-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+static void tscrollup(int, int, int);",
-      "+static void tscrolldown(int, int, int);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t52\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "927e3ce0-8e08-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tLine hist[HISTSIZE]; /* history buffer */",
-      "+\tint histi;    /* history index */",
-      "+\tint scr;      /* scroll back */"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t40\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "7fbe6ee0-8e08-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tLine hist[HISTSIZE]; /* history buffer */",
-      "+\tint histi;    /* history index */",
-      "+\tint scr;      /* scroll back */"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t40\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "73da26f0-8e08-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+#define TLINE(y)\t\t((y) < term.scr ? term.hist[((y) + term.histi - \\",
-      "+\t\t\t\tterm.scr + HISTSIZE + 1) % HISTSIZE] : \\",
-      "+\t\t\t\tterm.line[(y) - term.scr])"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t30\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "661474d0-8e08-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+#define HISTSIZE      2000"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t22\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "da582060-8e05-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+#define HISTSIZE      2000"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t22\t1",
     "filetype": "diff"
   }
 ]
