@@ -19,6 +19,8 @@ set fish_greeting
 set fish_color_valid_path
 # selection color
 set fish_color_search_match --background=black
+# autocomplete text color
+set fish_color_autosuggestion black
 
 # aliases
 abbr vim 'nvim'
