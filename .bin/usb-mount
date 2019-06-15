@@ -1,18 +1,15 @@
 #!/bin/sh
 
-if [[ -d ~/usb ]]
-then
-	if [[ -z $(findmnt /dev/sda1) ]]
-	then
-		sudo -k mount /dev/sda1 ~/usb
-		echo USB Partition Mounted
-	else
-		sudo -k umount ~/usb
-                rmdir ~/usb
-		echo USB Partition Unmounted
-	fi
+if [ -d ~/usb ]; then
+        if [[ -z $(findmnt /dev/sda1) ]]; then
+                sudo -k mount /dev/sda1 ~/usb && echo 'USB Drive Mounted' ||\
+                        (echo 'USB Mount Failed' && rmdir ~/usb)
+        else
+                sudo -k umount ~/usb && echo USB Drive Unmounted &&\
+                rmdir ~/usb || echo 'USB Unmount Failed'
+        fi
 else
-	mkdir ~/usb
-	sudo -k mount /dev/sda1 ~/usb
-	echo USB Partition Mounted
+        mkdir ~/usb
+        sudo -k mount /dev/sda1 ~/usb && echo USB Drive Mounted ||\
+                (echo 'USB Mount Failed' && rmdir ~/usb)
 fi

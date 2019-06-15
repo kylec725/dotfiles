@@ -101,6 +101,10 @@ hi VertSplit cterm=NONE ctermfg=12
 " remove latex concealment
 let g:tex_conceal = ""
 
+" highlight characters after column 80
+highlight OverLength ctermbg=darkgray ctermfg=black
+match OverLength /\%81v.\+/
+
 " indent settings
 set expandtab
 set softtabstop=-1
