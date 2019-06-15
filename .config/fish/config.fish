@@ -31,6 +31,7 @@ abbr um 'usb-mount'
 abbr ga 'git add'
 abbr gc 'git commit'
 abbr gp 'git push'
+abbr gs 'git status'
 # navigation
 abbr pd 'prevd'
 abbr awm 'cd ~/.config/awesome'
