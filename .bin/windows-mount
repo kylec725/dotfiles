@@ -1,18 +1,16 @@
 #!/bin/sh
 
-if [[ -d ~/windows ]]
-then
-	if [[ -z $(findmnt /dev/nvme0n1p3) ]]
-	then
-		sudo -k mount /dev/nvme0n1p3 ~/windows
-		echo Windows Partition Mounted
-	else
-		sudo -k umount ~/windows
-                rmdir ~/windows
-		echo Windows Partition Unmounted
-	fi
+if [ -d ~/windows ]; then
+        if [[ -z $(findmnt /dev/nvme0n1p3) ]]; then
+                sudo -k mount /dev/nvme0n1p3 ~/windows &&\
+                        echo 'Windows Drive Mounted' ||\
+                        (echo 'Windows Mount Failed' && rmdir ~/windows)
+        else
+                sudo -k umount ~/windows && echo Windows Drive Unmounted &&\
+                rmdir ~/windows || echo 'Windows Unmount Failed'
+        fi
 else
-	mkdir ~/windows
-	sudo -k mount /dev/nvme0n1p3 ~/windows
-	echo Windows Partition Mounted
+        mkdir ~/windows
+        sudo -k mount /dev/nvme0n1p3 ~/windows && echo Windows Drive Mounted ||\
+                (echo 'Windows Mount Failed' && rmdir ~/windows)
 fi
