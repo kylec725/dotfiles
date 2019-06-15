@@ -1,5 +1,14 @@
 [
   {
+    "id": "9cf66b30-8f88-11e9-a9a6-6136641835d4",
+    "content": [
+      "\"00\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t156\t35",
+    "filetype": "lua"
+  },
+  {
     "id": "dd5f7f30-8f11-11e9-b44b-0510b0f76942",
     "content": [
       "set fish_color_autosuggestion black"
@@ -2164,15 +2173,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t84\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "bd6e5d40-8e08-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\tprevgp = &TLINE(*y)[*x];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t75\t1",
     "filetype": "diff"
   }
 ]
