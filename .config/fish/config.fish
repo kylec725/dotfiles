@@ -22,6 +22,15 @@ set fish_color_search_match --background=black
 # autocomplete text color
 set fish_color_autosuggestion black
 
+# sudo !! command
+function sudo
+    if test "$argv" = !!
+        eval command sudo $history[1]
+    else
+        command sudo $argv
+    end
+end
+
 # aliases
 abbr vim 'nvim'
 abbr ka 'killall'
