@@ -17,6 +17,8 @@ end
 set fish_greeting
 # remove underline of paths
 set fish_color_valid_path
+# selection color
+set fish_color_search_match --background=black
 
 # aliases
 abbr vim 'nvim'
