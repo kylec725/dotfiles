@@ -1,5 +1,113 @@
 [
   {
+    "id": "4b0bdfc0-8fb6-11e9-8b9a-077b778b4439",
+    "content": [
+      "autocmd FileType python setlocal shiftwidth=4 tabstop=4"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t121\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "3b2151d0-8fb6-11e9-8b9a-077b778b4439",
+    "content": [
+      "autocmd FileType tex setlocal shiftwidth=2 tabstop=2 spell"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t114\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "3565e1c0-8fb6-11e9-8b9a-077b778b4439",
+    "content": [
+      "autocmd FileType ruby setlocal shiftwidth=2 tabstop=2"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t113\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "23b75cb0-8fb6-11e9-8b9a-077b778b4439",
+    "content": [
+      "autocmd FileType python setlocal shiftwidth=4 tabstop=4"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t118\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "1868ec20-8fb6-11e9-8b9a-077b778b4439",
+    "content": [
+      "autocmd FileType javascript setlocal shiftwidth=4 tabstop=4"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t117\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "1009ac40-8fb6-11e9-8b9a-077b778b4439",
+    "content": [
+      "autocmd FileType css setlocal shiftwidth=2 tabstop=2"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t112\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "6ea01bf0-8fb5-11e9-8b9a-077b778b4439",
+    "content": [
+      "autocmd FileType javascript setlocal shiftwidth=4 tabstop=4"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t116\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "57e2ba80-8fb5-11e9-8b9a-077b778b4439",
+    "content": [
+      "autocmd FileType cpp setlocal shiftwidth=4 tabstop=4"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t114\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "1dd631a0-8fb5-11e9-8b9a-077b778b4439",
+    "content": [
+      "autocmd FileType cpp setlocal shiftwidth=4 tabstop=4"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t114\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "0a315ad0-8fb5-11e9-8b9a-077b778b4439",
+    "content": [
+      "autocmd FileType c setlocal shiftwidth=4 tabstop=4"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t113\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "054ac6f0-8fb5-11e9-8b9a-077b778b4439",
+    "content": [
+      "autocmd FileType css setlocal shiftwidth=2 tabstop=2"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t112\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "e2ee3ce0-8fb4-11e9-8b9a-077b778b4439",
+    "content": [
+      "autocmd FileType html setlocal shiftwidth=2"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t111\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "9cf66b30-8f88-11e9-a9a6-6136641835d4",
     "content": [
       "\"00\""
@@ -2024,155 +2132,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t207\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "66404a50-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+tscrollup(int orig, int n, int copyhist)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t200\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "5b2bfc90-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tif (copyhist) {",
-      "+\t\tterm.histi = (term.histi - 1 + HISTSIZE) % HISTSIZE;",
-      "+\t\ttemp = term.hist[term.histi];",
-      "+\t\tterm.hist[term.histi] = term.line[term.bot];",
-      "+\t\tterm.line[term.bot] = temp;",
-      "+\t}",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t185\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "48c264e0-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+kscrolldown(const Arg* a)",
-      "+{",
-      "+\tint n = a->i;",
-      "+",
-      "+\tif (n < 0)",
-      "+\t\tn = term.row + n;",
-      "+",
-      "+\tif (n > term.scr)",
-      "+\t\tn = term.scr;",
-      "+",
-      "+\tif (term.scr > 0) {",
-      "+\t\tterm.scr -= n;",
-      "+\t\tselscroll(0, -n);",
-      "+\t\ttfulldirt();",
-      "+\t}",
-      "+}",
-      "+",
-      "+void",
-      "+kscrollup(const Arg* a)",
-      "+{",
-      "+\tint n = a->i;",
-      "+",
-      "+\tif (n < 0)",
-      "+\t\tn = term.row + n;",
-      "+",
-      "+\tif (term.scr <= HISTSIZE-n) {",
-      "+\t\tterm.scr += n;",
-      "+\t\tselscroll(0, n);",
-      "+\t\ttfulldirt();",
-      "+\t}",
-      "+}",
-      "+",
-      "+void",
-      "+tscrolldown(int orig, int n, int copyhist)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t145\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "33446140-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tArg arg = (Arg) { .i = term.scr };",
-      "+",
-      "+\tkscrolldown(&arg);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t134\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "2dc5ac10-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\tlast = &TLINE(y)[MIN(lastx, linelen-1)];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t126\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "2ab4e9a0-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\tgp = &TLINE(y)[sel.nb.y == y ? sel.nb.x : 0];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t122\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "2340cd10-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\tgp = &TLINE(y)[sel.nb.x];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t118\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "1ca8dfb0-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\t\tif (!(TLINE(*y)[term.col-1].mode"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t109\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "173d8b70-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\t\tif (!(TLINE(*y-1)[term.col-1].mode"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t101\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "e470efc0-8e08-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\t\tif (!(TLINE(*y-1)[term.col-1].mode"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t101\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "dc26e590-8e08-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\tgp = &TLINE(newy)[newx];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t92\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "c81a2530-8e08-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\t\tif (!(TLINE(yt)[xt].mode & ATTR_WRAP))"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t84\t1",
     "filetype": "diff"
   }
 ]

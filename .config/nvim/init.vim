@@ -56,12 +56,6 @@ augroup project
     autocmd BufRead,BufNewFile *.h,*.c set filetype=c
 augroup END
 
-" indent settings
-set expandtab
-set softtabstop=-1
-" auto indent command
-command Indent :normal! MmQgg=G'Qzz
-
 " Mode switch delay
 set timeoutlen=1000 ttimeoutlen=0
 
@@ -106,6 +100,28 @@ hi VertSplit cterm=NONE ctermfg=12
 
 " remove latex concealment
 let g:tex_conceal = ""
+
+" indent settings
+set expandtab
+set softtabstop=-1
+set smarttab
+" auto indent command
+command Indent :normal! MmQgg=G'Qzz
+" filetype indent settings
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType css setlocal shiftwidth=2 tabstop=2
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
+autocmd FileType tex setlocal shiftwidth=2 tabstop=2 spell
+autocmd FileType markdown setlocal spell
+autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2
+autocmd FileType c setlocal shiftwidth=4 tabstop=4
+autocmd FileType cpp setlocal shiftwidth=4 tabstop=4
+autocmd FileType java setlocal shiftwidth=4 tabstop=4
+autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
+autocmd FileType python setlocal shiftwidth=4 tabstop=4
+autocmd FileType vim setlocal shiftwidth=4 tabstop=4
+autocmd FileType lua setlocal shiftwidth=4 tabstop=4
+autocmd FileType fish setlocal shiftwidth=4 tabstop=4 | ALEDisable
 
 "-------------------------"
 " General Vim Keybindings "
