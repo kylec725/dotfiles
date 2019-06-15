@@ -255,11 +255,11 @@ nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 " Goyo !!!!!
 
 function! s:goyo_enter()
-	set wrap
+    set wrap
 endfunction
 
 function! s:goyo_leave()
-	set nowrap
+    set nowrap
 endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
