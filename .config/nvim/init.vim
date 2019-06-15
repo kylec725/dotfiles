@@ -126,6 +126,7 @@ autocmd FileType python setlocal shiftwidth=4 tabstop=4 | match OverLength /\%81
 autocmd FileType vim setlocal shiftwidth=4 tabstop=4 | match OverLength /\%81v.\+/
 autocmd FileType lua setlocal shiftwidth=4 tabstop=4 | match OverLength /\%81v.\+/
 autocmd FileType fish setlocal shiftwidth=4 tabstop=4 | ALEDisable | match OverLength /\%81v.\+/
+autocmd FileType sh setlocal shiftwidth=8 tabstop=8 | match OverLength /\%81v.\+/
 
 "-------------------------"
 " General Vim Keybindings "
