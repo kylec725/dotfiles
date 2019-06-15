@@ -1,5 +1,132 @@
 [
   {
+    "id": "c01c2b60-8f09-11e9-be77-7d501c14d9c8",
+    "content": [
+      "2e3440"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/fish/config.fish\t32\t11",
+    "filetype": "fish"
+  },
+  {
+    "id": "9b303720-8ef9-11e9-b4a3-d12d1cd632f7",
+    "content": [
+      "This is the pinnacle of fiestas, celebrating the legendary avians"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/chickens.md\t2\t1",
+    "filetype": "markdown"
+  },
+  {
+    "id": "9aab0190-8ef9-11e9-b4a3-d12d1cd632f7",
+    "content": [
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/chickens.md\t3\t1",
+    "filetype": "markdown"
+  },
+  {
+    "id": "715936a0-8ef3-11e9-a19f-bd1fec7a7bdf",
+    "content": [
+      "prompt_pwd"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/fish/config.fish\t11\t13",
+    "filetype": "fish"
+  },
+  {
+    "id": "6b011160-8ef3-11e9-a19f-bd1fec7a7bdf",
+    "content": [
+      "prompt_pwd"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/fish/functions/fish_prompt.fish\t36\t78",
+    "filetype": "fish"
+  },
+  {
+    "id": "69e2a910-8ef3-11e9-a19f-bd1fec7a7bdf",
+    "content": [
+      "prompt_pwd"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/fish/functions/fish_prompt.fish\t36\t78",
+    "filetype": "fish"
+  },
+  {
+    "id": "684c78b0-8ef3-11e9-a19f-bd1fec7a7bdf",
+    "content": [
+      "            echo -n -s \"$USER\" @ (prompt_hostname) ' ' \"$__fish_prompt_cwd\" (prompt_pwd) \"$__fish_prompt_normal\" '# '"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/fish/functions/fish_prompt.fish\t36\t1",
+    "filetype": "fish"
+  },
+  {
+    "id": "65d6bdc0-8ef3-11e9-a19f-bd1fec7a7bdf",
+    "content": [
+      "    printf \" \""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/fish/config.fish\t11\t1",
+    "filetype": "fish"
+  },
+  {
+    "id": "635f5520-8ef3-11e9-a19f-bd1fec7a7bdf",
+    "content": [
+      "prompt_pwd"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/fish/functions/fish_prompt.fish\t36\t78",
+    "filetype": "fish"
+  },
+  {
+    "id": "61b4d970-8ef3-11e9-a19f-bd1fec7a7bdf",
+    "content": [
+      "prompt_pwd"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/fish/functions/fish_prompt.fish\t36\t78",
+    "filetype": "fish"
+  },
+  {
+    "id": "4e2e8720-8ef3-11e9-a19f-bd1fec7a7bdf",
+    "content": [
+      "    set_color 5fafd7",
+      "    printf \"加油 \""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/fish/config.fish\t6\t1",
+    "filetype": "fish"
+  },
+  {
+    "id": "38d2ffa0-8ef3-11e9-a19f-bd1fec7a7bdf",
+    "content": [
+      "$__fish_prompt_cwd"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/fish/functions/fish_prompt.fish\t36\t57",
+    "filetype": "fish"
+  },
+  {
+    "id": "215a9a50-8eed-11e9-b7e3-9943fe18137e",
+    "content": [
+      "加油 "
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/fish/config.fish\t5\t19",
+    "filetype": "fish"
+  },
+  {
+    "id": "cd392090-8eec-11e9-b7e3-9943fe18137e",
+    "content": [
+      "┌─[ 加油"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/fish/config.fish\t5\t10",
+    "filetype": "fish"
+  },
+  {
     "id": "47f8aa30-8ee3-11e9-8c45-31880e6fb53a",
     "content": [
       "",
@@ -2054,163 +2181,5 @@
     "regtype": "V",
     "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t22\t1",
     "filetype": "diff"
-  },
-  {
-    "id": "c1d39380-8e05-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+\t{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },",
-      "+\t{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t9\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "41ada330-8e05-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+\tif (xw.pointerisvisible) {",
-      "+\t\tXDefineCursor(xw.dpy, xw.win, xw.bpointer);",
-      "+\t\txsetpointermotion(1);",
-      "+\t\txw.pointerisvisible = 0;",
-      "+\t}",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t80\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "315b04a0-8e05-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+\tif (!set && !xw.pointerisvisible)",
-      "+\t\treturn;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t71\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "206680c0-8e05-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+\tif (!set && !xw.pointerisvisible)",
-      "+\t\treturn;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t71\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "12829840-8e05-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+\tXRecolorCursor(xw.dpy, xw.vpointer, &xmousefg, &xmousebg);",
-      "+\tblankpm = XCreateBitmapFromData(xw.dpy, xw.win, &(char){0}, 1, 1);",
-      "+\txw.bpointer = XCreatePixmapCursor(xw.dpy, blankpm, blankpm,",
-      "+\t\t\t\t\t  &xmousefg, &xmousebg, 0, 0);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t60\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "09433190-8e05-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+\txw.pointerisvisible = 1;",
-      "+\txw.vpointer = XCreateFontCursor(xw.dpy, mouseshape);",
-      "+\tXDefineCursor(xw.dpy, xw.win, xw.vpointer);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t49\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "f9c0b440-8e04-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+\tPixmap blankpm;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t39\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "e91f3260-8e04-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+\tif (!xw.pointerisvisible) {",
-      "+\t\tXDefineCursor(xw.dpy, xw.win, xw.vpointer);",
-      "+\t\txw.pointerisvisible = 1;",
-      "+\t\tif (!IS_SET(MODE_MOUSEMANY))",
-      "+\t\t\txsetpointermotion(0);",
-      "+\t}",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t21\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "da773690-8e04-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+\t/* Here, we use the term *pointer* to differentiate the cursor",
-      "+\t * one sees when hovering the mouse over the terminal from, e.g.,",
-      "+\t * a green rectangle where text would be entered. */",
-      "+\tCursor vpointer, bpointer; /* visible and hidden pointers */",
-      "+\tint pointerisvisible;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t9\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "c1248440-8e04-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+\t/* Here, we use the term *pointer* to differentiate the cursor",
-      "+\t * one sees when hovering the mouse over the terminal from, e.g.,",
-      "+\t * a green rectangle where text would be entered. */",
-      "+\tCursor vpointer, bpointer; /* visible and hidden pointers */",
-      "+\tint pointerisvisible;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor\t9\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "93f2ff60-8e04-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+boxdraw.o: config.h st.h boxdraw_data.h"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t50\t1",
-    "filetype": ""
-  },
-  {
-    "id": "75d46d20-8e04-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+SRC = st.c x.c boxdraw.c"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t42\t1",
-    "filetype": ""
-  },
-  {
-    "id": "5da52c30-8e04-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+\tg.mode &= ATTR_BOLD|ATTR_ITALIC|ATTR_UNDERLINE|ATTR_STRUCK|ATTR_WIDE|ATTR_BOXDRAW;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t592\t1",
-    "filetype": ""
-  },
-  {
-    "id": "51caa840-8e04-11e9-ba4e-3baf28be39db",
-    "content": [
-      "+\tif (base.mode & ATTR_BOXDRAW) {",
-      "+\t\tdrawboxes(winx, winy, width / len, win.ch, fg, bg, specs, len);",
-      "+\t} else {",
-      "+\t\t/* Render the glyphs. */",
-      "+\t\tXftDrawGlyphFontSpec(xw.draw, fg, specs, len);",
-      "+\t}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw\t578\t1",
-    "filetype": ""
   }
 ]

@@ -3,7 +3,11 @@
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
-SETUVAR fish_color_autosuggestion:eceff4
+SETUVAR _fish_abbr_at:audio\x2dtoggle
+SETUVAR _fish_abbr_awm:cd\x20\x7e/\x2econfig/awesome
+SETUVAR _fish_abbr_um:usb\x2dmount
+SETUVAR _fish_abbr_vim:nvim
+SETUVAR fish_color_autosuggestion:black
 SETUVAR fish_color_cancel:b48ead
 SETUVAR fish_color_command:81a1c1
 SETUVAR fish_color_comment:4c566a
@@ -24,8 +28,8 @@ SETUVAR fish_color_search_match:88c0d0
 SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_status:red
 SETUVAR fish_color_user:d8dee9
-SETUVAR fish_color_valid_path:\x2d\x2dunderline
-SETUVAR fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell
+SETUVAR fish_color_valid_path:\x1d
+SETUVAR fish_greeting:\x1d
 SETUVAR fish_key_bindings:fish_default_key_bindings
 SETUVAR fish_pager_color_completion:eceff4
 SETUVAR fish_pager_color_description:5e81ac
