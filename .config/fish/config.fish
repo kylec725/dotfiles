@@ -30,6 +30,7 @@ abbr um 'usb-mount'
 abbr ga 'git add'
 abbr gc 'git commit'
 abbr gp 'git push'
+# change ls to include --group-directories-first in ls.fish
 
 # color theme
 set nord0 2e3440
