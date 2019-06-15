@@ -24,13 +24,16 @@ set fish_color_autosuggestion black
 
 # aliases
 abbr vim 'nvim'
-abbr awm 'cd ~/.config/awesome'
+abbr ka 'killall'
 abbr at 'audio-toggle'
 abbr um 'usb-mount'
+# git
 abbr ga 'git add'
 abbr gc 'git commit'
 abbr gp 'git push'
+# navigation
 abbr pd 'prevd'
+abbr awm 'cd ~/.config/awesome'
 abbr school 'cd ~/school'
 abbr sem 'cd ~/school/fall19'
 # change ls to include --group-directories-first in ls.fish

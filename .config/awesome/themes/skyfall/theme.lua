@@ -154,7 +154,7 @@ theme.wibar_detached = false
 theme.wibar_height = dpi(35)
 theme.wibar_fg = theme.xcolor7
 theme.wibar_bg = theme.xcolor0
-theme.wibar_opacity = 0.8
+theme.wibar_opacity = 1
 theme.wibar_border_color = theme.xcolor0
 theme.wibar_border_width = dpi(0)
 theme.wibar_border_radius = dpi(0)
@@ -197,9 +197,9 @@ theme.tasklist_align = "center"
 
 -- Sidebar
 -- (Sidebar items can be customized in sidebar.lua)
-theme.sidebar_bg = theme.xcolor0
+theme.sidebar_bg = theme.xcolor0 .. "B3"
 theme.sidebar_fg = theme.xcolor7
-theme.sidebar_opacity = 0.7
+theme.sidebar_opacity = 1
 theme.sidebar_position = "right" -- left or right
 theme.sidebar_width = dpi(450)
 theme.sidebar_height = screen_height

@@ -50,7 +50,7 @@ window {
 	orientation: horizontal;
 	children:	 [mainbox];
 	transparency: "real";
-	background-color: #20262CB3; /*base00 + CC (80% opacity)*/
+	background-color: #20262CB3; /*base00 + B3 (70% opacity)*/
 }
 
 mainbox {
