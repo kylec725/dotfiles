@@ -194,11 +194,11 @@ end,
 
 awful.key({ modkey }, "c", function()
     awful.spawn(clipboard,{
-            -- floating = true,
-            -- placement = awful.placement.centered,
-            -- width = 1400,
-            -- height = 800,
-            fullscreen = true
+            floating = true,
+            placement = awful.placement.centered,
+            width = 1400,
+            height = 850,
+            -- fullscreen = true
     }) end,
 {description = "open up clipster history", group = "launcher"}),
 
