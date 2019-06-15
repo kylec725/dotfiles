@@ -183,8 +183,8 @@ nnoremap <S-e> ge
 vnoremap <S-e> ge
 
 " replace the word under cursor
-nnoremap <leader>sr :%s/\<<c-r><c-w>\>//g<left><left>
-nnoremap <leader>sc :%s/\<<c-r><c-w>\>//gc<left><left><left>
+nnoremap <leader>sr :%s/\<<c-r><c-w>\>//gI<left><left><left>
+nnoremap <leader>sc :%s/\<<c-r><c-w>\>//gIc<left><left><left><left>
 
 " auto indent command
 nnoremap <leader>i :Indent<CR>

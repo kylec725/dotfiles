@@ -1,5 +1,59 @@
 [
   {
+    "id": "2c8056b0-8fbd-11e9-9044-a3663394ea4c",
+    "content": [
+      "Windows Drive Unmounted"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/windows-mount\t8\t50",
+    "filetype": "sh"
+  },
+  {
+    "id": "2967f320-8fbd-11e9-9044-a3663394ea4c",
+    "content": [
+      "windows Drive Mounted"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/windows-mount\t13\t51",
+    "filetype": "sh"
+  },
+  {
+    "id": "8818c8a0-8fbc-11e9-8963-2952000b1eb6",
+    "content": [
+      "echo 'USB Mount Failed' && rmdir ~/usb"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/usb-mount\t15\t17",
+    "filetype": "sh"
+  },
+  {
+    "id": "4ad3f820-8fbc-11e9-8963-2952000b1eb6",
+    "content": [
+      "echo 'USB Unmount Failed' && rmdir ~/usb"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/usb-mount\t10\t17",
+    "filetype": "sh"
+  },
+  {
+    "id": "34308750-8fbc-11e9-8963-2952000b1eb6",
+    "content": [
+      "echo 'USB Mount Failed' && rmdir ~/usb"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/usb-mount\t7\t25",
+    "filetype": "sh"
+  },
+  {
+    "id": "b8e65570-8fbb-11e9-8963-2952000b1eb6",
+    "content": [
+      "echo 'USB Mount Failed' && rmdir ~/usb"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/usb-mount\t8\t25",
+    "filetype": "sh"
+  },
+  {
     "id": "4b0bdfc0-8fb6-11e9-8b9a-077b778b4439",
     "content": [
       "autocmd FileType python setlocal shiftwidth=4 tabstop=4"
@@ -2069,69 +2123,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t265\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "a9301020-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\ttscrolldown(term.top, csiescseq.arg[0], 0);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t256\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "9cfc2190-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\ttscrollup(term.top, csiescseq.arg[0], 0);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t251\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "905b1950-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\ttscrollup(term.c.y, n, 0);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t242\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "89f670f0-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\ttscrolldown(term.c.y, n, 0);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t234\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "8062cfc0-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\ttscrollup(term.top, 1, 1);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t225\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "7484c960-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tif (copyhist) {",
-      "+\t\tterm.histi = (term.histi + 1) % HISTSIZE;",
-      "+\t\ttemp = term.hist[term.histi];",
-      "+\t\tterm.hist[term.histi] = term.line[orig];",
-      "+\t\tterm.line[orig] = temp;",
-      "+\t}",
-      "+",
-      "+\tif (term.scr > 0 && term.scr < HISTSIZE)",
-      "+\t\tterm.scr = MIN(term.scr + n, HISTSIZE-1);",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t207\t1",
     "filetype": "diff"
   }
 ]
