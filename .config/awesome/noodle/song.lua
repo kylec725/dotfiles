@@ -19,7 +19,7 @@ local mpd_icon = beautiful.music_icon
 local spotify_icon = beautiful.spotify_icon
 
 -- spotify bool to be shared sidebar.lua and keys.lua
-spotify_bool = true
+spotify_bool = false
 
 local song_title = wibox.widget{
     text = "---------",

@@ -228,7 +228,7 @@ song_title.font = "sans medium 14"
 song_artist.font = "sans italic 12"
 
 -- local playerctl_toggle_icon = wibox.widget.imagebox(beautiful.playerctl_toggle_icon)
-local playerctl_toggle_icon = wibox.widget.imagebox(beautiful.spotify_icon)
+local playerctl_toggle_icon = wibox.widget.imagebox(beautiful.playerctl_toggle_icon)
 playerctl_toggle_icon.resize = true
 playerctl_toggle_icon.forced_width = playerctl_button_size
 playerctl_toggle_icon.forced_height = playerctl_button_size
