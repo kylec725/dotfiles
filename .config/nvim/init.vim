@@ -141,52 +141,39 @@ set ttimeout
 nnoremap <leader>, jk
 
 " map :w and :q
-nnoremap <leader>w :w<CR>
-nnoremap <leader>q :q<CR>
+noremap <leader>w :w<CR>
+noremap <leader>q :q<CR>
 
 " map buffer navigation keys
-nnoremap <silent> - :bprevious<CR>
-nnoremap <silent> = :bnext<CR>
+noremap <silent> - :bprevious<CR>
+noremap <silent> = :bnext<CR>
 " nnoremap <silent> <C-h> :bprevious<CR>
 " nnoremap <silent> <C-l> :bnext<CR>
 nnoremap <silent> <leader>bd :bd<CR>
 
 " map shift + hjkl
-nnoremap <S-h> ^
-nnoremap <S-j> L
-nnoremap <S-k> H
-nnoremap <S-L> g_
-vnoremap <S-h> ^
-vnoremap <S-j> L
-vnoremap <S-k> H
-vnoremap <S-L> g_
+noremap <S-h> ^
+noremap <S-j> L
+noremap <S-k> H
+noremap <S-L> g_
 
 " window navigation keys
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-vnoremap <C-h> <C-w>h
-vnoremap <C-j> <C-w>j
-vnoremap <C-k> <C-w>k
-vnoremap <C-l> <C-w>l
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
 
 " window resize keys
-" nnoremap <silent> <C-y> :vertical resize -5<CR>
-" nnoremap <silent> <C-u> :resize -5<CR>
-" nnoremap <silent> <C-i> :resize +5<CR>
-" nnoremap <silent> <C-o> :vertical resize +5<CR>
-" vnoremap <silent> <C-y> :vertical resize -5<CR>
-" vnoremap <silent> <C-u> :resize -5<CR>
-" vnoremap <silent> <C-i> :resize +5<CR>
-" vnoremap <silent> <C-o> :vertical resize +5<CR>
+" noremap <silent> <C-y> :vertical resize -5<CR>
+" noremap <silent> <C-u> :resize -5<CR>
+" noremap <silent> <C-i> :resize +5<CR>
+" noremap <silent> <C-o> :vertical resize +5<CR>
 
 " make Y behave like C and D
 nnoremap Y y$
 
 " <S-e> to backwards end of word
-nnoremap <S-e> ge
-vnoremap <S-e> ge
+noremap <S-e> ge
 
 " replace the word under cursor
 nnoremap <leader>sr :%s/\<<c-r><c-w>\>//gI<left><left><left>
@@ -194,6 +181,9 @@ nnoremap <leader>sc :%s/\<<c-r><c-w>\>//gIc<left><left><left><left>
 
 " auto indent command
 nnoremap <leader>i :Indent<CR>
+
+" remove search highlighting
+nnoremap <Esc> :noh<CR>
 
 "-----------------"
 " Plugin Settings "
@@ -376,9 +366,7 @@ autocmd  FileType fzf set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 
 nnoremap <leader>f :Files<CR>
-tnoremap <leader>f :Files<CR>
-nnoremap <leader>l <C-\><C-n>:Lines<CR>
-tnoremap <leader>l <C-\><C-n>:Lines<CR>
+nnoremap <leader>l :Lines<CR>
 
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],

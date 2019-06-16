@@ -1,5 +1,87 @@
 [
   {
+    "id": "cdb2c6d0-9080-11e9-9637-3b5d881d02d1",
+    "content": [
+      "noremap <leader>q :q<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t145\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "cbd63ea0-9080-11e9-9637-3b5d881d02d1",
+    "content": [
+      "noremap <leader>w :w<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t144\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "bd7b9f80-9080-11e9-9637-3b5d881d02d1",
+    "content": [
+      "noremap <silent> = :bnext<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t149\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "bc4e1c00-9080-11e9-9637-3b5d881d02d1",
+    "content": [
+      "noremap <silent> - :bprevious<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t148\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "b7d34240-9080-11e9-9637-3b5d881d02d1",
+    "content": [
+      "nnoremap <silent> - :bprevious<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t148\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "b7065550-9080-11e9-9637-3b5d881d02d1",
+    "content": [
+      "nnoremap <silent> - :bprevious<CR>",
+      "nnoremap <silent> = :bnext<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t148\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "80bfa380-907f-11e9-9637-3b5d881d02d1",
+    "content": [
+      ":call TermToggle()<CR>"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t354\t30",
+    "filetype": "vim"
+  },
+  {
+    "id": "36a74910-907f-11e9-8d1f-a5f341b27a45",
+    "content": [
+      "y"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t177\t12",
+    "filetype": "vim"
+  },
+  {
+    "id": "346c9b50-907f-11e9-8d1f-a5f341b27a45",
+    "content": [
+      "Y"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t177\t10",
+    "filetype": "vim"
+  },
+  {
     "id": "259fcdb0-9064-11e9-a951-8546978d73ae",
     "content": [
       "autocmd FileType css setlocal shiftwidth=2 | match OverLength /\\%81v.\\+/"
@@ -2000,88 +2082,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t101\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "eaef4fc0-8e0a-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\t\tif (!(TLINE(*y-1)[term.col-1].mode"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t101\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "d37ad350-8e0a-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\t\tif (!(TLINE(*y-1)[term.col-1].mode"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t101\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "ce1dfe00-8e0a-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\tgp = &TLINE(newy)[newx];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t92\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "c9e25020-8e0a-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\t\tif (!(TLINE(yt)[xt].mode & ATTR_WRAP))"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t84\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "9d8c8540-8e0a-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\t\tif (!(TLINE(yt)[xt].mode & ATTR_WRAP))"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t84\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "95ef0ec0-8e0a-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\tprevgp = &TLINE(*y)[*x];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t75\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "91999750-8e0a-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\twhile (i > 0 && TLINE(y)[i - 1].u == ' ')"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t66\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "87e74a90-8e0a-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tif (TLINE(y)[i - 1].mode & ATTR_WRAP)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t62\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "7cb2a390-8e0a-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+static void tscrollup(int, int, int);",
-      "+static void tscrolldown(int, int, int);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t52\t1",
     "filetype": "diff"
   }
 ]
