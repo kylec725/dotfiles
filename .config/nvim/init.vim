@@ -233,23 +233,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let g:nerd_win = 0
-" function to toggle nerdtree but track window id
-" function! NerdToggle()
-"     NERDTreeToggle
-"     let g:nerd_win = win_getid()
-" endfunction
-" function to switch between last window and nerdtree
-" function! NerdSwitch()
-"     if g:nerd_win == win_getid()
-"         wincmd l
-"     else
-"         wincmd h
-"         " call win_gotoid(g:nerd_win)
-"     endif
-" endfunction
 " nerdtree mappings
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
-" nnoremap <silent> <leader>ns :exec NerdSwitch()<CR>
 
 " Goyo !!!!!
 
