@@ -1,5 +1,5 @@
 set selection-clipboard clipboard
-set font 'monospace normal 16'
+set font 'monospace normal 12'
 set show-scrollbars true
 
 map = zoom in
