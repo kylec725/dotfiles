@@ -1,5 +1,32 @@
 [
   {
+    "id": "762a5df0-8fc8-11e9-a8be-65dc4fa7ab29",
+    "content": [
+      "autocmd FileType fish setlocal shiftwidth=4 tabstop=4 | ALEDisable | match OverLength /\\%81v.\\+/"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t128\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "cbd8a420-8fc6-11e9-84e4-358ff75f2704",
+    "content": [
+      "match OverLength /\\%81v.\\+/"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t106\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "bfb6de00-8fc6-11e9-84e4-358ff75f2704",
+    "content": [
+      "match OverLength /\\%81v.\\+/"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t106\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "2c8056b0-8fbd-11e9-9044-a3663394ea4c",
     "content": [
       "Windows Drive Unmounted"
@@ -2096,33 +2123,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t291\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "c6005070-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tint i, j;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t283\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "bc590030-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\ttscrolldown(term.top, 1, 1);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t274\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "acca9c00-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\ttscrollup(term.top, 1, 1);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t265\t1",
     "filetype": "diff"
   }
 ]
