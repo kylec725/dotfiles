@@ -119,8 +119,8 @@ autocmd FileType ruby setlocal shiftwidth=2 | match OverLength /\%81v.\+/
 autocmd FileType tex setlocal shiftwidth=2 spell
 autocmd FileType markdown setlocal spell
 autocmd FileType ocaml setlocal shiftwidth=2 | match OverLength /\%81v.\+/
-autocmd FileType c setlocal shiftwidth=4 | match OverLength /\%81v.\+/
-autocmd FileType cpp setlocal shiftwidth=4 | match OverLength /\%81v.\+/
+autocmd FileType c setlocal shiftwidth=4 cindent | match OverLength /\%81v.\+/
+autocmd FileType cpp setlocal shiftwidth=4 cindent cinoptions=g0+N-sw | match OverLength /\%81v.\+/
 autocmd FileType java setlocal shiftwidth=4 | match OverLength /\%81v.\+/
 autocmd FileType javascript setlocal shiftwidth=4 | match OverLength /\%81v.\+/
 autocmd FileType python setlocal shiftwidth=4 | match OverLength /\%81v.\+/
