@@ -106,27 +106,25 @@ highlight OverLength ctermbg=darkgray ctermfg=black
 " match OverLength /\%81v.\+/
 
 " indent settings
+set tabstop=8
 set expandtab
 set softtabstop=-1
-set smarttab
 " auto indent command
 command Indent :normal! MmQgg=G'Qzz
 " filetype indent settings
-autocmd FileType html setlocal shiftwidth=2 tabstop=2 | match OverLength /\%81v.\+/
-autocmd FileType css setlocal shiftwidth=2 tabstop=2 | match OverLength /\%81v.\+/
-autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 | match OverLength /\%81v.\+/
-autocmd FileType tex setlocal shiftwidth=2 tabstop=2 spell
+autocmd FileType html setlocal shiftwidth=2 | match OverLength /\%81v.\+/
+autocmd FileType css setlocal shiftwidth=2 | match OverLength /\%81v.\+/
+autocmd FileType ruby setlocal shiftwidth=2 | match OverLength /\%81v.\+/
+autocmd FileType tex setlocal shiftwidth=2 spell
 autocmd FileType markdown setlocal spell
-autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2 | match OverLength /\%81v.\+/
-autocmd FileType c setlocal shiftwidth=4 tabstop=4 | match OverLength /\%81v.\+/
-autocmd FileType cpp setlocal shiftwidth=4 tabstop=4 | match OverLength /\%81v.\+/
-autocmd FileType java setlocal shiftwidth=4 tabstop=4 | match OverLength /\%81v.\+/
-autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 | match OverLength /\%81v.\+/
-autocmd FileType python setlocal shiftwidth=4 tabstop=4 | match OverLength /\%81v.\+/
-autocmd FileType vim setlocal shiftwidth=4 tabstop=4
-autocmd FileType lua setlocal shiftwidth=4 tabstop=4
-autocmd FileType fish setlocal shiftwidth=4 tabstop=4 | ALEDisable
-autocmd FileType sh setlocal shiftwidth=8 tabstop=8 | match OverLength /\%81v.\+/
+autocmd FileType ocaml setlocal shiftwidth=2 | match OverLength /\%81v.\+/
+autocmd FileType c setlocal shiftwidth=4 | match OverLength /\%81v.\+/
+autocmd FileType cpp setlocal shiftwidth=4 | match OverLength /\%81v.\+/
+autocmd FileType java setlocal shiftwidth=4 | match OverLength /\%81v.\+/
+autocmd FileType javascript setlocal shiftwidth=4 | match OverLength /\%81v.\+/
+autocmd FileType python setlocal shiftwidth=4 | match OverLength /\%81v.\+/
+autocmd FileType vim setlocal shiftwidth=4 autocmd FileType lua setlocal shiftwidth=4 autocmd FileType fish setlocal shiftwidth=4 | ALEDisable
+autocmd FileType sh setlocal shiftwidth=8 | match OverLength /\%81v.\+/
 
 "-------------------------"
 " General Vim Keybindings "
