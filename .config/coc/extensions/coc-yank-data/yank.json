@@ -1,5 +1,86 @@
 [
   {
+    "id": "6d61b530-9089-11e9-90d5-e3b387170d91",
+    "content": [
+      "const"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/chess/src/chess.hpp\t8\t1",
+    "filetype": "cpp"
+  },
+  {
+    "id": "67eb6470-9089-11e9-90d5-e3b387170d91",
+    "content": [
+      "const"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/chess/src/chess.hpp\t8\t1",
+    "filetype": "cpp"
+  },
+  {
+    "id": "04decb60-9089-11e9-b634-4b4338e5e0a4",
+    "content": [
+      "const"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/chess/src/chess.hpp\t8\t1",
+    "filetype": "cpp"
+  },
+  {
+    "id": "efa0b6f0-9088-11e9-b50c-219c506b7ef2",
+    "content": [
+      "const"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/chess/src/chess.hpp\t8\t1",
+    "filetype": "cpp"
+  },
+  {
+    "id": "ce91bb80-9088-11e9-94e8-95107bf26e78",
+    "content": [
+      "const"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/chess/src/chess.hpp\t8\t1",
+    "filetype": "cpp"
+  },
+  {
+    "id": "c47d78a0-9088-11e9-9626-b5a3a7ede410",
+    "content": [
+      "<left>"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t183\t37",
+    "filetype": "vim"
+  },
+  {
+    "id": "bf29cb10-9088-11e9-9626-b5a3a7ede410",
+    "content": [
+      "vnoremap <leader>sr y/\\<<C-R>\\>//gI<left><left><left>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t182\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "bb305650-9088-11e9-9626-b5a3a7ede410",
+    "content": [
+      "<left><left><left>"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t179\t43",
+    "filetype": "vim"
+  },
+  {
+    "id": "78216fc0-9088-11e9-a126-51aaec36db88",
+    "content": [
+      "const"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/chess/src/chess.hpp\t8\t1",
+    "filetype": "cpp"
+  },
+  {
     "id": "cdb2c6d0-9080-11e9-9637-3b5d881d02d1",
     "content": [
       "noremap <leader>q :q<CR>"
@@ -1964,124 +2045,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t185\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "4aa7b4c0-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+kscrolldown(const Arg* a)",
-      "+{",
-      "+\tint n = a->i;",
-      "+",
-      "+\tif (n < 0)",
-      "+\t\tn = term.row + n;",
-      "+",
-      "+\tif (n > term.scr)",
-      "+\t\tn = term.scr;",
-      "+",
-      "+\tif (term.scr > 0) {",
-      "+\t\tterm.scr -= n;",
-      "+\t\tselscroll(0, -n);",
-      "+\t\ttfulldirt();",
-      "+\t}",
-      "+}",
-      "+",
-      "+void",
-      "+kscrollup(const Arg* a)",
-      "+{",
-      "+\tint n = a->i;",
-      "+",
-      "+\tif (n < 0)",
-      "+\t\tn = term.row + n;",
-      "+",
-      "+\tif (term.scr <= HISTSIZE-n) {",
-      "+\t\tterm.scr += n;",
-      "+\t\tselscroll(0, n);",
-      "+\t\ttfulldirt();",
-      "+\t}",
-      "+}",
-      "+",
-      "+void",
-      "+tscrolldown(int orig, int n, int copyhist)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t145\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "3e4a9350-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tArg arg = (Arg) { .i = term.scr };",
-      "+",
-      "+\tkscrolldown(&arg);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t134\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "2f4f4760-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tArg arg = (Arg) { .i = term.scr };",
-      "+",
-      "+\tkscrolldown(&arg);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t134\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "25b8c000-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\tlast = &TLINE(y)[MIN(lastx, linelen-1)];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t126\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "2045a390-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\tgp = &TLINE(y)[sel.nb.y == y ? sel.nb.x : 0];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t122\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "1b8116a0-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\tgp = &TLINE(y)[sel.nb.x];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t118\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "0e89ff20-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\tgp = &TLINE(y)[sel.nb.x];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t118\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "09f64630-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\t\tif (!(TLINE(*y)[term.col-1].mode"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t109\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "0624cbd0-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\t\tif (!(TLINE(*y-1)[term.col-1].mode"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t101\t1",
     "filetype": "diff"
   }
 ]

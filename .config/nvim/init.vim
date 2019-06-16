@@ -178,6 +178,9 @@ noremap <S-e> ge
 " replace the word under cursor
 nnoremap <leader>sr :%s/\<<c-r><c-w>\>//gI<left><left><left>
 nnoremap <leader>sc :%s/\<<c-r><c-w>\>//gIc<left><left><left><left>
+" replace visual selection
+vnoremap <leader>sr y:%s/\<<c-r>"\>//gI<left><left><left>
+vnoremap <leader>sc y:%s/\<<c-r>"\>//gIc<left><left><left><left>
 
 " auto indent command
 nnoremap <leader>i :Indent<CR>

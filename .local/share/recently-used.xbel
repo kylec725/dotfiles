@@ -533,12 +533,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/kyle/.screenlayout/sideview.sh" added="2019-06-15T20:52:05Z" modified="2019-06-16T05:37:14Z" visited="2019-06-15T20:52:05Z">
+  <bookmark href="file:///home/kyle/.screenlayout/sideview.sh" added="2019-06-15T20:52:05Z" modified="2019-06-16T22:38:22Z" visited="2019-06-15T20:52:05Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/x-shellscript"/>
         <bookmark:applications>
-          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-16T05:37:14Z" count="3"/>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-16T22:38:22Z" count="4"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -583,7 +583,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/kyle/chess/src/chess.hpp" added="2019-06-16T20:47:35Z" modified="2019-06-16T20:47:35Z" visited="2019-06-16T20:47:35.705281Z">
+  <bookmark href="file:///home/kyle/chess/src/chess.hpp" added="2019-06-16T20:47:35Z" modified="2019-06-16T20:47:35Z" visited="2019-06-16T20:47:35Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/x-c++hdr"/>
