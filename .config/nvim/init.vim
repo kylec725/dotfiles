@@ -114,6 +114,7 @@ command Indent :normal! MmQgg=G'Qzz
 " filetype indent settings
 autocmd FileType html setlocal shiftwidth=2 | match OverLength /\%81v.\+/
 autocmd FileType css setlocal shiftwidth=2 | match OverLength /\%81v.\+/
+autocmd FileType json setlocal shiftwidth=2
 autocmd FileType ruby setlocal shiftwidth=2 | match OverLength /\%81v.\+/
 autocmd FileType tex setlocal shiftwidth=2 spell
 autocmd FileType markdown setlocal spell
