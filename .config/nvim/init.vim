@@ -134,6 +134,10 @@ autocmd FileType sh setlocal shiftwidth=8 | match OverLength /\%81v.\+/
 
 " map the leader key
 let mapleader=','
+" remove leader timeout
+set notimeout
+set ttimeout
+nnoremap <leader>, jk
 
 " map :w and :q
 nnoremap <leader>w :w<CR>
@@ -285,12 +289,12 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " Ale !!!!!
 
-nmap <silent> <leader>k <Plug>(ale_previous_wrap)
-nmap <silent> <leader>j <Plug>(ale_next_wrap)
+nnoremap <LEADER>ad :ALEDetail<CR>
+nmap <leader>aj <Plug>(ale_next_wrap)
+nmap <leader>ak <Plug>(ale_previous_wrap)
 " lint after exiting insert mode
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
-nnoremap <LEADER>a :ALEDetail<CR>
 
 " Noscrollbar !!!!!
 
@@ -304,8 +308,8 @@ call airline#add_statusline_func('Noscrollbar')
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>ga :Gwrite<CR>
 nnoremap <leader>gc :Gcommit<CR>
-nmap <leader>gn <Plug>GitGutterNextHunk
-nmap <leader>gp <Plug>GitGutterPrevHunk
+nmap <leader>gj <Plug>GitGutterNextHunk
+nmap <leader>gk <Plug>GitGutterPrevHunk
 " nnoremap <leader>gu :Gpush<CR>
 " nnoremap <leader>gd :Gpull<CR>
 
