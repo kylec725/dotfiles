@@ -299,11 +299,13 @@ function! Noscrollbar(...)
 endfunction
 call airline#add_statusline_func('Noscrollbar')
 
-" Fugitive !!!!!
+" Git Commands - Fugitive and Gitgutter !!!!!
 
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>ga :Gwrite<CR>
 nnoremap <leader>gc :Gcommit<CR>
+nmap <leader>gn <Plug>GitGutterNextHunk
+nmap <leader>gp <Plug>GitGutterPrevHunk
 " nnoremap <leader>gu :Gpush<CR>
 " nnoremap <leader>gd :Gpull<CR>
 

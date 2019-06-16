@@ -627,14 +627,14 @@ jumplist=
 [/home/kyle/resume/resume.pdf]
 page=0
 offset=0
-zoom=0.82644628099173545
+zoom=0.82644628099173523
 rotate=0
 pages-per-row=1
 first-page-column=1:2
 page-right-to-left=false
-position-x=0.046464646464646431
-position-y=0.42804178746685601
-time=1560556264
+position-x=0.95353535353535357
+position-y=0.40632318501170961
+time=1560654602
 jumplist=
 
 [/home/kyle/school/bennyfranklin/bennyfranklin.pdf]
@@ -1182,3 +1182,42 @@ position-x=0.13314967860422411
 position-y=0.89701744135903949
 time=1560629259
 jumplist=3 1.2056194125159643 0.87509247842170157 0 0.5 0.125 
+
+[/home/kyle/usb/resume/resume.pdf]
+page=0
+offset=0
+zoom=0.6535483870967741
+rotate=0
+pages-per-row=1
+first-page-column=1:2
+page-right-to-left=false
+position-x=0.5
+position-y=0.5
+time=1560641570
+jumplist=
+
+[/home/kyle/downloads/affordable agreement.pdf]
+page=0
+offset=0
+zoom=0.67615291262135924
+rotate=0
+pages-per-row=1
+first-page-column=1:2
+page-right-to-left=false
+position-x=0.5
+position-y=0.45426008968609866
+time=1560649682
+jumplist=
+
+[/tmp/mozilla_kyle0/affordable agreement.pdf]
+page=0
+offset=0
+zoom=0.6146844660194174
+rotate=0
+pages-per-row=1
+first-page-column=1:2
+page-right-to-left=false
+position-x=0.5
+position-y=0.5
+time=1560652076
+jumplist=

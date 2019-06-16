@@ -1,5 +1,14 @@
 [
   {
+    "id": "98252ca0-904f-11e9-8f4a-7ff6cb55d913",
+    "content": [
+      "nnoremap <leader>gn <Plug>GitGutterNextHunk"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t307\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "a25adf00-8ff3-11e9-94b4-6b7fbf9298ec",
     "content": [
       "❯"
@@ -2068,17 +2077,6 @@
   },
   {
     "id": "6adf7f80-8e0a-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tLine hist[HISTSIZE]; /* history buffer */",
-      "+\tint histi;    /* history index */",
-      "+\tint scr;      /* scroll back */"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t40\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "63e6d480-8e0a-11e9-9492-dbec5a574ae2",
     "content": [
       "+\tLine hist[HISTSIZE]; /* history buffer */",
       "+\tint histi;    /* history index */",

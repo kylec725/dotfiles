@@ -423,12 +423,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/kyle/resume/resume.pdf" added="2019-06-12T04:33:10Z" modified="2019-06-12T05:15:38Z" visited="2019-06-12T04:33:10Z">
+  <bookmark href="file:///home/kyle/resume/resume.pdf" added="2019-06-12T04:33:10Z" modified="2019-06-16T02:46:31Z" visited="2019-06-12T04:33:10Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/pdf"/>
         <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-12T05:15:38Z" count="2"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-16T02:46:31Z" count="3"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -493,12 +493,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/kyle/downloads/KyleChan_AFFORDABLE_agreement.pdf" added="2019-06-15T02:37:14Z" modified="2019-06-15T02:37:15Z" visited="2019-06-15T02:37:14Z">
+  <bookmark href="file:///home/kyle/downloads/KyleChan_AFFORDABLE_agreement.pdf" added="2019-06-15T02:37:14Z" modified="2019-06-16T00:43:41Z" visited="2019-06-15T02:37:14Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/pdf"/>
         <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-15T02:37:15Z" count="2"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-16T00:43:41Z" count="3"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -509,6 +509,76 @@
         <mime:mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
         <bookmark:applications>
           <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-15T05:59:27Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/.screenlayout/sideview" added="2019-06-15T20:51:50Z" modified="2019-06-15T20:51:50Z" visited="2019-06-15T20:51:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-15T20:51:50Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/.screenlayout/mirrorview" added="2019-06-15T20:51:59Z" modified="2019-06-15T20:51:59Z" visited="2019-06-15T20:52:00Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-15T20:51:59Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/.screenlayout/sideview.sh" added="2019-06-15T20:52:05Z" modified="2019-06-16T05:37:14Z" visited="2019-06-15T20:52:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-16T05:37:14Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/downloads/affordable%20agreement.pdf" added="2019-06-16T01:36:27Z" modified="2019-06-16T02:27:12Z" visited="2019-06-16T01:36:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-16T02:27:12Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/dinerprofilepic.jpg" added="2019-06-16T02:27:22Z" modified="2019-06-16T02:27:22Z" visited="2019-06-16T02:27:22Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-16T02:27:22Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_kyle0/affordable%20agreement.pdf" added="2019-06-16T02:27:54Z" modified="2019-06-16T02:27:54Z" visited="2019-06-16T02:27:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-16T02:27:54Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/.screenlayout/mirrorview.sh" added="2019-06-16T05:37:30Z" modified="2019-06-16T05:37:30Z" visited="2019-06-16T05:37:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-16T05:37:30Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
