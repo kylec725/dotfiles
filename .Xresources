@@ -6,7 +6,7 @@
 ! ╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝╚══════╝░╚═════╝░░╚═════╝░╚═╝░░╚═╝░╚═════╝╚══════╝╚══════╝
 !
 ! -----------------------------------
-*.font:	Inconsolata for Powerline:size=12:antialias=true:autohint=true;
+*.font:	Meslo LG S DZ for Powerline:size=12:antialias=true:autohint=true;
 /* *.alpha: 10 */
 /* Xft.dpi: 144 */
 
