@@ -123,7 +123,9 @@ autocmd FileType cpp setlocal shiftwidth=4 | match OverLength /\%81v.\+/
 autocmd FileType java setlocal shiftwidth=4 | match OverLength /\%81v.\+/
 autocmd FileType javascript setlocal shiftwidth=4 | match OverLength /\%81v.\+/
 autocmd FileType python setlocal shiftwidth=4 | match OverLength /\%81v.\+/
-autocmd FileType vim setlocal shiftwidth=4 autocmd FileType lua setlocal shiftwidth=4 autocmd FileType fish setlocal shiftwidth=4 | ALEDisable
+autocmd FileType vim setlocal shiftwidth=4
+autocmd FileType lua setlocal shiftwidth=4
+autocmd FileType fish setlocal shiftwidth=4 | ALEDisable
 autocmd FileType sh setlocal shiftwidth=8 | match OverLength /\%81v.\+/
 
 "-------------------------"
