@@ -10,7 +10,7 @@ function fish_prompt
     set_color 5fafd7
     printf (pwd | sed 's,^/home/kyle,~,')
     set_color d7ffff
-    printf " ]\n└──> "
+    printf " ]\n└──❯ "
 end
 
 # remove greeting message when fish starts

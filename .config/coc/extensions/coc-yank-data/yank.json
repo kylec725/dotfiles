@@ -1,5 +1,76 @@
 [
   {
+    "id": "a25adf00-8ff3-11e9-94b4-6b7fbf9298ec",
+    "content": [
+      "❯"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/fish/config.fish\t13\t26",
+    "filetype": "fish"
+  },
+  {
+    "id": "791895b0-8ff3-11e9-a93c-a5a905a0bc7f",
+    "content": [
+      "❯"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/fish/functions/fish_prompt.fish\t8\t58",
+    "filetype": "fish"
+  },
+  {
+    "id": "b242f9c0-8fe4-11e9-9bb9-bf5202b3cdaf",
+    "content": [
+      "🐟"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/fish/config.fish\t13\t27",
+    "filetype": "fish"
+  },
+  {
+    "id": "06a35570-8fde-11e9-abd4-d5651f07871c",
+    "content": [
+      "Kyle is a 3rd year undergraduate student at the University of Maryland, College Park where he studies Computer Science and Mathematics.",
+      "He aims to utilize his passion for coding and math to develop software solutions that are both accessible and powerful. In his off-time,",
+      "Kyle practices chinese yo-yo, wushu, and dance through various clubs at the University of Maryland such as CP Diabolo, TerpWushu, and Tianyi."
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/bio\t1\t1",
+    "filetype": ""
+  },
+  {
+    "id": "52ed2b50-8fdd-11e9-abd4-d5651f07871c",
+    "content": [
+      "Kyle is a 3rd year undergraduate student at the University of Maryland, College Park where he studies Computer Science and Mathematics.",
+      "He aims to utilize his passion for coding and math to develop software solutions that are both accessible and powerful. In his off-time,",
+      "Kyle practices chinese yo-yo, wushu, and dance through various clubs at the University of Maryland such as CP Diabolo, TerpWushu, and Tianyi."
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/bio\t1\t1",
+    "filetype": ""
+  },
+  {
+    "id": "0fc71340-8fdd-11e9-b52b-6d1258a1a282",
+    "content": [
+      "Kyle is a 3rd year undergraduate student at the University of Maryland, College",
+      "Park where he is studying Computer Science and Mathematics. He aims to utilize",
+      "his passion for coding and math to develop accessible software solutions. In",
+      "his off-time, Kyle practices chinese yo-yo, wushu, and dance through various",
+      "clubs at the University of Maryland such as CP Diabolo, TerpWushu, and Tianyi."
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/bio\t1\t1",
+    "filetype": ""
+  },
+  {
+    "id": "9996e150-8fdc-11e9-b52b-6d1258a1a282",
+    "content": [
+      "Kyle is a 3rd year undergraduate student at the University of Maryland, College Park where he is studying Computer Science and Mathematics. He aims to utilize his passion for coding and math to develop accessible software solutions. In his off-time, Kyle practices chinese yo-yo, wushu, and dance through various clubs at the University of Maryland."
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/bio\t1\t1",
+    "filetype": ""
+  },
+  {
     "id": "762a5df0-8fc8-11e9-a8be-65dc4fa7ab29",
     "content": [
       "autocmd FileType fish setlocal shiftwidth=4 tabstop=4 | ALEDisable | match OverLength /\\%81v.\\+/"
@@ -2015,114 +2086,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t40\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "5da4a840-8e0a-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+#define TLINE(y)\t\t((y) < term.scr ? term.hist[((y) + term.histi - \\",
-      "+\t\t\t\tterm.scr + HISTSIZE + 1) % HISTSIZE] : \\",
-      "+\t\t\t\tterm.line[(y) - term.scr])"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t30\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "55f68ff0-8e0a-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+#define HISTSIZE      2000"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t22\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "2a7f3e30-8e0a-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+kscrolldown(const Arg* a)",
-      "+{",
-      "+\tint n = a->i;",
-      "+",
-      "+\tif (n < 0)",
-      "+\t\tn = term.row + n;",
-      "+",
-      "+\tif (n > term.scr)",
-      "+\t\tn = term.scr;",
-      "+",
-      "+\tif (term.scr > 0) {",
-      "+\t\tterm.scr -= n;",
-      "+\t\tselscroll(0, -n);",
-      "+\t\ttfulldirt();",
-      "+\t}",
-      "+}",
-      "+",
-      "+void",
-      "+kscrollup(const Arg* a)",
-      "+{",
-      "+\tint n = a->i;",
-      "+",
-      "+\tif (n < 0)",
-      "+\t\tn = term.row + n;",
-      "+",
-      "+\tif (term.scr <= HISTSIZE-n) {",
-      "+\t\tterm.scr += n;",
-      "+\t\tselscroll(0, n);",
-      "+\t\ttfulldirt();",
-      "+\t}",
-      "+}",
-      "+",
-      "+void",
-      "+tscrolldown(int orig, int n, int copyhist)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t145\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "f3a6de40-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+void kscrolldown(const Arg *);",
-      "+void kscrollup(const Arg *);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t331\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "e459efe0-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tif (term.scr == 0)",
-      "+\t\txdrawcursor(cx, term.c.y, term.line[term.c.y][cx],",
-      "+\t\t\t\tterm.ocx, term.ocy, term.line[term.ocy][term.ocx]);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t317\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "daa05020-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\txdrawline(TLINE(y), x1, y, x2);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t307\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "ce195f90-8e09-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tfor (i = 0; i < HISTSIZE; i++) {",
-      "+\t\tterm.hist[i] = xrealloc(term.hist[i], col * sizeof(Glyph));",
-      "+\t\tfor (j = mincol; j < col; j++) {",
-      "+\t\t\tterm.hist[i][j] = term.c.attr;",
-      "+\t\t\tterm.hist[i][j].u = ' ';",
-      "+\t\t}",
-      "+\t}",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t291\t1",
     "filetype": "diff"
   }
 ]
