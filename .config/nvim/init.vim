@@ -81,6 +81,11 @@ set spelllang=en
 set ignorecase
 set smartcase
 
+" search match color
+hi Search ctermbg=yellow ctermfg=black
+" highlight current search match in different color
+hi IncSearch ctermbg=black ctermfg=magenta
+
 " Set folding to indent
 set foldmethod=indent
 set foldlevelstart=99

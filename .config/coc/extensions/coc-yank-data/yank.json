@@ -1,5 +1,14 @@
 [
   {
+    "id": "2997f100-90b3-11e9-b1fa-bdad763be6fb",
+    "content": [
+      "nnoremap"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t187\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "6d61b530-9089-11e9-90d5-e3b387170d91",
     "content": [
       "const"
@@ -2019,21 +2028,6 @@
   },
   {
     "id": "83953910-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tif (copyhist) {",
-      "+\t\tterm.histi = (term.histi - 1 + HISTSIZE) % HISTSIZE;",
-      "+\t\ttemp = term.hist[term.histi];",
-      "+\t\tterm.hist[term.histi] = term.line[term.bot];",
-      "+\t\tterm.line[term.bot] = temp;",
-      "+\t}",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t185\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "605246a0-8e0b-11e9-9492-dbec5a574ae2",
     "content": [
       "+\tif (copyhist) {",
       "+\t\tterm.histi = (term.histi - 1 + HISTSIZE) % HISTSIZE;",
