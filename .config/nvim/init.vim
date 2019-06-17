@@ -63,7 +63,7 @@ set timeoutlen=1000 ttimeoutlen=0
 set updatetime=200
 
 " Preview search and replace
-set inccommand=split
+set inccommand=nosplit
 
 " Line numbers
 set number relativenumber
