@@ -138,6 +138,7 @@ let mapleader=','
 " remove leader timeout
 set notimeout
 set ttimeout
+" cancel leader command
 nnoremap <leader>, jk
 
 " map :w and :q
@@ -145,8 +146,8 @@ noremap <leader>w :w<CR>
 noremap <leader>q :q<CR>
 
 " map buffer navigation keys
-noremap <silent> - :bprevious<CR>
-noremap <silent> = :bnext<CR>
+nnoremap <silent> - :bprevious<CR>
+nnoremap <silent> = :bnext<CR>
 " nnoremap <silent> <C-h> :bprevious<CR>
 " nnoremap <silent> <C-l> :bnext<CR>
 nnoremap <silent> <leader>bd :bd<CR>
