@@ -1,6 +1,7 @@
 #!/bin/sh
 
 dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Pause
+mpc pause
 
 i3lock --nofork --blur=10 \
     --insidecolor=373445cc --ringcolor=ffffffcc --line-uses-inside \
