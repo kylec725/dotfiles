@@ -192,7 +192,7 @@ vnoremap <leader>sc y:%s/\<<c-r>"\>//gIc<left><left><left><left>
 nnoremap <leader>i :Indent<CR>
 
 " remove search highlighting
-nnoremap <Esc> :noh<CR>
+nnoremap <silent> <Esc> :noh<CR>
 
 "-----------------"
 " Plugin Settings "
