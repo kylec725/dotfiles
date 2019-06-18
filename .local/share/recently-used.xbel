@@ -3,52 +3,12 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///tmp/mozilla_kyle0/SYL-SPR19-289I-1A.pdf" added="2019-04-09T01:03:13Z" modified="2019-05-17T18:02:43Z" visited="2019-04-09T01:03:13Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-17T18:02:43Z" count="3"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
   <bookmark href="file:///tmp/mozilla_kyle0/Global%20Citizenship.pdf" added="2019-04-30T22:10:29Z" modified="2019-05-21T02:24:30Z" visited="2019-04-30T22:10:29Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/pdf"/>
         <bookmark:applications>
           <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-21T02:24:30Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///tmp/mozilla_kyle0/BMGT289I-SPR19-Part2.pdf" added="2019-05-13T18:27:23Z" modified="2019-05-17T03:27:35Z" visited="2019-05-13T18:27:24Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-17T03:27:35Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///tmp/mozilla_kyle0/BMGT289-SPR19-Part1-A.pdf" added="2019-05-17T03:27:16Z" modified="2019-05-17T03:27:16Z" visited="2019-05-17T03:27:16Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-17T03:27:16Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///tmp/mozilla_kyle0/BMGT289I-SPR19-Part1-B.pdf" added="2019-05-17T03:27:25Z" modified="2019-05-17T03:27:25Z" visited="2019-05-17T03:27:25Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-17T03:27:25Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -533,12 +493,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/kyle/.screenlayout/sideview.sh" added="2019-06-15T20:52:05Z" modified="2019-06-17T02:39:54Z" visited="2019-06-15T20:52:05Z">
+  <bookmark href="file:///home/kyle/.screenlayout/sideview.sh" added="2019-06-15T20:52:05Z" modified="2019-06-18T15:44:49Z" visited="2019-06-15T20:52:05Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/x-shellscript"/>
         <bookmark:applications>
-          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-17T02:39:54Z" count="5"/>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-18T15:44:49Z" count="8"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -589,6 +549,16 @@
         <mime:mime-type type="text/x-c++hdr"/>
         <bookmark:applications>
           <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-16T20:47:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/pictures/profilepic.jpg" added="2019-06-18T01:59:21Z" modified="2019-06-18T01:59:21Z" visited="2019-06-18T01:59:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-18T01:59:21Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
