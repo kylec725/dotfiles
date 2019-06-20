@@ -1,5 +1,14 @@
 [
   {
+    "id": "62e64c40-931f-11e9-87c1-db86f93ef85c",
+    "content": [
+      "\"hello world\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/practice.py\t3\t7",
+    "filetype": "python"
+  },
+  {
     "id": "2997f100-90b3-11e9-b1fa-bdad763be6fb",
     "content": [
       "nnoremap"
@@ -2024,21 +2033,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t200\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "83953910-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tif (copyhist) {",
-      "+\t\tterm.histi = (term.histi - 1 + HISTSIZE) % HISTSIZE;",
-      "+\t\ttemp = term.hist[term.histi];",
-      "+\t\tterm.hist[term.histi] = term.line[term.bot];",
-      "+\t\tterm.line[term.bot] = temp;",
-      "+\t}",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t185\t1",
     "filetype": "diff"
   }
 ]
