@@ -44,10 +44,8 @@ call plug#end()
 set clipboard=unnamedplus
 
 " Important settings
-syntax on             " Enable syntax highlighting
-filetype on           " Enable filetype detection
-filetype indent on    " Enable filetype-specific indenting
-filetype plugin on    " Enable filetype-specific plugins
+syntax on                   " Enable syntax highlighting
+filetype plugin indent on   " Enable filetype-specific plugins, indents, and detection
 set hidden
 
 " enable .h files to be set to filetype c
