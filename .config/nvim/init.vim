@@ -170,10 +170,10 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
 " window resize keys
-" noremap <silent> <C-y> :vertical resize -5<CR>
-" noremap <silent> <C-u> :resize -5<CR>
-" noremap <silent> <C-i> :resize +5<CR>
-" noremap <silent> <C-o> :vertical resize +5<CR>
+noremap <silent> <C-Left> :vertical resize -5<CR>
+noremap <silent> <C-Down> :resize -5<CR>
+noremap <silent> <C-Up> :resize +5<CR>
+noremap <silent> <C-Right> :vertical resize +5<CR>
 
 " make Y behave like C and D
 nnoremap Y y$
