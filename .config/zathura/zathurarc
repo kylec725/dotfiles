@@ -2,6 +2,7 @@ set selection-clipboard clipboard
 set font 'monospace normal 12'
 set show-scrollbars true
 
+unmap q
 map = zoom in
 map + zoom 0
 map p print
