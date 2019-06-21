@@ -3,66 +3,6 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///tmp/mozilla_kyle0/Global%20Citizenship.pdf" added="2019-04-30T22:10:29Z" modified="2019-05-21T02:24:30Z" visited="2019-04-30T22:10:29Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-21T02:24:30Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///tmp/mozilla_kyle0/Holding%20up%20the%20Mirror_%20Recognizing%20and%20Dismantling%20the%20%E2%80%9CWhite%20Savior%20Complex%E2%80%9D.pdf" added="2019-05-21T01:30:17Z" modified="2019-05-21T01:30:17Z" visited="2019-05-21T01:30:17Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-21T01:30:17Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/kyle/school/bsgc398/final/final.pdf" added="2019-05-21T03:45:48Z" modified="2019-05-21T03:45:48Z" visited="2019-05-21T03:45:48Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-21T03:45:48Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/kyle/school/stat400/Practice%20Final%20Exam%20Spring%202019.pdf" added="2019-05-21T04:04:36Z" modified="2019-05-21T04:04:36Z" visited="2019-05-21T04:04:36Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-21T04:04:36Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///tmp/mozilla_kyle0/Stat400PracticeFinalSpring2019.pdf" added="2019-05-21T04:05:25Z" modified="2019-05-21T04:05:25Z" visited="2019-05-21T04:05:25Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-21T04:05:25Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/kyle/school/stat400/Stat400PracticeFinalSpring2019.pdf" added="2019-05-21T04:05:34Z" modified="2019-05-21T04:05:34Z" visited="2019-05-21T04:05:34Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-21T04:05:34Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
   <bookmark href="file:///tmp/mozilla_kyle0/SolutionstoPracticeFinalSpring2019.pdf" added="2019-05-21T06:57:02Z" modified="2019-05-21T06:57:02Z" visited="2019-05-21T06:57:02Z">
     <info>
       <metadata owner="http://freedesktop.org">
@@ -493,12 +433,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/kyle/.screenlayout/sideview.sh" added="2019-06-15T20:52:05Z" modified="2019-06-19T05:19:48Z" visited="2019-06-15T20:52:05Z">
+  <bookmark href="file:///home/kyle/.screenlayout/sideview.sh" added="2019-06-15T20:52:05Z" modified="2019-06-21T04:12:54Z" visited="2019-06-15T20:52:05Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/x-shellscript"/>
         <bookmark:applications>
-          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-19T05:19:48Z" count="9"/>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-21T04:12:54Z" count="10"/>
         </bookmark:applications>
       </metadata>
     </info>

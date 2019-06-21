@@ -632,9 +632,9 @@ rotate=0
 pages-per-row=1
 first-page-column=1:2
 page-right-to-left=false
-position-x=0.95353535353535357
-position-y=0.40632318501170961
-time=1560654602
+position-x=0.046464646464646431
+position-y=0.39539422326307572
+time=1561138923
 jumplist=
 
 [/home/kyle/school/bennyfranklin/bennyfranklin.pdf]
@@ -1236,7 +1236,7 @@ time=1560914680
 jumplist=
 
 [/home/kyle/AffordableServerOSU/Developers_guide.pdf]
-page=4
+page=2
 offset=0
 zoom=0.81814502427184477
 rotate=0
@@ -1244,6 +1244,6 @@ pages-per-row=1
 first-page-column=1:2
 page-right-to-left=false
 position-x=0.5
-position-y=0.33876324549691117
-time=1561002601
-jumplist=
+position-y=0.20205334787214643
+time=1561140392
+jumplist=4 0.99055613850996849 0.33664516236214814 0 0.5 0.02683870284018652 
