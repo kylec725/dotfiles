@@ -194,6 +194,9 @@ nnoremap <leader>i :Indent<CR>
 " remove search highlighting
 nnoremap <silent> <Esc> :noh<CR>
 
+" insert empty lines
+nnoremap <silent><CR> o<Esc>k
+
 "-----------------"
 " Plugin Settings "
 "-----------------"
