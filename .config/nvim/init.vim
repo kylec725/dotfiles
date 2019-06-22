@@ -203,6 +203,7 @@ nnoremap <silent><CR> o<Esc>k
 
 let g:airline_extensions = ["tabline", "branch", "ale", "hunks"]
 set laststatus=2
+set noshowmode
 " let g:airline_theme='term'
 let g:airline_theme='nord'
 let g:airline_detect_paste=1
