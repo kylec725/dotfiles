@@ -3,16 +3,6 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///tmp/mozilla_kyle0/SolutionstoPracticeFinalSpring2019.pdf" added="2019-05-21T06:57:02Z" modified="2019-05-21T06:57:02Z" visited="2019-05-21T06:57:02Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-21T06:57:02Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
   <bookmark href="file:///home/kyle/downloads/clang+llvm-8.0.0-aarch64-linux-gnu.tar.xz" added="2019-05-25T03:49:19Z" modified="2019-05-25T03:50:11Z" visited="2019-05-25T03:49:20Z">
     <info>
       <metadata owner="http://freedesktop.org">
@@ -433,12 +423,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/kyle/.screenlayout/sideview.sh" added="2019-06-15T20:52:05Z" modified="2019-06-21T04:12:54Z" visited="2019-06-15T20:52:05Z">
+  <bookmark href="file:///home/kyle/.screenlayout/sideview.sh" added="2019-06-15T20:52:05Z" modified="2019-06-21T23:09:30Z" visited="2019-06-15T20:52:05Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/x-shellscript"/>
         <bookmark:applications>
-          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-21T04:12:54Z" count="10"/>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-21T23:09:30Z" count="11"/>
         </bookmark:applications>
       </metadata>
     </info>

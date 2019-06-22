@@ -1247,3 +1247,16 @@ position-x=0.5
 position-y=0.20205334787214643
 time=1561140392
 jumplist=4 0.99055613850996849 0.33664516236214814 0 0.5 0.02683870284018652 
+
+[/home/kyle/doc/doc.pdf]
+page=0
+offset=0
+zoom=0.6146844660194174
+rotate=0
+pages-per-row=1
+first-page-column=1:2
+page-right-to-left=false
+position-x=0.5
+position-y=0.5
+time=1561153759
+jumplist=

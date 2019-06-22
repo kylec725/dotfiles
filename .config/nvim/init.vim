@@ -7,7 +7,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'junegunn/goyo.vim'
 " Airline to replace status line
 Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline-themes'
 Plug 'tomtom/tcomment_vim'
 Plug 'Yggdroot/indentLine'
 Plug 'gregsexton/MatchTag'

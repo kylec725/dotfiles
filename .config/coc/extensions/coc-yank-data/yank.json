@@ -1,5 +1,209 @@
 [
   {
+    "id": "80257680-9489-11e9-89c0-c7fbb6ac83a6",
+    "content": [
+      "lightline_gitdiff#get_status"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t291\t12",
+    "filetype": "vim"
+  },
+  {
+    "id": "94d1f620-9485-11e9-8cb2-8791d6076863",
+    "content": [
+      "      \\   'noscrollbar': 'noscrollbar#statusline'"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t280\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "258c33d0-9484-11e9-b27d-3d4022848c99",
+    "content": [
+      ""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t232\t35",
+    "filetype": "vim"
+  },
+  {
+    "id": "1c99dbb0-9484-11e9-b27d-3d4022848c99",
+    "content": [
+      ""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t232\t35",
+    "filetype": "vim"
+  },
+  {
+    "id": "14cff370-9483-11e9-a0f7-eb4bfe86cab9",
+    "content": [
+      "lineinfo"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t261\t24",
+    "filetype": "vim"
+  },
+  {
+    "id": "7692aec0-9480-11e9-b164-23a65a7f7e67",
+    "content": [
+      "echo ' ' . fugitive#head()"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t234\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "74f97120-9480-11e9-b164-23a65a7f7e67",
+    "content": [
+      "echo ' ' . fugitive#head()"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t234\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "692296b0-9480-11e9-907b-f5ec3e3474c8",
+    "content": [
+      "echo '' . fugitive#head()"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t234\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "57ffd6e0-9480-11e9-907b-f5ec3e3474c8",
+    "content": [
+      ""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t233\t35",
+    "filetype": "vim"
+  },
+  {
+    "id": "4e6d2010-9480-11e9-907b-f5ec3e3474c8",
+    "content": [
+      ""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t233\t35",
+    "filetype": "vim"
+  },
+  {
+    "id": "470d00b0-9480-11e9-907b-f5ec3e3474c8",
+    "content": [
+      ""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t233\t35",
+    "filetype": "vim"
+  },
+  {
+    "id": "7a509690-947f-11e9-8e8b-fb6f92f521b0",
+    "content": [
+      "\t\t\t\\   'gitbranch': 'fugitive#head'"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/lightline.vim/doc/lightline.txt\t151\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "845de680-947d-11e9-8fc5-53a609fe1e4f",
+    "content": [
+      "\"     \\ 'left': [ [ 'tabs' ] ],",
+      "\"     \\ 'right': [ [ 'close' ] ] }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t287\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "66c4ff00-947d-11e9-8fc5-53a609fe1e4f",
+    "content": [
+      "\t\t\t\\   'gitbranch': 'fugitive#head'"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/lightline.vim/doc/lightline.txt\t151\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "eb852d60-947c-11e9-bf14-8908173f7948",
+    "content": [
+      "\"     \\ 'left': [ [ 'filename' ] ],",
+      "\"     \\ 'right': [ [ 'lineinfo' ],",
+      "\"     \\            [ 'percent' ] ] }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t277\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "46830d00-947c-11e9-83c0-217a4c19c0d6",
+    "content": [
+      "noscrollbar#statusline()"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t241\t22",
+    "filetype": "vim"
+  },
+  {
+    "id": "38680460-947b-11e9-b997-29f33a6559af",
+    "content": [
+      "'nord'"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t243\t31",
+    "filetype": "vim"
+  },
+  {
+    "id": "fc361230-9474-11e9-9395-f35f57e00a1c",
+    "content": [
+      "%{coc#status()}"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t249\t21",
+    "filetype": "vim"
+  },
+  {
+    "id": "f98968c0-9474-11e9-9395-f35f57e00a1c",
+    "content": [
+      "%{coc#status()}"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t249\t21",
+    "filetype": "vim"
+  },
+  {
+    "id": "cd1e2c00-9472-11e9-92dc-956aaaaaa68a",
+    "content": [
+      "\" Lightline !!!!!"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t238\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "97307a30-9472-11e9-957e-bdd242b06a77",
+    "content": [
+      "\t\tlet g:lightline.active = {",
+      "\t\t    \\ 'left': [ [ 'mode', 'paste' ],",
+      "\t\t    \\           [ 'readonly', 'filename', 'modified' ] ],",
+      "\t\t    \\ 'right': [ [ 'lineinfo' ],",
+      "\t\t    \\            [ 'percent' ],",
+      "\t\t    \\            [ 'fileformat', 'fileencoding', 'filetype' ] ] }",
+      "\t\tlet g:lightline.inactive = {",
+      "\t\t    \\ 'left': [ [ 'filename' ] ],",
+      "\t\t    \\ 'right': [ [ 'lineinfo' ],",
+      "\t\t    \\            [ 'percent' ] ] }",
+      "\t\tlet g:lightline.tabline = {",
+      "\t\t    \\ 'left': [ [ 'tabs' ] ],",
+      "\t\t    \\ 'right': [ [ 'close' ] ] }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/lightline.vim/doc/lightline.txt\t67\t1",
+    "filetype": "help"
+  },
+  {
     "id": "b9509320-9454-11e9-8ac6-bd05327d7c8b",
     "content": [
       "  * 238879c s/sh/bash/ in the 'nodejs' command (#886) (31 hours ago)"
@@ -1799,223 +2003,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t62\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "7defe1b0-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+extern float alpha;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t53\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "73f122a0-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft -lXrender\\"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t41\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "634d2fc0-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft -lXrender\\"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t41\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "5a08e710-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+unsigned int defaultbg = 258;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t28\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "4ee30d20-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+\t\"black\","
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t19\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "3fe6d6d0-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+/* bg opacity */",
-      "+float alpha = 0.8;",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t9\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "b94dbf30-8e0d-11e9-b0c1-e5a1cdf927ef",
-    "content": [
-      "+",
-      "+\tboxdraw_xinit(xw.dpy, xw.cmap, xw.draw, xw.vis);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw.diff\t551\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "9ff20c30-8e0d-11e9-b0c1-e5a1cdf927ef",
-    "content": [
-      "+extern const int boxdraw, boxdraw_bold, boxdraw_braille;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw.diff\t542\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "92f157c0-8e0d-11e9-b0c1-e5a1cdf927ef",
-    "content": [
-      "+int isboxdraw(Rune);",
-      "+ushort boxdrawindex(const Glyph *);",
-      "+#ifdef XFT_VERSION",
-      "+/* only exposed to x.c, otherwise we'll need Xft.h for the types */",
-      "+void boxdraw_xinit(Display *, Colormap, XftDraw *, Visual *);",
-      "+void drawboxes(int, int, int, int, XftColor *, XftColor *, const XftGlyphFontSpec *, int);",
-      "+#endif",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw.diff\t527\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "7d0a0b00-8e0d-11e9-b0c1-e5a1cdf927ef",
-    "content": [
-      "+\tATTR_BOXDRAW    = 1 << 11,"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-boxdraw.diff\t519\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "2bb63030-8e0d-11e9-a949-39cb795696d0",
-    "content": [
-      "+/* bg opacity */",
-      "+float alpha = 0.8;",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t9\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "34ca5da0-8e0c-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tif (term.scr == 0)",
-      "+\t\txdrawcursor(cx, term.c.y, term.line[term.c.y][cx],",
-      "+\t\t\t\tterm.ocx, term.ocy, term.line[term.ocy][term.ocx]);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t317\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "2c6885b0-8e0c-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\txdrawline(TLINE(y), x1, y, x2);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t307\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "04f53000-8e0c-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tfor (i = 0; i < HISTSIZE; i++) {",
-      "+\t\tterm.hist[i] = xrealloc(term.hist[i], col * sizeof(Glyph));",
-      "+\t\tfor (j = mincol; j < col; j++) {",
-      "+\t\t\tterm.hist[i][j] = term.c.attr;",
-      "+\t\t\tterm.hist[i][j].u = ' ';",
-      "+\t\t}",
-      "+\t}",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t291\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "f3890b20-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tfor (i = 0; i < HISTSIZE; i++) {",
-      "+\t\tterm.hist[i] = xrealloc(term.hist[i], col * sizeof(Glyph));",
-      "+\t\tfor (j = mincol; j < col; j++) {",
-      "+\t\t\tterm.hist[i][j] = term.c.attr;",
-      "+\t\t\tterm.hist[i][j].u = ' ';",
-      "+\t\t}",
-      "+\t}",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t291\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "eb62dca0-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\tint i, j;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t283\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "e2e82580-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\ttscrolldown(term.top, 1, 1);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t274\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "d491f330-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\t\ttscrollup(term.top, 1, 1);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t265\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "d088c700-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\ttscrolldown(term.top, csiescseq.arg[0], 0);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t256\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "c2c29fb0-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\ttscrollup(term.top, csiescseq.arg[0], 0);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t251\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "bac94d90-8e0b-11e9-9492-dbec5a574ae2",
-    "content": [
-      "+\t\ttscrollup(term.c.y, n, 0);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback\t242\t1",
     "filetype": "diff"
   }
 ]
