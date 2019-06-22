@@ -159,11 +159,9 @@ def_key "k"
   scroll_up
 #
 def_key "J"
-  require_screen "browser"
   push_characters "jjj"
 #
 def_key "K"
-  require_screen "browser"
   push_characters "kkk"
 #
 def_key "ctrl-u"
@@ -232,10 +230,10 @@ def_key "/"
 def_key "u"
   update_database
 #
-def_key "J"
+def_key "ctrl-j"
   move_selected_items_down
 #
-def_key "K"
+def_key "ctrl-k"
   move_selected_items_up
 #
 def_key "/"
