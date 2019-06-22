@@ -87,7 +87,7 @@ local function mpd_update()
                 title = string.gsub(title, '^%s*(.-)%s*$', '%1')
                 local status = stdout:match('%[(.*)%]')
                 status = string.gsub(status, '^%s*(.-)%s*$', '%1')
-                if (artist ~= mpd_artist and title ~= mpd_title) then
+                if (artist ~= mpd_artist or title ~= mpd_title) then
                     mpd_title = title
                     if (artist == nil) then
                         mpd_artist = "---------"

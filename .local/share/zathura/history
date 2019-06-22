@@ -1236,7 +1236,7 @@ time=1560914680
 jumplist=
 
 [/home/kyle/AffordableServerOSU/Developers_guide.pdf]
-page=2
+page=4
 offset=0
 zoom=0.81814502427184477
 rotate=0
@@ -1244,8 +1244,8 @@ pages-per-row=1
 first-page-column=1:2
 page-right-to-left=false
 position-x=0.5
-position-y=0.20205334787214643
-time=1561140392
+position-y=0.33761066849698029
+time=1561218592
 jumplist=4 0.99055613850996849 0.33664516236214814 0 0.5 0.02683870284018652 
 
 [/home/kyle/doc/doc.pdf]
