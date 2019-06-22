@@ -1,5 +1,14 @@
 [
   {
+    "id": "3c7a5320-948d-11e9-b525-d7299636bbbd",
+    "content": [
+      "\\uf05"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-airline/autoload/airline/extensions/ale.vim\t77\t70",
+    "filetype": "vim"
+  },
+  {
     "id": "80257680-9489-11e9-89c0-c7fbb6ac83a6",
     "content": [
       "lightline_gitdiff#get_status"
@@ -1994,15 +2003,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t70\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "94becf50-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+\tint depth; /* bit depth */"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t62\t1",
     "filetype": "diff"
   }
 ]
