@@ -285,7 +285,7 @@ let g:ale_lint_on_insert_leave = 1
 " Noscrollbar !!!!!
 
 function! Noscrollbar(...)
-    let w:airline_section_z = '%{noscrollbar#statusline()} :%2c'
+    let w:airline_section_z = '%{noscrollbar#statusline()} %l:%c'
 endfunction
 call airline#add_statusline_func('Noscrollbar')
 
