@@ -3,6 +3,10 @@
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
+SETUVAR _fish_abbr_2_2E_2E_:\x2e\x2e/\x2e\x2e
+SETUVAR _fish_abbr_3_2E_2E_:\x2e\x2e/\x2e\x2e/\x2e\x2e
+SETUVAR _fish_abbr_4_2E_2E_:\x2e\x2e/\x2e\x2e/\x2e\x2e/\x2e\x2e
+SETUVAR _fish_abbr_5_2E_2E_:\x2e\x2e/\x2e\x2e/\x2e\x2e/\x2e\x2e/\x2e\x2e
 SETUVAR _fish_abbr_at:audio\x2dtoggle
 SETUVAR _fish_abbr_awm:cd\x20\x7e/\x2econfig/awesome
 SETUVAR _fish_abbr_ga:git\x20add

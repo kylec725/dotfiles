@@ -1,5 +1,325 @@
 [
   {
+    "id": "828d5440-9585-11e9-ae42-373006f209ff",
+    "content": [
+      "nnoremap <silent><buffer><expr> <CR> defx#do_action('drop')"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/defx.nvim/doc/defx.txt\t720\t4",
+    "filetype": "help"
+  },
+  {
+    "id": "7c7058b0-9584-11e9-ae42-373006f209ff",
+    "content": [
+      "Plug 'kristijanhusak/defx-icons'"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t8\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "71febaf0-9581-11e9-ae42-373006f209ff",
+    "content": [
+      "spell"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t272\t19",
+    "filetype": "vim"
+  },
+  {
+    "id": "30784920-9581-11e9-ae42-373006f209ff",
+    "content": [
+      "spell"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t262\t19",
+    "filetype": "vim"
+  },
+  {
+    "id": "18071d30-9581-11e9-b149-b3999ce4e44e",
+    "content": [
+      "    \\ 'spell': '%{&spell?&spelllang:\"\"}',"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles_git/config/nvim/init.vim\t299\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "ab1934f0-957c-11e9-ae42-373006f209ff",
+    "content": [
+      "line"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t266\t20",
+    "filetype": "vim"
+  },
+  {
+    "id": "991e1de0-9579-11e9-b11a-9dd3ab679122",
+    "content": [
+      "lineinfo"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t264\t48",
+    "filetype": "vim"
+  },
+  {
+    "id": "54b314a0-9577-11e9-96ac-3d5a4f2edaa1",
+    "content": [
+      "    \\   'noscrollbar': 'Noscrollbar',"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t309\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "d49505d0-9571-11e9-b0cc-1745162c7cae",
+    "content": [
+      "let g:lightline.separator = {",
+      "    \\   'left': '', 'right': ''",
+      "    \\}",
+      "let g:lightline.subseparator = {",
+      "    \\   'left': '', 'right': '' ",
+      "    \\}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles_git/config/nvim/init.vim\t323\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "16652040-9571-11e9-b0cc-1745162c7cae",
+    "content": [
+      "\" Always show at least one line above/below the cursor.",
+      "set scrolloff=1",
+      "\" Always show at least one line left/right of the cursor.",
+      "set sidescrolloff=5"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles_git/config/nvim/init.vim\t19\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "c3949080-9570-11e9-b0cc-1745162c7cae",
+    "content": [
+      "set scrolloff=1"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles_git/config/nvim/init.vim\t20\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "eb864fe0-956e-11e9-bf3f-db2e2a698ad5",
+    "content": [
+      "    \\   'hunks': 'lightline#hunks#composer',"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t288\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "948e01b0-9569-11e9-bf3f-db2e2a698ad5",
+    "content": [
+      "\" function! Noscrollbar(...)",
+      "\"     let w:airline_section_z = '%{noscrollbar#statusline()} %l:%c'",
+      "\" endfunction"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t388\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "3e292aa0-9548-11e9-a6aa-0d8faf4dae39",
+    "content": [
+      "\tautocmd FileType defx call s:defx_my_settings()",
+      "\tfunction! s:defx_my_settings() abort",
+      "\t  \" Define mappings",
+      "\t  nnoremap <silent><buffer><expr> <CR>",
+      "\t  \\ defx#do_action('open')",
+      "\t  nnoremap <silent><buffer><expr> c",
+      "\t  \\ defx#do_action('copy')",
+      "\t  nnoremap <silent><buffer><expr> m",
+      "\t  \\ defx#do_action('move')",
+      "\t  nnoremap <silent><buffer><expr> p",
+      "\t  \\ defx#do_action('paste')",
+      "\t  nnoremap <silent><buffer><expr> l",
+      "\t  \\ defx#do_action('open')",
+      "\t  nnoremap <silent><buffer><expr> E",
+      "\t  \\ defx#do_action('open', 'vsplit')",
+      "\t  nnoremap <silent><buffer><expr> P",
+      "\t  \\ defx#do_action('open', 'pedit')",
+      "\t  nnoremap <silent><buffer><expr> o",
+      "\t  \\ defx#do_action('open_or_close_tree')",
+      "\t  nnoremap <silent><buffer><expr> K",
+      "\t  \\ defx#do_action('new_directory')",
+      "\t  nnoremap <silent><buffer><expr> N",
+      "\t  \\ defx#do_action('new_file')",
+      "\t  nnoremap <silent><buffer><expr> M",
+      "\t  \\ defx#do_action('new_multiple_files')",
+      "\t  nnoremap <silent><buffer><expr> C",
+      "\t  \\ defx#do_action('toggle_columns',",
+      "\t  \\                'mark:indent:icon:filename:type:size:time')",
+      "\t  nnoremap <silent><buffer><expr> S",
+      "\t  \\ defx#do_action('toggle_sort', 'time')",
+      "\t  nnoremap <silent><buffer><expr> d",
+      "\t  \\ defx#do_action('remove')",
+      "\t  nnoremap <silent><buffer><expr> r",
+      "\t  \\ defx#do_action('rename')",
+      "\t  nnoremap <silent><buffer><expr> !",
+      "\t  \\ defx#do_action('execute_command')",
+      "\t  nnoremap <silent><buffer><expr> x",
+      "\t  \\ defx#do_action('execute_system')",
+      "\t  nnoremap <silent><buffer><expr> yy",
+      "\t  \\ defx#do_action('yank_path')",
+      "\t  nnoremap <silent><buffer><expr> .",
+      "\t  \\ defx#do_action('toggle_ignored_files')",
+      "\t  nnoremap <silent><buffer><expr> ;",
+      "\t  \\ defx#do_action('repeat')",
+      "\t  nnoremap <silent><buffer><expr> h",
+      "\t  \\ defx#do_action('cd', ['..'])",
+      "\t  nnoremap <silent><buffer><expr> ~",
+      "\t  \\ defx#do_action('cd')",
+      "\t  nnoremap <silent><buffer><expr> q",
+      "\t  \\ defx#do_action('quit')",
+      "\t  nnoremap <silent><buffer><expr> <Space>",
+      "\t  \\ defx#do_action('toggle_select') . 'j'",
+      "\t  nnoremap <silent><buffer><expr> *",
+      "\t  \\ defx#do_action('toggle_select_all')",
+      "\t  nnoremap <silent><buffer><expr> j",
+      "\t  \\ line('.') == line('$') ? 'gg' : 'j'",
+      "\t  nnoremap <silent><buffer><expr> k",
+      "\t  \\ line('.') == 1 ? 'G' : 'k'",
+      "\t  nnoremap <silent><buffer><expr> <C-l>",
+      "\t  \\ defx#do_action('redraw')",
+      "\t  nnoremap <silent><buffer><expr> <C-g>",
+      "\t  \\ defx#do_action('print')",
+      "\t  nnoremap <silent><buffer><expr> cd",
+      "\t  \\ defx#do_action('change_vim_cwd')",
+      "\tendfunction"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/defx.nvim/doc/defx.txt\t638\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "103ae240-9544-11e9-b4b6-61a72581d1c1",
+    "content": [
+      "exists(\"b:NERDTree\")"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t310\t43",
+    "filetype": "vim"
+  },
+  {
+    "id": "0e4fb410-9544-11e9-b4b6-61a72581d1c1",
+    "content": [
+      "exists(\"b:NERDTree\") "
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t310\t43",
+    "filetype": "vim"
+  },
+  {
+    "id": "03a81cc0-9542-11e9-b4b6-61a72581d1c1",
+    "content": [
+      "'lightline_hunks'"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t269\t18",
+    "filetype": "vim"
+  },
+  {
+    "id": "4d1b88d0-953b-11e9-b042-6189a5ac089f",
+    "content": [
+      "let g:lightline = {",
+      "    \\ 'colorscheme': 'lena',",
+      "    \\ }",
+      "",
+      "let g:lightline.active = {",
+      "    \\ 'left': [ [ 'mode', 'paste', 'sep1' ],",
+      "    \\           [ 'readonly', 'filename', 'modified' ],",
+      "    \\           [ ] ],",
+      "    \\ 'right': [ [ 'lineinfo' ],",
+      "    \\            [ 'percent' ],",
+      "    \\            [ 'filetype' ] ]",
+      "    \\ }",
+      "",
+      "let g:lightline.inactive = {",
+      "    \\ 'left': [ [ 'mode', 'paste', 'sep1' ],",
+      "    \\           [ 'readonly', 'filename', 'modified' ] ],",
+      "    \\ 'right': [ [ 'lineinfo' ],",
+      "    \\            [ 'percent' ],",
+      "    \\            [ 'filetype' ] ]",
+      "    \\ }",
+      "",
+      "let g:lightline.tabline = {",
+      "    \\ 'left': [ [ 'tabs' ] ],",
+      "    \\ 'right': [ ] }",
+      "",
+      "let g:lightline.tab = {",
+      "    \\ 'active': [ 'tabnum', 'filename', 'modified' ],",
+      "    \\ 'inactive': [ 'tabnum', 'filename', 'modified' ] }",
+      "",
+      "let g:lightline.component = {",
+      "    \\ 'mode': '%{lightline#mode()}',",
+      "    \\ 'absolutepath': '%F',",
+      "    \\ 'relativepath': '%f',",
+      "    \\ 'filename': '%t',",
+      "    \\ 'modified': '%M',",
+      "    \\ 'bufnum': '%n',",
+      "    \\ 'paste': '%{&paste?\"PASTE\":\"\"}',",
+      "    \\ 'readonly': '%R',",
+      "    \\ 'charvalue': '%b',",
+      "    \\ 'charvaluehex': '%B',",
+      "    \\ 'fileencoding': '%{&fenc!=#\"\"?&fenc:&enc}',",
+      "    \\ 'fileformat': '%{&ff}',",
+      "    \\ 'filetype': '%{&ft!=#\"\"?&ft:\"no ft\"}',",
+      "    \\ 'percent': '%3p%%',",
+      "    \\ 'percentwin': '%P',",
+      "    \\ 'spell': '%{&spell?&spelllang:\"\"}',",
+      "    \\ 'lineinfo': '%3l:%-2v',",
+      "    \\ 'line': '%l',",
+      "    \\ 'column': '%c',",
+      "    \\ 'close': '%999X X ',",
+      "    \\ 'winnr': '%{winnr()}',",
+      "    \\ 'sep1': ''",
+      "    \\}",
+      "",
+      "let g:lightline.mode_map = {",
+      "    \\ 'n' : 'N',",
+      "    \\ 'i' : 'I',",
+      "    \\ 'R' : 'R',",
+      "    \\ 'v' : 'V',",
+      "    \\ 'V' : 'L',",
+      "    \\ \"\\<C-v>\": 'B',",
+      "    \\ 'c' : 'C',",
+      "    \\ 's' : 'S',",
+      "    \\ 'S' : 'S-LINE',",
+      "    \\ \"\\<C-s>\": 'S-BLOCK',",
+      "    \\ 't': 'T',",
+      "    \\ }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/dotfiles_git/config/nvim/init.vim\t254\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "156e25a0-953b-11e9-b4b6-61a72581d1c1",
+    "content": [
+      "mengelbrecht/lightline-bufferline"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t12\t6",
+    "filetype": "vim"
+  },
+  {
+    "id": "92a26450-9527-11e9-9003-2572e3c1f0b7",
+    "content": [
+      "abbr 3.. '../../..'"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/fish/config.fish\t46\t1",
+    "filetype": "fish"
+  },
+  {
     "id": "3c7a5320-948d-11e9-b525-d7299636bbbd",
     "content": [
       "\\uf05"
@@ -1778,231 +2098,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t22\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "8ecf8890-8e0f-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },",
-      "+\t{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t9\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "6cb0a3c0-8e0f-11e9-8e93-573ba7e765ac",
-    "content": [
-      "+\tif (xw.pointerisvisible) {",
-      "+\t\tXDefineCursor(xw.dpy, xw.win, xw.bpointer);",
-      "+\t\txsetpointermotion(1);",
-      "+\t\txw.pointerisvisible = 0;",
-      "+\t}",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t80\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "60f4a450-8e0f-11e9-8e93-573ba7e765ac",
-    "content": [
-      "+\tif (!set && !xw.pointerisvisible)",
-      "+\t\treturn;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t71\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "570e7650-8e0f-11e9-8e93-573ba7e765ac",
-    "content": [
-      "+\tXRecolorCursor(xw.dpy, xw.vpointer, &xmousefg, &xmousebg);",
-      "+\tblankpm = XCreateBitmapFromData(xw.dpy, xw.win, &(char){0}, 1, 1);",
-      "+\txw.bpointer = XCreatePixmapCursor(xw.dpy, blankpm, blankpm,",
-      "+\t\t\t\t\t  &xmousefg, &xmousebg, 0, 0);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t60\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "56349110-8e0f-11e9-8e93-573ba7e765ac",
-    "content": [
-      "+\tXRecolorCursor(xw.dpy, xw.vpointer, &xmousefg, &xmousebg);",
-      "+\tblankpm = XCreateBitmapFromData(xw.dpy, xw.win, &(char){0}, 1, 1);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t60\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "48c95b00-8e0f-11e9-8e93-573ba7e765ac",
-    "content": [
-      "+\txw.pointerisvisible = 1;",
-      "+\txw.vpointer = XCreateFontCursor(xw.dpy, mouseshape);",
-      "+\tXDefineCursor(xw.dpy, xw.win, xw.vpointer);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t49\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "426fd630-8e0f-11e9-8e93-573ba7e765ac",
-    "content": [
-      "+\tPixmap blankpm;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t39\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "2fa1d760-8e0f-11e9-8e93-573ba7e765ac",
-    "content": [
-      "+\tif (!xw.pointerisvisible) {",
-      "+\t\tXDefineCursor(xw.dpy, xw.win, xw.vpointer);",
-      "+\t\txw.pointerisvisible = 1;",
-      "+\t\tif (!IS_SET(MODE_MOUSEMANY))",
-      "+\t\t\txsetpointermotion(0);",
-      "+\t}",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t21\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "24906fd0-8e0f-11e9-8e93-573ba7e765ac",
-    "content": [
-      "+\t/* Here, we use the term *pointer* to differentiate the cursor",
-      "+\t * one sees when hovering the mouse over the terminal from, e.g.,",
-      "+\t * a green rectangle where text would be entered. */",
-      "+\tCursor vpointer, bpointer; /* visible and hidden pointers */",
-      "+\tint pointerisvisible;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-hidecursor.diff\t9\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "159041e0-8e0f-11e9-9723-b169454598b5",
-    "content": [
-      "+\tcase 'A':",
-      "+\t\topt_alpha = EARGF(usage());",
-      "+\t\tbreak;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t158\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "0f6435b0-8e0f-11e9-9723-b169454598b5",
-    "content": [
-      "+\tcase 'A':",
-      "+\t\topt_alpha = EARGF(usage());",
-      "+\t\tbreak;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t158\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "fb0b0300-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+\txw.buf = XCreatePixmap(xw.dpy, xw.win, win.w, win.h, xw.depth);",
-      "+\tdc.gc = XCreateGC(xw.dpy, xw.buf, GCGraphicsExposures, &gcvalues);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t149\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "e448bf90-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+\t\t\twin.w, win.h, 0, xw.depth, InputOutput,"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t139\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "da7444d0-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+\txw.cmap = XCreateColormap(xw.dpy, parent, xw.vis, None);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t127\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "cb8e0780-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+",
-      "+\tif (!(opt_embed && (parent = strtol(opt_embed, NULL, 0)))) {",
-      "+\t\tparent = XRootWindow(xw.dpy, xw.scr);",
-      "+\t\txw.depth = 32;",
-      "+\t} else {",
-      "+\t\tXGetWindowAttributes(xw.dpy, parent, &attr);",
-      "+\t\txw.depth = attr.depth;",
-      "+\t}",
-      "+",
-      "+\tXMatchVisualInfo(xw.dpy, xw.scr, xw.depth, TrueColor, &vis);",
-      "+\txw.vis = vis.visual;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t108\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "c0fea130-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+\tXWindowAttributes attr;",
-      "+\tXVisualInfo vis;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t101\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "b2ab2e00-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+",
-      "+\t/* set alpha value of bg color */",
-      "+\tif (opt_alpha)",
-      "+\t\talpha = strtof(opt_alpha, NULL);",
-      "+\tdc.col[defaultbg].color.alpha = (unsigned short)(0xffff * alpha);",
-      "+\tdc.col[defaultbg].pixel &= 0x00FFFFFF;",
-      "+\tdc.col[defaultbg].pixel |= (unsigned char)(0xff * alpha) << 24;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t87\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "adfb3a80-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+\t\t\txw.depth);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t79\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "a42252f0-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+\t\t\txw.depth);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t79\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "9ccba970-8e0e-11e9-9723-b169454598b5",
-    "content": [
-      "+static char *opt_alpha = NULL;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-alpha.diff\t70\t1",
     "filetype": "diff"
   }
 ]

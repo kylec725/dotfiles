@@ -4,12 +4,18 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree'
+Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'kristijanhusak/defx-icons'
 Plug 'junegunn/goyo.vim'
-" Airline to replace status line
-Plug 'bling/vim-airline'
+" Plug 'bling/vim-airline'
+
+Plug 'itchyny/lightline.vim'
+Plug 'mengelbrecht/lightline-bufferline'
+Plug 'sinetoami/lightline-hunks'
+Plug 'maximbaz/lightline-ale'
 Plug 'ryanoasis/vim-devicons'
-" Plug 'itchyny/lightline.vim'
-" Plug 'vim-airline/vim-airline-themes'
+
+Plug 'liuchengxu/vista.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'Yggdroot/indentLine'
 Plug 'gregsexton/MatchTag'
@@ -71,6 +77,11 @@ set number relativenumber
 hi LineNr ctermfg=12
 hi CursorLineNR ctermfg=11
 
+" Always show at least one line above/below the cursor.
+set scrolloff=3
+" Always show at least one line left/right of the cursor.
+set sidescrolloff=5
+
 " Disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
@@ -109,6 +120,9 @@ let g:tex_conceal = ""
 " highlight characters after column 80
 highlight OverLength ctermbg=darkgray ctermfg=black
 " match OverLength /\%81v.\+/
+
+" darken tildes at EOF
+hi EndOfBuffer ctermfg=16
 
 " indent settings
 set tabstop=8
@@ -159,8 +173,8 @@ nnoremap <silent> <leader>bd :bd<CR>
 
 " map shift + hjkl
 noremap <S-h> ^
-noremap <S-j> L
-noremap <S-k> H
+noremap <S-j> 3j
+noremap <S-k> 3k
 noremap <S-L> g_
 
 " window navigation keys
@@ -206,6 +220,7 @@ nnoremap <silent><CR> o<Esc>k
 let g:airline_extensions = ["tabline", "branch", "ale", "hunks"]
 set laststatus=2
 set noshowmode
+set showtabline=2
 " let g:airline_theme='term'
 let g:airline_theme='nord'
 let g:airline_detect_paste=1
@@ -237,12 +252,106 @@ let g:airline_symbols.dirty=''
 let g:airline_symbols.notexists = ''
 "let g:airline_symbols.space = "\ua0"
 
+" Lightline !!!!!
+
+let g:lightline = {
+    \ 'colorscheme': 'nord',
+    \ }
+
+let g:lightline.active = {
+    \ 'left': [ [ 'mode' ],
+    \           [ 'spell', 'readonly', 'filename', 'modified' ],
+    \           [ 'filetype' ] ],
+    \ 'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok', 'lineinfo' ],
+    \            [ 'noscrollbar' ],
+    \            [ 'nearest' ] ]
+    \ }
+
+let g:lightline.inactive = {
+    \ 'left': [ [  ],
+    \           [ 'spell', 'readonly', 'filename', 'modified' ],
+    \           [ 'filetype' ] ],
+    \ 'right': [ [ ],
+    \            [ ] ]
+    \ }
+
+let g:lightline.component = {
+    \   'lineinfo': '%1l:%-2v',
+    \   'line': '%l',
+    \   'column': '%c',
+    \}
+
+let g:lightline.component_function = {
+    \   'noscrollbar': 'Noscrollbar',
+    \   'nearest': 'NearestMethodOrFunction'
+    \ }
+
+let g:lightline.component_expand = {
+    \   'hunks': 'lightline#hunks#composer',
+    \   'buffers': 'lightline#bufferline#buffers',
+    \   'linter_checking': 'lightline#ale#checking',
+    \   'linter_warnings': 'lightline#ale#warnings',
+    \   'linter_errors': 'lightline#ale#errors',
+    \   'linter_ok': 'lightline#ale#ok',
+    \}
+
+let g:lightline.component_type   = {
+    \   'buffers': 'tabsel',
+    \   'linter_checking': 'left',
+    \   'linter_warnings': 'warning',
+    \   'linter_errors': 'error',
+    \   'linter_ok': 'left',
+    \   'hunks': 'tabsel',
+    \}
+
+let g:lightline.tabline = {
+    \ 'left': [ [ 'buffers' ] ],
+    \ 'right': [ [ 'hunks' ] ] }
+
+let g:lightline.separator = { 'left': "\ue0b8", 'right': "\ue0be" }
+let g:lightline.subseparator = { 'left': "\ue0b9", 'right': "\ue0b9" }
+let g:lightline.tabline_separator = { 'left': "\ue0bc", 'right': "\ue0ba" }
+let g:lightline.tabline_subseparator = { 'left': "\ue0bb", 'right': "\ue0bb" }
+
+" Bufferline
+function! LightlineBufferline()
+  call bufferline#refresh_status()
+  return [ g:bufferline_status_info.before, g:bufferline_status_info.current, g:bufferline_status_info.after]
+endfunction
+
+" lightline-buffer ui settings
+" replace these symbols with ascii characters if your environment does not support unicode
+let g:lightline_buffer_readonly_icon = ''
+let g:lightline_buffer_modified_icon = '•'
+let g:lightline_buffer_git_icon = ' '
+let g:lightline_buffer_separator_icon = '  '
+
+" max file name length
+let g:lightline_buffer_maxflen = 30
+
+" ALE Lightline
+let g:lightline#ale#indicator_checking = "..."
+let g:lightline#ale#indicator_warnings = "\uf071 :"
+let g:lightline#ale#indicator_errors = "\uf05e :"
+
+" Lightline noscrollbar
+function! Noscrollbar(...)
+    return ' ' . noscrollbar#statusline()
+endfunction
+
+" Nearest function
+function! NearestMethodOrFunction() abort
+  return get(b:, 'vista_nearest_method_or_function', '')
+endfunction
+autocmd VimEnter * call vista#RunForNearestMethodOrFunction()
+
 " Nerdtree !!!!!
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let g:nerd_win = 0
+" let NERDTreeMinimalUI=1
 " nerdtree mappings
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 
@@ -287,10 +396,10 @@ let g:ale_lint_on_insert_leave = 1
 
 " Noscrollbar !!!!!
 
-function! Noscrollbar(...)
-    let w:airline_section_z = '%{noscrollbar#statusline()} %l:%c'
-endfunction
-call airline#add_statusline_func('Noscrollbar')
+" function! Noscrollbar(...)
+"     let w:airline_section_z = '%{noscrollbar#statusline()} %l:%c'
+" endfunction
+" call airline#add_statusline_func('Noscrollbar')
 
 " Git Commands - Fugitive and Gitgutter !!!!!
 
@@ -391,3 +500,91 @@ let g:conoline_color_normal_nr_dark = 'ctermfg=11'
 let g:conoline_color_insert_dark = 'ctermbg=black'
 let g:conoline_color_insert_nr_dark = 'ctermfg=11'
 nnoremap <silent> <leader>c :ConoLineToggle<CR>
+
+" Vista
+nnoremap <silent> <leader>v :Vista!!<CR>
+let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
+" See all the avaliable executives via `:echo g:vista#executives`.
+let g:vista_default_executive = 'coc'
+let g:vista#renderer#enable_icon = 1
+let g:vista_stay_on_open = 0
+
+" Defx
+nnoremap <silent> <leader>n :Defx<CR>
+
+let g:defx_icons_column_length = 2
+
+call defx#custom#option('_', {
+\ 'winwidth': 35,
+\ 'split': 'vertical',
+\ 'direction': 'topleft',
+\ 'columns': 'indent:git:icons:filename:type',
+\ 'show_ignored_files': 0,
+\ 'toggle': 1,
+\ })
+
+autocmd FileType defx call s:defx_my_settings()
+function! s:defx_my_settings() abort
+  " Define mappings
+  nnoremap <silent><buffer><expr>
+    \<CR> defx#do_action('drop')
+  nnoremap <silent><buffer><expr> c
+    \ defx#do_action('copy')
+  nnoremap <silent><buffer><expr> m
+    \ defx#do_action('move')
+  nnoremap <silent><buffer><expr> p
+    \ defx#do_action('paste')
+  nnoremap <silent><buffer><expr> l
+    \ defx#do_action('open')
+  nnoremap <silent><buffer><expr> E
+    \ defx#do_action('open', 'vsplit')
+  nnoremap <silent><buffer><expr> P
+    \ defx#do_action('open', 'pedit')
+  nnoremap <silent><buffer><expr> o
+    \ defx#do_action('open_or_close_tree')
+  nnoremap <silent><buffer><expr> D
+    \ defx#do_action('new_directory')
+  nnoremap <silent><buffer><expr> N
+    \ defx#do_action('new_file')
+  nnoremap <silent><buffer><expr> M
+    \ defx#do_action('new_multiple_files')
+  nnoremap <silent><buffer><expr> C
+    \ defx#do_action('toggle_columns',
+    \                'mark:indent:icon:filename:type:size:time')
+  nnoremap <silent><buffer><expr> S
+    \ defx#do_action('toggle_sort', 'time')
+  nnoremap <silent><buffer><expr> d
+    \ defx#do_action('remove')
+  nnoremap <silent><buffer><expr> r
+    \ defx#do_action('rename')
+  nnoremap <silent><buffer><expr> !
+    \ defx#do_action('execute_command')
+  nnoremap <silent><buffer><expr> x
+    \ defx#do_action('execute_system')
+  nnoremap <silent><buffer><expr> yy
+    \ defx#do_action('yank_path')
+  nnoremap <silent><buffer><expr> .
+    \ defx#do_action('toggle_ignored_files')
+  nnoremap <silent><buffer><expr> ;
+    \ defx#do_action('repeat')
+  nnoremap <silent><buffer><expr> h
+    \ defx#do_action('cd', ['..'])
+  nnoremap <silent><buffer><expr> ~
+    \ defx#do_action('cd')
+  nnoremap <silent><buffer><expr> q
+    \ defx#do_action('quit')
+  nnoremap <silent><buffer><expr> <Space>
+    \ defx#do_action('toggle_select') . 'j'
+  nnoremap <silent><buffer><expr> *
+    \ defx#do_action('toggle_select_all')
+  nnoremap <silent><buffer><expr> j
+    \ line('.') == line('$') ? 'gg' : 'j'
+  nnoremap <silent><buffer><expr> k
+    \ line('.') == 1 ? 'G' : 'k'
+  nnoremap <silent><buffer><expr> <C-l>
+    \ defx#do_action('redraw')
+  nnoremap <silent><buffer><expr> <C-g>
+    \ defx#do_action('print')
+  nnoremap <silent><buffer><expr> cd
+    \ defx#do_action('change_vim_cwd')
+endfunction
