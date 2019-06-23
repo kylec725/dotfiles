@@ -1,5 +1,14 @@
 [
   {
+    "id": "b13fa890-958c-11e9-9c52-6568339c44f4",
+    "content": [
+      "icon': '"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/defx-icons/plugin/defx_icons.vim\t38\t19",
+    "filetype": "vim"
+  },
+  {
     "id": "828d5440-9585-11e9-ae42-373006f209ff",
     "content": [
       "nnoremap <silent><buffer><expr> <CR> defx#do_action('drop')"
@@ -2084,15 +2093,6 @@
   },
   {
     "id": "ab454cd0-8e0f-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+#define HISTSIZE      2000"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t22\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "a03a4de0-8e0f-11e9-901f-8f1bdc0b98ea",
     "content": [
       "+#define HISTSIZE      2000"
     ],
