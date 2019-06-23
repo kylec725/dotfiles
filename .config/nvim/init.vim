@@ -3,7 +3,7 @@
 "-----------------------------"
 call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-surround'
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-icons'
 Plug 'junegunn/goyo.vim'
@@ -267,7 +267,7 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 let g:nerd_win = 0
 " let NERDTreeMinimalUI=1
 " nerdtree mappings
-nnoremap <silent> <leader>n :NERDTreeToggle<CR>
+" nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 
 " Goyo !!!!!
 
