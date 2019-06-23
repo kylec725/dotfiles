@@ -510,7 +510,7 @@ let g:vista#renderer#enable_icon = 1
 let g:vista_stay_on_open = 0
 
 " Defx
-nnoremap <silent> <leader>n :Defx<CR>
+nnoremap <silent> <leader>n :Defx<CR>:ConoLineToggle<CR>
 
 let g:defx_icons_column_length = 2
 
