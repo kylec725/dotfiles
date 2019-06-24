@@ -343,4 +343,4 @@ let g:indentLine_char = '▏'
 
 " highlight word under cursor
 hi link illuminatedWord Visual
-let g:Illuminate_ftblacklist = ['defx', 'vista_kind', 'vim', 'markdown', 'tex']
+let g:Illuminate_ftblacklist = [ 'help', 'defx', 'vista_kind', 'vim', 'markdown', 'tex' ]
