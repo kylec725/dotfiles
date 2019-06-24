@@ -128,6 +128,10 @@ highlight OverLength ctermbg=darkgray ctermfg=black
 " darken tildes at EOF
 hi EndOfBuffer ctermfg=16
 
+" pop-up menu colors
+hi Pmenu ctermbg=0 ctermfg=7
+hi PmenuSel ctermbg=5 ctermfg=7
+
 " indent settings
 set tabstop=8
 set expandtab
