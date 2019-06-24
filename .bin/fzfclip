@@ -22,7 +22,7 @@ C_HIST="$(clipster -c -o -n 31 -0 \
         | gawk '{printf("%003d %s\n", NR, $0)}')"
 
 # Make selection using fzf
-SELECTION="$(echo "$C_HIST" | fzf --no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD --prompt="Copy to Clipboard: ")"
+SELECTION="$(echo "$C_HIST" | fzf --no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,gutter:-1 --prompt="Copy to Clipboard: ")"
 
 # Verify user made a selection
 if [ -n "$SELECTION" ]; then

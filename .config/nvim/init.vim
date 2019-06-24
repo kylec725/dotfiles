@@ -281,7 +281,7 @@ autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 nnoremap <C-g> :Goyo<CR>
 
-" Git Commands - Fugitive and Gitgutter !!!!!
+" Git Commands and Settings - Fugitive and Gitgutter !!!!!
 
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>ga :Gwrite<CR>
@@ -290,6 +290,13 @@ nmap <leader>gj <Plug>GitGutterNextHunk
 nmap <leader>gk <Plug>GitGutterPrevHunk
 " nnoremap <leader>gu :Gpush<CR>
 " nnoremap <leader>gd :Gpull<CR>
+
+highlight GitGutterAdd    ctermfg=7
+highlight GitGutterChange ctermfg=7
+highlight GitGutterDelete ctermfg=7
+" let g:gitgutter_sign_added = '++'
+" let g:gitgutter_sign_modified = '~~'
+" let g:gitgutter_sign_removed = '--'
 
 " Terminal settings !!!!!
 
