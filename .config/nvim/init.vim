@@ -82,7 +82,7 @@ hi LineNr ctermfg=12
 hi CursorLineNR ctermfg=11
 
 " Always show at least one line above/below the cursor.
-set scrolloff=3
+set scrolloff=5
 " Always show at least one line left/right of the cursor.
 set sidescrolloff=5
 
