@@ -1,8 +1,8 @@
 " Lightline
 
 set laststatus=2
-set noshowmode
 set showtabline=2
+set noshowmode
 
 let g:lightline = {
     \ 'colorscheme': 'nord',
@@ -14,7 +14,7 @@ let g:lightline.active = {
     \           [ 'filetype' ] ],
     \ 'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok', 'lineinfo' ],
     \            [ 'noscrollbar' ],
-    \            [ 'nearest' ] ]
+    \            [ 'tagbar' ] ]
     \ }
 
 let g:lightline.inactive = {
@@ -29,11 +29,11 @@ let g:lightline.component = {
     \   'lineinfo': '%1l:%-2v',
     \   'line': '%l',
     \   'column': '%c',
+    \   'tagbar': '%{tagbar#currenttag("[%s]", "")}',
     \}
 
 let g:lightline.component_function = {
     \   'noscrollbar': 'Noscrollbar',
-    \   'nearest': 'NearestMethodOrFunction'
     \ }
 
 let g:lightline.component_expand = {
@@ -88,9 +88,3 @@ let g:lightline#ale#indicator_errors = "\uf05e :"
 function! Noscrollbar(...)
     return ' ' . noscrollbar#statusline()
 endfunction
-
-" Nearest function
-function! NearestMethodOrFunction() abort
-  return get(b:, 'vista_nearest_method_or_function', '')
-endfunction
-autocmd VimEnter * call vista#RunForNearestMethodOrFunction()
