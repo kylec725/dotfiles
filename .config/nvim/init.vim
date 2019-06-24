@@ -2,46 +2,49 @@
 "Plugin Management - plug.vim "
 "-----------------------------"
 call plug#begin('~/.config/nvim/plugged')
+
+" Editing or Typing
 Plug 'tpope/vim-surround'
-" Plug 'scrooloose/nerdtree'
+Plug 'tomtom/tcomment_vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-repeat'
+Plug 'vimlab/split-term.vim'
+
+" File Navigation
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-icons'
-Plug 'junegunn/goyo.vim'
-" Plug 'bling/vim-airline'
+Plug 'liuchengxu/vista.vim'
+Plug 'ryanoasis/vim-devicons'
+Plug 'gcavallanti/vim-noscrollbar'
+Plug 'junegunn/fzf.vim'
 
+" Visual Changes
+Plug 'junegunn/goyo.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'gregsexton/MatchTag'
+Plug 'arcticicestudio/nord-vim'
+Plug 'miyakogi/conoline.vim'
+Plug 'RRethy/vim-illuminate'
+
+" Statusline
 Plug 'itchyny/lightline.vim'
 Plug 'mengelbrecht/lightline-bufferline'
 Plug 'sinetoami/lightline-hunks'
 Plug 'maximbaz/lightline-ale'
-Plug 'ryanoasis/vim-devicons'
 
-Plug 'liuchengxu/vista.vim'
-Plug 'tomtom/tcomment_vim'
-Plug 'Yggdroot/indentLine'
-Plug 'gregsexton/MatchTag'
-Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-repeat'
-Plug 'octol/vim-cpp-enhanced-highlight'
-" Intellisense engine
-Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
-Plug 'w0rp/ale'
-" Show git status in gutter
-Plug 'airblade/vim-gitgutter'
-" Git wrapper
-Plug 'tpope/vim-fugitive'
-" Language pack support
+" Language Syntax/Suggestions
 Plug 'sheerun/vim-polyglot'
-" Documentation integration
+Plug 'w0rp/ale'
+Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
+Plug 'octol/vim-cpp-enhanced-highlight'
+
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
+" Documentation
 Plug 'KabbAmine/zeavim.vim'
-" Position indicator
-Plug 'gcavallanti/vim-noscrollbar'
-" Nord colorscheme (only used for airline)
-Plug 'arcticicestudio/nord-vim'
-Plug 'vimlab/split-term.vim'
-" fzf
-Plug 'junegunn/fzf.vim'
-" Highlight current line
-Plug 'miyakogi/conoline.vim'
+
 call plug#end()
 
 "----------------------"
@@ -259,16 +262,6 @@ let g:airline_symbols.dirty=''
 let g:airline_symbols.notexists = ''
 "let g:airline_symbols.space = "\ua0"
 
-" Nerdtree !!!!!
-
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
-let g:nerd_win = 0
-" let NERDTreeMinimalUI=1
-" nerdtree mappings
-" nnoremap <silent> <leader>n :NERDTreeToggle<CR>
-
 " Goyo !!!!!
 
 function! s:goyo_enter()
@@ -346,3 +339,7 @@ tnoremap <silent> <leader>ts <C-\><C-n>:call TermSwitch()<CR>
 
 " indent line
 let g:indentLine_char = '▏'
+
+" highlight word under cursor
+hi link illuminatedWord Visual
+let g:Illuminate_ftblacklist = ['defx', 'vista_kind']

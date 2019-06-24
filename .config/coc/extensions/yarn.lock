@@ -12,10 +12,10 @@ coc-solargraph@^1.1.2:
   resolved "https://registry.yarnpkg.com/coc-solargraph/-/coc-solargraph-1.1.2.tgz#8ca580495de63d3157c260f642a37f4d3fd37c50"
   integrity sha512-Cmh5zrp7paE+rIR8ogHDJBsPjzpB0yg0RfZT195WVwsV2leCkVvrCIhNTXUi9CV2XKOkIkXAONZ7EbAsySCHdg==
 
-coc-tsserver@^1.3.9:
-  version "1.3.9"
-  resolved "https://registry.yarnpkg.com/coc-tsserver/-/coc-tsserver-1.3.9.tgz#1f1e8fb8a69c771a53df20ceee6d9cb335232efb"
-  integrity sha512-ALLK4fyqWX+3tEp6rgF9w8ie0XfnsqZufEOUvj1PiLAdNLF9q84TeQJu2A6Dwt9+DNORuvaw4aSQM9JZqTEsbA==
+coc-tsserver@^1.3.10:
+  version "1.3.10"
+  resolved "https://registry.yarnpkg.com/coc-tsserver/-/coc-tsserver-1.3.10.tgz#4f31b38f8e2338d2cb8b26e607e31aadcb5517a8"
+  integrity sha512-Tpa8Fsi+fTehqWrvBdJAb+jY1KQx7dcdolHyXdG5+4oF9FEGbLFaxfKcgqk7gKU8U/EgocFkqPKeaNdnD1DHAg==
   dependencies:
     typescript "3.5.1"
 
