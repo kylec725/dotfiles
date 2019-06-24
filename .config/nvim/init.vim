@@ -14,6 +14,7 @@ Plug 'vimlab/split-term.vim'
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-icons'
 Plug 'liuchengxu/vista.vim'
+Plug 'majutsushi/tagbar'
 Plug 'ryanoasis/vim-devicons'
 Plug 'gcavallanti/vim-noscrollbar'
 Plug 'junegunn/fzf.vim'
@@ -342,4 +343,4 @@ let g:indentLine_char = '▏'
 
 " highlight word under cursor
 hi link illuminatedWord Visual
-let g:Illuminate_ftblacklist = ['defx', 'vista_kind']
+let g:Illuminate_ftblacklist = ['defx', 'vista_kind', 'vim', 'markdown', 'tex']
