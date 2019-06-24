@@ -35,6 +35,7 @@ let g:lightline.component = {
 let g:lightline.component_function = {
             \   'filename': 'LightlineFilename',
             \   'filetype': 'LightlineFiletype',
+            \   'readonly': 'LightlineReadonly',
             \   'noscrollbar': 'Noscrollbar',
             \ }
 
@@ -73,10 +74,9 @@ endfunction
 
 " lightline-buffer ui settings
 " replace these symbols with ascii characters if your environment does not support unicode
-let g:lightline_buffer_readonly_icon = ''
-let g:lightline_buffer_modified_icon = '•'
-let g:lightline_buffer_git_icon = ' '
-let g:lightline_buffer_separator_icon = '  '
+let g:lightline#bufferline#modified = ' +'
+let g:lightline#bufferline#read_only = ' '
+let g:lightline#bufferline#enable_devicons = 0
 
 " Filename
 function! LightlineFilename()
@@ -89,6 +89,14 @@ endfunction
 function! LightlineFiletype()
     return winwidth(0) > 50 ? (&filetype !=# '' ? &filetype : 'no ft') : ''
 endfunction
+
+" Readonly
+function! LightlineReadonly()
+    return &readonly ? '' : ''
+endfunction
+
+let g:unite_force_overwrite_statusline = 0
+let g:vimfiler_force_overwrite_statusline = 0
 
 " Max Filename Length
 let g:lightline_buffer_maxflen = 30
