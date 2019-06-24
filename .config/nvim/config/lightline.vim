@@ -102,7 +102,7 @@ endfunction
 
 " Filetype
 function! LightlineFiletype()
-    return winwidth(0) > 50 ? (&filetype !=# '' ? &filetype : 'no ft') : ''
+    return winwidth(0) > 50 ? (&filetype !=# '' ? &filetype : 'no filetype') : ''
 endfunction
 
 " Readonly
