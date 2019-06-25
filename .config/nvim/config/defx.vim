@@ -29,8 +29,8 @@ function! s:defx_my_settings() abort
         \ defx#do_action('paste')
     nnoremap <silent><buffer><expr> l
         \ defx#do_action('drop')
-    nnoremap <silent><buffer><expr> E
-        \ defx#do_action('open', 'vsplit')
+    nnoremap <silent><buffer><expr> <C-v>
+        \ defx#do_action('drop', 'vsplit')
     nnoremap <silent><buffer><expr> P
         \ defx#do_action('open', 'pedit')
     nnoremap <silent><buffer><expr> o

@@ -8,6 +8,13 @@ nmap <leader>ak <Plug>(ale_previous_wrap)
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 
-" remove gutter background color
+" customize symbols
+let g:ale_sign_error = "●"
+let g:ale_sign_warning = "●"
+
 highlight ALEErrorSign ctermbg=NONE ctermfg=red
 highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+
+" highlighting
+hi ALEWarning ctermbg=yellow
+hi ALEError ctermbg=red

@@ -1,5 +1,207 @@
 [
   {
+    "id": "a34d59f0-96c5-11e9-8232-15b588194ff3",
+    "content": [
+      "加油"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/fish/config.fish\t7\t13",
+    "filetype": "fish"
+  },
+  {
+    "id": "14ebabe0-96bf-11e9-b011-192a62b826b8",
+    "content": [
+      "\" hi ALEWarning ctermbg=yellow ctermfg=white"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/config/ale.vim\t19\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "13ee1200-96bf-11e9-b011-192a62b826b8",
+    "content": [
+      "\" hi ALEError ctermbg=red ctermfg=white"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/config/ale.vim\t20\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "1a4f34c0-96bb-11e9-b011-192a62b826b8",
+    "content": [
+      "●"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/config/ale.vim\t13\t27",
+    "filetype": "vim"
+  },
+  {
+    "id": "c6907470-96ba-11e9-b011-192a62b826b8",
+    "content": [
+      "\\uf05e"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t122\t41",
+    "filetype": "vim"
+  },
+  {
+    "id": "b952de10-96ba-11e9-b011-192a62b826b8",
+    "content": [
+      "\\uf071"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t121\t43",
+    "filetype": "vim"
+  },
+  {
+    "id": "2bcf7120-96ab-11e9-abe9-8f2fa6d1bdaf",
+    "content": [
+      "--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t19\t26",
+    "filetype": "sh"
+  },
+  {
+    "id": "299b2c00-96ab-11e9-abe9-8f2fa6d1bdaf",
+    "content": [
+      "rg --files --hidden $HOME"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bashrc\t18\t29",
+    "filetype": "sh"
+  },
+  {
+    "id": "8ad9ea40-96a8-11e9-9bf3-b11e51f0037b",
+    "content": [
+      "\t\t    \\ 'filetype': '%{&ft!=#\"\"?&ft:\"no ft\"}',"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/lightline.vim/doc/lightline.txt\t106\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "1c8a3d30-96a6-11e9-a103-f5eb4d4c2edd",
+    "content": [
+      "help"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t346\t34",
+    "filetype": "vim"
+  },
+  {
+    "id": "1cab8830-96a3-11e9-83ca-b1e1ed95ea91",
+    "content": [
+      ""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t97\t68",
+    "filetype": "vim"
+  },
+  {
+    "id": "12912ad0-96a3-11e9-83ca-b1e1ed95ea91",
+    "content": [
+      ""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t77\t41",
+    "filetype": "vim"
+  },
+  {
+    "id": "ead5cfa0-96a2-11e9-83ca-b1e1ed95ea91",
+    "content": [
+      "    return winwidth(0) > 50 ? (&filetype !=# '' ? &filetype : 'no ft') : ''"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t91\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "14bd5670-969f-11e9-8253-1f01b43b44e3",
+    "content": [
+      "\tfunction! LightlineFiletype()",
+      "\t  return winwidth(0) > 70 ? (&filetype !=# '' ? &filetype : 'no ft') : ''",
+      "\tendfunction"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/lightline.vim/doc/lightline.txt\t852\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "0eba07f0-969f-11e9-8253-1f01b43b44e3",
+    "content": [
+      "\tfunction! LightlineFileformat()",
+      "\t  return winwidth(0) > 70 ? &fileformat : ''",
+      "\tendfunction"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/lightline.vim/doc/lightline.txt\t848\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "bc4ec9b0-969e-11e9-83ca-b1e1ed95ea91",
+    "content": [
+      "' ' . noscrollbar#statusline()"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t99\t12",
+    "filetype": "vim"
+  },
+  {
+    "id": "ae5e8520-969e-11e9-8c8b-7f90de2a1d72",
+    "content": [
+      "\t  return winwidth(0) > 70 ? (&filetype !=# '' ? &filetype : 'no ft') : ''"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/lightline.vim/doc/lightline.txt\t853\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "4b475a30-969d-11e9-83ca-b1e1ed95ea91",
+    "content": [
+      "LightlineFilename"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t36\t21",
+    "filetype": "vim"
+  },
+  {
+    "id": "5f233c00-969c-11e9-83ca-b1e1ed95ea91",
+    "content": [
+      ""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t83\t39",
+    "filetype": "vim"
+  },
+  {
+    "id": "d6a7cfd0-969b-11e9-83ca-b1e1ed95ea91",
+    "content": [
+      "let g:lightline#ale#indicator_errors = \"\\uf05e :\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t85\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "e3f02680-9699-11e9-83ca-b1e1ed95ea91",
+    "content": [
+      "autocmd FileType html setlocal shiftwidth=2 | match OverLength /\\%81v.\\+/"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t138\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "9489e320-9652-11e9-8a3d-93ce782b78dc",
+    "content": [
+      "autocmd WinEnter * if &ft == 'defx' && winnr('$') == 1 | q | endif"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/config/defx.vim\t17\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "51aec920-95d6-11e9-a3a6-158a9ac63417",
     "content": [
       "set laststatus=2",
@@ -2058,268 +2260,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t307\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "1bf74950-8e11-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\tfor (i = 0; i < HISTSIZE; i++) {",
-      "+\t\tterm.hist[i] = xrealloc(term.hist[i], col * sizeof(Glyph));",
-      "+\t\tfor (j = mincol; j < col; j++) {",
-      "+\t\t\tterm.hist[i][j] = term.c.attr;",
-      "+\t\t\tterm.hist[i][j].u = ' ';",
-      "+\t\t}",
-      "+\t}",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t291\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "b35d06f0-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\tfor (i = 0; i < HISTSIZE; i++) {",
-      "+\t\tterm.hist[i] = xrealloc(term.hist[i], col * sizeof(Glyph));",
-      "+\t\tfor (j = mincol; j < col; j++) {",
-      "+\t\t\tterm.hist[i][j] = term.c.attr;",
-      "+\t\t\tterm.hist[i][j].u = ' ';",
-      "+\t\t}",
-      "+\t}",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t291\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "aaadd250-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\tint i, j;"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t283\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "a717da50-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t\t\ttscrolldown(term.top, 1, 1);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t274\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "9fe47040-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t\t\ttscrolldown(term.top, 1, 1);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t274\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "9a14b4e0-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t\t\ttscrollup(term.top, 1, 1);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t265\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "94dcf3c0-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t\ttscrolldown(term.top, csiescseq.arg[0], 0);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t256\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "8e1e6b90-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t\ttscrollup(term.top, csiescseq.arg[0], 0);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t251\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "84f63660-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t\ttscrollup(term.c.y, n, 0);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t242\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "78eb7ab0-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t\ttscrolldown(term.c.y, n, 0);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t234\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "6d1f4ea0-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t\ttscrollup(term.top, 1, 1);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t225\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "61877900-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\tif (copyhist) {",
-      "+\t\tterm.histi = (term.histi + 1) % HISTSIZE;",
-      "+\t\ttemp = term.hist[term.histi];",
-      "+\t\tterm.hist[term.histi] = term.line[orig];",
-      "+\t\tterm.line[orig] = temp;",
-      "+\t}",
-      "+",
-      "+\tif (term.scr > 0 && term.scr < HISTSIZE)",
-      "+\t\tterm.scr = MIN(term.scr + n, HISTSIZE-1);",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t207\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "58572d80-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+tscrollup(int orig, int n, int copyhist)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t200\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "4da09020-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\tif (copyhist) {",
-      "+\t\tterm.histi = (term.histi - 1 + HISTSIZE) % HISTSIZE;",
-      "+\t\ttemp = term.hist[term.histi];",
-      "+\t\tterm.hist[term.histi] = term.line[term.bot];",
-      "+\t\tterm.line[term.bot] = temp;",
-      "+\t}",
-      "+"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t185\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "3e136470-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+kscrolldown(const Arg* a)",
-      "+{",
-      "+\tint n = a->i;",
-      "+",
-      "+\tif (n < 0)",
-      "+\t\tn = term.row + n;",
-      "+",
-      "+\tif (n > term.scr)",
-      "+\t\tn = term.scr;",
-      "+",
-      "+\tif (term.scr > 0) {",
-      "+\t\tterm.scr -= n;",
-      "+\t\tselscroll(0, -n);",
-      "+\t\ttfulldirt();",
-      "+\t}",
-      "+}",
-      "+",
-      "+void",
-      "+kscrollup(const Arg* a)",
-      "+{",
-      "+\tint n = a->i;",
-      "+",
-      "+\tif (n < 0)",
-      "+\t\tn = term.row + n;",
-      "+",
-      "+\tif (term.scr <= HISTSIZE-n) {",
-      "+\t\tterm.scr += n;",
-      "+\t\tselscroll(0, n);",
-      "+\t\ttfulldirt();",
-      "+\t}",
-      "+}",
-      "+",
-      "+void",
-      "+tscrolldown(int orig, int n, int copyhist)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t145\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "2ac4eb00-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\tArg arg = (Arg) { .i = term.scr };",
-      "+",
-      "+\tkscrolldown(&arg);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t134\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "23333450-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t\tlast = &TLINE(y)[MIN(lastx, linelen-1)];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t126\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "21066940-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t\t\tgp = &TLINE(y)[sel.nb.y == y ? sel.nb.x : 0];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t122\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "16d59db0-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t\t\tgp = &TLINE(y)[sel.nb.x];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t118\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "11c42940-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t\t\t\tif (!(TLINE(*y)[term.col-1].mode"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t109\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "0f1fe440-8e10-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t\t\t\tif (!(TLINE(*y-1)[term.col-1].mode"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t101\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "ff25ed00-8e0f-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t\t\t\tif (!(TLINE(*y-1)[term.col-1].mode"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t101\t1",
     "filetype": "diff"
   }
 ]
