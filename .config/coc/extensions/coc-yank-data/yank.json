@@ -1,5 +1,33 @@
 [
   {
+    "id": "ed956000-96fe-11e9-a416-0d1ec6647e4d",
+    "content": [
+      "\t# children: [ entry,listview,sidebar ];"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/rofi/sidetab.rasi\t58\t1",
+    "filetype": ""
+  },
+  {
+    "id": "f631e2e0-96f1-11e9-8a5f-cdaa23e97ef6",
+    "content": [
+      "tnoremap <silent> <C-h> <C-\\><C-n>:wincmd h<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t356\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "8f75af50-96f1-11e9-8a5f-cdaa23e97ef6",
+    "content": [
+      "\" nnoremap <silent> <leader>tt :call TermToggle()<CR>",
+      "\" tnoremap <silent> <leader>tt <C-\\><C-n>:call TermToggle()<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t350\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "a34d59f0-96c5-11e9-8232-15b588194ff3",
     "content": [
       "加油"
@@ -2231,35 +2259,5 @@
     "regtype": "v",
     "path": "file:///home/kyle/.config/fontconfig/fonts.conf\t21\t25",
     "filetype": "xml"
-  },
-  {
-    "id": "3baafa80-8e11-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+void kscrolldown(const Arg *);",
-      "+void kscrollup(const Arg *);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t331\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "2e2ab5d0-8e11-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\tif (term.scr == 0)",
-      "+\t\txdrawcursor(cx, term.c.y, term.line[term.c.y][cx],",
-      "+\t\t\t\tterm.ocx, term.ocy, term.line[term.ocy][term.ocx]);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t317\t1",
-    "filetype": "diff"
-  },
-  {
-    "id": "290e1dd0-8e11-11e9-901f-8f1bdc0b98ea",
-    "content": [
-      "+\t\txdrawline(TLINE(y), x1, y, x2);"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/packages/st-0.8.2/patch-scrollback.diff\t307\t1",
-    "filetype": "diff"
   }
 ]
