@@ -219,6 +219,9 @@ nnoremap <silent> <Esc> :noh<CR>
 " insert empty lines
 nnoremap <silent><CR> o<Esc>k
 
+" escape as terminal escape
+tnoremap <Esc> <C-\><C-n>
+
 "-----------------"
 " Plugin Settings "
 "-----------------"
@@ -302,7 +305,7 @@ highlight GitGutterDelete ctermfg=7
 
 " split-term.vim settings
 set splitright
-let g:term_size = 50
+let g:term_size = 40
 
 " terminal function (from /u/andreyorst) was modified
 let g:term_buf = -1
@@ -344,10 +347,14 @@ endfunction
 autocmd bufenter * if winnr("$") == 1 && win_getid() == g:term_win | q | endif
 
 " terminal bindings
-nnoremap <silent> <leader>tt :call TermToggle()<CR>
-tnoremap <silent> <leader>tt <C-\><C-n>:call TermToggle()<CR>
-nnoremap <silent> <leader>ts :call TermSwitch()<CR>
-tnoremap <silent> <leader>ts <C-\><C-n>:call TermSwitch()<CR>
+" nnoremap <silent> <leader>tt :call TermToggle()<CR>
+" tnoremap <silent> <leader>tt <C-\><C-n>:call TermToggle()<CR>
+" nnoremap <silent> <leader>ts :call TermSwitch()<CR>
+" tnoremap <silent> <leader>ts <C-\><C-n>:call TermSwitch()<CR>
+nnoremap <silent> <leader>t :call TermToggle()<CR>
+tnoremap <silent> <leader>t <C-\><C-n>:call TermToggle()<CR>
+tnoremap <silent> <C-h> <C-\><C-n>:wincmd h<CR>
+autocmd BufWinEnter,WinEnter term://* startinsert
 
 " indent line
 let g:indentLine_char = '▏'
