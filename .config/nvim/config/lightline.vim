@@ -120,7 +120,7 @@ let g:lightline_buffer_maxflen = 30
 let g:lightline#ale#indicator_checking = "..."
 let g:lightline#ale#indicator_warnings = "\uf071 :"
 let g:lightline#ale#indicator_errors = "\uf05e :"
-let g:lightline#ale#indicator_ok = "  "
+let g:lightline#ale#indicator_ok = "  "
 
 " Lightline noscrollbar
 function! Noscrollbar(...)
