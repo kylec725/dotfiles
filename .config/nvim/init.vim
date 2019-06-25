@@ -220,7 +220,7 @@ nnoremap <silent> <Esc> :noh<CR>
 nnoremap <silent><CR> o<Esc>k
 
 " escape as terminal escape
-tnoremap <Esc> <C-\><C-n>
+" tnoremap <Esc> <C-\><C-n>
 
 "-----------------"
 " Plugin Settings "
