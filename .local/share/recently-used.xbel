@@ -413,12 +413,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/kyle/.screenlayout/sideview.sh" added="2019-06-15T20:52:05Z" modified="2019-06-26T15:55:44Z" visited="2019-06-15T20:52:05Z">
+  <bookmark href="file:///home/kyle/.screenlayout/sideview.sh" added="2019-06-15T20:52:05Z" modified="2019-06-26T18:05:29Z" visited="2019-06-15T20:52:05Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/x-shellscript"/>
         <bookmark:applications>
-          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-26T15:55:44Z" count="13"/>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-26T18:05:29Z" count="14"/>
         </bookmark:applications>
       </metadata>
     </info>

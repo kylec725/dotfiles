@@ -1,5 +1,15 @@
 [
   {
+    "id": "46b2c5b0-9844-11e9-a4c3-87a1d96d2960",
+    "content": [
+      "Plug 'mhinz/vim-startify'",
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t7\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "bdfe3500-982b-11e9-8638-2b284badf7a4",
     "content": [
       "\t\"coc.preferences.diagnostic.displayByAle\": true,"
@@ -2250,14 +2260,5 @@
     "regtype": "v",
     "path": "file:///home/kyle/.config/kitty/kitty.conf\t472\t10",
     "filetype": "conf"
-  },
-  {
-    "id": "a861ad80-8e12-11e9-b877-e380f46f8cc7",
-    "content": [
-      "#A3BE8C"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/packages/st-0.8.2/config.def.h\t105\t3",
-    "filetype": "c"
   }
 ]

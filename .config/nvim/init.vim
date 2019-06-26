@@ -3,6 +3,9 @@
 "-----------------------------"
 call plug#begin('~/.config/nvim/plugged')
 
+" Startscreen
+Plug 'mhinz/vim-startify'
+
 " Editing or Typing
 Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
