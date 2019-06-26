@@ -131,6 +131,8 @@ hi EndOfBuffer ctermfg=16
 " pop-up menu colors
 hi Pmenu ctermbg=0 ctermfg=7
 hi PmenuSel ctermbg=5 ctermfg=7
+hi PmenuSbar ctermbg=grey
+hi PmenuThumb ctermbg=blue
 
 " indent settings
 set tabstop=8

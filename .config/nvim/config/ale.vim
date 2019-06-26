@@ -18,3 +18,5 @@ highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 " highlighting
 hi ALEWarning ctermbg=yellow ctermfg=0
 hi ALEError ctermbg=red ctermfg=7
+
+autocmd Filetype ale-preview nnoremap <buffer> <Esc> :q<CR>
