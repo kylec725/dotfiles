@@ -1,5 +1,68 @@
 [
   {
+    "id": "2c7e1640-97e0-11e9-9de4-29e8c28c88d6",
+    "content": [
+      "autocmd FileType defx nnoremap <buffer> <C-j> 3j | nnoremap <buffer> <C-k> 3k"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t193\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "1eee8f50-97e0-11e9-9de4-29e8c28c88d6",
+    "content": [
+      "autocmd FileType defx nnoremap <buffer> <C-j> 3j"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t193\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "b3fe4bd0-97db-11e9-8ff9-cf39075f66cb",
+    "content": [
+      "Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t39\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "e0f30b40-97da-11e9-b52c-e197668237d7",
+    "content": [
+      "hi ALEInfo ctermbg=green"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/config/ale.vim\t21\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "dc18ac60-97da-11e9-b52c-e197668237d7",
+    "content": [
+      "hi ALEError ctermbg=red"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/config/ale.vim\t20\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "90392680-97da-11e9-b52c-e197668237d7",
+    "content": [
+      "highlight ALEWarningSign ctermbg=NONE ctermfg=yellow"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/config/ale.vim\t16\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "7a4815c0-97da-11e9-b52c-e197668237d7",
+    "content": [
+      "hi ALEError ctermbg=red"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/config/ale.vim\t20\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "ed956000-96fe-11e9-a416-0d1ec6647e4d",
     "content": [
       "\t# children: [ entry,listview,sidebar ];"
@@ -2196,68 +2259,5 @@
     "regtype": "v",
     "path": "file:///home/kyle/packages/st-0.8.2/config.def.h\t115\t3",
     "filetype": "c"
-  },
-  {
-    "id": "a51a71c0-8e12-11e9-b877-e380f46f8cc7",
-    "content": [
-      "A3BE8C"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/packages/st-0.8.2/config.def.h\t105\t4",
-    "filetype": "c"
-  },
-  {
-    "id": "a230bf50-8e12-11e9-ab9e-251ca1f424a4",
-    "content": [
-      "#A3BE8C"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t468\t10",
-    "filetype": "conf"
-  },
-  {
-    "id": "9d7a8a40-8e12-11e9-ab9e-251ca1f424a4",
-    "content": [
-      "#BF616A"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t465\t10",
-    "filetype": "conf"
-  },
-  {
-    "id": "9974b970-8e12-11e9-ab9e-251ca1f424a4",
-    "content": [
-      "#BF616A"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t464\t10",
-    "filetype": "conf"
-  },
-  {
-    "id": "94221d50-8e12-11e9-ab9e-251ca1f424a4",
-    "content": [
-      "#4C566A"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t461\t10",
-    "filetype": "conf"
-  },
-  {
-    "id": "90803e70-8e12-11e9-ab9e-251ca1f424a4",
-    "content": [
-      "#3B4252"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t460\t10",
-    "filetype": "conf"
-  },
-  {
-    "id": "20e513b0-8e12-11e9-9ce2-fdffe50063c0",
-    "content": [
-      "Meslo LG S DZ for Powerline"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/fontconfig/fonts.conf\t21\t25",
-    "filetype": "xml"
   }
 ]

@@ -181,9 +181,11 @@ nnoremap <silent> <leader>bd :bd<CR>
 
 " map shift + hjkl
 noremap <S-h> ^
-noremap <S-j> 3j
-noremap <S-k> 3k
+noremap <S-j> L
+noremap <S-k> H
 noremap <S-L> g_
+autocmd FileType defx nnoremap <buffer> <S-j> 3j | nnoremap <buffer> <S-k> 3k
+autocmd FileType vista_kind nnoremap <buffer> <S-j> 3j | nnoremap <buffer> <S-k> 3k
 
 " window navigation keys
 noremap <C-h> <C-w>h

@@ -2,6 +2,9 @@
   "extensions": {
     "%2Fhome%2Fkyle%2Fchess": [
       ":q"
+    ],
+    "%2Fhome%2Fkyle%2Fchess%2Fsrc": [
+      "uuuuu"
     ]
   }
 }
