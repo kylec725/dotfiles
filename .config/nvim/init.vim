@@ -3,9 +3,6 @@
 "-----------------------------"
 call plug#begin('~/.config/nvim/plugged')
 
-" Startscreen
-Plug 'mhinz/vim-startify'
-
 " Editing or Typing
 Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
@@ -228,6 +225,9 @@ nnoremap <silent><CR> o<Esc>k
 
 " escape as terminal escape
 " tnoremap <Esc> <C-\><C-n>
+
+" change cwd to the open buffer's location
+nnoremap <leader>cd :cd %:p:h<CR>
 
 "-----------------"
 " Plugin Settings "
