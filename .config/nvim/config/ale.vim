@@ -16,5 +16,5 @@ highlight ALEErrorSign ctermbg=NONE ctermfg=red
 highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 
 " highlighting
-hi ALEWarning ctermbg=yellow
-hi ALEError ctermbg=red
+hi ALEWarning ctermbg=yellow ctermfg=0
+hi ALEError ctermbg=red ctermfg=7

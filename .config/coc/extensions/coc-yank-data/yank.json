@@ -1,5 +1,14 @@
 [
   {
+    "id": "bdfe3500-982b-11e9-8638-2b284badf7a4",
+    "content": [
+      "\t\"coc.preferences.diagnostic.displayByAle\": true,"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/coc.nvim/doc/coc.txt\t2265\t1",
+    "filetype": "help"
+  },
+  {
     "id": "2c7e1640-97e0-11e9-9de4-29e8c28c88d6",
     "content": [
       "autocmd FileType defx nnoremap <buffer> <C-j> 3j | nnoremap <buffer> <C-k> 3k"
@@ -2249,15 +2258,6 @@
     ],
     "regtype": "v",
     "path": "file:///home/kyle/packages/st-0.8.2/config.def.h\t105\t3",
-    "filetype": "c"
-  },
-  {
-    "id": "a69cf310-8e12-11e9-b877-e380f46f8cc7",
-    "content": [
-      "green"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/packages/st-0.8.2/config.def.h\t115\t3",
     "filetype": "c"
   }
 ]
