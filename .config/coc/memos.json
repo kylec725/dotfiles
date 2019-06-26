@@ -1702,7 +1702,8 @@
       "fileHash": "8964e3f2f74a19114e76b59dc2507ace8ba6f38e9cb1b8810d1d2cadd321f116c77601332af72747c30d7f4ea23305cc49f1df25b0bb25a04b7eb9228ecf0eda",
       "type": "Unknown",
       "displayName": "Python 3.7.3 64-bit"
-    }
+    },
+    "ProposeLSBanner": false
   },
   "coc-python|/home/kyle/school/spring19/351/hw1": {
     "INTERPRETERS_CACHE_v3_PipEnvService:4979511203e62cba54b345c9c7ca10b4": [],
