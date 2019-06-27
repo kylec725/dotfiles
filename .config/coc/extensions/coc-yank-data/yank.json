@@ -1,5 +1,31 @@
 [
   {
+    "id": "b6bda260-9869-11e9-9669-8d2c080049b9",
+    "content": [
+      "export PATH=\"$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/root/.gem/ruby/2.6.0/bin\"",
+      "export FZF_DEFAULT_COMMAND='rg --files --hidden $HOME'",
+      "export FZF_DEFAULT_OPTS='--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,gutter:-1'",
+      "export VISUAL=nvim",
+      "export EDITOR=nvim"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.bashrc\t17\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "bf0542f0-9866-11e9-9cf7-5b0dd016c703",
+    "content": [
+      "export PATH=\"$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/root/.gem/ruby/2.6.0/bin\"",
+      "export FZF_DEFAULT_COMMAND='rg --files --hidden $HOME'",
+      "export FZF_DEFAULT_OPTS='--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,gutter:-1'",
+      "export VISUAL=nvim",
+      "export EDITOR=nvim"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.bashrc\t17\t1",
+    "filetype": "sh"
+  },
+  {
     "id": "46b2c5b0-9844-11e9-a4c3-87a1d96d2960",
     "content": [
       "Plug 'mhinz/vim-startify'",
@@ -2241,24 +2267,6 @@
     ],
     "regtype": "v",
     "path": "file:///home/kyle/.config/kitty/kitty.conf\t476\t9",
-    "filetype": "conf"
-  },
-  {
-    "id": "af9c6a90-8e12-11e9-ab9e-251ca1f424a4",
-    "content": [
-      "#EBCB8B"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t472\t10",
-    "filetype": "conf"
-  },
-  {
-    "id": "ad6454e0-8e12-11e9-ab9e-251ca1f424a4",
-    "content": [
-      "#EBCB8B"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t472\t10",
     "filetype": "conf"
   }
 ]

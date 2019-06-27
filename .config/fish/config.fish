@@ -51,6 +51,14 @@ abbr awm 'cd ~/.config/awesome'
 abbr school 'cd ~/school'
 abbr sem 'cd ~/school/fall19'
 
+# environment variables
+# set -Ux PATH="$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/root/.gem/ruby/2.6.0/bin"
+set -Ux FZF_DEFAULT_COMMAND 'rg --files --hidden $HOME'
+set -Ux FZF_DEFAULT_OPTS '--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,gutter:-1'
+set -Ux VISUAL nvim
+set -Ux EDITOR nvim
+set -Ux SHELL /usr/bin/fish
+
 # color theme
 set nord0 2e3440
 set nord1 3b4252

@@ -1,5 +1,10 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export EDITOR:nvim
+SETUVAR --export FZF_DEFAULT_COMMAND:rg\x20\x2d\x2dfiles\x20\x2d\x2dhidden\x20\x24HOME
+SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dno\x2dmouse\x20\x2d\x2dbind\x3dtab\x3aup\x2cbtab\x3adown\x20\x2d\x2dcolor\x3dprompt\x3a195\x2cpointer\x3a\x235ADECD\x2chl\x2b\x3a\x235ADECD\x2chl\x3a\x23C574DD\x2cgutter\x3a\x2d1
+SETUVAR --export SHELL:/usr/bin/fish
+SETUVAR --export VISUAL:nvim
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d

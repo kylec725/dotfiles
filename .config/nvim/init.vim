@@ -227,7 +227,7 @@ nnoremap <silent><CR> o<Esc>k
 " tnoremap <Esc> <C-\><C-n>
 
 " change cwd to the open buffer's location
-nnoremap <leader>cd :cd %:p:h<CR>
+nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 
 "-----------------"
 " Plugin Settings "
