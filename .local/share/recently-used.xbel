@@ -3,16 +3,6 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///home/kyle/kitty.conf" added="2019-05-28T04:11:45Z" modified="2019-05-28T04:11:45Z" visited="2019-05-28T04:11:45Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
-        <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-28T04:11:45Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
   <bookmark href="file:///home/kyle/packages/dwm-6.2.tar.gz" added="2019-05-30T18:20:02Z" modified="2019-05-30T18:20:05Z" visited="2019-05-30T18:20:02Z">
     <info>
       <metadata owner="http://freedesktop.org">
@@ -499,6 +489,56 @@
         <mime:mime-type type="application/pdf"/>
         <bookmark:applications>
           <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-25T03:08:04Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/packages/Typora-linux-x64.tar.gz" added="2019-06-28T18:17:17Z" modified="2019-06-28T18:17:19Z" visited="2019-06-28T18:17:18Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-28T18:17:19Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/downloads/Typora-Lostkeys-Theme-master.zip" added="2019-06-28T18:23:37Z" modified="2019-06-28T18:23:38Z" visited="2019-06-28T18:23:38Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-28T18:23:38Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/downloads/typora-theme-refine-master.zip" added="2019-06-28T18:31:55Z" modified="2019-06-28T18:31:55Z" visited="2019-06-28T18:31:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-28T18:31:55Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/downloads/Ursine_v1.6.2.zip" added="2019-06-28T18:37:52Z" modified="2019-06-28T18:37:53Z" visited="2019-06-28T18:37:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-28T18:37:53Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle/payment.md" added="2019-06-28T18:44:28Z" modified="2019-06-28T18:56:02Z" visited="2019-06-28T18:44:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:applications>
+          <bookmark:application name="typora" exec="&apos;typora %u&apos;" modified="2019-06-28T18:56:02Z" count="6"/>
         </bookmark:applications>
       </metadata>
     </info>
