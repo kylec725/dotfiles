@@ -47,7 +47,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'KabbAmine/zeavim.vim'
 
 " Note Taking
-Plug 'vimwiki/vimwiki'
+" Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
