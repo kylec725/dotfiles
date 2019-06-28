@@ -29,7 +29,6 @@ let g:lightline.component = {
             \   'lineinfo': '%1l:%-2v',
             \   'line': '%l',
             \   'column': '%c',
-            \   'tagbar': '%{tagbar#currenttag("%s", "")}',
             \}
 
 let g:lightline.component_function = {
@@ -37,6 +36,7 @@ let g:lightline.component_function = {
             \   'filetype': 'LightlineFiletype',
             \   'readonly': 'LightlineReadonly',
             \   'noscrollbar': 'Noscrollbar',
+            \   'tagbar': 'LightlineTagbar',
             \ }
 
 let g:lightline.component_expand = {
@@ -110,6 +110,11 @@ function! LightlineReadonly()
     return &readonly ? '' : ''
 endfunction
 
+" Tagbar
+function! LightlineTagbar()
+    return winwidth(0) > 80 ? tagbar#currenttag("%s", "") : ''
+endfunction
+
 let g:unite_force_overwrite_statusline = 0
 let g:vimfiler_force_overwrite_statusline = 0
 
@@ -124,6 +129,6 @@ let g:lightline#ale#indicator_ok = "  "
 
 " Lightline noscrollbar
 function! Noscrollbar(...)
-    return winwidth(0) > 50 ? (' ' . noscrollbar#statusline()) : ''
+    return winwidth(0) > 80 ? (' ' . noscrollbar#statusline()) : ''
     return ' ' . noscrollbar#statusline()
 endfunction

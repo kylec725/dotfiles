@@ -1,5 +1,0 @@
-= Payment =
-
-== Stripe API Implementation ==
-
-* [[Layout]]: _Describe the structure of the elements as classes_

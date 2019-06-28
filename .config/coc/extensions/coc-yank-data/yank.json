@@ -1,5 +1,95 @@
 [
   {
+    "id": "9bffc3d0-99c8-11e9-a6eb-8951c4868e33",
+    "content": [
+      "%{tagbar#currenttag(\"%s\", \"\")}"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t32\t28",
+    "filetype": "vim"
+  },
+  {
+    "id": "95974ae0-99c8-11e9-a6eb-8951c4868e33",
+    "content": [
+      "    return winwidth(0) > 50 ? (&filetype !=# '' ? &filetype : 'no filetype') : ''"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t105\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "85c63860-99c8-11e9-a6eb-8951c4868e33",
+    "content": [
+      "%{tagbar#currenttag(\"%s\", \"\")}"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t32\t28",
+    "filetype": "vim"
+  },
+  {
+    "id": "593c8c40-99c8-11e9-9766-ebf29a71097e",
+    "content": [
+      "youtube.com"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/resume/resume.tex\t77\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "dd79d3d0-996b-11e9-b2a1-1753a615dd22",
+    "content": [
+      "Create payment system utilizing Stripe API"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/wiki/index.wiki\t4\t40",
+    "filetype": "vimwiki"
+  },
+  {
+    "id": "507af140-993d-11e9-8a48-a9026b029c26",
+    "content": [
+      "  function! VimwikiLinkHandler(link)",
+      "    \" Use Vim to open external files with the 'vfile:' scheme.  E.g.:",
+      "    \"   1) [[vfile:~/Code/PythonProject/abc123.py]]",
+      "    \"   2) [[vfile:./|Wiki Home]]",
+      "    let link = a:link",
+      "    if link =~# '^vfile:'",
+      "      let link = link[1:]",
+      "    else",
+      "      return 0",
+      "    endif",
+      "    let link_infos = vimwiki#base#resolve_link(link)",
+      "    if link_infos.filename == ''",
+      "      echomsg 'Vimwiki Error: Unable to resolve link!'",
+      "      return 0",
+      "    else",
+      "      exe 'tabnew ' . fnameescape(link_infos.filename)",
+      "      return 1",
+      "    endif",
+      "  endfunction"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t2542\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "4bc83410-993c-11e9-85bd-0f3ff247425c",
+    "content": [
+      "[file:~/chickens.md]"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/wiki/index.wiki\t5\t7",
+    "filetype": "vimwiki"
+  },
+  {
+    "id": "026e47a0-993c-11e9-a868-61f532d3dd6e",
+    "content": [
+      "Affordable Payment System"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/wiki/index.wiki\t4\t7",
+    "filetype": "vimwiki"
+  },
+  {
     "id": "b2942670-9939-11e9-a0b3-cd0eeaefbb1c",
     "content": [
       "|g:vimwiki_folding"
@@ -2133,77 +2223,5 @@
     "regtype": "V",
     "path": "file:///home/kyle/chickens.md\t2\t1",
     "filetype": "markdown"
-  },
-  {
-    "id": "9aab0190-8ef9-11e9-b4a3-d12d1cd632f7",
-    "content": [
-      ""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/chickens.md\t3\t1",
-    "filetype": "markdown"
-  },
-  {
-    "id": "715936a0-8ef3-11e9-a19f-bd1fec7a7bdf",
-    "content": [
-      "prompt_pwd"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/fish/config.fish\t11\t13",
-    "filetype": "fish"
-  },
-  {
-    "id": "6b011160-8ef3-11e9-a19f-bd1fec7a7bdf",
-    "content": [
-      "prompt_pwd"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/fish/functions/fish_prompt.fish\t36\t78",
-    "filetype": "fish"
-  },
-  {
-    "id": "69e2a910-8ef3-11e9-a19f-bd1fec7a7bdf",
-    "content": [
-      "prompt_pwd"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/fish/functions/fish_prompt.fish\t36\t78",
-    "filetype": "fish"
-  },
-  {
-    "id": "684c78b0-8ef3-11e9-a19f-bd1fec7a7bdf",
-    "content": [
-      "            echo -n -s \"$USER\" @ (prompt_hostname) ' ' \"$__fish_prompt_cwd\" (prompt_pwd) \"$__fish_prompt_normal\" '# '"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/fish/functions/fish_prompt.fish\t36\t1",
-    "filetype": "fish"
-  },
-  {
-    "id": "65d6bdc0-8ef3-11e9-a19f-bd1fec7a7bdf",
-    "content": [
-      "    printf \" \""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/fish/config.fish\t11\t1",
-    "filetype": "fish"
-  },
-  {
-    "id": "635f5520-8ef3-11e9-a19f-bd1fec7a7bdf",
-    "content": [
-      "prompt_pwd"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/fish/functions/fish_prompt.fish\t36\t78",
-    "filetype": "fish"
-  },
-  {
-    "id": "61b4d970-8ef3-11e9-a19f-bd1fec7a7bdf",
-    "content": [
-      "prompt_pwd"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/fish/functions/fish_prompt.fish\t36\t78",
-    "filetype": "fish"
   }
 ]
