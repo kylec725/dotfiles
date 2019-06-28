@@ -1,5 +1,15 @@
 [
   {
+    "id": "f6e37e30-99e7-11e9-9b02-4920c43a78d7",
+    "content": [
+      "    awful.key({ modkey,           }, \"m\",       function () awful.spawn(mpd) end,",
+      "        {description = \"open mpd client ncmpcpp\", group = \"launcher\"}),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t82\t1",
+    "filetype": "lua"
+  },
+  {
     "id": "7d7d0d00-99d2-11e9-9df0-cdfacd965cf7",
     "content": [
       "hr {",
@@ -2220,15 +2230,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.bin/fzfclip\t13\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "50c7c970-8f10-11e9-a724-cddb7aeff5ea",
-    "content": [
-      "#  - Remove empty clipboard items"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.bin/fzfclip\t15\t1",
     "filetype": "sh"
   }
 ]

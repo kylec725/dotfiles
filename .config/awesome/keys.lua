@@ -81,6 +81,8 @@ keys.globalkeys = gears.table.join(
         {description = "open vlc", group = "launcher"}),
     awful.key({ modkey,           }, "m",       function () awful.spawn(mpd) end,
         {description = "open mpd client ncmpcpp", group = "launcher"}),
+    awful.key({ modkey,           }, "t",       function () awful.spawn("typora") end,
+        {description = "open markdown editor", group = "launcher"}),
     awful.key({ modkey,           }, "z", -- have the pdf script spawn in a floating window
         function () awful.spawn(pdf,{
                     -- floating = true,
@@ -120,7 +122,7 @@ awful.key({}, "XF86AudioPrev",       function ()
     song.previous()
 end, {description = "previous song in music", group = "launcher"}),
 
-awful.key({ modkey,  }, "t",       function ()
+awful.key({ modkey,  }, ",",       function ()
     sidebar.music_toggle()
 end, {description = "play or pause music", group = "launcher"}),
 awful.key({ modkey }, ".",       function ()

@@ -403,12 +403,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/kyle/.screenlayout/sideview.sh" added="2019-06-15T20:52:05Z" modified="2019-06-27T19:51:36Z" visited="2019-06-15T20:52:05Z">
+  <bookmark href="file:///home/kyle/.screenlayout/sideview.sh" added="2019-06-15T20:52:05Z" modified="2019-06-28T20:00:55Z" visited="2019-06-15T20:52:05Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/x-shellscript"/>
         <bookmark:applications>
-          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-27T19:51:36Z" count="16"/>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2019-06-28T20:00:55Z" count="17"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -533,12 +533,22 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/kyle/payment.md" added="2019-06-28T18:44:28Z" modified="2019-06-28T18:56:02Z" visited="2019-06-28T18:44:28Z">
+  <bookmark href="file:///home/kyle/payment.md" added="2019-06-28T18:44:28Z" modified="2019-06-28T20:43:47Z" visited="2019-06-28T18:44:28Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/markdown"/>
         <bookmark:applications>
-          <bookmark:application name="typora" exec="&apos;typora %u&apos;" modified="2019-06-28T18:56:02Z" count="6"/>
+          <bookmark:application name="typora" exec="&apos;typora %u&apos;" modified="2019-06-28T20:43:47Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kyle" added="2019-06-28T20:50:12Z" modified="2019-06-28T20:50:12Z" visited="2019-06-28T20:50:12.546158Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="typora" exec="&apos;typora %u&apos;" modified="2019-06-28T20:50:12Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
