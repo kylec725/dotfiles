@@ -46,6 +46,9 @@ Plug 'airblade/vim-gitgutter'
 " Documentation
 Plug 'KabbAmine/zeavim.vim'
 
+" Note Taking
+Plug 'vimwiki/vimwiki'
+
 call plug#end()
 
 "----------------------"
@@ -146,14 +149,15 @@ autocmd FileType css setlocal shiftwidth=2 | match OverLength /\%81v.\+/
 autocmd FileType json setlocal shiftwidth=2
 autocmd FileType ruby setlocal shiftwidth=2 | match OverLength /\%81v.\+/
 autocmd FileType tex setlocal shiftwidth=2 spell | nnoremap <leader>p :!pdflatex %<CR>
-autocmd FileType markdown setlocal spell
+autocmd FileType markdown setlocal spell shiftwidth=4
 autocmd FileType ocaml setlocal shiftwidth=2 | match OverLength /\%81v.\+/
 autocmd FileType c setlocal shiftwidth=4 cindent | match OverLength /\%81v.\+/
 autocmd FileType cpp setlocal shiftwidth=4 cindent cinoptions=g0+N-sw | match OverLength /\%81v.\+/
 autocmd FileType java setlocal shiftwidth=4 | match OverLength /\%81v.\+/
-autocmd FileType javascript setlocal shiftwidth=4 | match OverLength /\%81v.\+/
+autocmd FileType javascript setlocal shiftwidth=4
 autocmd FileType python setlocal shiftwidth=4 | match OverLength /\%81v.\+/
 autocmd FileType vim setlocal shiftwidth=4
+autocmd FileType vimwiki setlocal shiftwidth=4
 autocmd FileType lua setlocal shiftwidth=4
 autocmd FileType fish setlocal shiftwidth=4 | ALEDisable
 autocmd FileType sh setlocal shiftwidth=8
@@ -221,7 +225,7 @@ nnoremap <leader>i :Indent<CR>
 nnoremap <silent> <Esc> :noh<CR>
 
 " insert empty lines
-nnoremap <silent><CR> o<Esc>k
+nnoremap <silent><Space> o<Esc>k
 
 " escape as terminal escape
 " tnoremap <Esc> <C-\><C-n>
@@ -368,4 +372,4 @@ let g:indentLine_char = '▏'
 
 " highlight word under cursor
 hi link illuminatedWord Visual
-let g:Illuminate_ftblacklist = [ 'help', 'defx', 'vista_kind', 'vim', 'markdown', 'tex' ]
+let g:Illuminate_ftblacklist = [ 'help', 'defx', 'vista_kind', 'vim', 'markdown', 'tex', 'vimwiki' ]

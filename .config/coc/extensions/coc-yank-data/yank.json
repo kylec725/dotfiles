@@ -1,5 +1,348 @@
 [
   {
+    "id": "b2942670-9939-11e9-a0b3-cd0eeaefbb1c",
+    "content": [
+      "|g:vimwiki_folding"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t1386\t31",
+    "filetype": "help"
+  },
+  {
+    "id": "791ab5d0-9939-11e9-9ef2-199dd8773cd6",
+    "content": [
+      "Cards"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t15\t7",
+    "filetype": "vimwiki"
+  },
+  {
+    "id": "6af3a9d0-9939-11e9-9ef2-199dd8773cd6",
+    "content": [
+      "Transactions"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t30\t7",
+    "filetype": "vimwiki"
+  },
+  {
+    "id": "69c478a0-9939-11e9-9ef2-199dd8773cd6",
+    "content": [
+      "Checking Account"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t20\t7",
+    "filetype": "vimwiki"
+  },
+  {
+    "id": "6845c7e0-9939-11e9-9ef2-199dd8773cd6",
+    "content": [
+      "Balances"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t25\t7",
+    "filetype": "vimwiki"
+  },
+  {
+    "id": "668c5810-9939-11e9-9ef2-199dd8773cd6",
+    "content": [
+      "Checking Account"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t20\t7",
+    "filetype": "vimwiki"
+  },
+  {
+    "id": "651d10a0-9939-11e9-9ef2-199dd8773cd6",
+    "content": [
+      "Payment Method"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t7\t7",
+    "filetype": "vimwiki"
+  },
+  {
+    "id": "636bb720-9939-11e9-9ef2-199dd8773cd6",
+    "content": [
+      "Cards: can be either debit or credit"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t15\t7",
+    "filetype": "vimwiki"
+  },
+  {
+    "id": "5fbf50f0-9939-11e9-9ef2-199dd8773cd6",
+    "content": [
+      "Payment Method"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t7\t7",
+    "filetype": "vimwiki"
+  },
+  {
+    "id": "53a2baf0-9939-11e9-9ef2-199dd8773cd6",
+    "content": [
+      "Method"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t7\t15",
+    "filetype": "vimwiki"
+  },
+  {
+    "id": "508aa580-9939-11e9-9ef2-199dd8773cd6",
+    "content": [
+      "**"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t3\t13",
+    "filetype": "vimwiki"
+  },
+  {
+    "id": "5028fd80-9939-11e9-9ef2-199dd8773cd6",
+    "content": [
+      "User*"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t3\t8",
+    "filetype": "vimwiki"
+  },
+  {
+    "id": "4d7b69b0-9939-11e9-9ef2-199dd8773cd6",
+    "content": [
+      "User"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t3\t7",
+    "filetype": "vimwiki"
+  },
+  {
+    "id": "1bb3b050-9938-11e9-8075-cf24c5977b6e",
+    "content": [
+      "nmap ++ <Plug>VimwikiNormalizeLink"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t382\t26",
+    "filetype": "help"
+  },
+  {
+    "id": "ab996a80-9937-11e9-9057-ddd8e6061d71",
+    "content": [
+      "nmap == <Plug>VimwikiAddHeaderLevel"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/config/vimwiki.vim\t3\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "a58727e0-9937-11e9-9057-ddd8e6061d71",
+    "content": [
+      "nmap == <Plug>VimwikiAddHeaderLevel"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t338\t26",
+    "filetype": "help"
+  },
+  {
+    "id": "95d615f0-9936-11e9-9057-ddd8e6061d71",
+    "content": [
+      "autocmd FileType vim setlocal shiftwidth=4"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t159\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "32dafe80-9935-11e9-b262-fb23ffc99456",
+    "content": [
+      "~/paymentwiki/payment.wiki"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/config/vimwiki.vim\t4\t35",
+    "filetype": "vim"
+  },
+  {
+    "id": "1a658cd0-9935-11e9-accb-d734eeff4403",
+    "content": [
+      "let g:vimwiki_list = [{'path': '~/my_site/', 'path_html': '~/public_html/'}]"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t1861\t3",
+    "filetype": "help"
+  },
+  {
+    "id": "166a1c40-9935-11e9-accb-d734eeff4403",
+    "content": [
+      "  let g:vimwiki_list = [{'path': '~/my_site/', 'path_html': '~/public_html/'}]"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t1861\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "0bcb9ac0-9935-11e9-accb-d734eeff4403",
+    "content": [
+      "  let g:vimwiki_list = [{'path': '~/my_site/', 'path_html': '~/public_html/'}]"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t1861\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "03432800-9935-11e9-accb-d734eeff4403",
+    "content": [
+      "  let g:vimwiki_list = [{'path': '~/my_site/', 'path_html': '~/public_html/'}]"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t1861\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "e063f5e0-9933-11e9-accb-d734eeff4403",
+    "content": [
+      "",
+      " | First Name  |   |   |   |   |"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t1694\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "def0dde0-9933-11e9-accb-d734eeff4403",
+    "content": [
+      " "
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t1695\t2",
+    "filetype": "help"
+  },
+  {
+    "id": "e0c93240-9931-11e9-accb-d734eeff4403",
+    "content": [
+      "let g:vimwiki_map_prefix = '<Leader>e'"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t2881\t3",
+    "filetype": "help"
+  },
+  {
+    "id": "a133e210-9931-11e9-accb-d734eeff4403",
+    "content": [
+      "nmap <Leader>w <Plug>VimwikiIndex"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t122\t10",
+    "filetype": "help"
+  },
+  {
+    "id": "db9e10c0-9930-11e9-accb-d734eeff4403",
+    "content": [
+      "nmap <Leader>dm <Plug>VimwikiMakeTomorrowDiaryNote"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t230\t10",
+    "filetype": "help"
+  },
+  {
+    "id": "cf3de210-9930-11e9-accb-d734eeff4403",
+    "content": [
+      "nmap <Leader>dy <Plug>VimwikiMakeYesterdayDiaryNote"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t213\t10",
+    "filetype": "help"
+  },
+  {
+    "id": "b3b7d500-9930-11e9-accb-d734eeff4403",
+    "content": [
+      "nmap <Leader>dt <Plug>VimwikiTabMakeDiaryNote"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t195\t10",
+    "filetype": "help"
+  },
+  {
+    "id": "a6c50340-9930-11e9-accb-d734eeff4403",
+    "content": [
+      "nmap <Leader>d <Plug>VimwikiMakeDiaryNote"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t177\t10",
+    "filetype": "help"
+  },
+  {
+    "id": "97bf7e20-9930-11e9-accb-d734eeff4403",
+    "content": [
+      "nmap <Leader>i <Plug>VimwikiDiaryIndex"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t159\t10",
+    "filetype": "help"
+  },
+  {
+    "id": "3631bce0-9930-11e9-accb-d734eeff4403",
+    "content": [
+      "nmap <Leader>i <Plug>VimwikiDiaryIndex"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t159\t10",
+    "filetype": "help"
+  },
+  {
+    "id": "e70c5ad0-992f-11e9-accb-d734eeff4403",
+    "content": [
+      "nmap <Leader>t <Plug>VimwikiTabIndex"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t136\t10",
+    "filetype": "help"
+  },
+  {
+    "id": "c1a68860-992f-11e9-be87-77261b8c5832",
+    "content": [
+      "nmap <Leader>t <Plug>VimwikiTabIndex"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t136\t10",
+    "filetype": "help"
+  },
+  {
+    "id": "f1f213f0-992e-11e9-be87-77261b8c5832",
+    "content": [
+      "nmap <Leader>w <Plug>VimwikiIndex"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t122\t10",
+    "filetype": "help"
+  },
+  {
+    "id": "38091c50-992d-11e9-be87-77261b8c5832",
+    "content": [
+      "        :nmap <Leader>w <Plug>VimwikiIndex"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t122\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "049668f0-98a6-11e9-8327-0f159ed0a0a0",
+    "content": [
+      "autocmd FileType vim setlocal shiftwidth=4"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t159\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "dee9c980-98a5-11e9-8901-cd2bff1774d5",
+    "content": [
+      "Unique User ID for each Customer"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/vimwiki/index.wiki\t5\t11",
+    "filetype": "vimwiki"
+  },
+  {
     "id": "b6bda260-9869-11e9-9669-8d2c080049b9",
     "content": [
       "export PATH=\"$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/root/.gem/ruby/2.6.0/bin\"",
@@ -1862,411 +2205,5 @@
     "regtype": "v",
     "path": "file:///home/kyle/.config/fish/functions/fish_prompt.fish\t36\t78",
     "filetype": "fish"
-  },
-  {
-    "id": "4e2e8720-8ef3-11e9-a19f-bd1fec7a7bdf",
-    "content": [
-      "    set_color 5fafd7",
-      "    printf \"加油 \""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/fish/config.fish\t6\t1",
-    "filetype": "fish"
-  },
-  {
-    "id": "38d2ffa0-8ef3-11e9-a19f-bd1fec7a7bdf",
-    "content": [
-      "$__fish_prompt_cwd"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/fish/functions/fish_prompt.fish\t36\t57",
-    "filetype": "fish"
-  },
-  {
-    "id": "215a9a50-8eed-11e9-b7e3-9943fe18137e",
-    "content": [
-      "加油 "
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/fish/config.fish\t5\t19",
-    "filetype": "fish"
-  },
-  {
-    "id": "cd392090-8eec-11e9-b7e3-9943fe18137e",
-    "content": [
-      "┌─[ 加油"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/fish/config.fish\t5\t10",
-    "filetype": "fish"
-  },
-  {
-    "id": "47f8aa30-8ee3-11e9-8c45-31880e6fb53a",
-    "content": [
-      "",
-      "# aliases",
-      "alias ls='ls --color=auto'",
-      "alias vim='nvim'",
-      "alias awm='cd ~/.config/awesome'",
-      "alias at='audio-toggle'"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.bashrc\t10\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "4045afe0-8ee3-11e9-8c45-31880e6fb53a",
-    "content": [
-      "PS1='\\[\\e[38;5;195m\\]\\342\\224\\214\\342\\224\\200[\\[\\e[0m\\] \\[\\e[38;5;74m\\]加油\\[\\e[0m\\] \\[\\e[38;5;69m\\]\\u\\[\\e[0m\\] \\[\\e[38;5;74m\\]\\w\\[\\e[0m\\] \\[\\e[38;5;195m\\]]\\n\\[\\e[38;5;195m\\]\\342\\224\\224\\342\\224\\200\\342\\224\\200>\\[\\e[0m\\] '"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.bashrc\t9\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "751a4d60-8edf-11e9-ac6f-a316cbc2ea51",
-    "content": [
-      "run clipster -d -f ~/.config/clipster/clipster.ini &"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/autorun.sh\t41\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "74b76ce0-8edf-11e9-ac6f-a316cbc2ea51",
-    "content": [
-      "# clear clipboard history on restart of clipster"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/autorun.sh\t42\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "3109d550-8edf-11e9-ac6f-a316cbc2ea51",
-    "content": [
-      "run clipster -d -f ~/.config/clipster/clipster.ini &"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/autorun.sh\t41\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "cf87d3e0-8ede-11e9-ac6f-a316cbc2ea51",
-    "content": [
-      "$clear_clipboard"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/autorun.sh\t43\t6",
-    "filetype": "sh"
-  },
-  {
-    "id": "910b1fa0-8ede-11e9-ac6f-a316cbc2ea51",
-    "content": [
-      "sleep 0.01"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/autorun.sh\t42\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "a587fc60-8edd-11e9-ac6f-a316cbc2ea51",
-    "content": [
-      "clipster -c --erase-entire-board"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/autorun.sh\t40\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "ca4e7700-8edc-11e9-ac9b-b91c55780931",
-    "content": [
-      "# Start Music Player Daemon"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/autorun.sh\t33\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "2c6bea90-8edc-11e9-9946-5d6b0dee8c47",
-    "content": [
-      "then"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bin/fzfclip\t28\t25",
-    "filetype": "sh"
-  },
-  {
-    "id": "4dc3e7d0-8eda-11e9-9d83-4dda61aafb69",
-    "content": [
-      "#!/bin/sh",
-      "",
-      "# Verify clipster is running, fail otherwise",
-      "clipster -o > /dev/null 2>&1",
-      "if [ $? -ne 0 ]; then",
-      "  echo 'Failed to retrieve history from Clipster, please ensure daemon is running!'",
-      "  exit 1",
-      "fi",
-      "",
-      "# Extract clipboard history from clipster and format for rofi",
-      "#  - Remove Newlines from clips",
-      "#  - Limit line length to 200 chars (for display in rofi)",
-      "#  - Split into lines based on NUL byte",
-      "#  - Remove Leading whitespace",
-      "#  - Remove empty clipboard items",
-      "#  - Add line numbers to clip items",
-      "# NOTE: This is all done in a single line because bash can't store a NUL byte",
-      "C_HIST=\"$(clipster -p -o -n 10 -0 \\",
-      "        | gawk 'BEGIN {RS = \"\\0\"; ORS = \"\\0\"} NF > 0 { print substr($0, 1, 250) }' \\",
-      "        | gawk 'BEGIN {RS = \"\\0\"; FS=\"\\n\"; OFS=\" \" } { $1=$1; print $0 }'  \\",
-      "        | sed 's/^ *//' \\",
-      "        | gawk '{printf(\"%003d %s\\n\", NR, $0)}')\"",
-      "",
-      "# Make selection using fzf",
-      "SELECTION=\"$(echo \"$C_HIST\" | fzf --no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD --prompt=\"Copy to Clipboard: \")\"",
-      "",
-      "# Verify user made a selection",
-      "if [ -n \"$SELECTION\" ]; then",
-      "",
-      "  # Retrieve the line number from the beginning of selection and remove leading zeros",
-      "  NUMBER=\"$(echo \"$SELECTION\" | cut -c1-3 | sed 's/^0*//')\"",
-      "",
-      "  # Extract clipboard history from clipster and find the nth non-empty clip based selected line number",
-      "  EXACT_SELECTION=\"$(clipster -p -o -n 10 -0 \\",
-      "                   | gawk 'BEGIN {RS = \"\\0\"; ORS = \"\\0\"} NF > 0 { print }' \\",
-      "                   | gawk 'BEGIN {RS = \"\\0\"}'\"NR == $NUMBER { print; exit }\")\"",
-      "",
-      "  # Echo the selection back to clipster",
-      "  echo -n \"$EXACT_SELECTION\" | clipster -c",
-      "fi"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.bin/fzfclip\t1\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "b9c0d2a0-8ed9-11e9-9d83-4dda61aafb69",
-    "content": [
-      "--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD --prompt=\"Open PDF: \""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bin/pdf\t3\t36",
-    "filetype": "sh"
-  },
-  {
-    "id": "46a29ba0-8ed9-11e9-9cdb-83ef43a422a6",
-    "content": [
-      "        function () awful.spawn(pdf,{",
-      "                    -- floating = true,",
-      "                    -- placement = awful.placement.centered,",
-      "                    -- width = 1200,",
-      "                    -- height = 1000,",
-      "                    fullscreen = true",
-      "            }) end,"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t85\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "f230c9e0-8ed6-11e9-8320-3fe582f75148",
-    "content": [
-      "clipster -c -o -n 10 -0 \\",
-      "        | gawk 'BEGIN {RS = \"\\0\"; ORS = \"\\0\"} NF > 0 { print substr($0, 1, 250) }'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bin/roficlip\t18\t11",
-    "filetype": "sh"
-  },
-  {
-    "id": "ec0ab120-8ed6-11e9-8320-3fe582f75148",
-    "content": [
-      "C_HIST=\"$(clipster -c -o -n 10 -0 \\",
-      "        | gawk 'BEGIN {RS = \"\\0\"; ORS = \"\\0\"} NF > 0 { print substr($0, 1, 250) }' \\"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.bin/roficlip\t18\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "407ec9a0-8ed5-11e9-8320-3fe582f75148",
-    "content": [
-      "clipster -c -o -n 500 -0 \\",
-      "        | gawk 'BEGIN {RS = \"\\0\"; ORS = \"\\0\"} NF > 0 { print substr($0, 1, 250) }'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bin/roficlip\t18\t11",
-    "filetype": "sh"
-  },
-  {
-    "id": "6a27e080-8ed4-11e9-8320-3fe582f75148",
-    "content": [
-      "clipster -c -o -n 500 -0 \\",
-      "        | gawk 'BEGIN {RS = \"\\0\"; ORS = \"\\0\"} NF > 0 { print substr($0, 1, 250) }' \\",
-      "        | gawk 'BEGIN {RS = \"\\0\"; FS=\"\\n\"; OFS=\" \" } { $1=$1; print $0 }'  \\",
-      "        | sed 's/^ *//' \\",
-      "        | gawk '{printf(\"%003d %s\\n\", NR, $0)}'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bin/roficlip\t18\t11",
-    "filetype": "sh"
-  },
-  {
-    "id": "09e30f70-8ed3-11e9-9cdb-83ef43a422a6",
-    "content": [
-      "ffff8a"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t188\t29",
-    "filetype": "lua"
-  },
-  {
-    "id": "e7998da0-8ed1-11e9-9b7c-4f1466b90ad3",
-    "content": [
-      "clipster -d --config ~/.config/clipster/clipster.ini &"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/autorun.sh\t37\t5",
-    "filetype": "sh"
-  },
-  {
-    "id": "e555b820-8ed1-11e9-9b7c-4f1466b90ad3",
-    "content": [
-      "run clipster -d --config ~/.config/clipster/clipster.ini &"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/autorun.sh\t37\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "05e89b30-8ed1-11e9-9b7c-4f1466b90ad3",
-    "content": [
-      "        run clipster -d --config ~/.config/clipster/clipster.ini &"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/autorun.sh\t39\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "8be20de0-8ec5-11e9-9f2d-972f177b2a9e",
-    "content": [
-      "e"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/chess/chess.hpp\t16\t11",
-    "filetype": "cpp"
-  },
-  {
-    "id": "a29f17a0-8eb9-11e9-8a5c-0f90d4083154",
-    "content": [
-      "e"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/chess/chess.hpp\t8\t11",
-    "filetype": "cpp"
-  },
-  {
-    "id": "3b320b10-8e3f-11e9-91cc-05dbbfb20066",
-    "content": [
-      "titlebars_enabled = false"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t328\t25",
-    "filetype": "lua"
-  },
-  {
-    "id": "2d1c8b40-8e3f-11e9-91cc-05dbbfb20066",
-    "content": [
-      "function (c)",
-      "        if not beautiful.titlebars_imitate_borders then",
-      "            awful.titlebar.hide(c)",
-      "        end",
-      "    end"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/rc.lua\t288\t16",
-    "filetype": "lua"
-  },
-  {
-    "id": "25d8aed0-8e31-11e9-afbb-612a6f4bd17b",
-    "content": [
-      "awful.key({ modkey }, \"c\", function()",
-      "    awful.spawn.with_shell(\"clipster -s\")",
-      "end, {description = \"open up clipster history\", group = \"launcher\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t195\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "cfb964e0-8e12-11e9-ab9e-251ca1f424a4",
-    "content": [
-      "#B48EAD"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t489\t9",
-    "filetype": "conf"
-  },
-  {
-    "id": "cb42d0e0-8e12-11e9-ab9e-251ca1f424a4",
-    "content": [
-      "#E5E9F0"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t488\t10",
-    "filetype": "conf"
-  },
-  {
-    "id": "c7b4a110-8e12-11e9-b877-e380f46f8cc7",
-    "content": [
-      "#88C0D0"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/packages/st-0.8.2/config.def.h\t109\t3",
-    "filetype": "c"
-  },
-  {
-    "id": "c4d66050-8e12-11e9-ab9e-251ca1f424a4",
-    "content": [
-      "#88C0D0"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t484\t10",
-    "filetype": "conf"
-  },
-  {
-    "id": "c0da2c70-8e12-11e9-b877-e380f46f8cc7",
-    "content": [
-      "#B48EAD"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/packages/st-0.8.2/config.def.h\t108\t3",
-    "filetype": "c"
-  },
-  {
-    "id": "bd587fc0-8e12-11e9-ab9e-251ca1f424a4",
-    "content": [
-      "#B48EAD"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t480\t10",
-    "filetype": "conf"
-  },
-  {
-    "id": "b9997bf0-8e12-11e9-b877-e380f46f8cc7",
-    "content": [
-      "#81A1C1"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/packages/st-0.8.2/config.def.h\t107\t3",
-    "filetype": "c"
-  },
-  {
-    "id": "b5946e70-8e12-11e9-ab9e-251ca1f424a4",
-    "content": [
-      "#81A1C1"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t476\t9",
-    "filetype": "conf"
   }
 ]
