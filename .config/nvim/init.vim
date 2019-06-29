@@ -174,8 +174,8 @@ set ttimeout
 " cancel leader command
 nnoremap <leader>, jk
 
-" map :w and :q
-noremap <leader>w :w<CR>
+" map :up and :q
+noremap <silent> <leader>w :up<CR>
 noremap <leader>q :q<CR>
 
 " map buffer navigation keys
