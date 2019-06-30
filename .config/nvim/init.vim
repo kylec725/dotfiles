@@ -26,7 +26,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'gregsexton/MatchTag'
 Plug 'arcticicestudio/nord-vim'
 Plug 'miyakogi/conoline.vim'
-Plug 'RRethy/vim-illuminate'
+" Plug 'RRethy/vim-illuminate'
 
 " Statusline
 Plug 'itchyny/lightline.vim'
@@ -374,7 +374,7 @@ let g:indentLine_char = '▏'
 " highlight word under cursor
 hi link illuminatedWord Visual
 let g:Illuminate_ftblacklist = [ 'help', 'defx', 'vista_kind', 'vim', 'markdown', 'tex', 'vimwiki' ]
-nnoremap <leader>h :IlluminationToggle<CR>
+" nnoremap <leader>hl :IlluminationToggle<CR>
 
 " Tabularize binding
 nnoremap <leader><Tab> :Tabularize /
