@@ -9,6 +9,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-repeat'
 Plug 'vimlab/split-term.vim'
+Plug 'godlygeek/tabular'
 
 " File Navigation
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -373,3 +374,7 @@ let g:indentLine_char = '▏'
 " highlight word under cursor
 hi link illuminatedWord Visual
 let g:Illuminate_ftblacklist = [ 'help', 'defx', 'vista_kind', 'vim', 'markdown', 'tex', 'vimwiki' ]
+
+" Tabularize binding
+nnoremap <leader><Tab> :Tabularize /
+vnoremap <leader><Tab> :Tabularize /
