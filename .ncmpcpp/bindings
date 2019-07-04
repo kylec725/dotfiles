@@ -254,7 +254,7 @@ def_key "a"
 def_key "c"
   jump_to_playing_song
 #
-def_key "ctrl-c"
+def_key "C"
   clear_main_playlist
 #
 def_key "t"
