@@ -1,5 +1,365 @@
 [
   {
+    "id": "32785480-9f69-11e9-a86e-83fb11bf7eeb",
+    "content": [
+      "Date:"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/worksheet/worksheet.tex\t15\t12",
+    "filetype": "tex"
+  },
+  {
+    "id": "2e9dd970-9f69-11e9-a86e-83fb11bf7eeb",
+    "content": [
+      "Name:"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/worksheet/worksheet.tex\t13\t12",
+    "filetype": "tex"
+  },
+  {
+    "id": "8d173620-9f66-11e9-a86e-83fb11bf7eeb",
+    "content": [
+      "vspace{10em}"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/worksheet/worksheet.tex\t46\t6",
+    "filetype": "tex"
+  },
+  {
+    "id": "81b2f3a0-9f66-11e9-a86e-83fb11bf7eeb",
+    "content": [
+      "\\vspace{10em}"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/worksheet/worksheet.tex\t46\t5",
+    "filetype": "tex"
+  },
+  {
+    "id": "78fba8b0-9f66-11e9-a86e-83fb11bf7eeb",
+    "content": [
+      "\\vspace{10em}"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/worksheet/worksheet.tex\t46\t5",
+    "filetype": "tex"
+  },
+  {
+    "id": "76d62610-9f65-11e9-a86e-83fb11bf7eeb",
+    "content": [
+      "    \\vspace{10em}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/worksheet/worksheet.tex\t53\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "e6808880-9f64-11e9-a86e-83fb11bf7eeb",
+    "content": [
+      " Name:"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/worksheet/worksheet.tex\t23\t14",
+    "filetype": "tex"
+  },
+  {
+    "id": "3f20f020-9f64-11e9-a86e-83fb11bf7eeb",
+    "content": [
+      "\\hspace{5em}"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/worksheet/worksheet.tex\t25\t30",
+    "filetype": "tex"
+  },
+  {
+    "id": "e5a80a30-9f61-11e9-b5a4-4392afd8e609",
+    "content": [
+      "% Change title formatting",
+      "\\renewcommand{\\maketitle}{",
+      "  \\begin{center}",
+      "    {\\LARGE\\bfseries\\theauthor}",
+      "    \\vspace{0.5em}",
+      "",
+      "    kylec725@gmail.com | (443) 752--4794 | 1005 Pipercove Way, Bel Air, MD",
+      "  \\end{center}",
+      "}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/resume/resume.tex\t42\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "e3358390-9f61-11e9-b5a4-4392afd8e609",
+    "content": [
+      "\\renewcommand{\\maketitle}{",
+      "  \\begin{center}",
+      "    {\\LARGE\\bfseries\\theauthor}",
+      "    \\vspace{0.5em}",
+      "",
+      "    kylec725@gmail.com | (443) 752--4794 | 1005 Pipercove Way, Bel Air, MD",
+      "  \\end{center}",
+      "}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/resume/resume.tex\t43\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "c9a2e970-9f5e-11e9-a86e-83fb11bf7eeb",
+    "content": [
+      "Factor the following polynomials:\\\\",
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/worksheet/worksheet.tex\t21\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "859114d0-9f3d-11e9-af7a-f9302e2e4aca",
+    "content": [
+      "% Set 1 inch margins",
+      "\\usepackage[margin=0.5in]{geometry}",
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/resume/resume.tex\t8\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "92c166c0-9f27-11e9-84da-47b9685bc649",
+    "content": [
+      "% Set 1 inch margins",
+      "\\usepackage[margin=0.5in]{geometry}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/resume/resume.tex\t8\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "6bbe9f70-9f22-11e9-84da-47b9685bc649",
+    "content": [
+      "% Remove page numbers",
+      "\\pagenumbering{gobble}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/resume/resume.tex\t11\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "643a7d50-9f22-11e9-84da-47b9685bc649",
+    "content": [
+      "% Remove page numbers",
+      "\\pagenumbering{gobble}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/resume/resume.tex\t11\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "56b24960-9f22-11e9-84da-47b9685bc649",
+    "content": [
+      "% Set 1 inch margins",
+      "\\usepackage[margin=0.5in]{geometry}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/resume/resume.tex\t8\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "c72ec8e0-9f21-11e9-b3f6-fb5ffa0005b3",
+    "content": [
+      "4. The New York City sales tax is a rate of 4.5\\% and the New York State sales tax is a rate of 4\\%. The combined total of the sales tax is what? If I were to go to the grocery store and buy $30 worth of groceries, how much tax would be added on to my total? What is my total after tax?   ",
+      "\\vspace{10em}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/worksheet/worksheet.tex\t23\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "a517d350-9f21-11e9-b3f6-fb5ffa0005b3",
+    "content": [
+      "3. There are typically 162 games played for a single Major League Baseball team. If a pitcher successfully pitched or “won” 80\\% of games played during the season, how many games did his team win?  ",
+      "\\vspace{10em}",
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/worksheet/worksheet.tex\t20\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "8f1ab4a0-9f21-11e9-b3f6-fb5ffa0005b3",
+    "content": [
+      "1. John and James go out to eat with their friends for John’s birthday. The bill total is \\$355 before tax and tip. Everyone decides to split the bill equally, there are 7 people in total. James wants to pay for John’s share of the bill since it’s his birthday. If the tax for the bill is 3\\%, how much is the total after adding tax? How much is the total after adding an 18\\% tip? What is James’ total after tax and tip have been added? ",
+      "\\vspace{10em}",
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/worksheet/worksheet.tex\t14\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "8dab4620-9f21-11e9-b3f6-fb5ffa0005b3",
+    "content": [
+      "2. Rachel is going to go shopping for some new shoes. She sees in the store window that there is a 25\\% off sale. The shoes Rachel wants are originally \\$44.50, how much are they after you take an additional 25\\% off of the original price? ",
+      "\\vspace{10em}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/worksheet/worksheet.tex\t17\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "83f96e90-9f21-11e9-b3f6-fb5ffa0005b3",
+    "content": [
+      "\\vspace{10em}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/worksheet/worksheet.tex\t15\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "75859fa0-9e04-11e9-b739-392c0f25ed11",
+    "content": [
+      "\\setlength{\\headheight}{15pt}",
+      "\\pagestyle{fancy}",
+      "\\rhead{Kyle Chan}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/school/cassilly-scholarship/cassilly.tex\t12\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "46a49600-9e04-11e9-9c71-55a9c3330922",
+    "content": [
+      "\\usepackage[utf8]{inputenc}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/resume/resume.tex\t2\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "95910ba0-9d31-11e9-af22-65c119b24cf4",
+    "content": [
+      "noremap <silent> <C-Left> :vertical resize -5<CR>",
+      "noremap <silent> <C-Down> :resize -5<CR>",
+      "noremap <silent> <C-Up> :resize +5<CR>",
+      "noremap <silent> <C-Right> :vertical resize +5<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t204\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "1a6470e0-9ae1-11e9-9deb-775a12fdc030",
+    "content": [
+      "    let g:Illuminate_ftHighlightGroups = {",
+      "          \\ 'vim': ['vimVar', 'vimString', 'vimLineComment',",
+      "          \\         'vimFuncName', 'vimFunction', 'vimUserFunc', 'vimFunc']",
+      "          \\ }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-illuminate/doc/illuminate.txt\t50\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "f5a824e0-9ae0-11e9-9deb-775a12fdc030",
+    "content": [
+      "let g:Illuminate_highlightUnderCursor = 0"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-illuminate/doc/illuminate.txt\t39\t5",
+    "filetype": "help"
+  },
+  {
+    "id": "890898d0-9ade-11e9-a104-ef7f36ce0d0c",
+    "content": [
+      "    let g:Illuminate_highlightUnderCursor = 0"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-illuminate/doc/illuminate.txt\t39\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "df583a00-9ada-11e9-9405-83603fa1e20e",
+    "content": [
+      "nnoremap <leader><Tab> :Tabularize /"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t379\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "fdb6df50-9ad6-11e9-9094-011550a1fdf3",
+    "content": [
+      ".+"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t18\t36",
+    "filetype": "lua"
+  },
+  {
+    "id": "129711c0-9ad6-11e9-9094-011550a1fdf3",
+    "content": [
+      ".+"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t18\t36",
+    "filetype": "lua"
+  },
+  {
+    "id": "c594b6c0-9ad5-11e9-9094-011550a1fdf3",
+    "content": [
+      "%d+"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t18\t42",
+    "filetype": "lua"
+  },
+  {
+    "id": "643c8470-9ad5-11e9-9094-011550a1fdf3",
+    "content": [
+      "nmcli connection show | grep wlp2s0"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t13\t21",
+    "filetype": "lua"
+  },
+  {
+    "id": "fa592040-9ad4-11e9-9094-011550a1fdf3",
+    "content": [
+      ".+"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t18\t36",
+    "filetype": "lua"
+  },
+  {
+    "id": "92cbba00-9ad4-11e9-9094-011550a1fdf3",
+    "content": [
+      "nmcli connection show | grep wlp2s0 | head -c -54"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t13\t21",
+    "filetype": "lua"
+  },
+  {
+    "id": "8df5e470-9ad3-11e9-9094-011550a1fdf3",
+    "content": [
+      "nmcli connection show | grep wlp2s0 | awk '{ print $1 }'"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t13\t21",
+    "filetype": "lua"
+  },
+  {
+    "id": "8c729fd0-9ad3-11e9-9094-011550a1fdf3",
+    "content": [
+      "{ print $1 }"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t13\t64",
+    "filetype": "lua"
+  },
+  {
     "id": "f6e37e30-99e7-11e9-9b02-4920c43a78d7",
     "content": [
       "    awful.key({ modkey,           }, \"m\",       function () awful.spawn(mpd) end,",
@@ -1899,337 +2259,5 @@
     "regtype": "v",
     "path": "file:///home/kyle/.config/nvim/init.vim\t177\t10",
     "filetype": "vim"
-  },
-  {
-    "id": "259fcdb0-9064-11e9-a951-8546978d73ae",
-    "content": [
-      "autocmd FileType css setlocal shiftwidth=2 | match OverLength /\\%81v.\\+/"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t116\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "98252ca0-904f-11e9-8f4a-7ff6cb55d913",
-    "content": [
-      "nnoremap <leader>gn <Plug>GitGutterNextHunk"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t307\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "a25adf00-8ff3-11e9-94b4-6b7fbf9298ec",
-    "content": [
-      "❯"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/fish/config.fish\t13\t26",
-    "filetype": "fish"
-  },
-  {
-    "id": "791895b0-8ff3-11e9-a93c-a5a905a0bc7f",
-    "content": [
-      "❯"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/fish/functions/fish_prompt.fish\t8\t58",
-    "filetype": "fish"
-  },
-  {
-    "id": "b242f9c0-8fe4-11e9-9bb9-bf5202b3cdaf",
-    "content": [
-      "🐟"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/fish/config.fish\t13\t27",
-    "filetype": "fish"
-  },
-  {
-    "id": "06a35570-8fde-11e9-abd4-d5651f07871c",
-    "content": [
-      "Kyle is a 3rd year undergraduate student at the University of Maryland, College Park where he studies Computer Science and Mathematics.",
-      "He aims to utilize his passion for coding and math to develop software solutions that are both accessible and powerful. In his off-time,",
-      "Kyle practices chinese yo-yo, wushu, and dance through various clubs at the University of Maryland such as CP Diabolo, TerpWushu, and Tianyi."
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/bio\t1\t1",
-    "filetype": ""
-  },
-  {
-    "id": "52ed2b50-8fdd-11e9-abd4-d5651f07871c",
-    "content": [
-      "Kyle is a 3rd year undergraduate student at the University of Maryland, College Park where he studies Computer Science and Mathematics.",
-      "He aims to utilize his passion for coding and math to develop software solutions that are both accessible and powerful. In his off-time,",
-      "Kyle practices chinese yo-yo, wushu, and dance through various clubs at the University of Maryland such as CP Diabolo, TerpWushu, and Tianyi."
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/bio\t1\t1",
-    "filetype": ""
-  },
-  {
-    "id": "0fc71340-8fdd-11e9-b52b-6d1258a1a282",
-    "content": [
-      "Kyle is a 3rd year undergraduate student at the University of Maryland, College",
-      "Park where he is studying Computer Science and Mathematics. He aims to utilize",
-      "his passion for coding and math to develop accessible software solutions. In",
-      "his off-time, Kyle practices chinese yo-yo, wushu, and dance through various",
-      "clubs at the University of Maryland such as CP Diabolo, TerpWushu, and Tianyi."
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/bio\t1\t1",
-    "filetype": ""
-  },
-  {
-    "id": "9996e150-8fdc-11e9-b52b-6d1258a1a282",
-    "content": [
-      "Kyle is a 3rd year undergraduate student at the University of Maryland, College Park where he is studying Computer Science and Mathematics. He aims to utilize his passion for coding and math to develop accessible software solutions. In his off-time, Kyle practices chinese yo-yo, wushu, and dance through various clubs at the University of Maryland."
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/bio\t1\t1",
-    "filetype": ""
-  },
-  {
-    "id": "762a5df0-8fc8-11e9-a8be-65dc4fa7ab29",
-    "content": [
-      "autocmd FileType fish setlocal shiftwidth=4 tabstop=4 | ALEDisable | match OverLength /\\%81v.\\+/"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t128\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "cbd8a420-8fc6-11e9-84e4-358ff75f2704",
-    "content": [
-      "match OverLength /\\%81v.\\+/"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t106\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "bfb6de00-8fc6-11e9-84e4-358ff75f2704",
-    "content": [
-      "match OverLength /\\%81v.\\+/"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t106\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "2c8056b0-8fbd-11e9-9044-a3663394ea4c",
-    "content": [
-      "Windows Drive Unmounted"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bin/windows-mount\t8\t50",
-    "filetype": "sh"
-  },
-  {
-    "id": "2967f320-8fbd-11e9-9044-a3663394ea4c",
-    "content": [
-      "windows Drive Mounted"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bin/windows-mount\t13\t51",
-    "filetype": "sh"
-  },
-  {
-    "id": "8818c8a0-8fbc-11e9-8963-2952000b1eb6",
-    "content": [
-      "echo 'USB Mount Failed' && rmdir ~/usb"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bin/usb-mount\t15\t17",
-    "filetype": "sh"
-  },
-  {
-    "id": "4ad3f820-8fbc-11e9-8963-2952000b1eb6",
-    "content": [
-      "echo 'USB Unmount Failed' && rmdir ~/usb"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bin/usb-mount\t10\t17",
-    "filetype": "sh"
-  },
-  {
-    "id": "34308750-8fbc-11e9-8963-2952000b1eb6",
-    "content": [
-      "echo 'USB Mount Failed' && rmdir ~/usb"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bin/usb-mount\t7\t25",
-    "filetype": "sh"
-  },
-  {
-    "id": "b8e65570-8fbb-11e9-8963-2952000b1eb6",
-    "content": [
-      "echo 'USB Mount Failed' && rmdir ~/usb"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bin/usb-mount\t8\t25",
-    "filetype": "sh"
-  },
-  {
-    "id": "4b0bdfc0-8fb6-11e9-8b9a-077b778b4439",
-    "content": [
-      "autocmd FileType python setlocal shiftwidth=4 tabstop=4"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t121\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "3b2151d0-8fb6-11e9-8b9a-077b778b4439",
-    "content": [
-      "autocmd FileType tex setlocal shiftwidth=2 tabstop=2 spell"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t114\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "3565e1c0-8fb6-11e9-8b9a-077b778b4439",
-    "content": [
-      "autocmd FileType ruby setlocal shiftwidth=2 tabstop=2"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t113\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "23b75cb0-8fb6-11e9-8b9a-077b778b4439",
-    "content": [
-      "autocmd FileType python setlocal shiftwidth=4 tabstop=4"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t118\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "1868ec20-8fb6-11e9-8b9a-077b778b4439",
-    "content": [
-      "autocmd FileType javascript setlocal shiftwidth=4 tabstop=4"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t117\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "1009ac40-8fb6-11e9-8b9a-077b778b4439",
-    "content": [
-      "autocmd FileType css setlocal shiftwidth=2 tabstop=2"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t112\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "6ea01bf0-8fb5-11e9-8b9a-077b778b4439",
-    "content": [
-      "autocmd FileType javascript setlocal shiftwidth=4 tabstop=4"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t116\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "57e2ba80-8fb5-11e9-8b9a-077b778b4439",
-    "content": [
-      "autocmd FileType cpp setlocal shiftwidth=4 tabstop=4"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t114\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "1dd631a0-8fb5-11e9-8b9a-077b778b4439",
-    "content": [
-      "autocmd FileType cpp setlocal shiftwidth=4 tabstop=4"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t114\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "0a315ad0-8fb5-11e9-8b9a-077b778b4439",
-    "content": [
-      "autocmd FileType c setlocal shiftwidth=4 tabstop=4"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t113\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "054ac6f0-8fb5-11e9-8b9a-077b778b4439",
-    "content": [
-      "autocmd FileType css setlocal shiftwidth=2 tabstop=2"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t112\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "e2ee3ce0-8fb4-11e9-8b9a-077b778b4439",
-    "content": [
-      "autocmd FileType html setlocal shiftwidth=2"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t111\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "9cf66b30-8f88-11e9-a9a6-6136641835d4",
-    "content": [
-      "\"00\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/themes/skyfall/theme.lua\t156\t35",
-    "filetype": "lua"
-  },
-  {
-    "id": "dd5f7f30-8f11-11e9-b44b-0510b0f76942",
-    "content": [
-      "set fish_color_autosuggestion black"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/fish/config.fish\t66\t1",
-    "filetype": "fish"
-  },
-  {
-    "id": "7a7d7890-8f11-11e9-8280-afb4cdf8289a",
-    "content": [
-      "0B090E"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t453\t17",
-    "filetype": "conf"
-  },
-  {
-    "id": "5bfc05d0-8f11-11e9-8280-afb4cdf8289a",
-    "content": [
-      "0B090E"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t454\t15",
-    "filetype": "conf"
-  },
-  {
-    "id": "56d5f7f0-8f11-11e9-8280-afb4cdf8289a",
-    "content": [
-      "background \t\t#0B090E"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/kitty/kitty.conf\t453\t1",
-    "filetype": "conf"
-  },
-  {
-    "id": "64ce6f50-8f10-11e9-a724-cddb7aeff5ea",
-    "content": [
-      "#  - Split into lines based on NUL byte"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.bin/fzfclip\t13\t1",
-    "filetype": "sh"
   }
 ]
