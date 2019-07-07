@@ -236,17 +236,17 @@ keys.clientkeys = gears.table.join(
         {description = "toggle floating", group = "client"}),
     awful.key({ modkey, "Shift"   }, "m", function (c) c:swap(awful.client.getmaster()) end,
         {description = "move to master", group = "client"}),
-    awful.key({ modkey, "Shift"  }, "f",
-        function (c)
-            c.maximized = not c.maximized
-            if c.maximized then
-                c.border_width = 0
-            else
-                c.border_width = beautiful.border_width
-            end
-            c:raise()
-        end ,
-        {description = "(un)maximize", group = "client"}),
+    -- awful.key({ modkey, "Shift"  }, "f",
+    --     function (c)
+    --         c.maximized = not c.maximized
+    --         if c.maximized then
+    --             c.border_width = 0
+    --         else
+    --             c.border_width = beautiful.border_width
+    --         end
+    --         c:raise()
+    --     end ,
+    --     {description = "(un)maximize", group = "client"}),
     awful.key({ modkey,           }, "f",
         function (c)
             if (awful.layout.get(c.screen) ~= awful.layout.suit.max) then
