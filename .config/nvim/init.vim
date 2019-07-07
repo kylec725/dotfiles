@@ -101,7 +101,7 @@ set ignorecase
 set smartcase
 
 " search match color
-hi Search ctermbg=yellow ctermfg=black
+hi Search ctermbg=green ctermfg=black
 " highlight current search match in different color
 hi IncSearch ctermbg=black ctermfg=magenta
 
