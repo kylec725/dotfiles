@@ -1,5 +1,37 @@
 [
   {
+    "id": "fad35b40-a064-11e9-ab2d-f35812467873",
+    "content": [
+      "hi Search ctermbg=yellow ctermfg=black"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t104\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "9e4d2030-a060-11e9-a20e-7f2a13d63f4f",
+    "content": [
+      "    get userId() {",
+      "        return this.userId;",
+      "    }",
+      "    get balanceId() {",
+      "        return this.balanceId;",
+      "    }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/structure.js\t9\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "8067bee0-9f7a-11e9-98c8-57ff0f8e931a",
+    "content": [
+      "This is different from the others!"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/worksheet/worksheet.tex\t55\t37",
+    "filetype": "tex"
+  },
+  {
     "id": "32785480-9f69-11e9-a86e-83fb11bf7eeb",
     "content": [
       "Date:"
@@ -2231,33 +2263,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/nvim/init.vim\t148\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "80bfa380-907f-11e9-9637-3b5d881d02d1",
-    "content": [
-      ":call TermToggle()<CR>"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t354\t30",
-    "filetype": "vim"
-  },
-  {
-    "id": "36a74910-907f-11e9-8d1f-a5f341b27a45",
-    "content": [
-      "y"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t177\t12",
-    "filetype": "vim"
-  },
-  {
-    "id": "346c9b50-907f-11e9-8d1f-a5f341b27a45",
-    "content": [
-      "Y"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t177\t10",
     "filetype": "vim"
   }
 ]

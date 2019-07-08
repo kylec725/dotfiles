@@ -21,7 +21,12 @@ bzip2
 calcurse
 ccls
 clang
-clipster-git
+clion
+clion-cmake
+clion-gdb
+clion-jre
+clion-lldb
+clipster
 cmatrix
 cndrvcups-common-lb
 compton-tryone-git
@@ -38,6 +43,7 @@ dune
 e2fsprogs
 easy-rsa
 efibootmgr
+eslint
 exfat-utils
 fakeroot
 fcron
@@ -53,6 +59,7 @@ fzf
 gawk
 gcc
 gcc-libs
+gdb
 gettext
 git
 glibc
@@ -100,6 +107,7 @@ m4
 make
 man-db
 man-pages
+mariadb
 materia-gtk-theme
 materia-kde
 mdadm
@@ -174,10 +182,12 @@ tlp
 tmux
 ttf-inconsolata
 ttf-linux-libertine
+typora
 unrar
 unzip
 usbutils
 util-linux
+valgrind
 vi
 vlc
 w3m

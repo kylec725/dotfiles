@@ -6,7 +6,7 @@
 
 * [ ] **User**
   - user_id
-  - balance_id
+  - balance
 * [ ] **Payment Method**
   * user_id
   * pmethod_id
@@ -22,7 +22,7 @@
   * user_id
   * checking_id
   * verified?
-* [ ] **Balances**
+* [ ] **Balances** (possibly remove bal)
   * user_id
   * balance_id
   * balance_value

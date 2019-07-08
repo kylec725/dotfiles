@@ -1,1 +1,1 @@
-{"cly_event":[{"key":"closeWindow","count":1,"segmentation":{"os":"linux"},"timestamp":1562214361848,"hour":0,"dow":4},{"key":"closeFile","count":1,"segmentation":{"os":"linux"},"timestamp":1562214361885,"hour":0,"dow":4}]}
+{"cly_event":[{"key":"closeWindow","count":1,"segmentation":{"os":"linux"},"timestamp":1562543448031,"hour":19,"dow":0},{"key":"closeFile","count":1,"segmentation":{"os":"linux"},"timestamp":1562543448073,"hour":19,"dow":0}]}
