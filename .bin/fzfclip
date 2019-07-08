@@ -15,7 +15,7 @@ fi
 #  - Remove empty clipboard items
 #  - Add line numbers to clip items
 # NOTE: This is all done in a single line because bash can't store a NUL byte
-C_HIST="$(clipster -c -o -n 31 -0 \
+C_HIST="$(clipster -c -o -n 52 -0 \
         | gawk 'BEGIN {RS = "\0"; ORS = "\0"} NF > 0 { print substr($0, 1, 250) }' \
         | gawk 'BEGIN {RS = "\0"; FS="\n"; OFS=" " } { $1=$1; print $0 }'  \
         | sed 's/^ *//' \
