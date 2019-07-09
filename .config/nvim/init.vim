@@ -141,6 +141,9 @@ hi PmenuSel ctermbg=5 ctermfg=7
 hi PmenuSbar ctermbg=grey
 hi PmenuThumb ctermbg=blue
 
+" set tex flavor
+let g:tex_flavor = "latex"
+
 " indent settings
 set tabstop=8
 set expandtab
@@ -298,6 +301,9 @@ endfunction
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 nnoremap <C-g> :Goyo<CR>
+
+" autopairs
+au Filetype tex let b:AutoPairs = {'$': '$', '(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`'}
 
 " Git Commands and Settings - Fugitive and Gitgutter !!!!!
 
