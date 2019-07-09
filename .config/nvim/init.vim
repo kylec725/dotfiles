@@ -82,8 +82,8 @@ set inccommand=nosplit
 " Line numbers
 set number relativenumber
 " Current line number color
-hi LineNr ctermfg=12
-hi CursorLineNR ctermfg=11
+highlight LineNr ctermfg=12
+highlight CursorLineNR ctermfg=11
 
 " Always show at least one line above/below the cursor.
 set scrolloff=3
@@ -101,12 +101,12 @@ set ignorecase
 set smartcase
 
 " search match color
-hi Search ctermbg=green ctermfg=black
+highlight Search ctermbg=green ctermfg=black
 " highlight current search match in different color
-hi IncSearch ctermbg=black ctermfg=magenta
+highlight IncSearch ctermbg=black ctermfg=magenta
 
 " matched parentheses color
-hi MatchParen ctermbg=blue
+highlight MatchParen ctermbg=blue
 
 " Set folding to indent
 set foldmethod=indent
@@ -116,14 +116,14 @@ set foldlevelstart=99
 set nowrap
 
 " Clear SignColumn/Gutter color
-hi clear SignColumn
+highlight clear SignColumn
 
 " Cursor blinking
 set guicursor=a:blinkon100
 
 " Change window pane separator to a single line
 set fillchars+=vert:│
-hi VertSplit cterm=NONE ctermfg=12
+highlight VertSplit cterm=NONE ctermfg=12
 
 " remove latex concealment
 let g:tex_conceal = ""
@@ -133,13 +133,13 @@ highlight OverLength ctermbg=darkgray ctermfg=black
 " match OverLength /\%81v.\+/
 
 " darken tildes at EOF
-hi EndOfBuffer ctermfg=16
+highlight EndOfBuffer ctermfg=16
 
 " pop-up menu colors
-hi Pmenu ctermbg=0 ctermfg=7
-hi PmenuSel ctermbg=5 ctermfg=7
-hi PmenuSbar ctermbg=grey
-hi PmenuThumb ctermbg=blue
+highlight Pmenu ctermbg=0 ctermfg=7
+highlight PmenuSel ctermbg=5 ctermfg=7
+highlight PmenuSbar ctermbg=grey
+highlight PmenuThumb ctermbg=blue
 
 " set tex flavor
 let g:tex_flavor = "latex"
@@ -381,7 +381,7 @@ autocmd BufWinEnter,WinEnter term://* startinsert
 let g:indentLine_char = '▏'
 
 " highlight word under cursor
-hi link illuminatedWord Visual
+highlight link illuminatedWord Visual
 let g:Illuminate_ftblacklist = [ 'help', 'defx', 'vista_kind', 'vim', 'markdown', 'tex', 'vimwiki' ]
 " nnoremap <leader>hl :IlluminationToggle<CR>
 
