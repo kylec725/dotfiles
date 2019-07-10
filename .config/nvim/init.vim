@@ -10,6 +10,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-repeat'
 Plug 'vimlab/split-term.vim'
 Plug 'godlygeek/tabular'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 " File Navigation
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -388,3 +390,9 @@ let g:Illuminate_ftblacklist = [ 'help', 'defx', 'vista_kind', 'vim', 'markdown'
 " Tabularize binding
 nnoremap <leader><Tab> :Tabularize /
 vnoremap <leader><Tab> :Tabularize /
+
+" Snippets !!!!!
+let g:UltiSnipsUsePythonVersion = 3
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"

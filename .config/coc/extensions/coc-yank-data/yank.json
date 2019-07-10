@@ -1,5 +1,250 @@
 [
   {
+    "id": "620d5d40-a2c9-11e9-bccb-b32d45685146",
+    "content": [
+      "snippet \"cly\" \"corollary\" wr",
+      "\\newtheorem{corollary}{${1:Corollary}}[theorem]",
+      "\\begin{Corollary}",
+      "\t$2",
+      "\\end{Corollary}",
+      "$0",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t46\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "44341160-a2c9-11e9-bccb-b32d45685146",
+    "content": [
+      "snippet \"thm\" \"theorem\" wr",
+      "\\newtheorem{theorem}{${1:Theorem}}",
+      "\\begin{theorem}",
+      "\t$2",
+      "\\end{theorem}",
+      "$0",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t38\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "34cb2170-a2c7-11e9-bccb-b32d45685146",
+    "content": [
+      "snippet \"([A-Za-z])bar\" \"bar\" ir",
+      "\\bar{`!p snip.rv = match.group(1)`}",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t30\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "fa220a70-a2c6-11e9-bccb-b32d45685146",
+    "content": [
+      "snippet \"([A-Za-z])hat\" \"hat\" irA",
+      "\\hat{`!p snip.rv = match.group(1)`}",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t26\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "18366ae0-a2c4-11e9-bccb-b32d45685146",
+    "content": [
+      "snippet '([A-Za-z])_(\\d\\d)' \"auto subscript\" wrA",
+      "`!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`$0}",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t11\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "33a94cd0-a2be-11e9-8c23-cf7944c3a1fa",
+    "content": [
+      "\"says howdy\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/jubilee/worksheets/foil/UltiSnips/tex.snippets\t1\t12",
+    "filetype": "snippets"
+  },
+  {
+    "id": "aa66ced0-a2b7-11e9-8179-35c8b3d8c127",
+    "content": [
+      "            exec \"vertical resize \" g:term_size"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t363\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "713f4ec0-a2b7-11e9-8179-35c8b3d8c127",
+    "content": [
+      "vsplit"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t342\t18",
+    "filetype": "vim"
+  },
+  {
+    "id": "60404390-a2b7-11e9-8179-35c8b3d8c127",
+    "content": [
+      "vertical resize"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t342\t27",
+    "filetype": "vim"
+  },
+  {
+    "id": "b5767030-a28c-11e9-bd70-73cbf4d42f14",
+    "content": [
+      "highlight link illuminatedWord Visual"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t384\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "b4ef3ed0-a28c-11e9-bd70-73cbf4d42f14",
+    "content": [
+      "highlight link illuminatedWord Visual"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t384\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "f16e8c80-a278-11e9-a087-ad0c05ac700e",
+    "content": [
+      "\\vspace{2em} "
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/jubilee/worksheets/factorial/worksheet.tex\t22\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "46554780-a278-11e9-b8be-21978b40e512",
+    "content": [
+      "    \\textbf{Name:} \\underline{\\hspace{16em}}",
+      "    \\hfill",
+      "    \\textbf{Date:} \\underline{\\hspace{7em}}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/factorial/worksheet.tex\t13\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "fa1b39d0-a25c-11e9-9b1d-d56729f9e715",
+    "content": [
+      "{'(':')', '[':']', '{':'}',\"'\":\"'\",'\"':'\"', '`':'`'}"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/auto-pairs/doc/AutoPairs.txt\t195\t5",
+    "filetype": "help"
+  },
+  {
+    "id": "e65b7d70-a25b-11e9-9b1d-d56729f9e715",
+    "content": [
+      "au Filetype FILETYPE let b:AutoPairs = {\"(\": \")\"}"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/auto-pairs/doc/AutoPairs.txt\t215\t5",
+    "filetype": "help"
+  },
+  {
+    "id": "71cffad0-a25b-11e9-9b1d-d56729f9e715",
+    "content": [
+      "let g:AutoPairs['<']='>'"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/auto-pairs/doc/AutoPairs.txt\t201\t5",
+    "filetype": "help"
+  },
+  {
+    "id": "e68f0f10-a133-11e9-8ba5-e57c129d208b",
+    "content": [
+      "    snippet if \"if ... then (if)\"",
+      "    if ${2:[[ ${1:condition} ]]}; then",
+      "            ${0:#statements}",
+      "    fi",
+      "    endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/ultisnips/doc/UltiSnips.txt\t621\t1",
+    "filetype": "help"
+  },
+  {
+    "id": "a0300890-a132-11e9-8713-9f265333e056",
+    "content": [
+      "snippet sign",
+      "Yours sincerely,",
+      "",
+      "Gilles Castel",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/snippets/tex.snippets\t1\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "542246c0-a132-11e9-85a0-a54f90365682",
+    "content": [
+      "snippet sign",
+      "Yours sincerely,",
+      "",
+      "Gilles Castel",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/snippets/tex.snippets\t1\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "3279d1d0-a12f-11e9-8ba5-e57c129d208b",
+    "content": [
+      "let g:UltiSnipsSnippetDirectories=[\"UltiSnips\"]"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/ultisnips/doc/UltiSnips.txt\t529\t4",
+    "filetype": "help"
+  },
+  {
+    "id": "bf086830-a122-11e9-ba2e-3f105eeb704f",
+    "content": [
+      ":cd %:p:h<CR>:pwd<CR>"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t238\t21",
+    "filetype": "vim"
+  },
+  {
+    "id": "36276e50-a120-11e9-bd98-55cf12425b71",
+    "content": [
+      "$HOME/.bin:$(ruby -e 'print Gem.user_dir')/bin:/home/kyle/.cargo/bin"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.profile\t4\t20",
+    "filetype": "sh"
+  },
+  {
+    "id": "940674e0-a11f-11e9-a3d7-e16cad765a65",
+    "content": [
+      "#",
+      "# These are very common and useful",
+      "#",
+      "function la --description \"List contents of directory, including hidden files in directory using long format\"",
+      "    ls -lah $argv",
+      "end",
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///usr/share/fish/functions/la.fish\t1\t1",
+    "filetype": "fish"
+  },
+  {
     "id": "fad35b40-a064-11e9-ab2d-f35812467873",
     "content": [
       "hi Search ctermbg=yellow ctermfg=black"
@@ -2042,227 +2287,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/nvim/init.vim\t238\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "97307a30-9472-11e9-957e-bdd242b06a77",
-    "content": [
-      "\t\tlet g:lightline.active = {",
-      "\t\t    \\ 'left': [ [ 'mode', 'paste' ],",
-      "\t\t    \\           [ 'readonly', 'filename', 'modified' ] ],",
-      "\t\t    \\ 'right': [ [ 'lineinfo' ],",
-      "\t\t    \\            [ 'percent' ],",
-      "\t\t    \\            [ 'fileformat', 'fileencoding', 'filetype' ] ] }",
-      "\t\tlet g:lightline.inactive = {",
-      "\t\t    \\ 'left': [ [ 'filename' ] ],",
-      "\t\t    \\ 'right': [ [ 'lineinfo' ],",
-      "\t\t    \\            [ 'percent' ] ] }",
-      "\t\tlet g:lightline.tabline = {",
-      "\t\t    \\ 'left': [ [ 'tabs' ] ],",
-      "\t\t    \\ 'right': [ [ 'close' ] ] }"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/lightline.vim/doc/lightline.txt\t67\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "b9509320-9454-11e9-8ac6-bd05327d7c8b",
-    "content": [
-      "  * 238879c s/sh/bash/ in the 'nodejs' command (#886) (31 hours ago)"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/chess/src/%5BPlugins%5D\t17\t1",
-    "filetype": "vim-plug"
-  },
-  {
-    "id": "fe59d8a0-93dc-11e9-a985-8de4e29943a1",
-    "content": [
-      "O<Esc>j"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t200\t20",
-    "filetype": "vim"
-  },
-  {
-    "id": "eeaaf420-93dc-11e9-a985-8de4e29943a1",
-    "content": [
-      "nnoremap [<space>  :<c-u>put! =repeat(nr2char(10), v:count1)<cr>'[",
-      "nnoremap ]<space>  :<c-u>put =repeat(nr2char(10), v:count1)<cr>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t198\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "689b44f0-9325-11e9-81bc-27a18742e1e3",
-    "content": [
-      "\" let g:airline_right_alt_sep = ''"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t226\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "650e2690-9325-11e9-81bc-27a18742e1e3",
-    "content": [
-      "\" let g:airline_left_alt_sep = ''"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t224\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "62e64c40-931f-11e9-87c1-db86f93ef85c",
-    "content": [
-      "\"hello world\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/practice.py\t3\t7",
-    "filetype": "python"
-  },
-  {
-    "id": "2997f100-90b3-11e9-b1fa-bdad763be6fb",
-    "content": [
-      "nnoremap"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t187\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "6d61b530-9089-11e9-90d5-e3b387170d91",
-    "content": [
-      "const"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/chess/src/chess.hpp\t8\t1",
-    "filetype": "cpp"
-  },
-  {
-    "id": "67eb6470-9089-11e9-90d5-e3b387170d91",
-    "content": [
-      "const"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/chess/src/chess.hpp\t8\t1",
-    "filetype": "cpp"
-  },
-  {
-    "id": "04decb60-9089-11e9-b634-4b4338e5e0a4",
-    "content": [
-      "const"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/chess/src/chess.hpp\t8\t1",
-    "filetype": "cpp"
-  },
-  {
-    "id": "efa0b6f0-9088-11e9-b50c-219c506b7ef2",
-    "content": [
-      "const"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/chess/src/chess.hpp\t8\t1",
-    "filetype": "cpp"
-  },
-  {
-    "id": "ce91bb80-9088-11e9-94e8-95107bf26e78",
-    "content": [
-      "const"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/chess/src/chess.hpp\t8\t1",
-    "filetype": "cpp"
-  },
-  {
-    "id": "c47d78a0-9088-11e9-9626-b5a3a7ede410",
-    "content": [
-      "<left>"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t183\t37",
-    "filetype": "vim"
-  },
-  {
-    "id": "bf29cb10-9088-11e9-9626-b5a3a7ede410",
-    "content": [
-      "vnoremap <leader>sr y/\\<<C-R>\\>//gI<left><left><left>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t182\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "bb305650-9088-11e9-9626-b5a3a7ede410",
-    "content": [
-      "<left><left><left>"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t179\t43",
-    "filetype": "vim"
-  },
-  {
-    "id": "78216fc0-9088-11e9-a126-51aaec36db88",
-    "content": [
-      "const"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/chess/src/chess.hpp\t8\t1",
-    "filetype": "cpp"
-  },
-  {
-    "id": "cdb2c6d0-9080-11e9-9637-3b5d881d02d1",
-    "content": [
-      "noremap <leader>q :q<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t145\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "cbd63ea0-9080-11e9-9637-3b5d881d02d1",
-    "content": [
-      "noremap <leader>w :w<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t144\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "bd7b9f80-9080-11e9-9637-3b5d881d02d1",
-    "content": [
-      "noremap <silent> = :bnext<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t149\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "bc4e1c00-9080-11e9-9637-3b5d881d02d1",
-    "content": [
-      "noremap <silent> - :bprevious<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t148\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "b7d34240-9080-11e9-9637-3b5d881d02d1",
-    "content": [
-      "nnoremap <silent> - :bprevious<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t148\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "b7065550-9080-11e9-9637-3b5d881d02d1",
-    "content": [
-      "nnoremap <silent> - :bprevious<CR>",
-      "nnoremap <silent> = :bnext<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t148\t1",
     "filetype": "vim"
   }
 ]

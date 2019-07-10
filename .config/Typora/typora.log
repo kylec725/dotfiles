@@ -1239,3 +1239,127 @@ INFO 7/7/2019, 7:50:23 PM  addRecentDocument
 INFO 7/7/2019, 7:50:29 PM  [blur] 1
 INFO 7/7/2019, 7:50:31 PM  [focus] 1
 INFO 7/7/2019, 7:50:48 PM  ------------------quit------------------
+DEBUG 7/7/2019, 8:55:44 PM  initSentry
+DEBUG 7/7/2019, 8:55:44 PM  initCountly
+INFO 7/7/2019, 8:55:44 PM  ------------------start------------------
+INFO 7/7/2019, 8:55:44 PM  typora version: 0.9.72
+DEBUG 7/7/2019, 8:55:44 PM  [ '/usr/share/typora/Typora' ]
+DEBUG 7/7/2019, 8:55:44 PM  /usr/share/typora/resources/app/locales/Base.lproj/Menu.json
+ERROR 7/7/2019, 8:55:44 PM  (node:13025) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+DEBUG 7/7/2019, 8:55:44 PM  [ 'github.css',
+  'newsprint.css',
+  'night.css',
+  'pixyll.css',
+  'ursine-polar.css',
+  'ursine-umbra.css',
+  'whitey.css' ]
+DEBUG 7/7/2019, 8:55:44 PM  pinFolder /home/kyle/notes
+DEBUG 7/7/2019, 8:55:44 PM  app.openFile
+INFO 7/7/2019, 8:55:44 PM  [focus] 1
+INFO 7/7/2019, 8:55:47 PM  switchDocument
+INFO 7/7/2019, 8:55:47 PM  addRecentDocument
+INFO 7/7/2019, 8:56:18 PM  [blur] 1
+INFO 7/7/2019, 8:56:47 PM  [focus] 1
+INFO 7/7/2019, 8:57:01 PM  [blur] 1
+INFO 7/7/2019, 9:07:57 PM  [focus] 1
+INFO 7/7/2019, 9:07:57 PM  [blur] 1
+INFO 7/7/2019, 9:08:45 PM  [focus] 1
+INFO 7/7/2019, 9:08:46 PM  [blur] 1
+INFO 7/7/2019, 9:09:28 PM  [focus] 1
+INFO 7/7/2019, 9:09:29 PM  [blur] 1
+INFO 7/7/2019, 9:12:07 PM  [focus] 1
+INFO 7/7/2019, 9:12:08 PM  [blur] 1
+INFO 7/7/2019, 9:12:18 PM  [focus] 1
+INFO 7/7/2019, 9:12:18 PM  [blur] 1
+INFO 7/7/2019, 9:12:19 PM  [focus] 1
+INFO 7/7/2019, 9:12:19 PM  [blur] 1
+INFO 7/7/2019, 9:14:22 PM  [focus] 1
+INFO 7/7/2019, 9:14:23 PM  [blur] 1
+INFO 7/7/2019, 9:19:43 PM  [focus] 1
+INFO 7/7/2019, 9:19:43 PM  [blur] 1
+INFO 7/7/2019, 9:20:03 PM  [focus] 1
+INFO 7/7/2019, 9:20:04 PM  [blur] 1
+INFO 7/7/2019, 9:20:49 PM  [focus] 1
+INFO 7/7/2019, 9:20:50 PM  [blur] 1
+INFO 7/7/2019, 9:21:34 PM  [focus] 1
+INFO 7/7/2019, 9:21:34 PM  [blur] 1
+INFO 7/7/2019, 9:24:16 PM  [focus] 1
+INFO 7/7/2019, 9:24:17 PM  [blur] 1
+INFO 7/7/2019, 9:24:17 PM  [focus] 1
+INFO 7/7/2019, 9:24:31 PM  ------------------quit------------------
+DEBUG 7/7/2019, 10:11:56 PM  initSentry
+DEBUG 7/7/2019, 10:11:56 PM  initCountly
+INFO 7/7/2019, 10:11:56 PM  ------------------start------------------
+INFO 7/7/2019, 10:11:56 PM  typora version: 0.9.72
+DEBUG 7/7/2019, 10:11:56 PM  [ '/usr/share/typora/Typora' ]
+DEBUG 7/7/2019, 10:11:56 PM  /usr/share/typora/resources/app/locales/Base.lproj/Menu.json
+ERROR 7/7/2019, 10:11:56 PM  (node:6028) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+DEBUG 7/7/2019, 10:11:56 PM  [ 'github.css',
+  'newsprint.css',
+  'night.css',
+  'pixyll.css',
+  'ursine-polar.css',
+  'ursine-umbra.css',
+  'whitey.css' ]
+DEBUG 7/7/2019, 10:11:56 PM  pinFolder /home/kyle/notes
+DEBUG 7/7/2019, 10:11:56 PM  app.openFile
+INFO 7/7/2019, 10:11:56 PM  [focus] 1
+INFO 7/7/2019, 10:12:39 PM  ------------------quit------------------
+DEBUG 7/8/2019, 7:50:32 AM  initSentry
+DEBUG 7/8/2019, 7:50:32 AM  initCountly
+INFO 7/8/2019, 7:50:32 AM  ------------------start------------------
+INFO 7/8/2019, 7:50:32 AM  typora version: 0.9.72
+DEBUG 7/8/2019, 7:50:32 AM  [ '/usr/share/typora/Typora' ]
+DEBUG 7/8/2019, 7:50:32 AM  /usr/share/typora/resources/app/locales/Base.lproj/Menu.json
+ERROR 7/8/2019, 7:50:32 AM  (node:13585) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+DEBUG 7/8/2019, 7:50:32 AM  [ 'github.css',
+  'newsprint.css',
+  'night.css',
+  'pixyll.css',
+  'ursine-polar.css',
+  'ursine-umbra.css',
+  'whitey.css' ]
+DEBUG 7/8/2019, 7:50:32 AM  pinFolder /home/kyle/notes
+DEBUG 7/8/2019, 7:50:32 AM  app.openFile
+INFO 7/8/2019, 7:50:32 AM  [focus] 1
+INFO 7/8/2019, 7:50:35 AM  switchDocument
+INFO 7/8/2019, 7:50:35 AM  addRecentDocument
+INFO 7/8/2019, 7:51:31 AM  [blur] 1
+INFO 7/8/2019, 7:52:05 AM  [focus] 1
+INFO 7/8/2019, 10:44:40 PM  [blur] 1
+INFO 7/8/2019, 10:46:06 PM  [focus] 1
+INFO 7/8/2019, 10:46:07 PM  [blur] 1
+INFO 7/8/2019, 11:24:10 PM  [focus] 1
+INFO 7/8/2019, 11:24:22 PM  [blur] 1
+INFO 7/8/2019, 11:25:12 PM  [focus] 1
+INFO 7/8/2019, 11:25:12 PM  [blur] 1
+INFO 7/8/2019, 11:48:48 PM  [focus] 1
+INFO 7/8/2019, 11:48:52 PM  ------------------quit------------------
+DEBUG 7/9/2019, 3:40:04 PM  initSentry
+DEBUG 7/9/2019, 3:40:04 PM  initCountly
+INFO 7/9/2019, 3:40:04 PM  ------------------start------------------
+INFO 7/9/2019, 3:40:04 PM  typora version: 0.9.72
+DEBUG 7/9/2019, 3:40:04 PM  [ '/usr/share/typora/Typora' ]
+DEBUG 7/9/2019, 3:40:04 PM  /usr/share/typora/resources/app/locales/Base.lproj/Menu.json
+ERROR 7/9/2019, 3:40:04 PM  (node:23854) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+DEBUG 7/9/2019, 3:40:04 PM  [ 'github.css',
+  'newsprint.css',
+  'night.css',
+  'pixyll.css',
+  'ursine-polar.css',
+  'ursine-umbra.css',
+  'whitey.css' ]
+DEBUG 7/9/2019, 3:40:04 PM  pinFolder /home/kyle/notes
+DEBUG 7/9/2019, 3:40:04 PM  app.openFile
+INFO 7/9/2019, 3:40:04 PM  [focus] 1
+INFO 7/9/2019, 3:41:25 PM  switchDocument
+INFO 7/9/2019, 3:41:25 PM  addRecentDocument
+INFO 7/9/2019, 3:49:38 PM  [blur] 1
+INFO 7/9/2019, 4:04:53 PM  [focus] 1
+INFO 7/9/2019, 4:04:54 PM  [blur] 1
+INFO 7/9/2019, 4:05:23 PM  [focus] 1
+INFO 7/9/2019, 4:05:24 PM  [blur] 1
+INFO 7/9/2019, 4:29:52 PM  [focus] 1
+INFO 7/9/2019, 4:29:52 PM  [blur] 1
+INFO 7/9/2019, 4:29:55 PM  [focus] 1
+INFO 7/9/2019, 4:31:04 PM  ------------------quit------------------
