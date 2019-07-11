@@ -40,6 +40,7 @@ local volume_bar = wibox.widget{
 local is_muted = false
 local hover = false
 local vol_id = nil
+local prev_vol = nil
 
 local function update_widget()
     awful.spawn.easy_async({"sh", "-c", "pactl list sinks"},
@@ -49,13 +50,15 @@ local function update_widget()
             local fill_color
             local bg_color
             if muted ~= nil then
-                vol_id = naughty.notify({
-                        text = "Muted",
-                        icon = beautiful.muted_icon,
-                        timeout = 2,
-                        position = "bottom_middle",
-                        replaces_id = vol_id
-                    }).id
+                if is_muted == false then
+                    vol_id = naughty.notify({
+                            text = "Muted",
+                            icon = beautiful.muted_icon,
+                            timeout = 2,
+                            position = "bottom_middle",
+                            replaces_id = vol_id
+                        }).id
+                end
                 if hover then
                     fill_color = "#546577" 
                 else
@@ -64,13 +67,17 @@ local function update_widget()
                 bg_color = muted_background_color
                 is_muted = true
             else
-                vol_id = naughty.notify({
-                        text = volume,
-                        icon = beautiful.volume_icon,
-                        timeout = 2,
-                        position = "bottom_middle",
-                        replaces_id = vol_id
-                    }).id
+                -- check if volume was changed before sending notification or was unmuted
+                if prev_vol ~= volume or is_muted == true then
+                    vol_id = naughty.notify({
+                            text = volume,
+                            icon = beautiful.volume_icon,
+                            timeout = 2,
+                            position = "bottom_middle",
+                            replaces_id = vol_id
+                        }).id
+                    prev_vol = volume
+                end
                 if hover then
                     fill_color = "#abfeff"
                 else
