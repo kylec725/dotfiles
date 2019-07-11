@@ -8,6 +8,7 @@ local gears = require("gears")
 local wibox = require("wibox")
 local beautiful = require("beautiful")
 local xresources = require("beautiful.xresources")
+local naughty = require("naughty")
 local dpi = xresources.apply_dpi
 
 -- Set colors
@@ -38,6 +39,7 @@ local volume_bar = wibox.widget{
 
 local is_muted = false
 local hover = false
+local vol_id = nil
 
 local function update_widget()
     awful.spawn.easy_async({"sh", "-c", "pactl list sinks"},
@@ -47,6 +49,13 @@ local function update_widget()
             local fill_color
             local bg_color
             if muted ~= nil then
+                vol_id = naughty.notify({
+                        text = "Muted",
+                        icon = beautiful.muted_icon,
+                        timeout = 2,
+                        position = "bottom_middle",
+                        replaces_id = vol_id
+                    }).id
                 if hover then
                     fill_color = "#546577" 
                 else
@@ -55,6 +64,13 @@ local function update_widget()
                 bg_color = muted_background_color
                 is_muted = true
             else
+                vol_id = naughty.notify({
+                        text = volume,
+                        icon = beautiful.volume_icon,
+                        timeout = 2,
+                        position = "bottom_middle",
+                        replaces_id = vol_id
+                    }).id
                 if hover then
                     fill_color = "#abfeff"
                 else
