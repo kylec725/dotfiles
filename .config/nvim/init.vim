@@ -234,7 +234,7 @@ nnoremap <leader>i :Indent<CR>
 nnoremap <silent> <Esc> :noh<CR>
 
 " insert empty lines
-nnoremap <silent><Space> o<Esc>k
+nnoremap <silent><Space> o<Esc>
 
 " escape as terminal escape
 " tnoremap <Esc> <C-\><C-n>
