@@ -1,5 +1,299 @@
 [
   {
+    "id": "d3835d30-a463-11e9-8a90-9b3ca199bf3f",
+    "content": [
+      "3^2 \\cdot -x"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/jubilee/worksheets/negatives2/worksheet.tex\t57\t10",
+    "filetype": "tex"
+  },
+  {
+    "id": "673f25a0-a463-11e9-8a90-9b3ca199bf3f",
+    "content": [
+      "9 - 10 \\cdot 2"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/jubilee/worksheets/negatives2/worksheet.tex\t51\t10",
+    "filetype": "tex"
+  },
+  {
+    "id": "0b88b650-a462-11e9-b98f-211bcd15c75d",
+    "content": [
+      "% Remove page numbering",
+      "\\pagenumbering{gobble}",
+      ""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/negatives/worksheet.tex\t10\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "084c28f0-a462-11e9-b98f-211bcd15c75d",
+    "content": [
+      "% Change title formatting",
+      "\\renewcommand{\\maketitle}{",
+      "  {",
+      "    \\textbf{Name:} \\underline{\\hspace{16em}}",
+      "    \\hfill",
+      "    \\textbf{Date:} \\underline{\\hspace{7em}}",
+      "  }",
+      "}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/negatives/worksheet.tex\t13\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "60bb75d0-a45e-11e9-886e-87aeee8199f9",
+    "content": [
+      "  \\frac{x^n}{x^m} = x^{n-m}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/pemdas/worksheet.tex\t61\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "5ec264f0-a45e-11e9-886e-87aeee8199f9",
+    "content": [
+      "  x^n \\cdot x^m = x^{n+m}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/pemdas/worksheet.tex\t58\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "5790c510-a45d-11e9-84f5-91e051292d9c",
+    "content": [
+      "snippet \"b(egin)?\" \"begin{} / end{}\" br",
+      "\\begin{$1}$0",
+      "\\end{$1}",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t30\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "5170d590-a457-11e9-84f5-91e051292d9c",
+    "content": [
+      "\"([A-Za-z])_([a-zA-z0-9[a-zA-z0-9]\" "
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t71\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "cd2e2680-a455-11e9-b4b2-dd46e0f33d34",
+    "content": [
+      "6 - 2^2 / 2"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/jubilee/worksheets/pemdas/worksheet.tex\t41\t10",
+    "filetype": "tex"
+  },
+  {
+    "id": "2f86fcc0-a452-11e9-b87e-671ce40b316a",
+    "content": [
+      "<-"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t70\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "2db76ce0-a452-11e9-b87e-671ce40b316a",
+    "content": [
+      "->"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t66\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "f9274f40-a451-11e9-b87e-671ce40b316a",
+    "content": [
+      "snippet -> \"right arrow\" wA",
+      "\\rightarrow",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t66\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "3e01e760-a44d-11e9-b98f-211bcd15c75d",
+    "content": [
+      "% Change title formatting",
+      "\\renewcommand{\\maketitle}{",
+      "  {",
+      "    \\textbf{Name:} \\underline{\\hspace{16em}}",
+      "    \\hfill",
+      "    \\textbf{Date:} \\underline{\\hspace{7em}}",
+      "  }",
+      "}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/negatives/worksheet.tex\t13\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "dfd5eed0-a388-11e9-b649-b908bce6bb24",
+    "content": [
+      "inoremap <expr> <cr> pumvisible() ? \"\\<C-y>\" : \"\\<C-g>u\\<CR>\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/config/coc.vim\t18\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "71309390-a379-11e9-a588-bbb015b9188b",
+    "content": [
+      "  pactl subscribe 2> /dev/null | grep --line-buffered \"sink #0\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t106\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "536d3620-a378-11e9-a0d1-65cb118acf7b",
+    "content": [
+      "                vol_id = naughty.notify({",
+      "                        text = \"Muted\",",
+      "                        icon = beautiful.volume_icon,",
+      "                        timeout = 2,",
+      "                        position = \"bottom_middle\",",
+      "                        replaces_id = vol_id",
+      "                    }).id"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t52\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "0f7bb7c0-a378-11e9-a0d1-65cb118acf7b",
+    "content": [
+      "            if muted ~= nil then",
+      "                vol_id = naughty.notify({",
+      "                        text = \"Muted\",",
+      "                        icon = beautiful.volume_icon,",
+      "                        timeout = 2,",
+      "                        position = \"bottom_middle\",",
+      "                        replaces_id = vol_id",
+      "                    }).id"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t51\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "51ae1670-a377-11e9-a0d1-65cb118acf7b",
+    "content": [
+      "                        text = \"Battery Critical\",",
+      "                        icon = beautiful.battery_icon,",
+      "                        preset = naughty.config.presets.critical,",
+      "                        timeout = 0,",
+      "                        position = \"bottom_middle\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t28\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "b8928360-a333-11e9-b7c7-73d7bd245ea1",
+    "content": [
+      "38 - 29"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/jubilee/worksheets/negatives/worksheet.tex\t84\t10",
+    "filetype": "tex"
+  },
+  {
+    "id": "0c89cff0-a320-11e9-b79d-9f1a36a84a67",
+    "content": [
+      "\\begin{enumerate}",
+      "    % Page 1",
+      "  \\item $(x + 2)(x + 2)$",
+      "    \\vfill",
+      "",
+      "  \\item $(x + 4)(x + 3)$",
+      "    \\vfill",
+      "",
+      "  \\item $(x + 3)(x - 1)$",
+      "    \\vfill",
+      "",
+      "  \\item $(x - 4)(x - 8)$",
+      "    \\vfill",
+      "",
+      "  \\item $(b - 8 )(b + 14)$",
+      "    \\vfill",
+      "",
+      "  \\item $(h + 2)(h - 3)$",
+      "    \\vfill",
+      "",
+      "  \\item $(r + 7)(r - 1)$",
+      "    \\vfill",
+      "",
+      "  \\item $(t + 10)(t + 11)$",
+      "    \\vspace{2em}",
+      "    \\pagebreak",
+      "",
+      "    % Page 2",
+      "  \\item $(c + 7)(c - 9)$",
+      "    \\vfill",
+      "",
+      "  \\item $(s + 6)(s - 4)$",
+      "    \\vfill",
+      "",
+      "  \\item $(y + 2)(y + 8)$",
+      "    \\vfill",
+      "",
+      "  \\item $(x - 7)(x - 7)$",
+      "    \\vfill",
+      "",
+      "  \\item $(x + 6)(x - 12)$",
+      "    \\vfill",
+      "",
+      "  \\item $(w - 1)(w + 1)$",
+      "    \\vfill",
+      "",
+      "  \\item $(t + 6)(t + 8)$",
+      "    \\vfill",
+      "",
+      "  \\item $(k - 4)(k + 7)$",
+      "    \\vspace{2em}",
+      "\\end{enumerate}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/foil/worksheet.tex\t25\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "c18e6880-a31f-11e9-b79d-9f1a36a84a67",
+    "content": [
+      "% Change title formatting",
+      "\\renewcommand{\\maketitle}{",
+      "  {",
+      "    \\textbf{Name:} \\underline{\\hspace{16em}}",
+      "    \\hfill",
+      "    \\textbf{Date:} \\underline{\\hspace{7em}}",
+      "  }",
+      "}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/foil/worksheet.tex\t10\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "57d60bf0-a31f-11e9-b59e-cf84aa276d61",
+    "content": [
+      "\\usepackage[margin=1in]{geometry}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/foil/worksheet.tex\t5\t1",
+    "filetype": "tex"
+  },
+  {
     "id": "620d5d40-a2c9-11e9-bccb-b32d45685146",
     "content": [
       "snippet \"cly\" \"corollary\" wr",
@@ -2086,207 +2380,6 @@
     ],
     "regtype": "v",
     "path": "file:///home/kyle/.config/nvim/init.vim\t12\t6",
-    "filetype": "vim"
-  },
-  {
-    "id": "92a26450-9527-11e9-9003-2572e3c1f0b7",
-    "content": [
-      "abbr 3.. '../../..'"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/fish/config.fish\t46\t1",
-    "filetype": "fish"
-  },
-  {
-    "id": "3c7a5320-948d-11e9-b525-d7299636bbbd",
-    "content": [
-      "\\uf05"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vim-airline/autoload/airline/extensions/ale.vim\t77\t70",
-    "filetype": "vim"
-  },
-  {
-    "id": "80257680-9489-11e9-89c0-c7fbb6ac83a6",
-    "content": [
-      "lightline_gitdiff#get_status"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t291\t12",
-    "filetype": "vim"
-  },
-  {
-    "id": "94d1f620-9485-11e9-8cb2-8791d6076863",
-    "content": [
-      "      \\   'noscrollbar': 'noscrollbar#statusline'"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t280\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "258c33d0-9484-11e9-b27d-3d4022848c99",
-    "content": [
-      ""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t232\t35",
-    "filetype": "vim"
-  },
-  {
-    "id": "1c99dbb0-9484-11e9-b27d-3d4022848c99",
-    "content": [
-      ""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t232\t35",
-    "filetype": "vim"
-  },
-  {
-    "id": "14cff370-9483-11e9-a0f7-eb4bfe86cab9",
-    "content": [
-      "lineinfo"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t261\t24",
-    "filetype": "vim"
-  },
-  {
-    "id": "7692aec0-9480-11e9-b164-23a65a7f7e67",
-    "content": [
-      "echo ' ' . fugitive#head()"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t234\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "74f97120-9480-11e9-b164-23a65a7f7e67",
-    "content": [
-      "echo ' ' . fugitive#head()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t234\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "692296b0-9480-11e9-907b-f5ec3e3474c8",
-    "content": [
-      "echo '' . fugitive#head()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t234\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "57ffd6e0-9480-11e9-907b-f5ec3e3474c8",
-    "content": [
-      ""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t233\t35",
-    "filetype": "vim"
-  },
-  {
-    "id": "4e6d2010-9480-11e9-907b-f5ec3e3474c8",
-    "content": [
-      ""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t233\t35",
-    "filetype": "vim"
-  },
-  {
-    "id": "470d00b0-9480-11e9-907b-f5ec3e3474c8",
-    "content": [
-      ""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t233\t35",
-    "filetype": "vim"
-  },
-  {
-    "id": "7a509690-947f-11e9-8e8b-fb6f92f521b0",
-    "content": [
-      "\t\t\t\\   'gitbranch': 'fugitive#head'"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/lightline.vim/doc/lightline.txt\t151\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "845de680-947d-11e9-8fc5-53a609fe1e4f",
-    "content": [
-      "\"     \\ 'left': [ [ 'tabs' ] ],",
-      "\"     \\ 'right': [ [ 'close' ] ] }"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t287\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "66c4ff00-947d-11e9-8fc5-53a609fe1e4f",
-    "content": [
-      "\t\t\t\\   'gitbranch': 'fugitive#head'"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/lightline.vim/doc/lightline.txt\t151\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "eb852d60-947c-11e9-bf14-8908173f7948",
-    "content": [
-      "\"     \\ 'left': [ [ 'filename' ] ],",
-      "\"     \\ 'right': [ [ 'lineinfo' ],",
-      "\"     \\            [ 'percent' ] ] }"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t277\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "46830d00-947c-11e9-83c0-217a4c19c0d6",
-    "content": [
-      "noscrollbar#statusline()"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t241\t22",
-    "filetype": "vim"
-  },
-  {
-    "id": "38680460-947b-11e9-b997-29f33a6559af",
-    "content": [
-      "'nord'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t243\t31",
-    "filetype": "vim"
-  },
-  {
-    "id": "fc361230-9474-11e9-9395-f35f57e00a1c",
-    "content": [
-      "%{coc#status()}"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t249\t21",
-    "filetype": "vim"
-  },
-  {
-    "id": "f98968c0-9474-11e9-9395-f35f57e00a1c",
-    "content": [
-      "%{coc#status()}"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t249\t21",
-    "filetype": "vim"
-  },
-  {
-    "id": "cd1e2c00-9472-11e9-92dc-956aaaaaa68a",
-    "content": [
-      "\" Lightline !!!!!"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t238\t1",
     "filetype": "vim"
   }
 ]
