@@ -14,7 +14,5 @@ inoremap <silent><expr> <c-j>
 inoremap <expr> <c-j> pumvisible() ? "\<C-n>" : "\<c-j>"
 inoremap <expr> <c-k> pumvisible() ? "\<C-p>" : "\<c-k>"
 
-" map <CR> to confirm completion
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " let esc cancel completion
 inoremap <expr> <c-c> pumvisible() ? "\<C-e>" : "\<c-c>"
