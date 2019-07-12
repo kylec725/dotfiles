@@ -46,12 +46,6 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-" Documentation
-Plug 'KabbAmine/zeavim.vim'
-
-" Note Taking
-" Plug 'vimwiki/vimwiki'
-
 call plug#end()
 
 "----------------------"
