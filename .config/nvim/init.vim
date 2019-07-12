@@ -12,6 +12,7 @@ Plug 'vimlab/split-term.vim'
 Plug 'godlygeek/tabular'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'lervag/vimtex'
 
 " File Navigation
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -187,6 +188,9 @@ nnoremap <silent> = :bnext<CR>
 " nnoremap <silent> <C-h> :bprevious<CR>
 " nnoremap <silent> <C-l> :bnext<CR>
 nnoremap <silent> <leader>bd :bd<CR>
+
+" remap the jump mark key
+noremap ' `
 
 " map shift + hjkl
 noremap <S-h> ^
