@@ -1,5 +1,14 @@
 [
   {
+    "id": "9a287440-a467-11e9-bf48-2541eb6cd1d0",
+    "content": [
+      "autocmd FileType tex setlocal shiftwidth=2 spell | nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t155\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "d3835d30-a463-11e9-8a90-9b3ca199bf3f",
     "content": [
       "3^2 \\cdot -x"
@@ -2371,15 +2380,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/dotfiles_git/config/nvim/init.vim\t254\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "156e25a0-953b-11e9-b4b6-61a72581d1c1",
-    "content": [
-      "mengelbrecht/lightline-bufferline"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t12\t6",
     "filetype": "vim"
   }
 ]
