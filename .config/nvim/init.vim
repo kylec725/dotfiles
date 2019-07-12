@@ -103,7 +103,7 @@ highlight Search ctermbg=green ctermfg=black
 highlight IncSearch ctermbg=black ctermfg=magenta
 
 " matched parentheses color
-highlight MatchParen ctermbg=blue
+highlight MatchParen ctermbg=magenta
 
 " Set folding to indent
 set foldmethod=indent

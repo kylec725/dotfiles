@@ -1,5 +1,23 @@
 [
   {
+    "id": "d269bff0-a49c-11e9-addf-330cbeb707f9",
+    "content": [
+      "| nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR>"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t155\t52",
+    "filetype": "vim"
+  },
+  {
+    "id": "d1bf0100-a49c-11e9-addf-330cbeb707f9",
+    "content": [
+      "\" autocmd FileType tex setlocal shiftwidth=2 spell | nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t155\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "9a287440-a467-11e9-bf48-2541eb6cd1d0",
     "content": [
       "autocmd FileType tex setlocal shiftwidth=2 spell | nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR>"
@@ -2296,90 +2314,6 @@
     ],
     "regtype": "v",
     "path": "file:///home/kyle/.config/nvim/init.vim\t310\t43",
-    "filetype": "vim"
-  },
-  {
-    "id": "03a81cc0-9542-11e9-b4b6-61a72581d1c1",
-    "content": [
-      "'lightline_hunks'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t269\t18",
-    "filetype": "vim"
-  },
-  {
-    "id": "4d1b88d0-953b-11e9-b042-6189a5ac089f",
-    "content": [
-      "let g:lightline = {",
-      "    \\ 'colorscheme': 'lena',",
-      "    \\ }",
-      "",
-      "let g:lightline.active = {",
-      "    \\ 'left': [ [ 'mode', 'paste', 'sep1' ],",
-      "    \\           [ 'readonly', 'filename', 'modified' ],",
-      "    \\           [ ] ],",
-      "    \\ 'right': [ [ 'lineinfo' ],",
-      "    \\            [ 'percent' ],",
-      "    \\            [ 'filetype' ] ]",
-      "    \\ }",
-      "",
-      "let g:lightline.inactive = {",
-      "    \\ 'left': [ [ 'mode', 'paste', 'sep1' ],",
-      "    \\           [ 'readonly', 'filename', 'modified' ] ],",
-      "    \\ 'right': [ [ 'lineinfo' ],",
-      "    \\            [ 'percent' ],",
-      "    \\            [ 'filetype' ] ]",
-      "    \\ }",
-      "",
-      "let g:lightline.tabline = {",
-      "    \\ 'left': [ [ 'tabs' ] ],",
-      "    \\ 'right': [ ] }",
-      "",
-      "let g:lightline.tab = {",
-      "    \\ 'active': [ 'tabnum', 'filename', 'modified' ],",
-      "    \\ 'inactive': [ 'tabnum', 'filename', 'modified' ] }",
-      "",
-      "let g:lightline.component = {",
-      "    \\ 'mode': '%{lightline#mode()}',",
-      "    \\ 'absolutepath': '%F',",
-      "    \\ 'relativepath': '%f',",
-      "    \\ 'filename': '%t',",
-      "    \\ 'modified': '%M',",
-      "    \\ 'bufnum': '%n',",
-      "    \\ 'paste': '%{&paste?\"PASTE\":\"\"}',",
-      "    \\ 'readonly': '%R',",
-      "    \\ 'charvalue': '%b',",
-      "    \\ 'charvaluehex': '%B',",
-      "    \\ 'fileencoding': '%{&fenc!=#\"\"?&fenc:&enc}',",
-      "    \\ 'fileformat': '%{&ff}',",
-      "    \\ 'filetype': '%{&ft!=#\"\"?&ft:\"no ft\"}',",
-      "    \\ 'percent': '%3p%%',",
-      "    \\ 'percentwin': '%P',",
-      "    \\ 'spell': '%{&spell?&spelllang:\"\"}',",
-      "    \\ 'lineinfo': '%3l:%-2v',",
-      "    \\ 'line': '%l',",
-      "    \\ 'column': '%c',",
-      "    \\ 'close': '%999X X ',",
-      "    \\ 'winnr': '%{winnr()}',",
-      "    \\ 'sep1': ''",
-      "    \\}",
-      "",
-      "let g:lightline.mode_map = {",
-      "    \\ 'n' : 'N',",
-      "    \\ 'i' : 'I',",
-      "    \\ 'R' : 'R',",
-      "    \\ 'v' : 'V',",
-      "    \\ 'V' : 'L',",
-      "    \\ \"\\<C-v>\": 'B',",
-      "    \\ 'c' : 'C',",
-      "    \\ 's' : 'S',",
-      "    \\ 'S' : 'S-LINE',",
-      "    \\ \"\\<C-s>\": 'S-BLOCK',",
-      "    \\ 't': 'T',",
-      "    \\ }"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/dotfiles_git/config/nvim/init.vim\t254\t1",
     "filetype": "vim"
   }
 ]
