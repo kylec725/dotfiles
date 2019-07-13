@@ -15,4 +15,4 @@ inoremap <expr> <tab> pumvisible() ? "\<C-n>" : "\<tab>"
 inoremap <expr> <s-tab> pumvisible() ? "\<C-p>" : "\<s-tab>"
 
 " let esc cancel completion
-inoremap <expr> <s-bs> pumvisible() ? "\<C-e>" : "\<s-bs>"
+inoremap <expr> <c-c> pumvisible() ? "\<C-e>" : "\<c-c>"
