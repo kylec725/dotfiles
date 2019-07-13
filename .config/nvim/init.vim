@@ -162,7 +162,7 @@ autocmd FileType java setlocal shiftwidth=4 | match OverLength /\%81v.\+/
 autocmd FileType javascript setlocal shiftwidth=4
 autocmd FileType python setlocal shiftwidth=4 | match OverLength /\%81v.\+/
 autocmd FileType vim setlocal shiftwidth=4
-autocmd FileType vimwiki setlocal shiftwidth=4
+autocmd FileType sql setlocal shiftwidth=4
 autocmd FileType lua setlocal shiftwidth=4
 autocmd FileType fish setlocal shiftwidth=4 | ALEDisable
 autocmd FileType sh setlocal shiftwidth=8
@@ -327,7 +327,7 @@ highlight GitGutterDelete ctermfg=7
 
 " split-term.vim settings
 set splitright
-let g:term_size = 40
+let g:term_size = 50
 
 " terminal function (from /u/andreyorst) was modified
 let g:term_buf = -1
