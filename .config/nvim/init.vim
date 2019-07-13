@@ -392,6 +392,6 @@ vnoremap <leader><Tab> :Tabularize /
 
 " Snippets !!!!!
 let g:UltiSnipsUsePythonVersion = 3
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsExpandTrigger="<c-l>"
+let g:UltiSnipsJumpForwardTrigger="<c-l>"
+let g:UltiSnipsJumpBackwardTrigger="<c-h>"
