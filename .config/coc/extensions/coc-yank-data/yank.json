@@ -1,5 +1,270 @@
 [
   {
+    "id": "c8541540-a593-11e9-89fa-a3b2bc12ac59",
+    "content": [
+      "    `ID` INT(255),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql\t37\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "bfa8d840-a593-11e9-89fa-a3b2bc12ac59",
+    "content": [
+      "    `CreationTS` TIMESTAMP()"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql\t43\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "eddcce70-a592-11e9-89fa-a3b2bc12ac59",
+    "content": [
+      "    `Amount` DEC(65, 2)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql\t42\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "e6378fc0-a592-11e9-89fa-a3b2bc12ac59",
+    "content": [
+      "    `Balance` DEC(65, 2)"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql\t8\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "af066170-a592-11e9-89fa-a3b2bc12ac59",
+    "content": [
+      "    `TransID` INT(255),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql\t39\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "a93f58a0-a592-11e9-89fa-a3b2bc12ac59",
+    "content": [
+      "    `TransID` INT(255),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql\t38\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "90d29980-a592-11e9-89fa-a3b2bc12ac59",
+    "content": [
+      "DROP TABLE IF EXISTS Checking;",
+      "CREATE TABLE Checking(",
+      "    `ID` INT(255),",
+      "    `CheckingID` INT(255),",
+      "    `Verified` BOOL",
+      ");"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql\t28\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "76a19520-a592-11e9-89fa-a3b2bc12ac59",
+    "content": [
+      "DROP TABLE IF EXISTS Cards;",
+      "CREATE TABLE Cards(",
+      "    `ID` INT(255),",
+      "    `CardID` INT(255),",
+      "    -- `Type` ENUM(\"Card\", \"Checking\"),",
+      ");"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql\t21\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "4ba9fab0-a592-11e9-89fa-a3b2bc12ac59",
+    "content": [
+      "DROP TABLE IF EXISTS Payment;",
+      "CREATE TABLE Payment(",
+      "    `ID` INT(255),",
+      "    `PayID` VARCHAR(255),",
+      "    `Type` ENUM(\"Card\", \"Checking\"),",
+      "    `SourceID` INT(255),",
+      "    `Primary` BOOL,",
+      "    `Active` BOOL",
+      ");"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql\t11\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "1b291930-a591-11e9-9325-61f3e05a7adf",
+    "content": [
+      "autocmd FileType json setlocal shiftwidth=2"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t153\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "164ee160-a591-11e9-9325-61f3e05a7adf",
+    "content": [
+      "autocmd FileType html setlocal shiftwidth=2 | match OverLength /\\%81v.\\+/"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t151\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "00ad0210-a591-11e9-a741-5b4cfee643da",
+    "content": [
+      "    `Type` ENUM(\"Card\", \"Checking\"),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/paymentdb.sql\t15\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "ae58a730-a590-11e9-a741-5b4cfee643da",
+    "content": [
+      "    `PayID` VARCHAR(255),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/paymentdb.sql\t14\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "6643e4f0-a590-11e9-a741-5b4cfee643da",
+    "content": [
+      "DROP TABLE IF EXISTS Customers;",
+      "CREATE TABLE Customers(",
+      "    `ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,",
+      "    `Username` VARCHAR(255),",
+      "    `Balance` INT(255),",
+      ");"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/paymentdb.sql\t4\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "c6e4a390-a58f-11e9-a2aa-a7dd71e0b44e",
+    "content": [
+      "CREATE DATABASE IF NOT EXISTS Affordable;",
+      "USE Affordable;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/database/CreateDatabase.sql\t1\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "a5707db0-a58f-11e9-a2aa-a7dd71e0b44e",
+    "content": [
+      "DROP TABLE IF EXISTS AuthenticationInformation;",
+      "CREATE TABLE AuthenticationInformation(",
+      "    `ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,",
+      "    `Username` VARCHAR(255),",
+      "    `Password` VARCHAR(255),",
+      "    `Email` VARCHAR(255),",
+      "    `Question1` VARCHAR(255),",
+      "    `Answer1` VARCHAR(255),",
+      "    `Question2` VARCHAR(255),",
+      "    `Answer2` VARCHAR(255),",
+      "    `Question3` VARCHAR(255),",
+      "    `Answer3` VARCHAR(255),",
+      "    `RequiresTwoFactorAuthentication` VARCHAR(255),",
+      "    `TwoFactorCode` VARCHAR(255), ",
+      "    `profileChange_ts` VARCHAR(255), ",
+      "    `IP_addr` VARCHAR(255),",
+      "    `Last_Act` VARCHAR(255)",
+      ");"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/database/CreateDatabase.sql\t4\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "be4542e0-a58e-11e9-a2aa-a7dd71e0b44e",
+    "content": [
+      "  const values = [",
+      "    [",
+      "      null,",
+      "      req.body.username,",
+      "      req.body.password,",
+      "      req.body.email,",
+      "      req.body.Question1,",
+      "      req.body.ans1,",
+      "      req.body.Question2,",
+      "      req.body.ans2,",
+      "      req.body.Question3,",
+      "      req.body.ans3,",
+      "      req.body.TwoFactor,",
+      "      SECRET.base32, ",
+      "      req.body.profileChange_ts, ",
+      "      req.body.IP_addr,",
+      "      req.body.Last_Act",
+      "    ]"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/routes/authentication.js\t14\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "b16aed10-a58c-11e9-8ff3-13d2c950aaae",
+    "content": [
+      "let b:AutoPairs = {'$': '$', '\\[': '\\]', '(':')', '[':']', '{':'}',\"'\":\"'\",'\"':'\"', '`':'`'}"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t307\t17",
+    "filetype": "vim"
+  },
+  {
+    "id": "583f2470-a584-11e9-b6c3-ff238927a990",
+    "content": [
+      "autocmd FileWritePost *.tex silent! !pdflatex -jobname=%:p:t:r temp.tex"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/ftplugin/tex.vim\t7\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "378d6430-a584-11e9-b6c3-ff238927a990",
+    "content": [
+      "\" autocmd BufWritePost *.tex silent! !pdflatex -jobname=%:p:t:r temp.tex"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/ftplugin/tex.vim\t7\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "ff1efaf0-a583-11e9-b6c3-ff238927a990",
+    "content": [
+      "nnoremap <leader>p :cd %:p:h<CR>:w temp.tex<CR>:silent! !pdflatex temp.tex<CR>:silent! !zathura temp.pdf &<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/ftplugin/tex.vim\t2\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "4fd8ad80-a514-11e9-b6c3-ff238927a990",
+    "content": [
+      "nnoremap <leader>w :w<CR>:cd %:p:h<CR>:silent! !pdflatex %<CR> | nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR> | au CursorHold <buffer> :update | silent! !pdflatex %"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t156\t52",
+    "filetype": "vim"
+  },
+  {
+    "id": "4efca560-a514-11e9-b6c3-ff238927a990",
+    "content": [
+      "autocmd FileType tex setlocal shiftwidth=2 spell | nnoremap <leader>w :w<CR>:cd %:p:h<CR>:silent! !pdflatex %<CR> | nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR> | au CursorHold <buffer> :update | silent! !pdflatex %"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t156\t1",
+    "filetype": "vim"
+  },
+  {
     "id": "d269bff0-a49c-11e9-addf-330cbeb707f9",
     "content": [
       "| nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR>"
@@ -1896,424 +2161,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/nvim/init.vim\t505\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "9cc10960-95d5-11e9-b9b1-cbff03bb6665",
-    "content": [
-      "let g:conoline_auto_enable = 0",
-      "let g:conoline_color_normal_dark = 'ctermbg=black'",
-      "let g:conoline_color_normal_nr_dark = 'ctermfg=11'",
-      "let g:conoline_color_insert_dark = 'ctermbg=black'",
-      "let g:conoline_color_insert_nr_dark = 'ctermfg=11'",
-      "nnoremap <silent> <leader>c :ConoLineToggle<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t497\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "8fb7a260-95d5-11e9-b9b1-cbff03bb6665",
-    "content": [
-      "let g:fzf_action = {",
-      "  \\ 'ctrl-s': 'split',",
-      "  \\ 'ctrl-v': 'vsplit' }",
-      "",
-      "\" hide the statusline when searching",
-      "autocmd! FileType fzf",
-      "autocmd  FileType fzf set laststatus=0 noshowmode noruler",
-      "  \\| autocmd BufLeave <buffer> set laststatus=2 showmode ruler",
-      "",
-      "nnoremap <leader>f :Files<CR>",
-      "nnoremap <leader>l :Lines<CR>",
-      "",
-      "let g:fzf_colors =",
-      "\\ { 'fg':      ['fg', 'Normal'],",
-      "  \\ 'bg':      ['bg', 'Normal'],",
-      "  \\ 'hl':      ['fg', 'Comment'],",
-      "  \\ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],",
-      "  \\ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],",
-      "  \\ 'hl+':     ['fg', 'Statement'],",
-      "  \\ 'info':    ['fg', 'PreProc'],",
-      "  \\ 'border':  ['fg', 'Ignore'],",
-      "  \\ 'prompt':  ['fg', 'Conditional'],",
-      "  \\ 'pointer': ['fg', 'Exception'],",
-      "  \\ 'marker':  ['fg', 'Keyword'],",
-      "  \\ 'spinner': ['fg', 'Label'],",
-      "  \\ 'header':  ['fg', 'Comment'] }"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t466\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "78501e40-95d5-11e9-b9b1-cbff03bb6665",
-    "content": [
-      "nnoremap <LEADER>ad :ALEDetail<CR>",
-      "nmap <leader>aj <Plug>(ale_next_wrap)",
-      "nmap <leader>ak <Plug>(ale_previous_wrap)",
-      "\" lint after exiting insert mode",
-      "let g:ale_lint_on_text_changed = 'normal'",
-      "let g:ale_lint_on_insert_leave = 1"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t390\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "58ff74a0-95d5-11e9-b9b1-cbff03bb6665",
-    "content": [
-      "\" use <tab> for trigger completion and navigate to the next complete item",
-      "function! s:check_back_space() abort",
-      "  let col = col('.') - 1",
-      "  return !col || getline('.')[col - 1]  =~ '\\s'",
-      "endfunction",
-      "",
-      "inoremap <silent><expr> <TAB>",
-      "      \\ pumvisible() ? \"\\<C-n>\" :",
-      "      \\ <SID>check_back_space() ? \"\\<TAB>\" :",
-      "      \\ coc#refresh()",
-      "\" assign tab and s-tab to cycle through suggestions",
-      "inoremap <expr> <Tab> pumvisible() ? \"\\<C-n>\" : \"\\<Tab>\"",
-      "inoremap <expr> <S-Tab> pumvisible() ? \"\\<C-p>\" : \"\\<S-Tab>\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t374\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "2e2fd490-95d5-11e9-b9b1-cbff03bb6665",
-    "content": [
-      "let g:lightline = {",
-      "    \\ 'colorscheme': 'nord',",
-      "    \\ }",
-      "",
-      "let g:lightline.active = {",
-      "    \\ 'left': [ [ 'mode' ],",
-      "    \\           [ 'spell', 'readonly', 'filename', 'modified' ],",
-      "    \\           [ 'filetype' ] ],",
-      "    \\ 'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok', 'lineinfo' ],",
-      "    \\            [ 'noscrollbar' ],",
-      "    \\            [ 'nearest' ] ]",
-      "    \\ }",
-      "",
-      "let g:lightline.inactive = {",
-      "    \\ 'left': [ [  ],",
-      "    \\           [ 'spell', 'readonly', 'filename', 'modified' ],",
-      "    \\           [ ] ],",
-      "    \\ 'right': [ [ ],",
-      "    \\            [ ] ]",
-      "    \\ }",
-      "",
-      "let g:lightline.component = {",
-      "    \\   'lineinfo': '%1l:%-2v',",
-      "    \\   'line': '%l',",
-      "    \\   'column': '%c',",
-      "    \\}",
-      "",
-      "let g:lightline.component_function = {",
-      "    \\   'noscrollbar': 'Noscrollbar',",
-      "    \\   'nearest': 'NearestMethodOrFunction'",
-      "    \\ }",
-      "",
-      "let g:lightline.component_expand = {",
-      "    \\   'hunks': 'lightline#hunks#composer',",
-      "    \\   'buffers': 'lightline#bufferline#buffers',",
-      "    \\   'linter_checking': 'lightline#ale#checking',",
-      "    \\   'linter_warnings': 'lightline#ale#warnings',",
-      "    \\   'linter_errors': 'lightline#ale#errors',",
-      "    \\   'linter_ok': 'lightline#ale#ok',",
-      "    \\}",
-      "",
-      "let g:lightline.component_type   = {",
-      "    \\   'buffers': 'tabsel',",
-      "    \\   'linter_checking': 'left',",
-      "    \\   'linter_warnings': 'warning',",
-      "    \\   'linter_errors': 'error',",
-      "    \\   'linter_ok': 'left',",
-      "    \\   'hunks': 'tabsel',",
-      "    \\}",
-      "",
-      "let g:lightline.tabline = {",
-      "    \\ 'left': [ [ 'buffers' ] ],",
-      "    \\ 'right': [ [ 'hunks' ] ] }",
-      "",
-      "let g:lightline.separator = { 'left': \"\\ue0b8\", 'right': \"\\ue0be\" }",
-      "let g:lightline.subseparator = { 'left': \"\\ue0b9\", 'right': \"\\ue0b9\" }",
-      "let g:lightline.tabline_separator = { 'left': \"\\ue0bc\", 'right': \"\\ue0ba\" }",
-      "let g:lightline.tabline_subseparator = { 'left': \"\\ue0bb\", 'right': \"\\ue0bb\" }",
-      "",
-      "\" Bufferline",
-      "function! LightlineBufferline()",
-      "  call bufferline#refresh_status()",
-      "  return [ g:bufferline_status_info.before, g:bufferline_status_info.current, g:bufferline_status_info.after]",
-      "endfunction",
-      "",
-      "\" lightline-buffer ui settings",
-      "\" replace these symbols with ascii characters if your environment does not support unicode",
-      "let g:lightline_buffer_readonly_icon = ''",
-      "let g:lightline_buffer_modified_icon = '•'",
-      "let g:lightline_buffer_git_icon = ' '",
-      "let g:lightline_buffer_separator_icon = '  '",
-      "",
-      "\" max file name length",
-      "let g:lightline_buffer_maxflen = 30",
-      "",
-      "\" ALE Lightline",
-      "let g:lightline#ale#indicator_checking = \"...\"",
-      "let g:lightline#ale#indicator_warnings = \"\\uf071 :\"",
-      "let g:lightline#ale#indicator_errors = \"\\uf05e :\"",
-      "",
-      "\" Lightline noscrollbar",
-      "function! Noscrollbar(...)",
-      "    return ' ' . noscrollbar#statusline()",
-      "endfunction",
-      "",
-      "\" Nearest function",
-      "function! NearestMethodOrFunction() abort",
-      "  return get(b:, 'vista_nearest_method_or_function', '')",
-      "endfunction",
-      "autocmd VimEnter * call vista#RunForNearestMethodOrFunction()"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t257\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "34e9dad0-95d3-11e9-b300-8599414bf35f",
-    "content": [
-      "\"close defx if it's the only buffer left in the window",
-      "autocmd WinEnter * if &ft == 'defx' && winnr('$') == 1 | q | endif"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t526\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "b13fa890-958c-11e9-9c52-6568339c44f4",
-    "content": [
-      "icon': '"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/defx-icons/plugin/defx_icons.vim\t38\t19",
-    "filetype": "vim"
-  },
-  {
-    "id": "828d5440-9585-11e9-ae42-373006f209ff",
-    "content": [
-      "nnoremap <silent><buffer><expr> <CR> defx#do_action('drop')"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/defx.nvim/doc/defx.txt\t720\t4",
-    "filetype": "help"
-  },
-  {
-    "id": "7c7058b0-9584-11e9-ae42-373006f209ff",
-    "content": [
-      "Plug 'kristijanhusak/defx-icons'"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t8\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "71febaf0-9581-11e9-ae42-373006f209ff",
-    "content": [
-      "spell"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t272\t19",
-    "filetype": "vim"
-  },
-  {
-    "id": "30784920-9581-11e9-ae42-373006f209ff",
-    "content": [
-      "spell"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t262\t19",
-    "filetype": "vim"
-  },
-  {
-    "id": "18071d30-9581-11e9-b149-b3999ce4e44e",
-    "content": [
-      "    \\ 'spell': '%{&spell?&spelllang:\"\"}',"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/dotfiles_git/config/nvim/init.vim\t299\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "ab1934f0-957c-11e9-ae42-373006f209ff",
-    "content": [
-      "line"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t266\t20",
-    "filetype": "vim"
-  },
-  {
-    "id": "991e1de0-9579-11e9-b11a-9dd3ab679122",
-    "content": [
-      "lineinfo"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t264\t48",
-    "filetype": "vim"
-  },
-  {
-    "id": "54b314a0-9577-11e9-96ac-3d5a4f2edaa1",
-    "content": [
-      "    \\   'noscrollbar': 'Noscrollbar',"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t309\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "d49505d0-9571-11e9-b0cc-1745162c7cae",
-    "content": [
-      "let g:lightline.separator = {",
-      "    \\   'left': '', 'right': ''",
-      "    \\}",
-      "let g:lightline.subseparator = {",
-      "    \\   'left': '', 'right': '' ",
-      "    \\}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/dotfiles_git/config/nvim/init.vim\t323\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "16652040-9571-11e9-b0cc-1745162c7cae",
-    "content": [
-      "\" Always show at least one line above/below the cursor.",
-      "set scrolloff=1",
-      "\" Always show at least one line left/right of the cursor.",
-      "set sidescrolloff=5"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/dotfiles_git/config/nvim/init.vim\t19\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "c3949080-9570-11e9-b0cc-1745162c7cae",
-    "content": [
-      "set scrolloff=1"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/dotfiles_git/config/nvim/init.vim\t20\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "eb864fe0-956e-11e9-bf3f-db2e2a698ad5",
-    "content": [
-      "    \\   'hunks': 'lightline#hunks#composer',"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t288\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "948e01b0-9569-11e9-bf3f-db2e2a698ad5",
-    "content": [
-      "\" function! Noscrollbar(...)",
-      "\"     let w:airline_section_z = '%{noscrollbar#statusline()} %l:%c'",
-      "\" endfunction"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t388\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "3e292aa0-9548-11e9-a6aa-0d8faf4dae39",
-    "content": [
-      "\tautocmd FileType defx call s:defx_my_settings()",
-      "\tfunction! s:defx_my_settings() abort",
-      "\t  \" Define mappings",
-      "\t  nnoremap <silent><buffer><expr> <CR>",
-      "\t  \\ defx#do_action('open')",
-      "\t  nnoremap <silent><buffer><expr> c",
-      "\t  \\ defx#do_action('copy')",
-      "\t  nnoremap <silent><buffer><expr> m",
-      "\t  \\ defx#do_action('move')",
-      "\t  nnoremap <silent><buffer><expr> p",
-      "\t  \\ defx#do_action('paste')",
-      "\t  nnoremap <silent><buffer><expr> l",
-      "\t  \\ defx#do_action('open')",
-      "\t  nnoremap <silent><buffer><expr> E",
-      "\t  \\ defx#do_action('open', 'vsplit')",
-      "\t  nnoremap <silent><buffer><expr> P",
-      "\t  \\ defx#do_action('open', 'pedit')",
-      "\t  nnoremap <silent><buffer><expr> o",
-      "\t  \\ defx#do_action('open_or_close_tree')",
-      "\t  nnoremap <silent><buffer><expr> K",
-      "\t  \\ defx#do_action('new_directory')",
-      "\t  nnoremap <silent><buffer><expr> N",
-      "\t  \\ defx#do_action('new_file')",
-      "\t  nnoremap <silent><buffer><expr> M",
-      "\t  \\ defx#do_action('new_multiple_files')",
-      "\t  nnoremap <silent><buffer><expr> C",
-      "\t  \\ defx#do_action('toggle_columns',",
-      "\t  \\                'mark:indent:icon:filename:type:size:time')",
-      "\t  nnoremap <silent><buffer><expr> S",
-      "\t  \\ defx#do_action('toggle_sort', 'time')",
-      "\t  nnoremap <silent><buffer><expr> d",
-      "\t  \\ defx#do_action('remove')",
-      "\t  nnoremap <silent><buffer><expr> r",
-      "\t  \\ defx#do_action('rename')",
-      "\t  nnoremap <silent><buffer><expr> !",
-      "\t  \\ defx#do_action('execute_command')",
-      "\t  nnoremap <silent><buffer><expr> x",
-      "\t  \\ defx#do_action('execute_system')",
-      "\t  nnoremap <silent><buffer><expr> yy",
-      "\t  \\ defx#do_action('yank_path')",
-      "\t  nnoremap <silent><buffer><expr> .",
-      "\t  \\ defx#do_action('toggle_ignored_files')",
-      "\t  nnoremap <silent><buffer><expr> ;",
-      "\t  \\ defx#do_action('repeat')",
-      "\t  nnoremap <silent><buffer><expr> h",
-      "\t  \\ defx#do_action('cd', ['..'])",
-      "\t  nnoremap <silent><buffer><expr> ~",
-      "\t  \\ defx#do_action('cd')",
-      "\t  nnoremap <silent><buffer><expr> q",
-      "\t  \\ defx#do_action('quit')",
-      "\t  nnoremap <silent><buffer><expr> <Space>",
-      "\t  \\ defx#do_action('toggle_select') . 'j'",
-      "\t  nnoremap <silent><buffer><expr> *",
-      "\t  \\ defx#do_action('toggle_select_all')",
-      "\t  nnoremap <silent><buffer><expr> j",
-      "\t  \\ line('.') == line('$') ? 'gg' : 'j'",
-      "\t  nnoremap <silent><buffer><expr> k",
-      "\t  \\ line('.') == 1 ? 'G' : 'k'",
-      "\t  nnoremap <silent><buffer><expr> <C-l>",
-      "\t  \\ defx#do_action('redraw')",
-      "\t  nnoremap <silent><buffer><expr> <C-g>",
-      "\t  \\ defx#do_action('print')",
-      "\t  nnoremap <silent><buffer><expr> cd",
-      "\t  \\ defx#do_action('change_vim_cwd')",
-      "\tendfunction"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/defx.nvim/doc/defx.txt\t638\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "103ae240-9544-11e9-b4b6-61a72581d1c1",
-    "content": [
-      "exists(\"b:NERDTree\")"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t310\t43",
-    "filetype": "vim"
-  },
-  {
-    "id": "0e4fb410-9544-11e9-b4b6-61a72581d1c1",
-    "content": [
-      "exists(\"b:NERDTree\") "
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t310\t43",
     "filetype": "vim"
   }
 ]
