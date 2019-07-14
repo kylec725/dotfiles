@@ -1,5 +1,45 @@
 [
   {
+    "id": "9c4e7ce0-a5f9-11e9-a959-dd1abe228b74",
+    "content": [
+      "context \"math()\"",
+      "snippet ceil \"ceiling\" wA",
+      "\\left\\lceil $1 \\right\\rceil$0",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t107\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "191ef610-a5f9-11e9-a959-dd1abe228b74",
+    "content": [
+      "context \"math()\"",
+      "snippet floor \"floor\" wA",
+      "\\lfloor $1 \\rfloor$0",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t102\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "c2f2aea0-a5ec-11e9-85dd-7fc70b52251f",
+    "content": [
+      "% Change title formatting",
+      "\\renewcommand{\\maketitle}{",
+      "  {",
+      "    \\textbf{Name:} \\underline{\\hspace{16em}}",
+      "    \\hfill",
+      "    \\textbf{Date:} \\underline{\\hspace{7em}}",
+      "  }",
+      "}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/factorial/worksheet.tex\t10\t1",
+    "filetype": "tex"
+  },
+  {
     "id": "73fb8fe0-a5e9-11e9-abb9-c370bd1799a0",
     "content": [
       "1:article"
@@ -2082,33 +2122,6 @@
     ],
     "regtype": "v",
     "path": "file:///home/kyle/.config/nvim/init.vim\t346\t34",
-    "filetype": "vim"
-  },
-  {
-    "id": "1cab8830-96a3-11e9-83ca-b1e1ed95ea91",
-    "content": [
-      ""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t97\t68",
-    "filetype": "vim"
-  },
-  {
-    "id": "12912ad0-96a3-11e9-83ca-b1e1ed95ea91",
-    "content": [
-      ""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t77\t41",
-    "filetype": "vim"
-  },
-  {
-    "id": "ead5cfa0-96a2-11e9-83ca-b1e1ed95ea91",
-    "content": [
-      "    return winwidth(0) > 50 ? (&filetype !=# '' ? &filetype : 'no ft') : ''"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t91\t1",
     "filetype": "vim"
   }
 ]

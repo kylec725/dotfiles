@@ -33,6 +33,7 @@ snippet init "import base packages" b
 \usepackage{amsmath, amssymb, amsthm}
 \DeclareMathOperator{\Exists}{\exists}
 \DeclareMathOperator{\Forall}{\forall}
+
 $0
 endsnippet
 
@@ -96,6 +97,21 @@ endsnippet
 context "math()"
 snippet * "inserts \cdot for multiplication" wA
 \cdot
+endsnippet
+
+context "math()"
+snippet floor "floor" wA
+\left\lfloor $1 \right\rfloor$0
+endsnippet
+
+context "math()"
+snippet ceil "ceiling" wA
+\left\lceil $1 \right\rceil$0
+endsnippet
+
+context "math()"
+snippet abs "absolute value" wA
+\left| $1 \right|$0
 endsnippet
 
 context "math()"
