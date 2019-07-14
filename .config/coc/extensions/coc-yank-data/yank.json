@@ -1,5 +1,448 @@
 [
   {
+    "id": "ca5c8f90-a67c-11e9-b369-5f8ad8356670",
+    "content": [
+      "\\frac{a}{b}"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/jubilee/worksheets/test/worksheet.tex\t92\t48",
+    "filetype": "tex"
+  },
+  {
+    "id": "14c151c0-a67c-11e9-b7aa-536a77d5b1ab",
+    "content": [
+      "\\newcommand*\\autoop{\\left(}",
+      "\\newcommand*\\autocp{\\right)}",
+      "\\newcommand*\\autoob{\\left[}",
+      "\\newcommand*\\autocb{\\right]}",
+      "\\AtBeginDocument {%",
+      "   \\mathcode`( 32768",
+      "   \\mathcode`) 32768",
+      "   \\mathcode`[ 32768",
+      "   \\mathcode`] 32768",
+      "   \\begingroup",
+      "       \\lccode`\\~`(",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autoop",
+      "   }\\begingroup",
+      "       \\lccode`\\~`)",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autocp",
+      "   }\\begingroup",
+      "       \\lccode`\\~`[",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autoob",
+      "   }\\begingroup",
+      "       \\lccode`\\~`]",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autocb",
+      "   }}",
+      "",
+      "\\delimiterfactor 1001",
+      "",
+      "\\makeatletter",
+      "% for amsmath \"compatibility\" (not sophisticated)",
+      "% \\usepackage{amsmath}",
+      "\\AtBeginDocument {%",
+      "          \\def\\resetMathstrut@{%",
+      "           \\setbox\\z@\\hbox{\\the\\textfont\\symoperators\\char40}%",
+      "           \\ht\\Mathstrutbox@\\ht\\z@ \\dp\\Mathstrutbox@\\dp\\z@}%",
+      "}%",
+      "\\makeatother"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/test/worksheet.tex\t10\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "b703ab50-a67b-11e9-a4f9-4d0f0b56eb68",
+    "content": [
+      "\\usepackage{amsmath, amssymb, amsthm, centernot}",
+      "\\DeclareMathOperator{\\Exists}{\\exists}",
+      "\\DeclareMathOperator{\\Nexists}{\\nexists}",
+      "\\DeclareMathOperator{\\Forall}{\\forall}",
+      "\\newcommand{\\notimplies}{\\centernot\\implies}",
+      "\\renewcommand\\qedsymbol{$\\blacksquare$}",
+      "\\newcommand*\\autoop{\\left(}",
+      "\\newcommand*\\autocp{\\right)}",
+      "\\newcommand*\\autoob{\\left[}",
+      "\\newcommand*\\autocb{\\right]}",
+      "\\AtBeginDocument {%",
+      "   \\mathcode`( 32768",
+      "   \\mathcode`) 32768",
+      "   \\mathcode`[ 32768",
+      "   \\mathcode`] 32768",
+      "   \\begingroup",
+      "       \\lccode`\\~`(",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autoop",
+      "   }\\begingroup",
+      "       \\lccode`\\~`)",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autocp",
+      "   }\\begingroup",
+      "       \\lccode`\\~`[",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autoob",
+      "   }\\begingroup",
+      "       \\lccode`\\~`]",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autocb",
+      "   }}",
+      "",
+      "\\delimiterfactor 1001",
+      "",
+      "\\makeatletter",
+      "% for amsmath \"compatibility\" (not sophisticated)",
+      "% \\usepackage{amsmath}",
+      "\\AtBeginDocument {%",
+      "          \\def\\resetMathstrut@{%",
+      "           \\setbox\\z@\\hbox{\\the\\textfont\\symoperators\\char40}%",
+      "           \\ht\\Mathstrutbox@\\ht\\z@ \\dp\\Mathstrutbox@\\dp\\z@}%",
+      "}%",
+      "\\makeatother"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/test/worksheet.tex\t4\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "70ed9f40-a67b-11e9-a486-99c2dff80c09",
+    "content": [
+      "\\usepackage{amsmath, amssymb, amsthm, centernot}",
+      "\\DeclareMathOperator{\\Exists}{\\exists}",
+      "\\DeclareMathOperator{\\Nexists}{\\nexists}",
+      "\\DeclareMathOperator{\\Forall}{\\forall}",
+      "\\newcommand{\\notimplies}{\\centernot\\implies}",
+      "\\renewcommand\\qedsymbol{$\\blacksquare$}",
+      "\\newcommand*\\autoop{\\left(}",
+      "\\newcommand*\\autocp{\\right)}",
+      "\\newcommand*\\autoob{\\left[}",
+      "\\newcommand*\\autocb{\\right]}",
+      "\\AtBeginDocument {%",
+      "   \\mathcode`( 32768",
+      "   \\mathcode`) 32768",
+      "   \\mathcode`[ 32768",
+      "   \\mathcode`] 32768",
+      "   \\begingroup",
+      "       \\lccode`\\~`(",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autoop",
+      "   }\\begingroup",
+      "       \\lccode`\\~`)",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autocp",
+      "   }\\begingroup",
+      "       \\lccode`\\~`[",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autoob",
+      "   }\\begingroup",
+      "       \\lccode`\\~`]",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autocb",
+      "   }}",
+      "",
+      "\\delimiterfactor 1001",
+      "",
+      "\\makeatletter",
+      "% for amsmath \"compatibility\" (not sophisticated)",
+      "% \\usepackage{amsmath}",
+      "\\AtBeginDocument {%",
+      "          \\def\\resetMathstrut@{%",
+      "           \\setbox\\z@\\hbox{\\the\\textfont\\symoperators\\char40}%",
+      "           \\ht\\Mathstrutbox@\\ht\\z@ \\dp\\Mathstrutbox@\\dp\\z@}%",
+      "}%",
+      "\\makeatother"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/test/worksheet.tex\t3\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "0e340830-a67b-11e9-ad7c-138aa6334f9c",
+    "content": [
+      "\\usepackage{amsmath, amssymb, amsthm, centernot}",
+      "\\DeclareMathOperator{\\Exists}{\\exists}",
+      "\\DeclareMathOperator{\\Nexists}{\\nexists}",
+      "\\DeclareMathOperator{\\Forall}{\\forall}",
+      "\\newcommand{\\notimplies}{\\centernot\\implies}",
+      "\\renewcommand\\qedsymbol{$\\blacksquare$}",
+      "\\newcommand*\\autoop{\\left(}",
+      "\\newcommand*\\autocp{\\right)}",
+      "\\newcommand*\\autoob{\\left[}",
+      "\\newcommand*\\autocb{\\right]}",
+      "\\AtBeginDocument {%",
+      "   \\mathcode`( 32768",
+      "   \\mathcode`) 32768",
+      "   \\mathcode`[ 32768",
+      "   \\mathcode`] 32768",
+      "   \\begingroup",
+      "       \\lccode`\\~`(",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autoop",
+      "   }\\begingroup",
+      "       \\lccode`\\~`)",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autocp",
+      "   }\\begingroup",
+      "       \\lccode`\\~`[",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autoob",
+      "   }\\begingroup",
+      "       \\lccode`\\~`]",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autocb",
+      "   }}",
+      "",
+      "\\delimiterfactor 1001",
+      "",
+      "\\makeatletter",
+      "% for amsmath \"compatibility\" (not sophisticated)",
+      "% \\usepackage{amsmath}",
+      "\\AtBeginDocument {%",
+      "          \\def\\resetMathstrut@{%",
+      "           \\setbox\\z@\\hbox{\\the\\textfont\\symoperators\\char40}%",
+      "           \\ht\\Mathstrutbox@\\ht\\z@ \\dp\\Mathstrutbox@\\dp\\z@}%",
+      "}%",
+      "\\makeatother"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/test/worksheet.tex\t3\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "bf44aa40-a67a-11e9-8844-9764b93a0ee3",
+    "content": [
+      "\\newcommand*\\autoop{\\left(}",
+      "\\newcommand*\\autocp{\\right)}",
+      "\\newcommand*\\autoob{\\left[}",
+      "\\newcommand*\\autocb{\\right]}",
+      "\\AtBeginDocument {%",
+      "   \\mathcode`( 32768",
+      "   \\mathcode`) 32768",
+      "   \\mathcode`[ 32768",
+      "   \\mathcode`] 32768",
+      "   \\begingroup",
+      "       \\lccode`\\~`(",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autoop",
+      "   }\\begingroup",
+      "       \\lccode`\\~`)",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autocp",
+      "   }\\begingroup",
+      "       \\lccode`\\~`[",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autoob",
+      "   }\\begingroup",
+      "       \\lccode`\\~`]",
+      "       \\lowercase{%",
+      "   \\endgroup",
+      "       \\let~\\autocb",
+      "   }}",
+      "",
+      "\\delimiterfactor 1001",
+      "",
+      "\\makeatletter",
+      "% for amsmath \"compatibility\" (not sophisticated)",
+      "% \\usepackage{amsmath}",
+      "\\AtBeginDocument {%",
+      "          \\def\\resetMathstrut@{%",
+      "           \\setbox\\z@\\hbox{\\the\\textfont\\symoperators\\char40}%",
+      "           \\ht\\Mathstrutbox@\\ht\\z@ \\dp\\Mathstrutbox@\\dp\\z@}%",
+      "}%",
+      "\\makeatother"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/test/worksheet.tex\t9\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "5dffb930-a677-11e9-b34f-ffd8479cf010",
+    "content": [
+      "context \"math()\"",
+      "snippet \"([A-Za-z])hat\" \"hat\" irA",
+      "\\hat{`!p snip.rv = match.group(1)`}",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t120\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "ffabed40-a676-11e9-b34f-ffd8479cf010",
+    "content": [
+      "context \"math()\"",
+      "snippet \"([A-Za-z])hat\" \"hat\" irA",
+      "\\hat{`!p snip.rv = match.group(1)`}",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t120\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "9e6319b0-a675-11e9-b34f-ffd8479cf010",
+    "content": [
+      "\\DeclareMathOperator{\\Nexists}{\\nexists}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t35\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "95425e90-a675-11e9-b34f-ffd8479cf010",
+    "content": [
+      "\\DeclareMathOperator{\\Exists}{\\exists}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t34\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "848ae3b0-a675-11e9-b34f-ffd8479cf010",
+    "content": [
+      "context \"math()\"",
+      "snippet te \"exists\" wA",
+      "\\Exists",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t261\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "8f294580-a672-11e9-b34f-ffd8479cf010",
+    "content": [
+      "\\renewcommand\\qedsymbol{$\\blacksquare$}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t37\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "0c9e7fa0-a671-11e9-b34f-ffd8479cf010",
+    "content": [
+      "nimp"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t144\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "1282a2d0-a670-11e9-b34f-ffd8479cf010",
+    "content": [
+      "\\newcommand{\\notimplies}{\\centernot\\implies}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t36\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "a1dc1800-a66e-11e9-9497-e18783b7634b",
+    "content": [
+      "\\lim_{${1:n} \\to ${2:\\infty}} ",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/example.snippets\t279\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "25449b10-a66d-11e9-b34f-ffd8479cf010",
+    "content": [
+      "context \"math()\"",
+      "snippet sum \"summation\" wA",
+      "\\sum_{${1:n=1}}^{${2:\\infty}} $0",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t279\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "91af7f60-a66b-11e9-b34f-ffd8479cf010",
+    "content": [
+      "tf"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t265\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "8ad8db50-a66b-11e9-b34f-ffd8479cf010",
+    "content": [
+      "st"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t260\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "73735300-a66b-11e9-b34f-ffd8479cf010",
+    "content": [
+      "te"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t250\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "68c986e0-a66b-11e9-b34f-ffd8479cf010",
+    "content": [
+      "fa"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t245\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "bab7e970-a66a-11e9-b34f-ffd8479cf010",
+    "content": [
+      "in "
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t235\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "776bcc70-a662-11e9-b42d-d9ed7d2181fd",
+    "content": [
+      "au Filetype tex let b:AutoPairs = {'$': '$', '(':')', '[':']', '{':'}',\"'\":\"'\",'\"':'\"', '`':'`'}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t307\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "ec34df30-a660-11e9-940e-150bfe6cd42f",
+    "content": [
+      "<Plug>(PearTreeJump)"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/pear-tree/doc/pear-tree.txt\t489\t58",
+    "filetype": "help"
+  },
+  {
     "id": "9c4e7ce0-a5f9-11e9-a959-dd1abe228b74",
     "content": [
       "context \"math()\"",
@@ -1910,218 +2353,5 @@
     "regtype": "V",
     "path": "file:///home/kyle/.bashrc\t17\t1",
     "filetype": "sh"
-  },
-  {
-    "id": "bf0542f0-9866-11e9-9cf7-5b0dd016c703",
-    "content": [
-      "export PATH=\"$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/root/.gem/ruby/2.6.0/bin\"",
-      "export FZF_DEFAULT_COMMAND='rg --files --hidden $HOME'",
-      "export FZF_DEFAULT_OPTS='--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,gutter:-1'",
-      "export VISUAL=nvim",
-      "export EDITOR=nvim"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.bashrc\t17\t1",
-    "filetype": "sh"
-  },
-  {
-    "id": "46b2c5b0-9844-11e9-a4c3-87a1d96d2960",
-    "content": [
-      "Plug 'mhinz/vim-startify'",
-      ""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t7\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "bdfe3500-982b-11e9-8638-2b284badf7a4",
-    "content": [
-      "\t\"coc.preferences.diagnostic.displayByAle\": true,"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/coc.nvim/doc/coc.txt\t2265\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "2c7e1640-97e0-11e9-9de4-29e8c28c88d6",
-    "content": [
-      "autocmd FileType defx nnoremap <buffer> <C-j> 3j | nnoremap <buffer> <C-k> 3k"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t193\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "1eee8f50-97e0-11e9-9de4-29e8c28c88d6",
-    "content": [
-      "autocmd FileType defx nnoremap <buffer> <C-j> 3j"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t193\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "b3fe4bd0-97db-11e9-8ff9-cf39075f66cb",
-    "content": [
-      "Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t39\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "e0f30b40-97da-11e9-b52c-e197668237d7",
-    "content": [
-      "hi ALEInfo ctermbg=green"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/config/ale.vim\t21\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "dc18ac60-97da-11e9-b52c-e197668237d7",
-    "content": [
-      "hi ALEError ctermbg=red"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/config/ale.vim\t20\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "90392680-97da-11e9-b52c-e197668237d7",
-    "content": [
-      "highlight ALEWarningSign ctermbg=NONE ctermfg=yellow"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/config/ale.vim\t16\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "7a4815c0-97da-11e9-b52c-e197668237d7",
-    "content": [
-      "hi ALEError ctermbg=red"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/config/ale.vim\t20\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "ed956000-96fe-11e9-a416-0d1ec6647e4d",
-    "content": [
-      "\t# children: [ entry,listview,sidebar ];"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/rofi/sidetab.rasi\t58\t1",
-    "filetype": ""
-  },
-  {
-    "id": "f631e2e0-96f1-11e9-8a5f-cdaa23e97ef6",
-    "content": [
-      "tnoremap <silent> <C-h> <C-\\><C-n>:wincmd h<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t356\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "8f75af50-96f1-11e9-8a5f-cdaa23e97ef6",
-    "content": [
-      "\" nnoremap <silent> <leader>tt :call TermToggle()<CR>",
-      "\" tnoremap <silent> <leader>tt <C-\\><C-n>:call TermToggle()<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t350\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "a34d59f0-96c5-11e9-8232-15b588194ff3",
-    "content": [
-      "加油"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/fish/config.fish\t7\t13",
-    "filetype": "fish"
-  },
-  {
-    "id": "14ebabe0-96bf-11e9-b011-192a62b826b8",
-    "content": [
-      "\" hi ALEWarning ctermbg=yellow ctermfg=white"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/config/ale.vim\t19\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "13ee1200-96bf-11e9-b011-192a62b826b8",
-    "content": [
-      "\" hi ALEError ctermbg=red ctermfg=white"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/config/ale.vim\t20\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "1a4f34c0-96bb-11e9-b011-192a62b826b8",
-    "content": [
-      "●"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/config/ale.vim\t13\t27",
-    "filetype": "vim"
-  },
-  {
-    "id": "c6907470-96ba-11e9-b011-192a62b826b8",
-    "content": [
-      "\\uf05e"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t122\t41",
-    "filetype": "vim"
-  },
-  {
-    "id": "b952de10-96ba-11e9-b011-192a62b826b8",
-    "content": [
-      "\\uf071"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t121\t43",
-    "filetype": "vim"
-  },
-  {
-    "id": "2bcf7120-96ab-11e9-abe9-8f2fa6d1bdaf",
-    "content": [
-      "--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bashrc\t19\t26",
-    "filetype": "sh"
-  },
-  {
-    "id": "299b2c00-96ab-11e9-abe9-8f2fa6d1bdaf",
-    "content": [
-      "rg --files --hidden $HOME"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.bashrc\t18\t29",
-    "filetype": "sh"
-  },
-  {
-    "id": "8ad9ea40-96a8-11e9-9bf3-b11e51f0037b",
-    "content": [
-      "\t\t    \\ 'filetype': '%{&ft!=#\"\"?&ft:\"no ft\"}',"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/lightline.vim/doc/lightline.txt\t106\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "1c8a3d30-96a6-11e9-a103-f5eb4d4c2edd",
-    "content": [
-      "help"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t346\t34",
-    "filetype": "vim"
   }
 ]

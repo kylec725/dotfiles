@@ -30,10 +30,60 @@ endglobal
 snippet init "import base packages" b
 \documentclass[${1:11pt}]{${2:article}}
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath, amssymb, amsthm}
-\DeclareMathOperator{\Exists}{\exists}
-\DeclareMathOperator{\Forall}{\forall}
 
+$0
+endsnippet
+
+snippet math "import math packages" b
+\usepackage{amsmath, amssymb, amsthm, centernot}
+\DeclareMathOperator{\Exists}{\exists}
+\DeclareMathOperator{\Nexists}{\nexists}
+\DeclareMathOperator{\Forall}{\forall}
+\newcommand{\notimplies}{\centernot\implies}
+\renewcommand\qedsymbol{$\blacksquare$}
+% Auto resizing parentheses and brackets
+\newcommand*\autoop{\left(}
+\newcommand*\autocp{\right)}
+\newcommand*\autoob{\left[}
+\newcommand*\autocb{\right]}
+\AtBeginDocument {%
+   \mathcode\`( 32768
+   \mathcode\`) 32768
+   \mathcode\`[ 32768
+   \mathcode\`] 32768
+   \begingroup
+       \lccode\`\~\`(
+       \lowercase{%
+   \endgroup
+       \let~\autoop
+   }\begingroup
+       \lccode\`\~\`)
+       \lowercase{%
+   \endgroup
+       \let~\autocp
+   }\begingroup
+       \lccode\`\~\`[
+       \lowercase{%
+   \endgroup
+       \let~\autoob
+   }\begingroup
+       \lccode\`\~\`]
+       \lowercase{%
+   \endgroup
+       \let~\autocb
+   }}
+
+\delimiterfactor 1001
+
+\makeatletter
+% for amsmath "compatibility" (not sophisticated)
+% \usepackage{amsmath}
+\AtBeginDocument {%
+          \def\resetMathstrut@{%
+           \setbox\z@\hbox{\the\textfont\symoperators\char40}%
+           \ht\Mathstrutbox@\ht\z@ \dp\Mathstrutbox@\dp\z@}%
+}%
+\makeatother
 $0
 endsnippet
 
@@ -42,12 +92,12 @@ snippet "b(egin)?" "begin{} / end{}" br
 \end{$1}
 endsnippet
 
-snippet dm "display math mode" w
-\[ $1 \]$0
+snippet dm "display math mode" bA
+\[ $0 \]
 endsnippet
 
 snippet proof "proof environment" bA
-\begin{proof}
+\begin{proof}\leavevmode
 	$1
 \end{proof}$0
 endsnippet
@@ -85,12 +135,12 @@ endsnippet
 #                    #
 
 context "math()"
-snippet "(\S)_(-|[a-zA-Z0-9]\S)" "auto subscript" wrA
+snippet "(\S)_(-|!|<|>|[a-zA-Z0-9]\S)" "auto subscript" wrA
 `!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`$0}
 endsnippet
 
 context "math()"
-snippet "(\S)\^(-|[a-zA-Z0-9]\S)" "auto superscript" wrA
+snippet "(\S)\^(-|!|<|>|[a-zA-Z0-9]\S)" "auto superscript" wrA
 `!p snip.rv = match.group(1)`^{`!p snip.rv = match.group(2)`$0}
 endsnippet
 
@@ -130,13 +180,18 @@ snippet "([A-Za-z])vec" "vector" irA
 endsnippet
 
 context "math()"
-snippet -> "right arrow" wA
-\Rightarrow
+snippet to "to arrow" wA
+\to
 endsnippet
 
 context "math()"
-snippet <- "left arrow" wA
-\Leftarrow
+snippet imp "implies" wA
+\implies
+endsnippet
+
+context "math()"
+snippet notimp "not implies" wA
+\notimplies
 endsnippet
 
 context "math()"
@@ -145,17 +200,17 @@ snippet // "Fraction" iA
 endsnippet
 
 context "math()"
-snippet <= "less than or equal to" wA
+snippet <= "less than or equal to" iA
 \leq
 endsnippet
 
 context "math()"
-snippet >= "greater than or equal to" wA
+snippet >= "greater than or equal to" iA
 \geq
 endsnippet
 
 context "math()"
-snippet != "not equal to" wA
+snippet != "not equal to" iA
 \neq
 endsnippet
 
@@ -207,38 +262,23 @@ endsnippet
 
 # sets
 context "math()"
+snippet "([A-Za-z])set" "sets" irA
+\mathbb{`!p snip.rv = match.group(1)`}
+endsnippet
+
+context "math()"
 snippet nullset "null set" wA
-\0
+\O
 endsnippet
 
 context "math()"
-snippet Nset "set of natural numbers" wA
-\N
+snippet " in " "in" wrA
+ \in 
 endsnippet
 
 context "math()"
-snippet Zset "set of integers" wA
-\Z
-endsnippet
-
-context "math()"
-snippet Rset "set of real numbers" wA
-\R
-endsnippet
-
-context "math()"
-snippet Cset "set of complex numbers" wA
-\C
-endsnippet
-
-context "math()"
-snippet in "in" wA
-\in
-endsnippet
-
-context "math()"
-snippet notin "not in" wA
-\notin
+snippet " notin " "not in" wrA
+ \notin 
 endsnippet
 
 context "math()"
@@ -252,16 +292,46 @@ snippet te "exists" wA
 endsnippet
 
 context "math()"
+snippet tne "not exists" wA
+\Nexists
+endsnippet
+
+context "math()"
 snippet iff "iff" wA
 \iff
 endsnippet
 
 context "math()"
-snippet st "such that" wA
-\mid
+snippet " st " "such that" wrA
+ \mid 
 endsnippet
 
 context "math()"
 snippet tf "therefore" wA
 \therefore
+endsnippet
+
+context "math()"
+snippet inf "infinity symbol" wA
+\infty
+endsnippet
+
+context "math()"
+snippet int "integral" wA
+\int_{${1:-\infty}}^{${2:\infty}} $0
+endsnippet
+
+context "math()"
+snippet sum "summation" wA
+\sum\limits_{${1:n=1}}^{${2:\infty}} $0
+endsnippet
+
+context "math()"
+snippet prod "product" wA
+\prod\limits_{${1:n=1}}^{${2:\infty}} $0
+endsnippet
+
+context "math()"
+snippet lim "limit" wA
+\lim\limits_{${1:n} \to ${2:\infty}} $0
 endsnippet
