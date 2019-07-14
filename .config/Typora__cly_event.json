@@ -1,1 +1,1 @@
-{"cly_event":[]}
+{"cly_event":[{"key":"closeWindow","count":1,"segmentation":{"os":"linux"},"timestamp":1563063623636,"hour":20,"dow":6},{"key":"closeFile","count":1,"segmentation":{"os":"linux"},"timestamp":1563063623716,"hour":20,"dow":6}]}
