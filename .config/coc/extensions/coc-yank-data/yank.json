@@ -1,5 +1,155 @@
 [
   {
+    "id": "73fb8fe0-a5e9-11e9-abb9-c370bd1799a0",
+    "content": [
+      "1:article"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t31\t28",
+    "filetype": "snippets"
+  },
+  {
+    "id": "6569db30-a5e9-11e9-abb9-c370bd1799a0",
+    "content": [
+      "1:11pt"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t31\t17",
+    "filetype": "snippets"
+  },
+  {
+    "id": "47280980-a5e9-11e9-88d2-6f3ff0005f97",
+    "content": [
+      "\\documentclass[11pt]{article}",
+      "\\usepackage[utf8]{inputenc}",
+      "\\usepackage{amsmath, amssymb, amsthm}",
+      "\\DeclareMathOperator{\\Exists}{\\exists}",
+      "\\DeclareMathOperator{\\Forall}{\\forall}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/test/worksheet.tex\t1\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "e4a19060-a5e8-11e9-88d2-6f3ff0005f97",
+    "content": [
+      "\\usepackage{amsmath, amssymb, amsthm}",
+      "\\DeclareMathOperator{\\Exists}{\\exists}",
+      "\\DeclareMathOperator{\\Forall}{\\forall}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/test/worksheet.tex\t3\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "b2dc2b80-a5e8-11e9-88d2-6f3ff0005f97",
+    "content": [
+      "\\usepackage{amsmath}",
+      "\\usepackage{amssymb}",
+      "\\usepackage{amsthm}",
+      "\\DeclareMathOperator{\\Exists}{\\exists}",
+      "\\DeclareMathOperator{\\Forall}{\\forall}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/test/worksheet.tex\t3\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "b2656a50-a5e7-11e9-abb9-c370bd1799a0",
+    "content": [
+      "context \"math()\"",
+      "snippet st \"such that\" wA",
+      "\\mid",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t244\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "95291e90-a5e3-11e9-8762-9967ee3e1522",
+    "content": [
+      "snippet => \"implies\" Ai",
+      "\\implies",
+      "endsnippet",
+      "",
+      "snippet =< \"implied by\" Ai",
+      "\\impliedby",
+      "endsnippet",
+      "",
+      "context \"math()\"",
+      "snippet iff \"iff\" Ai",
+      "\\iff",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/example.snippets\t87\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "8fbf02d0-a5e3-11e9-8762-9967ee3e1522",
+    "content": [
+      "snippet => \"implies\" Ai",
+      "\\implies",
+      "endsnippet",
+      "",
+      "snippet =< \"implied by\" Ai",
+      "\\impliedby",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/example.snippets\t87\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "2b43db10-a5e2-11e9-abb9-c370bd1799a0",
+    "content": [
+      "context \"math()\"",
+      "snippet in \"in\" wA",
+      "\\in",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t207\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "13967880-a5db-11e9-abb9-c370bd1799a0",
+    "content": [
+      "context \"math()\"",
+      "snippet or \"or\" wA",
+      "\\lor",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t139\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "fa3fc400-a5d9-11e9-abb9-c370bd1799a0",
+    "content": [
+      "context \"math()\"",
+      "snippet >= \"greater than or equal to\" wA",
+      "\\geq",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t124\t1",
+    "filetype": "snippets"
+  },
+  {
+    "id": "a778f840-a5d9-11e9-abb9-c370bd1799a0",
+    "content": [
+      "context \"math()\"",
+      "snippet <= \"less than or equal to\" wA",
+      "\\leq",
+      "endsnippet"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t119\t1",
+    "filetype": "snippets"
+  },
+  {
     "id": "c8541540-a593-11e9-89fa-a3b2bc12ac59",
     "content": [
       "    `ID` INT(255),"
@@ -1959,208 +2109,6 @@
     ],
     "regtype": "V",
     "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t91\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "14bd5670-969f-11e9-8253-1f01b43b44e3",
-    "content": [
-      "\tfunction! LightlineFiletype()",
-      "\t  return winwidth(0) > 70 ? (&filetype !=# '' ? &filetype : 'no ft') : ''",
-      "\tendfunction"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/lightline.vim/doc/lightline.txt\t852\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "0eba07f0-969f-11e9-8253-1f01b43b44e3",
-    "content": [
-      "\tfunction! LightlineFileformat()",
-      "\t  return winwidth(0) > 70 ? &fileformat : ''",
-      "\tendfunction"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/lightline.vim/doc/lightline.txt\t848\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "bc4ec9b0-969e-11e9-83ca-b1e1ed95ea91",
-    "content": [
-      "' ' . noscrollbar#statusline()"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t99\t12",
-    "filetype": "vim"
-  },
-  {
-    "id": "ae5e8520-969e-11e9-8c8b-7f90de2a1d72",
-    "content": [
-      "\t  return winwidth(0) > 70 ? (&filetype !=# '' ? &filetype : 'no ft') : ''"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/lightline.vim/doc/lightline.txt\t853\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "4b475a30-969d-11e9-83ca-b1e1ed95ea91",
-    "content": [
-      "LightlineFilename"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t36\t21",
-    "filetype": "vim"
-  },
-  {
-    "id": "5f233c00-969c-11e9-83ca-b1e1ed95ea91",
-    "content": [
-      ""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t83\t39",
-    "filetype": "vim"
-  },
-  {
-    "id": "d6a7cfd0-969b-11e9-83ca-b1e1ed95ea91",
-    "content": [
-      "let g:lightline#ale#indicator_errors = \"\\uf05e :\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t85\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "e3f02680-9699-11e9-83ca-b1e1ed95ea91",
-    "content": [
-      "autocmd FileType html setlocal shiftwidth=2 | match OverLength /\\%81v.\\+/"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t138\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "9489e320-9652-11e9-8a3d-93ce782b78dc",
-    "content": [
-      "autocmd WinEnter * if &ft == 'defx' && winnr('$') == 1 | q | endif"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/config/defx.vim\t17\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "51aec920-95d6-11e9-a3a6-158a9ac63417",
-    "content": [
-      "set laststatus=2",
-      "set noshowmode",
-      "set showtabline=2"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t221\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "b7420280-95d5-11e9-a3a6-158a9ac63417",
-    "content": [
-      "nnoremap <silent> <leader>n :Defx<CR>:ConoLineToggle<CR>",
-      "",
-      "let g:defx_icons_column_length = 2",
-      "",
-      "call defx#custom#option('_', {",
-      "\\ 'winwidth': 38,",
-      "\\ 'split': 'vertical',",
-      "\\ 'direction': 'topleft',",
-      "\\ 'columns': 'indent:git:icons:filename:type',",
-      "\\ 'show_ignored_files': 0,",
-      "\\ 'toggle': 1,",
-      "\\ })",
-      "",
-      "\"close defx if it's the only buffer left in the window",
-      "autocmd WinEnter * if &ft == 'defx' && winnr('$') == 1 | q | endif",
-      "",
-      "autocmd FileType defx call s:defx_my_settings()",
-      "function! s:defx_my_settings() abort",
-      "  \" Define mappings",
-      "  nnoremap <silent><buffer><expr>",
-      "    \\<CR> defx#do_action('drop')",
-      "  nnoremap <silent><buffer><expr> c",
-      "    \\ defx#do_action('copy')",
-      "  nnoremap <silent><buffer><expr> m",
-      "    \\ defx#do_action('move')",
-      "  nnoremap <silent><buffer><expr> p",
-      "    \\ defx#do_action('paste')",
-      "  nnoremap <silent><buffer><expr> l",
-      "    \\ defx#do_action('drop')",
-      "  nnoremap <silent><buffer><expr> E",
-      "    \\ defx#do_action('open', 'vsplit')",
-      "  nnoremap <silent><buffer><expr> P",
-      "    \\ defx#do_action('open', 'pedit')",
-      "  nnoremap <silent><buffer><expr> o",
-      "    \\ defx#do_action('open_or_close_tree')",
-      "  nnoremap <silent><buffer><expr> D",
-      "    \\ defx#do_action('new_directory')",
-      "  nnoremap <silent><buffer><expr> N",
-      "    \\ defx#do_action('new_file')",
-      "  nnoremap <silent><buffer><expr> M",
-      "    \\ defx#do_action('new_multiple_files')",
-      "  nnoremap <silent><buffer><expr> C",
-      "    \\ defx#do_action('toggle_columns',",
-      "    \\                'mark:indent:icon:filename:type:size:time')",
-      "  nnoremap <silent><buffer><expr> S",
-      "    \\ defx#do_action('toggle_sort', 'time')",
-      "  nnoremap <silent><buffer><expr> d",
-      "    \\ defx#do_action('remove')",
-      "  nnoremap <silent><buffer><expr> r",
-      "    \\ defx#do_action('rename')",
-      "  nnoremap <silent><buffer><expr> !",
-      "    \\ defx#do_action('execute_command')",
-      "  nnoremap <silent><buffer><expr> x",
-      "    \\ defx#do_action('execute_system')",
-      "  nnoremap <silent><buffer><expr> yy",
-      "    \\ defx#do_action('yank_path')",
-      "  nnoremap <silent><buffer><expr> .",
-      "    \\ defx#do_action('toggle_ignored_files')",
-      "  nnoremap <silent><buffer><expr> ;",
-      "    \\ defx#do_action('repeat')",
-      "  nnoremap <silent><buffer><expr> h",
-      "    \\ defx#do_action('cd', ['..'])",
-      "  nnoremap <silent><buffer><expr> ~",
-      "    \\ defx#do_action('cd')",
-      "  nnoremap <silent><buffer><expr> q",
-      "    \\ defx#do_action('quit')",
-      "  nnoremap <silent><buffer><expr> <Space>",
-      "    \\ defx#do_action('toggle_select') . 'j'",
-      "  nnoremap <silent><buffer><expr> *",
-      "    \\ defx#do_action('toggle_select_all')",
-      "  nnoremap <silent><buffer><expr> j",
-      "    \\ line('.') == line('$') ? 'gg' : 'j'",
-      "  nnoremap <silent><buffer><expr> k",
-      "    \\ line('.') == 1 ? 'G' : 'k'",
-      "  nnoremap <silent><buffer><expr> <C-l>",
-      "    \\ defx#do_action('redraw')",
-      "  nnoremap <silent><buffer><expr> <C-g>",
-      "    \\ defx#do_action('print')",
-      "  nnoremap <silent><buffer><expr> cd",
-      "    \\ defx#do_action('change_vim_cwd')",
-      "endfunction"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t516\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "a7dad560-95d5-11e9-a3a6-158a9ac63417",
-    "content": [
-      "nnoremap <silent> <leader>v :Vista!!<CR>",
-      "let g:vista_icon_indent = [\"╰─▸ \", \"├─▸ \"]",
-      "\" See all the avaliable executives via `:echo g:vista#executives`.",
-      "let g:vista_default_executive = 'coc'",
-      "let g:vista#renderer#enable_icon = 1",
-      "let g:vista_stay_on_open = 0",
-      "",
-      "\"close vista if it's the only buffer left in the window",
-      "autocmd WinEnter * if &ft == 'vista_kind' && winnr('$') == 1 | q | endif"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t505\t1",
     "filetype": "vim"
   }
 ]
