@@ -306,7 +306,7 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 nnoremap <C-g> :Goyo<CR>
 
 " autopairs
-au FileType tex let b:AutoPairs = AutoPairsDefine({'$' : '$', '\\\[' : '\\\]'})
+au FileType tex let b:AutoPairs = AutoPairsDefine({'$' : '$'})
 
 " Git Commands and Settings - Fugitive and Gitgutter !!!!!
 
