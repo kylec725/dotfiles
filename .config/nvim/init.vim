@@ -103,7 +103,7 @@ highlight Search ctermbg=green ctermfg=black
 highlight IncSearch ctermbg=black ctermfg=magenta
 
 " matched parentheses color
-highlight MatchParen ctermbg=magenta
+highlight MatchParen ctermbg=magenta ctermfg=black
 
 " Set folding to indent
 set foldmethod=indent
@@ -117,6 +117,8 @@ highlight clear SignColumn
 
 " Cursor blinking
 set guicursor=a:blinkon100
+" Cursor as block in insert mode
+set guicursor=
 
 " Change window pane separator to a single line
 set fillchars+=vert:│
@@ -304,7 +306,7 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 nnoremap <C-g> :Goyo<CR>
 
 " autopairs
-au Filetype tex let b:AutoPairs = {'$': '$', '(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`'}
+au FileType tex let b:AutoPairs = AutoPairsDefine({'$' : '$', '\\\[' : '\\\]'})
 
 " Git Commands and Settings - Fugitive and Gitgutter !!!!!
 
