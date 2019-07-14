@@ -118,7 +118,9 @@ highlight clear SignColumn
 " Cursor blinking
 set guicursor=a:blinkon100
 " Cursor as block in insert mode
-set guicursor=
+" set guicursor=
+au InsertEnter * :NoMatchParen
+au InsertLeave * :DoMatchParen
 
 " Change window pane separator to a single line
 set fillchars+=vert:│
@@ -155,7 +157,7 @@ autocmd FileType css setlocal shiftwidth=2 | match OverLength /\%81v.\+/
 autocmd FileType json setlocal shiftwidth=2
 autocmd FileType ruby setlocal shiftwidth=2 | match OverLength /\%81v.\+/
 " autocmd FileType tex setlocal shiftwidth=2 spell | nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR>
-autocmd FileType tex setlocal shiftwidth=2 spell
+autocmd FileType tex setlocal shiftwidth=2 spell | ALEDisable
 autocmd FileType markdown setlocal spell shiftwidth=4
 autocmd FileType ocaml setlocal shiftwidth=2 | match OverLength /\%81v.\+/
 autocmd FileType c setlocal shiftwidth=4 cindent | match OverLength /\%81v.\+/
