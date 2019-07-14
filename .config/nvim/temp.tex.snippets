@@ -1,0 +1,251 @@
+priority -50
+
+extends texmath
+
+# Allows snippets to only be used in math mode
+global !p
+texMathZones = ['texMathZone'+x for x in ['A', 'AS', 'B', 'BS', 'C',
+'CS', 'D', 'DS', 'E', 'ES', 'F', 'FS', 'G', 'GS', 'H', 'HS', 'I', 'IS',
+'J', 'JS', 'K', 'KS', 'L', 'LS', 'DS', 'V', 'W', 'X', 'Y', 'Z']]
+
+texIgnoreMathZones = ['texMathText']
+
+texMathZoneIds = vim.eval('map('+str(texMathZones)+", 'hlID(v:val)')")
+texIgnoreMathZoneIds = vim.eval('map('+str(texIgnoreMathZones)+", 'hlID(v:val)')")
+
+ignore = texIgnoreMathZoneIds[0]
+
+def math():
+	synstackids = vim.eval("synstack(line('.'), col('.') - (col('.')>=2 ? 1 : 0))")
+	try:
+		first = next(
+            i for i in reversed(synstackids)
+            if i in texIgnoreMathZoneIds or i in texMathZoneIds
+        )
+		return first != ignore
+	except StopIteration:
+		return False
+endglobal
+
+snippet init "import base packages" b
+\documentclass[${1:11pt}]{${2:article}}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\DeclareMathOperator{\Exists}{\exists}
+\DeclareMathOperator{\Forall}{\forall}
+$0
+endsnippet
+
+snippet "b(egin)?" "begin{} / end{}" br
+\begin{$1}$0
+\end{$1}
+endsnippet
+
+snippet dm "display math mode" w
+\[ $1 \]$0
+endsnippet
+
+snippet proof "proof environment" bA
+\begin{proof}
+	$1
+\end{proof}$0
+endsnippet
+
+snippet theorem "theorem" bA
+\newtheorem{theorem}{${1:Theorem}}
+\begin{theorem}
+	$2
+\end{theorem}$0
+endsnippet
+
+snippet corollary "corollary" bA
+\newtheorem{corollary}{${1:Corollary}}[theorem]
+\begin{corollary}
+	$2
+\end{corollary}$0
+endsnippet
+
+snippet lemma "lemma" bA
+\newtheorem{lemma}[theorem]{${1:Lemma}}
+\begin{lemma}
+	$2
+\end{lemma}$0
+endsnippet
+
+snippet box "Box"
+`!p snip.rv = '┌' + '─' * (len(t[1]) + 2) + '┐'`
+│ $1 │
+`!p snip.rv = '└' + '─' * (len(t[1]) + 2) + '┘'`
+$0
+endsnippet
+
+#                    #
+# Math Mode Snippets #
+#                    #
+
+context "math()"
+snippet "(\S)_(-|[a-zA-Z0-9]\S)" "auto subscript" wrA
+`!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`$0}
+endsnippet
+
+context "math()"
+snippet "(\S)\^(-|[a-zA-Z0-9]\S)" "auto superscript" wrA
+`!p snip.rv = match.group(1)`^{`!p snip.rv = match.group(2)`$0}
+endsnippet
+
+context "math()"
+snippet * "inserts \cdot for multiplication" wA
+\cdot
+endsnippet
+
+context "math()"
+snippet "([A-Za-z])hat" "hat" irA
+\hat{`!p snip.rv = match.group(1)`}
+endsnippet
+
+context "math()"
+snippet "([A-Za-z])bar" "bar" irA
+\bar{`!p snip.rv = match.group(1)`}
+endsnippet
+
+context "math()"
+snippet "([A-Za-z])vec" "vector" irA
+\vec{`!p snip.rv = match.group(1)`}
+endsnippet
+
+context "math()"
+snippet -> "right arrow" wA
+\Rightarrow
+endsnippet
+
+context "math()"
+snippet <- "left arrow" wA
+\Leftarrow
+endsnippet
+
+context "math()"
+snippet // "Fraction" iA
+\\frac{$1}{$2}$0
+endsnippet
+
+context "math()"
+snippet <= "less than or equal to" wA
+\leq
+endsnippet
+
+context "math()"
+snippet >= "greater than or equal to" wA
+\geq
+endsnippet
+
+context "math()"
+snippet != "not equal to" wA
+\neq
+endsnippet
+
+context "math()"
+snippet and "and" wA
+\land
+endsnippet
+
+context "math()"
+snippet or "or" wA
+\lor
+endsnippet
+
+context "math()"
+snippet neg "negation" wA
+\neg
+endsnippet
+
+# trigonometric functions
+context "math()"
+snippet cos "cosine" wA
+\cos
+endsnippet
+
+context "math()"
+snippet sin "sine" wA
+\sin
+endsnippet
+
+context "math()"
+snippet tan "tangent" wA
+\tan
+endsnippet
+
+context "math()"
+snippet csc "cosecant" wA
+\csc
+endsnippet
+
+context "math()"
+snippet sec "secant" wA
+\sec
+endsnippet
+
+context "math()"
+snippet cot "cotangent" wA
+\cot
+endsnippet
+
+# sets
+context "math()"
+snippet nullset "null set" wA
+\0
+endsnippet
+
+context "math()"
+snippet Nset "set of natural numbers" wA
+\N
+endsnippet
+
+context "math()"
+snippet Zset "set of integers" wA
+\Z
+endsnippet
+
+context "math()"
+snippet Rset "set of real numbers" wA
+\R
+endsnippet
+
+context "math()"
+snippet Cset "set of complex numbers" wA
+\C
+endsnippet
+
+context "math()"
+snippet in "in" wA
+\in
+endsnippet
+
+context "math()"
+snippet notin "not in" wA
+\notin
+endsnippet
+
+context "math()"
+snippet fa "for all" wA
+\Forall
+endsnippet
+
+context "math()"
+snippet te "exists" wA
+\Exists
+endsnippet
+
+context "math()"
+snippet iff "iff" wA
+\iff
+endsnippet
+
+context "math()"
+snippet st "such that" wA
+\mid
+endsnippet
+
+context "math()"
+snippet tf "therefore" wA
+\therefore
+endsnippet
