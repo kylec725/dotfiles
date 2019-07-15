@@ -11,7 +11,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-repeat'
 Plug 'vimlab/split-term.vim'
 Plug 'godlygeek/tabular'
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'lervag/vimtex'
 
@@ -396,10 +396,21 @@ nnoremap <leader><Tab> :Tabularize /
 vnoremap <leader><Tab> :Tabularize /
 
 " Snippets !!!!!
-let g:UltiSnipsUsePythonVersion = 3
-let g:UltiSnipsExpandTrigger="<c-l>"
-let g:UltiSnipsJumpForwardTrigger="<c-l>"
-let g:UltiSnipsJumpBackwardTrigger="<c-h>"
+" let g:UltiSnipsUsePythonVersion = 3
+" let g:UltiSnipsExpandTrigger="<c-l>"
+" let g:UltiSnipsJumpForwardTrigger="<c-l>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-h>"
+
+" Use <C-l> for trigger snippet expand.
+imap <c-l> <Plug>(coc-snippets-expand)
+
+" Use <C-j> for select text for visual placeholder of snippet.
+vmap <c-l> <Plug>(coc-snippets-select)
+" Use <C-j> for jump to next placeholder, it's default of coc.nvim
+let g:coc_snippet_next = '<c-l>'
+
+" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+let g:coc_snippet_prev = '<c-h>'
 
 " DelimitMate !!!!!
 let delimitMate_expand_cr = 1
