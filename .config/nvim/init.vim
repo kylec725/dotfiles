@@ -6,7 +6,8 @@ call plug#begin('~/.config/nvim/plugged')
 " Editing or Typing
 Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
+Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-repeat'
 Plug 'vimlab/split-term.vim'
 Plug 'godlygeek/tabular'
@@ -157,7 +158,7 @@ autocmd FileType css setlocal shiftwidth=2 | match OverLength /\%81v.\+/
 autocmd FileType json setlocal shiftwidth=2
 autocmd FileType ruby setlocal shiftwidth=2 | match OverLength /\%81v.\+/
 " autocmd FileType tex setlocal shiftwidth=2 spell | nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR>
-autocmd FileType tex setlocal shiftwidth=2 spell | ALEDisable
+autocmd FileType tex setlocal shiftwidth=2 spell | ALEDisable | let delimitMate_quotes = "\" ' ` $"
 autocmd FileType markdown setlocal spell shiftwidth=4
 autocmd FileType ocaml setlocal shiftwidth=2 | match OverLength /\%81v.\+/
 autocmd FileType c setlocal shiftwidth=4 cindent | match OverLength /\%81v.\+/
@@ -308,7 +309,7 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 nnoremap <C-g> :Goyo<CR>
 
 " autopairs
-au FileType tex let b:AutoPairs = AutoPairsDefine({'$' : '$'})
+" au FileType tex let b:AutoPairs = AutoPairsDefine({'$' : '$'})
 
 " Git Commands and Settings - Fugitive and Gitgutter !!!!!
 
@@ -399,3 +400,10 @@ let g:UltiSnipsUsePythonVersion = 3
 let g:UltiSnipsExpandTrigger="<c-l>"
 let g:UltiSnipsJumpForwardTrigger="<c-l>"
 let g:UltiSnipsJumpBackwardTrigger="<c-h>"
+
+" DelimitMate !!!!!
+let delimitMate_expand_cr = 1
+let delimitMate_expand_space = 1
+let delimitMate_jump_expansion = 1
+let delimitMate_balance_matchpairs = 1
+let delimitMate_matchpairs = "(:),[:],{:}"
