@@ -119,9 +119,7 @@ highlight clear SignColumn
 " Cursor blinking
 set guicursor=a:blinkon100
 " Cursor as block in insert mode
-" set guicursor=
-au InsertEnter * :NoMatchParen
-au InsertLeave * :DoMatchParen
+set guicursor=
 
 " Change window pane separator to a single line
 set fillchars+=vert:│
