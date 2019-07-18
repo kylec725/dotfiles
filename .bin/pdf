@@ -2,7 +2,10 @@
 
 FILE=$(rg --type pdf --files | fzf --no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,gutter:-1 --prompt="Open PDF: ")
 
-# nohup allows the terminal to be closed without zathura dying
-nohup zathura "$FILE" >/dev/null 2>&1 & # redirects stdout and stderr
-sleep .001
-kill -9 $PPID
+# cancel if fzf was exited without input
+if [ $FILE ]; then
+        # nohup allows the terminal to be closed without zathura dying
+        nohup zathura "$FILE" >/dev/null 2>&1 & # redirects stdout and stderr
+        sleep .001
+        kill -9 $PPID
+fi
