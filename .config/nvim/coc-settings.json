@@ -82,5 +82,12 @@
         }
       }
     }
+  },
+  "snippets": {
+    "ultisnips": {
+      "enable": true,
+      "usePythonx": false,
+      "pythonVersion": 3
+    }
   }
 }

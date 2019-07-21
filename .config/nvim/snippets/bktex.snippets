@@ -96,27 +96,27 @@ snippet dm "display math mode" bA
 \[ $0 \]
 endsnippet
 
-snippet proof "proof environment" bA
+snippet "prf|proof" "proof environment" br
 \begin{proof}\leavevmode
 	$1
 \end{proof}$0
 endsnippet
 
-snippet theorem "theorem" bA
+snippet "thm|theorem" "theorem" br
 \newtheorem{theorem}{${1:Theorem}}
 \begin{theorem}
 	$2
 \end{theorem}$0
 endsnippet
 
-snippet corollary "corollary" bA
+snippet "cly|corollary" "corollary" br
 \newtheorem{corollary}{${1:Corollary}}[theorem]
 \begin{corollary}
 	$2
 \end{corollary}$0
 endsnippet
 
-snippet lemma "lemma" bA
+snippet "lma|lemma" "lemma" br
 \newtheorem{lemma}[theorem]{${1:Lemma}}
 \begin{lemma}
 	$2
@@ -150,12 +150,12 @@ snippet * "inserts \cdot for multiplication" wA
 endsnippet
 
 context "math()"
-snippet floor "floor" wA
+snippet floor "floor" w
 \left\lfloor $1 \right\rfloor$0
 endsnippet
 
 context "math()"
-snippet ceil "ceiling" wA
+snippet ceil "ceiling" w
 \left\lceil $1 \right\rceil$0
 endsnippet
 
@@ -307,8 +307,8 @@ snippet iff "iff" wA
 endsnippet
 
 context "math()"
-snippet " st " "such that" wrA
- \mid 
+snippet st "such that" wA
+\mid
 endsnippet
 
 context "math()"
@@ -322,21 +322,21 @@ snippet inf "infinity symbol" wA
 endsnippet
 
 context "math()"
-snippet int "integral" wA
+snippet int "integral" w
 \int_{${1:-\infty}}^{${2:\infty}} $0
 endsnippet
 
 context "math()"
-snippet sum "summation" wA
+snippet sum "summation" w
 \sum\limits_{${1:n=1}}^{${2:\infty}} $0
 endsnippet
 
 context "math()"
-snippet prod "product" wA
+snippet prod "product" w
 \prod\limits_{${1:n=1}}^{${2:\infty}} $0
 endsnippet
 
 context "math()"
-snippet lim "limit" wA
+snippet lim "limit" w
 \lim\limits_{${1:n} \to ${2:\infty}} $0
 endsnippet

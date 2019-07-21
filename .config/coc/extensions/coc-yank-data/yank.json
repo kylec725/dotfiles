@@ -1,5 +1,727 @@
 [
   {
+    "id": "adc120f0-aa58-11e9-944a-ad138fd22d4f",
+    "content": [
+      "    `ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/database/CreateDatabase.sql\t6\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "f9d8c770-aa50-11e9-8271-0d06c481eab4",
+    "content": [
+      "const createCustomer = (user, cents) => {",
+      "    stripe.customers.create({",
+      "        name: user,",
+      "        balance: cents,",
+      "    }, function(err, customer) {",
+      "        // asynchronously called",
+      "        if (err) {",
+      "            console.log(err);",
+      "            return false;",
+      "        }",
+      "        else {",
+      "            const database = mysql.createConnection({",
+      "                host: \"localhost\",",
+      "                user: \"root\",",
+      "                password: \"password\",",
+      "                database: \"Affordable\"",
+      "            });",
+      "",
+      "            database.connect(function(err) {",
+      "                if (err) {",
+      "                    console.log(err);",
+      "                    return false;",
+      "                }",
+      "                else {",
+      "                    // insert user fields into Customers table",
+      "                    const values = [ [ customer.id, customer.name, customer.balance ] ]",
+      "                    const sql = 'INSERT INTO Customers (ID, Username, Balance) VALUES ?';",
+      "                    database.query(sql, [values], function (err, result) {",
+      "                        if (err) {",
+      "                            console.log(err);",
+      "                            database.end();",
+      "                            return false;",
+      "                        }",
+      "                        else {",
+      "                            console.log(result);",
+      "                            database.end();",
+      "                            return true;",
+      "                        }",
+      "                    });",
+      "                }",
+      "            });",
+      "        }",
+      "    });",
+      "}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t4\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "c462fb30-aa44-11e9-b808-f5b51ed3beea",
+    "content": [
+      "const stripe = require('stripe')('sk_test_fwABtpH3AuWFaKl2jZ3dcc6e00lJ6hmRPp');",
+      "const mysql = require('mysql');"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t1\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "9a890540-a911-11e9-bd43-9585c82ff08a",
+    "content": [
+      "const incBalance = (user, newBalance) => {",
+      "    getID(user, function(id) {",
+      "        getBalance(user, function(oldBalance) {",
+      "            stripe.customers.update(",
+      "                id,",
+      "                {balance: oldBalance + newBalance},",
+      "                function(err, customer) {",
+      "                    if (err) {",
+      "                        console.log(err);",
+      "                    }",
+      "                    else {",
+      "                        console.log(customer.name + \" balance increase successful\");",
+      "                    }",
+      "                }",
+      "            );",
+      "        });",
+      "    });",
+      "}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t93\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "3b81f640-a90e-11e9-bd43-9585c82ff08a",
+    "content": [
+      "getBalance(\"dev\", function(balance) {console.log(balance)});"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t112\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "d7c4ceb0-a909-11e9-ae1f-810b02cd3114",
+    "content": [
+      "fiestas"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/chickens.md\t2\t25",
+    "filetype": "markdown"
+  },
+  {
+    "id": "d63db980-a909-11e9-ae1f-810b02cd3114",
+    "content": [
+      "fiestas"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/chickens.md\t2\t25",
+    "filetype": "markdown"
+  },
+  {
+    "id": "cb798790-a909-11e9-ae1f-810b02cd3114",
+    "content": [
+      "fiestas"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/chickens.md\t2\t25",
+    "filetype": "markdown"
+  },
+  {
+    "id": "c2ae2a60-a843-11e9-b827-f708bd5dba34",
+    "content": [
+      "                    console.log(result[0].ID);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t72\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "531c9700-a80b-11e9-861d-ab9da854c726",
+    "content": [
+      "    const database = mysql.createConnection({",
+      "        host: \"localhost\",",
+      "        user: \"root\",",
+      "        password: \"password\",",
+      "        database: \"Affordable\"",
+      "    });"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t50\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "9fc31a90-a804-11e9-861d-ab9da854c726",
+    "content": [
+      "                database.end();"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t74\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "cb93c930-a7ff-11e9-bd3a-afccb96c4009",
+    "content": [
+      "const getID = (user, returnID) => {"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t50\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "c95dd660-a7ff-11e9-bd3a-afccb96c4009",
+    "content": [
+      "const getID = (user, returnID) => {"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t50\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "8a146e00-a7d8-11e9-9d55-c1a1cdeb8cbe",
+    "content": [
+      "            const database = mysql.createConnection({",
+      "                host: \"localhost\",",
+      "                user: \"root\",",
+      "                password: \"password\",",
+      "                database: \"Affordable\"",
+      "            });",
+      "",
+      "            database.connect(function(err) {",
+      "                if (err) {",
+      "                    console.log(err);",
+      "                    return 1;",
+      "                }",
+      "                else {",
+      "                    // insert user fields into Customers table",
+      "                    const values = [",
+      "                        [ customer.id, customer.name, customer.balance ]",
+      "                    ]",
+      "                    const sql = 'INSERT INTO Customers (ID, Username, Balance) VALUES ?';",
+      "                    database.query(sql, [values], function (err, result) {",
+      "                        if (err) {",
+      "                            console.log(err);",
+      "                            return 1;",
+      "                        }",
+      "                        else {",
+      "                            console.log(result);",
+      "                        }",
+      "                    });",
+      "                    database.end();",
+      "                }",
+      "            });",
+      "        }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t14\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "2dfede70-a779-11e9-9f7a-abe7bed693fc",
+    "content": [
+      "lma"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t119\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "26282f80-a779-11e9-9f7a-abe7bed693fc",
+    "content": [
+      "cly"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t112\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "1dd28c90-a779-11e9-9f7a-abe7bed693fc",
+    "content": [
+      "thm"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t105\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "149a2ac0-a779-11e9-9f7a-abe7bed693fc",
+    "content": [
+      "prf"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t99\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "081cdd20-a737-11e9-955c-8df38630a0b7",
+    "content": [
+      "floor"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t153\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "b0cf29b0-a736-11e9-955c-8df38630a0b7",
+    "content": [
+      "lemma"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t119\t28",
+    "filetype": "snippets"
+  },
+  {
+    "id": "ae19a6a0-a736-11e9-955c-8df38630a0b7",
+    "content": [
+      "corollary"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t112\t36",
+    "filetype": "snippets"
+  },
+  {
+    "id": "ab5c0d40-a736-11e9-955c-8df38630a0b7",
+    "content": [
+      "theorem"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t105\t32",
+    "filetype": "snippets"
+  },
+  {
+    "id": "9f6093d0-a736-11e9-955c-8df38630a0b7",
+    "content": [
+      "proof"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t99\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "6c185f80-a736-11e9-955c-8df38630a0b7",
+    "content": [
+      "dm"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t95\t9",
+    "filetype": "snippets"
+  },
+  {
+    "id": "560eba80-a732-11e9-955c-8df38630a0b7",
+    "content": [
+      "snippets"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/coc-settings.json\t86\t3",
+    "filetype": "jsonc"
+  },
+  {
+    "id": "f614dc50-a708-11e9-bd2a-85ad743b5faa",
+    "content": [
+      "n"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/test/tex/document.tex\t78\t28",
+    "filetype": "tex"
+  },
+  {
+    "id": "a64789d0-a6ad-11e9-b5ab-7586a68438c6",
+    "content": [
+      "                            console.log(result);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t37\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "2e1c9950-a6ad-11e9-b5ab-7586a68438c6",
+    "content": [
+      "                    const sql = 'INSERT INTO Customers (ID, Username, Balance) VALUES (\\'' + customer.id + '\\', \\'' + customer.name + '\\', ' + customer.balance + ')';"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t30\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "c230b7c0-a6a8-11e9-985a-ab5a38e45723",
+    "content": [
+      "                            console.log(\"customer inserted\");"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t33\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "bb32c780-a6a6-11e9-985a-ab5a38e45723",
+    "content": [
+      "DROP TABLE IF EXISTS Payments;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql\t11\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "b23599f0-a6a6-11e9-985a-ab5a38e45723",
+    "content": [
+      "DROP TABLE IF EXISTS Payments;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql\t11\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "535caa60-a6a4-11e9-985a-ab5a38e45723",
+    "content": [
+      "`ID` INT(255),"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql\t13\t5",
+    "filetype": "sql"
+  },
+  {
+    "id": "4d346ec0-a6a4-11e9-985a-ab5a38e45723",
+    "content": [
+      "    `ID` VARCHAR(255),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql\t6\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "e5e677f0-a6a2-11e9-985a-ab5a38e45723",
+    "content": [
+      "    // Insert user fields into Customers table",
+      "    con.connect(function(err) {",
+      "        if (err) {",
+      "            console.log(err);",
+      "        }",
+      "        else {",
+      "            // possibility for sql injection, need to fix later",
+      "            const sql = 'INSERT INTO Customers (ID, Username, Balance) VALUES (' + customer.id + ', ' + customer.name + ', ' + customer.balance + ')';",
+      "            // var sql = \"INSERT INTO Customers (name, address) VALUES ('Company Inc', 'Highway 37')\";",
+      "            con.query(sql, function (err, result) {",
+      "                if (err) {",
+      "                    console.log(err);",
+      "                }",
+      "                else {",
+      "                    console.log(\"1 record inserted\");",
+      "                }",
+      "            });",
+      "        }",
+      "    });"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t46\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "33bd6860-a6a0-11e9-985a-ab5a38e45723",
+    "content": [
+      "values"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t54\t28",
+    "filetype": "javascript"
+  },
+  {
+    "id": "5d5aede0-a69c-11e9-be54-7995a78e35d5",
+    "content": [
+      "% Set margins",
+      "\\usepackage[margin=1in]{geometry}",
+      "",
+      "% Remove page numbering",
+      "\\pagenumbering{gobble}",
+      "",
+      "% Change title formatting",
+      "\\renewcommand{\\maketitle}{",
+      "  {",
+      "    \\textbf{Name:} \\underline{\\hspace{16em}}",
+      "    \\hfill",
+      "    \\textbf{Date:} \\underline{\\hspace{7em}}",
+      "  }",
+      "}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/jubilee/worksheets/negatives2/worksheet.tex\t5\t1",
+    "filetype": "tex"
+  },
+  {
+    "id": "1e2f7880-a69b-11e9-a757-19a7de543575",
+    "content": [
+      "\"\\\" ' `\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/delimitMate/doc/delimitMate.txt\t172\t10",
+    "filetype": "help"
+  },
+  {
+    "id": "087be5f0-a69b-11e9-a757-19a7de543575",
+    "content": [
+      "let delimitMate_quotes = \"\\\" ' ` *\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/delimitMate/doc/delimitMate.txt\t177\t9",
+    "filetype": "help"
+  },
+  {
+    "id": "dcc149a0-a69a-11e9-b989-29090fcd773a",
+    "content": [
+      "let delimitMate_matchpairs = \"(:),[:],{:}\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t409\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "d78012a0-a69a-11e9-b989-29090fcd773a",
+    "content": [
+      "let delimitMate_matchpairs = \"(:),[:],{:}\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t409\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "d4060710-a69a-11e9-b989-29090fcd773a",
+    "content": [
+      "au FileType tex let b:AutoPairs = AutoPairsDefine({'$' : '$'})"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t312\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "cc5ca9b0-a69a-11e9-b989-29090fcd773a",
+    "content": [
+      "let delimitMate_matchpairs = \"(:),[:],{:}\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t409\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "8fff04e0-a69a-11e9-a757-19a7de543575",
+    "content": [
+      "let delimitMate_matchpairs = \"(:),[:],{:},<:>\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/delimitMate/doc/delimitMate.txt\t165\t9",
+    "filetype": "help"
+  },
+  {
+    "id": "9412f160-a698-11e9-a757-19a7de543575",
+    "content": [
+      "let delimitMate_balance_matchpairs = 1"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/delimitMate/doc/delimitMate.txt\t289\t9",
+    "filetype": "help"
+  },
+  {
+    "id": "626448d0-a698-11e9-a757-19a7de543575",
+    "content": [
+      "let delimitMate_jump_expansion = 1"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/delimitMate/doc/delimitMate.txt\t238\t9",
+    "filetype": "help"
+  },
+  {
+    "id": "43fb6720-a698-11e9-a757-19a7de543575",
+    "content": [
+      "let delimitMate_expand_space = 1"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/delimitMate/doc/delimitMate.txt\t215\t9",
+    "filetype": "help"
+  },
+  {
+    "id": "38dc6b00-a698-11e9-a757-19a7de543575",
+    "content": [
+      "let delimitMate_expand_cr = 1"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/delimitMate/doc/delimitMate.txt\t204\t9",
+    "filetype": "help"
+  },
+  {
+    "id": "059c4270-a697-11e9-8c64-553af07cd3fd",
+    "content": [
+      "imap <key> <Plug>(PearTreeJump)"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/pear-tree/doc/pear-tree.txt\t504\t5",
+    "filetype": "help"
+  },
+  {
+    "id": "962f4910-a695-11e9-8c64-553af07cd3fd",
+    "content": [
+      "imap <key> <Plug>(PearTreeJump)"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/pear-tree/doc/pear-tree.txt\t504\t5",
+    "filetype": "help"
+  },
+  {
+    "id": "141db560-a695-11e9-adb1-1109317e2536",
+    "content": [
+      "imap <key> <Plug>(PearTreeSpace)"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/nvim/plugged/pear-tree/doc/pear-tree.txt\t486\t5",
+    "filetype": "help"
+  },
+  {
+    "id": "d009f810-a68b-11e9-8287-8b5db7d2ea88",
+    "content": [
+      "    const sql = 'INSERT INTO AuthenticationInformation VALUES ?';"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/routes/authentication.js\t33\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "c3eb8d50-a68b-11e9-8287-8b5db7d2ea88",
+    "content": [
+      "    connectionPool.query(sql, [values], (error, results, fields) => {",
+      "        if (error) {",
+      "            console.log(error);",
+      "            res.status(502).json({error});",
+      "        }else {",
+      "            console.log('Profile Records inserted');",
+      "        }",
+      "    });"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/routes/authentication.js\t35\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "985282c0-a68b-11e9-8287-8b5db7d2ea88",
+    "content": [
+      "    const values = [",
+      "        [",
+      "            null,",
+      "            req.body.username,",
+      "            req.body.password,",
+      "            req.body.email,",
+      "            req.body.Question1,",
+      "            req.body.ans1,",
+      "            req.body.Question2,",
+      "            req.body.ans2,",
+      "            req.body.Question3,",
+      "            req.body.ans3,",
+      "            req.body.TwoFactor,",
+      "            SECRET.base32, ",
+      "            req.body.profileChange_ts, ",
+      "            req.body.IP_addr,",
+      "            req.body.Last_Act",
+      "        ]",
+      "    ];"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/routes/authentication.js\t14\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "56bb2100-a68b-11e9-bbd1-1bc3972b3bd3",
+    "content": [
+      "        if (err) {",
+      "            console.log(err);",
+      "        }",
+      "        else {",
+      "            console.log(\"ID: \" + customer.id);",
+      "            console.log(\"Username: \" + customer.name);",
+      "            console.log(\"Balance: \" + customer.balance);",
+      "        }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/structure.js\t41\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "45438a70-a68b-11e9-bbd1-1bc3972b3bd3",
+    "content": [
+      "        if (err) {",
+      "            console.log(err);",
+      "        }",
+      "        else {",
+      "            console.log(\"ID: \" + customer.id);",
+      "            console.log(\"Username: \" + customer.name);",
+      "            console.log(\"Balance: \" + customer.balance);",
+      "        }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/structure.js\t41\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "e39dd460-a68a-11e9-bbd1-1bc3972b3bd3",
+    "content": [
+      "            console.log(\"Username: \" + customer.name);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/structure.js\t52\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "d28a56d0-a68a-11e9-bbd1-1bc3972b3bd3",
+    "content": [
+      "            console.log(\"Username: \" + customer.name);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/structure.js\t51\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "e545d480-a689-11e9-bbd1-1bc3972b3bd3",
+    "content": [
+      "    // const customer = stripe.customers.create({",
+      "    //     description: 'Customer for Tester',",
+      "    //     balance: 100,",
+      "    //     email: \"test@gmail.com\",",
+      "    //     name: \"Tester\",",
+      "    // }, function(err, customer) {",
+      "    //     // asynchronously called",
+      "    // });"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/structure.js\t48\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "86465f40-a689-11e9-bbd1-1bc3972b3bd3",
+    "content": [
+      "    //     description: 'Customer for Tester',",
+      "    //     balance: 100,",
+      "    //     email: \"test@gmail.com\",",
+      "    //     name: \"Tester\","
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/structure.js\t49\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "2b1c9500-a687-11e9-bbd1-1bc3972b3bd3",
+    "content": [
+      "    // Creates customer object",
+      "    const customer = stripe.customers.create({",
+      "        description: 'Customer for',",
+      "        source: \"tok_visa\" // obtained with Stripe.js",
+      "    }, function(err, customer) {",
+      "        // asynchronously called",
+      "    });"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/structure.js\t23\t1",
+    "filetype": "javascript"
+  },
+  {
     "id": "ca5c8f90-a67c-11e9-b369-5f8ad8356670",
     "content": [
       "\\frac{a}{b}"
@@ -1782,576 +2504,5 @@
     "regtype": "V",
     "path": "file:///home/kyle/.config/nvim/init.vim\t379\t1",
     "filetype": "vim"
-  },
-  {
-    "id": "fdb6df50-9ad6-11e9-9094-011550a1fdf3",
-    "content": [
-      ".+"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t18\t36",
-    "filetype": "lua"
-  },
-  {
-    "id": "129711c0-9ad6-11e9-9094-011550a1fdf3",
-    "content": [
-      ".+"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t18\t36",
-    "filetype": "lua"
-  },
-  {
-    "id": "c594b6c0-9ad5-11e9-9094-011550a1fdf3",
-    "content": [
-      "%d+"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t18\t42",
-    "filetype": "lua"
-  },
-  {
-    "id": "643c8470-9ad5-11e9-9094-011550a1fdf3",
-    "content": [
-      "nmcli connection show | grep wlp2s0"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t13\t21",
-    "filetype": "lua"
-  },
-  {
-    "id": "fa592040-9ad4-11e9-9094-011550a1fdf3",
-    "content": [
-      ".+"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t18\t36",
-    "filetype": "lua"
-  },
-  {
-    "id": "92cbba00-9ad4-11e9-9094-011550a1fdf3",
-    "content": [
-      "nmcli connection show | grep wlp2s0 | head -c -54"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t13\t21",
-    "filetype": "lua"
-  },
-  {
-    "id": "8df5e470-9ad3-11e9-9094-011550a1fdf3",
-    "content": [
-      "nmcli connection show | grep wlp2s0 | awk '{ print $1 }'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t13\t21",
-    "filetype": "lua"
-  },
-  {
-    "id": "8c729fd0-9ad3-11e9-9094-011550a1fdf3",
-    "content": [
-      "{ print $1 }"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/awesome/bar/network.lua\t13\t64",
-    "filetype": "lua"
-  },
-  {
-    "id": "f6e37e30-99e7-11e9-9b02-4920c43a78d7",
-    "content": [
-      "    awful.key({ modkey,           }, \"m\",       function () awful.spawn(mpd) end,",
-      "        {description = \"open mpd client ncmpcpp\", group = \"launcher\"}),"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/keys.lua\t82\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "7d7d0d00-99d2-11e9-9df0-cdfacd965cf7",
-    "content": [
-      "hr {",
-      "    height: 2px;",
-      "    border: 0;",
-      "    margin: 24px 0 !important;",
-      "}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/Typora/themes/night.css\t77\t1",
-    "filetype": "css"
-  },
-  {
-    "id": "bd6ab000-99ca-11e9-b8ab-a582f3d29d8b",
-    "content": [
-      "            setlocal nobuflisted"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t337\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "00026030-99ca-11e9-91a2-b749004e5407",
-    "content": [
-      "vimwiki"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t76\t25",
-    "filetype": "vim"
-  },
-  {
-    "id": "b7ee3a30-99c9-11e9-91a2-b749004e5407",
-    "content": [
-      "function! LightlineBufferline()",
-      "    call bufferline#refresh_status()",
-      "    return [ g:bufferline_status_info.before, g:bufferline_status_info.current, g:bufferline_status_info.after]",
-      "endfunction"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t70\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "9bffc3d0-99c8-11e9-a6eb-8951c4868e33",
-    "content": [
-      "%{tagbar#currenttag(\"%s\", \"\")}"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t32\t28",
-    "filetype": "vim"
-  },
-  {
-    "id": "95974ae0-99c8-11e9-a6eb-8951c4868e33",
-    "content": [
-      "    return winwidth(0) > 50 ? (&filetype !=# '' ? &filetype : 'no filetype') : ''"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t105\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "85c63860-99c8-11e9-a6eb-8951c4868e33",
-    "content": [
-      "%{tagbar#currenttag(\"%s\", \"\")}"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/config/lightline.vim\t32\t28",
-    "filetype": "vim"
-  },
-  {
-    "id": "593c8c40-99c8-11e9-9766-ebf29a71097e",
-    "content": [
-      "youtube.com"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/resume/resume.tex\t77\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "dd79d3d0-996b-11e9-b2a1-1753a615dd22",
-    "content": [
-      "Create payment system utilizing Stripe API"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/wiki/index.wiki\t4\t40",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "507af140-993d-11e9-8a48-a9026b029c26",
-    "content": [
-      "  function! VimwikiLinkHandler(link)",
-      "    \" Use Vim to open external files with the 'vfile:' scheme.  E.g.:",
-      "    \"   1) [[vfile:~/Code/PythonProject/abc123.py]]",
-      "    \"   2) [[vfile:./|Wiki Home]]",
-      "    let link = a:link",
-      "    if link =~# '^vfile:'",
-      "      let link = link[1:]",
-      "    else",
-      "      return 0",
-      "    endif",
-      "    let link_infos = vimwiki#base#resolve_link(link)",
-      "    if link_infos.filename == ''",
-      "      echomsg 'Vimwiki Error: Unable to resolve link!'",
-      "      return 0",
-      "    else",
-      "      exe 'tabnew ' . fnameescape(link_infos.filename)",
-      "      return 1",
-      "    endif",
-      "  endfunction"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t2542\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "4bc83410-993c-11e9-85bd-0f3ff247425c",
-    "content": [
-      "[file:~/chickens.md]"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/wiki/index.wiki\t5\t7",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "026e47a0-993c-11e9-a868-61f532d3dd6e",
-    "content": [
-      "Affordable Payment System"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/wiki/index.wiki\t4\t7",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "b2942670-9939-11e9-a0b3-cd0eeaefbb1c",
-    "content": [
-      "|g:vimwiki_folding"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t1386\t31",
-    "filetype": "help"
-  },
-  {
-    "id": "791ab5d0-9939-11e9-9ef2-199dd8773cd6",
-    "content": [
-      "Cards"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t15\t7",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "6af3a9d0-9939-11e9-9ef2-199dd8773cd6",
-    "content": [
-      "Transactions"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t30\t7",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "69c478a0-9939-11e9-9ef2-199dd8773cd6",
-    "content": [
-      "Checking Account"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t20\t7",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "6845c7e0-9939-11e9-9ef2-199dd8773cd6",
-    "content": [
-      "Balances"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t25\t7",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "668c5810-9939-11e9-9ef2-199dd8773cd6",
-    "content": [
-      "Checking Account"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t20\t7",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "651d10a0-9939-11e9-9ef2-199dd8773cd6",
-    "content": [
-      "Payment Method"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t7\t7",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "636bb720-9939-11e9-9ef2-199dd8773cd6",
-    "content": [
-      "Cards: can be either debit or credit"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t15\t7",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "5fbf50f0-9939-11e9-9ef2-199dd8773cd6",
-    "content": [
-      "Payment Method"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t7\t7",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "53a2baf0-9939-11e9-9ef2-199dd8773cd6",
-    "content": [
-      "Method"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t7\t15",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "508aa580-9939-11e9-9ef2-199dd8773cd6",
-    "content": [
-      "**"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t3\t13",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "5028fd80-9939-11e9-9ef2-199dd8773cd6",
-    "content": [
-      "User*"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t3\t8",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "4d7b69b0-9939-11e9-9ef2-199dd8773cd6",
-    "content": [
-      "User"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/paymentwiki/Layout.wiki\t3\t7",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "1bb3b050-9938-11e9-8075-cf24c5977b6e",
-    "content": [
-      "nmap ++ <Plug>VimwikiNormalizeLink"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t382\t26",
-    "filetype": "help"
-  },
-  {
-    "id": "ab996a80-9937-11e9-9057-ddd8e6061d71",
-    "content": [
-      "nmap == <Plug>VimwikiAddHeaderLevel"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/config/vimwiki.vim\t3\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "a58727e0-9937-11e9-9057-ddd8e6061d71",
-    "content": [
-      "nmap == <Plug>VimwikiAddHeaderLevel"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t338\t26",
-    "filetype": "help"
-  },
-  {
-    "id": "95d615f0-9936-11e9-9057-ddd8e6061d71",
-    "content": [
-      "autocmd FileType vim setlocal shiftwidth=4"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t159\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "32dafe80-9935-11e9-b262-fb23ffc99456",
-    "content": [
-      "~/paymentwiki/payment.wiki"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/config/vimwiki.vim\t4\t35",
-    "filetype": "vim"
-  },
-  {
-    "id": "1a658cd0-9935-11e9-accb-d734eeff4403",
-    "content": [
-      "let g:vimwiki_list = [{'path': '~/my_site/', 'path_html': '~/public_html/'}]"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t1861\t3",
-    "filetype": "help"
-  },
-  {
-    "id": "166a1c40-9935-11e9-accb-d734eeff4403",
-    "content": [
-      "  let g:vimwiki_list = [{'path': '~/my_site/', 'path_html': '~/public_html/'}]"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t1861\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "0bcb9ac0-9935-11e9-accb-d734eeff4403",
-    "content": [
-      "  let g:vimwiki_list = [{'path': '~/my_site/', 'path_html': '~/public_html/'}]"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t1861\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "03432800-9935-11e9-accb-d734eeff4403",
-    "content": [
-      "  let g:vimwiki_list = [{'path': '~/my_site/', 'path_html': '~/public_html/'}]"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t1861\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "e063f5e0-9933-11e9-accb-d734eeff4403",
-    "content": [
-      "",
-      " | First Name  |   |   |   |   |"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t1694\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "def0dde0-9933-11e9-accb-d734eeff4403",
-    "content": [
-      " "
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t1695\t2",
-    "filetype": "help"
-  },
-  {
-    "id": "e0c93240-9931-11e9-accb-d734eeff4403",
-    "content": [
-      "let g:vimwiki_map_prefix = '<Leader>e'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t2881\t3",
-    "filetype": "help"
-  },
-  {
-    "id": "a133e210-9931-11e9-accb-d734eeff4403",
-    "content": [
-      "nmap <Leader>w <Plug>VimwikiIndex"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t122\t10",
-    "filetype": "help"
-  },
-  {
-    "id": "db9e10c0-9930-11e9-accb-d734eeff4403",
-    "content": [
-      "nmap <Leader>dm <Plug>VimwikiMakeTomorrowDiaryNote"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t230\t10",
-    "filetype": "help"
-  },
-  {
-    "id": "cf3de210-9930-11e9-accb-d734eeff4403",
-    "content": [
-      "nmap <Leader>dy <Plug>VimwikiMakeYesterdayDiaryNote"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t213\t10",
-    "filetype": "help"
-  },
-  {
-    "id": "b3b7d500-9930-11e9-accb-d734eeff4403",
-    "content": [
-      "nmap <Leader>dt <Plug>VimwikiTabMakeDiaryNote"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t195\t10",
-    "filetype": "help"
-  },
-  {
-    "id": "a6c50340-9930-11e9-accb-d734eeff4403",
-    "content": [
-      "nmap <Leader>d <Plug>VimwikiMakeDiaryNote"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t177\t10",
-    "filetype": "help"
-  },
-  {
-    "id": "97bf7e20-9930-11e9-accb-d734eeff4403",
-    "content": [
-      "nmap <Leader>i <Plug>VimwikiDiaryIndex"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t159\t10",
-    "filetype": "help"
-  },
-  {
-    "id": "3631bce0-9930-11e9-accb-d734eeff4403",
-    "content": [
-      "nmap <Leader>i <Plug>VimwikiDiaryIndex"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t159\t10",
-    "filetype": "help"
-  },
-  {
-    "id": "e70c5ad0-992f-11e9-accb-d734eeff4403",
-    "content": [
-      "nmap <Leader>t <Plug>VimwikiTabIndex"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t136\t10",
-    "filetype": "help"
-  },
-  {
-    "id": "c1a68860-992f-11e9-be87-77261b8c5832",
-    "content": [
-      "nmap <Leader>t <Plug>VimwikiTabIndex"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t136\t10",
-    "filetype": "help"
-  },
-  {
-    "id": "f1f213f0-992e-11e9-be87-77261b8c5832",
-    "content": [
-      "nmap <Leader>w <Plug>VimwikiIndex"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t122\t10",
-    "filetype": "help"
-  },
-  {
-    "id": "38091c50-992d-11e9-be87-77261b8c5832",
-    "content": [
-      "        :nmap <Leader>w <Plug>VimwikiIndex"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/vimwiki/doc/vimwiki.txt\t122\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "049668f0-98a6-11e9-8327-0f159ed0a0a0",
-    "content": [
-      "autocmd FileType vim setlocal shiftwidth=4"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t159\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "dee9c980-98a5-11e9-8901-cd2bff1774d5",
-    "content": [
-      "Unique User ID for each Customer"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/vimwiki/index.wiki\t5\t11",
-    "filetype": "vimwiki"
-  },
-  {
-    "id": "b6bda260-9869-11e9-9669-8d2c080049b9",
-    "content": [
-      "export PATH=\"$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/root/.gem/ruby/2.6.0/bin\"",
-      "export FZF_DEFAULT_COMMAND='rg --files --hidden $HOME'",
-      "export FZF_DEFAULT_OPTS='--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,gutter:-1'",
-      "export VISUAL=nvim",
-      "export EDITOR=nvim"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.bashrc\t17\t1",
-    "filetype": "sh"
   }
 ]
