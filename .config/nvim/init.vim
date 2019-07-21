@@ -162,7 +162,7 @@ autocmd FileType ocaml setlocal shiftwidth=2 | match OverLength /\%81v.\+/
 autocmd FileType c setlocal shiftwidth=4 cindent | match OverLength /\%81v.\+/
 autocmd FileType cpp setlocal shiftwidth=4 cindent cinoptions=g0+N-sw | match OverLength /\%81v.\+/
 autocmd FileType java setlocal shiftwidth=4 | match OverLength /\%81v.\+/
-autocmd FileType javascript setlocal shiftwidth=4
+autocmd FileType javascript setlocal shiftwidth=2
 autocmd FileType python setlocal shiftwidth=4 | match OverLength /\%81v.\+/
 autocmd FileType vim setlocal shiftwidth=4
 autocmd FileType sql setlocal shiftwidth=4
