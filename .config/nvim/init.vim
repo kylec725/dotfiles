@@ -395,9 +395,9 @@ vnoremap <leader><Tab> :Tabularize /
 
 " Snippets !!!!!
 let g:UltiSnipsUsePythonVersion = 3
-let g:UltiSnipsExpandTrigger="<c-l>"
-let g:UltiSnipsJumpForwardTrigger="<c-l>"
-let g:UltiSnipsJumpBackwardTrigger="<c-h>"
+let g:UltiSnipsExpandTrigger = "<c-l>"
+let g:UltiSnipsJumpForwardTrigger = "<c-l>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-h>"
 
 " DelimitMate !!!!!
 let delimitMate_expand_cr = 1
