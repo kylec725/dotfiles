@@ -102,6 +102,8 @@ keys.globalkeys = gears.table.join(
                 position = "bottom_middle",
             })
     end, {description = "take a screenshot with scrot", group = "launcher"}),
+    awful.key({ modkey,           }, "c",       function () awful.spawn.with_shell(googlecalendar) end,
+        {description = "open calendar", group = "launcher"}),
 
 -- Volume control
 awful.key({}, "XF86AudioRaiseVolume",       function () awful.spawn.with_shell("amixer -D pulse sset Master 5%+") end,
@@ -194,7 +196,7 @@ end,
         sidebar.visible = not sidebar.visible
     end, {description = "show or hide sidebar", group = "awesome"}),
 
-awful.key({ modkey }, "c", function()
+awful.key({ modkey, "Shift" }, "c", function()
     awful.spawn(clipboard,{
             -- floating = true,
             -- placement = awful.placement.centered,
