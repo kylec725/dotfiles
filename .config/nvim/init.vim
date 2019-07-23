@@ -193,6 +193,10 @@ nnoremap <silent> = :bnext<CR>
 " nnoremap <silent> <C-l> :bnext<CR>
 nnoremap <silent> <leader>bd :bd<CR>
 
+" remap paste to adjust indentation
+nnoremap p p`[v`]=
+nnoremap P P`[v`]=
+
 " remap the jump mark key
 noremap ' `
 
