@@ -1,5 +1,615 @@
 [
   {
+    "id": "7a835000-ad91-11e9-801c-877864239356",
+    "content": [
+      "const pool = require('./database');"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t2\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "8bddbdb0-acf9-11e9-9e61-e9f287181328",
+    "content": [
+      "        if (err) {",
+      "          console.log(err);",
+      "          return false;",
+      "        }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t16\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "6b049f50-acf9-11e9-8e95-13cc86f66932",
+    "content": [
+      "const pool = require('./database');"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t2\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "62715720-acf9-11e9-8e95-13cc86f66932",
+    "content": [
+      "      console.log(err);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t11\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "41ad9580-acf9-11e9-8e95-13cc86f66932",
+    "content": [
+      "    if (err) {",
+      "      console.log(err);",
+      "      return false;",
+      "    }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t10\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "2aac7450-acf9-11e9-99ce-199c91d1a0e9",
+    "content": [
+      "nnoremap p p`[v`]="
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t197\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "ee2c5360-acf8-11e9-9122-b139a062e6e2",
+    "content": [
+      "    if (err) {",
+      "      console.log(err);",
+      "      return false;",
+      "    }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t10\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "760be800-ace9-11e9-a7ea-e33944f5cd68",
+    "content": [
+      "        if (err) {",
+      "          console.log(err);",
+      "          return false;",
+      "        }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t16\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "21ec9120-ace9-11e9-a58f-dd46863418c1",
+    "content": [
+      "        if (err) {",
+      "          console.log(err);",
+      "          return false;",
+      "        }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t16\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "033e1af0-ace9-11e9-a827-13ece261ca62",
+    "content": [
+      "        if (err) {",
+      "          console.log(err);",
+      "          return false;",
+      "        }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t16\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "ebb77610-ace8-11e9-8ccd-9b32ee4ee67f",
+    "content": [
+      "        if (err) {",
+      "          console.log(err);",
+      "          return false;",
+      "        }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t16\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "dd025ae0-ace8-11e9-8ccd-9b32ee4ee67f",
+    "content": [
+      "        if (err) {",
+      "          console.log(err);",
+      "          return false;",
+      "        }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t16\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "c28866a0-ace8-11e9-b29d-b186130daba0",
+    "content": [
+      "        if (err) {",
+      "          console.log(err);",
+      "          return false;",
+      "        }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t16\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "69611130-ace8-11e9-ac3a-c16644a23577",
+    "content": [
+      "          console.log(err);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t17\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "58e7b0c0-ace8-11e9-b573-f53b6fbc44ae",
+    "content": [
+      "      return false;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t12\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "31444a60-ace8-11e9-b573-f53b6fbc44ae",
+    "content": [
+      "        if (err) {",
+      "          console.log(err);",
+      "          return false;",
+      "        }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t16\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "f56b65f0-ace7-11e9-b9b3-c5b632b6e75a",
+    "content": [
+      "        if (err) {",
+      "          console.log(err);",
+      "          return false;",
+      "        }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t16\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "e90b8560-ace7-11e9-b9b3-c5b632b6e75a",
+    "content": [
+      "        if (err) {",
+      "          console.log(err);",
+      "          return false;",
+      "        }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t16\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "d734dee0-ace7-11e9-89fd-a138e1bf364c",
+    "content": [
+      "        if (err) {",
+      "          console.log(err);",
+      "          return false;",
+      "        }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t16\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "b9cf8a80-ace7-11e9-8627-29a97273b45e",
+    "content": [
+      "    if (err) {",
+      "      console.log(err);",
+      "      return false;",
+      "    }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t10\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "71b7e210-ace7-11e9-a441-0d3ce674c8be",
+    "content": [
+      "    if (err) {",
+      "      console.log(err);",
+      "      return false;",
+      "    }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t10\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "6fd16ed0-ace7-11e9-a441-0d3ce674c8be",
+    "content": [
+      "    if (err) {",
+      "      console.log(err);"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t10\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "6f5c8cf0-ace7-11e9-a441-0d3ce674c8be",
+    "content": [
+      "    if (err) {",
+      "      console.log(err);",
+      "      return false;",
+      "    }"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t10\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "d6335130-ac96-11e9-ac27-cb853929ecdb",
+    "content": [
+      "const pool = require('./database');"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t2\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "cf1dfdd0-ac93-11e9-8565-8be871085860",
+    "content": [
+      "DROP TABLE IF EXISTS Paymethods;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql\t12\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "9cd78210-ac93-11e9-8565-8be871085860",
+    "content": [
+      "DROP TABLE IF EXISTS Payments;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql\t12\t1",
+    "filetype": "sql"
+  },
+  {
+    "id": "4daa8640-ac90-11e9-aa7a-933aaad86a49",
+    "content": [
+      "              // update database balance to match the stripe balance change"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t254\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "c7a39c80-ac8f-11e9-aa7a-933aaad86a49",
+    "content": [
+      "            // updates customer balance"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t149\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "57ba03a0-ac8f-11e9-aa7a-933aaad86a49",
+    "content": [
+      "      // retrieve customer StripeID"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t74\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "2086dc20-ac24-11e9-8fc4-7f2cf30ade10",
+    "content": [
+      ".connect"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t21\t45",
+    "filetype": "javascript"
+  },
+  {
+    "id": "ff489350-ac23-11e9-8fc4-7f2cf30ade10",
+    "content": [
+      "  const connection = mysql.createConnection({",
+      "    host: \"localhost\",",
+      "    user: \"root\",",
+      "    password: \"password\",",
+      "    database: \"Affordable\"",
+      "  });"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t50\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "e87f0ba0-ac1d-11e9-845d-83b6fe43cd40",
+    "content": [
+      "$FILE"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/pdf\t6\t9",
+    "filetype": "sh"
+  },
+  {
+    "id": "254ca5c0-ac1d-11e9-845d-83b6fe43cd40",
+    "content": [
+      "FILE=$(rg --type pdf --files | fzf --no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,gutter:-1 --prompt=\"Open PDF: \")"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.bin/pdf\t3\t1",
+    "filetype": "sh"
+  },
+  {
+    "id": "d6d49ab0-ac1c-11e9-845d-83b6fe43cd40",
+    "content": [
+      "rg --type pdf --files | fzf --no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,gutter:-1 --prompt=\"Open PDF: \""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.bin/pdf\t3\t8",
+    "filetype": "sh"
+  },
+  {
+    "id": "d41f1f00-ac19-11e9-a889-a9e080dfbf9a",
+    "content": [
+      " \"firefox --new-window 'https://calendar.google.com/calendar/b/1/r'\""
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/.config/awesome/rc.lua\t73\t11",
+    "filetype": "lua"
+  },
+  {
+    "id": "cf59eb40-ac18-11e9-a889-a9e080dfbf9a",
+    "content": [
+      "    awful.key({ modkey,           }, \"t\",       function () awful.spawn(\"typora\") end,",
+      "        {description = \"open markdown editor\", group = \"launcher\"}),"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/awesome/keys.lua\t84\t1",
+    "filetype": "lua"
+  },
+  {
+    "id": "a3296730-ac0e-11e9-ba2a-a9d946610025",
+    "content": [
+      "        console.log(\"decStripeBalance cannot decrease the balance to a negative value\");"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t275\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "56f29990-ac0e-11e9-ba2a-a9d946610025",
+    "content": [
+      "                console.log(user + \" database balance decreased by \" + newBalance + \" to \" + (oldBalance - newBalance));"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t234\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "4a823e40-ac0e-11e9-ba2a-a9d946610025",
+    "content": [
+      "                console.log(user + \" database balance increased by \" + newBalance + \" to \" + (oldBalance + newBalance));"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t192\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "26aa10b0-ac0e-11e9-ba2a-a9d946610025",
+    "content": [
+      "                console.log(user + \" database balance increased by \" + newBalance + \" to \" + (oldBalance + newBalance));"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t192\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "1fdc1f30-ac0e-11e9-ba2a-a9d946610025",
+    "content": [
+      "oldBalance + newBalance"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t192\t94",
+    "filetype": "javascript"
+  },
+  {
+    "id": "a9fda1a0-ac0b-11e9-ba2a-a9d946610025",
+    "content": [
+      "const incBalance = (user, newBalance) => {",
+      "  getBalance(user, function(oldBalance) {",
+      "    if (newBalance < 0) {",
+      "      console.log(\"incBalance can only take positive ints\");",
+      "      return false;",
+      "    }",
+      "    else {",
+      "      const database = mysql.createConnection({",
+      "        hostname: \"localhost\",",
+      "        user: \"root\",",
+      "        password: \"password\",",
+      "        database: \"Affordable\"",
+      "      });",
+      "",
+      "      database.connect(function(err) {",
+      "        if (err) {",
+      "          console.log(err);",
+      "          return false;",
+      "        }",
+      "        else {",
+      "          const sql = \"UPDATE Customers SET Balance = ? WHERE ID = 1\";",
+      "",
+      "          database.query(sql, [[oldBalance + newBalance]], function(err, result) {",
+      "            if (err) {",
+      "              database.end();",
+      "              console.log(err);",
+      "              return false;",
+      "            }",
+      "            else {",
+      "              database.end();",
+      "              console.log(user + \" database balance increase successful\");",
+      "              return true;",
+      "            }",
+      "          })",
+      "        }",
+      "      })",
+      "    }",
+      "  })",
+      "}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t161\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "fb5e3890-ac09-11e9-b1f8-b17c6713f76b",
+    "content": [
+      "            console.log(customer.name + \" Stripe balance increase successful\");"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t218\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "6c04ae40-ac09-11e9-b1f8-b17c6713f76b",
+    "content": [
+      "    hostname: \"localhost\",",
+      "    user: \"root\",",
+      "    password: \"password\",",
+      "    database: \"Affordable\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t115\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "bf611fc0-ac08-11e9-b1f8-b17c6713f76b",
+    "content": [
+      "  getStripeID(user, function(id) {",
+      "    getStripeBalance(user, function(oldBalance) {",
+      "      if (newBalance < 0) {",
+      "        console.log(\"incBalance can only take positive ints\");",
+      "        return false;",
+      "      }",
+      "      stripe.customers.update(",
+      "        id,",
+      "        {balance: oldBalance + newBalance},",
+      "        function(err, customer) {",
+      "          if (err) {",
+      "            console.log(err);",
+      "            return false;",
+      "          }",
+      "          else {",
+      "            console.log(customer.name + \" balance increase successful\");",
+      "            return true;",
+      "          }",
+      "        }",
+      "      );",
+      "    });",
+      "  });"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t168\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "b7fedd80-ac08-11e9-b1f8-b17c6713f76b",
+    "content": [
+      "const incStripeBalance = (user, newBalance) => {",
+      "  getStripeID(user, function(id) {",
+      "    getStripeBalance(user, function(oldBalance) {",
+      "      if (newBalance < 0) {",
+      "        console.log(\"incBalance can only take positive ints\");",
+      "        return false;",
+      "      }",
+      "      stripe.customers.update(",
+      "        id,",
+      "        {balance: oldBalance + newBalance},",
+      "        function(err, customer) {",
+      "          if (err) {",
+      "            console.log(err);",
+      "            return false;",
+      "          }",
+      "          else {",
+      "            console.log(customer.name + \" balance increase successful\");",
+      "            return true;",
+      "          }",
+      "        }",
+      "      );",
+      "    });",
+      "  });",
+      "}"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t167\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "8fab7d80-ac07-11e9-b1f8-b17c6713f76b",
+    "content": [
+      "const getID = (user, callback) => {",
+      "  const database = mysql.createConnection({",
+      "    host: \"localhost\",",
+      "    user: \"root\",",
+      "    password: \"password\",",
+      "    database: \"Affordable\"",
+      "  });",
+      "",
+      "  database.connect(function(err) {",
+      "    if (err) {",
+      "      console.log(err);",
+      "      return false;",
+      "    }",
+      "    else {",
+      "      // retrieve customer ID",
+      "      const sql = \"SELECT ID FROM Customers WHERE Username = ?\"",
+      "      database.query(sql, [[user]], function(err, result) {",
+      "        if (err) {",
+      "          database.end();",
+      "          console.log(err);",
+      "          return false;",
+      "        }",
+      "        else {",
+      "          database.end();",
+      "          callback(result[0].ID);",
+      "          return true;",
+      "        }",
+      "      })",
+      "    }",
+      "  });"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t49\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "21b67e20-ac06-11e9-b1f8-b17c6713f76b",
+    "content": [
+      "        database: \"Affordable\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t19\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "18e1e730-ac06-11e9-b1f8-b17c6713f76b",
+    "content": [
+      "        database: \"Affordable\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customers.js\t19\t1",
+    "filetype": "javascript"
+  },
+  {
     "id": "adc120f0-aa58-11e9-944a-ad138fd22d4f",
     "content": [
       "    `ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,"
@@ -2002,507 +2612,5 @@
     "regtype": "V",
     "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t11\t1",
     "filetype": "snippets"
-  },
-  {
-    "id": "33a94cd0-a2be-11e9-8c23-cf7944c3a1fa",
-    "content": [
-      "\"says howdy\""
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/jubilee/worksheets/foil/UltiSnips/tex.snippets\t1\t12",
-    "filetype": "snippets"
-  },
-  {
-    "id": "aa66ced0-a2b7-11e9-8179-35c8b3d8c127",
-    "content": [
-      "            exec \"vertical resize \" g:term_size"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t363\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "713f4ec0-a2b7-11e9-8179-35c8b3d8c127",
-    "content": [
-      "vsplit"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t342\t18",
-    "filetype": "vim"
-  },
-  {
-    "id": "60404390-a2b7-11e9-8179-35c8b3d8c127",
-    "content": [
-      "vertical resize"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t342\t27",
-    "filetype": "vim"
-  },
-  {
-    "id": "b5767030-a28c-11e9-bd70-73cbf4d42f14",
-    "content": [
-      "highlight link illuminatedWord Visual"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t384\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "b4ef3ed0-a28c-11e9-bd70-73cbf4d42f14",
-    "content": [
-      "highlight link illuminatedWord Visual"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t384\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "f16e8c80-a278-11e9-a087-ad0c05ac700e",
-    "content": [
-      "\\vspace{2em} "
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/jubilee/worksheets/factorial/worksheet.tex\t22\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "46554780-a278-11e9-b8be-21978b40e512",
-    "content": [
-      "    \\textbf{Name:} \\underline{\\hspace{16em}}",
-      "    \\hfill",
-      "    \\textbf{Date:} \\underline{\\hspace{7em}}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/jubilee/worksheets/factorial/worksheet.tex\t13\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "fa1b39d0-a25c-11e9-9b1d-d56729f9e715",
-    "content": [
-      "{'(':')', '[':']', '{':'}',\"'\":\"'\",'\"':'\"', '`':'`'}"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/auto-pairs/doc/AutoPairs.txt\t195\t5",
-    "filetype": "help"
-  },
-  {
-    "id": "e65b7d70-a25b-11e9-9b1d-d56729f9e715",
-    "content": [
-      "au Filetype FILETYPE let b:AutoPairs = {\"(\": \")\"}"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/auto-pairs/doc/AutoPairs.txt\t215\t5",
-    "filetype": "help"
-  },
-  {
-    "id": "71cffad0-a25b-11e9-9b1d-d56729f9e715",
-    "content": [
-      "let g:AutoPairs['<']='>'"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/auto-pairs/doc/AutoPairs.txt\t201\t5",
-    "filetype": "help"
-  },
-  {
-    "id": "e68f0f10-a133-11e9-8ba5-e57c129d208b",
-    "content": [
-      "    snippet if \"if ... then (if)\"",
-      "    if ${2:[[ ${1:condition} ]]}; then",
-      "            ${0:#statements}",
-      "    fi",
-      "    endsnippet"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/ultisnips/doc/UltiSnips.txt\t621\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "a0300890-a132-11e9-8713-9f265333e056",
-    "content": [
-      "snippet sign",
-      "Yours sincerely,",
-      "",
-      "Gilles Castel",
-      "endsnippet"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/snippets/tex.snippets\t1\t1",
-    "filetype": "snippets"
-  },
-  {
-    "id": "542246c0-a132-11e9-85a0-a54f90365682",
-    "content": [
-      "snippet sign",
-      "Yours sincerely,",
-      "",
-      "Gilles Castel",
-      "endsnippet"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/snippets/tex.snippets\t1\t1",
-    "filetype": "snippets"
-  },
-  {
-    "id": "3279d1d0-a12f-11e9-8ba5-e57c129d208b",
-    "content": [
-      "let g:UltiSnipsSnippetDirectories=[\"UltiSnips\"]"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/ultisnips/doc/UltiSnips.txt\t529\t4",
-    "filetype": "help"
-  },
-  {
-    "id": "bf086830-a122-11e9-ba2e-3f105eeb704f",
-    "content": [
-      ":cd %:p:h<CR>:pwd<CR>"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t238\t21",
-    "filetype": "vim"
-  },
-  {
-    "id": "36276e50-a120-11e9-bd98-55cf12425b71",
-    "content": [
-      "$HOME/.bin:$(ruby -e 'print Gem.user_dir')/bin:/home/kyle/.cargo/bin"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.profile\t4\t20",
-    "filetype": "sh"
-  },
-  {
-    "id": "940674e0-a11f-11e9-a3d7-e16cad765a65",
-    "content": [
-      "#",
-      "# These are very common and useful",
-      "#",
-      "function la --description \"List contents of directory, including hidden files in directory using long format\"",
-      "    ls -lah $argv",
-      "end",
-      ""
-    ],
-    "regtype": "V",
-    "path": "file:///usr/share/fish/functions/la.fish\t1\t1",
-    "filetype": "fish"
-  },
-  {
-    "id": "fad35b40-a064-11e9-ab2d-f35812467873",
-    "content": [
-      "hi Search ctermbg=yellow ctermfg=black"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t104\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "9e4d2030-a060-11e9-a20e-7f2a13d63f4f",
-    "content": [
-      "    get userId() {",
-      "        return this.userId;",
-      "    }",
-      "    get balanceId() {",
-      "        return this.balanceId;",
-      "    }"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/AffordableServerOSU/server/payment/structure.js\t9\t1",
-    "filetype": "javascript"
-  },
-  {
-    "id": "8067bee0-9f7a-11e9-98c8-57ff0f8e931a",
-    "content": [
-      "This is different from the others!"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/worksheet/worksheet.tex\t55\t37",
-    "filetype": "tex"
-  },
-  {
-    "id": "32785480-9f69-11e9-a86e-83fb11bf7eeb",
-    "content": [
-      "Date:"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/worksheet/worksheet.tex\t15\t12",
-    "filetype": "tex"
-  },
-  {
-    "id": "2e9dd970-9f69-11e9-a86e-83fb11bf7eeb",
-    "content": [
-      "Name:"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/worksheet/worksheet.tex\t13\t12",
-    "filetype": "tex"
-  },
-  {
-    "id": "8d173620-9f66-11e9-a86e-83fb11bf7eeb",
-    "content": [
-      "vspace{10em}"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/worksheet/worksheet.tex\t46\t6",
-    "filetype": "tex"
-  },
-  {
-    "id": "81b2f3a0-9f66-11e9-a86e-83fb11bf7eeb",
-    "content": [
-      "\\vspace{10em}"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/worksheet/worksheet.tex\t46\t5",
-    "filetype": "tex"
-  },
-  {
-    "id": "78fba8b0-9f66-11e9-a86e-83fb11bf7eeb",
-    "content": [
-      "\\vspace{10em}"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/worksheet/worksheet.tex\t46\t5",
-    "filetype": "tex"
-  },
-  {
-    "id": "76d62610-9f65-11e9-a86e-83fb11bf7eeb",
-    "content": [
-      "    \\vspace{10em}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/worksheet/worksheet.tex\t53\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "e6808880-9f64-11e9-a86e-83fb11bf7eeb",
-    "content": [
-      " Name:"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/worksheet/worksheet.tex\t23\t14",
-    "filetype": "tex"
-  },
-  {
-    "id": "3f20f020-9f64-11e9-a86e-83fb11bf7eeb",
-    "content": [
-      "\\hspace{5em}"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/worksheet/worksheet.tex\t25\t30",
-    "filetype": "tex"
-  },
-  {
-    "id": "e5a80a30-9f61-11e9-b5a4-4392afd8e609",
-    "content": [
-      "% Change title formatting",
-      "\\renewcommand{\\maketitle}{",
-      "  \\begin{center}",
-      "    {\\LARGE\\bfseries\\theauthor}",
-      "    \\vspace{0.5em}",
-      "",
-      "    kylec725@gmail.com | (443) 752--4794 | 1005 Pipercove Way, Bel Air, MD",
-      "  \\end{center}",
-      "}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/resume/resume.tex\t42\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "e3358390-9f61-11e9-b5a4-4392afd8e609",
-    "content": [
-      "\\renewcommand{\\maketitle}{",
-      "  \\begin{center}",
-      "    {\\LARGE\\bfseries\\theauthor}",
-      "    \\vspace{0.5em}",
-      "",
-      "    kylec725@gmail.com | (443) 752--4794 | 1005 Pipercove Way, Bel Air, MD",
-      "  \\end{center}",
-      "}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/resume/resume.tex\t43\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "c9a2e970-9f5e-11e9-a86e-83fb11bf7eeb",
-    "content": [
-      "Factor the following polynomials:\\\\",
-      ""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/worksheet/worksheet.tex\t21\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "859114d0-9f3d-11e9-af7a-f9302e2e4aca",
-    "content": [
-      "% Set 1 inch margins",
-      "\\usepackage[margin=0.5in]{geometry}",
-      ""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/resume/resume.tex\t8\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "92c166c0-9f27-11e9-84da-47b9685bc649",
-    "content": [
-      "% Set 1 inch margins",
-      "\\usepackage[margin=0.5in]{geometry}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/resume/resume.tex\t8\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "6bbe9f70-9f22-11e9-84da-47b9685bc649",
-    "content": [
-      "% Remove page numbers",
-      "\\pagenumbering{gobble}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/resume/resume.tex\t11\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "643a7d50-9f22-11e9-84da-47b9685bc649",
-    "content": [
-      "% Remove page numbers",
-      "\\pagenumbering{gobble}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/resume/resume.tex\t11\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "56b24960-9f22-11e9-84da-47b9685bc649",
-    "content": [
-      "% Set 1 inch margins",
-      "\\usepackage[margin=0.5in]{geometry}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/resume/resume.tex\t8\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "c72ec8e0-9f21-11e9-b3f6-fb5ffa0005b3",
-    "content": [
-      "4. The New York City sales tax is a rate of 4.5\\% and the New York State sales tax is a rate of 4\\%. The combined total of the sales tax is what? If I were to go to the grocery store and buy $30 worth of groceries, how much tax would be added on to my total? What is my total after tax?   ",
-      "\\vspace{10em}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/worksheet/worksheet.tex\t23\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "a517d350-9f21-11e9-b3f6-fb5ffa0005b3",
-    "content": [
-      "3. There are typically 162 games played for a single Major League Baseball team. If a pitcher successfully pitched or “won” 80\\% of games played during the season, how many games did his team win?  ",
-      "\\vspace{10em}",
-      ""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/worksheet/worksheet.tex\t20\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "8f1ab4a0-9f21-11e9-b3f6-fb5ffa0005b3",
-    "content": [
-      "1. John and James go out to eat with their friends for John’s birthday. The bill total is \\$355 before tax and tip. Everyone decides to split the bill equally, there are 7 people in total. James wants to pay for John’s share of the bill since it’s his birthday. If the tax for the bill is 3\\%, how much is the total after adding tax? How much is the total after adding an 18\\% tip? What is James’ total after tax and tip have been added? ",
-      "\\vspace{10em}",
-      ""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/worksheet/worksheet.tex\t14\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "8dab4620-9f21-11e9-b3f6-fb5ffa0005b3",
-    "content": [
-      "2. Rachel is going to go shopping for some new shoes. She sees in the store window that there is a 25\\% off sale. The shoes Rachel wants are originally \\$44.50, how much are they after you take an additional 25\\% off of the original price? ",
-      "\\vspace{10em}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/worksheet/worksheet.tex\t17\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "83f96e90-9f21-11e9-b3f6-fb5ffa0005b3",
-    "content": [
-      "\\vspace{10em}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/worksheet/worksheet.tex\t15\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "75859fa0-9e04-11e9-b739-392c0f25ed11",
-    "content": [
-      "\\setlength{\\headheight}{15pt}",
-      "\\pagestyle{fancy}",
-      "\\rhead{Kyle Chan}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/school/cassilly-scholarship/cassilly.tex\t12\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "46a49600-9e04-11e9-9c71-55a9c3330922",
-    "content": [
-      "\\usepackage[utf8]{inputenc}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/resume/resume.tex\t2\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "95910ba0-9d31-11e9-af22-65c119b24cf4",
-    "content": [
-      "noremap <silent> <C-Left> :vertical resize -5<CR>",
-      "noremap <silent> <C-Down> :resize -5<CR>",
-      "noremap <silent> <C-Up> :resize +5<CR>",
-      "noremap <silent> <C-Right> :vertical resize +5<CR>"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t204\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "1a6470e0-9ae1-11e9-9deb-775a12fdc030",
-    "content": [
-      "    let g:Illuminate_ftHighlightGroups = {",
-      "          \\ 'vim': ['vimVar', 'vimString', 'vimLineComment',",
-      "          \\         'vimFuncName', 'vimFunction', 'vimUserFunc', 'vimFunc']",
-      "          \\ }"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/vim-illuminate/doc/illuminate.txt\t50\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "f5a824e0-9ae0-11e9-9deb-775a12fdc030",
-    "content": [
-      "let g:Illuminate_highlightUnderCursor = 0"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/.config/nvim/plugged/vim-illuminate/doc/illuminate.txt\t39\t5",
-    "filetype": "help"
-  },
-  {
-    "id": "890898d0-9ade-11e9-a104-ef7f36ce0d0c",
-    "content": [
-      "    let g:Illuminate_highlightUnderCursor = 0"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/vim-illuminate/doc/illuminate.txt\t39\t1",
-    "filetype": "help"
-  },
-  {
-    "id": "df583a00-9ada-11e9-9405-83603fa1e20e",
-    "content": [
-      "nnoremap <leader><Tab> :Tabularize /"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/init.vim\t379\t1",
-    "filetype": "vim"
   }
 ]
