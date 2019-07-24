@@ -41,6 +41,8 @@ abbr ga 'git add'
 abbr gc 'git commit'
 abbr gp 'git push'
 abbr gs 'git status'
+# tmux
+abbr tvim 'tmux new-session \; split-window -h -p 30'
 # navigation
 abbr 2.. '../..'
 abbr 3.. '../../..'

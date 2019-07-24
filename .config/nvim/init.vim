@@ -144,6 +144,11 @@ highlight PmenuThumb ctermbg=blue
 " set tex flavor
 let g:tex_flavor = "latex"
 
+" undo history
+set undofile
+set undodir=~/.vim/undodir
+set undoreload=10000
+
 " indent settings
 set tabstop=8
 set expandtab
