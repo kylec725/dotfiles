@@ -20,3 +20,6 @@ hi ALEWarning ctermbg=yellow ctermfg=0
 hi ALEError ctermbg=red ctermfg=7
 
 autocmd Filetype ale-preview nnoremap <buffer> <Esc> :q<CR>
+
+" set linters
+" let g:ale_linters = {'cpp': ['ccls']}
