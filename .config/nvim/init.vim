@@ -145,9 +145,9 @@ highlight PmenuThumb ctermbg=blue
 let g:tex_flavor = "latex"
 
 " undo history
-" set undofile
-" set undodir=~/.vim/undodir
-" set undoreload=10000
+set undofile
+set undodir=~/.vim/undodir
+set undoreload=10000
 
 " indent settings
 set tabstop=8
@@ -194,8 +194,6 @@ noremap <leader>q :q<CR>
 " map buffer navigation keys
 nnoremap <silent> - :bprevious<CR>
 nnoremap <silent> = :bnext<CR>
-" nnoremap <silent> <C-h> :bprevious<CR>
-" nnoremap <silent> <C-l> :bnext<CR>
 nnoremap <silent> <leader>bd :bd<CR>
 
 " remap paste to adjust indentation
