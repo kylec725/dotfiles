@@ -1,5 +1,156 @@
 [
   {
+    "id": "eb2b6760-b085-11e9-b212-0d1963fb267c",
+    "content": [
+      "tnoremap <silent> <C-h> <C-\\><C-n>:wincmd h<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t372\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "b0bed3d0-ae7a-11e9-9819-770d70142f57",
+    "content": [
+      "  push_characters \"jjj\""
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.ncmpcpp/bindings\t162\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "64492870-ae7a-11e9-9819-770d70142f57",
+    "content": [
+      "  move_selected_items_up"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.ncmpcpp/bindings\t245\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "61ddf4d0-ae7a-11e9-9819-770d70142f57",
+    "content": [
+      "  move_selected_items_down"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.ncmpcpp/bindings\t240\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "df62a2d0-ae79-11e9-9819-770d70142f57",
+    "content": [
+      "move_selected_items_down"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.ncmpcpp/bindings\t240\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "de1f9b80-ae79-11e9-9819-770d70142f57",
+    "content": [
+      "move_selected_items_up"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.ncmpcpp/bindings\t244\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "dd95d210-ae79-11e9-9819-770d70142f57",
+    "content": [
+      "move_selected_items_up"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.ncmpcpp/bindings\t243\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "d30fba90-ae79-11e9-9819-770d70142f57",
+    "content": [
+      "def_key \"ctrl-j\"",
+      "  move_selected_items_down",
+      "#",
+      "def_key \"ctrl-k\"",
+      "  move_selected_items_up",
+      "#"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.ncmpcpp/bindings\t233\t1",
+    "filetype": "conf"
+  },
+  {
+    "id": "d19a7c20-ae2b-11e9-9508-21e3fea2863f",
+    "content": [
+      "nnoremap p p`[v`]=",
+      "nnoremap P P`[v`]="
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t202\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "ce019df0-ae2b-11e9-9508-21e3fea2863f",
+    "content": [
+      "nnoremap <silent> <leader>bd :bd<CR>"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/.config/nvim/init.vim\t199\t1",
+    "filetype": "vim"
+  },
+  {
+    "id": "54177140-ae2b-11e9-9e99-b7180317d0ac",
+    "content": [
+      "module.exports.incStripeBalance = incStripeBalance;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t272\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "45fc2510-ae2b-11e9-9e99-b7180317d0ac",
+    "content": [
+      "module.exports.getStripeBalance = getStripeBalance;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t270\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "3f628a00-ae2b-11e9-9e99-b7180317d0ac",
+    "content": [
+      "module.exports.getStripeBalance = getStripeBalance;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t269\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "1ebc3b70-ae2b-11e9-9e99-b7180317d0ac",
+    "content": [
+      "module.exports.createCustomer = createCustomer;"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/customer.js\t265\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "2440c460-ae28-11e9-9a67-517d7b58abf9",
+    "content": [
+      "const stripe = require('stripe')('sk_test_fwABtpH3AuWFaKl2jZ3dcc6e00lJ6hmRPp');",
+      "const pool = require('../database');"
+    ],
+    "regtype": "V",
+    "path": "file:///home/kyle/AffordableServerOSU/server/payment/stripe/paymentmethod.js\t1\t1",
+    "filetype": "javascript"
+  },
+  {
+    "id": "6e8f5590-ae1e-11e9-95fe-77dc39bfe23a",
+    "content": [
+      "Word Bank"
+    ],
+    "regtype": "v",
+    "path": "file:///home/kyle/jubilee/worksheets/crosswordbank/crosswordbank.tex\t10\t17",
+    "filetype": "tex"
+  },
+  {
     "id": "7a835000-ad91-11e9-801c-877864239356",
     "content": [
       "const pool = require('./database');"
@@ -2365,252 +2516,6 @@
     ],
     "regtype": "v",
     "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t66\t9",
-    "filetype": "snippets"
-  },
-  {
-    "id": "f9274f40-a451-11e9-b87e-671ce40b316a",
-    "content": [
-      "snippet -> \"right arrow\" wA",
-      "\\rightarrow",
-      "endsnippet"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t66\t1",
-    "filetype": "snippets"
-  },
-  {
-    "id": "3e01e760-a44d-11e9-b98f-211bcd15c75d",
-    "content": [
-      "% Change title formatting",
-      "\\renewcommand{\\maketitle}{",
-      "  {",
-      "    \\textbf{Name:} \\underline{\\hspace{16em}}",
-      "    \\hfill",
-      "    \\textbf{Date:} \\underline{\\hspace{7em}}",
-      "  }",
-      "}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/jubilee/worksheets/negatives/worksheet.tex\t13\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "dfd5eed0-a388-11e9-b649-b908bce6bb24",
-    "content": [
-      "inoremap <expr> <cr> pumvisible() ? \"\\<C-y>\" : \"\\<C-g>u\\<CR>\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/config/coc.vim\t18\t1",
-    "filetype": "vim"
-  },
-  {
-    "id": "71309390-a379-11e9-a588-bbb015b9188b",
-    "content": [
-      "  pactl subscribe 2> /dev/null | grep --line-buffered \"sink #0\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t106\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "536d3620-a378-11e9-a0d1-65cb118acf7b",
-    "content": [
-      "                vol_id = naughty.notify({",
-      "                        text = \"Muted\",",
-      "                        icon = beautiful.volume_icon,",
-      "                        timeout = 2,",
-      "                        position = \"bottom_middle\",",
-      "                        replaces_id = vol_id",
-      "                    }).id"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t52\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "0f7bb7c0-a378-11e9-a0d1-65cb118acf7b",
-    "content": [
-      "            if muted ~= nil then",
-      "                vol_id = naughty.notify({",
-      "                        text = \"Muted\",",
-      "                        icon = beautiful.volume_icon,",
-      "                        timeout = 2,",
-      "                        position = \"bottom_middle\",",
-      "                        replaces_id = vol_id",
-      "                    }).id"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/noodle/volume_bar.lua\t51\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "51ae1670-a377-11e9-a0d1-65cb118acf7b",
-    "content": [
-      "                        text = \"Battery Critical\",",
-      "                        icon = beautiful.battery_icon,",
-      "                        preset = naughty.config.presets.critical,",
-      "                        timeout = 0,",
-      "                        position = \"bottom_middle\""
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/awesome/bar/battery.lua\t28\t1",
-    "filetype": "lua"
-  },
-  {
-    "id": "b8928360-a333-11e9-b7c7-73d7bd245ea1",
-    "content": [
-      "38 - 29"
-    ],
-    "regtype": "v",
-    "path": "file:///home/kyle/jubilee/worksheets/negatives/worksheet.tex\t84\t10",
-    "filetype": "tex"
-  },
-  {
-    "id": "0c89cff0-a320-11e9-b79d-9f1a36a84a67",
-    "content": [
-      "\\begin{enumerate}",
-      "    % Page 1",
-      "  \\item $(x + 2)(x + 2)$",
-      "    \\vfill",
-      "",
-      "  \\item $(x + 4)(x + 3)$",
-      "    \\vfill",
-      "",
-      "  \\item $(x + 3)(x - 1)$",
-      "    \\vfill",
-      "",
-      "  \\item $(x - 4)(x - 8)$",
-      "    \\vfill",
-      "",
-      "  \\item $(b - 8 )(b + 14)$",
-      "    \\vfill",
-      "",
-      "  \\item $(h + 2)(h - 3)$",
-      "    \\vfill",
-      "",
-      "  \\item $(r + 7)(r - 1)$",
-      "    \\vfill",
-      "",
-      "  \\item $(t + 10)(t + 11)$",
-      "    \\vspace{2em}",
-      "    \\pagebreak",
-      "",
-      "    % Page 2",
-      "  \\item $(c + 7)(c - 9)$",
-      "    \\vfill",
-      "",
-      "  \\item $(s + 6)(s - 4)$",
-      "    \\vfill",
-      "",
-      "  \\item $(y + 2)(y + 8)$",
-      "    \\vfill",
-      "",
-      "  \\item $(x - 7)(x - 7)$",
-      "    \\vfill",
-      "",
-      "  \\item $(x + 6)(x - 12)$",
-      "    \\vfill",
-      "",
-      "  \\item $(w - 1)(w + 1)$",
-      "    \\vfill",
-      "",
-      "  \\item $(t + 6)(t + 8)$",
-      "    \\vfill",
-      "",
-      "  \\item $(k - 4)(k + 7)$",
-      "    \\vspace{2em}",
-      "\\end{enumerate}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/jubilee/worksheets/foil/worksheet.tex\t25\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "c18e6880-a31f-11e9-b79d-9f1a36a84a67",
-    "content": [
-      "% Change title formatting",
-      "\\renewcommand{\\maketitle}{",
-      "  {",
-      "    \\textbf{Name:} \\underline{\\hspace{16em}}",
-      "    \\hfill",
-      "    \\textbf{Date:} \\underline{\\hspace{7em}}",
-      "  }",
-      "}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/jubilee/worksheets/foil/worksheet.tex\t10\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "57d60bf0-a31f-11e9-b59e-cf84aa276d61",
-    "content": [
-      "\\usepackage[margin=1in]{geometry}"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/jubilee/worksheets/foil/worksheet.tex\t5\t1",
-    "filetype": "tex"
-  },
-  {
-    "id": "620d5d40-a2c9-11e9-bccb-b32d45685146",
-    "content": [
-      "snippet \"cly\" \"corollary\" wr",
-      "\\newtheorem{corollary}{${1:Corollary}}[theorem]",
-      "\\begin{Corollary}",
-      "\t$2",
-      "\\end{Corollary}",
-      "$0",
-      "endsnippet"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t46\t1",
-    "filetype": "snippets"
-  },
-  {
-    "id": "44341160-a2c9-11e9-bccb-b32d45685146",
-    "content": [
-      "snippet \"thm\" \"theorem\" wr",
-      "\\newtheorem{theorem}{${1:Theorem}}",
-      "\\begin{theorem}",
-      "\t$2",
-      "\\end{theorem}",
-      "$0",
-      "endsnippet"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t38\t1",
-    "filetype": "snippets"
-  },
-  {
-    "id": "34cb2170-a2c7-11e9-bccb-b32d45685146",
-    "content": [
-      "snippet \"([A-Za-z])bar\" \"bar\" ir",
-      "\\bar{`!p snip.rv = match.group(1)`}",
-      "endsnippet"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t30\t1",
-    "filetype": "snippets"
-  },
-  {
-    "id": "fa220a70-a2c6-11e9-bccb-b32d45685146",
-    "content": [
-      "snippet \"([A-Za-z])hat\" \"hat\" irA",
-      "\\hat{`!p snip.rv = match.group(1)`}",
-      "endsnippet"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t26\t1",
-    "filetype": "snippets"
-  },
-  {
-    "id": "18366ae0-a2c4-11e9-bccb-b32d45685146",
-    "content": [
-      "snippet '([A-Za-z])_(\\d\\d)' \"auto subscript\" wrA",
-      "`!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`$0}",
-      "endsnippet"
-    ],
-    "regtype": "V",
-    "path": "file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets\t11\t1",
     "filetype": "snippets"
   }
 ]
