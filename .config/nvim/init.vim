@@ -6,7 +6,6 @@ call plug#begin('~/.config/nvim/plugged')
 " Editing or Typing
 Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
-" Plug 'jiangmiao/auto-pairs'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-repeat'
 Plug 'vimlab/split-term.vim'
@@ -26,7 +25,6 @@ Plug 'gcavallanti/vim-noscrollbar'
 Plug 'junegunn/fzf.vim'
 
 " Visual Changes
-Plug 'junegunn/goyo.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'gregsexton/MatchTag'
 Plug 'arcticicestudio/nord-vim'
@@ -301,23 +299,6 @@ let g:airline_symbols.linenr = '☰'
 let g:airline_symbols.dirty=''
 let g:airline_symbols.notexists = ''
 "let g:airline_symbols.space = "\ua0"
-
-" Goyo !!!!!
-
-function! s:goyo_enter()
-    set wrap
-endfunction
-
-function! s:goyo_leave()
-    set nowrap
-endfunction
-
-autocmd! User GoyoEnter nested call <SID>goyo_enter()
-autocmd! User GoyoLeave nested call <SID>goyo_leave()
-nnoremap <C-g> :Goyo<CR>
-
-" autopairs
-" au FileType tex let b:AutoPairs = AutoPairsDefine({'$' : '$'})
 
 " Git Commands and Settings - Fugitive and Gitgutter !!!!!
 
