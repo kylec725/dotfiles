@@ -25,6 +25,7 @@ set fish_color_autosuggestion black
 # sudo !! command
 function sudo
     if test "$argv" = !!
+        echo $history[1]
         eval command sudo $history[1]
     else
         command sudo $argv
