@@ -21,7 +21,6 @@ bzip2
 calcurse
 ccls
 clang
-clion
 clion-cmake
 clion-gdb
 clion-jre
@@ -34,6 +33,7 @@ coreutils
 cryptsetup
 cups
 cups-pdf
+desmume
 device-mapper
 dhcpcd
 dialog
@@ -78,6 +78,8 @@ i3lock-color
 imagemagick
 imake
 inetutils
+interception-caps2esc
+interception-tools
 iproute2
 iputils
 iw
