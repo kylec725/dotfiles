@@ -59,6 +59,16 @@ local function update_widget()
                             replaces_id = vol_id
                         }).id
                 end
+                if prev_vol ~= volume then
+                    vol_id = naughty.notify({
+                            text = volume,
+                            icon = beautiful.muted_icon,
+                            timeout = 2,
+                            position = "bottom_middle",
+                            replaces_id = vol_id
+                        }).id
+                    prev_vol = volume
+                end
                 if hover then
                     fill_color = "#546577" 
                 else
