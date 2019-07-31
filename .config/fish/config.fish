@@ -60,7 +60,6 @@ set -Ux FZF_DEFAULT_COMMAND 'rg --files --hidden $HOME'
 set -Ux FZF_DEFAULT_OPTS '--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,gutter:-1'
 set -Ux VISUAL nvim
 set -Ux EDITOR nvim
-set -Ux SHELL /usr/bin/fish
 
 # color theme
 set nord0 2e3440
