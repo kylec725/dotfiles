@@ -1,0 +1,1525 @@
+72c40f6cf43524e8fe7dae877f372c82|file:///home/kyle/intercept.yaml|1|1|V|yaml
+	- JOB: "intercept -g $DEVNODE | caps2esc | uinput -d $DEVNODE"
+	  DEVICE:
+	    EVENTS:
+	      EV_KEY: [KEY_CAPSLOCK, KEY_ESC]
+a6ae89ba3ada81973d6aae6904a69f7d|file:///home/kyle/.config/nvim/init.vim|372|1|V|vim
+	tnoremap <silent> <C-h> <C-\><C-n>:wincmd h<CR>
+0ed43954fe9b66c111d13055b7fa914f|file:///home/kyle/.ncmpcpp/bindings|162|1|V|conf
+	  push_characters "jjj"
+3a5009a8e942a19167eb2d97b5195353|file:///home/kyle/.ncmpcpp/bindings|245|1|V|conf
+	  move_selected_items_up
+61f9d951a97b9cfc2c9b2b59942960b1|file:///home/kyle/.ncmpcpp/bindings|240|1|V|conf
+	  move_selected_items_down
+05821f64346e7fae3efd9d76fce1c06a|file:///home/kyle/.ncmpcpp/bindings|240|1|V|conf
+	move_selected_items_down
+f94c192c7c5ab203d333c305e47a1251|file:///home/kyle/.ncmpcpp/bindings|244|1|V|conf
+	move_selected_items_up
+f94c192c7c5ab203d333c305e47a1251|file:///home/kyle/.ncmpcpp/bindings|243|1|V|conf
+	move_selected_items_up
+f6b550ad2df9e5b22bfd8c48c72b50cf|file:///home/kyle/.ncmpcpp/bindings|233|1|V|conf
+	def_key "ctrl-j"
+	  move_selected_items_down
+	#
+	def_key "ctrl-k"
+	  move_selected_items_up
+	#
+2edf859709f15d80c151ccfb50f4f1e6|file:///home/kyle/.config/nvim/init.vim|202|1|V|vim
+	nnoremap p p`[v`]=
+	nnoremap P P`[v`]=
+7a0ac97f204a325bd16d01e32d6a8462|file:///home/kyle/.config/nvim/init.vim|199|1|V|vim
+	nnoremap <silent> <leader>bd :bd<CR>
+b497b82e37c3bd4a27423552db9e56fe|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|272|1|V|javascript
+	module.exports.incStripeBalance = incStripeBalance;
+ea43d6297d7739eb8e9a3a2b909cf06c|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|270|1|V|javascript
+	module.exports.getStripeBalance = getStripeBalance;
+ea43d6297d7739eb8e9a3a2b909cf06c|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|269|1|V|javascript
+	module.exports.getStripeBalance = getStripeBalance;
+630214e819066a60272cc7dcea6d99e6|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|265|1|V|javascript
+	module.exports.createCustomer = createCustomer;
+891504abcfaae0c3b19f98edcdf55fac|file:///home/kyle/AffordableServerOSU/server/payment/stripe/paymentmethod.js|1|1|V|javascript
+	const stripe = require('stripe')('sk_test_fwABtpH3AuWFaKl2jZ3dcc6e00lJ6hmRPp');
+	const pool = require('../database');
+198352e45f42027c26bab3d1ece16601|file:///home/kyle/jubilee/worksheets/crosswordbank/crosswordbank.tex|10|17|v|tex
+	Word Bank
+285ea1082d09b266f26afb29e1782e3d|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|2|1|V|javascript
+	const pool = require('./database');
+16a6adf920beffd771590deb55ca049a|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|16|1|V|javascript
+	        if (err) {
+	          console.log(err);
+	          return false;
+	        }
+285ea1082d09b266f26afb29e1782e3d|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|2|1|V|javascript
+	const pool = require('./database');
+5b9bcfb4f58169a7c345b0963e4ae967|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|11|1|V|javascript
+	      console.log(err);
+0098cf56396b378e69d84cd29e5e4ff7|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|10|1|V|javascript
+	    if (err) {
+	      console.log(err);
+	      return false;
+	    }
+0386fa4e42975ad0268845666fe9647b|file:///home/kyle/.config/nvim/init.vim|197|1|V|vim
+	nnoremap p p`[v`]=
+0098cf56396b378e69d84cd29e5e4ff7|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|10|1|V|javascript
+	    if (err) {
+	      console.log(err);
+	      return false;
+	    }
+16a6adf920beffd771590deb55ca049a|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|16|1|V|javascript
+	        if (err) {
+	          console.log(err);
+	          return false;
+	        }
+16a6adf920beffd771590deb55ca049a|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|16|1|V|javascript
+	        if (err) {
+	          console.log(err);
+	          return false;
+	        }
+16a6adf920beffd771590deb55ca049a|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|16|1|V|javascript
+	        if (err) {
+	          console.log(err);
+	          return false;
+	        }
+16a6adf920beffd771590deb55ca049a|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|16|1|V|javascript
+	        if (err) {
+	          console.log(err);
+	          return false;
+	        }
+16a6adf920beffd771590deb55ca049a|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|16|1|V|javascript
+	        if (err) {
+	          console.log(err);
+	          return false;
+	        }
+16a6adf920beffd771590deb55ca049a|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|16|1|V|javascript
+	        if (err) {
+	          console.log(err);
+	          return false;
+	        }
+010168e5dd7a8b937ae2adec9afabc4e|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|17|1|V|javascript
+	          console.log(err);
+235ad08b96dfe43e66fbcdb9a2ffc171|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|12|1|V|javascript
+	      return false;
+16a6adf920beffd771590deb55ca049a|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|16|1|V|javascript
+	        if (err) {
+	          console.log(err);
+	          return false;
+	        }
+16a6adf920beffd771590deb55ca049a|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|16|1|V|javascript
+	        if (err) {
+	          console.log(err);
+	          return false;
+	        }
+16a6adf920beffd771590deb55ca049a|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|16|1|V|javascript
+	        if (err) {
+	          console.log(err);
+	          return false;
+	        }
+16a6adf920beffd771590deb55ca049a|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|16|1|V|javascript
+	        if (err) {
+	          console.log(err);
+	          return false;
+	        }
+0098cf56396b378e69d84cd29e5e4ff7|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|10|1|V|javascript
+	    if (err) {
+	      console.log(err);
+	      return false;
+	    }
+0098cf56396b378e69d84cd29e5e4ff7|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|10|1|V|javascript
+	    if (err) {
+	      console.log(err);
+	      return false;
+	    }
+ab2592dee091b31d9b9f6d064bf10e5b|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|10|1|V|javascript
+	    if (err) {
+	      console.log(err);
+0098cf56396b378e69d84cd29e5e4ff7|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|10|1|V|javascript
+	    if (err) {
+	      console.log(err);
+	      return false;
+	    }
+285ea1082d09b266f26afb29e1782e3d|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|2|1|V|javascript
+	const pool = require('./database');
+e653125cffde097c87e8a1d8c2dfa01b|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|12|1|V|sql
+	DROP TABLE IF EXISTS Paymethods;
+207bf19041ac5def5f6125354dd38cd9|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|12|1|V|sql
+	DROP TABLE IF EXISTS Payments;
+903ff48c6312e783b7f002ec66d2a11a|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|254|1|V|javascript
+	              // update database balance to match the stripe balance change
+5dbd3dd3c9a1089516ac07b98ae719b5|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|149|1|V|javascript
+	            // updates customer balance
+6adc2c352173576f378fad44a6f6f69f|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|74|1|V|javascript
+	      // retrieve customer StripeID
+440aa6824d2e106ae3e62465b8d6b9dc|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|21|45|v|javascript
+	.connect
+0e8c411d95df2d9fed108886f8009ef4|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|50|1|V|javascript
+	  const connection = mysql.createConnection({
+	    host: "localhost",
+	    user: "root",
+	    password: "password",
+	    database: "Affordable"
+	  });
+567024dc6accbaa18bdbdbbdb8b99e3a|file:///home/kyle/.bin/pdf|6|9|v|sh
+	$FILE
+d601efc59ffd290cbfc35542b6c47775|file:///home/kyle/.bin/pdf|3|1|V|sh
+	FILE=$(rg --type pdf --files | fzf --no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,gutter:-1 --prompt="Open PDF: ")
+096863e7d8979550884dde75b72903b1|file:///home/kyle/.bin/pdf|3|8|v|sh
+	rg --type pdf --files | fzf --no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,gutter:-1 --prompt="Open PDF: "
+a569e6429923930767b482e795353768|file:///home/kyle/.config/awesome/rc.lua|73|11|v|lua
+	 "firefox --new-window 'https://calendar.google.com/calendar/b/1/r'"
+aa178f8900135ce5679e987eb2a9c760|file:///home/kyle/.config/awesome/keys.lua|84|1|V|lua
+	    awful.key({ modkey,           }, "t",       function () awful.spawn("typora") end,
+	        {description = "open markdown editor", group = "launcher"}),
+729bbb1bab4c716bed15af65afb92151|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|275|1|V|javascript
+	        console.log("decStripeBalance cannot decrease the balance to a negative value");
+930a5fc725f712355148d4cb92486641|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|234|1|V|javascript
+	                console.log(user + " database balance decreased by " + newBalance + " to " + (oldBalance - newBalance));
+13fbb1b3ae30e8ca857cdd612f8c929b|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|192|1|V|javascript
+	                console.log(user + " database balance increased by " + newBalance + " to " + (oldBalance + newBalance));
+13fbb1b3ae30e8ca857cdd612f8c929b|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|192|1|V|javascript
+	                console.log(user + " database balance increased by " + newBalance + " to " + (oldBalance + newBalance));
+362874105dd2a78874fc2c8a87e810ee|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|192|94|v|javascript
+	oldBalance + newBalance
+e2b864f7c8888551f475dd49b7b31062|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|161|1|V|javascript
+	const incBalance = (user, newBalance) => {
+	  getBalance(user, function(oldBalance) {
+	    if (newBalance < 0) {
+	      console.log("incBalance can only take positive ints");
+	      return false;
+	    }
+	    else {
+	      const database = mysql.createConnection({
+	        hostname: "localhost",
+	        user: "root",
+	        password: "password",
+	        database: "Affordable"
+	      });
+	
+	      database.connect(function(err) {
+	        if (err) {
+	          console.log(err);
+	          return false;
+	        }
+	        else {
+	          const sql = "UPDATE Customers SET Balance = ? WHERE ID = 1";
+	
+	          database.query(sql, [[oldBalance + newBalance]], function(err, result) {
+	            if (err) {
+	              database.end();
+	              console.log(err);
+	              return false;
+	            }
+	            else {
+	              database.end();
+	              console.log(user + " database balance increase successful");
+	              return true;
+	            }
+	          })
+	        }
+	      })
+	    }
+	  })
+	}
+3c02eedd41edafcc106a801ad4bd6e99|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|218|1|V|javascript
+	            console.log(customer.name + " Stripe balance increase successful");
+8dc9040fd49b73c77a85ab9fc0fb85b7|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|115|1|V|javascript
+	    hostname: "localhost",
+	    user: "root",
+	    password: "password",
+	    database: "Affordable"
+5f650828552878e93509eba8741ebdc8|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|168|1|V|javascript
+	  getStripeID(user, function(id) {
+	    getStripeBalance(user, function(oldBalance) {
+	      if (newBalance < 0) {
+	        console.log("incBalance can only take positive ints");
+	        return false;
+	      }
+	      stripe.customers.update(
+	        id,
+	        {balance: oldBalance + newBalance},
+	        function(err, customer) {
+	          if (err) {
+	            console.log(err);
+	            return false;
+	          }
+	          else {
+	            console.log(customer.name + " balance increase successful");
+	            return true;
+	          }
+	        }
+	      );
+	    });
+	  });
+af936e1cbd433595a103bd3d723331b9|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|167|1|V|javascript
+	const incStripeBalance = (user, newBalance) => {
+	  getStripeID(user, function(id) {
+	    getStripeBalance(user, function(oldBalance) {
+	      if (newBalance < 0) {
+	        console.log("incBalance can only take positive ints");
+	        return false;
+	      }
+	      stripe.customers.update(
+	        id,
+	        {balance: oldBalance + newBalance},
+	        function(err, customer) {
+	          if (err) {
+	            console.log(err);
+	            return false;
+	          }
+	          else {
+	            console.log(customer.name + " balance increase successful");
+	            return true;
+	          }
+	        }
+	      );
+	    });
+	  });
+	}
+35125d4edc6e4b646aac0bff5cdcbc7e|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|49|1|V|javascript
+	const getID = (user, callback) => {
+	  const database = mysql.createConnection({
+	    host: "localhost",
+	    user: "root",
+	    password: "password",
+	    database: "Affordable"
+	  });
+	
+	  database.connect(function(err) {
+	    if (err) {
+	      console.log(err);
+	      return false;
+	    }
+	    else {
+	      // retrieve customer ID
+	      const sql = "SELECT ID FROM Customers WHERE Username = ?"
+	      database.query(sql, [[user]], function(err, result) {
+	        if (err) {
+	          database.end();
+	          console.log(err);
+	          return false;
+	        }
+	        else {
+	          database.end();
+	          callback(result[0].ID);
+	          return true;
+	        }
+	      })
+	    }
+	  });
+ca923b098948ea40c670f7f59c0dfebd|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|19|1|V|javascript
+	        database: "Affordable"
+ca923b098948ea40c670f7f59c0dfebd|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|19|1|V|javascript
+	        database: "Affordable"
+b3b95d96dc0d75e2e0733cb73c5c1d99|file:///home/kyle/AffordableServerOSU/database/CreateDatabase.sql|6|1|V|sql
+	    `ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+21eec8d39899fb44ffc408196dc7586e|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|4|1|V|javascript
+	const createCustomer = (user, cents) => {
+	    stripe.customers.create({
+	        name: user,
+	        balance: cents,
+	    }, function(err, customer) {
+	        // asynchronously called
+	        if (err) {
+	            console.log(err);
+	            return false;
+	        }
+	        else {
+	            const database = mysql.createConnection({
+	                host: "localhost",
+	                user: "root",
+	                password: "password",
+	                database: "Affordable"
+	            });
+	
+	            database.connect(function(err) {
+	                if (err) {
+	                    console.log(err);
+	                    return false;
+	                }
+	                else {
+	                    // insert user fields into Customers table
+	                    const values = [ [ customer.id, customer.name, customer.balance ] ]
+	                    const sql = 'INSERT INTO Customers (ID, Username, Balance) VALUES ?';
+	                    database.query(sql, [values], function (err, result) {
+	                        if (err) {
+	                            console.log(err);
+	                            database.end();
+	                            return false;
+	                        }
+	                        else {
+	                            console.log(result);
+	                            database.end();
+	                            return true;
+	                        }
+	                    });
+	                }
+	            });
+	        }
+	    });
+	}
+f0cfdfb2f47218650c86666dc74d6cde|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|1|1|V|javascript
+	const stripe = require('stripe')('sk_test_fwABtpH3AuWFaKl2jZ3dcc6e00lJ6hmRPp');
+	const mysql = require('mysql');
+07c4e4902ccd913bedd839913835d901|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|93|1|V|javascript
+	const incBalance = (user, newBalance) => {
+	    getID(user, function(id) {
+	        getBalance(user, function(oldBalance) {
+	            stripe.customers.update(
+	                id,
+	                {balance: oldBalance + newBalance},
+	                function(err, customer) {
+	                    if (err) {
+	                        console.log(err);
+	                    }
+	                    else {
+	                        console.log(customer.name + " balance increase successful");
+	                    }
+	                }
+	            );
+	        });
+	    });
+	}
+c9b320a74be1851af611e5e7f202fbd1|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|112|1|V|javascript
+	getBalance("dev", function(balance) {console.log(balance)});
+bcea791ca687df269c0742229d13472e|file:///home/kyle/chickens.md|2|25|v|markdown
+	fiestas
+bcea791ca687df269c0742229d13472e|file:///home/kyle/chickens.md|2|25|v|markdown
+	fiestas
+bcea791ca687df269c0742229d13472e|file:///home/kyle/chickens.md|2|25|v|markdown
+	fiestas
+5cd8240b829980db7b9c48e1f241f733|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|72|1|V|javascript
+	                    console.log(result[0].ID);
+19ab4b5c04391d6b827aa1af1b92b748|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|50|1|V|javascript
+	    const database = mysql.createConnection({
+	        host: "localhost",
+	        user: "root",
+	        password: "password",
+	        database: "Affordable"
+	    });
+707df5a2a993f1d372091af521138611|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|74|1|V|javascript
+	                database.end();
+2d173202ca69f5684500560a2ec88e9c|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|50|1|V|javascript
+	const getID = (user, returnID) => {
+2d173202ca69f5684500560a2ec88e9c|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|50|1|V|javascript
+	const getID = (user, returnID) => {
+2888d7b480db39e376a3e1345d93b7ed|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|14|1|V|javascript
+	            const database = mysql.createConnection({
+	                host: "localhost",
+	                user: "root",
+	                password: "password",
+	                database: "Affordable"
+	            });
+	
+	            database.connect(function(err) {
+	                if (err) {
+	                    console.log(err);
+	                    return 1;
+	                }
+	                else {
+	                    // insert user fields into Customers table
+	                    const values = [
+	                        [ customer.id, customer.name, customer.balance ]
+	                    ]
+	                    const sql = 'INSERT INTO Customers (ID, Username, Balance) VALUES ?';
+	                    database.query(sql, [values], function (err, result) {
+	                        if (err) {
+	                            console.log(err);
+	                            return 1;
+	                        }
+	                        else {
+	                            console.log(result);
+	                        }
+	                    });
+	                    database.end();
+	                }
+	            });
+	        }
+27fcdc3c74ff7291a0c2f320757eb9d5|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|119|9|v|snippets
+	lma
+75f009274d1d6cc47bcf72993d9d36ed|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|112|9|v|snippets
+	cly
+0d379c25691f1db02fd2dff786ffd19a|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|105|9|v|snippets
+	thm
+d21713e9cd9510c331b9b0b26d333c2b|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|99|9|v|snippets
+	prf
+7515875808ef6219fa6fd725e2105588|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|153|9|v|snippets
+	floor
+9cdf526024bd8ce6500e5da7d055132f|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|119|28|v|snippets
+	lemma
+d8587480a679a8c59dbbe2cd5e34a815|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|112|36|v|snippets
+	corollary
+fb9b788c6e0fbcc7305147be00a88b0f|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|105|32|v|snippets
+	theorem
+028dce7f598c280ba3697045a8316ce2|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|99|9|v|snippets
+	proof
+608e7dc116de7157306012b4f0be82ac|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|95|9|v|snippets
+	dm
+67be68a348da3b850fb7daa10b034528|file:///home/kyle/.config/nvim/coc-settings.json|86|3|v|jsonc
+	snippets
+7b8b965ad4bca0e41ab51de7b31363a1|file:///home/kyle/test/tex/document.tex|78|28|v|tex
+	n
+937c521505941bbe56ec0cde74cebaad|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|37|1|V|javascript
+	                            console.log(result);
+31d209bcdc5f60787ba35b39c4ef9360|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|30|1|V|javascript
+	                    const sql = 'INSERT INTO Customers (ID, Username, Balance) VALUES (\'' + customer.id + '\', \'' + customer.name + '\', ' + customer.balance + ')';
+f26f8a8d03911ae3f844ca92dcf8bb9a|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|33|1|V|javascript
+	                            console.log("customer inserted");
+207bf19041ac5def5f6125354dd38cd9|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|11|1|V|sql
+	DROP TABLE IF EXISTS Payments;
+207bf19041ac5def5f6125354dd38cd9|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|11|1|V|sql
+	DROP TABLE IF EXISTS Payments;
+ebc490eb3a57957e62ccb57bcf85ac9f|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|13|5|v|sql
+	`ID` INT(255),
+f4997f60da2ac4e3845f71c5bade4429|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|6|1|V|sql
+	    `ID` VARCHAR(255),
+6d0877ff7ea48ea9015a04d09c5ed21a|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|46|1|V|javascript
+	    // Insert user fields into Customers table
+	    con.connect(function(err) {
+	        if (err) {
+	            console.log(err);
+	        }
+	        else {
+	            // possibility for sql injection, need to fix later
+	            const sql = 'INSERT INTO Customers (ID, Username, Balance) VALUES (' + customer.id + ', ' + customer.name + ', ' + customer.balance + ')';
+	            // var sql = "INSERT INTO Customers (name, address) VALUES ('Company Inc', 'Highway 37')";
+	            con.query(sql, function (err, result) {
+	                if (err) {
+	                    console.log(err);
+	                }
+	                else {
+	                    console.log("1 record inserted");
+	                }
+	            });
+	        }
+	    });
+f09cc7ee3a9a93273f4b80601cafb00c|file:///home/kyle/AffordableServerOSU/server/payment/customers.js|54|28|v|javascript
+	values
+3c53140e03277eb6072eb48a0fc2afbc|file:///home/kyle/jubilee/worksheets/negatives2/worksheet.tex|5|1|V|tex
+	% Set margins
+	\usepackage[margin=1in]{geometry}
+	
+	% Remove page numbering
+	\pagenumbering{gobble}
+	
+	% Change title formatting
+	\renewcommand{\maketitle}{
+	  {
+	    \textbf{Name:} \underline{\hspace{16em}}
+	    \hfill
+	    \textbf{Date:} \underline{\hspace{7em}}
+	  }
+	}
+e45b2080fe971fe9e39fb519f01eb13d|file:///home/kyle/.config/nvim/plugged/delimitMate/doc/delimitMate.txt|172|10|v|help
+	"\" ' `"
+1f12f7d8abb89d2b2b8d2a2176cb6070|file:///home/kyle/.config/nvim/plugged/delimitMate/doc/delimitMate.txt|177|9|v|help
+	let delimitMate_quotes = "\" ' ` *"
+4c897472ab33bde59f5ab8e09ec73271|file:///home/kyle/.config/nvim/init.vim|409|1|v|vim
+	let delimitMate_matchpairs = "(:),[:],{:}"
+4c897472ab33bde59f5ab8e09ec73271|file:///home/kyle/.config/nvim/init.vim|409|1|v|vim
+	let delimitMate_matchpairs = "(:),[:],{:}"
+cf39e85d376b6403884b670218208909|file:///home/kyle/.config/nvim/init.vim|312|1|V|vim
+	au FileType tex let b:AutoPairs = AutoPairsDefine({'$' : '$'})
+4c897472ab33bde59f5ab8e09ec73271|file:///home/kyle/.config/nvim/init.vim|409|1|v|vim
+	let delimitMate_matchpairs = "(:),[:],{:}"
+d34523921f521b389108226a572b3629|file:///home/kyle/.config/nvim/plugged/delimitMate/doc/delimitMate.txt|165|9|v|help
+	let delimitMate_matchpairs = "(:),[:],{:},<:>"
+4de9c18e623585c384645c4ab41064dc|file:///home/kyle/.config/nvim/plugged/delimitMate/doc/delimitMate.txt|289|9|v|help
+	let delimitMate_balance_matchpairs = 1
+9759e0a6dd796fa87c89daca6fc8c967|file:///home/kyle/.config/nvim/plugged/delimitMate/doc/delimitMate.txt|238|9|v|help
+	let delimitMate_jump_expansion = 1
+306f61194f21139f3d128f3bdb19f8e4|file:///home/kyle/.config/nvim/plugged/delimitMate/doc/delimitMate.txt|215|9|v|help
+	let delimitMate_expand_space = 1
+bfc68db33cb427a515e2a2fcf00ed572|file:///home/kyle/.config/nvim/plugged/delimitMate/doc/delimitMate.txt|204|9|v|help
+	let delimitMate_expand_cr = 1
+1c12af3247c11bef4a6da524cd360c7f|file:///home/kyle/.config/nvim/plugged/pear-tree/doc/pear-tree.txt|504|5|v|help
+	imap <key> <Plug>(PearTreeJump)
+1c12af3247c11bef4a6da524cd360c7f|file:///home/kyle/.config/nvim/plugged/pear-tree/doc/pear-tree.txt|504|5|v|help
+	imap <key> <Plug>(PearTreeJump)
+bc5ee984d02d8e8731fb3cfd86f332f5|file:///home/kyle/.config/nvim/plugged/pear-tree/doc/pear-tree.txt|486|5|v|help
+	imap <key> <Plug>(PearTreeSpace)
+c17fcb1796b1cfd0678d30afe2038562|file:///home/kyle/AffordableServerOSU/server/routes/authentication.js|33|1|V|javascript
+	    const sql = 'INSERT INTO AuthenticationInformation VALUES ?';
+fd25d5fa592bdee2f5541ca2464bfeef|file:///home/kyle/AffordableServerOSU/server/routes/authentication.js|35|1|V|javascript
+	    connectionPool.query(sql, [values], (error, results, fields) => {
+	        if (error) {
+	            console.log(error);
+	            res.status(502).json({error});
+	        }else {
+	            console.log('Profile Records inserted');
+	        }
+	    });
+e8a0a2f6dcf5114bd5403cdb1b8965fb|file:///home/kyle/AffordableServerOSU/server/routes/authentication.js|14|1|V|javascript
+	    const values = [
+	        [
+	            null,
+	            req.body.username,
+	            req.body.password,
+	            req.body.email,
+	            req.body.Question1,
+	            req.body.ans1,
+	            req.body.Question2,
+	            req.body.ans2,
+	            req.body.Question3,
+	            req.body.ans3,
+	            req.body.TwoFactor,
+	            SECRET.base32, 
+	            req.body.profileChange_ts, 
+	            req.body.IP_addr,
+	            req.body.Last_Act
+	        ]
+	    ];
+01c99d2d53d8a2521bdc91c82ee3c532|file:///home/kyle/AffordableServerOSU/server/payment/structure.js|41|1|V|javascript
+	        if (err) {
+	            console.log(err);
+	        }
+	        else {
+	            console.log("ID: " + customer.id);
+	            console.log("Username: " + customer.name);
+	            console.log("Balance: " + customer.balance);
+	        }
+01c99d2d53d8a2521bdc91c82ee3c532|file:///home/kyle/AffordableServerOSU/server/payment/structure.js|41|1|V|javascript
+	        if (err) {
+	            console.log(err);
+	        }
+	        else {
+	            console.log("ID: " + customer.id);
+	            console.log("Username: " + customer.name);
+	            console.log("Balance: " + customer.balance);
+	        }
+12d3102c0d57915e4199baad5606b6df|file:///home/kyle/AffordableServerOSU/server/payment/structure.js|52|1|V|javascript
+	            console.log("Username: " + customer.name);
+12d3102c0d57915e4199baad5606b6df|file:///home/kyle/AffordableServerOSU/server/payment/structure.js|51|1|V|javascript
+	            console.log("Username: " + customer.name);
+bd68480db40b6b1d1382c0addae70d81|file:///home/kyle/AffordableServerOSU/server/payment/structure.js|48|1|V|javascript
+	    // const customer = stripe.customers.create({
+	    //     description: 'Customer for Tester',
+	    //     balance: 100,
+	    //     email: "test@gmail.com",
+	    //     name: "Tester",
+	    // }, function(err, customer) {
+	    //     // asynchronously called
+	    // });
+ef291810d4431912f6849b61cda3141f|file:///home/kyle/AffordableServerOSU/server/payment/structure.js|49|1|V|javascript
+	    //     description: 'Customer for Tester',
+	    //     balance: 100,
+	    //     email: "test@gmail.com",
+	    //     name: "Tester",
+8e72e7b0bfa1588e5317331ebc6374db|file:///home/kyle/AffordableServerOSU/server/payment/structure.js|23|1|V|javascript
+	    // Creates customer object
+	    const customer = stripe.customers.create({
+	        description: 'Customer for',
+	        source: "tok_visa" // obtained with Stripe.js
+	    }, function(err, customer) {
+	        // asynchronously called
+	    });
+033b571c237d78ae1c9908427fdf52ce|file:///home/kyle/jubilee/worksheets/test/worksheet.tex|92|48|v|tex
+	\frac{a}{b}
+d1a687a041a128717e42df32964369b3|file:///home/kyle/jubilee/worksheets/test/worksheet.tex|10|1|V|tex
+	\newcommand*\autoop{\left(}
+	\newcommand*\autocp{\right)}
+	\newcommand*\autoob{\left[}
+	\newcommand*\autocb{\right]}
+	\AtBeginDocument {%
+	   \mathcode`( 32768
+	   \mathcode`) 32768
+	   \mathcode`[ 32768
+	   \mathcode`] 32768
+	   \begingroup
+	       \lccode`\~`(
+	       \lowercase{%
+	   \endgroup
+	       \let~\autoop
+	   }\begingroup
+	       \lccode`\~`)
+	       \lowercase{%
+	   \endgroup
+	       \let~\autocp
+	   }\begingroup
+	       \lccode`\~`[
+	       \lowercase{%
+	   \endgroup
+	       \let~\autoob
+	   }\begingroup
+	       \lccode`\~`]
+	       \lowercase{%
+	   \endgroup
+	       \let~\autocb
+	   }}
+	
+	\delimiterfactor 1001
+	
+	\makeatletter
+	% for amsmath "compatibility" (not sophisticated)
+	% \usepackage{amsmath}
+	\AtBeginDocument {%
+	          \def\resetMathstrut@{%
+	           \setbox\z@\hbox{\the\textfont\symoperators\char40}%
+	           \ht\Mathstrutbox@\ht\z@ \dp\Mathstrutbox@\dp\z@}%
+	}%
+	\makeatother
+99d911f3fb76a9be3f62df3a59af7eb2|file:///home/kyle/jubilee/worksheets/test/worksheet.tex|4|1|V|tex
+	\usepackage{amsmath, amssymb, amsthm, centernot}
+	\DeclareMathOperator{\Exists}{\exists}
+	\DeclareMathOperator{\Nexists}{\nexists}
+	\DeclareMathOperator{\Forall}{\forall}
+	\newcommand{\notimplies}{\centernot\implies}
+	\renewcommand\qedsymbol{$\blacksquare$}
+	\newcommand*\autoop{\left(}
+	\newcommand*\autocp{\right)}
+	\newcommand*\autoob{\left[}
+	\newcommand*\autocb{\right]}
+	\AtBeginDocument {%
+	   \mathcode`( 32768
+	   \mathcode`) 32768
+	   \mathcode`[ 32768
+	   \mathcode`] 32768
+	   \begingroup
+	       \lccode`\~`(
+	       \lowercase{%
+	   \endgroup
+	       \let~\autoop
+	   }\begingroup
+	       \lccode`\~`)
+	       \lowercase{%
+	   \endgroup
+	       \let~\autocp
+	   }\begingroup
+	       \lccode`\~`[
+	       \lowercase{%
+	   \endgroup
+	       \let~\autoob
+	   }\begingroup
+	       \lccode`\~`]
+	       \lowercase{%
+	   \endgroup
+	       \let~\autocb
+	   }}
+	
+	\delimiterfactor 1001
+	
+	\makeatletter
+	% for amsmath "compatibility" (not sophisticated)
+	% \usepackage{amsmath}
+	\AtBeginDocument {%
+	          \def\resetMathstrut@{%
+	           \setbox\z@\hbox{\the\textfont\symoperators\char40}%
+	           \ht\Mathstrutbox@\ht\z@ \dp\Mathstrutbox@\dp\z@}%
+	}%
+	\makeatother
+99d911f3fb76a9be3f62df3a59af7eb2|file:///home/kyle/jubilee/worksheets/test/worksheet.tex|3|1|V|tex
+	\usepackage{amsmath, amssymb, amsthm, centernot}
+	\DeclareMathOperator{\Exists}{\exists}
+	\DeclareMathOperator{\Nexists}{\nexists}
+	\DeclareMathOperator{\Forall}{\forall}
+	\newcommand{\notimplies}{\centernot\implies}
+	\renewcommand\qedsymbol{$\blacksquare$}
+	\newcommand*\autoop{\left(}
+	\newcommand*\autocp{\right)}
+	\newcommand*\autoob{\left[}
+	\newcommand*\autocb{\right]}
+	\AtBeginDocument {%
+	   \mathcode`( 32768
+	   \mathcode`) 32768
+	   \mathcode`[ 32768
+	   \mathcode`] 32768
+	   \begingroup
+	       \lccode`\~`(
+	       \lowercase{%
+	   \endgroup
+	       \let~\autoop
+	   }\begingroup
+	       \lccode`\~`)
+	       \lowercase{%
+	   \endgroup
+	       \let~\autocp
+	   }\begingroup
+	       \lccode`\~`[
+	       \lowercase{%
+	   \endgroup
+	       \let~\autoob
+	   }\begingroup
+	       \lccode`\~`]
+	       \lowercase{%
+	   \endgroup
+	       \let~\autocb
+	   }}
+	
+	\delimiterfactor 1001
+	
+	\makeatletter
+	% for amsmath "compatibility" (not sophisticated)
+	% \usepackage{amsmath}
+	\AtBeginDocument {%
+	          \def\resetMathstrut@{%
+	           \setbox\z@\hbox{\the\textfont\symoperators\char40}%
+	           \ht\Mathstrutbox@\ht\z@ \dp\Mathstrutbox@\dp\z@}%
+	}%
+	\makeatother
+99d911f3fb76a9be3f62df3a59af7eb2|file:///home/kyle/jubilee/worksheets/test/worksheet.tex|3|1|V|tex
+	\usepackage{amsmath, amssymb, amsthm, centernot}
+	\DeclareMathOperator{\Exists}{\exists}
+	\DeclareMathOperator{\Nexists}{\nexists}
+	\DeclareMathOperator{\Forall}{\forall}
+	\newcommand{\notimplies}{\centernot\implies}
+	\renewcommand\qedsymbol{$\blacksquare$}
+	\newcommand*\autoop{\left(}
+	\newcommand*\autocp{\right)}
+	\newcommand*\autoob{\left[}
+	\newcommand*\autocb{\right]}
+	\AtBeginDocument {%
+	   \mathcode`( 32768
+	   \mathcode`) 32768
+	   \mathcode`[ 32768
+	   \mathcode`] 32768
+	   \begingroup
+	       \lccode`\~`(
+	       \lowercase{%
+	   \endgroup
+	       \let~\autoop
+	   }\begingroup
+	       \lccode`\~`)
+	       \lowercase{%
+	   \endgroup
+	       \let~\autocp
+	   }\begingroup
+	       \lccode`\~`[
+	       \lowercase{%
+	   \endgroup
+	       \let~\autoob
+	   }\begingroup
+	       \lccode`\~`]
+	       \lowercase{%
+	   \endgroup
+	       \let~\autocb
+	   }}
+	
+	\delimiterfactor 1001
+	
+	\makeatletter
+	% for amsmath "compatibility" (not sophisticated)
+	% \usepackage{amsmath}
+	\AtBeginDocument {%
+	          \def\resetMathstrut@{%
+	           \setbox\z@\hbox{\the\textfont\symoperators\char40}%
+	           \ht\Mathstrutbox@\ht\z@ \dp\Mathstrutbox@\dp\z@}%
+	}%
+	\makeatother
+d1a687a041a128717e42df32964369b3|file:///home/kyle/jubilee/worksheets/test/worksheet.tex|9|1|V|tex
+	\newcommand*\autoop{\left(}
+	\newcommand*\autocp{\right)}
+	\newcommand*\autoob{\left[}
+	\newcommand*\autocb{\right]}
+	\AtBeginDocument {%
+	   \mathcode`( 32768
+	   \mathcode`) 32768
+	   \mathcode`[ 32768
+	   \mathcode`] 32768
+	   \begingroup
+	       \lccode`\~`(
+	       \lowercase{%
+	   \endgroup
+	       \let~\autoop
+	   }\begingroup
+	       \lccode`\~`)
+	       \lowercase{%
+	   \endgroup
+	       \let~\autocp
+	   }\begingroup
+	       \lccode`\~`[
+	       \lowercase{%
+	   \endgroup
+	       \let~\autoob
+	   }\begingroup
+	       \lccode`\~`]
+	       \lowercase{%
+	   \endgroup
+	       \let~\autocb
+	   }}
+	
+	\delimiterfactor 1001
+	
+	\makeatletter
+	% for amsmath "compatibility" (not sophisticated)
+	% \usepackage{amsmath}
+	\AtBeginDocument {%
+	          \def\resetMathstrut@{%
+	           \setbox\z@\hbox{\the\textfont\symoperators\char40}%
+	           \ht\Mathstrutbox@\ht\z@ \dp\Mathstrutbox@\dp\z@}%
+	}%
+	\makeatother
+844563471b9be59836b65600c741dc5f|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|120|1|V|snippets
+	context "math()"
+	snippet "([A-Za-z])hat" "hat" irA
+	\hat{`!p snip.rv = match.group(1)`}
+	endsnippet
+844563471b9be59836b65600c741dc5f|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|120|1|V|snippets
+	context "math()"
+	snippet "([A-Za-z])hat" "hat" irA
+	\hat{`!p snip.rv = match.group(1)`}
+	endsnippet
+45aeb22cbfab93d3fd195796885776de|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|35|1|V|snippets
+	\DeclareMathOperator{\Nexists}{\nexists}
+d51e6ed6717501c1d7c4bdb209b68576|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|34|1|V|snippets
+	\DeclareMathOperator{\Exists}{\exists}
+933578a92a6b31be51e8d2630f21c147|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|261|1|V|snippets
+	context "math()"
+	snippet te "exists" wA
+	\Exists
+	endsnippet
+45d3b15a0949999634f37e5defb90774|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|37|1|V|snippets
+	\renewcommand\qedsymbol{$\blacksquare$}
+a68b74d2bbd6b85d076f6d4cd01a645f|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|144|9|v|snippets
+	nimp
+371a9b80036e67fc50ad05e507fe1465|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|36|1|V|snippets
+	\newcommand{\notimplies}{\centernot\implies}
+3f6a02328d4f74cd896c975527a5dfdd|file:///home/kyle/example.snippets|279|1|V|snippets
+	\lim_{${1:n} \to ${2:\infty}} 
+	endsnippet
+c4f7277487721faf5e8c94438cfb786d|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|279|1|V|snippets
+	context "math()"
+	snippet sum "summation" wA
+	\sum_{${1:n=1}}^{${2:\infty}} $0
+	endsnippet
+114d6a415b3d04db792ca7c0da0c7a55|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|265|9|v|snippets
+	tf
+627fcdb6cc9a5e16d657ca6cdef0a6bb|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|260|9|v|snippets
+	st
+569ef72642be0fadd711d6a468d68ee1|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|250|9|v|snippets
+	te
+89e6d2b383471fc370d828e552c19e65|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|245|9|v|snippets
+	fa
+2d5a4eebfaf348c097ce2509288ef568|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|235|9|v|snippets
+	in 
+3ce0b2d7bef06aa3dbf2dd9435304ab2|file:///home/kyle/.config/nvim/init.vim|307|1|V|vim
+	au Filetype tex let b:AutoPairs = {'$': '$', '(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`'}
+36414c6662b56e71e583bd18cc4265b0|file:///home/kyle/.config/nvim/plugged/pear-tree/doc/pear-tree.txt|489|58|v|help
+	<Plug>(PearTreeJump)
+10654a6213563379544b82d24c563536|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|107|1|V|snippets
+	context "math()"
+	snippet ceil "ceiling" wA
+	\left\lceil $1 \right\rceil$0
+	endsnippet
+f10f0518019435234185f2109942b397|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|102|1|V|snippets
+	context "math()"
+	snippet floor "floor" wA
+	\lfloor $1 \rfloor$0
+	endsnippet
+f27ed8ba8a41b7d1bcc01c908ba4fe3a|file:///home/kyle/jubilee/worksheets/factorial/worksheet.tex|10|1|V|tex
+	% Change title formatting
+	\renewcommand{\maketitle}{
+	  {
+	    \textbf{Name:} \underline{\hspace{16em}}
+	    \hfill
+	    \textbf{Date:} \underline{\hspace{7em}}
+	  }
+	}
+289ba6e7eb57807354a50bd92ee4443d|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|31|28|v|snippets
+	1:article
+0fd339d5cb4cd20286c089fa9093dcb1|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|31|17|v|snippets
+	1:11pt
+659acd13e2eae6bbd2a34f8b7ab52d15|file:///home/kyle/jubilee/worksheets/test/worksheet.tex|1|1|V|tex
+	\documentclass[11pt]{article}
+	\usepackage[utf8]{inputenc}
+	\usepackage{amsmath, amssymb, amsthm}
+	\DeclareMathOperator{\Exists}{\exists}
+	\DeclareMathOperator{\Forall}{\forall}
+2acb2fdbec42eaf8a04859de26d3c6af|file:///home/kyle/jubilee/worksheets/test/worksheet.tex|3|1|V|tex
+	\usepackage{amsmath, amssymb, amsthm}
+	\DeclareMathOperator{\Exists}{\exists}
+	\DeclareMathOperator{\Forall}{\forall}
+b1be087cddeeff5acd850528f136d4a8|file:///home/kyle/jubilee/worksheets/test/worksheet.tex|3|1|V|tex
+	\usepackage{amsmath}
+	\usepackage{amssymb}
+	\usepackage{amsthm}
+	\DeclareMathOperator{\Exists}{\exists}
+	\DeclareMathOperator{\Forall}{\forall}
+3c95bedc617d9ab2354df95bec8b84a3|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|244|1|V|snippets
+	context "math()"
+	snippet st "such that" wA
+	\mid
+	endsnippet
+ae7d38f03b2a2ac290c60cf85d5560d7|file:///home/kyle/example.snippets|87|1|V|snippets
+	snippet => "implies" Ai
+	\implies
+	endsnippet
+	
+	snippet =< "implied by" Ai
+	\impliedby
+	endsnippet
+	
+	context "math()"
+	snippet iff "iff" Ai
+	\iff
+	endsnippet
+b13be722cbf30e2d30b64aaea5f544fe|file:///home/kyle/example.snippets|87|1|V|snippets
+	snippet => "implies" Ai
+	\implies
+	endsnippet
+	
+	snippet =< "implied by" Ai
+	\impliedby
+	endsnippet
+d26baa621eea6e33b291bf82b24b7ed7|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|207|1|V|snippets
+	context "math()"
+	snippet in "in" wA
+	\in
+	endsnippet
+f6886f0833c75a353b112dc9df7602cc|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|139|1|V|snippets
+	context "math()"
+	snippet or "or" wA
+	\lor
+	endsnippet
+3f93bc59055cd4a9ecc6790f8394153e|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|124|1|V|snippets
+	context "math()"
+	snippet >= "greater than or equal to" wA
+	\geq
+	endsnippet
+8ad6581de6af7852cfc4dd0af03a41da|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|119|1|V|snippets
+	context "math()"
+	snippet <= "less than or equal to" wA
+	\leq
+	endsnippet
+08f6b7084b74f5050db2bb464e430f89|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|37|1|V|sql
+	    `ID` INT(255),
+d6e193046d641c84371ea3c7a154bf4b|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|43|1|V|sql
+	    `CreationTS` TIMESTAMP()
+f10aef47264e4494f8620dc596af05f7|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|42|1|V|sql
+	    `Amount` DEC(65, 2)
+e678a894b8811e444e86311041452325|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|8|1|V|sql
+	    `Balance` DEC(65, 2)
+cba5af72fe8979c1bdd6e1eae4128cca|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|39|1|V|sql
+	    `TransID` INT(255),
+cba5af72fe8979c1bdd6e1eae4128cca|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|38|1|V|sql
+	    `TransID` INT(255),
+4c60f7ddb7826b0a17f1e66eb23e3338|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|28|1|V|sql
+	DROP TABLE IF EXISTS Checking;
+	CREATE TABLE Checking(
+	    `ID` INT(255),
+	    `CheckingID` INT(255),
+	    `Verified` BOOL
+	);
+6bdff3a221f6debbda2c957210d2e9bc|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|21|1|V|sql
+	DROP TABLE IF EXISTS Cards;
+	CREATE TABLE Cards(
+	    `ID` INT(255),
+	    `CardID` INT(255),
+	    -- `Type` ENUM("Card", "Checking"),
+	);
+9ff2550ab4098654bab9947c51f4c436|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|11|1|V|sql
+	DROP TABLE IF EXISTS Payment;
+	CREATE TABLE Payment(
+	    `ID` INT(255),
+	    `PayID` VARCHAR(255),
+	    `Type` ENUM("Card", "Checking"),
+	    `SourceID` INT(255),
+	    `Primary` BOOL,
+	    `Active` BOOL
+	);
+a8a14e87fb63c54c1598c172b3439c63|file:///home/kyle/.config/nvim/init.vim|153|1|V|vim
+	autocmd FileType json setlocal shiftwidth=2
+eb95ba6fbf4a39149f052deb65e2038c|file:///home/kyle/.config/nvim/init.vim|151|1|V|vim
+	autocmd FileType html setlocal shiftwidth=2 | match OverLength /\%81v.\+/
+d7f8a9623a054535815b8e221f74c943|file:///home/kyle/AffordableServerOSU/server/paymentdb.sql|15|1|V|sql
+	    `Type` ENUM("Card", "Checking"),
+c0f20caff1538bb1fa1af5bf230423dc|file:///home/kyle/AffordableServerOSU/server/paymentdb.sql|14|1|V|sql
+	    `PayID` VARCHAR(255),
+f0083d90f2ab9ae62749544de6eb31ca|file:///home/kyle/AffordableServerOSU/server/paymentdb.sql|4|1|V|sql
+	DROP TABLE IF EXISTS Customers;
+	CREATE TABLE Customers(
+	    `ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	    `Username` VARCHAR(255),
+	    `Balance` INT(255),
+	);
+9d0d8645a72f19acc042e373896070b0|file:///home/kyle/AffordableServerOSU/database/CreateDatabase.sql|1|1|V|sql
+	CREATE DATABASE IF NOT EXISTS Affordable;
+	USE Affordable;
+e0c7c7c9eb3d31b0bdbe93d8948d37ed|file:///home/kyle/AffordableServerOSU/database/CreateDatabase.sql|4|1|V|sql
+	DROP TABLE IF EXISTS AuthenticationInformation;
+	CREATE TABLE AuthenticationInformation(
+	    `ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	    `Username` VARCHAR(255),
+	    `Password` VARCHAR(255),
+	    `Email` VARCHAR(255),
+	    `Question1` VARCHAR(255),
+	    `Answer1` VARCHAR(255),
+	    `Question2` VARCHAR(255),
+	    `Answer2` VARCHAR(255),
+	    `Question3` VARCHAR(255),
+	    `Answer3` VARCHAR(255),
+	    `RequiresTwoFactorAuthentication` VARCHAR(255),
+	    `TwoFactorCode` VARCHAR(255), 
+	    `profileChange_ts` VARCHAR(255), 
+	    `IP_addr` VARCHAR(255),
+	    `Last_Act` VARCHAR(255)
+	);
+bc75207cb4ff89db7e2ebf320a1aba1f|file:///home/kyle/AffordableServerOSU/server/routes/authentication.js|14|1|V|javascript
+	  const values = [
+	    [
+	      null,
+	      req.body.username,
+	      req.body.password,
+	      req.body.email,
+	      req.body.Question1,
+	      req.body.ans1,
+	      req.body.Question2,
+	      req.body.ans2,
+	      req.body.Question3,
+	      req.body.ans3,
+	      req.body.TwoFactor,
+	      SECRET.base32, 
+	      req.body.profileChange_ts, 
+	      req.body.IP_addr,
+	      req.body.Last_Act
+	    ]
+ee4d1c124855e4f11d7127a6c0b8cb15|file:///home/kyle/.config/nvim/init.vim|307|17|v|vim
+	let b:AutoPairs = {'$': '$', '\[': '\]', '(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`'}
+47cd3b1017613e5bb084e7c0a5fa84b8|file:///home/kyle/.config/nvim/ftplugin/tex.vim|7|1|V|vim
+	autocmd FileWritePost *.tex silent! !pdflatex -jobname=%:p:t:r temp.tex
+cf7b2189811cdc4d48854c43cac8d0c8|file:///home/kyle/.config/nvim/ftplugin/tex.vim|7|1|V|vim
+	" autocmd BufWritePost *.tex silent! !pdflatex -jobname=%:p:t:r temp.tex
+d8c4d977238d579c4104ec34fa6db10a|file:///home/kyle/.config/nvim/ftplugin/tex.vim|2|1|V|vim
+	nnoremap <leader>p :cd %:p:h<CR>:w temp.tex<CR>:silent! !pdflatex temp.tex<CR>:silent! !zathura temp.pdf &<CR>
+a8c5a13e782168a6ba029d5497a30f20|file:///home/kyle/.config/nvim/init.vim|156|52|v|vim
+	nnoremap <leader>w :w<CR>:cd %:p:h<CR>:silent! !pdflatex %<CR> | nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR> | au CursorHold <buffer> :update | silent! !pdflatex %
+a7d08231226a6009b5507ff7e9912ada|file:///home/kyle/.config/nvim/init.vim|156|1|V|vim
+	autocmd FileType tex setlocal shiftwidth=2 spell | nnoremap <leader>w :w<CR>:cd %:p:h<CR>:silent! !pdflatex %<CR> | nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR> | au CursorHold <buffer> :update | silent! !pdflatex %
+4dc52727007234160a1d2bcf10963217|file:///home/kyle/.config/nvim/init.vim|155|52|v|vim
+	| nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR>
+c963c5ed0849829bc39cd2f8e61dfc92|file:///home/kyle/.config/nvim/init.vim|155|1|V|vim
+	" autocmd FileType tex setlocal shiftwidth=2 spell | nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR>
+623e64e1dec73d1af547bbad806865e4|file:///home/kyle/.config/nvim/init.vim|155|1|V|vim
+	autocmd FileType tex setlocal shiftwidth=2 spell | nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR>
+4404f945ee9b2021043765f78116b1f3|file:///home/kyle/jubilee/worksheets/negatives2/worksheet.tex|57|10|v|tex
+	3^2 \cdot -x
+2250df84e87eb139bcce2dd1743a0545|file:///home/kyle/jubilee/worksheets/negatives2/worksheet.tex|51|10|v|tex
+	9 - 10 \cdot 2
+21325b25d4ed7c0c6e43e6ea3d426d47|file:///home/kyle/jubilee/worksheets/negatives/worksheet.tex|10|1|V|tex
+	% Remove page numbering
+	\pagenumbering{gobble}
+	
+f27ed8ba8a41b7d1bcc01c908ba4fe3a|file:///home/kyle/jubilee/worksheets/negatives/worksheet.tex|13|1|V|tex
+	% Change title formatting
+	\renewcommand{\maketitle}{
+	  {
+	    \textbf{Name:} \underline{\hspace{16em}}
+	    \hfill
+	    \textbf{Date:} \underline{\hspace{7em}}
+	  }
+	}
+1be362d34947241347c394c878ef191a|file:///home/kyle/jubilee/worksheets/pemdas/worksheet.tex|61|1|V|tex
+	  \frac{x^n}{x^m} = x^{n-m}
+6142919b5c6e3beaa1e81e7a2b2983da|file:///home/kyle/jubilee/worksheets/pemdas/worksheet.tex|58|1|V|tex
+	  x^n \cdot x^m = x^{n+m}
+2f826c55be047cf0a4cf7e67f00a1b6b|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|30|1|V|snippets
+	snippet "b(egin)?" "begin{} / end{}" br
+	\begin{$1}$0
+	\end{$1}
+	endsnippet
+6782ff2d4c8a83c2c644898abe6fa0e3|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|71|9|v|snippets
+	"([A-Za-z])_([a-zA-z0-9[a-zA-z0-9]" 
+8f4ba3adbf25ec31135daff16c252085|file:///home/kyle/jubilee/worksheets/pemdas/worksheet.tex|41|10|v|tex
+	6 - 2^2 / 2
+bec4a73df11307df926652ff90abde55|file:///home/kyle/.config/nvim/plugged/vim-snippets/UltiSnips/tex.snippets|70|9|v|snippets
+	<-
+ef5646b673cefa975547f9eeb9d2bd31|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|56|5|v|javascript
+	"cus_FWbLoZLVjs6Bgy"
+0e04f3a2024cec428bf4c0bdf30e83da|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|58|1|V|javascript
+	  stripe.customers.retrieveSource(
+	    "cus_FWbLoZLVjs6Bgy",
+	    "card_1F1YAT2eZvKYlo2CtB2w1gZ9",
+	    function(err, card) {
+	      // asynchronously called
+	    }
+	  )
+	}
+f321fa80e9c68d8d76cf033a98d79891|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|58|1|V|javascript
+	  stripe.customers.retrieveSource(
+	    "cus_FWbLoZLVjs6Bgy",
+	    "card_1F1YAT2eZvKYlo2CtB2w1gZ9",
+	    function(err, card) {
+	      // asynchronously called
+	    }
+	  )
+443789c2a3a7b63e0dcf76b7b91832a0|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|58|7|v|javascript
+	"card_1F1YAT2eZvKYlo2CtB2w1gZ9"
+7d9e7801932d74155868745a891f1d53|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|5|1|V|javascript
+	// double check id vars
+	
+583719b5f17265e1561ea084a0d0178e|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|266|29|v|javascript
+	CardID, CardType
+ba1aa3024cff0561c304203ac39041db|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|275|13|V|javascript
+	            console.log(result[0].CardID);
+29b2139bafe235c3221f87738742a007|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|276|23|V|javascript
+	            var cards;
+	            result.forEach(element => {
+	              console.log(element);
+	            });
+66d96f9329155982c39107b074198d63|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|275|13|V|javascript
+	            // package the card information into a dictionary
+e481db2f694c193bb3c913002af94e36|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|275|23|v|javascript
+	will be sent as an
+e77013fed361addf726af0c2db7db401|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|40|35|V|javascript
+	                    switch(card.funding) {
+	                      case 'credit':
+	                        var funding
+	                    }
+c65e464b8720f61eb991200a93083928|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|33|21|V|javascript
+	                    var funding
+2a687d7722dc68721aead1ad337dd7c5|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|39|49|v|javascript
+	card.funding
+95c359186ccd09eaa3a1f18c791b1c36|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|33|21|v|javascript
+	funding
+0cbdab052d6c562988d3b779e1464da0|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|28|17|V|javascript
+	                // insert into Cards table
+5f139551dc4e151ea4bcd3ad4f1d19b1|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|28|20|v|javascript
+	must change to adjust
+a9bab699152e0f066d06354d923be860|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|285|1|V|javascript
+	// createCustomer("dev1", 100);
+	// getID("dev1", function(id) {console.log(id)});
+8ca29eea54be8bbb7e6719b9b99f2ec8|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|285|1|V|javascript
+	// createCustomer("dev1", 100);
+	// getID("dev1", function(id) {console.log(id)});
+	// getStripeBalance("dev1", function(balance) {console.log(balance)})
+	// incBalance("dev1", 100);
+	// decStripeBalance("dev1", 100);
+	// decBalance("dev1", 300);
+	// getCards("dev1");
+	
+b40d2ebe61060bd596d00dece1bc7b2b|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|284|1|V|javascript
+	
+	// createCustomer("dev1", 100);
+	// getID("dev1", function(id) {console.log(id)});
+	// getStripeBalance("dev1", function(balance) {console.log(balance)})
+	// incBalance("dev1", 100);
+	// decStripeBalance("dev1", 100);
+	// decBalance("dev1", 300);
+	// getCards("dev1");
+02097e3a5f2d01ce2c984edcd0061353|file:///home/kyle/AffordableServerOSU/server/payment/test.js|4|1|V|javascript
+	createCustomer("dev1", 100);
+ab974c60f3c0ff157c8757eb655f3fee|file:///home/kyle/AffordableServerOSU/server/payment/test.js|6|1|V|javascript
+	// getID("dev1", function(id) {console.log(id)});
+467d24566462030bdac5520eb73ab8ef|file:///home/kyle/AffordableServerOSU/server/payment/test.js|6|1|V|javascript
+	// getStripeBalance("dev1", function(balance) {console.log(balance)})
+4be8a8d953e1e92b1e4d5c2e45d01573|file:///home/kyle/AffordableServerOSU/server/payment/test.js|6|1|V|javascript
+	// incBalance("dev1", 100);
+c65b351cd29385ded0cb5ccb0aa92ad8|file:///home/kyle/AffordableServerOSU/server/payment/test.js|6|1|V|javascript
+	// decStripeBalance("dev1", 100);
+ed0e7d7774d2389b64219d8c636d5172|file:///home/kyle/AffordableServerOSU/server/payment/test.js|6|1|V|javascript
+	// decBalance("dev1", 300);
+074ab25e282b4a286132051142a0c88b|file:///home/kyle/AffordableServerOSU/server/payment/test.js|5|1|V|javascript
+	customer.createCustomer("dev2", 200);
+400398775ae479784c1bc613cf0299f9|file:///home/kyle/AffordableServerOSU/server/payment/test.js|5|1|V|javascript
+	resetdb.stdout.on('data', function (data) {
+	  console.log(data);
+	});
+	var ls  = spawn('ls', ['-l']);
+	ls.stdout.on('data', function (data) {
+	  console.log(data);
+	});
+d002b0eddcc5cb8109659c81e58ce665|file:///home/kyle/AffordableServerOSU/server/payment/test.js|4|1|V|javascript
+	const resetdb = spawn('mysql', ['-u', 'root', '-p', '<', 'paymentdb.sql']);
+7e2977298983ed6a76f4c43367d9120e|file:///home/kyle/AffordableServerOSU/server/payment/test.js|4|7|v|javascript
+	cat *.js bad_file | wc -l
+e09278fc449a6251647b0d110b322220|file:///home/kyle/AffordableServerOSU/server/payment/test.js|3|7|v|javascript
+	spawn
+52fb3679b07eb74d90784e612ca5cb30|file:///home/kyle/AffordableServerOSU/server/payment/test.js|3|7|v|javascript
+	exec
+613fbc29c2a5e550764f6a0255be9131|file:///home/kyle/AffordableServerOSU/server/payment/test.js|3|1|V|javascript
+	const {exec} = require('child_process').spawn;
+	exec('mysql -u root -p < paymentdb.sql', (err, stdout, stderr) => {
+	  if (err) {
+	    // node couldn't execute the command
+	    return;
+	  }
+6a9fa7c9a3bc2a07b78d6419ec930e07|file:///home/kyle/AffordableServerOSU/server/payment/test.js|3|1|V|javascript
+	const { exec } = require('child_process');
+	exec('cat *.js bad_file | wc -l', (err, stdout, stderr) => {
+	  if (err) {
+	    // node couldn't execute the command
+	    return;
+	  }
+	
+	  // the *entire* stdout and stderr (buffered)
+	  console.log(`stdout: ${stdout}`);
+	  console.log(`stderr: ${stderr}`);
+	});
+	
+	  // the *entire* stdout and stderr (buffered)
+	  console.log(`stdout: ${stdout}`);
+	  console.log(`stderr: ${stderr}`);
+	});
+06605fc71ee9eddacf74f63ed967eca9|file:///home/kyle/AffordableServerOSU/server/payment/test.js|7|3|V|javascript
+	customer.createCustomer("dev1", 100);
+	customer.createCustomer("dev2", 200);
+	customer.createCustomer("dev3", 300);
+ffcd9f2e1155363ceac60c20bead5237|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|80|1|V|javascript
+	// addCard('dev1', 'tok_amex');
+87c4f77cf11383e5d2db2bee3a4917b3|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|79|1|V|javascript
+	
+	addCard('dev1', 'tok_amex');
+90589c47f06eb971d548591f23c285af|file:///home/kyle/AffordableServerOSU/server/payment/test.js|4|11|v|javascript
+	Custom
+e6d0e1c8fc6a4fcf47869df87e04cd88|file:///home/kyle/AffordableServerOSU/server/payment/test.js|4|11|v|javascript
+	Customers
+e420919c7ae953daa9b2152a77a17e36|file:///home/kyle/AffordableServerOSU/server/payment/test.js|12|1|V|javascript
+	  addCard('dev1', 'tok_amex');
+9bc412089a4b08d1426b83cc2441c743|file:///home/kyle/AffordableServerOSU/server/payment/test.js|10|1|V|javascript
+	    addCard('dev' + i, 'tok_amex');
+16ea9b8788f5673e856466edeab2ca1a|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|285|1|V|javascript
+	module.exports = {
+	  createCustomer,
+	  getID,
+	  getStripeID,
+	  getBalance,
+	  getStripeBalance,
+	  incBalance,
+	  decBalance,
+	  incStripeBalance,
+	  decStripeBalance,
+	  getCards
+	}
+662bbc23eca6e7f276741c227ddb4ed6|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|81|1|V|javascript
+	  createCustomer,
+	  getID,
+	  getStripeID,
+	  getBalance,
+	  getStripeBalance,
+	  incBalance,
+	  decBalance,
+	  incStripeBalance,
+	  decStripeBalance,
+	  getCards
+1dbec44214ddb8b81cc87e655709f2f0|file:///home/kyle/AffordableServerOSU/server/payment/test.js|9|3|V|javascript
+	  // for (var i = 0; i < 3; i++) {
+145a443070cb9f47e7949922d1f09362|file:///home/kyle/AffordableServerOSU/server/payment/test.js|8|1|V|javascript
+	
+	    card.addCard('dev' + i, 'tok_amex');
+	  //   card.addCard('dev' + i, 'tok_amex');
+	  //   card.addCard('dev' + i, 'tok_amex');
+	  // }
+cea099a8f5ac3e289e317d461beb9261|file:///home/kyle/AffordableServerOSU/server/payment/test.js|8|11|v|javascript
+	dev1
+6fb970cf3eea43ed42705f772c1ef8ea|file:///home/kyle/AffordableServerOSU/server/payment/test.js|8|19|v|javascript
+	tok_amex
+195e39c7ca7f4aa76b65d303d1714b2e|file:///home/kyle/AffordableServerOSU/server/payment/test.js|8|1|V|javascript
+	
+	  // card.addCard("dev1", "tok_amex");
+ba5b2c6eb08a94c56cb8d03ac77a7804|file:///home/kyle/AffordableServerOSU/server/payment/test.js|12|1|V|javascript
+	
+	card.addCard("dev1", "tok_amex");
+34a7de860dc1036661f7520877a87d57|file:///home/kyle/AffordableServerOSU/server/payment/test.js|7|3|v|javascript
+	await 
+8ff3549dff2d7241d574cde985cfc4bc|file:///home/kyle/AffordableServerOSU/server/payment/test.js|12|1|V|javascript
+	// customer.getCards("dev1");
+145d87a0472ff09dcfbf06b93b2ebab4|file:///home/kyle/AffordableServerOSU/server/payment/test.js|8|1|V|javascript
+	
+	  await card.addCard("dev1", "tok_amex");
+a1ac983aa3e275625e47c19ef48d2cb9|file:///home/kyle/AffordableServerOSU/server/payment/test.js|4|23|v|javascript
+	async 
+a7045af2e3a21bc88f8c6130afa7f27a|file:///home/kyle/AffordableServerOSU/server/payment/test.js|16|1|V|javascript
+	// card.addCard("dev1", "tok_amex");
+90360797d775991018b2af7881a0f935|file:///home/kyle/AffordableServerOSU/server/payment/test.js|14|3|V|javascript
+	  card.addCard("dev1", "tok_amex");
+0aaea0e51419bbe363b842df23277ef7|file:///home/kyle/AffordableServerOSU/server/payment/test.js|12|1|V|javascript
+	    card.addCard("dev" + i, "tok_amex");
+77255a8651b1af521195622fe127f3f1|file:///home/kyle/AffordableServerOSU/server/payment/test.js|21|5|V|javascript
+	// card.addCard("dev1", "tok_amex");
+	
+ee1198e2039354bfdaf773b4685f72b1|file:///home/kyle/AffordableServerOSU/server/payment/test.js|21|1|V|javascript
+	// initCustomers();
+	// initCards();
+f60ada1ba75643d436658aecac40cdc1|file:///home/kyle/AffordableServerOSU/server/payment/test.js|8|5|V|javascript
+	  customer.createCustomer("dev1", 100);
+	  customer.createCustomer("dev2", 200);
+	  customer.createCustomer("dev3", 300);
+b76d79b970919fcb25cbcfa78e641452|file:///home/kyle/jubilee/worksheets/pemdas/worksheet.tex|25|1|V|tex
+	Evaluate the following expressions:
+	\hfill
+	Remember to use PEMDAS:
+	\begin{flushright}
+	  \textbf Parenthesis $\rightarrow$ \textbf Exponents $\rightarrow$
+	  \textbf Multiplication $\rightarrow$ \textbf Division $\rightarrow$
+	  \textbf Addition $\rightarrow$ \textbf Subtraction
+	\end{flushright}
+	
+	\begin{enumerate}
+	  \item $2 \cdot 4 - 6 / 2$
+	    \vfill
+	
+	  \item $3 - 6 \cdot (2 - 1 \cdot 2)$
+	    \vfill
+	
+	  \item $12 - (6 - 2^2 / 2)^2$
+	    \vfill
+	
+	  \item $y \cdot 3^2 - \frac{4y}{2}$
+	    \vfill
+	
+	  \item $6x - 2x \cdot 8$
+	    \vspace{4em}
+	\end{enumerate}
+	\pagebreak
+cbdb09025b964497ec82fe2d7bb6a814|file:///home/kyle/jubilee/worksheets/review/negatives/worksheet.tex|27|1|V|tex
+	  % Page 1
+	  \item $5d \cdot -1 + d$
+	    \vfill
+	
+	  \item $2f \cdot f \cdot f$
+	    \vfill
+	
+	  \item $3 + -h \cdot -h \cdot h$
+	    \vfill
+	
+	  \item $(-4y + 3y) \cdot (10 - 11)$
+	    \vfill
+	
+	  \item $(1 + 2 + - 3)x - x$
+	    \vspace{4em}
+	    \pagebreak
+4a967947065d8f844ad5f8781091b347|file:///home/kyle/jubilee/worksheets/review/negatives/worksheet.tex|24|1|V|tex
+	Evaluate the following expressions:
+	
+	\begin{enumerate}
+	  % Page 1
+	  \item $5d \cdot -1 + d$
+	    \vfill
+	
+	  \item $2f \cdot f \cdot f$
+	    \vfill
+	
+	  \item $3 + -h \cdot -h \cdot h$
+	    \vfill
+	
+	  \item $(-4y + 3y) \cdot (10 - 11)$
+	    \vfill
+	
+	  \item $(1 + 2 + - 3)x - x$
+	    \vspace{4em}
+	    \pagebreak
+bd1c49ed401d0a739a91880dc5d6bb52|file:///home/kyle/jubilee/worksheets/review/negatives/worksheet.tex|41|5|V|tex
+	    begin{enumerate}
+3f4cede61a59db6832b07ea4f3bd3de1|file:///home/kyle/jubilee/worksheets/review/negatives/worksheet.tex|41|6|v|tex
+	being
+00878505f9eb34442ae74c67dde19411|file:///home/kyle/jubilee/worksheets/pemdas/worksheet.tex|24|1|V|tex
+	% Page 1
+	Evaluate the following expressions:
+	\hfill
+	Remember to use PEMDAS:
+	\begin{flushright}
+	  \textbf Parenthesis $\rightarrow$ \textbf Exponents $\rightarrow$
+	  \textbf Multiplication $\rightarrow$ \textbf Division $\rightarrow$
+	  \textbf Addition $\rightarrow$ \textbf Subtraction
+	\end{flushright}
+	
+	\begin{enumerate}
+	  \item $2 \cdot 4 - 6 / 2$
+	    \vfill
+	
+	  \item $3 - 6 \cdot (2 - 1 \cdot 2)$
+	    \vfill
+	
+	  \item $12 - (6 - 2^2 / 2)^2$
+	    \vfill
+	
+	  \item $y \cdot 3^2 - \frac{4y}{2}$
+	    \vfill
+	
+	  \item $6x - 2x \cdot 8$
+	    \vspace{4em}
+	\end{enumerate}
+	\pagebreak
+f30c62f0d3037d2604427c91bfb39d65|file:///home/kyle/jubilee/worksheets/review/negatives/worksheet.tex|26|1|V|tex
+	\begin{enumerate}
+	  % Page 1
+	  \item $5d \cdot -1 + d$
+	    \vfill
+	
+	  \item $2f \cdot f \cdot f$
+	    \vfill
+	
+	  \item $3 + -h \cdot -h \cdot h$
+	    \vfill
+	
+	  \item $(-4y + 3y) \cdot (10 - 11)$
+	    \vfill
+	
+	  \item $(1 + 2 + - 3)x - x$
+	    \vspace{4em}
+	    \pagebreak
+3268d5dc974e4e10bb1df977413b65b1|file:///home/kyle/jubilee/worksheets/review/negatives/worksheet.tex|24|1|V|tex
+	Evaluate the following expressions:
+	
+a2be4be29f8def2cfea828119d298e8c|file:///home/kyle/jubilee/worksheets/review/negatives/worksheet.tex|25|1|V|tex
+	Evaluate the following expressions:
+9c5b5af93ef14c115b3a2823aec0c523|file:///home/kyle/jubilee/worksheets/review/negatives/worksheet.tex|56|1|V|tex
+	\[ -n \cdot \]
+e6f5de9300afb80745dba9f68f837256|file:///home/kyle/jubilee/worksheets/review/foilfactor/worksheet.tex|1|1|V|tex
+	\documentclass[11pt]{article}
+dc94049089b9eaee925ab7bf12127a32|file:///home/kyle/jubilee/worksheets/review/foilfactor/worksheet.tex|62|3|V|tex
+	    \vfill
+	  \item \textit{Bonus Question:} $y^4 + 8y^2 + 15$
+b4c651aedd9174934cad86b71d5f6862|file:///home/kyle/jubilee/worksheets/review/foilfactor/worksheet.tex|44|10|V|tex
+	    \vfill
+	  \item $(y^2 + 5)(y^2 + 3)$
+972a2393aeb36a458a6c60114eff9400|file:///home/kyle/jubilee/worksheets/review/foilfactor/worksheet.tex|69|5|V|tex
+	    \vfill
+503981f03d4711b83e0a54e72983f765|file:///home/kyle/jubilee/worksheets/review/foilfactor/worksheet.tex|73|1|V|tex
+	
+	    \vspace{5em}
+b7cf27ffe6ea83cdcf8af2ef29de9285|file:///home/kyle/jubilee/worksheets/review/foilfactor/worksheet.tex|65|2|v|tex
+	huge
+50d555bedf30955e21770ef1dd52aaff|file:///home/kyle/test.py|4|5|v|python
+	(i = 1; i < 4; i++)
+69263079e34dca6a8815607dce13dc37|file:///home/kyle/test.py|4|1|V|python
+	for i in range(4):
+c4421b42d4c5176c3b440db83ea8484b|file:///home/kyle/test.py|6|5|V|python
+	    i++
+47c33df47d26224bc0ecbb3d171b6a2c|file:///home/kyle/test.py|5|5|V|python
+	    print("*")
+7f9dcbffe892c57e969448c8b8d31ed4|file:///home/kyle/test.py|5|5|V|python
+	    while cc
+07c73021a68b1918f4240d11157092cb|file:///home/kyle/test.py|8|1|V|python
+	        print()
+2c8f7fe22e5f18a7028b3a26b3b43925|file:///home/kyle/test.py|7|9|V|python
+	        print("*", end = '')
+2171fedf5631e353f611692be47ccfa0|file:///home/kyle/test.py|6|5|V|python
+	    while j <= i:
+e22c5aa4bbb07e5d8f4e332c848aded1|file:///home/kyle/test.py|7|9|V|python
+	        j += 1
+a2e3bb8276b746422b760781b1888d71|file:///home/kyle/test.py|7|5|V|python
+	    print()
+74afa1f8355cfa89a7d464ef7450e432|file:///home/kyle/test.py|5|5|V|python
+	    j = 1
+d90e19003c949f12d09bba477798813b|file:///home/kyle/test.py|5|1|V|python
+	    i = i + 1
+	    print('*\
+	          **\
+	          ***\
+	          ****')
+865464501b7b5d961709e196be144d23|file:///home/kyle/test.py|4|1|V|python
+	while i == 1:
+5905475576a21ecdafdaab879ff45aff|file:///home/kyle/test.py|3|1|V|python
+	i = 1
+e57de1dbd32f265830d0d0367de8f451|file:///home/kyle/.config/awesome/noodle/volume_bar.lua|74|1|V|lua
+	                    vol_id = naughty.notify({
+	                            text = volume,
+	                            icon = beautiful.volume_icon,
+	                            timeout = 2,
+	                            position = "bottom_middle",
+	                            replaces_id = vol_id
+	                        }).id
+	                    prev_vol = volume
+0c5339c52f9321ddc84d61e3bd576fa6|file:///home/kyle/.config/awesome/noodle/volume_bar.lua|62|17|v|lua
+	else 
+210ab9e731c9c36c2c38db15c28a8d1c|file:///home/kyle/.config/awesome/noodle/volume_bar.lua|65|46|v|lua
+	volume
+3eca8d3dba0ce18f0f1f5c624b080376|file:///home/kyle/.config/fish/config.fish|63|1|V|fish
+	set -Ux SHELL /usr/bin/fish
+c48b1416f58121710d9fec0478bb0d34|file:///home/kyle/jubilee/quiz/quiz.tex|59|1|V|tex
+	\usepackage{}
+d52ad86bcab7078625e04dbf8ef89826|file:///home/kyle/jubilee/quiz/quiz.tex|53|1|V|tex
+	
+	\begin{document}
+	
+	\end{document}
+1356051a324c5ce42c61a1a674b964e9|file:///home/kyle/jubilee/quiz/quiz.tex|82|27|v|tex
+	\frac{}{}
