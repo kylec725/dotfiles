@@ -21,6 +21,7 @@ local function update_widget()
         local icon
         if (status == "Charging") then
             icon = ""
+            bat_not = nil
         elseif (charge >= 0 and charge < 15) then
             icon = ""
             if (charge <= 10 and bat_not == nil) then
@@ -31,8 +32,6 @@ local function update_widget()
                         timeout = 0,
                         position = "bottom_middle"
                     }).id
-            else
-                bat_not = nil
             end
         elseif (charge >= 15 and charge < 40) then
             icon = ""
@@ -48,12 +47,16 @@ local function update_widget()
             elseif (charge > 20) then
                 first_warning = true
             end
+            bat_not = nil
         elseif (charge >= 40 and charge < 60) then
             icon = ""
+            bat_not = nil
         elseif (charge >= 60 and charge < 80) then
             icon = ""
+            bat_not = nil
         else
             icon = ""
+            bat_not = nil
         end
         battery.text = icon .. " " .. percent .. "  "
     end)
