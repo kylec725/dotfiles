@@ -1523,3 +1523,389 @@ d52ad86bcab7078625e04dbf8ef89826|file:///home/kyle/jubilee/quiz/quiz.tex|53|1|V|
 	\end{document}
 1356051a324c5ce42c61a1a674b964e9|file:///home/kyle/jubilee/quiz/quiz.tex|82|27|v|tex
 	\frac{}{}
+29ab3315731e6415d8d9ff796aefb532|file:///home/kyle/jubilee/quiz/quiz.tex|78|20|v|tex
+	Addiiton
+de740922226bfa765912eec7f1714511|file:///home/kyle/jubilee/quiz/quiz.tex|87|10|v|tex
+	2 - 7 + 2 / 2 \cdot 4
+3d7c24a6bd13aae7ea7ef14f98e2ad1e|file:///home/kyle/jubilee/quiz/quiz.tex|75|1|V|tex
+	\begin{flushright}
+	  \textbf{
+	    Parenthesis $\to$ Exponent $\to$ Multiplication $\to$
+	    Division $\to$ Addition $\to$ Subtraction
+	  }
+	\end{flushright}
+e94358136e009b75d210299eeac21930|file:///home/kyle/jubilee/quiz/quiz.tex|74|1|V|tex
+	Remember to use PEMDAS
+9b20dc178e524c361a64952c49538a3b|file:///home/kyle/jubilee/quiz/quiz.tex|73|1|V|tex
+	\hfill
+1d550df37345c2f94ca5f34559ed8fb0|file:///home/kyle/temp|1|7|v|
+	054000030
+6a5726df36f391f9f4a7ba1dbb40b8d9|file:///home/kyle/temp|2|7|v|
+	5384487294
+c172c35945dbd9d89eba81ad2f6d541e|file:///home/kyle/.config/awesome/bar/battery.lua|35|17|V|lua
+	                bat_not = nil
+1a950a8f76f1703c7c15b80f5eac64f3|file:///home/kyle/.config/awesome/bar/battery.lua|34|13|V|lua
+	            else
+6c630d533069deb24f077cddd379bde7|file:///home/kyle/.config/awesome/bar/battery.lua|58|1|V|lua
+	            bat_not = nil
+c14377a3fe22e8d48ff11405966f1273|file:///home/kyle/jubilee/worksheets/postquiz/worksheet.tex|63|3|V|tex
+	  \item \textit{Bonus Question:} $y^4 + 8y^2 + 15$
+	    \vspace{3em}
+ac4ee2e98fab8117d2ba30bd7611c262|file:///home/kyle/jubilee/worksheets/postquiz/worksheet.tex|64|11|v|tex
+	[priority]
+813faaddd5cdc73e997efab57956fc7d|file:///home/kyle/AffordableServerOSU/server/payment/stripe/paymentmethod.js|3|1|V|javascript
+	// frontend must use stripe.js to collect and tokenize customer information
+	
+3c805adbe8a7f474178cfcc8ac741efb|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|71|9|V|javascript
+	        // asynchronously called
+026b4f78c4eb67d706fa87ecc788acc3|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|259|1|V|javascript
+	  getID(user, function(id) {
+	    pool.getConnection(function(err, connection) {
+	      if (err) {
+	        console.log(err);
+	        return false;
+	      }
+	      else {
+	        const sql = "SELECT CardID, CardType FROM Cards WHERE ID = ?";
+	        connection.query(sql, [id], function(err, result) {
+	          if (err) {
+	            connection.destroy();
+	            console.log(err);
+	            return false;
+	          }
+	          else {
+	            connection.destroy();
+	            // result is formatted as an array of dictionaries
+	            callback(result)
+	            return true;
+	          }
+	        })
+	      }
+	    })
+	  });
+436161524b0eb5e55d983ccc7fc8fe3c|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|84|1|V|javascript
+	
+	const listCards = (user) => {
+	  stripe.getID(user, function(id) {
+	    pool.getConnection(function(err, connection) {
+	      if (err) {
+	        console.log(err);
+	        return false;
+	      }
+	      else {
+	        const sql = "SELECT CardID, CardType FROM Cards WHERE ID = ?";
+	        connection.query(sql, [id], function(err, result) {
+	          if (err) {
+	            connection.destroy();
+	            console.log(err);
+	            return false;
+	          }
+	          else {
+	            connection.destroy();
+	            // result is formatted as an array of dictionaries
+	            callback(result)
+	            return true;
+	          }
+	        })
+	      }
+	    })
+	  });
+	}
+91ec1f9324753048c0096d036a694f86|file:///home/kyle/AffordableServerOSU/server/payment/test.js|21|1|v|javascript
+	customer
+4c7ff1fd8617be76ef8b915b7c8f1f01|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|295|1|V|javascript
+	  getCards
+6175a8b615aa805c0651a5a25c86f6fe|file:///home/kyle/AffordableServerOSU/server/payment/customer.js|258|1|V|javascript
+	const getCards = (user, callback) => {
+	  getID(user, function(id) {
+	    pool.getConnection(function(err, connection) {
+	      if (err) {
+	        console.log(err);
+	        return false;
+	      }
+	      else {
+	        const sql = "SELECT CardID, CardType FROM Cards WHERE ID = ?";
+	        connection.query(sql, [id], function(err, result) {
+	          if (err) {
+	            connection.destroy();
+	            console.log(err);
+	            return false;
+	          }
+	          else {
+	            connection.destroy();
+	            // result is formatted as an array of dictionaries
+	            callback(result)
+	            return true;
+	          }
+	        })
+	      }
+	    })
+	  });
+	}
+	
+4e530b3af8093277dbc6ba3f28087fb7|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|1|1|V|javascript
+	const stripe = require('stripe')('sk_test_fwABtpH3AuWFaKl2jZ3dcc6e00lJ6hmRPp');
+	const pool = require('../database');
+	const customer = require('../customer');
+c6a1ce490ff4569ba6d93dbd50f35df0|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|7|5|v|javascript
+	'cus_FXDT8w7q6dUkGe'
+1c70ab17ae3a1c75551fabe1a37831e3|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|9|15|v|javascript
+	'btok_1F29502eZvKYlo2CGcs7Q5IQ'
+f874fc5142aada169c16d6f0b9ffb9a4|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|12|1|V|javascript
+	      // asynchronously called
+b3a8d337ef9e7f90656e53afc0890fd1|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|22|1|V|javascript
+	            // asynchronously called
+4321ef5372ef3e1d3ad06a51e916a2f6|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|22|1|V|javascript
+	            pool.getConnection(function(err, connection) {
+	              if (err) {
+	                console.log(err);
+	                return false;
+	              }
+	              else {
+	                // adjust enum to match card type
+	                var cardType;
+	                switch(card.funding) {
+	                  case 'credit':
+	                    cardType = 'Credit';
+	                    break;
+	                  case 'debit':
+	                    cardType = 'Debit';
+	                    break;
+	                }
+	
+	                // insert into Cards table
+	                const values = [ [ id, card.id, cardType ] ];
+	                const sql = 'INSERT INTO Cards (ID, CardID, CardType) VALUES ?';
+	                connection.query(sql, [values], function(err, result) {
+	                  if (err) {
+	                    connection.destroy();
+	                    console.log(err);
+	                    return false;
+	                  }
+	                  else {
+	                    connection.destroy();
+	                    console.log({ ID: id, CardID: card.id, CardType: cardType });
+	                    return true;
+	                  }
+	                })
+	                // console.log(card);
+	              }
+	            });
+cd81f9f55969c822377f076017bb3484|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|36|38|v|javascript
+	Cards
+1d565b9e5303987bb1b1938d5d458bca|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|36|56|v|javascript
+	Card
+017c89a24005e179c5fe6319933dee4e|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|23|1|V|javascript
+	            // adjust enum to match card type
+	            var cardType;
+	            switch(card.funding) {
+	              case 'credit':
+	                cardType = 'Credit';
+	                break;
+	              case 'debit':
+	                cardType = 'Debit';
+	                break;
+	            }
+	
+c01cc5e09d821024989d3eb6b047a3cf|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|38|13|V|javascript
+	            // console.log(card);
+39434350df908bead6898232250bde35|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|54|17|V|javascript
+	                // console.log(card);
+5dd2199ad68327cc76d583b057aee7d5|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|34|54|v|javascript
+	card
+1653fcea1bf45556fd9896f23db2f146|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|34|69|v|javascript
+	, CardType: cardType
+aa993be51a8e0a01653ced6d9e84204a|file:///home/kyle/AffordableServerOSU/server/payment/test.js|11|1|V|javascript
+	const initCards = () => {
+	  for (var i = 1; i < 4; i++) {
+	    card.addCard("dev" + i, "tok_amex");
+	    card.addCard("dev" + i, "tok_amex");
+	    card.addCard("dev" + i, "tok_amex");
+	  }
+	}
+fc3e107b7e612800441a55f65d19c945|file:///home/kyle/AffordableServerOSU/server/payment/test.js|21|5|^v|javascript
+	card
+	card
+	card
+7d8de496c6734b9ec4a01a5c4e2b45fe|file:///home/kyle/AffordableServerOSU/server/payment/test.js|21|18|^v|javascript
+	addCard
+	addCard
+	addCard
+a59cf056fcc005a8fc3548de5b065028|file:///home/kyle/AffordableServerOSU/server/payment/test.js|21|45|^v|javascript
+	tok_amex
+	tok_amex
+	tok_amex
+a7cbe7875ac89aefedc868b858673bcb|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|9|1|V|javascript
+	  stripe.customers.createSource(
+	    user,
+	    {
+	      source: source,
+	    },
+	    function(err, bank_account) {
+	      if (err) {
+	        console.log(err);
+	        return false;
+	      }
+	      else {
+	        pool.getConnection(function(err, connection) {
+	          if (err) {
+	            console.log(err);
+	            return false;
+	          }
+	          else {
+	            // insert into BankAccounts table
+	            const values = [ [ id, card.id, cardType ] ];
+	            const sql = 'INSERT INTO BankAccounts (ID, BankAccountID, CardType) VALUES ?';
+	            connection.query(sql, [values], function(err, result) {
+	              if (err) {
+	                connection.destroy();
+	                console.log(err);
+	                return false;
+	              }
+	              else {
+	                connection.destroy();
+	                console.log({ ID: id, BankAccountID: bank_account.id });
+	                return true;
+	              }
+	            })
+	          }
+	        });
+	      }
+	    }
+	  );
+ee11cbb19052e40b07aac0ca060c23ee|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|8|7|v|javascript
+	user
+8142b568a8f5e6507db458a5db19afb7|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|25|47|v|javascript
+	cardType 
+18adc78cb0485c6addab100a4e410078|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|9|1|V|javascript
+	  customer.getID(user, function(id) {
+b47a40bbe5bd4c1c6506ea10041f9246|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|9|1|V|javascript
+	  customer.getStripeID(user, function(stripeID) {
+	    stripe.customers.createSource(
+	      stripeID,
+	      {
+	        source: source,
+	      },
+	      function(err, bank_account) {
+	        if (err) {
+	          console.log(err);
+	          return false;
+	        }
+	        else {
+	          pool.getConnection(function(err, connection) {
+	            if (err) {
+	              console.log(err);
+	              return false;
+	            }
+	            else {
+	              // insert into BankAccounts table
+	              const values = [ [ id, bank_account.id ] ];
+	              const sql = 'INSERT INTO BankAccounts (ID, BankAccountID, CardType) VALUES ?';
+	              connection.query(sql, [values], function(err, result) {
+	                if (err) {
+	                  connection.destroy();
+	                  console.log(err);
+	                  return false;
+	                }
+	                else {
+	                  connection.destroy();
+	                  console.log({ ID: id, BankAccountID: bank_account.id });
+	                  return true;
+	                }
+	              })
+	            }
+	          });
+	        }
+	      }
+	    );
+	  })
+c5bcf5130b68e46eec5361dc8a0c2844|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|27|74|v|javascript
+	 CardType
+701ca496256dd47c2c54ca56c807f55f|file:///home/kyle/AffordableServerOSU/server/payment/test.js|21|45|v|javascript
+	btok_1F29502eZvKYlo2CGcs7Q5IQ
+09e0ce4ae016b42ca9a91abd05db0f62|file:///home/kyle/AffordableServerOSU/server/payment/test.js|32|1|V|javascript
+	  for (var i = 1; i < 4; i++) {
+	    bank_account.addBankAccount("dev" + i, "tok_amex");
+	    bank_account.addBankAccount("dev" + i, "tok_amex");
+	    bank_account.addBankAccount("dev" + i, "tok_amex");
+	  }
+aec0c5daa836632e5cdef37800817bf3|file:///home/kyle/AffordableServerOSU/server/payment/test.js|30|1|V|javascript
+	    // asynchronously called
+0a7a11b56840ff84376b16b6c4948aa0|file:///home/kyle/AffordableServerOSU/server/payment/test.js|31|46|v|javascript
+	"tok_amex"
+818595ea82b871ca22ea1e1377809c0b|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|1|1|V|javascript
+	const stripe = require('stripe')('sk_test_fwABtpH3AuWFaKl2jZ3dcc6e00lJ6hmRPp');
+700e089c8db50b49f7591ef8d733e932|file:///home/kyle/AffordableServerOSU/server/payment/test.js|31|5|V|javascript
+	    for (var i = 1; i < 4; i++) {
+ea5a1cbe764918679997181a3ea281d3|file:///home/kyle/AffordableServerOSU/server/payment/test.js|34|5|V|javascript
+	    }
+a5cf55f9ea0894de947e1545f0b93d6d|file:///home/kyle/AffordableServerOSU/server/payment/test.js|32|3|V|javascript
+	      bank_account.addBankAccount("dev" + i, token);
+4291c0cebe00799256b33c71e3b75e73|file:///home/kyle/AffordableServerOSU/server/payment/test.js|31|41|v|javascript
+	 + i
+f6944b0705ef549cce4cd9b27f4fbd5a|file:///home/kyle/AffordableServerOSU/server/payment/test.js|38|7|V|javascript
+	      bank_account.addBankAccount("dev1", token);
+b0dc22f73d84474438a53c95d5bf951a|file:///home/kyle/AffordableServerOSU/server/payment/test.js|37|1|V|javascript
+	    }
+	  });
+83e2fe5d07f0ad91109f60224e665b54|file:///home/kyle/AffordableServerOSU/server/payment/test.js|21|1|V|javascript
+	  stripe.tokens.create({
+	    bank_account: {
+	      country: 'US',
+	      currency: 'usd',
+	      account_holder_name: 'Jenny Rosen',
+	      account_holder_type: 'individual',
+	      routing_number: '110000000',
+	      account_number: '000123456789'
+	    }
+	  }, function(err, token) {
+	    if (err) {
+	      console.log(err);
+	      return false;
+	    }
+	    else {
+37985e2bee55de12e1f2897fa301f217|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|63|1|V|javascript
+	const listCards = (user) => {
+	  stripe.getID(user, function(id) {
+	    pool.getConnection(function(err, connection) {
+	      if (err) {
+	        console.log(err);
+	        return false;
+	      }
+	      else {
+	        const sql = "SELECT CardID, CardType FROM Cards WHERE ID = ?";
+	        connection.query(sql, [id], function(err, result) {
+	          if (err) {
+	            connection.destroy();
+	            console.log(err);
+	            return false;
+	          }
+	          else {
+	            connection.destroy();
+	            // result is formatted as an array of dictionaries
+	            callback(result)
+	            return true;
+	          }
+	        })
+	      }
+	    })
+	  });
+	}
+5d5bca43283850715f1ff8835a741d83|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|57|44|v|javascript
+	CardType
+5e0f38bc8b715a8b2d7759d402bb1907|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|76|1|V|javascript
+	// addBankAccount("dev1", 'btok_1F29502eZvKYlo2CGcs7Q5IQ')
+e16af3c75aa85fbcf9c3904c647fc0a7|file:///home/kyle/AffordableServerOSU/server/payment/stripe/card.js|91|1|V|javascript
+	  customer.getStripeID(user, function(stripeID) {
+7e48dca487bb105a4a7711db34cad5dc|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|80|5|V|javascript
+	  stripe.customers.retrieveSource(
+	    "cus_FXDT8w7q6dUkGe",
+	    "ba_1F27im2eZvKYlo2CCSWebMMc",
+	    function(err, external_account) {
+	      // asynchronously called
+	    }
+	  )
+5f9360a0d6d83dfe01ab5e77d45d5ab8|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|79|7|v|javascript
+	"cus_FXDT8w7q6dUkGe"
+8f5da11dd7d17258f1d6f9b063744036|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|80|7|v|javascript
+	"ba_1F27im2eZvKYlo2CCSWebMMc"

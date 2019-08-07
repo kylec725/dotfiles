@@ -130,8 +130,8 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- {{{ Wibar
 -- Create widgets to be added
 mytextclock = wibox.widget.textclock(" %A, %B %d   %I:%M %P ")
-calendar = require("bar.calendar")
-calendar({}):attach(mytextclock)
+-- calendar = require("bar.calendar")
+-- calendar({}):attach(mytextclock)
 mybattery = require("bar.battery")
 mynetwork = require("bar.network")
 
