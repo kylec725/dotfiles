@@ -13,7 +13,6 @@ Plug 'godlygeek/tabular'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'lervag/vimtex'
-Plug 'simnalamburt/vim-mundo'
 
 " File Navigation
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -145,7 +144,7 @@ let g:tex_flavor = "latex"
 
 " undo history
 set undofile
-set undodir=~/.vim/undodir
+set undodir=/tmp
 set undoreload=10000
 
 " indent settings
@@ -396,7 +395,3 @@ let delimitMate_expand_space = 1
 let delimitMate_jump_expansion = 1
 let delimitMate_balance_matchpairs = 1
 let delimitMate_matchpairs = "(:),[:],{:}"
-
-" Mundo !!!!!
-nnoremap <silent> <leader>u :MundoToggle<CR>
-let g:mundo_preview_bottom = 1
