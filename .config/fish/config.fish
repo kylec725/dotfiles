@@ -22,16 +22,6 @@ set fish_color_search_match --background=black
 # autocomplete text color
 set fish_color_autosuggestion black
 
-# sudo !! command
-function sudo
-    if test "$argv" = !!
-        echo $history[1]
-        eval command sudo $history[1]
-    else
-        command sudo $argv
-    end
-end
-
 # aliases
 abbr vim 'nvim'
 abbr ka 'killall'
@@ -51,7 +41,7 @@ abbr 4.. '../../../..'
 abbr 5.. '../../../../..'
 abbr pd 'prevd'
 abbr awm 'cd ~/.config/awesome'
-abbr school 'cd ~/school'
+# abbr sl 'cd ~/school'
 abbr sem 'cd ~/school/fall19'
 
 # environment variables
