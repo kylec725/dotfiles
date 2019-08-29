@@ -143,8 +143,11 @@ highlight PmenuThumb ctermbg=blue
 let g:tex_flavor = "latex"
 
 " undo history
+if !isdirectory("/tmp/.vim-undo-dir")
+    call mkdir("/tmp/.vim-undo-dir", "", 0700)
+endif
 set undofile
-set undodir=/tmp
+set undodir=/tmp/.vim-undo-dir
 set undoreload=10000
 
 " indent settings
