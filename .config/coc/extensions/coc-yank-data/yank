@@ -1909,3 +1909,204 @@ e16af3c75aa85fbcf9c3904c647fc0a7|file:///home/kyle/AffordableServerOSU/server/pa
 	"cus_FXDT8w7q6dUkGe"
 8f5da11dd7d17258f1d6f9b063744036|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|80|7|v|javascript
 	"ba_1F27im2eZvKYlo2CCSWebMMc"
+1b32e88392967def00cc48139d019c76|file:///home/kyle/resume/resume.tex|87|26|v|tex
+	Eclipse, 
+f7a601d0222d86b3fe3306ce374f9942|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|25|5|V|sql
+	    `CardID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+94a08da1fecbb6e8b46990538c7b50b2|file:///home/kyle/AffordableServerOSU/server/payment/test.js|21|39|v|javascript
+	token
+7c04773a07a5ba3b17ca3d0a25786044|file:///home/kyle/AffordableServerOSU/server/payment/test.js|25|7|V|javascript
+	    "id": "ba_1F27im2eZvKYlo2CCSWebMMc",
+	    "object": "bank_account",
+	    "account_holder_name": "Anthony Anderson",
+	    "account_holder_type": "individual",
+	    "bank_name": "STRIPE TEST BANK",
+	    "country": "US",
+	    "currency": "usd",
+	    "customer": null,
+	    "fingerprint": "1JWtPxqbdX5Gamtc",
+	    "last4": "6789",
+	    "metadata": {},
+	    "routing_number": "110000000",
+	    "status": "new"
+1856d9e3361721728343ffb692134714|file:///home/kyle/AffordableServerOSU/server/payment/test.js|26|9|V|javascript
+	      "id": "ba_1F27im2eZvKYlo2CCSWebMMc",
+	      "object": "bank_account",
+	      "account_holder_name": "Anthony Anderson",
+	      "account_holder_type": "individual",
+	      "bank_name": "STRIPE TEST BANK",
+	      "country": "US",
+	      "currency": "usd",
+	      "customer": null,
+	      "fingerprint": "1JWtPxqbdX5Gamtc",
+	      "last4": "6789",
+	      "metadata": {},
+	      "routing_number": "110000000",
+	      "status": "new"
+a8cfde6331bd59eb2ac96f8911c4b666|file:///home/kyle/AffordableServerOSU/server/payment/test.js|24|7|v|javascript
+	object
+bc4558986d78f84a31509106ad855673|file:///home/kyle/AffordableServerOSU/server/payment/test.js|24|15|v|javascript
+	bank_account
+0493170c9ebc6822c355570bcf228e0c|file:///home/kyle/AffordableServerOSU/server/payment/test.js|25|7|v|javascript
+	account_holder_name
+a6209806793ccd6600ca2968f6d8a8bc|file:///home/kyle/AffordableServerOSU/server/payment/test.js|26|7|v|javascript
+	account_holder_type
+7499d288bb49b42dc9d9aac6162f5474|file:///home/kyle/AffordableServerOSU/server/payment/test.js|27|7|v|javascript
+	bank_name
+e909c2d7067ea37437cf97fe11d91bd0|file:///home/kyle/AffordableServerOSU/server/payment/test.js|28|7|v|javascript
+	country
+1af0389838508d7016a9841eb6273962|file:///home/kyle/AffordableServerOSU/server/payment/test.js|29|7|v|javascript
+	currency
+52609e00b7ee307e79eb100099b9a8bf|file:///home/kyle/AffordableServerOSU/server/payment/test.js|31|7|v|javascript
+	fingerprint
+3bc38aa978edc46238a34afdb6bcc925|file:///home/kyle/AffordableServerOSU/server/payment/test.js|32|7|v|javascript
+	last4
+9f81f3c07476a0d97f6793673dd8e475|file:///home/kyle/AffordableServerOSU/server/payment/test.js|33|7|v|javascript
+	metadata
+19076d9581a6fe999614340d8e38f96e|file:///home/kyle/AffordableServerOSU/server/payment/test.js|34|7|v|javascript
+	routing_number
+9acb44549b41563697bb490144ec6258|file:///home/kyle/AffordableServerOSU/server/payment/test.js|35|7|v|javascript
+	status
+812fb52c9c6ab97f4a129ec170476975|file:///home/kyle/AffordableServerOSU/server/payment/test.js|22|5|V|javascript
+	    source: {
+85c9ae5f57d561023c84a9758c0de765|file:///home/kyle/AffordableServerOSU/server/payment/test.js|31|3|V|javascript
+	    "last4": "6789",
+ca5f2793f89b8fd83d2e3e9935c21e97|file:///home/kyle/AffordableServerOSU/server/payment/test.js|26|5|V|javascript
+	    "bank_name": "STRIPE TEST BANK",
+31f50a5c6b524f76dfc84477f8604f9c|file:///home/kyle/AffordableServerOSU/server/payment/test.js|22|5|V|javascript
+	    "id": "ba_1F27im2eZvKYlo2CCSWebMMc",
+ec62ed93bb8ade4a1642246ac7e36570|file:///home/kyle/AffordableServerOSU/server/payment/test.js|27|5|V|javascript
+	    "customer": null,
+daa4fd24ac5066f9d9fef79b91c186b1|file:///home/kyle/AffordableServerOSU/server/payment/test.js|30|5|V|javascript
+	    "status": "new"
+12e27d6262ccbf25778acb403c97039d|file:///home/kyle/AffordableServerOSU/server/payment/test.js|27|3|V|javascript
+	    "fingerprint": "1JWtPxqbdX5Gamtc",
+6b570410a3d03f6f038f54abbe6f8138|file:///home/kyle/AffordableServerOSU/server/payment/test.js|27|5|V|javascript
+	    "metadata": {},
+8a98c86b49d93794705dd64bcdbbe3ab|file:///home/kyle/AffordableServerOSU/server/payment/stripe/bankaccount.js|50|3|v|javascript
+	stripe
+9c12c6df5edc4f069b06646fd5ba3a81|file:///home/kyle/AffordableServerOSU/server/payment/paymentdb.sql|33|6|v|sql
+	BankAccountID
+97b2611dfbc8d86aa0c416643ca44aa4|file:///home/kyle/AffordableServerOSU/server/payment/test.js|41|1|V|javascript
+	//   card.getCard("dev1", result[0].CardID, function(card) {
+	//     console.log(card);
+	//   })
+2f6a8b9eb13fc34b1c24bfde4c3a4e16|file:///home/kyle/AffordableServerOSU/server/payment/test.js|37|5|v|javascript
+	card.getCard
+925aa07788b319fcb39733f82000f9f7|file:///home/kyle/.config/nvim/init.vim|399|1|V|vim
+	
+	" Mundo !!!!!
+	nnoremap <silent> <leader>u :MundoToggle<CR>
+	let g:mundo_preview_bottom = 1
+c58bd23fc968337f64d84645c9f56532|file:///home/kyle/.config/nvim/init.vim|16|1|V|vim
+	Plug 'simnalamburt/vim-mundo'
+312b65a55ed13f8bf336efdb755c69b2|file:///home/kyle/.config/nvim/init.vim|147|13|v|vim
+	~/.vim/undodir
+77f1763ff9e712ec0bbf973fbcc75363|file:///home/kyle/.config/fish/config.fish|25|1|V|fish
+	# sudo !! command
+	function sudo
+	    if test "$argv" = !!
+	        echo $history[1]
+	        eval command sudo $history[1]
+	    else
+	        command sudo $argv
+	    end
+	end
+	
+50eff2fdd486d778fc3b3a22ee4f50fc|file:///home/kyle/.config/fish/config.fish|44|7|v|fish
+	choo
+08f90c1a417155361a5c4b8d297e0d78|file:///home/kyle/AffordableServerOSU/server/payment/stripe/charges.js|7|13|v|javascript
+	2000
+33309f195ff83c920886090288b19d21|file:///home/kyle/AffordableServerOSU/server/payment/stripe/charges.js|8|15|v|javascript
+	"usd"
+e56c628bafd5c62fda4f9b3f8de9b276|file:///home/kyle/AffordableServerOSU/server/payment/stripe/charges.js|9|13|v|javascript
+	"tok_visa"
+dea61c450c7345ec4fb06ed2fd9d60c3|file:///home/kyle/AffordableServerOSU/server/payment/stripe/charges.js|10|5|V|javascript
+	    description: "Charge for jenny.rosen@example.com"
+e3fb3f3381b848f57f35cb3558733f84|file:///home/kyle/packages/sxiv/config.h|108|21|v|c
+	BackSpace
+e1d8f2739c9618320d862ee874efc94a|file:///home/kyle/packages/sxiv/config.h|112|1|V|c
+		{ ControlMask,  XK_n,             i_navigate_frame,     +1 },
+		{ ControlMask,  XK_p,             i_navigate_frame,     -1 },
+1789b1b15c7fb21d95359c27e18ce6a3|file:///home/kyle/packages/sxiv/config.h|103|1|V|c
+		{ 0,            XK_n,             i_navigate,           +1 },
+ee9f42e3e3388511c3158a8a70c1d2a5|file:///home/kyle/packages/sxiv/config.h|107|1|V|c
+		{ 0,            XK_p,             i_navigate,           -1 },
+f8f2bc7682d884aa884b99520bc1abf7|file:///home/kyle/packages/sxiv/config.h|106|2|V|c
+		{ 0,            XK_space,         i_navigate,           +1 },
+d3cc5d44f010ade3178c840e9aaa2320|file:///home/kyle/.config/nvim/init.vim|150|1|V|vim
+	set undodir=/tmp
+1545e945d5c3e7d9fa642d0a57fc8432|file:///home/kyle/test.py|5|1|v|python
+	     
+0343401b097deef3fb2f180d599cc4fb|file:///home/kyle/test.py|4|1|V|python
+	l = []
+b431c160c433fc6a93e902ec56b29e9b|file:///home/kyle/test.py|7|9|V|python
+	        if (p[i] + p)
+b11cf00dcdf69d58076c676f6a31a430|file:///home/kyle/test.py|6|26|v|python
+	 - 1
+dbe27726db1d1647bdc37be3960457d0|file:///home/kyle/test.py|11|1|V|python
+	prime_sum(66)
+93db6e5b5e5c07d34a75536a898ff0d8|file:///home/kyle/test.py|8|16|v|python
+	p[i] + p[j] == num
+b6022a8cee4566242a14580272b0673b|file:///home/kyle/test.py|6|14|v|python
+	range(len(p))
+8459deb7ccbe3cff4572f7200d484c8b|file:///home/kyle/test.py|8|16|v|python
+	p[i]
+c2ddd54134390cd1338d44bf3f53bfb6|file:///home/kyle/test.py|8|20|v|python
+	p[j]
+994bf13fd87f5e77c3deff2f251013a5|file:///home/kyle/test.py|7|9|V|python
+	        print(i)
+ae52ae9eed55c196375a2f2c4d3c9854|file:///home/kyle/school/cassilly-scholarship/cassilly.tex|10|1|V|tex
+	% Specifies the header details
+	\usepackage{fancyhdr}
+	\setlength{\headheight}{15pt}
+	\pagestyle{fancy}
+	\rhead{Kyle Chan}
+89759e1284e2479b991d2669de104942|file:///home/kyle/school/fall19/food/reflection/reflection.tex|12|1|V|tex
+	words
+fcb3ce9ad36bf303479d015c3c19b74e|file:///home/kyle/school/fall19/food/reflection/reflection.tex|16|34|v|tex
+	thought to consume
+84d7dece1c99cf49ffd62bc96c9dae40|file:///home/kyle/school/fall19/food/reflection/reflection.tex|18|32|v|tex
+	meet criteria for other
+d5edbd5251508a443e8c0fe6b4730433|file:///home/kyle/school/fall19/food/reflection/reflection.tex|18|4|v|tex
+	consciously consume food to try and make sure I have nutrients
+130df7b21c1137a24cebecce7413ee32|file:///home/kyle/school/fall19/food/reflection/reflection.tex|18|4|v|tex
+	have to 
+c11045b445631e99f95a42e18a112f07|file:///home/kyle/school/fall19/food/reflection/reflection.tex|18|39|v|tex
+	. I have
+	never had a deficiency as I tend to enjoy eating q
+e630e6644d5e17a524d329a81ff0035e|file:///home/kyle/school/cassilly-scholarship/cassilly.tex|5|1|V|tex
+	\usepackage{setspace}
+89ac9baed3b2bf8b4eac36b5efea0b02|file:///home/kyle/school/cassilly-scholarship/cassilly.tex|7|1|V|tex
+	\setlength{\parindent}{2em}
+	\setlength{\parskip}{1em}
+b1c6e831f926ef17478fb21ad94638f6|file:///home/kyle/school/cassilly-scholarship/cassilly.tex|4|1|V|tex
+	% Defines the document spacing
+	\usepackage{setspace}
+	\onehalfspacing
+	\setlength{\parindent}{2em}
+	\setlength{\parskip}{1em}
+dc2d6d08dd2d90bb8acf96acf8c0a747|file:///home/kyle/school/fall19/food/reflection/reflection.tex|13|1|V|tex
+	\onehalfspacing
+becee8be7889053534f5279b4abe61c6|file:///home/kyle/school/fall19/food/reflection/reflection.tex|34|17|v|tex
+	I noticed that
+efdb00a72c3276a195a5eb0707500a58|file:///home/kyle/school/fall19/food/reflection/reflection.tex|36|1|V|tex
+	Many of
+804f672651933951cd79f5cd6e6c3a87|file:///home/kyle/school/fall19/food/reflection/reflection.tex|36|47|v|tex
+	too 
+e669a6c3047adc4d7b884139ceb34f4f|file:///home/kyle/school/fall19/food/reflection/reflection.tex|39|1|V|tex
+	For a majority of my studies
+6d52012dca4fc77aa554f25430aef501|file:///home/kyle/school/fall19/food/reflection/reflection.tex|45|67|v|tex
+	slice
+82dffcbeeb43bff74ad19aa3c3dfaddb|file:///home/kyle/school/fall19/food/reflection/reflection.tex|47|51|v|tex
+	that 
+b2951f74b06a7c8f8563235dc87c0f6b|file:///home/kyle/resume/resume.tex|112|1|V|tex
+	\subsubsection{
+cf02b56e7cb412061bba0894b8e444f4|file:///home/kyle/resume/resume.tex|112|1|V|tex
+	\subsubsection{
+	  Keeps separate database from Stripe API to keep track of customers
+	}
+9abcf4b78098c82c1f1ba184a805188a|file:///home/kyle/resume/resume.tex|106|3|v|tex
+	Keeps
+ec449fce88165b27944a466bad2c97c6|file:///home/kyle/test/tex/document.tex|131|3|V|tex
+	  aslkdjflksjf
