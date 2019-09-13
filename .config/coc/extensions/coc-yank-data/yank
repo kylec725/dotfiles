@@ -2110,3 +2110,54 @@ cf02b56e7cb412061bba0894b8e444f4|file:///home/kyle/resume/resume.tex|112|1|V|tex
 	Keeps
 ec449fce88165b27944a466bad2c97c6|file:///home/kyle/test/tex/document.tex|131|3|V|tex
 	  aslkdjflksjf
+f9023e73255d5c8e0b7d75b0de4fe64f|file:///home/kyle/school/fall19/nasa.py|4|1|V|python
+	    [0, 0, 0, 0, 0, 0, 0],
+55b3ab7bde700a22f4c96512df3d2842|file:///home/kyle/school/fall19/nasa.py|6|1|V|python
+	    []
+a167bae9e0930602a4a759bd65d10253|file:///home/kyle/school/fall19/nasa.py|5|1|V|python
+	    [0, 67, 0, 93, 0, 11, 0],
+59ce0ea1bde2ba0d654e3f2a88586a74|file:///home/kyle/school/fall19/nasa.py|6|1|V|python
+	    [0, 0, 0, 0, 0, 0, 0],
+	    [0, 75, 0, 19, 0, 7, 0],
+fe4a5790e9820644b3bbf4fff3258475|file:///home/kyle/school/fall19/nasa.py|14|7|v|python
+	m[1][3]
+74f6450bc682da9a79179d89b422e840|file:///home/kyle/school/fall19/nasa.py|14|1|V|python
+	print(M[1][cc3])
+2d749a51cc103f696af88f91c263eb00|file:///home/kyle/school/fall19/nasa.py|19|13|V|python
+	            print(k)
+fc8a14430758ccc3f448e398a45b7a62|file:///home/kyle/school/fall19/nasa.py|4|24|v|python
+	, 0, 0
+ef3f9b462feaedec6341340dcbf33334|file:///home/kyle/school/fall19/nasa.py|5|21|v|python
+	, 11, 0
+92c53f938604b3bc9f9a9555a2253117|file:///home/kyle/school/fall19/nasa.py|7|22|v|python
+	, 7, 0
+30541ab423fe0bb4fc7f063705e02fd4|file:///home/kyle/school/fall19/nasa.py|9|5|V|python
+	    [0, 94, 0, 18, 0, 32, 0]
+8b775db66ffe17a7db5544ba456b5400|file:///home/kyle/school/fall19/nasa.py|11|6|v|python
+	67, 93, 11, 75, 19, 7, 94, 18, 32
+66a8aa8d85b89a7478eadbb9318915a3|file:///home/kyle/school/fall19/nasa.py|14|38|V|python
+	    if i > 0 and i < n and i % 2 == 1:
+	        if j > 0 and j < n and j % 2 == 1:
+	            odds = n / 2
+	            k = int((i // odds) + (j - 1) / 2)
+	            return L[k]
+	        else:
+	            return 0
+	    else:
+	        return 0
+145215228f96e49d13c564ecc17083bb|file:///home/kyle/school/fall19/nasa.py|15|1|V|python
+	print(getValue(1, 3, 7))
+bc95dfc14146aa23e43f2ea7af04d310|file:///home/kyle/school/fall19/nasa.py|19|11|V|python
+	            
+9643a1b24d5eff56ec43a7f1e3bce494|file:///home/kyle/school/fall19/nasa.py|19|13|V|python
+	            k = math.ceil(i / 2)
+6712290cdb648fa83aee8fc11e189947|file:///home/kyle/school/fall19/nasa.py|23|13|V|python
+	            return 0
+6fee666d16bfa3ecbc516290cb59aa0a|file:///home/kyle/school/fall19/nasa.py|19|19|v|python
+	ceil
+ef3788ebd9cd763fd539a5e5c6fb76c3|file:///home/kyle/school/fall19/nasa.py|23|13|V|python
+	            print("k:", k)
+65dcf53e02591e919913da7d8d19ea46|file:///home/kyle/school/fall19/greek/pandora/pandora.tex|17|1|V|tex
+	Hello it's me
+c42e300b8611588a5f04000a8bbd899e|file:///home/kyle/school/fall19/greek/pandora/pandora.tex|12|1|V|tex
+	\date{}
