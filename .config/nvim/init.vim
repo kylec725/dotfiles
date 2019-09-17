@@ -169,7 +169,7 @@ autocmd FileType c setlocal shiftwidth=4 cindent | match OverLength /\%81v.\+/
 autocmd FileType cpp setlocal shiftwidth=4 cindent cinoptions=g0+N-sw | match OverLength /\%81v.\+/
 autocmd FileType java setlocal shiftwidth=4 | match OverLength /\%81v.\+/
 autocmd FileType javascript setlocal shiftwidth=2
-autocmd FileType python setlocal shiftwidth=4 | match OverLength /\%81v.\+/
+autocmd FileType python setlocal shiftwidth=4
 autocmd FileType vim setlocal shiftwidth=4
 autocmd FileType sql setlocal shiftwidth=4
 autocmd FileType lua setlocal shiftwidth=4
@@ -376,6 +376,7 @@ autocmd BufWinEnter,WinEnter term://* startinsert
 
 " indent line
 let g:indentLine_char = '▏'
+" let g:indentLine_color_term = 7
 
 " highlight word under cursor
 highlight link illuminatedWord Visual
