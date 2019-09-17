@@ -30,6 +30,7 @@ abbr um 'usb-mount'
 # git
 abbr ga 'git add'
 abbr gc 'git commit'
+abbr gco 'git checkout'
 abbr gp 'git pull'
 abbr gph 'git push'
 abbr gs 'git status'
