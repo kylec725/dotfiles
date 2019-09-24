@@ -56,3 +56,22 @@
 (I) 2019-03-02T11:52:53 - qBittorrent is successfully listening on interface 0.0.0.0 port: UDP/8999
 (I) 2019-03-02T11:52:53 - External IP: 129.2.180.149
 (I) 2019-03-02T11:53:27 - UPnP / NAT-PMP support [OFF]
+(N) 2019-07-29T14:32:59 - qBittorrent v4.1.6 started
+(I) 2019-07-29T14:32:59 - qBittorrent is trying to listen on any interface port: 8999
+(N) 2019-07-29T14:32:59 - Peer ID: -qB4160-
+(N) 2019-07-29T14:32:59 - HTTP User-Agent is 'qBittorrent/4.1.6'
+(I) 2019-07-29T14:32:59 - DHT support [ON]
+(I) 2019-07-29T14:32:59 - Local Peer Discovery support [ON]
+(I) 2019-07-29T14:32:59 - PeX support [ON]
+(I) 2019-07-29T14:32:59 - Anonymous mode [OFF]
+(I) 2019-07-29T14:32:59 - Encryption support [ON]
+(I) 2019-07-29T14:32:59 - Embedded Tracker [OFF]
+(I) 2019-07-29T14:32:59 - UPnP / NAT-PMP support [ON]
+(I) 2019-07-29T14:32:59 - GeoIP database loaded. Type: GeoLite2-Country. Build time: Wed Feb 20 06:28:21 2019.
+(N) 2019-07-29T14:32:59 - Options were saved successfully.
+(I) 2019-07-29T14:32:59 - qBittorrent is successfully listening on interface :: port: TCP/8999
+(I) 2019-07-29T14:32:59 - qBittorrent is successfully listening on interface 0.0.0.0 port: TCP/8999
+(I) 2019-07-29T14:32:59 - qBittorrent is successfully listening on interface 0.0.0.0 port: UDP/8999
+(I) 2019-07-29T14:33:01 - External IP: 67.245.150.68
+(I) 2019-07-29T14:33:01 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using UPnP. external port: TCP/8999
+(I) 2019-07-29T14:33:02 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using UPnP. external port: UDP/8999

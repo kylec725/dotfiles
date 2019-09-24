@@ -3172,3 +3172,89 @@ INFO 9/11/2019, 12:37:31 PM  [blur] 1
 INFO 9/11/2019, 6:13:55 PM  [focus] 1
 INFO 9/11/2019, 6:13:57 PM  ------------------quit------------------
 INFO 9/11/2019, 6:13:57 PM  ------------------will-quit------------------
+INFO 9/13/2019, 12:05:35 PM  ------------------start------------------
+INFO 9/13/2019, 12:05:35 PM  typora version: 0.9.77
+DEBUG 9/13/2019, 12:05:35 PM  [ '/usr/share/typora/Typora' ]
+ERROR 9/13/2019, 12:05:35 PM  (node:5625) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+DEBUG 9/13/2019, 12:05:35 PM  pinFolder /home/kyle/notes
+DEBUG 9/13/2019, 12:05:35 PM  app.openFile
+INFO 9/13/2019, 12:05:35 PM  [focus] 1
+INFO 9/13/2019, 12:05:38 PM  switchDocument
+INFO 9/13/2019, 12:05:38 PM  addRecentDocument
+INFO 9/13/2019, 12:06:37 PM  switchDocument
+INFO 9/13/2019, 12:06:37 PM  addRecentDocument
+INFO 9/13/2019, 12:06:46 PM  switchDocument
+INFO 9/13/2019, 12:06:46 PM  addRecentDocument
+INFO 9/13/2019, 12:06:46 PM  [blur] 1
+INFO 9/13/2019, 12:06:48 PM  [focus] 1
+INFO 9/13/2019, 12:06:50 PM  switchDocument
+INFO 9/13/2019, 12:06:50 PM  addRecentDocument
+INFO 9/13/2019, 12:06:52 PM  [blur] 1
+INFO 9/13/2019, 12:07:18 PM  [focus] 1
+INFO 9/13/2019, 12:12:36 PM  [blur] 1
+INFO 9/13/2019, 12:15:28 PM  [focus] 1
+INFO 9/13/2019, 12:17:15 PM  [blur] 1
+INFO 9/13/2019, 12:20:26 PM  [focus] 1
+INFO 9/13/2019, 12:20:26 PM  [blur] 1
+INFO 9/13/2019, 12:20:27 PM  [focus] 1
+INFO 9/13/2019, 12:20:27 PM  [blur] 1
+INFO 9/13/2019, 12:26:17 PM  [focus] 1
+INFO 9/13/2019, 12:26:24 PM  [blur] 1
+INFO 9/13/2019, 12:30:52 PM  [focus] 1
+INFO 9/13/2019, 12:45:48 PM  ------------------quit------------------
+INFO 9/13/2019, 12:45:48 PM  ------------------will-quit------------------
+INFO 9/16/2019, 12:02:15 PM  ------------------start------------------
+INFO 9/16/2019, 12:02:15 PM  typora version: 0.9.77
+DEBUG 9/16/2019, 12:02:15 PM  [ '/usr/share/typora/Typora' ]
+ERROR 9/16/2019, 12:02:15 PM  (node:144649) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+DEBUG 9/16/2019, 12:02:15 PM  pinFolder /home/kyle/notes
+DEBUG 9/16/2019, 12:02:15 PM  app.openFile
+INFO 9/16/2019, 12:02:15 PM  [focus] 1
+INFO 9/16/2019, 12:02:18 PM  switchDocument
+INFO 9/16/2019, 12:02:18 PM  addRecentDocument
+INFO 9/16/2019, 12:02:28 PM  [blur] 1
+INFO 9/16/2019, 12:02:28 PM  [focus] 1
+INFO 9/16/2019, 12:02:29 PM  [blur] 1
+INFO 9/16/2019, 12:06:42 PM  [focus] 1
+INFO 9/16/2019, 12:09:38 PM  [blur] 1
+INFO 9/16/2019, 12:13:18 PM  [focus] 1
+INFO 9/16/2019, 12:13:37 PM  [blur] 1
+INFO 9/16/2019, 12:14:34 PM  [focus] 1
+INFO 9/16/2019, 12:15:54 PM  [blur] 1
+INFO 9/16/2019, 12:21:59 PM  [focus] 1
+INFO 9/16/2019, 12:23:55 PM  [blur] 1
+INFO 9/16/2019, 12:42:54 PM  [focus] 1
+INFO 9/16/2019, 12:42:57 PM  ------------------quit------------------
+INFO 9/16/2019, 12:42:57 PM  ------------------will-quit------------------
+INFO 9/17/2019, 5:10:33 PM  ------------------start------------------
+INFO 9/17/2019, 5:10:33 PM  typora version: 0.9.77
+DEBUG 9/17/2019, 5:10:33 PM  [ '/usr/share/typora/Typora' ]
+ERROR 9/17/2019, 5:10:33 PM  (node:286260) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+DEBUG 9/17/2019, 5:10:33 PM  pinFolder /home/kyle/notes
+DEBUG 9/17/2019, 5:10:33 PM  app.openFile
+INFO 9/17/2019, 5:10:33 PM  [focus] 1
+INFO 9/17/2019, 5:10:37 PM  switchDocument
+INFO 9/17/2019, 5:10:37 PM  addRecentDocument
+INFO 9/17/2019, 5:15:44 PM  [blur] 1
+INFO 9/17/2019, 5:15:59 PM  [focus] 1
+INFO 9/17/2019, 5:27:47 PM  [blur] 1
+INFO 9/17/2019, 5:27:57 PM  [focus] 1
+INFO 9/17/2019, 5:27:58 PM  [blur] 1
+INFO 9/17/2019, 5:33:43 PM  [focus] 1
+INFO 9/17/2019, 5:34:07 PM  [blur] 1
+INFO 9/17/2019, 5:34:28 PM  [focus] 1
+INFO 9/17/2019, 5:34:32 PM  [blur] 1
+INFO 9/17/2019, 5:34:34 PM  [focus] 1
+INFO 9/17/2019, 5:34:37 PM  [blur] 1
+INFO 9/17/2019, 5:35:07 PM  [focus] 1
+INFO 9/17/2019, 5:35:15 PM  [blur] 1
+INFO 9/17/2019, 5:35:16 PM  [focus] 1
+INFO 9/17/2019, 5:35:18 PM  [blur] 1
+INFO 9/17/2019, 5:35:18 PM  [focus] 1
+INFO 9/17/2019, 5:35:21 PM  [blur] 1
+INFO 9/17/2019, 5:37:43 PM  [focus] 1
+INFO 9/17/2019, 5:37:43 PM  [blur] 1
+INFO 9/17/2019, 5:39:08 PM  [focus] 1
+INFO 9/17/2019, 5:42:53 PM  [blur] 1
+INFO 9/17/2019, 5:47:51 PM  [focus] 1
+INFO 9/17/2019, 5:47:52 PM  [blur] 1

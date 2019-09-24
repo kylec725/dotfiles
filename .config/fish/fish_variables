@@ -16,7 +16,9 @@ SETUVAR _fish_abbr_at:audio\x2dtoggle
 SETUVAR _fish_abbr_awm:cd\x20\x7e/\x2econfig/awesome
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gc:git\x20commit
-SETUVAR _fish_abbr_gp:git\x20push
+SETUVAR _fish_abbr_gco:git\x20checkout
+SETUVAR _fish_abbr_gp:git\x20pull
+SETUVAR _fish_abbr_gph:git\x20push
 SETUVAR _fish_abbr_gs:git\x20status
 SETUVAR _fish_abbr_ka:killall
 SETUVAR _fish_abbr_pd:prevd

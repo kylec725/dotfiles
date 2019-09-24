@@ -53,3 +53,12 @@
 :open 
 :set smoothscroll true
 /1.1
+:set show-scrollbars false
+:set show-scrollbars true
+:set smooth-scroll true
+:set smooth-scroll false
+/structure
+/struc
+/etio
+/Greek
+/xubu

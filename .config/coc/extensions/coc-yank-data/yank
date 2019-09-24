@@ -2161,3 +2161,204 @@ ef3788ebd9cd763fd539a5e5c6fb76c3|file:///home/kyle/school/fall19/nasa.py|23|13|V
 	Hello it's me
 c42e300b8611588a5f04000a8bbd899e|file:///home/kyle/school/fall19/greek/pandora/pandora.tex|12|1|V|tex
 	\date{}
+85c26aedff07c978c5e786464db045e7|file:///home/kyle/resume/resume.tex|83|71|v|tex
+	, Lua
+3dec3cfe7f1f25e082469ed8600700a0|file:///home/kyle/resume/resume.tex|83|43|v|tex
+	, HTML, CSS
+3f88128d38a1b96eaee600064097416c|file:///home/kyle/school/fall19/greek/pandora/pandora.tex|4|1|V|tex
+	% Defines the document spacing
+	\usepackage{setspace}
+	\onehalfspacing
+	\setlength{\parindent}{2em}
+	\setlength{\parskip}{1em}
+	
+56e436e8ee91b9460fda7ff7281cc134|file:///home/kyle/school/fall19/food/reflection/reflection.tex|4|1|V|tex
+	% Specifies the header details
+	\usepackage{fancyhdr}
+	\setlength{\headheight}{15pt}
+	\pagestyle{fancy}
+	\rhead{Kyle Chan}
+	\lhead{Reflection Paper}
+8be8b193c7621ae338685e8c18fc3043|file:///home/kyle/school/fall19/food/cultural_differences/cultural_differences.tex|9|8|v|tex
+	Reflection Paper
+098ba91c08776b95743bf9ce9c09e65e|file:///home/kyle/school/fall19/food/cultural_differences/cultural_differences.tex|18|1|V|tex
+	first line
+563255b9532b89f26c000209cb2fa29f|file:///home/kyle/school/fall19/food/cultural_differences/cultural_differences.tex|34|36|v|tex
+	 - 3em
+d3126a7f381759a32aecf9e0ec53e0e6|file:///home/kyle/school/fall19/food/cultural_differences/cultural_differences.tex|47|52|v|tex
+	exact 
+0e66be14b86bd30bf4fc84357763b591|file:///home/kyle/school/fall19/food/cultural_differences/cultural_differences.tex|47|48|v|tex
+	their
+776ca40b6ba94c64b85f1acae5971184|file:///home/kyle/school/fall19/food/cultural_differences/cultural_differences.tex|51|19|V|tex
+	5/5 would recommend
+	
+d508fe45cecaf653904a0e774084bb5c|file:///home/kyle/.config/nvim/init.vim|379|31|v|vim
+	white
+d58c6f4828a35c74bbd89e9c3d6ddea5|file:///home/kyle/school/fall19/math406/prime.py|13|1|V|python
+	check_prime(10)
+8381224187c8a06b1fb35f009c9433dc|file:///home/kyle/school/fall19/math406/prime.py|14|17|v|python
+	3**n - 1
+1fdbc042b66be6dd1c815a8b0018298e|file:///home/kyle/school/fall19/math406/prime.py|13|10|^v|python
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+69c161f496ef1049ee7249301df8fc65|file:///home/kyle/school/fall19/math406/prime.py|14|39|^v|python
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+e1d3664943808751cf3916e9bcad8a04|file:///home/kyle/school/fall19/math406/prime.py|14|46|^v|python
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+fdcdc112520902b2e600c198bc637fe7|file:///home/kyle/school/fall19/math406/prime.py|14|74|^v|python
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	
+	
+	
+	
+	
+	
+1a3d715332aa69812a0d6139115954f2|file:///home/kyle/school/fall19/math406/prime.py|15|72|^v|python
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+1d908860d3f8adbb323a471cbc51640e|file:///home/kyle/school/fall19/math406/prime.py|37|16|v|python
+	(50)
+b01dac259fabb9c579f2f2b9111a3325|file:///home/kyle/school/fall19/math406/prime.py|37|10|v|python
+	range 
+4decaf6d022ce007212e96d8e1f8604a|file:///home/kyle/school/fall19/math406/prime.py|39|1|V|python
+	    print(l[i])
+1fd8785f292370a148bd86edfe8dd2bf|file:///home/kyle/school/fall19/math406/prime.py|5|1|V|python
+	                x = 1
+21a361d96e3e13f5f109748c2a9d2434|file:///home/kyle/.config/fish/config.fish|33|14|v|fish
+	push
+ebcd8e7c4e609d0219787ca1ec5263da|file:///home/kyle/.config/fish/config.fish|33|1|V|fish
+	abbr gp 'git pull'
+f43dff9a0dc54f0643d0c6d7971635f0|file:///home/kyle/.config/fish/config.fish|34|15|v|fish
+	pull
+ec65fde09069a763e8237d1a93b3a7ff|file:///home/kyle/resume/resume.tex|169|16|v|tex
+	Planned and assisted
+fbcdf0a327a2ea84d2819abb16a78018|file:///home/kyle/resume/resume.tex|169|42|v|tex
+	with 
+82b67a228b5aa4e5b3ba397861682001|file:///home/kyle/resume/resume.tex|169|42|v|tex
+	teaching 
+8eb724523baf989d5687e3f9e389df51|file:///home/kyle/school/fall19/320/project1/space_weather.py|3|1|V|python
+	import beautifulsoup4 as soup
+1b88773528b1d6ed08382858ac71834b|file:///home/kyle/school/fall19/320/project1/space_weather.py|6|22|v|python
+	 as soup
+d2966da49b14353653ec85fd1e4de763|file:///home/kyle/school/fall19/320/project1/space_weather.py|6|8|v|python
+	beautifulsoup4
+ca451d99299098a2ebe0322144a72fd2|file:///home/kyle/school/fall19/320/project1/space_weather.py|9|1|V|python
+	print(solar_flares)
+e884f6945993dd8fa7850fd789e5bf78|file:///home/kyle/school/fall19/320/project1/space_weather.py|9|6|v|python
+	solar_flares.text
+e884f6945993dd8fa7850fd789e5bf78|file:///home/kyle/school/fall19/320/project1/space_weather.py|9|6|v|python
+	solar_flares.text
+b822b711b4d4147cdb09ccda40b3334f|file:///home/kyle/school/fall19/320/project1/space_weather.py|6|1|V|python
+	# import beautifulsoup4 as soup
+9e43f5291e6fcb2ad99c8e3f91acd179|file:///home/kyle/.pylintrc|407|20|v|conf
+	UPPER
+9f7225d56d111d04de8b411ceaa2996b|file:///home/kyle/.config/nvim/init.vim|172|1|V|vim
+	autocmd FileType python setlocal shiftwidth=4 | match OverLength /\%81v.\+/
+d39cca258bad1cfb72bd0985728c50c2|file:///home/kyle/.config/nvim/init.vim|173|46|v|vim
+	 | match OverLength /\%81v.\+/
+b8269fe003d3cea63eebd126a93d64fa|file:///home/kyle/.config/nvim/init.vim|172|1|V|vim
+	" autocmd FileType python setlocal shiftwidth=4 | match OverLength /\%81v.\+/
+86380bbea172023997934bf0cdfe6dee|file:///home/kyle/school/fall19/320/project1/space_weather.py|8|1|v|python
+	solar_flares
+a4bc28f13555d8112c937450ab7a5e24|file:///home/kyle/school/fall19/320/project1/space_weather.py|9|1|V|python
+	print(solar_flares.text)
+1b01bc9594fd6cb91f121e7eccdcf3b1|file:///home/kyle/school/fall19/320/project1/space_weather.py|9|33|v|python
+	html.parser
+6de9aea3583de3d51576ef43b2daebc1|file:///home/kyle/school/fall19/320/project1/space_weather.py|11|12|v|python
+	prettify()
+950d14df754a46b727b7cb0a73600deb|untitled:1|2|1|V|
+	http://go.umd.edu/sorcquizevents
+5f1e5174b2ba042f0de0f5f14fa7ef05|untitled:1|1|1|V|
+	http://go.umd.edu/sorcquizevents
+	http://go.umd.edu/sorcquizgeneral
+	http://go.umd.edu/sorctrainingevents
+	http://go.umd.edu/sorctrainingsafety
+	http://go.umd.edu/sorcquizsafety
