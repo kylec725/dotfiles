@@ -66,7 +66,8 @@ let g:lightline.tabline = {
 " let g:lightline.tabline_separator = { 'left': "\ue0bc", 'right': "\ue0ba" }
 " let g:lightline.tabline_subseparator = { 'left': "\ue0bb", 'right': "\ue0bb" }
 let g:lightline.separator = { 'left': "\ue0b4", 'right': "\ue0b6" }
-let g:lightline.subseparator = { 'left': "\ue0b5", 'right': "\ue0b7" }
+" let g:lightline.subseparator = { 'left': "\ue0b5", 'right': "\ue0b7" }
+let g:lightline.subseparator = { 'left': "", 'right': "\ue0b7" }
 let g:lightline.tabline_separator = { 'left': "\ue0b4", 'right': "\ue0b6" }
 let g:lightline.tabline_subseparator = { 'left': "\ue0b5", 'right': "\ue0b7" }
 
@@ -78,7 +79,7 @@ endfunction
 
 " lightline-buffer ui settings
 " replace these symbols with ascii characters if your environment does not support unicode
-let g:lightline#bufferline#modified = ' +'
+let g:lightline#bufferline#modified = ' •'
 let g:lightline#bufferline#read_only = ' '
 let g:lightline#bufferline#enable_devicons = 0
 
@@ -100,7 +101,7 @@ let g:lightline#bufferline#enable_devicons = 0
 " Filename
 function! LightlineFilename()
     let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
-    let modified = &modified ? ' +' : ''
+    let modified = &modified ? ' •' : ''
     return filename . modified
 endfunction
 
