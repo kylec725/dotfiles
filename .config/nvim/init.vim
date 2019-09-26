@@ -134,8 +134,8 @@ highlight OverLength ctermbg=darkgray ctermfg=black
 highlight EndOfBuffer ctermfg=16
 
 " pop-up menu colors
-highlight Pmenu ctermbg=0 ctermfg=7
-highlight PmenuSel ctermbg=5 ctermfg=7
+highlight Pmenu ctermbg=4 ctermfg=0
+highlight PmenuSel ctermbg=0 ctermfg=7
 highlight PmenuSbar ctermbg=grey
 highlight PmenuThumb ctermbg=blue
 
