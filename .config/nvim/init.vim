@@ -399,3 +399,6 @@ let delimitMate_expand_space = 1
 let delimitMate_jump_expansion = 1
 let delimitMate_balance_matchpairs = 1
 let delimitMate_matchpairs = "(:),[:],{:}"
+
+" change vim-surround visual mode mapping
+xmap s <Plug>VSurround
