@@ -254,6 +254,9 @@ nnoremap <silent><Space> o<Esc>
 " change cwd to the open buffer's location
 nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 
+" spell check fast correction
+nnoremap <leader>sp <Esc>[s1z=``
+
 "-----------------"
 " Plugin Settings "
 "-----------------"
