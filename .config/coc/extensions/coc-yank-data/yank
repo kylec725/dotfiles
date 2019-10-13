@@ -2362,3 +2362,960 @@ a4bc28f13555d8112c937450ab7a5e24|file:///home/kyle/school/fall19/320/project1/sp
 	http://go.umd.edu/sorctrainingevents
 	http://go.umd.edu/sorctrainingsafety
 	http://go.umd.edu/sorcquizsafety
+0e913cd92b21d4ba7f399b61ef60f45f|file:///home/kyle/resume/resume.tex|173|21|v|tex
+	7th graders 
+75d37c6cbf460947005c97e3f12906a9|file:///home/kyle/resume/resume.tex|173|21|v|tex
+	students
+9b2fcc8cf749bd171257694d69193a88|file:///home/kyle/resume/resume.tex|150|1|V|tex
+	% }
+	
+	% \subsection{CMSC132 Project 7: Graphs}
+	% \textit{Java}
+	% \subsubsection{
+	%   Implemented a graph in Java with classes, adding basic functionality
+	%   to the graph.
+3b47ef3bff823bfa9d8010e8c4f8dbcc|file:///home/kyle/resume/resume.tex|144|1|V|tex
+	
+	% \subsection{CMSC330 Project 1: Maze}
+	% \textit{Ruby}
+	% \subsubsection{
+	%   Designed a program to calculate the lowest cost solution of
+	%   inputted mazes.
+	% }
+a0cdbd2af8f1ddbb2748a2eaddce55da|file:///home/kyle/resume/resume.tex|36|4|v|tex
+	bullet
+fce458da5814089639960610c48d19d2|file:///home/kyle/resume/resume.tex|36|4|v|tex
+	circ
+3efb6346fcd154a61416335d728f4858|file:///home/kyle/.bashrc|17|192|v|sh
+	/home/kyle
+85a1e46749a561a56675d5229b67bf0c|file:///home/kyle/school/fall19/320/project1/space_weather.py|11|16|v|python
+	_all
+401524b8de4b820d1a64d79856df7699|file:///home/kyle/school/fall19/320/project1/space_weather.py|11|1|V|python
+	print(soup.find('table').prettify())
+b389ac5b0c17f4ec7362b8989df7bd5f|file:///home/kyle/school/fall19/320/project1/space_weather.py|9|53|v|python
+	.prettify()
+6294240a8a98439b6355edf8c3100426|file:///home/kyle/school/fall19/320/project1/space_weather.py|11|7|V|python
+	print(ogsoup)
+	
+	# parsed = pandas.read_html(soup)
+613178a0fbbf7b2f924cadfa5f7df0e2|file:///home/kyle/school/fall19/320/project1/space_weather.py|10|1|V|python
+	soup = ogsoup.prettify()
+	print(soup)
+c3732cbf21875cb12763787c984dd68d|file:///home/kyle/school/fall19/320/project1/space_weather.py|11|1|v|python
+	parsed
+563866c03051df23b26f93e98315d828|file:///home/kyle/school/fall19/320/project1/space_weather.py|12|6|v|python
+	pandas.DataFrame.columns()
+576bd8779a9021e4bb695b1b8555a75b|file:///home/kyle/school/fall19/320/project1/space_weather.py|12|1|V|python
+	print(table.columns)
+46d3971da529af6094f5c82ce2822df6|file:///home/kyle/school/fall19/320/project1/space_weather.py|12|6|v|python
+	.columns[0]
+bf3e237350c2c4f003a7c57a1713d406|file:///home/kyle/school/fall19/320/project1/space_weather.py|12|6|v|python
+	[0].
+5fc732311905cb27e82d67f4f6511f7f|file:///home/kyle/school/fall19/320/project1/space_weather.py|18|16|v|python
+	date
+0619ac1b1b9cd260e2713118494880d0|file:///home/kyle/school/fall19/320/project1/space_weather.py|16|5|V|python
+	    print(index)
+460e819aa95a86cefa492a0fa464e1a1|file:///home/kyle/school/fall19/320/project1/space_weather.py|17|5|V|python
+	    print(row['start_time'])
+6faaa922850cb619d8f64ef2a7711804|file:///home/kyle/school/fall19/320/project1/space_weather.py|16|1|V|python
+	    row['start_time'] =  row['date'] + ' ' + row['start_time']
+c4d98dbd5badae901761ab6422fa3e70|file:///home/kyle/school/fall19/320/project1/space_weather.py|17|10|v|python
+	start_time
+feba1829a8a2557c8dfa9bd0f21acdee|file:///home/kyle/school/fall19/320/project1/space_weather.py|16|5|v|python
+	row['start_time']
+b7f1f08c25397ad57d9ae5a9ba4c89cf|file:///home/kyle/school/fall19/320/project1/space_weather.py|17|5|v|python
+	row['max_time']
+ac1c266b7562774a0e96aaef9f855015|file:///home/kyle/school/fall19/320/project1/space_weather.py|18|5|v|python
+	row['end_time']
+6f0aa2808a1a6cfd177789cd42840c89|file:///home/kyle/school/fall19/320/project1/space_weather.py|19|5|V|python
+	    print(index, row)
+bb487717817a3464fdf5d2958591a2ff|file:///home/kyle/school/fall19/320/project1/space_weather.py|13|1|V|python
+	table = table.drop(columns='movie')
+aed34b9f60ee115dfa7918b742336277|file:///home/kyle/school/fall19/320/project1/space_weather.py|19|29|v|python
+	movie
+f3ea991e59a7cd88488d12317bd25307|file:///home/kyle/school/fall19/320/project1/space_weather.py|13|1|V|python
+	table = pandas.read_html(soup)[0]
+51848dee9d7c7478697203b533359a31|file:///home/kyle/school/fall19/320/project1/space_weather.py|22|15|v|python
+	row['region']
+c1490617da17ddd0380d0e164f2c8413|file:///home/kyle/school/fall19/320/project1/space_weather.py|22|1|V|python
+	    print(type(row['region']))
+f35832838e6c575c06accd9bdaf42635|file:///home/kyle/school/fall19/320/project1/space_weather.py|23|22|v|python
+	('-',
+df6c00d137aa232c499d6446ebf533be|file:///home/kyle/school/fall19/320/project1/space_weather.py|23|23|v|python
+	'486'
+9dcb31bf99f29735a3435b651e5da974|file:///home/kyle/school/fall19/320/project1/space_weather.py|31|7|v|python
+	req.text
+a5bd457f339c0208a816f561e30ef65b|file:///home/kyle/school/fall19/320/project1/space_weather.py|32|7|v|python
+	nasa_soup.len()
+ffc7ef060a435272b7238e8c5e9f5dbc|file:///home/kyle/school/fall19/320/project1/space_weather.py|33|33|V|python
+	# create dataframe with list info
+	# data = {'start_date': [],
+	#         'start_time': [],
+	#         'end_date': [],
+	#         'end_time': [],
+	#         'start_frequency': [],
+	#         'end_frequency': [],
+	#         'flare_location': [],
+	#         'flare_region': []
+	#         }
+	# nasa_table = pandas.DataFrame(data)
+08558a2153ef2f3e74102d115ab57161|file:///home/kyle/school/fall19/320/project1/space_weather.py|34|27|V|python
+	# data = {'start_date': [],
+	#         'start_time': [],
+	#         'end_date': [],
+	#         'end_time': [],
+	#         'start_frequency': [],
+	#         'end_frequency': [],
+	#         'flare_location': [],
+	#         'flare_region': []
+	#         }
+	# nasa_table = pandas.DataFrame(data)
+54601715d3a8d92c5e41861b93bc2d85|file:///home/kyle/school/fall19/320/project1/space_weather.py|44|23|v|python
+	.split(' ')[1]
+6b16d44751b12dc95cf00bfcb87bcc09|file:///home/kyle/school/fall19/320/project1/space_weather.py|44|10|v|python
+	nasa_soup[0].split(' ')[1]
+09e73d78a16f2d9b167aec48ab501c7a|file:///home/kyle/.config/nvim/config/lightline.vim|64|1|V|vim
+	let g:lightline.separator = { 'left': "\ue0b8", 'right': "\ue0be" }
+	let g:lightline.subseparator = { 'left': "\ue0b9", 'right': "\ue0b9" }
+	let g:lightline.tabline_separator = { 'left': "\ue0bc", 'right': "\ue0ba" }
+	let g:lightline.tabline_subseparator = { 'left': "\ue0bb", 'right': "\ue0bb" }
+97621168103eb15e5c8ae3c4aa0ebdd7|file:///home/kyle/school/fall19/320/project1/space_weather.py|44|1|V|python
+	print(nasa_soup[0].split()[5])
+d26b961b9ffa4f75a69f70ec8528dce9|file:///home/kyle/school/fall19/320/project1/space_weather.py|45|1|V|python
+	# print(len(nasa_soup))
+4470b51d51a595cf51eed2d62820e2a3|file:///home/kyle/school/fall19/320/project1/space_weather.py|38|8|V|python
+	        'extra': [],
+586cb9422c388bfba58014d790f078c5|file:///home/kyle/school/fall19/320/project1/space_weather.py|45|5|V|python
+	    data
+45d9d68874dd35b17321a497862385c6|file:///home/kyle/school/fall19/320/project1/space_weather.py|48|7|v|python
+	nasa_soup[0].split()[5]
+3e4a4abb08f634799b9d7b7990854e2e|file:///home/kyle/school/fall19/320/project1/space_weather.py|46|1|V|python
+	    data['start_time'].append(row[1])
+a8b1b46c8b4998a5b3cb684608125593|file:///home/kyle/school/fall19/320/project1/space_weather.py|47|1|V|python
+	    data['end_date'].append(row[2])
+90e8da89bb462061b421c1cb7191de14|file:///home/kyle/school/fall19/320/project1/space_weather.py|48|11|v|python
+	end_date
+6c6cb5dba3183a930a0b22e34290a7ba|file:///home/kyle/school/fall19/320/project1/space_weather.py|48|1|V|python
+	    data['end_time'].append(row[3])
+305d28898e362717b3ad3d0181c15636|file:///home/kyle/school/fall19/320/project1/space_weather.py|49|11|v|python
+	end_time
+397902dc4a9e24923defb1a0b7c73415|file:///home/kyle/school/fall19/320/project1/space_weather.py|49|1|V|python
+	    data['start_frequency'].append(row[5])
+ae7bb6d6abd36fa36b2cba1f4fb43597|file:///home/kyle/school/fall19/320/project1/space_weather.py|50|11|v|python
+	start_frequency
+99636a900db6cd7b4374b786fceb32e7|file:///home/kyle/school/fall19/320/project1/space_weather.py|50|1|V|python
+	    data['end_frequency'].append(row[7])
+8ab8a84e6a496fa7b4211df838111087|file:///home/kyle/school/fall19/320/project1/space_weather.py|51|11|v|python
+	end_frequency
+f78c61985321387fc8911dfa151a3963|file:///home/kyle/school/fall19/320/project1/space_weather.py|51|1|V|python
+	    data['flare_location'].append(row[7])
+003be87cd3a5d82663c28ca0ce16598c|file:///home/kyle/school/fall19/320/project1/space_weather.py|52|11|v|python
+	flare_location
+7fc5cc6599c7b58e764cbf305f44e46f|file:///home/kyle/school/fall19/320/project1/space_weather.py|52|36|v|python
+	row[5]
+7587615ea733ddb9bd4ac2154eefd143|file:///home/kyle/school/fall19/320/project1/space_weather.py|52|36|v|python
+	regex.search(row[5]).group(1)
+8fb728179cee9793e6741840b6a0a77d|file:///home/kyle/school/fall19/320/project1/space_weather.py|53|34|v|python
+	row[7]
+aad400a50477f92927c5c04b287f0968|file:///home/kyle/school/fall19/320/project1/space_weather.py|52|1|V|python
+	    start_search = regex.search(row[5]).group(1)
+77e8ee444532be58fab284683e99f7f7|file:///home/kyle/school/fall19/320/project1/space_weather.py|53|5|v|python
+	start_search
+c00854bb24ddb6c50aa5e35487a31b78|file:///home/kyle/school/fall19/320/project1/space_weather.py|52|35|V|python
+	    start_search = regex.search(row[5]).group(1)
+	    end_search = regex.search(row[7]).group(1)
+	    data['start_frequency'].append(regex.search(row[5]).group(1))
+	    data['end_frequency'].append(regex.search(row[7]).group(1))
+2b158aea352306a320a0d74bb045f1bd|file:///home/kyle/school/fall19/320/project1/space_weather.py|57|1|V|python
+	    if start_search:
+	        data['start_frequency'] = start_search.group(1)
+efdba9d12f3433066bf3713391969d07|file:///home/kyle/school/fall19/320/project1/space_weather.py|59|1|V|python
+	    else:
+d83375f26dd252cbf4545e3d1494302b|file:///home/kyle/school/fall19/320/project1/space_weather.py|59|1|V|python
+	    else:
+	        data['start_frequency'] = 'NaN'
+ea2b2676c28c0db26d39331a336c6b92|file:///home/kyle/school/fall19/320/project1/space_weather.py|64|15|v|python
+	start
+b1b4923ab0a9af4b588eee931c4dea88|file:///home/kyle/school/fall19/320/project1/space_weather.py|65|17|V|python
+	    data['start_frequency'].append(regex.search(row[5]).group(1))
+	    data['end_frequency'].append(regex.search(row[7]).group(1))
+f9dbb7b95897fb0e5939dd80679a0615|file:///home/kyle/school/fall19/320/project1/space_weather.py|55|40|v|python
+	.group(1)
+3fa914416ed949a3ddf55824a276ae43|file:///home/kyle/school/fall19/320/project1/space_weather.py|59|1|V|python
+	        print(start_search.group(1))
+38f0d8085690e0b11c702e5e01227568|file:///home/kyle/school/fall19/320/project1/space_weather.py|64|9|V|python
+	        print(end_search.group(1))
+c86ecdca65bbd25d2502eb2050916185|file:///home/kyle/school/fall19/320/project1/space_weather.py|53|5|V|python
+	    print(row[8])
+e944092214939a3274ae857b3784d928|file:///home/kyle/school/fall19/320/project1/space_weather.py|60|41|v|python
+	'NaN'
+2e03fe3f560524ae7b40a615b7a78b0a|file:///home/kyle/school/fall19/320/project1/space_weather.py|45|1|V|python
+	regex = re.compile(r'>(\d+)<')
+69c92e73dd307ac23b82117485613b9c|file:///home/kyle/school/fall19/320/project1/space_weather.py|19|1|V|python
+	for index, row in swl_table.iterrows():
+	    swl_table.loc[index, 'start_time'] =  row['date'] + ' ' + row['start_time']
+	    swl_table.loc[index, 'max_time'] =  row['date'] + ' ' + row['max_time']
+	    swl_table.loc[index, 'end_time'] =  row['date'] + ' ' + row['end_time']
+	swl_table = swl_table.drop(columns='date')
+5eb0db733b25849b89745c41a50b980c|file:///home/kyle/school/fall19/320/project1/space_weather.py|67|19|v|python
+	swl_
+75717d782f685dbb53c71d29a162e7c8|file:///home/kyle/school/fall19/320/project1/space_weather.py|36|9|V|python
+	        'start_time': [],
+895265fe25be69f267873b2de58681df|file:///home/kyle/school/fall19/320/project1/space_weather.py|37|9|V|python
+	        'end_time': [],
+6504edb58c185be15bfcf9368f297606|file:///home/kyle/school/fall19/320/project1/space_weather.py|37|1|V|python
+	        # use regex to pull out frequencies
+5d568c96aa47c56d025d6c657a3c179b|file:///home/kyle/school/fall19/320/project1/space_weather.py|48|5|V|python
+	    # deal with regex searching
+86753c0dab6b8ea0a6ffe13545f55a26|file:///home/kyle/school/fall19/320/project1/space_weather.py|62|9|V|python
+	# for index, row in nasa_table.iterrows():
+	#     nasa_table.loc[index, 'start_time'] =  row['date'] + ' ' + row['start_time']
+	#     nasa_table.loc[index, 'max_time'] =  row['date'] + ' ' + row['max_time']
+	#     nasa_table.loc[index, 'end_time'] =  row['date'] + ' ' + row['end_time']
+	# swl_table = swl_table.drop(columns='date')
+6891cd577154913289a606b5b24541f0|file:///home/kyle/school/fall19/320/project1/space_weather.py|62|35|v|python
+	-----
+0f21c6a8a81d68c036bb9a13d9246082|file:///home/kyle/school/fall19/320/project1/space_weather.py|62|33|v|python
+	r'\-+'
+d89bc554cec148377764cca22c97e332|file:///home/kyle/school/fall19/320/project1/space_weather.py|51|5|V|python
+	    data['cme_datetime'].append(row[0][0:4] + '/' + row[11] + ' ' + row[12])
+917532edac71c1eb729f8bbfa55057e6|file:///home/kyle/school/fall19/320/project1/space_weather.py|66|1|V|python
+	        data[]
+a21ab7295bca7d79e5d1d289a2890616|file:///home/kyle/school/fall19/320/project1/space_weather.py|66|57|v|python
+	row[11]
+3ce6e35fbee10778ebc9f2482747524e|file:///home/kyle/school/fall19/320/project1/space_weather.py|68|9|V|python
+	        dat']
+07cc694b9b3fc636710fa08b6922c42b|file:///home/kyle/school/fall19/320/project1/space_weather.py|64|13|v|python
+	time
+2864fcc53877519d0760a2321e8eb9f2|file:///home/kyle/school/fall19/320/project1/space_weather.py|64|34|v|python
+	>(\d+/\d+)<
+bdc930fb0152d49fea73be651b8b8af6|file:///home/kyle/school/fall19/320/project1/space_weather.py|65|1|V|python
+	    cme_time_search = re.search('>')
+59d265d19ccb975a2a055d5599b9cf35|file:///home/kyle/school/fall19/320/project1/space_weather.py|67|90|v|python
+	row[12]
+d69789ae920faedacf47fdb931abcb57|file:///home/kyle/school/fall19/320/project1/space_weather.py|65|1|V|python
+	    cme_time_search = re.search('>(\d+/\d+)<', row[13])
+8d5e3d8c280d3912603751c001b10ab7|file:///home/kyle/school/fall19/320/project1/space_weather.py|65|23|v|python
+	 and cme_time_search
+d900d3d6333d900d0461a4f88ecefdbe|file:///home/kyle/school/fall19/320/project1/space_weather.py|66|90|v|python
+	cme_time_search.group(1))
+ca1cce002fcfcd22fa91f8be786f471a|file:///home/kyle/school/fall19/320/project1/space_weather.py|66|81|v|python
+	 + row[12]
+4a0129186ab294b69e64a8236464b939|file:///home/kyle/school/fall19/320/project1/space_weather.py|60|5|V|python
+	    # use regex to pull out frequencies
+	    start_frequency_search = re.search('>(\d+)<', row[5])
+	    end_frequency_search = re.search('>(\d+)<', row[7])
+	    if start_frequency_search:
+	        data['start_frequency'].append(start_frequency_search.group(1))
+	    else:
+	        data['start_frequency'].append('NaN')
+	    if end_frequency_search:
+	        data['end_frequency'].append(end_frequency_search.group(1))
+	    else:
+	        data['end_frequency'].append('NaN')
+be7df7f0b6ee990ef7d856c0fbb18eee|file:///home/kyle/school/fall19/320/project1/space_weather.py|70|7|v|python
+	cme_datetime regex
+efdf2f2dc64d3960473d9fb148f71593|file:///home/kyle/school/fall19/320/project1/space_weather.py|71|5|V|python
+	    # use regex to pull out cme_date
+	    cme_date_search = re.search('>(\d+/\d+)<', row[12])
+	    if cme_date_search:
+	        data['cme_datetime'].append(row[0][0:5] + cme_date_search.group(1) + ' ' + row[13])
+	    else:
+	        data['cme_datetime'].append('NaN')
+7dddfc0c7731dffa784b330d2c57d494|file:///home/kyle/school/fall19/320/project1/space_weather.py|68|1|V|python
+	    cme_date_search = re.search('>(\d+/\d+)<', row[12])
+	    if cme_date_search:
+	        data['cme_datetime'].append(row[0][0:5] + cme_date_search.group(1) + ' ' + row[13])
+	    else:
+	        data['cme_datetime'].append('NaN')
+dfeaaeb4316477bd556ea5e8c3295887|file:///home/kyle/school/fall19/320/project1/space_weather.py|78|19|v|python
+	datetime
+b6ec2e1e40ad119fe24c1d691f7cc5f1|file:///home/kyle/school/fall19/320/project1/space_weather.py|78|34|v|python
+	row[0][0:5] + cme_date_search.group(1) + ' ' + row[13]
+e3954f6f6bed39b7af1d36f616a9382f|file:///home/kyle/school/fall19/320/project1/space_weather.py|81|5|V|python
+	    data['cme_speed'].append(row[16])
+56fddedd6b0d7a39bce5ed080db208ed|file:///home/kyle/school/fall19/320/project1/space_weather.py|90|33|v|python
+	r'-+', 'Halo'
+22256d09092c7a3cf040a65ab239af80|file:///home/kyle/school/fall19/320/project1/space_weather.py|90|38|v|python
+	, 'Halo'
+4708d108a6d34903cf14edc48b11a9b6|file:///home/kyle/school/fall19/320/project1/space_weather.py|90|40|v|python
+	'NaN', 'NA'
+908f8e11c4b7ea920ccc4472675bde4f|file:///home/kyle/school/fall19/320/project1/space_weather.py|90|45|v|python
+	, 'NA'
+6dd9f8a83585f781c095d8404da245d5|file:///home/kyle/school/fall19/320/project1/space_weather.py|77|1|V|python
+	        data['is_halo'].append('True')
+f827cf462f62848df37c5e1e94a4da74|file:///home/kyle/school/fall19/320/project1/space_weather.py|80|33|v|python
+	True
+ae4c89dd813331bba38390050b58a68e|file:///home/kyle/school/fall19/320/project1/space_weather.py|86|5|V|python
+	    data['cme_width'].append(row[15])
+8e584b6438274cebc7bb86da57106dde|file:///home/kyle/school/fall19/320/project1/space_weather.py|87|14|v|python
+	cme_width
+f0b3f3ab295fdf39bcbf190560dd1e9f|file:///home/kyle/school/fall19/320/project1/space_weather.py|88|1|V|python
+	        data['width_lower_bound'].append('True')
+8c9d7563dd196556ed2196609ca58e81|file:///home/kyle/school/fall19/food/reflection/reflection.tex|4|1|V|tex
+	% Specifies the header details
+	\usepackage{fancyhdr}
+	\setlength{\headheight}{15pt}
+	\pagestyle{fancy}
+	\rhead{Kyle Chan}
+	\lhead{Reflection Paper}
+	
+	% Defines the document spacing
+	\usepackage{setspace}
+	\setlength{\parindent}{2em}
+	\setlength{\parskip}{1em}
+c8c45ebb909590c5e1c2d38d611ae46a|file:///home/kyle/school/fall19/food/debate1/debate1.tex|9|8|v|tex
+	Debate 1
+17de4536e898eff1fe3c22f1f8845337|file:///home/kyle/school/fall19/320/project1/space_weather.py|3|1|V|python
+	import requests
+	import pandas
+	import numpy
+	import re
+	from bs4 import BeautifulSoup
+f88155742f05f3de91907016afd9b9c9|file:///home/kyle/school/fall19/320/project1/space_weather.py|9|1|V|python
+	# grab the html then locate the table tag and prettify it
+	req = requests.get('https://www.spaceweatherlive.com/en/solar-activity/top-50-solar-flares')
+	soup = BeautifulSoup(req.text, 'lxml').find('table').prettify()
+	swl_table = pandas.read_html(soup)[0]
+	
+	# set the column names and remove the movies columns
+	swl_table.columns = ['rank', 'x_class', 'date', 'region', 'start_time', 'max_time', 'end_time', 'movie']
+	swl_table = swl_table.drop(columns='movie')
+	
+	# move the date into the timestamps and remove the date column
+	for index, row in swl_table.iterrows():
+	    swl_table.loc[index, 'start_time'] =  row['date'] + ' ' + row['start_time']
+	    swl_table.loc[index, 'max_time'] =  row['date'] + ' ' + row['max_time']
+	    swl_table.loc[index, 'end_time'] =  row['date'] + ' ' + row['end_time']
+	swl_table = swl_table.drop(columns='date')
+	# replace any missing regions with NaN
+	swl_table = swl_table.replace('-', 'NaN')
+	
+	# print(swl_table)
+	
+	# nasa data
+	req = requests.get('https://cdaw.gsfc.nasa.gov/CME_list/radio/waves_type2.html')
+	nasa_soup = BeautifulSoup(req.text, 'lxml').find('pre').prettify()
+	nasa_soup = nasa_soup.split('\n')[12:523]
+	
+	# create dataframe with list info
+	data = {'start_datetime': [],
+	        'end_datetime': [],
+	        'start_frequency': [],
+	        'end_frequency': [],
+	        'flare_location': [],
+	        'flare_region': [],
+	        'flare_importance': [],
+	        'cme_datetime': [],
+	        'cme_angle': [],
+	        'cme_width': [],
+	        'cme_speed': [],
+	        'is_halo': [],
+	        'width_lower_bound': []
+	        }
+	for row in nasa_soup:
+	    row = row.split()
+	    data['start_datetime'].append(row[0] + ' ' + row[1])
+	    data['end_datetime'].append(row[0][0:5] + row[2] + ' ' + row[3])
+	    # use regex to pull out frequencies
+	    start_frequency_search = re.search('>(\d+)<', row[5])
+	    end_frequency_search = re.search('>(\d+)<', row[7])
+	    if start_frequency_search:
+	        data['start_frequency'].append(start_frequency_search.group(1))
+	    else:
+	        data['start_frequency'].append('NaN')
+	    if end_frequency_search:
+	        data['end_frequency'].append(end_frequency_search.group(1))
+	    else:
+	        data['end_frequency'].append('NaN')
+	
+	    data['flare_location'].append(row[8])
+	    data['flare_region'].append(row[9])
+	    data['flare_importance'].append(row[10])
+	
+	    # use regex to pull out cme_date
+	    cme_date_search = re.search('>(\d+/\d+)<', row[12])
+	    if cme_date_search:
+	        data['cme_datetime'].append(row[0][0:5] + cme_date_search.group(1) + ' ' + row[13])
+	    else:
+	        data['cme_datetime'].append('NaN')
+	
+	    # check if halo flare
+	    if row[14] == 'Halo':
+	        data['cme_angle'].append('NA')
+	        data['is_halo'].append('True')
+	    else:
+	        data['cme_angle'].append(row[14])
+	        data['is_halo'].append('False')
+	
+	    # check if width is lower bound and only keep numeric info
+	    width_search = re.search('>(\d+)', row[15])
+	    if width_search:
+	        data['cme_width'].append(width_search.group(1))
+	        data['width_lower_bound'].append('True')
+	    else:
+	        data['cme_width'].append(row[15])
+	        data['width_lower_bound'].append('False')
+	
+	    # use regex to pull out cme_speed
+	    cme_speed_search = re.search('>(\d+)<', row[17])
+	    if cme_speed_search:
+	        data['cme_speed'].append(cme_speed_search.group(1))
+	    else:
+	        data['cme_speed'].append('NaN')
+	
+	nasa_table = pandas.DataFrame(data)
+	
+	# tidy nasa_table
+	nasa_table = nasa_table.replace(r'-+', 'NaN', regex=True)
+	
+	print(nasa_table)
+604c1ad797e661c87f19c5d306072f74|file:///home/kyle/school/fall19/320/project1/space_weather.py|106|54|v|python
+	flare_importance
+f2642fe35cc206ac8256b2d34fa9a8d2|file:///home/kyle/school/fall19/320/project1/space_weather.py|106|1|V|python
+	nasa_table = nasa_table[re.search('X\d+', nasa_table['flare_importance'])]
+8cecb24695b9f673c4b2316df5f24e80|file:///home/kyle/school/fall19/320/project1/space_weather.py|106|1|V|python
+	nasa_table = nasa_table[nasa_table.flare_importance.str.contains('X\d+')]
+fe821ffaf34c2d5b18bc4fb37ad3b1c9|file:///home/kyle/school/fall19/320/project1/space_weather.py|105|1|V|python
+	# filter only flares with importance that start with X
+	nasa_table = nasa_table[nasa_table.flare_importance.str.contains('X\d+')]
+3d1d574eb695f2d7fe7caec945b7ddef|file:///home/kyle/school/fall19/320/project1/space_weather.py|107|1|V|python
+	nasa_top_table = nasa_top_table.replace(regex='X', value='')
+7b89151f70f02ae5d17afecdf3798f89|file:///home/kyle/school/fall19/320/project1/space_weather.py|108|1|V|python
+	nasa_top_table = nasa_top_table.sort_values('flare_importance')
+7d521fdfd657d6a003986ebcc13d14a1|file:///home/kyle/school/fall19/320/project1/space_weather.py|109|15|v|python
+	 = nasa_top_table.loc('flare_importance')
+fe9959e1edc7cc381f57e3ddca6e54e5|file:///home/kyle/school/fall19/320/project1/space_weather.py|109|1|V|python
+	nasa_top_table['flare_importance'] = 'X' + nasa_top_table['flare_importance']
+a41e48143f82315833ab9eb8f7549622|file:///home/kyle/school/fall19/320/project1/space_weather.py|111|1|V|python
+	print(nasa_top_table.tail(50))
+33786609474829b3ce8494433ac220d1|file:///home/kyle/school/fall19/320/project1/space_weather.py|111|7|v|python
+	nasa_top_table.tail()
+0a1e5221c849fa34c56eccf59baca5e8|file:///home/kyle/school/fall19/320/project1/space_weather.py|33|1|V|python
+	print(nasa_soup)
+dfae7725c433c4ec71f92d55fb6ca89a|file:///home/kyle/school/fall19/320/project1/space_weather.py|111|7|v|python
+	nasa_soup.prettify()
+1f22ccf4f49141a6bc13d0aa5c50d413|file:///home/kyle/school/fall19/food/debate1/debate1.tex|18|38|v|tex
+	relatively often 
+b115252cfc9a84fbdc2eefd4399f4dcc|file:///home/kyle/.config/fontconfig/fonts.conf|21|25|v|xml
+	Meslo LG S DZ for Powerline
+9b3cc0d65e2c7f783770ee7881da4cd4|file:///home/kyle/.config/kitty/kitty.conf|9|18|v|conf
+	monospace
+8a398abbb120a35320a3d669ae71d92e|file:///home/kyle/.config/kitty/kitty.conf|40|49|v|conf
+	Extra
+eebde1404a1f396876ed355c3ac8d802|file:///home/kyle/.config/kitty/kitty.conf|40|40|v|conf
+	PowerlineSymbols
+75e1ac62b4800e8622411aed2bc783c8|file:///home/kyle/school/fall19/320/project1/space_weather.py|106|28|v|python
+	[nasa_table.flare_importance.str.contains('X')]
+b6f5edeb0d4ac4cf2e19c20a965f31e2|file:///home/kyle/school/fall19/320/project1/space_weather.py|111|7|v|python
+	nasa_table.head(510)
+b270994751500ed2cea8e972f708111b|file:///home/kyle/school/fall19/320/project1/space_weather.py|105|1|V|python
+	# filter only flares with importance that start with X and sort them
+	nasa_top_table = nasa_table.filter(like='X', axis=0)
+	# nasa_top_table = nasa_top_table.replace(regex='X', value='')
+	# nasa_top_table = nasa_top_table.sort_values('flare_importance')
+	# nasa_top_table['flare_importance'] = 'X' + nasa_top_table['flare_importance']
+	
+	print(nasa_top_table)
+be1ab1632e4285edc3733b142935c60b|file:///home/kyle/school/fall19/320/project1/space_weather.py|106|36|v|python
+	like
+78a31922be66f6053a5f89fa6aeec9d1|file:///home/kyle/school/fall19/320/project1/space_weather.py|106|48|v|python
+	, axis=0)
+04c743e33068af45ec54e86e305fd1bd|file:///home/kyle/school/fall19/320/project1/space_weather.py|105|1|V|python
+	# filter only flares with importance that start with X and sort them
+	nasa_top_table = nasa_table.filter(regex='X\d+'
+	# nasa_top_table = nasa_top_table.replace(regex='X', value='')
+	# nasa_top_table = nasa_top_table.sort_values('flare_importance')
+	# nasa_top_table['flare_importance'] = 'X' + nasa_top_table['flare_importance']
+	
+	print(nasa_top_table)
+8fd02663cb729a4203c176b21dd5941a|file:///home/kyle/school/fall19/320/project1/space_weather.py|105|1|V|python
+	# filter only flares with importance that start with X and sort them
+	nasa_top_table = nasa_table.filter(regex='X\d+')
+	# nasa_top_table = nasa_top_table.replace(regex='X', value='')
+	# nasa_top_table = nasa_top_table.sort_values('flare_importance')
+	# nasa_top_table['flare_importance'] = 'X' + nasa_top_table['flare_importance']
+	
+	print(nasa_top_table)
+22d7a0253ffd3d7e7e5b04de2c3f5304|file:///home/kyle/school/fall19/320/project1/space_weather.py|106|29|v|python
+	filter(regex='X\d+')
+e154627a7552ee21cae00e38d37ff728|file:///home/kyle/school/fall19/320/project1/space_weather.py|106|1|V|python
+	nasa_top_table = nasa_table.flare_importance.str.contains('^X')
+ebb3b6d50a19cf3633d7443a3327c2e3|file:///home/kyle/school/fall19/320/project1/space_weather.py|106|1|V|python
+	nasa_top_table = nasa_table[nasa_table.flare_importance.str.contains('^X')]
+97b95b560fca840383df1bb934c5d4ec|file:///home/kyle/school/fall19/320/project1/space_weather.py|107|1|V|python
+	nasa_top_table = nasa_table[nasa_table.flare_importance.str.contains('28')]
+5d8fae29b299d71f390a6b70b4d39456|file:///home/kyle/school/fall19/320/project1/space_weather.py|107|1|V|python
+	# nasa_top_table = nasa_top_table.replace(regex='X', value='')
+effe1c6c88af4c14f02dd681199b4dde|file:///home/kyle/school/fall19/320/project1/space_weather.py|108|1|V|python
+	nasa_top_table = nasa_top_table.replace(regex='.$', value='.0')
+d10bef91a14b746e1fea24c34b7c7ddf|file:///home/kyle/school/fall19/320/project1/space_weather.py|108|33|v|python
+	replace(regex='1\.0', value='1')
+0fdad704c501957c36d52bb6d8aaab09|file:///home/kyle/school/fall19/320/project1/space_weather.py|108|1|V|python
+	nasa_top_table['flare_importance'] = nasa_top_table['flare_importance'].astype(float)
+546ade640b6edfbc8a086ef31347e768|file:///home/kyle/school/fall19/320/project1/space_weather.py|110|80|v|python
+	float
+fee1ee3aac36137c98669949f6d489b9|file:///home/kyle/school/fall19/320/project1/space_weather.py|113|41|v|python
+	.tail(10
+4abf984f93f459c3632ab8e2b02c8f9f|file:///home/kyle/.config/nvim/config/ale.vim|12|1|V|vim
+	let g:ale_sign_error = "●"
+8fdbaf9674af8567132856be1b68b4c5|file:///home/kyle/chickens.md|2|1|V|markdown
+	This is the pinnacle of fiestas, celebrating the legendary avians
+eb858a205029287511b0ddfa084fb625|file:///home/kyle/.config/nvim/config/lightline.vim|69|1|V|vim
+	let g:lightline.subseparator = { 'left': "\ue0b5", 'right': "\ue0b7" }
+5f844740bae23ae6a90b354428b2c6be|file:///home/kyle/school/fall19/food/debate1/debate1.tex|2|1|V|tex
+	\usepackage[utf8]{inputenc}
+8c79b0e17e47669f543ab1c8cfeb1985|file:///home/kyle/school/fall19/320/project1/space_weather.py|123|21|v|python
+	'flare_importance'
+c21c01eb81862f6fc00533ee4de9a4a4|file:///home/kyle/school/fall19/320/project1/space_weather.py|123|21|v|python
+	['flare_importance']
+8dceb56aad1392c5288a1b9641ef0b0b|file:///home/kyle/school/fall19/320/project1/space_weather.py|121|1|V|python
+	swl_table = swl_table.replace(regex='X', value='')['x_class'].astype(float)
+9687bf7c7a95c5265d826f184add1f39|file:///home/kyle/school/fall19/320/project1/space_weather.py|122|23|v|python
+	replace(regex='X', value='')
+d9d5873a58836bd1dd9de51e06aa9c93|file:///home/kyle/school/fall19/320/project1/space_weather.py|123|1|V|python
+	nasa_top_table = nasa_top_table.replace(regex='X', value='')['flare_importance'].astype(float)
+8a96b8782d1c6cc5e08c5bcdc7b20d8f|file:///home/kyle/school/fall19/320/project1/space_weather.py|123|61|v|python
+	['flare_importance'].astype(float)
+930a70bb81e680bb1de1912d2bfcadab|file:///home/kyle/school/fall19/320/project1/space_weather.py|121|51|v|python
+	['x_class'].astype(float)
+48a31844afb965306d65923be25e508d|file:///home/kyle/school/fall19/320/project1/space_weather.py|124|32|v|python
+	.replace(regex='X', value='')
+cf42316884a4d4f741b3a7bab2cdb9d2|file:///home/kyle/.config/kitty/kitty.conf|139|1|V|conf
+	#: numbers to change scroll direction.
+b07852e2a4edea9a7471c4681b4f54d3|file:///home/kyle/school/fall19/320/project1/space_weather.py|130|1|V|python
+	print(nasa_top_table['swl_rank'])
+81884d8f09e7d1867cf2eaecb72d7290|file:///home/kyle/school/fall19/320/project1/space_weather.py|19|1|V|python
+	for index, row in swl_table.iterrows():
+62fd3f87581663e4371e40eb51d66e76|file:///home/kyle/school/fall19/320/project1/space_weather.py|128|1|V|python
+	for 
+bff76b7ed0200cd85a15adffce55aa43|file:///home/kyle/school/fall19/320/project1/space_weather.py|129|31|v|python
+	x_class
+6f5b4f48a069eba5ecc616afe9cfc92c|file:///home/kyle/school/fall19/320/project1/space_weather.py|129|1|V|python
+	    current = 0, lowest = row[x_class]
+cd0fe9ba8df92bff46840734c9d0014e|file:///home/kyle/school/fall19/320/project1/space_weather.py|133|7|v|python
+	swl_table
+0b4153a1d798d871552e3586a26d8676|file:///home/kyle/.config/nvim/init.vim|404|12|v|vim
+	<S-s>
+1b471354445418af331a6d2792aee839|file:///home/kyle/.config/nvim/init.vim|404|1|V|vim
+	vnoremap s <Plug>VSurround :<C-U>call <SID>opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)<CR>
+a854c0e52b141a1bb01fd2ea76fbd36a|file:///home/kyle/.config/nvim/init.vim|403|3|v|vim
+	surround
+620abb4bdb129e1856dd918f8b9d25b8|file:///home/kyle/school/fall19/320/project1/space_weather.py|135|23|v|python
+	nasa_row['swl_rank']
+7f507d908c789f4003bed00b3c78122d|file:///home/kyle/school/fall19/320/project1/space_weather.py|20|1|V|python
+	    swl_table.loc[index, 'start_time'] =  row['date'] + ' ' + row['start_time']
+6a992d5529f459a44fee58c733255e86|file:///home/kyle/school/fall19/320/project1/space_weather.py|136|24|v|python
+	index
+8ad4a5b131e49e825b4bc503a1aa2d4a|file:///home/kyle/school/fall19/320/project1/space_weather.py|136|48|v|python
+	row['date'] + ' ' + row['start_time']
+3d6a9f26accfe37cd22dbb62e52e8f38|file:///home/kyle/school/fall19/320/project1/space_weather.py|131|14|v|python
+	datetime.strptime(row['start_time'], '%Y/%d/%m %H:%M'
+c4327246eb5782fbbb7688238de34482|file:///home/kyle/school/fall19/320/project1/space_weather.py|133|19|v|python
+	row['x_class']
+deed85e3d1b7fb872f0b4d5f877b5ebe|file:///home/kyle/school/fall19/320/project1/space_weather.py|133|9|V|python
+	        dif = abs(datetime.strptime(row['start_time'], '%Y/%d/%m %H:%M') - nasa_row['flare_importance'])
+b160d72e148be76773541ce4c1a75ca1|file:///home/kyle/school/fall19/320/project1/space_weather.py|133|19|v|python
+	datetime.strptime(row['start_time'], '%Y/%d/%m %H:%M')
+cd477ceb90ff2854ef2a5d8a0ed27710|file:///home/kyle/school/fall19/320/project1/space_weather.py|133|76|v|python
+	nasa_row['flare_importance']
+869de29b829ed092cabc3d4526ed2341|file:///home/kyle/school/fall19/320/project1/space_weather.py|140|1|V|python
+	# print(nasa_top_table[['flare_importance', 'swl_rank']].head(51))
+a95cb108583d1b94902c3594b66142ff|file:///home/kyle/school/fall19/320/project1/space_weather.py|131|75|v|python
+	(0, 0, 0)
+e1f0f3d6e9191745a4e97eacbbd1b83b|file:///home/kyle/school/fall19/320/project1/space_weather.py|131|79|v|python
+	.datetime
+04a5e3f08285822ba2e48ef87f06b489|file:///home/kyle/school/fall19/320/project1/space_weather.py|140|33|v|python
+	nasa_top_table.swl_rank.str.contains('0')
+653bd0482b838e506670113b61e58740|file:///home/kyle/school/fall19/320/project1/space_weather.py|141|55|v|python
+	.head(51
+215ef6644e36f574c758f52cedb3da44|file:///home/kyle/school/fall19/320/project1/space_weather.py|140|33|v|python
+	'swl_rank'
+0f19b6c4c29be03a2b454af77ad6a2a2|file:///home/kyle/school/fall19/320/project1/space_weather.py|140|65|v|python
+	 != 0
+70b4ffdc66490cfcf7d3424a480f3e38|file:///home/kyle/school/fall19/320/project1/space_weather.py|147|48|v|python
+	num_children
+8fdc93bebca9a96443b399366bfc3077|file:///home/kyle/school/fall19/320/project1/space_weather.py|147|63|v|python
+	num_pets
+50894a237d9bcde0a18769af9a768baf|file:///home/kyle/school/fall19/320/project1/space_weather.py|148|36|v|python
+	scatter
+867bc5b663702c21bacd7d44a09aa090|file:///home/kyle/school/fall19/320/project1/space_weather.py|148|44|v|python
+	swl_rank
+2d64a57022234d7b66b0cee83d15ecc1|file:///home/kyle/school/fall19/320/project1/space_weather.py|148|1|V|python
+	top50 = 0
+a958c4c45d836bff3d09456cd362959c|file:///home/kyle/school/fall19/320/project1/space_weather.py|157|9|V|python
+	        else:
+0cf31b2c283ce3431794586df7b0996d|file:///home/kyle/school/fall19/320/project1/space_weather.py|165|4|V|python
+	    
+02cdf9ab85f23e8e1173a369a3921f27|file:///home/kyle/school/fall19/320/project1/space_weather.py|169|1|v|python
+	nasa_top_table.head(50)
+543c763ab25e52fe7d5f508263023ddf|file:///home/kyle/school/fall19/320/project1/space_weather.py|165|6|v|python
+	Top 50
+1cb890410739c134c6ef791bd7c5f436|file:///home/kyle/school/fall19/320/project1/space_weather.py|166|6|v|python
+	Not Top 50
+c82c2fe7533ea8a73da9647993f08c7d|file:///home/kyle/school/fall19/320/project1/space_weather.py|165|24|v|python
+	top_halo / top_num
+3bee11cd17c282d557cd31e7fccb2176|file:///home/kyle/school/fall19/320/project1/space_weather.py|169|43|v|python
+	is_halo
+c7ca1303988678acf628b18aaadc187f|file:///home/kyle/school/fall19/320/project1/space_weather.py|3|1|V|python
+	import requests
+	import pandas
+	import numpy
+	import re
+	from bs4 import BeautifulSoup
+	from datetime import datetime
+	import matplotlib.pyplot as plt
+872dedd7fe40eb0cb9483f3fb856894d|file:///home/kyle/school/fall19/320/project1/space_weather.py|11|1|V|python
+	# grab the html then locate the table tag and prettify it
+	req = requests.get('https://www.spaceweatherlive.com/en/solar-activity/top-50-solar-flares')
+	soup = BeautifulSoup(req.text, 'lxml').find('table').prettify()
+	swl_table = pandas.read_html(soup)[0]
+	
+	# set the column names and remove the movies columns
+	swl_table.columns = ['rank', 'x_class', 'date', 'region', 'start_time', 'max_time', 'end_time', 'movie']
+	swl_table = swl_table.drop(columns='movie')
+1d323257e0c39d2f6c7a5739e5bea47a|file:///home/kyle/school/fall19/320/project1/space_weather.py|20|1|V|python
+	# move the date into the timestamps and remove the date column
+	for index, row in swl_table.iterrows():
+	    swl_table.loc[index, 'start_time'] =  row['date'] + ' ' + row['start_time']
+	    swl_table.loc[index, 'max_time'] =  row['date'] + ' ' + row['max_time']
+	    swl_table.loc[index, 'end_time'] =  row['date'] + ' ' + row['end_time']
+	swl_table = swl_table.drop(columns='date')
+	# replace any missing regions with NaN
+	swl_table = swl_table.replace('-', 'NaN')
+a42dfe92be1e6114e37cadcffaa99bc0|file:///home/kyle/school/fall19/320/project1/space_weather.py|31|1|V|python
+	# nasa data
+	req = requests.get('https://cdaw.gsfc.nasa.gov/CME_list/radio/waves_type2.html')
+	nasa_soup = BeautifulSoup(req.text, 'lxml').find('pre').prettify()
+	nasa_soup = nasa_soup.split('\n')[12:523]
+	
+	# create dataframe with list info
+	data = {'start_datetime': [],
+	        'end_datetime': [],
+	        'start_frequency': [],
+	        'end_frequency': [],
+	        'flare_location': [],
+	        'flare_region': [],
+	        'flare_importance': [],
+	        'cme_datetime': [],
+	        'cme_angle': [],
+	        'cme_width': [],
+	        'cme_speed': [],
+	        'is_halo': [],
+	        'width_lower_bound': []
+	        }
+	for row in nasa_soup:
+	    row = row.split()
+	    data['start_datetime'].append(row[0] + ' ' + row[1])
+	    data['end_datetime'].append(row[0][0:5] + row[2] + ' ' + row[3])
+	    # use regex to pull out frequencies
+	    start_frequency_search = re.search('>(\d+)<', row[5])
+	    end_frequency_search = re.search('>(\d+)<', row[7])
+	    if start_frequency_search:
+	        data['start_frequency'].append(start_frequency_search.group(1))
+	    else:
+	        data['start_frequency'].append('NaN')
+	    if end_frequency_search:
+	        data['end_frequency'].append(end_frequency_search.group(1))
+	    else:
+	        data['end_frequency'].append('NaN')
+	
+	    data['flare_location'].append(row[8])
+	    data['flare_region'].append(row[9])
+	    data['flare_importance'].append(row[10])
+	
+	    # use regex to pull out cme_date
+	    cme_date_search = re.search('>(\d+/\d+)<', row[12])
+	    if cme_date_search:
+	        data['cme_datetime'].append(row[0][0:5] + cme_date_search.group(1) + ' ' + row[13])
+	    else:
+	        data['cme_datetime'].append('NaN')
+	
+	    # check if halo flare
+	    if row[14] == 'Halo':
+	        data['cme_angle'].append('NA')
+	        data['is_halo'].append('True')
+	    else:
+	        data['cme_angle'].append(row[14])
+	        data['is_halo'].append('False')
+	
+	    # check if width is lower bound and only keep numeric info
+	    width_search = re.search('>(\d+)', row[15])
+	    if width_search:
+	        data['cme_width'].append(width_search.group(1))
+	        data['width_lower_bound'].append('True')
+	    else:
+	        data['cme_width'].append(row[15])
+	        data['width_lower_bound'].append('False')
+	
+	    # use regex to pull out cme_speed
+	    cme_speed_search = re.search('>(\d+)<', row[17])
+	    if cme_speed_search:
+	        data['cme_speed'].append(cme_speed_search.group(1))
+	    else:
+	        data['cme_speed'].append('NaN')
+	
+	nasa_table = pandas.DataFrame(data)
+	
+	# tidy nasa_table
+	nasa_table = nasa_table.replace(r'-+', 'NaN', regex=True)
+ecfa57fbcf5ecfd983a9280a173e1f68|file:///home/kyle/school/fall19/320/project1/space_weather.py|107|1|V|python
+	#
+	# Part 2 Q1
+	#
+	
+	# filter only flares with importance that start with X and sort them
+	nasa_top_table = nasa_table[nasa_table.flare_importance.str.contains('^X')]
+	nasa_top_table = nasa_top_table.replace(regex='X', value='')
+	nasa_top_table['flare_importance'] = nasa_top_table['flare_importance'].astype(float)
+	nasa_top_table = nasa_top_table.sort_values('flare_importance', ascending=False)
+	nasa_top_table['flare_importance'] = nasa_top_table['flare_importance'].astype(str)
+	nasa_top_table['flare_importance'] = 'X' + nasa_top_table['flare_importance']
+d4fd86642123e74ef5b88097024ded0e|file:///home/kyle/school/fall19/320/project1/space_weather.py|119|1|V|python
+	#
+	# Part 2 Q2
+	#
+	
+	# cut out x so that the importance can be compared
+	swl_table = swl_table.replace(regex='X', value='')
+	swl_table['x_class'] = swl_table['x_class'].astype(float)
+	nasa_top_table = nasa_top_table.replace(regex='X', value='')
+	nasa_top_table['flare_importance'] = nasa_top_table['flare_importance'].astype(float)
+	nasa_top_table['swl_rank'] = 0
+	
+	for index, row in swl_table.iterrows():
+	    current = 0
+	    lowest = datetime.strptime(row['start_time'], '%Y/%m/%d %H:%M') - datetime(1, 1, 1)
+	    for nasa_index, nasa_row in nasa_top_table.iterrows():
+	        dif = abs(datetime.strptime(row['start_time'], '%Y/%m/%d %H:%M') - datetime.strptime(nasa_row['start_datetime'], '%Y/%m/%d %H:%M'))
+	        if dif < lowest and nasa_row['swl_rank'] == 0:
+	            lowest = dif
+	            current = nasa_index
+	    nasa_top_table.loc[current, 'swl_rank'] =  row['rank']
+cdf6ddda0d130889d50a735e468259de|file:///home/kyle/school/fall19/320/project1/space_weather.py|119|1|V|python
+	#
+	# Part 2 Q2
+	#
+	
+	# cut out x so that the importance can be compared
+	swl_table = swl_table.replace(regex='X', value='')
+	swl_table['x_class'] = swl_table['x_class'].astype(float)
+	nasa_top_table = nasa_top_table.replace(regex='X', value='')
+	nasa_top_table['flare_importance'] = nasa_top_table['flare_importance'].astype(float)
+	nasa_top_table['swl_rank'] = 0
+	
+	for index, row in swl_table.iterrows():
+	    current = 0
+	    lowest = datetime.strptime(row['start_time'], '%Y/%m/%d %H:%M') - datetime(1, 1, 1)
+	    for nasa_index, nasa_row in nasa_top_table.iterrows():
+	        dif = abs(datetime.strptime(row['start_time'], '%Y/%m/%d %H:%M') - datetime.strptime(nasa_row['start_datetime'], '%Y/%m/%d %H:%M'))
+	        if dif < lowest and nasa_row['swl_rank'] == 0:
+	            lowest = dif
+	            current = nasa_index
+	    nasa_top_table.loc[current, 'swl_rank'] =  row['rank']
+	
+	# print(swl_table)
+	# nasa_top_table = nasa_top_table[nasa_top_table['swl_rank'] != 0]
+	# print(nasa_top_table[['flare_importance', 'swl_rank']].head(50))
+892b49f38659503dc4eae8bde25a06bf|file:///home/kyle/school/fall19/320/project1/space_weather.py|144|1|V|python
+	#
+	# Part 2 Q3
+	#
+	
+	top_halo = 0
+	top_num = 0
+	not_top_halo = 0
+	not_top_num = 0
+	
+	for index, row in nasa_top_table.iterrows():
+	    if row['swl_rank'] != 0:
+	        if row['is_halo'] == 'True':
+	            top_halo += 1
+	        top_num += 1
+	    else:
+	        if row['is_halo'] == 'True':
+	            not_top_halo += 1
+	        not_top_num += 1
+	
+	
+	data = {
+	    'Flare Category': ['Top 50', 'Not Top 50'],
+	    'Proportion of Halos': [top_halo / top_num, not_top_halo / not_top_num]
+	}
+	
+	pandas.DataFrame(data).plot(kind='bar',x='Flare Category',y='Proportion of Halos',color='red')
+	plt.show()
+efe6b2c2589e25605d9f62170933c925|file:///home/kyle/school/fall19/food/debate1/debate1.tex|18|56|v|tex
+	certain
+2c0706cfdc6dd67747c2bb10251e9769|file:///home/kyle/.config/nvim/init.vim|258|21|v|vim
+	<c-g>u
+69aede8f3af4f13772fb14bc04c8d576|file:///home/kyle/school/fall19/food/debate1/debate1.tex|53|1|V|tex
+	government.
+bf67104f9f2f90c18c45fa2058245a16|file:///home/kyle/school/fall19/food/debate1/debate1.tex|51|68|v|tex
+	to a
+57ef61d4f0e3a297f92682b8a7ed7ce9|file:///home/kyle/school/fall19/food/debate1/debate1.tex|52|1|V|tex
+	societal problem, as the United State's education system is managed by the
+b92e4c2afa21a54960dbcf2970f4e71b|file:///home/kyle/school/fall19/food/debate1/debate1.tex|53|1|V|tex
+	invidious las.
+a762b134721711c6cc7adf00aeaad9c1|file:///home/kyle/school/fall19/food/debate1/debate1.tex|58|1|V|tex
+	second page
+57dd9a582b18ec817a16d79613cf70e0|file:///home/kyle/school/spring19/bsgc398/final/sources.bib|1|1|V|bib
+	@electronic{rwanda,
+f0a3bcfedecb2cb91ae832cf57a55a83|file:///home/kyle/school/spring19/bsgc398/final/sources.bib|1|1|V|bib
+	@electronic{rwanda,
+		title = "Hotel Rwanda",
+		year = "2005",
+		publisher = "United Artists \& Lions Gate Films",
+	}
+	
+	@online{sirolli,
+		title = "Shut Up and Listen",
+		author = "Ernesto Sirolli",
+		publisher = "TED",
+		url = "https://www.ted.com/talks/ernesto_sirolli_want_to_help_someone_shut_up_and_listen",
+	}
+	
+	@article{savior,
+		title = "Holding up the Mirror: Recognizing and Dismantling the “White Savior Complex”",
+		author = "Janine Guarino",
+		year = "2018",
+	}
+	
+	@online{birdsong,
+		title = "The Story We Tell About Poverty Isn't True",
+		author = "Mia Birdsong",
+		publisher = "TED",
+		url = "https://www.ted.com/talks/mia_birdsong_the_story_we_tell_about_poverty_isn_t_true"
+	}
+	
+	@article{global,
+		title = "Global Citizenship: What Are We Talking About and Why Does it Matter?",
+		author = "Madeleine F. Green",
+		year = "2012",
+		publisher = "Trends \& Insights"
+	}
+16518154fcc12cb9c715478443414867|file:///home/kyle/school/fall19/food/debate1/sources.bib|1|2|v|bib
+	electronic
+92a2b5cb9c6906035c2864fa225e1940|file:///home/kyle/school/fall19/food/debate1/sources.bib|14|2|v|bib
+	article
+abcf5d516c3da56298011634da10938d|file:///home/kyle/school/fall19/food/debate1/sources.bib|26|1|V|bib
+	
+	@article{global,
+	        title = "Global Citizenship: What Are We Talking About and Why Does it Matter?",
+	        author = "Madeleine F. Green",
+	        year = "2012",
+	        publisher = "Trends \& Insights"
+	}
+c04911d0d40595d7f4e574b24e2d0b4c|file:///home/kyle/school/fall19/food/debate1/sources.bib|1|9|v|bib
+	rwanda
+26e28738b51eebd25cf4d734b33b539f|file:///home/kyle/school/fall19/food/debate1/sources.bib|2|18|v|bib
+	Hotel
+5bfb128c104c6d95c0ef31e2cfc93f9f|file:///home/kyle/school/fall19/food/debate1/sources.bib|2|18|v|bib
+	 Rwanda
+d47268e9db2e9aa3827bba3afb7ff94a|file:///home/kyle/school/fall19/food/debate1/sources.bib|3|17|v|bib
+	2005
+ae371e6b3e0a1b3e6baf5b8db7d4d485|file:///home/kyle/school/fall19/food/debate1/sources.bib|4|22|v|bib
+	United Artists \& Lions Gate Films
+36d596f56b5ea4a77fb2101436993ddc|file:///home/kyle/school/fall19/food/debate1/sources.bib|7|9|v|bib
+	sirolli
+544d7c55aa9573c4d548efbc107ebdcb|file:///home/kyle/school/fall19/food/debate1/sources.bib|8|18|v|bib
+	Shut Up and Listen
+62506be34d574da4a0d158a67253ea99|file:///home/kyle/school/fall19/food/debate1/sources.bib|7|9|v|bib
+	food
+72ea4944d8da8e1874057a0d1f6971d8|file:///home/kyle/school/fall19/food/debate1/sources.bib|9|19|v|bib
+	Ernesto Sirolli
+f4f483cf1382f460aeb37f1bc85d0f03|file:///home/kyle/school/fall19/food/debate1/sources.bib|4|22|v|bib
+	Harvard School of Public Health
+6808dd0e73ce8c42a097bc74c523775f|file:///home/kyle/school/fall19/food/debate1/sources.bib|9|19|v|bib
+	Harvard
+767894b5fd6a2640366b842d31c3bccf|file:///home/kyle/school/fall19/food/debate1/sources.bib|9|1|V|bib
+	        author = "Harvard School of Public Health",
+1d0d47eea1976f29e283d97b76e94ada|file:///home/kyle/school/fall19/food/debate1/sources.bib|4|1|V|bib
+	        publisher = "Harvard School of Public Health",
+eddf2ac1716ba53b987d210d610b3828|file:///home/kyle/school/fall19/food/debate1/sources.bib|3|9|V|bib
+	        year = "2012",
+c162d1ef56963a7e8abad54dd5e2ccc0|file:///home/kyle/school/fall19/food/debate1/sources.bib|11|9|V|bib
+	        publisher = "TED",
+b36bccbd3f59ef1d2818f69ade56e3b3|file:///home/kyle/school/fall19/food/debate1/sources.bib|11|16|v|bib
+	https://www.ted.com/talks/ernesto_sirolli_want_to_help_someone_shut_up_and_listen
+de4d12070635e25494e3f534f3c8aaf5|file:///home/kyle/school/fall19/food/debate1/sources.bib|11|1|V|bib
+	        url = "https://www.hsph.harvard.edu/obesity-prevention-source/obesity-causes/diet-and-weight/",
+3cbf54c21b76d85795564deaa9853d11|file:///home/kyle/school/fall19/food/debate1/sources.bib|5|16|v|bib
+	https://www.hsph.harvard.edu/obesity-prevention-source/obesity-causes/diet-and-weight/
+28e44f6e3c0e57dc6a3a13eddee4851c|file:///home/kyle/school/fall19/food/debate1/sources.bib|20|1|V|bib
+	
+	@online{birdsong,
+	        title = "The Story We Tell About Poverty Isn't True",
+	        author = "Mia Birdsong",
+	        publisher = "TED",
+	        url = "https://www.ted.com/talks/mia_birdsong_the_story_we_tell_about_poverty_isn_t_true"
+	}
+305f962e9f917f7d3a932ea8cb8aecd6|file:///home/kyle/school/fall19/food/debate1/sources.bib|15|9|v|bib
+	savior
+3ced1b04600c8b348bac35f5456f068c|file:///home/kyle/school/fall19/food/debate1/sources.bib|16|18|v|bib
+	Holding up the Mirror: Recognizing and Dismantling the “White Savior Complex”
+a38ff48ad13d23fa311fc4e0a3926b66|file:///home/kyle/school/fall19/food/debate1/sources.bib|17|19|v|bib
+	Janine Guarino
+738634fed9160f35186e7a005b31e52d|file:///home/kyle/school/fall19/food/debate1/sources.bib|18|9|V|bib
+	        year = "2018",
+d2615f9af1e9eb17244042f28358c7f2|file:///home/kyle/school/spring19/bsgc398/final/final.tex|20|1|V|tex
+	% Bibliography package
+	\usepackage[backend=biber, style=mla]{biblatex}
+	\addbibresource{sources.bib}
+869bb7cc4a8b60e54a3c4f39e635055a|file:///home/kyle/school/fall19/food/debate1/debate1.tex|18|17|v|tex
+	sources.bib
+02bd92faa38aaa6cc0ea75e59937a1ef|file:///home/kyle/school/fall19/food/debate1/sources.bib|3|9|v|bib
+	author
+4e0c262a032ff1d3fc04c6b322c6ba46|file:///home/kyle/chess/src/chess.hpp|11|1|V|cpp
+	namespace chess
+3af2e61c8aaef49afb1d718afabd4479|file:///home/kyle/resume/resume.tex|117|13|v|tex
+	Hophacks Fall 2018
+d52387880e1ea22817a72d3759213819|file:///home/kyle/resume/resume.tex|118|9|v|tex
+	Java
+cb508ead828a33e602a7ef2cff1f38e9|file:///home/kyle/resume/resume.tex|120|14|V|tex
+	  Created an application that accessed a database of drugs and
+	  calculated whether their effects would be synergistic, antagonistic, or
+	  additive when combined.
+04ad3893ae3646c89a6191908afc990f|file:///home/kyle/resume/resume.tex|125|15|V|tex
+	\subsubsection{
+	  Performed data analysis on the scraped information.
+	}
+bb5b4c7d7aa96fe8d187b5e83ad4e0cb|file:///home/kyle/resume/resume.tex|123|55|v|tex
+	 for data analysis.
+d3ce77b74c192e162e0003369a1140a6|file:///home/kyle/.config/awesome/bar/network.lua|24|24|v|lua
+	icon .. "
+c7bb060e061ffbb439e5bb757666ebe1|file:///home/kyle/.config/awesome/rc.lua|132|15|v|lua
+	wibox.widget.textclock(" %A, %B %d   %I:%M %P ")
+7a46ba994f7d07f7870054503f2d7e44|file:///home/kyle/.config/awesome/rc.lua|244|37|v|lua
+	 %A, %B %d   %I:%M %P 
+096e02fceee3acd05b188cc3f26091c7|file:///home/kyle/.config/awesome/rc.lua|242|25|v|lua
+	50pt
+94c035cfa6668cd7aea4b33676e6f937|file:///home/kyle/.config/awesome/rc.lua|242|25|v|lua
+	FontAwesome
+6b9b794e4fc8a58d17659af84984e1b2|file:///home/kyle/.config/awesome/rc.lua|242|25|v|lua
+	Roboto
+909abe9fee97a20b8171787cc78e92d8|file:///home/kyle/p.py|5|1|V|python
+	def P(event, space): 
+	    # "The probability of an event, given a sample space of equiprobable outcomes."
+	    return Fraction(len(event & space), len(space))
+	
+	
+697409f29cf86f506014d8a77b91e2ed|file:///home/kyle/p.py|18|1|V|python
+	D    = {1, 2, 3, 4, 5, 6}
+	
+	D4 = {(d1, d2, d3, d4) for d1 in D for d2 in D for d3 in D for d4 in D}
+	
+	def prime_sum(outcome): return is_prime(sum(outcome))
+	
+	def is_prime(n): return n > 1 and not any(n % i == 0 for i in range(2, n))
+	
+	print(P(prime_sum, D4))
+37af13d947199a47ae2dbac0ecddee25|file:///home/kyle/p.py|37|1|V|python
+	MM = joint(bag94, bag94, ' ')
+c0195f01841352547d9d445dc817f69d|file:///home/kyle/.config/awesome/keys.lua|128|1|V|lua
+	    sidebar.music_toggle()
+15ae732a3050729ce1dbccfc84b3f649|file:///home/kyle/.config/awesome/keys.lua|78|1|V|lua
+	        spotify_bool = false
+	        sidebar.music_toggle()
+68934a3e9455fa72420237eb05902327|file:///home/kyle/.config/awesome/keys.lua|88|24|v|lua
+	false

@@ -73,13 +73,21 @@ keys.globalkeys = gears.table.join(
         {description = "open firefox", group = "launcher"}),
     awful.key({ modkey,           }, "d",       function () awful.spawn.with_shell(launcher) end,
         {description = "open rofi", group = "launcher"}),
-    awful.key({ modkey,           }, "s",       function () awful.spawn(spotify) end,
+    awful.key({ modkey,           }, "s",       function ()
+        awful.spawn(spotify)
+        spotify_bool = false
+        sidebar.music_toggle()
+    end,
         {description = "open spotify", group = "launcher"}),
     awful.key({ modkey,           }, "p",       function () awful.spawn(python) end,
         {description = "open python", group = "launcher"}),
     awful.key({ modkey,           }, "v",       function () awful.spawn(vlc) end,
         {description = "open vlc", group = "launcher"}),
-    awful.key({ modkey,           }, "m",       function () awful.spawn(mpd) end,
+    awful.key({ modkey,           }, "m",       function ()
+        awful.spawn(mpd)
+        spotify_bool = true
+        sidebar.music_toggle()
+    end,
         {description = "open mpd client ncmpcpp", group = "launcher"}),
     awful.key({ modkey,           }, "t",       function () awful.spawn("typora") end,
         {description = "open markdown editor", group = "launcher"}),
