@@ -26,7 +26,9 @@ set fish_color_autosuggestion black
 abbr vim 'nvim'
 abbr ka 'killall'
 abbr at 'audio-toggle'
+abbr hdmi './.screenlayout/mirrorview.sh'
 abbr um 'usb-mount'
+abbr eclim '/home/kyle/.eclipse/org.eclipse.platform_4.13.0_155965261_linux_gtk_x86_64/eclimd'
 # git
 abbr ga 'git add'
 abbr gc 'git commit'

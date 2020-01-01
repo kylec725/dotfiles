@@ -167,7 +167,7 @@ autocmd FileType markdown setlocal spell shiftwidth=4
 autocmd FileType ocaml setlocal shiftwidth=2 | match OverLength /\%81v.\+/
 autocmd FileType c setlocal shiftwidth=4 cindent | match OverLength /\%81v.\+/
 autocmd FileType cpp setlocal shiftwidth=4 cindent cinoptions=g0+N-sw | match OverLength /\%81v.\+/
-autocmd FileType java setlocal shiftwidth=4 | match OverLength /\%81v.\+/
+autocmd FileType java setlocal shiftwidth=4
 autocmd FileType javascript setlocal shiftwidth=2
 autocmd FileType python setlocal shiftwidth=4
 autocmd FileType vim setlocal shiftwidth=4
@@ -310,8 +310,8 @@ let g:airline_symbols.notexists = ''
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>ga :Gwrite<CR>
 nnoremap <leader>gc :Gcommit<CR>
-nmap <leader>gj <Plug>GitGutterNextHunk
-nmap <leader>gk <Plug>GitGutterPrevHunk
+nmap <leader>gj <Plug>(GitGutterNextHunk)
+nmap <leader>gk <Plug>(GitGutterPrevHunk)
 " nnoremap <leader>gu :Gpush<CR>
 " nnoremap <leader>gd :Gpull<CR>
 
