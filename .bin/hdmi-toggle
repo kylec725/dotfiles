@@ -2,7 +2,7 @@
 
 CURRENT_PROFILE=$(pacmd list-cards | grep "active profile" | cut -d ' ' -f 3-)
 
-if [ "$CURRENT_PROFILE" = "<output:hdmi-stereo>" ]; then
+if [ "$(cat /sys/class/drm/card0-HDMI-A-1/status)" = "disconnected" ]; then
         pacmd set-card-profile 0 "output:analog-stereo+input:analog-stereo"
         xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --off
 	notify-send "Single Screen"
