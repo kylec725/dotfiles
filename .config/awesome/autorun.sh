@@ -27,21 +27,8 @@ run xss-lock -l fade-lock +resetsaver &
 # Set redshift value
 run redshift -c ~/.config/redshift/redshift.conf &
 
-# Run nm-applet
-# run nm-applet &
-
 # Start Music Player Daemon
 run mpd &
 
-# Clipboard manager
-clear_clipboard=false
-if [ -z $(pgrep clipster) ]; then
-        clear_clipboard=true
-fi
-run clipster -d -f ~/.config/clipster/clipster.ini &
-# clear clipboard history on restart of clipster
-if [ "$clear_clipboard" = true ]; then
-        sleep 0.02
-        clipster -c --erase-entire-board
-        clipster -p --erase-entire-board
-fi
+# Daemon to change screen layout when HDMI is connected
+x-on-resize -c ~/.bin/hdmi-toggle
