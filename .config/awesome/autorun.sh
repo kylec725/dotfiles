@@ -31,4 +31,4 @@ run redshift -c ~/.config/redshift/redshift.conf &
 run mpd &
 
 # Daemon to change screen layout when HDMI is connected
-x-on-resize -c ~/.bin/hdmi-toggle
+run x-on-resize -c ~/.bin/hdmi-toggle
