@@ -71,6 +71,8 @@ keys.globalkeys = gears.table.join(
         {description = "open ranger file manager", group = "launcher"}),
     awful.key({ modkey,           }, "w",       function () awful.spawn(browser) end,
         {description = "open firefox", group = "launcher"}),
+    awful.key({ modkey, "Shift"   }, "w",       function () awful.spawn(browser .. " --private-window") end,
+        {description = "open firefox in incognito", group = "launcher"}),
     awful.key({ modkey,           }, "d",       function () awful.spawn.with_shell(launcher) end,
         {description = "open rofi", group = "launcher"}),
     awful.key({ modkey,           }, "s",       function ()
