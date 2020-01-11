@@ -17,11 +17,12 @@ Plug 'lervag/vimtex'
 " File Navigation
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-icons'
-Plug 'liuchengxu/vista.vim'
+" Plug 'liuchengxu/vista.vim'
 Plug 'majutsushi/tagbar'
 Plug 'ryanoasis/vim-devicons'
 Plug 'gcavallanti/vim-noscrollbar'
 Plug 'junegunn/fzf.vim'
+Plug 'romainl/vim-cool'
 
 " Visual Changes
 Plug 'Yggdroot/indentLine'
