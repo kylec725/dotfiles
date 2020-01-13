@@ -158,6 +158,12 @@ awful.key({}, "XF86MonBrightnessDown",       function ()
 end,
 {description = "decrease brightness by 5%", group = "launcher"}),
 
+-- Run HDMI script
+awful.key({}, "F7", function()
+    awful.spawn.with_shell("hdmi-toggle")
+end,
+{description = "run hdmi script to adjust screen layout", group = "launcher"}),
+
 -- Lock control
 awful.key({modkey, "Shift"}, "p", function ()
     awful.spawn.easy_async_with_shell("pgrep xss-lock", function (stdout)
