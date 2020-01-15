@@ -340,11 +340,11 @@ keys.clientbuttons = gears.table.join(
     awful.button({ modkey }, 3, function (c)
         c:emit_signal("request::activate", "mouse_click", {raise = true})
         awful.mouse.client.resize(c)
-    end),
-    awful.button({}, 2, function (c)
-        -- c:emit_signal("request::activate", "mouse_click", {raise = true})
-        sidebar.visible = not sidebar.visible
     end)
+    -- awful.button({}, 2, function (c)
+    --     -- c:emit_signal("request::activate", "mouse_click", {raise = true})
+    --     sidebar.visible = not sidebar.visible
+    -- end)
     )
 
 keys.desktopbuttons = gears.table.join(

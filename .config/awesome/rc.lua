@@ -70,7 +70,8 @@ mpd = "kitty -o window_padding_width=40 -o color3=#ffff8a -e ncmpcpp"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 scrot = "scrot ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png"
-googlecalendar = "firefox --new-window 'https://calendar.google.com/calendar/b/1/r'"
+-- googlecalendar = "firefox --new-window 'https://calendar.google.com/calendar/b/1/r'"
+googlecalendar = "qutebrowser calendar.google.com"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
