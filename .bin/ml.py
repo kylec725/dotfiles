@@ -22,4 +22,4 @@ for link in links:
         with open('school/spring20/ml/slides/' + filename, 'wb') as out:
             for bits in r.iter_content():
                 out.write(bits)
-    print(filename + " written to")
+    print(filename)
