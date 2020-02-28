@@ -59,7 +59,7 @@ end
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
 browser = "firefox"
-launcher = "rofi -show drun -kb-row-down 'Ctrl-j' -kb-accept-entry '' -kb-row-up 'Ctrl-k' -kb-remove-to-eol ''"
+launcher = "rofi -show drun -kb-row-down 'Ctrl-j' -kb-accept-entry 'Return' -kb-row-up 'Ctrl-k' -kb-remove-to-eol ''"
 filemanager = "kitty -e ranger"
 pdf = "kitty -e pdf"
 clipboard = "kitty -e fzfclip"
