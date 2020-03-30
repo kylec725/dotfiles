@@ -20,7 +20,7 @@ set fish_color_valid_path
 # selection color
 set fish_color_search_match --background=black
 # autocomplete text color
-set fish_color_autosuggestion black
+# set fish_color_autosuggestion black
 
 # aliases
 abbr vim 'nvim'
@@ -87,7 +87,7 @@ set fish_color_search_match --background='black'
 set fish_color_operator $nord9
 set fish_color_escape $nord13
 set fish_color_cwd $nord8
-set fish_color_autosuggestion black
+set fish_color_autosuggestion 7a7a78
 set fish_color_user $nord4
 set fish_color_host $nord9
 set fish_color_cancel $nord15
