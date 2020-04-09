@@ -227,6 +227,12 @@ noremap <silent> <C-Down> :resize -5<CR>
 noremap <silent> <C-Up> :resize +5<CR>
 noremap <silent> <C-Right> :vertical resize +5<CR>
 
+" insert mode navigation
+inoremap <C-k> <C-o>gk
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+inoremap <C-j> <C-o>gj
+
 " make Y behave like C and D
 nnoremap Y y$
 
@@ -393,9 +399,9 @@ vnoremap <leader><Tab> :Tabularize /
 
 " Snippets !!!!!
 let g:UltiSnipsUsePythonVersion = 3
-let g:UltiSnipsExpandTrigger = "<c-l>"
-let g:UltiSnipsJumpForwardTrigger = "<c-l>"
-let g:UltiSnipsJumpBackwardTrigger = "<c-h>"
+let g:UltiSnipsExpandTrigger = "<c-n>"
+let g:UltiSnipsJumpForwardTrigger = "<c-n>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-p>"
 
 " DelimitMate !!!!!
 let delimitMate_expand_cr = 1
