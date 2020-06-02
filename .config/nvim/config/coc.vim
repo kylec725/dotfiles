@@ -16,3 +16,6 @@ inoremap <expr> <s-tab> pumvisible() ? "\<C-p>" : "\<s-tab>"
 
 " let esc cancel completion
 inoremap <expr> <c-c> pumvisible() ? "\<C-e>" : "\<c-c>"
+
+" remove warning on open about neovim version
+let g:coc_disable_startup_warning = 1
