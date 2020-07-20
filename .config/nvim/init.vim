@@ -30,6 +30,7 @@ Plug 'gregsexton/MatchTag'
 Plug 'arcticicestudio/nord-vim'
 Plug 'miyakogi/conoline.vim'
 " Plug 'RRethy/vim-illuminate'
+Plug 'machakann/vim-highlightedyank'
 
 " Statusline
 Plug 'itchyny/lightline.vim'
@@ -40,7 +41,7 @@ Plug 'maximbaz/lightline-ale'
 " Language Syntax/Suggestions
 Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
-Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
+" Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'octol/vim-cpp-enhanced-highlight'
 
 " Git
@@ -277,6 +278,9 @@ endfunction
 
 " Get plugin configs
 call SourceAllIn('/config/')
+
+" Yank Highlight
+let g:highlightedyank_highlight_duration = 500
 
 " Airline !!!!!
 
