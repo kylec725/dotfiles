@@ -16,7 +16,7 @@ amixer set Master 50%
 ~/.fehbg &
 
 # Compton
-run compton --config ~/.config/compton/compton.conf -b
+run picom --experimental-backends --backend 'glx'
 
 # Start libinput-gestures
 libinput-gestures-setup start
@@ -32,3 +32,6 @@ run mpd &
 
 # Daemon to change screen layout when HDMI is connected
 run x-on-resize -c ~/.bin/hdmi-toggle
+
+# caps2esc
+# sudo nice -n -20 udevmon -c udevmon.yaml >udevmon.log 2>udevmon.err &
