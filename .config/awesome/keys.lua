@@ -211,6 +211,12 @@ end,
     awful.key({ modkey }, "semicolon", function()
         sidebar.visible = not sidebar.visible
     end, {description = "show or hide sidebar", group = "awesome"}),
+-- awful.key({ }, "Super_L", function()
+--     sidebar.visible = not sidebar.visible
+-- end, {description = "show or hide sidebar", group = "awesome"}),
+-- awful.key({ }, "Control_R", function()
+--     sidebar.visible = not sidebar.visible
+-- end, {description = "show or hide sidebar", group = "awesome"}),
 
 awful.key({ modkey, "Shift" }, "c", function()
     awful.spawn(clipboard,{
