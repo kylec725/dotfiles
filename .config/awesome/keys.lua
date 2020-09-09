@@ -22,9 +22,9 @@ modkey = "Mod1"
 
 keys.globalkeys = gears.table.join(
     -- Client navigation
-    awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
+    awful.key({ modkey,           }, "h",   awful.tag.viewprev,
         {description = "view previous", group = "tag"}),
-    awful.key({ modkey,           }, "Right",  awful.tag.viewnext,
+    awful.key({ modkey,           }, "l",  awful.tag.viewnext,
         {description = "view next", group = "tag"}),
 
     awful.key({ modkey,           }, "j",
