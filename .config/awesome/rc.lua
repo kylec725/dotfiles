@@ -13,12 +13,6 @@ local wibox = require("wibox")
 local naughty = require("naughty")
 local menubar = require("menubar")
 
--- cleanup script to prevent volume widget from crashing
-awful.spawn.with_shell("~/.config/awesome/cleanup.sh")
-
--- run ~/.config/awesome/autorun.sh for startup programs
-awful.spawn.with_shell("~/.config/awesome/autorun.sh")
-
 -- Theme Settings
 -- Theme handling library
 local beautiful = require("beautiful")
@@ -54,6 +48,17 @@ do
     end)
 end
 -- }}}
+
+-- cleanup script to prevent volume widget from crashing
+awful.spawn.with_shell("~/.config/awesome/cleanup.sh")
+
+-- run ~/.config/awesome/autorun.sh for startup programs
+awful.spawn.with_shell("~/.config/awesome/autorun.sh")
+-- autorun redshift because autorun.sh does not start it for some reason
+awful.util.spawn("pgrep redshift || redshift")
+awful.util.spawn("pgrep xss-lock || xss-lock -l fade-lock +resetsaver &")
+awful.util.spawn("pgrep mpd || mpd &")
+awful.util.spawn("pgrep x-on-resize || x-on-resize -c ~/.bin/hdmi-toggle")
 
 -- {{{ Variable definitions
 -- This is used later as the default terminal and editor to run.
