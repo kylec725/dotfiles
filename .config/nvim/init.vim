@@ -11,7 +11,7 @@ Plug 'tpope/vim-repeat'
 Plug 'vimlab/split-term.vim'
 Plug 'godlygeek/tabular'
 Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+" Plug 'honza/vim-snippets'
 Plug 'lervag/vimtex'
 
 " File Navigation
@@ -41,7 +41,7 @@ Plug 'maximbaz/lightline-ale'
 " Language Syntax/Suggestions
 Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
-" Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'octol/vim-cpp-enhanced-highlight'
 
 " Git
@@ -128,6 +128,9 @@ highlight VertSplit cterm=NONE ctermfg=12
 " remove latex concealment
 let g:tex_conceal = ""
 
+" remove vimtex vim version warning
+let g:vimtex_version_check = 0
+
 " highlight characters after column 80
 highlight OverLength ctermbg=darkgray ctermfg=black
 " match OverLength /\%81v.\+/
@@ -162,13 +165,13 @@ command Indent :normal! MmQgg=G'Qzz
 autocmd FileType html setlocal shiftwidth=2
 autocmd FileType css setlocal shiftwidth=2
 autocmd FileType json setlocal shiftwidth=2
-autocmd FileType ruby setlocal shiftwidth=2 | match OverLength /\%81v.\+/
+autocmd FileType ruby setlocal shiftwidth=2
 " autocmd FileType tex setlocal shiftwidth=2 spell | nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR>
 autocmd FileType tex setlocal shiftwidth=2 spell | ALEDisable | let delimitMate_quotes = "\" ' ` $"
 autocmd FileType markdown setlocal spell shiftwidth=4
-autocmd FileType ocaml setlocal shiftwidth=2 | match OverLength /\%81v.\+/
-autocmd FileType c setlocal shiftwidth=4 cindent | match OverLength /\%81v.\+/
-autocmd FileType cpp setlocal shiftwidth=4 cindent cinoptions=g0+N-sw | match OverLength /\%81v.\+/
+autocmd FileType ocaml setlocal shiftwidth=2
+autocmd FileType c setlocal shiftwidth=4 cindent
+autocmd FileType cpp setlocal shiftwidth=4 cindent cinoptions=g0+N-sw
 autocmd FileType java setlocal shiftwidth=4
 autocmd FileType javascript setlocal shiftwidth=2
 autocmd FileType python setlocal shiftwidth=4
@@ -177,6 +180,8 @@ autocmd FileType sql setlocal shiftwidth=4
 autocmd FileType lua setlocal shiftwidth=4
 autocmd FileType fish setlocal shiftwidth=4 | ALEDisable
 autocmd FileType sh setlocal shiftwidth=8
+" add to gray out text after column 80
+" | match OverLength /\%81v.\+/
 
 "-------------------------"
 " General Vim Keybindings "
@@ -321,6 +326,7 @@ let g:airline_symbols.notexists = ''
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>ga :Gwrite<CR>
 nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gr :Git restore %<CR>
 nmap <leader>gj <Plug>(GitGutterNextHunk)
 nmap <leader>gk <Plug>(GitGutterPrevHunk)
 " nnoremap <leader>gu :Gpush<CR>
