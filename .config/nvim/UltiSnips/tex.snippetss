@@ -1,0 +1,49 @@
+snippet init "import base packages" b
+\documentclass[${1:11pt}]{${2:article}}
+\usepackage[utf8]{inputenc}
+
+$0
+endsnippet
+
+snippet "b(egin)?" "begin{} / end{}" br
+\begin{$1}$0
+\end{$1}
+endsnippet
+
+snippet dm "display math mode" bA
+\[ $0 \]
+endsnippet
+
+snippet "prf|proof" "proof environment" br
+\begin{proof}\leavevmode
+$1
+\end{proof}$0
+endsnippet
+
+snippet "thm|theorem" "theorem" br
+\newtheorem{theorem}{${1:Theorem}}
+\begin{theorem}
+$2
+\end{theorem}$0
+endsnippet
+
+snippet "cly|corollary" "corollary" br
+\newtheorem{corollary}{${1:Corollary}}[theorem]
+\begin{corollary}
+$2
+\end{corollary}$0
+endsnippet
+
+snippet "lma|lemma" "lemma" br
+\newtheorem{lemma}[theorem]{${1:Lemma}}
+\begin{lemma}
+$2
+\end{lemma}$0
+endsnippet
+
+snippet box "Box"
+`!p snip.rv = '┌' + '─' * (len(t[1]) + 2) + '┐'`
+│ $1 │
+`!p snip.rv = '└' + '─' * (len(t[1]) + 2) + '┘'`
+$0
+endsnippet

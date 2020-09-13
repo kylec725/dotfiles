@@ -27,6 +27,7 @@ Plug 'romainl/vim-cool'
 " Visual Changes
 Plug 'Yggdroot/indentLine'
 Plug 'gregsexton/MatchTag'
+Plug 'mustache/vim-mustache-handlebars'
 Plug 'arcticicestudio/nord-vim'
 Plug 'miyakogi/conoline.vim'
 " Plug 'RRethy/vim-illuminate'
@@ -41,7 +42,7 @@ Plug 'maximbaz/lightline-ale'
 " Language Syntax/Suggestions
 Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'octol/vim-cpp-enhanced-highlight'
 
 " Git
@@ -234,10 +235,10 @@ noremap <silent> <C-Up> :resize +5<CR>
 noremap <silent> <C-Right> :vertical resize +5<CR>
 
 " insert mode navigation
-inoremap <C-k> <C-o>gk
-inoremap <C-h> <Left>
-inoremap <C-l> <Right>
-inoremap <C-j> <C-o>gj
+" inoremap <C-k> <C-o>gk
+" inoremap <C-h> <Left>
+" inoremap <C-l> <Right>
+" inoremap <C-j> <C-o>gj
 
 " make Y behave like C and D
 nnoremap Y y$
@@ -409,9 +410,9 @@ vnoremap <leader><Tab> :Tabularize /
 
 " Snippets !!!!!
 let g:UltiSnipsUsePythonVersion = 3
-let g:UltiSnipsExpandTrigger = "<c-n>"
-let g:UltiSnipsJumpForwardTrigger = "<c-n>"
-let g:UltiSnipsJumpBackwardTrigger = "<c-p>"
+let g:UltiSnipsExpandTrigger = "<c-l>"
+let g:UltiSnipsJumpForwardTrigger = "<c-l>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-h>"
 
 " DelimitMate !!!!!
 let delimitMate_expand_cr = 1

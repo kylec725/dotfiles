@@ -21,5 +21,7 @@ hi ALEError ctermbg=red ctermfg=7
 
 autocmd Filetype ale-preview nnoremap <buffer> <Esc> :q<CR>
 
+let g:ale_java_javac_classpath = "/home/kyle/school/fall19/420/MeeshQuest-Skeleton-1.zip_expanded/MeeshQuest-Skeleton-1/lib/cmsc420util.jar"
+" let g:ale_java_javac_classpath = "/home/kyle/school/fall19/420/MeeshQuest-Skeleton-1.zip_expanded/MeeshQuest-Skeleton-1/"
 " set linters
 " let g:ale_linters = {'cpp': ['ccls']}
