@@ -25,3 +25,6 @@ let g:ale_java_javac_classpath = "/home/kyle/school/fall19/420/MeeshQuest-Skelet
 " let g:ale_java_javac_classpath = "/home/kyle/school/fall19/420/MeeshQuest-Skeleton-1.zip_expanded/MeeshQuest-Skeleton-1/"
 " set linters
 " let g:ale_linters = {'cpp': ['ccls']}
+
+" ignore line too long in python
+let g:ale_python_flake8_options = '--ignore=E501'
