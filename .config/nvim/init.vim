@@ -7,9 +7,10 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
 Plug 'Raimondi/delimitMate'
+Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-repeat'
 Plug 'vimlab/split-term.vim'
-Plug 'godlygeek/tabular'
+" Plug 'godlygeek/tabular'
 Plug 'SirVer/ultisnips'
 " Plug 'honza/vim-snippets'
 Plug 'lervag/vimtex'
@@ -44,6 +45,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'octol/vim-cpp-enhanced-highlight'
+" Plug 'fatih/vim-go'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -156,6 +158,10 @@ set undofile
 set undodir=/tmp/.vim-undo-dir
 set undoreload=10000
 
+" go settings
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+
 " indent settings
 set tabstop=8
 set expandtab
@@ -173,6 +179,7 @@ autocmd FileType markdown setlocal spell shiftwidth=4
 autocmd FileType ocaml setlocal shiftwidth=2
 autocmd FileType c setlocal shiftwidth=4 cindent
 autocmd FileType cpp setlocal shiftwidth=4 cindent cinoptions=g0+N-sw
+autocmd FileType go setlocal shiftwidth=4 tabstop=4
 autocmd FileType java setlocal shiftwidth=4
 autocmd FileType javascript setlocal shiftwidth=2
 autocmd FileType python setlocal shiftwidth=4
@@ -199,6 +206,9 @@ nnoremap <leader>, jk
 " map :up and :q
 noremap <silent> <leader>w :up<CR>
 noremap <leader>q :q<CR>
+
+" update buffer
+noremap <leader>r :edit!<CR>
 
 " map buffer navigation keys
 nnoremap <silent> - :bprevious<CR>
@@ -287,40 +297,6 @@ call SourceAllIn('/config/')
 
 " Yank Highlight
 let g:highlightedyank_highlight_duration = 500
-
-" Airline !!!!!
-
-let g:airline_extensions = ["tabline", "branch", "ale", "hunks"]
-" let g:airline_theme='term'
-let g:airline_theme='nord'
-let g:airline_detect_paste=1
-set encoding=utf-8
-let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
-" let g:airline#parts#ffenc#skip_expected_string='utf-8[dos]'
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#whitespace#enabled = 0
-let g:airline#extensions#branch#enabled=1
-let g:airline#extensions#ale#enabled = 1
-
-" replace powerline fonts if they are missing
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-
-" powerline symbols
-" let g:airline_left_sep = ''
-" let g:airline_left_alt_sep = ''
-" let g:airline_right_sep = ''
-" let g:airline_right_alt_sep = ''
-" let g:airline_symbols.branch = ''
-" let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = '☰'
-" let g:airline_symbols.maxlinenr = ''
-" let g:airline_symbols.dirty='⚡'
-let g:airline_symbols.dirty=''
-let g:airline_symbols.notexists = ''
-"let g:airline_symbols.space = "\ua0"
 
 " Git Commands and Settings - Fugitive and Gitgutter !!!!!
 

@@ -28,14 +28,17 @@ abbr ka 'killall'
 abbr at 'audio-toggle'
 abbr hdmi 'hdmi-toggle'
 abbr um 'usb-mount'
+# abbr vlc 'devour vlc'
+alias vlc 'devour vlc'
 abbr eclim '/home/kyle/.eclipse/org.eclipse.platform_4.13.0_155965261_linux_gtk_x86_64/eclimd'
 # git
 abbr ga 'git add'
 abbr gc 'git commit'
 abbr gco 'git checkout'
-abbr gp 'git pull'
+abbr gpl 'git pull'
 abbr gph 'git push'
 abbr gs 'git status'
+abbr gb 'git branch'
 # tmux
 abbr tvim 'tmux new-session \; split-window -h -p 30'
 # navigation
