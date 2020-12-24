@@ -14,11 +14,11 @@ Plug 'SirVer/ultisnips'
 Plug 'lervag/vimtex'
 
 " File Navigation
-" Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'kristijanhusak/defx-icons'
 Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/fern-git-status.vim'
+Plug 'lambdalisue/nerdfont.vim'
 Plug 'majutsushi/tagbar'
-Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/vim-devicons'
 Plug 'gcavallanti/vim-noscrollbar'
 Plug 'junegunn/fzf.vim'
 Plug 'romainl/vim-cool'

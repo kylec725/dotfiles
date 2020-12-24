@@ -12,9 +12,3 @@ autocmd FileType fern nmap <buffer> <CR> <Plug>(fern-action-open-or-enter)
 autocmd FileType fern nmap <buffer> N <Plug>(fern-action-new-path)
 autocmd FileType fern nmap <buffer> s <Plug>(fern-action-mark:toggle)
 autocmd FileType fern nmap <buffer> C <Plug>(fern-action-rename)
-
-" augroup fern-custom
-"     autocmd! *
-"     " close fern if it is the last buffer/split open
-"     autocmd WinEnter * if &ft == 'fern' && winnr('$') == 1 | q | endif
-" augroup END
