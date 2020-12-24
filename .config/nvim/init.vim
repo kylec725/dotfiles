@@ -10,15 +10,13 @@ Plug 'Raimondi/delimitMate'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-repeat'
 Plug 'vimlab/split-term.vim'
-" Plug 'godlygeek/tabular'
 Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
 Plug 'lervag/vimtex'
 
 " File Navigation
-Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'kristijanhusak/defx-icons'
-" Plug 'liuchengxu/vista.vim'
+" Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'kristijanhusak/defx-icons'
+Plug 'lambdalisue/fern.vim'
 Plug 'majutsushi/tagbar'
 Plug 'ryanoasis/vim-devicons'
 Plug 'gcavallanti/vim-noscrollbar'
@@ -30,7 +28,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'gregsexton/MatchTag'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'arcticicestudio/nord-vim'
-Plug 'miyakogi/conoline.vim'
+" Plug 'miyakogi/conoline.vim'
 " Plug 'RRethy/vim-illuminate'
 Plug 'machakann/vim-highlightedyank'
 
