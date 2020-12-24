@@ -10,6 +10,8 @@ autocmd FileType fern nmap <buffer> L <Plug>(fern-action-open-or-enter)
 autocmd FileType fern nmap <buffer> zh <Plug>(fern-action-hidden:toggle)
 autocmd FileType fern nmap <buffer> <CR> <Plug>(fern-action-open-or-enter)
 autocmd FileType fern nmap <buffer> N <Plug>(fern-action-new-path)
+autocmd FileType fern nmap <buffer> s <Plug>(fern-action-mark:toggle)
+autocmd FileType fern nmap <buffer> C <Plug>(fern-action-rename)
 
 " augroup fern-custom
 "     autocmd! *
