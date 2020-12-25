@@ -25,7 +25,7 @@ Plug 'romainl/vim-cool'
 
 " Visual Changes
 Plug 'Yggdroot/indentLine'
-Plug 'lukas-reineke/indent-blankline.nvim'
+" Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'gregsexton/MatchTag'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'arcticicestudio/nord-vim'
