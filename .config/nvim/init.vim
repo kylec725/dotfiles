@@ -9,7 +9,6 @@ Plug 'tomtom/tcomment_vim'
 Plug 'Raimondi/delimitMate'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-repeat'
-Plug 'vimlab/split-term.vim'
 Plug 'SirVer/ultisnips'
 Plug 'lervag/vimtex'
 Plug 'voldikss/vim-floaterm'
@@ -30,10 +29,10 @@ Plug 'Yggdroot/indentLine'
 " Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'gregsexton/MatchTag'
 Plug 'mustache/vim-mustache-handlebars'
-Plug 'arcticicestudio/nord-vim'
 " Plug 'miyakogi/conoline.vim'
 " Plug 'RRethy/vim-illuminate'
 Plug 'machakann/vim-highlightedyank'
+Plug 'rakr/vim-one'
 
 " Statusline
 Plug 'itchyny/lightline.vim'
@@ -57,6 +56,11 @@ call plug#end()
 "----------------------"
 " General Vim Settings "
 "----------------------"
+
+" colorscheme
+colorscheme one
+" set termguicolors
+let g:one_allow_italics = 1
 
 " Change clipboard register for vim
 set clipboard=unnamedplus
@@ -84,8 +88,8 @@ set inccommand=nosplit
 " Line numbers
 set number relativenumber
 " Current line number color
-highlight LineNr ctermfg=12
-highlight CursorLineNR ctermfg=11
+highlight LineNr ctermfg=12 ctermbg=NONE guibg=NONE
+highlight CursorLineNR ctermfg=11 ctermbg=NONE guibg=NONE
 
 " Always show at least one line above/below the cursor.
 set scrolloff=3
@@ -102,13 +106,16 @@ set spelllang=en
 set ignorecase
 set smartcase
 
+" set background color to be transparent
+highlight Normal guibg=NONE ctermbg=NONE
+
 " search match color
-highlight Search ctermbg=green ctermfg=black
+highlight Search ctermbg=green ctermfg=black guibg=green guifg=black
 " highlight current search match in different color
-highlight IncSearch ctermbg=black ctermfg=magenta
+highlight IncSearch ctermbg=black ctermfg=magenta guibg=green guifg=black
 
 " matched parentheses color
-highlight MatchParen ctermbg=magenta ctermfg=black
+highlight MatchParen ctermbg=yellow ctermfg=black guibg=yellow guifg=black
 
 " Set folding to indent
 set foldmethod=indent
@@ -127,7 +134,7 @@ set guicursor=
 
 " Change window pane separator to a single line
 set fillchars+=vert:│
-highlight VertSplit cterm=NONE ctermfg=12
+highlight VertSplit cterm=NONE ctermfg=12 guifg=12 ctermbg=NONE guibg=NONE
 
 " remove latex concealment
 let g:tex_conceal = ""
@@ -136,17 +143,17 @@ let g:tex_conceal = ""
 let g:vimtex_version_check = 0
 
 " highlight characters after column 80
-highlight OverLength ctermbg=darkgray ctermfg=black
+highlight OverLength ctermbg=darkgray ctermfg=black guibg=darkgray guifg=black
 " match OverLength /\%81v.\+/
 
 " darken tildes at EOF
-highlight EndOfBuffer ctermfg=16
+highlight EndOfBuffer ctermfg=16 guifg=16
 
 " pop-up menu colors
-highlight Pmenu ctermbg=0 ctermfg=7
-highlight PmenuSel ctermbg=7 ctermfg=0
-highlight PmenuSbar ctermbg=grey
-highlight PmenuThumb ctermbg=blue
+highlight Pmenu ctermbg=0 ctermfg=7 guibg=0 guifg=7
+highlight PmenuSel ctermbg=7 ctermfg=0 guibg=7 guifg=0
+highlight PmenuSbar ctermbg=grey guibg=grey
+highlight PmenuThumb ctermbg=blue guibg=blue
 
 " set tex flavor
 let g:tex_flavor = "latex"
@@ -303,61 +310,6 @@ highlight GitGutterDelete ctermfg=7
 " let g:gitgutter_sign_added = '++'
 " let g:gitgutter_sign_modified = '~~'
 " let g:gitgutter_sign_removed = '--'
-
-" Terminal settings !!!!!
-
-" split-term.vim settings
-set splitright
-let g:term_size = 50
-
-" terminal function (from /u/andreyorst) was modified
-let g:term_buf = -1
-let g:term_win = 0
-function! TermToggle()
-    if win_gotoid(g:term_win) || g:term_buf == bufnr("")
-        hide
-    else
-        if bufexists(g:term_buf) == 1
-            exec g:term_size "vsplit | buffer " g:term_buf
-            let g:term_win = win_getid()
-        else
-            exec g:term_size "VTerm"
-            set nonumber
-            set norelativenumber
-            set signcolumn=no
-            " hides the buffer from airline's tabline
-            setlocal nobuflisted
-            let g:term_buf = bufnr("")
-            let g:term_win = win_getid()
-        endif
-        startinsert!
-    endif
-endfunction
-" switch to terminal window function (from me)
-function! TermSwitch()
-    if g:term_win == win_getid()
-        exec "vertical resize " g:term_size
-        exec "wincmd h"
-    else
-        if win_gotoid(g:term_win)
-            exec "vertical resize " g:term_size
-            startinsert!
-        endif
-    endif
-endfunction
-
-" exit terminal window if it is the last window
-autocmd bufenter * if winnr("$") == 1 && win_getid() == g:term_win | q | endif
-
-" terminal bindings
-" nnoremap <silent> <leader>tt :call TermToggle()<CR>
-" tnoremap <silent> <leader>tt <C-\><C-n>:call TermToggle()<CR>
-" nnoremap <silent> <leader>ts :call TermSwitch()<CR>
-" tnoremap <silent> <leader>ts <C-\><C-n>:call TermSwitch()<CR>
-" nnoremap <silent> <leader>t :call TermToggle()<CR>
-" tnoremap <silent> <leader>t <C-\><C-n>:call TermToggle()<CR>
-" tnoremap <silent> <C-h> <C-\><C-n>:wincmd h<CR>
-" autocmd BufWinEnter,WinEnter term://* startinsert
 
 " indent line
 let g:indentLine_char = '▏'

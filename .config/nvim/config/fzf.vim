@@ -18,21 +18,21 @@ nnoremap <silent> <leader>f :call fzf#vim#gitfiles('.', {'options': '--reverse -
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl':      ['fg', 'PreProc'],
   \ 'hl+':     ['fg', 'Statement'],
-  \ 'info':    ['fg', 'PreProc'],
   \ 'border':  ['fg', 'Ignore'],
   \ 'prompt':  ['fg', 'Conditional'],
   \ 'pointer': ['fg', 'Exception'],
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
+  " \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  " \ 'bg+':     ['bg', 'Normal'],
+  " \ 'info':    ['fg', 'PreProc'],
 
 " Floating Window Settings
 
-let $FZF_DEFAULT_OPTS='--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,gutter:-1'
+let $FZF_DEFAULT_OPTS='--no-mouse --bind=tab:down,btab:up --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,info:0,bg+:0,fg+:#FFFFFF,gutter:-1'
 let g:fzf_layout = { 'window': 'call FloatingFZF()' }
 function! FloatingFZF()
   " creates a scratch, unlisted, new, empty, unnamed buffer
