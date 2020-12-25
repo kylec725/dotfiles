@@ -14,6 +14,7 @@
       }
     }
   },
+  "explorer.icon.enableNerdfont": true,
   "explorer.keyMappings.global": {
     "i": false,
 

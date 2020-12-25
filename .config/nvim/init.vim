@@ -173,7 +173,7 @@ autocmd FileType markdown setlocal spell shiftwidth=4
 autocmd FileType ocaml setlocal shiftwidth=2
 autocmd FileType c setlocal shiftwidth=4 cindent
 autocmd FileType cpp setlocal shiftwidth=4 cindent cinoptions=g0+N-sw
-autocmd FileType go setlocal shiftwidth=4 tabstop=4
+autocmd FileType go setlocal shiftwidth=4 tabstop=4 expandtab
 autocmd FileType java setlocal shiftwidth=4
 autocmd FileType javascript setlocal shiftwidth=2
 autocmd FileType python setlocal shiftwidth=4
