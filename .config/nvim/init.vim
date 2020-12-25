@@ -47,7 +47,8 @@ Plug 'fatih/vim-go'
 
 " Git
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
+" Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -223,7 +224,7 @@ noremap <S-h> ^
 noremap <S-j> L
 noremap <S-k> H
 noremap <S-L> g_
-autocmd FileType defx nnoremap <buffer> <S-j> 3j | nnoremap <buffer> <S-k> 3k
+autocmd FileType fern nnoremap <buffer> <S-j> 3j | nnoremap <buffer> <S-k> 3k
 autocmd FileType vista_kind nnoremap <buffer> <S-j> 3j | nnoremap <buffer> <S-k> 3k
 
 " window navigation keys
