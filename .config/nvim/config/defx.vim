@@ -1,7 +1,7 @@
 " defx
 
 " nnoremap <silent> <leader>n :Defx<CR>:ConoLineToggle<CR>
-
+"
 " let g:defx_icons_column_length = 2
 "
 " call defx#custom#option('_', {

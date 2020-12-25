@@ -14,8 +14,8 @@ Plug 'SirVer/ultisnips'
 Plug 'lervag/vimtex'
 
 " File Navigation
-Plug 'lambdalisue/fern.vim'
-Plug 'lambdalisue/fern-git-status.vim'
+" Plug 'lambdalisue/fern.vim'
+" Plug 'lambdalisue/fern-git-status.vim'
 Plug 'lambdalisue/nerdfont.vim'
 Plug 'majutsushi/tagbar'
 " Plug 'ryanoasis/vim-devicons'
@@ -47,8 +47,7 @@ Plug 'fatih/vim-go'
 
 " Git
 Plug 'tpope/vim-fugitive'
-Plug 'mhinz/vim-signify'
-" Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -224,7 +223,7 @@ noremap <S-h> ^
 noremap <S-j> L
 noremap <S-k> H
 noremap <S-L> g_
-autocmd FileType fern nnoremap <buffer> <S-j> 3j | nnoremap <buffer> <S-k> 3k
+" autocmd FileType fern nnoremap <buffer> <S-j> 3j | nnoremap <buffer> <S-k> 3k
 autocmd FileType vista_kind nnoremap <buffer> <S-j> 3j | nnoremap <buffer> <S-k> 3k
 
 " window navigation keys
@@ -239,17 +238,8 @@ noremap <silent> <C-Down> :resize -5<CR>
 noremap <silent> <C-Up> :resize +5<CR>
 noremap <silent> <C-Right> :vertical resize +5<CR>
 
-" insert mode navigation
-" inoremap <C-k> <C-o>gk
-" inoremap <C-h> <Left>
-" inoremap <C-l> <Right>
-" inoremap <C-j> <C-o>gj
-
 " make Y behave like C and D
 nnoremap Y y$
-
-" <S-e> to backwards end of word
-noremap <S-e> ge
 
 " replace the word under cursor
 nnoremap <leader>sr :%s/\<<c-r><c-w>\>//gI<left><left><left>
