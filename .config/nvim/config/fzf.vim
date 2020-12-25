@@ -9,9 +9,11 @@ autocmd! FileType fzf
 autocmd  FileType fzf set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 
-nnoremap <leader>af :Files!<CR>
-nnoremap <leader>f :GFiles!<CR>
-nnoremap <leader>l :Lines!<CR>
+" nnoremap <leader>af :Files!<CR>
+" nnoremap <leader>f :GFiles!<CR>
+" nnoremap <leader>l :Lines!<CR>
+nnoremap <silent> <leader>af :call fzf#vim#files('.', {'options': '--reverse --margin=3,8 --prompt ""'})<CR>
+nnoremap <silent> <leader>f :call fzf#vim#gitfiles('.', {'options': '--reverse --margin=3,8 --prompt ""'})<CR>
 
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
@@ -38,7 +40,7 @@ function! FloatingFZF()
   let buf = nvim_create_buf(v:false, v:true)
 
   " 80% of the height
-  let height = float2nr(&lines * 0.8)
+  let height = float2nr(&lines * 0.6)
   " 60% of the width
   let width = float2nr(&columns * 0.6)
   " horizontal position (centralized)
@@ -51,7 +53,8 @@ function! FloatingFZF()
         \ 'row': vertical,
         \ 'col': horizontal,
         \ 'width': width,
-        \ 'height': height
+        \ 'height': height,
+        \ 'style': 'minimal'
         \ }
 
   " open the new window, floating, and enter to it
