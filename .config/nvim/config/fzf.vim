@@ -5,9 +5,9 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit' }
 
 " hide the statusline when searching
-autocmd! FileType fzf
-autocmd  FileType fzf set laststatus=0 noshowmode noruler
-  \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+" autocmd! FileType fzf
+" autocmd  FileType fzf set laststatus=0 noshowmode noruler
+"   \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 
 " nnoremap <leader>af :Files!<CR>
 " nnoremap <leader>f :GFiles!<CR>
