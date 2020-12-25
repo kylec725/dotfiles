@@ -9,8 +9,8 @@ autocmd! FileType fzf
 autocmd  FileType fzf set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 
-nnoremap <leader>f :Files!<CR>
-nnoremap <leader>gf :GFiles!<CR>
+nnoremap <leader>af :Files!<CR>
+nnoremap <leader>f :GFiles!<CR>
 nnoremap <leader>l :Lines!<CR>
 
 let g:fzf_colors =
