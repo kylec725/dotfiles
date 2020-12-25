@@ -35,6 +35,7 @@
     "e": "open",
     "E": "open:split",
     "s": "open:vsplit",
+    "<C-v>": "open:vsplit",
     "t": "open:tab",
     "H": ["wait", "gotoParent"],
     "L": ["wait", "cd"],
