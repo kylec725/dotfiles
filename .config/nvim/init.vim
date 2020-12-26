@@ -120,6 +120,7 @@ highlight Search ctermbg=green ctermfg=black guibg=green guifg=black
 highlight IncSearch ctermbg=black ctermfg=magenta guibg=green guifg=black
 
 " matched parentheses color
+highlight clear MatchParen
 highlight MatchParen ctermbg=yellow ctermfg=black guibg=yellow guifg=black
 
 " Set folding to indent
