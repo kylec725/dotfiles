@@ -12,6 +12,7 @@ Plug 'tpope/vim-repeat'
 Plug 'SirVer/ultisnips'
 Plug 'lervag/vimtex'
 Plug 'voldikss/vim-floaterm'
+Plug 'antoinemadec/FixCursorHold.nvim'
 
 " File Navigation
 " Plug 'lambdalisue/fern.vim'
@@ -46,7 +47,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'fatih/vim-go'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -129,6 +129,7 @@ set foldlevelstart=99
 
 " Visual Wrapping
 set nowrap
+highlight Visual ctermbg=241
 
 " Clear SignColumn/Gutter color
 highlight clear SignColumn
