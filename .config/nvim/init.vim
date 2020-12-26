@@ -33,6 +33,7 @@ Plug 'mustache/vim-mustache-handlebars'
 " Plug 'RRethy/vim-illuminate'
 Plug 'machakann/vim-highlightedyank'
 Plug 'rakr/vim-one'
+" Plug 'dracula/vim'
 
 " Statusline
 Plug 'itchyny/lightline.vim'
@@ -59,6 +60,7 @@ call plug#end()
 
 " colorscheme
 colorscheme one
+set background=dark
 " set termguicolors
 let g:one_allow_italics = 1
 
@@ -108,6 +110,9 @@ set smartcase
 
 " set background color to be transparent
 highlight Normal guibg=NONE ctermbg=NONE
+
+" comment color
+highlight Comment ctermfg=102
 
 " search match color
 highlight Search ctermbg=green ctermfg=black guibg=green guifg=black
