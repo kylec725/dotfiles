@@ -5,7 +5,7 @@ set showtabline=2
 set noshowmode
 
 let g:lightline = {
-            \ 'colorscheme': 'simpleblack',
+            \ 'colorscheme': 'nord',
             \ }
 
 let g:lightline.active = {
