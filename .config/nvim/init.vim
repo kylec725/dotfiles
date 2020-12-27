@@ -34,7 +34,8 @@ Plug 'mustache/vim-mustache-handlebars'
 " Plug 'RRethy/vim-illuminate'
 Plug 'machakann/vim-highlightedyank'
 Plug 'rakr/vim-one'
-" Plug 'dracula/vim'
+Plug 'junegunn/seoul256.vim'
+Plug 'mhinz/vim-janah'
 
 " Statusline
 Plug 'itchyny/lightline.vim'
@@ -60,7 +61,7 @@ call plug#end()
 "----------------------"
 
 " colorscheme
-colorscheme one
+colorscheme janah
 set background=dark
 " set termguicolors
 let g:one_allow_italics = 1
@@ -83,7 +84,7 @@ augroup END
 set timeoutlen=1000 ttimeoutlen=0
 
 " Update time for gitgutter
-set updatetime=200
+set updatetime=100
 
 " Preview search and replace
 set inccommand=nosplit
