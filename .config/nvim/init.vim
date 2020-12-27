@@ -158,6 +158,10 @@ highlight OverLength ctermbg=darkgray ctermfg=black guibg=darkgray guifg=black
 " darken tildes at EOF
 highlight EndOfBuffer ctermfg=16 guifg=16
 
+" whitespace highlight
+highlight ExtraWhitespace ctermbg=white guibg=white
+highlight pythonSpaceError ctermbg=white guibg=white
+
 " pop-up menu colors
 highlight Pmenu ctermbg=0 ctermfg=7 guibg=0 guifg=7
 highlight PmenuSel ctermbg=7 ctermfg=0 guibg=7 guifg=0
