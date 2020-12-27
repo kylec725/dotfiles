@@ -119,7 +119,7 @@ highlight Comment ctermfg=102
 " search match color
 highlight Search ctermbg=green ctermfg=black guibg=green guifg=black
 " highlight current search match in different color
-highlight IncSearch ctermbg=black ctermfg=magenta guibg=green guifg=black
+highlight IncSearch ctermbg=magenta ctermfg=black guibg=magenta guifg=black
 
 " matched parentheses color
 highlight clear MatchParen
