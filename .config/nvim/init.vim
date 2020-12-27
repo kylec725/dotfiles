@@ -89,6 +89,9 @@ set updatetime=100
 " Preview search and replace
 set inccommand=nosplit
 
+" Split windows to right
+set splitright
+
 " Line numbers
 set number relativenumber
 " Current line number color
