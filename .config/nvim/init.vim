@@ -27,7 +27,6 @@ Plug 'romainl/vim-cool'
 
 " Visual Changes
 Plug 'Yggdroot/indentLine'
-" Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'gregsexton/MatchTag'
 Plug 'mustache/vim-mustache-handlebars'
 " Plug 'miyakogi/conoline.vim'
@@ -113,6 +112,15 @@ set spelllang=en
 set ignorecase
 set smartcase
 
+" terminal cursor
+highlight TermCursor ctermfg=NONE guibg=#d8dee9 ctermbg=195 gui=NONE cterm=NONE
+highlight TermCursorNC ctermfg=NONE guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+" Cursor blinking
+set guicursor=a:blinkon100
+" Cursor as block in insert mode
+" set guicursor=
+
+
 " set background color to be transparent
 highlight Normal guibg=NONE ctermbg=NONE
 
@@ -120,9 +128,9 @@ highlight Normal guibg=NONE ctermbg=NONE
 highlight Comment ctermfg=102
 
 " search match color
-highlight Search ctermbg=green ctermfg=black guibg=green guifg=black
+highlight Search ctermbg=magenta ctermfg=black guibg=magenta guifg=black
 " highlight current search match in different color
-highlight IncSearch ctermbg=magenta ctermfg=black guibg=magenta guifg=black
+highlight IncSearch ctermbg=blue ctermfg=black guibg=blue guifg=black
 
 " matched parentheses color
 highlight clear MatchParen
@@ -138,11 +146,6 @@ highlight Visual ctermbg=241
 
 " Clear SignColumn/Gutter color
 highlight clear SignColumn
-
-" Cursor blinking
-set guicursor=a:blinkon100
-" Cursor as block in insert mode
-set guicursor=
 
 " Change window pane separator to a single line
 set fillchars+=vert:│
