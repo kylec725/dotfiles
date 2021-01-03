@@ -35,7 +35,7 @@ top_panel.create = function(s)
       visible = true,
       height = beautiful.top_panel_height,
       width = s.geometry.width,
-      bg = "#00000077",
+      bg = "#00000088",
       type = "dock",
    })
 
