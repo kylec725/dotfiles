@@ -107,3 +107,47 @@ awesome.connect_signal("volume_change",
       end
    end
 )
+
+local function update_widget()
+    -- set new volume value
+    awful.spawn.easy_async_with_shell(
+        "amixer sget Master | grep 'Right:' | awk -F '[][]' '{print $2}'| sed 's/[^0-9]//g'",
+        function(stdout)
+            local volume_level = tonumber(stdout)
+            volume_bar.value = volume_level
+        end)
+
+    -- check if muted
+    awful.spawn.easy_async_with_shell(
+        "pacmd list-sinks | awk '/muted/ { print $2 }'",
+        function(stdout)
+            local muted = stdout
+            if muted == "yes\n" then
+                volume_icon:set_image(icon_dir .. "volume-off.png")
+                volume_bar.color = "#989898"
+            else
+                volume_icon:set_image(icon_dir .. "volume.png")
+                volume_bar.color = "#efefef"
+            end
+        end)
+
+    -- make volume_adjust component visible
+    if volume_adjust.visible then
+        hide_volume_adjust:again()
+    else
+        volume_adjust.visible = true
+        hide_volume_adjust:start()
+    end
+end
+
+-- Sleeps until pactl detects an event (volume up/down/toggle mute)
+local volume_script = [[
+  bash -c '
+  pactl subscribe 2> /dev/null | grep --line-buffered "sink #0"
+  ']]
+
+awful.spawn.with_line_callback(volume_script, {
+        stdout = function(line)
+            update_widget()
+        end
+    })
