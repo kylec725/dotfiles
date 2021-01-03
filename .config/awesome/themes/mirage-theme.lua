@@ -30,7 +30,7 @@ theme.font = "SF Pro Text 10"
 theme.title_font = "SF Pro Display Medium 10"
 
 -- Background
-theme.bg_normal = "#5B60711A"
+theme.bg_normal = "#5B6071AA"
 theme.bg_dark = "#090B0C"
 theme.bg_focus = "#151821"
 theme.bg_urgent = "#ed8274"
@@ -68,13 +68,13 @@ theme.tag_urgent = "#e02f50"
 theme.tag_focus = "#fffd6e"
 theme.tag_occupied = "#4ba1d6"
 
-theme.taglist_bg_focus = theme.bg_normal
+theme.taglist_bg_focus = "00000000"
 theme.taglist_fg_focus = theme.tag_focus
-theme.taglist_bg_occupied = theme.bg_normal
+theme.taglist_bg_occupied = "00000000"
 theme.taglist_fg_occupied = theme.tag_occupied
-theme.taglist_bg_empty = theme.bg_normal
+theme.taglist_bg_empty = "00000000"
 theme.taglist_fg_empty = theme.tag_empty
-theme.taglist_bg_urgent = theme.bg_normal
+theme.taglist_bg_urgent = "00000000"
 theme.taglist_fg_urgent = theme.tag_urgent
 
 theme.taglist_text_font = "JetBrains Mono 20"
