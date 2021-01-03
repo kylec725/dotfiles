@@ -54,7 +54,8 @@ local run_on_start_up = {
    "redshift -c ~/.config/redshift/redshift.conf",
    "run x-on-resize -c ~/.bin/hdmi-toggle",
    "mpd",
-   "libinput-gestures-setup start"
+   "libinput-gestures-setup start",
+   "x-on-resize -c ~/.bin/hdmi-toggle"
 }
 
 
