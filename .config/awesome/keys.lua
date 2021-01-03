@@ -184,6 +184,13 @@ keys.globalkeys = gears.table.join(
        end,
        {description = "application launcher", group = "launcher"}
        ),
+   -- lock
+   awful.key({modkey}, ";",
+       function()
+           awful.spawn(apps.lock)
+       end,
+       {description = "application launcher", group = "launcher"}
+       ),
 
    -- =========================================
    -- FUNCTION KEYS
