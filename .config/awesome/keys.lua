@@ -213,21 +213,21 @@ keys.globalkeys = gears.table.join(
    -- ALSA volume control
    awful.key({}, "XF86AudioRaiseVolume",
       function()
-         awful.spawn("amixer -D pulse sset Master 5%+", false)
+         awful.spawn("amixer -D pulse sset Master 10%+", false)
          awesome.emit_signal("volume_change")
       end,
       {description = "volume up", group = "hotkeys"}
    ),
    awful.key({}, "XF86AudioLowerVolume",
       function()
-         awful.spawn("amixer -D pulse sset Master 5%-", false)
+         awful.spawn("amixer -D pulse sset Master 10%-", false)
          awesome.emit_signal("volume_change")
       end,
       {description = "volume down", group = "hotkeys"}
    ),
    awful.key({}, "XF86AudioMute",
       function()
-         awful.spawn("amixer -D pulse set Master 0 toggle", false)
+         awful.spawn("amixer -D pulse set Master 1+ toggle", false)
          awesome.emit_signal("volume_change")
       end,
       {description = "toggle mute", group = "hotkeys"}
@@ -257,6 +257,11 @@ keys.globalkeys = gears.table.join(
          awful.util.spawn(apps.screenshot, false)
       end
    ),
+
+    -- Run HDMI script
+    awful.key({}, "F7", function()
+        awful.spawn.with_shell("hdmi-toggle")
+    end),
 
    -- =========================================
    -- RELOAD / QUIT AWESOME

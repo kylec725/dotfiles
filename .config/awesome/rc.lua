@@ -55,7 +55,10 @@ local run_on_start_up = {
    "run x-on-resize -c ~/.bin/hdmi-toggle",
    "mpd",
    "libinput-gestures-setup start",
-   "x-on-resize -c ~/.bin/hdmi-toggle"
+   "x-on-resize -c ~/.bin/hdmi-toggle",
+   -- Set volume at 50%
+   "amixer set Master unmute",
+   "amixer set Master 50%"
 }
 
 
