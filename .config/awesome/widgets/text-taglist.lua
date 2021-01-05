@@ -2,6 +2,7 @@ local awful = require("awful")
 local beautiful = require("beautiful")
 local wibox = require("wibox")
 local gears = require("gears")
+local dpi = require("beautiful").xresources.apply_dpi
 
 local ntags = 10
 local s = awful.screen.focused()
@@ -70,4 +71,7 @@ local text_taglist = awful.widget.taglist {
     buttons = taglist_buttons
 } 
 
-return text_taglist
+local taglist_container = wibox.container.margin(text_taglist, dpi(7), dpi(0), dpi(0), dpi(0))
+
+-- return text_taglist
+return taglist_container
