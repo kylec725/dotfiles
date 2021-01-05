@@ -1,3 +1,0 @@
-#!/bin/sh
-
-prompt "Exit i3 Window Manager?" "i3-msg exit"
