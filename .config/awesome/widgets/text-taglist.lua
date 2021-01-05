@@ -71,7 +71,7 @@ local text_taglist = awful.widget.taglist {
     buttons = taglist_buttons
 } 
 
-local taglist_container = wibox.container.margin(text_taglist, dpi(7), dpi(0), dpi(0), dpi(0))
+local taglist_container = wibox.container.margin(text_taglist, dpi(7), dpi(0), dpi(0), dpi(4))
 
 -- return text_taglist
 return taglist_container
