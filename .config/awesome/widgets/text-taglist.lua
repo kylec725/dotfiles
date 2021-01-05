@@ -1,6 +1,7 @@
 local awful = require("awful")
 local beautiful = require("beautiful")
 local wibox = require("wibox")
+local gears = require("gears")
 
 local ntags = 10
 local s = awful.screen.focused()
@@ -24,6 +25,24 @@ local update_taglist = function (item, tag, index)
     end
 end
 
+-- Buttons for each tag
+local taglist_buttons = gears.table.join(
+    awful.button({ }, 1, function(t) t:view_only() end),
+    awful.button({ modkey }, 1, function(t)
+        if client.focus then
+            client.focus:move_to_tag(t)
+        end
+    end),
+    awful.button({ }, 3, awful.tag.viewtoggle),
+    awful.button({ modkey }, 3, function(t)
+        if client.focus then
+            client.focus:toggle_tag(t)
+        end
+    end),
+    awful.button({ }, 4, function(t) awful.tag.viewnext(t.screen) end),
+    awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end)
+    )
+
 -- Create the taglist
 local text_taglist = awful.widget.taglist {
     screen = s,
@@ -31,6 +50,9 @@ local text_taglist = awful.widget.taglist {
     layout = {
         spacing = 1,
         layout = wibox.layout.fixed.horizontal
+    },
+    style = {
+        spacing = nil
     },
     widget_template = {
         widget = wibox.widget.textbox,
@@ -45,6 +67,7 @@ local text_taglist = awful.widget.taglist {
             update_taglist(self, tag, index)
         end,
     },
+    buttons = taglist_buttons
 } 
 
 return text_taglist
