@@ -254,13 +254,47 @@ keys.globalkeys = gears.table.join(
    -- Screenshot on prtscn using scrot
    awful.key({}, "Print",
       function()
-         awful.util.spawn(apps.screenshot, false)
+         awful.spawn.with_shell(apps.screenshot)
+         scrot_not = naughty.notify({
+                 text = "Screenshot Taken",
+                 title = "Scrot",
+                 icon = "/home/kyle/.config/awesome/awesome-backup/themes/skyfall/icons/screenshot.png",
+                 position = "bottom_middle",
+             })
       end
    ),
 
     -- Run HDMI script
     awful.key({}, "F7", function()
         awful.spawn.with_shell("hdmi-toggle")
+    end),
+
+    -- Lock control
+    awful.key({modkey, "Shift"}, ";", function ()
+        awful.spawn.easy_async_with_shell("pgrep xss-lock", function (stdout)
+            local xss_pid = stdout:match('(%d+)')
+            if xss_pid == nil then
+                awful.spawn.with_shell("xss-lock -l fade-lock +resetsaver &")
+                lock_notification = naughty.notify({
+                        text = "Lock On",
+                        icon = "/home/kyle/.config/awesome/awesome-backup/themes/skyfall/icons/lock.png",
+                        bg = "#F1FCF9" .. "B3",
+                        fg = "#20262C",
+                        position = "bottom_middle",
+                        replaces_id = lock_id
+                    })
+                lock_id = lock_notification.id
+            else
+                awful.spawn.with_shell("killall xss-lock")
+                lock_notification = naughty.notify({
+                        text = "Lock Off",
+                        icon = "/home/kyle/.config/awesome/awesome-backup/themes/skyfall/icons/lock.png",
+                        position = "bottom_middle",
+                        replaces_id = lock_id
+                    })
+                lock_id = lock_notification.id
+            end
+        end)
     end),
 
    -- =========================================
