@@ -9,10 +9,10 @@
 PS1='\[\e[38;5;195m\]\342\224\214\342\224\200[\[\e[0m\] \[\e[38;5;74m\]加油\[\e[0m\] \[\e[38;5;69m\]\u\[\e[0m\] \[\e[38;5;74m\]\w\[\e[0m\] \[\e[38;5;195m\]]\n\[\e[38;5;195m\]\342\224\224\342\224\200\342\224\200>\[\e[0m\] '
 
 # aliases
-alias ls='ls --color=auto --group-directories-first'
-alias vim='nvim'
-alias awm='cd ~/.config/awesome'
-alias at='audio-toggle'
+# alias ls='ls --color=auto --group-directories-first'
+# alias vim='nvim'
+# alias awm='cd ~/.config/awesome'
+# alias at='audio-toggle'
 
 export GOPATH="$HOME/go"
 export PATH="$PATH:$HOME/.bin:$(ruby -e 'print Gem.user_dir')/bin:/home/kyle/.cargo/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/root/.gem/ruby/2.6.0/bin:$HOME/.local/bin:$GOPATH/bin"
