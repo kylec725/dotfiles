@@ -126,7 +126,7 @@ theme.icon_theme = "Tela-dark"
 -- ===================================================================
 
 
-theme.titlebars_enabled = true
+theme.titlebars_enabled = false
 
 local icon_dir = gears.filesystem.get_configuration_dir() .. "/icons/titlebar/"
 

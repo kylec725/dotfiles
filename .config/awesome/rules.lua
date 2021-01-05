@@ -51,7 +51,7 @@ function rules.create(clientkeys, clientbuttons)
       {
          rule = {},
          properties = {
-            -- titlebars_enabled = beautiful.titlebars_enabled,
+            titlebars_enabled = beautiful.titlebars_enabled,
             border_width = beautiful.border_width,
             border_color = beautiful.border_normal,
             focus = awful.client.focus.filter,
