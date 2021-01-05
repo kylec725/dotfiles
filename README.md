@@ -1,8 +1,7 @@
 # Kyle's Linux Setup
 This is my collection of configuration files.
-![Wallpaper](.assets/wallpaper.png)
 
-Some key details of my setup:
+## Some key details of my setup
 - Distro: Arch Linux
 - WM: AwesomeWM
 - Editor: Neovim
@@ -11,3 +10,6 @@ Some key details of my setup:
 - Music Player: ncmpcpp
 - Monitor: gotop
 
+### Screenshots
+![Wallpaper](.assets/wallpaper.png)
+![Tiled](.assets/tiled.png)
