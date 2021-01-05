@@ -77,7 +77,8 @@ theme.taglist_fg_empty = theme.tag_empty
 theme.taglist_bg_urgent = "00000000"
 theme.taglist_fg_urgent = theme.tag_urgent
 
-theme.taglist_text_font = "Caskaydia Cove Nerd Font Mono 20"
+-- theme.taglist_text_font = "Caskaydia Cove Nerd Font Mono 20"
+theme.taglist_text_font = "Meslo LG S DZ Regular Nerd Font Complete Mono 20"
 
 theme.taglist_text_empty    = ""
 theme.taglist_text_occupied = ""
