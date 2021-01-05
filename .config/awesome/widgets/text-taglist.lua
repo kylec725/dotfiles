@@ -6,16 +6,21 @@ local ntags = 10
 local s = awful.screen.focused()
 local tag_text = {}
 
--- Helper function
+-- Colorize helper function
+function colorize_text(txt, fg)
+    return "<span foreground='" .. fg .."'>" .. txt .. "</span>"
+end
+
+-- Update taglist helper function
 local update_taglist = function (item, tag, index)
     if tag.selected then
-        item.markup = helpers.colorize_text(beautiful.taglist_text_focused[index], beautiful.taglist_fg_focus)
+        item.markup = colorize_text(beautiful.taglist_text_focused[index], beautiful.taglist_fg_focus)
     elseif tag.urgent then
-        item.markup = helpers.colorize_text(beautiful.taglist_text_urgent[index], beautiful.taglist_fg_urgent)
+        item.markup = colorize_text(beautiful.taglist_text_urgent[index], beautiful.taglist_fg_urgent)
     elseif #tag:clients() > 0 then
-        item.markup = helpers.colorize_text(beautiful.taglist_text_occupied[index], beautiful.taglist_fg_occupied)
+        item.markup = colorize_text(beautiful.taglist_text_occupied[index], beautiful.taglist_fg_occupied)
     else
-        item.markup = helpers.colorize_text(beautiful.taglist_text_empty[index], beautiful.taglist_fg_empty)
+        item.markup = colorize_text(beautiful.taglist_text_empty[index], beautiful.taglist_fg_empty)
     end
 end
 
@@ -27,7 +32,19 @@ local text_taglist = awful.widget.taglist {
         spacing = 1,
         layout = wibox.layout.fixed.horizontal
     },
-    font = beautiful.taglist_text_font
+    widget_template = {
+        widget = wibox.widget.textbox,
+        create_callback = function(self, tag, index, _)
+            self.align = "left"
+            self.valign = "center"
+            self.font = beautiful.taglist_text_font
+
+            update_taglist(self, tag, index)
+        end,
+        update_callback = function(self, tag, index, _)
+            update_taglist(self, tag, index)
+        end,
+    },
 } 
 
 return text_taglist

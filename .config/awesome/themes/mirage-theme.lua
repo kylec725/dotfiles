@@ -63,10 +63,10 @@ theme.taglist_bg_urgent = "#e91e6399"
 theme.taglist_bg_focus = "#00000000"
 theme.taglist_spacing = dpi(10)
 
-theme.tag_empty  = "#bfbfbd"
-theme.tag_urgent = "#e02f50"
-theme.tag_focus = "#fffd6e"
-theme.tag_occupied = "#4ba1d6"
+theme.tag_empty  = "#bfbfbdff"
+theme.tag_urgent = "#e02f50ff"
+theme.tag_focus = "#fffd6eff"
+theme.tag_occupied = "#4ba1d6ff"
 
 theme.taglist_bg_focus = "00000000"
 theme.taglist_fg_focus = theme.tag_focus
@@ -77,12 +77,12 @@ theme.taglist_fg_empty = theme.tag_empty
 theme.taglist_bg_urgent = "00000000"
 theme.taglist_fg_urgent = theme.tag_urgent
 
-theme.taglist_text_font = "JetBrains Mono 20"
+theme.taglist_text_font = "JetBrains Mono 13"
 
-theme.taglist_text_empty    = {"", "", "", "", "", "", ""}
+theme.taglist_text_empty    = {"◯", "◯", "◯", "◯", "◯", "◯", "◯"}
 theme.taglist_text_occupied = {"", "", "", "", "", "", ""}
-theme.taglist_text_focused  = {"", "", "", "", "", "", ""}
-theme.taglist_text_urgent   = {"", "", "", "", "", "", ""}
+theme.taglist_text_focused  = {"⬤", "⬤", "⬤", "⬤", "⬤", "⬤", "⬤"}
+theme.taglist_text_urgent   = {"", "", "", "", "", "", ""}
 
 -- Tasklist
 theme.tasklist_font = theme.font
