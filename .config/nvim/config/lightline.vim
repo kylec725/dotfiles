@@ -65,11 +65,12 @@ let g:lightline.tabline = {
 " let g:lightline.subseparator = { 'left': "\ue0b9", 'right': "\ue0b9" }
 " let g:lightline.tabline_separator = { 'left': "\ue0bc", 'right': "\ue0ba" }
 " let g:lightline.tabline_subseparator = { 'left': "\ue0bb", 'right': "\ue0bb" }
-let g:lightline.separator = { 'left': "\ue0b4", 'right': "\ue0b6" }
 " let g:lightline.subseparator = { 'left': "\ue0b5", 'right': "\ue0b7" }
-let g:lightline.subseparator = { 'left': "", 'right': "\ue0b7" }
-let g:lightline.tabline_separator = { 'left': "\ue0b4", 'right': "\ue0b6" }
-let g:lightline.tabline_subseparator = { 'left': "\ue0b5", 'right': "\ue0b7" }
+" rounded
+" let g:lightline.separator = { 'left': "\ue0b4", 'right': "\ue0b6" }
+" let g:lightline.subseparator = { 'left': "", 'right': "\ue0b7" }
+" let g:lightline.tabline_separator = { 'left': "\ue0b4", 'right': "\ue0b6" }
+" let g:lightline.tabline_subseparator = { 'left': "\ue0b5", 'right': "\ue0b7" }
 
 " Bufferline
 function! LightlineBufferline()
@@ -120,7 +121,7 @@ let g:lightline_buffer_maxflen = 30
 let g:lightline#ale#indicator_checking = "..."
 let g:lightline#ale#indicator_warnings = "\uf071 :"
 let g:lightline#ale#indicator_errors = "\uf05e :"
-let g:lightline#ale#indicator_ok = " "
+let g:lightline#ale#indicator_ok = "  "
 
 " Lightline noscrollbar
 function! Noscrollbar(...)
