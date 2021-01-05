@@ -11,5 +11,5 @@ This is my collection of configuration files.
 - Monitor: [gotop](https://github.com/xxxserxxx/gotop)
 
 ### Screenshots
-![Wallpaper](.assets/wallpaper.png)
-![Tiled](.assets/tiled.png)
+![Wallpaper](https://raw.githubusercontent.com/kylec725/dotfiles/master/.assets/wallpaper.png)
+![Tiled](https://raw.githubusercontent.com/kylec725/dotfiles/master/.assets/tiled.png)
