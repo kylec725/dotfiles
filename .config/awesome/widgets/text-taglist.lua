@@ -16,13 +16,13 @@ end
 -- Update taglist helper function
 local update_taglist = function (item, tag, index)
     if tag.selected then
-        item.markup = colorize_text(beautiful.taglist_text_focused[index], beautiful.taglist_fg_focus)
+        item.markup = colorize_text(beautiful.taglist_text_focused, beautiful.taglist_fg_focus)
     elseif tag.urgent then
-        item.markup = colorize_text(beautiful.taglist_text_urgent[index], beautiful.taglist_fg_urgent)
+        item.markup = colorize_text(beautiful.taglist_text_urgent, beautiful.taglist_fg_urgent)
     elseif #tag:clients() > 0 then
-        item.markup = colorize_text(beautiful.taglist_text_occupied[index], beautiful.taglist_fg_occupied)
+        item.markup = colorize_text(beautiful.taglist_text_occupied, beautiful.taglist_fg_occupied)
     else
-        item.markup = colorize_text(beautiful.taglist_text_empty[index], beautiful.taglist_fg_empty)
+        item.markup = colorize_text(beautiful.taglist_text_empty, beautiful.taglist_fg_empty)
     end
 end
 
@@ -71,7 +71,7 @@ local text_taglist = awful.widget.taglist {
     buttons = taglist_buttons
 } 
 
-local taglist_container = wibox.container.margin(text_taglist, dpi(7), dpi(0), dpi(0), dpi(4))
+local taglist_container = wibox.container.margin(text_taglist, dpi(7), dpi(0), dpi(0), dpi(0))
 
 -- return text_taglist
 return taglist_container

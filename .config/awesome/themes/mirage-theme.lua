@@ -77,14 +77,12 @@ theme.taglist_fg_empty = theme.tag_empty
 theme.taglist_bg_urgent = "00000000"
 theme.taglist_fg_urgent = theme.tag_urgent
 
-theme.taglist_text_font = "JetBrains Mono 13"
+theme.taglist_text_font = "Caskaydia Cove Nerd Font Mono 20"
 
-theme.taglist_text_empty    = {"◯", "◯", "◯", "◯", "◯", "◯", "◯"}
--- theme.taglist_text_occupied = {"", "", "", "", "", "", ""}
-theme.taglist_text_occupied = {"⬤", "⬤", "⬤", "⬤", "⬤", "⬤", "⬤"}
-theme.taglist_text_focused  = {"⬤", "⬤", "⬤", "⬤", "⬤", "⬤", "⬤"}
--- theme.taglist_text_urgent   = {"", "", "", "", "", "", ""}
-theme.taglist_text_urgent   = {"⬤", "⬤", "⬤", "⬤", "⬤", "⬤", "⬤"}
+theme.taglist_text_empty    = ""
+theme.taglist_text_occupied = ""
+theme.taglist_text_focused  = ""
+theme.taglist_text_urgent   = ""
 
 -- Tasklist
 theme.tasklist_font = theme.font
