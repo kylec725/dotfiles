@@ -25,6 +25,8 @@
     --primary-color: #6dc1e7;
 
     --rawblock-edit-panel-bd: #333;
+
+    --search-select-bg-color: #428bca;
 }
 
 html {
@@ -43,6 +45,19 @@ body {
 
 #write {
     max-width: 914px;
+}
+
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
 }
 
 html,
@@ -236,10 +251,6 @@ iframe,
     /* 24px */
 }
 
-li > blockquote {
-	margin-bottom: 0;
-}
-
 audio:not([controls]) {
     display: none;
 }
@@ -309,9 +320,14 @@ code,
 kbd,
 tt,
 var {
-    background: rgba(0, 0, 0, 0.05);
     font-size: 0.875rem;
     font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+code,
+tt,
+var {
+    background: rgba(0, 0, 0, 0.05);
 }
 
 kbd {
@@ -603,14 +619,8 @@ h6.md-focus .md-attr,
     opacity: 1;
 }
 
-.md-inline-math g,
 .md-inline-math svg {
-    stroke: #b8bfc6 !important;
-    fill: #b8bfc6 !important;
-}
-
-[md-inline='inline_math'] {
-    color: #9CB2E9;
+    color: #b8bfc6;
 }
 
 #math-inline-preview .md-arrow:after {
@@ -728,6 +738,10 @@ footer {
 .modal-footer .btn-default:not(:hover) {
     border: 1px solid;
     border-color: transparent;
+}
+
+.btn-primary {
+    color: white;
 }
 
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
@@ -969,4 +983,28 @@ footer.ty-footer {
 
 .nav-group-item:active {
     background-color: #474d54;
+}
+
+.md-search-hit {
+    background: rgba(199, 140, 60, 0.81);
+    color: #eee;
+}
+
+.md-search-hit * {
+    color: #eee;
+}
+
+#md-searchpanel input {
+    color: white;
+}
+
+.export-detail,
+.export-item.active,
+.export-items-list-control {
+    background: #d6d6d4
+}
+
+.modal-backdrop.in {
+    opacity: 1;
+    backdrop-filter: blur(1px);
 }

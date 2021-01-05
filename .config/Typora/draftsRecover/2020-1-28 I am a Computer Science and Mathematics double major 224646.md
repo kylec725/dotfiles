@@ -1,0 +1,5 @@
+1. I am a Computer Science and Mathematics double major.
+2. I intend to pursue a software engineering or related computer science career.
+3. I enjoy learning about cooking because it aids me in my daily life and can sometimes be a stress reliever.
+
+I am a Computer Science and Mathematics double major and intend to pursue a software engineering career. However I also enjoy learning about cooking because it aids me in my daily life and can sometimes be stress reliever. As a writer, I feel that I can convey my thoughts concisely, and will be able to help others cut down on bloat within their writing. This class stands out to most of my other classes as its slated objective is to help me in my professional communications, while my other classes are targeted at skills for completing technical job tasks.
