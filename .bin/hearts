@@ -1,7 +1,0 @@
-#!/bin/sh
-
-for i in {1..5}; do
-	printf "<3 "
-	sleep 1
-done
-printf "\n"
