@@ -31,7 +31,7 @@ apps = {
    terminal = "kitty",
    launcher = "rofi -normal-window -modi drun -show drun -theme " .. theme_config_dir .. "rofi.rasi",
    lock = "fade-lock",
-   screenshot = "scrot ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png",
+   screenshot = "maim -u ~/pictures/screenshots/$(date +%s)-screenshot.png",
    browser = "firefox",
    filebrowser = "kitty ranger",
    spotify = "spotify --force-device-scale-factor=1.5",
