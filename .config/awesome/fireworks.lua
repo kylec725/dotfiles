@@ -38,9 +38,8 @@ fireworks.initialize = function()
    -- Set up each screen (add tags & panels)
 
    awful.screen.connect_for_each_screen(function(s)
-
       -- awful.tag({ "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" }, s, awful.layout.suit.spiral)
-      for i = 1, 10, 1
+      for i = 1, 7, 1
       do
          awful.tag.add(i, {
                -- icon = icon_dir .. i .. ".png",
