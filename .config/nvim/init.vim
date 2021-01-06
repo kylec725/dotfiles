@@ -333,7 +333,7 @@ highlight GitGutterDelete ctermfg=7
 " indent line
 let g:indentLine_char = '▏'
 " let g:indentLine_color_term = 7
-let g:indentLine_conceallevel = 0
+" let g:indentLine_conceallevel = 0
 
 " highlight word under cursor
 highlight link illuminatedWord Visual
