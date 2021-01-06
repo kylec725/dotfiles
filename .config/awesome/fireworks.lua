@@ -13,28 +13,28 @@
 local awful = require("awful")
 local gears = require("gears")
 
-local mirage = {}
+local fireworks = {}
 
 
 -- ===================================================================
--- Mirage setup
+-- Fireworks setup
 -- ===================================================================
 
 
-mirage.initialize = function()
+fireworks.initialize = function()
    -- Set Wallpaper
    gears.wallpaper.maximized(gears.filesystem.get_configuration_dir() .. "/wallpaper/fireworks.jpg")
 
    -- Import components
    require("components.exit-screen")
    require("components.volume-adjust")
-   require("components.mirage.titlebar")
+   require("components.fireworks.titlebar")
 
    -- Import panels
-   -- local left_panel = require("components.mirage.left-panel")
-   local top_panel = require("components.mirage.top-panel")
+   -- local left_panel = require("components.fireworks.left-panel")
+   local top_panel = require("components.fireworks.top-panel")
 
-    local icon_dir = gears.filesystem.get_configuration_dir() .. "/icons/tags/mirage/"
+    local icon_dir = gears.filesystem.get_configuration_dir() .. "/icons/tags/fireworks/"
     -- Set up each screen (add tags & panels)
 
     awful.screen.connect_for_each_screen(function(s)
@@ -100,4 +100,4 @@ mirage.initialize = function()
     end)
 end
 
-return mirage
+return fireworks

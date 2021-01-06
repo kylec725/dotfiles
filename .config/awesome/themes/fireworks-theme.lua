@@ -23,7 +23,7 @@ local theme = {}
 -- ===================================================================
 
 
-theme.name = "mirage"
+theme.name = "fireworks"
 
 -- Font
 theme.font = "SF Pro Text 10"
