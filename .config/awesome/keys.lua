@@ -180,9 +180,7 @@ keys.globalkeys = gears.table.join(
    -- launch zathura w/ fzf
    awful.key({modkey}, "z",
       function()
-         awful.spawn(apps.zathura,{
-               fullscreen = true
-            })
+         awful.spawn(apps.zathura,{ fullscreen = true })
       end,
       {description = "application launcher", group = "launcher"}
       ),
