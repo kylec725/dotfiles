@@ -1,7 +1,6 @@
 {
   "diagnostic.enable": false,
   "signature.enable": false,
-  "python.jediEnabled": false,
   "languageserver": {
     "ccls": {
       "command": "ccls",
