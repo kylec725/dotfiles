@@ -12,9 +12,9 @@ let g:lightline.active = {
             \ 'left': [ [ 'mode' ],
             \           [ 'spell', 'readonly', 'filename' ],
             \           [ 'filetype' ] ],
-            \ 'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok', 'lineinfo' ],
-            \            [ 'noscrollbar' ],
-            \            [ 'tagbar' ] ]
+            \ 'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ],
+            \            [ 'lineinfo' ],
+            \            [ 'tagbar' ] ],
             \ }
 
 let g:lightline.inactive = {
@@ -26,7 +26,7 @@ let g:lightline.inactive = {
             \ }
 
 let g:lightline.component = {
-            \   'lineinfo': '%1l:%-2v',
+            \   'lineinfo': '%1l:%-1v',
             \   'line': '%l',
             \   'column': '%c',
             \}
