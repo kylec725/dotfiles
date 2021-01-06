@@ -251,14 +251,14 @@ keys.globalkeys = gears.table.join(
       {description = "play/pause music", group = "hotkeys"}
       ),
 
-   -- Screenshot on prtscn using scrot
+   -- Screenshot using maim
    awful.key({}, "Print",
       function()
          awful.spawn.with_shell(apps.screenshot)
          scrot_not = naughty.notify({
                text = "Screenshot Taken",
-               title = "Scrot",
-               icon = "/home/kyle/.config/awesome/awesome-backup/themes/skyfall/icons/screenshot.png",
+               title = "Maim",
+               icon = "/home/kyle/.config/awesome/icons/screenshot.png",
                position = "bottom_middle",
             })
       end
@@ -277,7 +277,7 @@ keys.globalkeys = gears.table.join(
             awful.spawn.with_shell("xss-lock -l fade-lock +resetsaver &")
             lock_notification = naughty.notify({
                   text = "Lock On",
-                  icon = "/home/kyle/.config/awesome/awesome-backup/themes/skyfall/icons/lock.png",
+                  icon = "/home/kyle/.config/awesome/icons/lock.png",
                   bg = "#F1FCF9" .. "B3",
                   fg = "#20262C",
                   position = "bottom_middle",
