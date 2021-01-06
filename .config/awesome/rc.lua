@@ -33,7 +33,7 @@ apps = {
    lock = "fade-lock",
    screenshot = "maim -u ~/pictures/screenshots/$(date +%s)-screenshot.png",
    browser = "firefox",
-   filebrowser = "kitty ranger",
+   filebrowser = "kitty lf",
    spotify = "spotify --force-device-scale-factor=1.5",
    mpd = "kitty -o window_padding_width=40 -o color3=#ffff8a -e ncmpcpp",
    zathura = "kitty -e pdf"

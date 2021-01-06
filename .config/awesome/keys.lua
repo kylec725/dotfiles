@@ -156,7 +156,7 @@ keys.globalkeys = gears.table.join(
       end,
       {description = "application launcher", group = "launcher"}
       ),
-   -- launch ranger
+   -- launch lf
    awful.key({modkey}, "r",
       function()
          awful.spawn(apps.filebrowser)
