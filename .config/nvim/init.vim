@@ -208,7 +208,7 @@ autocmd FileType javascript setlocal shiftwidth=2
 autocmd FileType python setlocal shiftwidth=4
 autocmd FileType vim setlocal shiftwidth=4
 autocmd FileType sql setlocal shiftwidth=4
-autocmd FileType lua setlocal shiftwidth=4
+autocmd FileType lua setlocal shiftwidth=2
 autocmd FileType fish setlocal shiftwidth=4 | ALEDisable
 autocmd FileType sh setlocal shiftwidth=8
 " add to gray out text after column 80

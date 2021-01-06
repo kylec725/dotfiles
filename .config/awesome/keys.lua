@@ -106,8 +106,8 @@ keys.desktopbuttons = gears.table.join(
       function ()
          naughty.destroy_all_notifications()
       end
+      )
    )
-)
 
 -- Mouse buttons on the client
 keys.clientbuttons = gears.table.join(
@@ -117,12 +117,12 @@ keys.clientbuttons = gears.table.join(
          client.focus = c
          c:raise()
       end
-   ),
+      ),
 
    -- Move and Resize Client
    awful.button({modkey}, 1, awful.mouse.client.move),
    awful.button({modkey}, 3, awful.mouse.client.resize)
-)
+   )
 
 
 -- ===================================================================
@@ -141,56 +141,56 @@ keys.globalkeys = gears.table.join(
          awful.spawn(apps.terminal)
       end,
       {description = "open a terminal", group = "launcher"}
-   ),
+      ),
    -- launch rofi
    awful.key({modkey}, "d",
       function()
          awful.spawn(apps.launcher)
       end,
       {description = "application launcher", group = "launcher"}
-   ),
+      ),
    -- launch firefox
    awful.key({modkey}, "w",
-       function()
-           awful.spawn(apps.browser)
-       end,
-       {description = "application launcher", group = "launcher"}
-       ),
+      function()
+         awful.spawn(apps.browser)
+      end,
+      {description = "application launcher", group = "launcher"}
+      ),
    -- launch ranger
    awful.key({modkey}, "r",
-       function()
-           awful.spawn(apps.filebrowser)
-       end,
-       {description = "application launcher", group = "launcher"}
-       ),
+      function()
+         awful.spawn(apps.filebrowser)
+      end,
+      {description = "application launcher", group = "launcher"}
+      ),
    -- launch spotify
    awful.key({modkey}, "s",
-       function()
-           awful.spawn(apps.spotify)
-       end,
-       {description = "application launcher", group = "launcher"}
-       ),
+      function()
+         awful.spawn(apps.spotify)
+      end,
+      {description = "application launcher", group = "launcher"}
+      ),
    -- launch ncmpcpp
    awful.key({modkey}, "m",
-       function()
-           awful.spawn(apps.mpd)
-       end,
-       {description = "application launcher", group = "launcher"}
-       ),
+      function()
+         awful.spawn(apps.mpd)
+      end,
+      {description = "application launcher", group = "launcher"}
+      ),
    -- launch zathura w/ fzf
    awful.key({modkey}, "z",
-       function()
-           awful.spawn(apps.zathura)
-       end,
-       {description = "application launcher", group = "launcher"}
-       ),
+      function()
+         awful.spawn(apps.zathura)
+      end,
+      {description = "application launcher", group = "launcher"}
+      ),
    -- lock
    awful.key({modkey}, ";",
-       function()
-           awful.spawn(apps.lock)
-       end,
-       {description = "application launcher", group = "launcher"}
-       ),
+      function()
+         awful.spawn(apps.lock)
+      end,
+      {description = "application launcher", group = "launcher"}
+      ),
 
    -- =========================================
    -- FUNCTION KEYS
@@ -202,13 +202,13 @@ keys.globalkeys = gears.table.join(
          awful.spawn("light -A 5", false)
       end,
       {description = "+5%", group = "hotkeys"}
-   ),
+      ),
    awful.key({}, "XF86MonBrightnessDown",
       function()
          awful.spawn("light -U 5", false)
       end,
       {description = "-5%", group = "hotkeys"}
-   ),
+      ),
 
    -- ALSA volume control
    awful.key({}, "XF86AudioRaiseVolume",
@@ -217,85 +217,85 @@ keys.globalkeys = gears.table.join(
          -- awesome.emit_signal("volume_change")
       end,
       {description = "volume up", group = "hotkeys"}
-   ),
+      ),
    awful.key({}, "XF86AudioLowerVolume",
       function()
          awful.spawn("amixer -D pulse sset Master 10%-", false)
          -- awesome.emit_signal("volume_change")
       end,
       {description = "volume down", group = "hotkeys"}
-   ),
+      ),
    awful.key({}, "XF86AudioMute",
       function()
          awful.spawn("amixer -D pulse set Master 1+ toggle", false)
          -- awesome.emit_signal("volume_change")
       end,
       {description = "toggle mute", group = "hotkeys"}
-   ),
+      ),
    awful.key({}, "XF86AudioNext",
       function()
          awful.spawn("mpc next", false)
       end,
       {description = "next music", group = "hotkeys"}
-   ),
+      ),
    awful.key({}, "XF86AudioPrev",
       function()
          awful.spawn("mpc prev", false)
       end,
       {description = "previous music", group = "hotkeys"}
-   ),
+      ),
    awful.key({}, "XF86AudioPlay",
       function()
          awful.spawn("mpc toggle", false)
       end,
       {description = "play/pause music", group = "hotkeys"}
-   ),
+      ),
 
    -- Screenshot on prtscn using scrot
    awful.key({}, "Print",
       function()
          awful.spawn.with_shell(apps.screenshot)
          scrot_not = naughty.notify({
-                 text = "Screenshot Taken",
-                 title = "Scrot",
-                 icon = "/home/kyle/.config/awesome/awesome-backup/themes/skyfall/icons/screenshot.png",
-                 position = "bottom_middle",
-             })
+               text = "Screenshot Taken",
+               title = "Scrot",
+               icon = "/home/kyle/.config/awesome/awesome-backup/themes/skyfall/icons/screenshot.png",
+               position = "bottom_middle",
+            })
       end
-   ),
+      ),
 
-    -- Run HDMI script
-    awful.key({}, "F7", function()
-        awful.spawn.with_shell("hdmi-toggle")
-    end),
+   -- Run HDMI script
+   awful.key({}, "F7", function()
+      awful.spawn.with_shell("hdmi-toggle")
+   end),
 
-    -- Lock control
-    awful.key({modkey, "Shift"}, ";", function ()
-        awful.spawn.easy_async_with_shell("pgrep xss-lock", function (stdout)
-            local xss_pid = stdout:match('(%d+)')
-            if xss_pid == nil then
-                awful.spawn.with_shell("xss-lock -l fade-lock +resetsaver &")
-                lock_notification = naughty.notify({
-                        text = "Lock On",
-                        icon = "/home/kyle/.config/awesome/awesome-backup/themes/skyfall/icons/lock.png",
-                        bg = "#F1FCF9" .. "B3",
-                        fg = "#20262C",
-                        position = "bottom_middle",
-                        replaces_id = lock_id
-                    })
-                lock_id = lock_notification.id
-            else
-                awful.spawn.with_shell("killall xss-lock")
-                lock_notification = naughty.notify({
-                        text = "Lock Off",
-                        icon = "/home/kyle/.config/awesome/awesome-backup/themes/skyfall/icons/lock.png",
-                        position = "bottom_middle",
-                        replaces_id = lock_id
-                    })
-                lock_id = lock_notification.id
-            end
-        end)
-    end),
+   -- Lock control
+   awful.key({modkey, "Shift"}, ";", function ()
+      awful.spawn.easy_async_with_shell("pgrep xss-lock", function (stdout)
+         local xss_pid = stdout:match('(%d+)')
+         if xss_pid == nil then
+            awful.spawn.with_shell("xss-lock -l fade-lock +resetsaver &")
+            lock_notification = naughty.notify({
+                  text = "Lock On",
+                  icon = "/home/kyle/.config/awesome/awesome-backup/themes/skyfall/icons/lock.png",
+                  bg = "#F1FCF9" .. "B3",
+                  fg = "#20262C",
+                  position = "bottom_middle",
+                  replaces_id = lock_id
+               })
+            lock_id = lock_notification.id
+         else
+            awful.spawn.with_shell("killall xss-lock")
+            lock_notification = naughty.notify({
+                  text = "Lock Off",
+                  icon = "/home/kyle/.config/awesome/awesome-backup/themes/skyfall/icons/lock.png",
+                  position = "bottom_middle",
+                  replaces_id = lock_id
+               })
+            lock_id = lock_notification.id
+         end
+      end)
+   end),
 
    -- =========================================
    -- RELOAD / QUIT AWESOME
@@ -305,7 +305,7 @@ keys.globalkeys = gears.table.join(
    awful.key({modkey, "Shift"}, "r",
       awesome.restart,
       {description = "reload awesome", group = "awesome"}
-   ),
+      ),
 
    -- Quit Awesome
    awful.key({modkey}, "Escape",
@@ -314,7 +314,7 @@ keys.globalkeys = gears.table.join(
          awesome.emit_signal("show_exit_screen")
       end,
       {description = "toggle exit screen", group = "hotkeys"}
-   ),
+      ),
 
    awful.key({}, "XF86PowerOff",
       function()
@@ -322,7 +322,7 @@ keys.globalkeys = gears.table.join(
          awesome.emit_signal("show_exit_screen")
       end,
       {description = "toggle exit screen", group = "hotkeys"}
-   ),
+      ),
 
    -- =========================================
    -- CLIENT FOCUSING
@@ -335,28 +335,28 @@ keys.globalkeys = gears.table.join(
          raise_client()
       end,
       {description = "focus down", group = "client"}
-   ),
+      ),
    awful.key({modkey}, "k",
       function()
-          awful.client.focus.byidx(-1)
+         awful.client.focus.byidx(-1)
          raise_client()
       end,
       {description = "focus up", group = "client"}
-   ),
-   awful.key({modkey}, "h",
-      function()
-         -- awful.client.focus.bydirection("left")
-         -- raise_client()
-      end,
-      {description = "focus left", group = "client"}
-   ),
-   awful.key({modkey}, "l",
-      function()
-         -- awful.client.focus.bydirection("right")
-         -- raise_client()
-      end,
-      {description = "focus right", group = "client"}
-   ),
+      ),
+   -- awful.key({modkey}, "h",
+   --    function()
+   --       awful.client.focus.bydirection("left")
+   --       raise_client()
+   --    end,
+   --    {description = "focus left", group = "client"}
+   -- ),
+   -- awful.key({modkey}, "l",
+   --    function()
+   --       awful.client.focus.bydirection("right")
+   --       raise_client()
+   --    end,
+   --    {description = "focus right", group = "client"}
+   -- ),
 
    -- Focus client by direction (arrow keys)
    awful.key({modkey}, "Down",
@@ -365,28 +365,28 @@ keys.globalkeys = gears.table.join(
          raise_client()
       end,
       {description = "focus down", group = "client"}
-   ),
+      ),
    awful.key({modkey}, "Up",
       function()
          awful.client.focus.bydirection("up")
          raise_client()
       end,
       {description = "focus up", group = "client"}
-   ),
+      ),
    awful.key({modkey}, "Left",
       function()
          awful.client.focus.bydirection("left")
          raise_client()
       end,
       {description = "focus left", group = "client"}
-   ),
+      ),
    awful.key({modkey}, "Right",
       function()
          awful.client.focus.bydirection("right")
          raise_client()
       end,
       {description = "focus right", group = "client"}
-   ),
+      ),
 
    -- =========================================
    -- SCREEN FOCUSING
@@ -397,52 +397,7 @@ keys.globalkeys = gears.table.join(
       function()
          awful.screen.focus_relative(1)
       end
-   ),
-
-   -- =========================================
-   -- CLIENT RESIZING
-   -- =========================================
-
-   awful.key({modkey, "Control"}, "Down",
-      function(c)
-         resize_client(client.focus, "down")
-      end
-   ),
-   awful.key({modkey, "Control"}, "Up",
-      function(c)
-         resize_client(client.focus, "up")
-      end
-   ),
-   awful.key({modkey, "Control"}, "Left",
-      function(c)
-         resize_client(client.focus, "left")
-      end
-   ),
-   awful.key({modkey, "Control"}, "Right",
-      function(c)
-         resize_client(client.focus, "right")
-      end
-   ),
-   awful.key({modkey, "Control"}, "j",
-      function(c)
-         resize_client(client.focus, "down")
-      end
-   ),
-   awful.key({ modkey, "Control" }, "k",
-      function(c)
-         resize_client(client.focus, "up")
-      end
-   ),
-   awful.key({modkey, "Control"}, "h",
-      function(c)
-         resize_client(client.focus, "left")
-      end
-   ),
-   awful.key({modkey, "Control"}, "l",
-      function(c)
-         resize_client(client.focus, "right")
-      end
-   ),
+      ),
 
    -- =========================================
    -- CHANGE ORDER OF CLIENTS
@@ -451,16 +406,16 @@ keys.globalkeys = gears.table.join(
    -- Number of master clients
    awful.key({modkey, "Shift"}, "j",
       function()
-          awful.client.swap.byidx(1)
+         awful.client.swap.byidx(1)
       end,
       {description = "increase the number of master clients", group = "layout"}
-   ),
+      ),
    awful.key({ modkey, "Shift" }, "k",
       function()
-          awful.client.swap.byidx(-1)
+         awful.client.swap.byidx(-1)
       end,
       {description = "decrease the number of master clients", group = "layout"}
-   ),
+      ),
 
    -- =========================================
    -- LAYOUT SELECTION
@@ -472,14 +427,14 @@ keys.globalkeys = gears.table.join(
          awful.layout.inc(1)
       end,
       {description = "select next", group = "layout"}
-   ),
+      ),
    -- select previous layout
    awful.key({modkey, "Shift"}, "space",
       function()
          awful.layout.inc(-1)
       end,
       {description = "select previous", group = "layout"}
-   ),
+      ),
 
    -- =========================================
    -- CLIENT MINIMIZATION
@@ -496,8 +451,8 @@ keys.globalkeys = gears.table.join(
          end
       end,
       {description = "restore minimized", group = "client"}
+      )
    )
-)
 
 
 -- ===================================================================
@@ -511,42 +466,22 @@ keys.clientkeys = gears.table.join(
       function(c)
          move_client(c, "down")
       end
-   ),
+      ),
    awful.key({modkey, "Shift"}, "Up",
       function(c)
          move_client(c, "up")
       end
-   ),
+      ),
    awful.key({modkey, "Shift"}, "Left",
       function(c)
          move_client(c, "left")
       end
-   ),
+      ),
    awful.key({modkey, "Shift"}, "Right",
       function(c)
          move_client(c, "right")
       end
-   ),
-   awful.key({modkey, "Shift"}, "j",
-      function(c)
-         move_client(c, "down")
-      end
-   ),
-   awful.key({modkey, "Shift"}, "k",
-      function(c)
-         move_client(c, "up")
-      end
-   ),
-   awful.key({modkey, "Shift"}, "h",
-      function(c)
-         move_client(c, "left")
-      end
-   ),
-   awful.key({modkey, "Shift"}, "l",
-      function(c)
-         move_client(c, "right")
-      end
-   ),
+      ),
 
    -- toggle fullscreen
    awful.key({modkey}, "f",
@@ -554,7 +489,7 @@ keys.clientkeys = gears.table.join(
          c.fullscreen = not c.fullscreen
       end,
       {description = "toggle fullscreen", group = "client"}
-   ),
+      ),
 
    -- close client
    awful.key({modkey}, "q",
@@ -562,7 +497,7 @@ keys.clientkeys = gears.table.join(
          c:kill()
       end,
       {description = "close", group = "client"}
-   ),
+      ),
 
    -- Maximize
    awful.key({modkey}, "m",
@@ -571,11 +506,11 @@ keys.clientkeys = gears.table.join(
          c:raise()
       end,
       {description = "(un)maximize", group = "client"}
+      )
    )
-)
 
 -- Bind all key numbers to tags
-for i = 1, 9 do
+for i = 1, 10 do
    keys.globalkeys = gears.table.join(keys.globalkeys,
       -- Switch to tag
       awful.key({modkey}, "#" .. i + 9,
@@ -587,7 +522,7 @@ for i = 1, 9 do
             end
          end,
          {description = "view tag #"..i, group = "tag"}
-      ),
+         ),
       -- Move client to tag
       awful.key({modkey, "Shift"}, "#" .. i + 9,
          function()
@@ -599,8 +534,8 @@ for i = 1, 9 do
             end
          end,
          {description = "move focused client to tag #"..i, group = "tag"}
+         )
       )
-   )
 end
 
 return keys

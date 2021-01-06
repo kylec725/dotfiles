@@ -34,70 +34,69 @@ fireworks.initialize = function()
    -- local left_panel = require("components.fireworks.left-panel")
    local top_panel = require("components.fireworks.top-panel")
 
-    local icon_dir = gears.filesystem.get_configuration_dir() .. "/icons/tags/fireworks/"
-    -- Set up each screen (add tags & panels)
+   local icon_dir = gears.filesystem.get_configuration_dir() .. "/icons/tags/fireworks/"
+   -- Set up each screen (add tags & panels)
 
-    awful.screen.connect_for_each_screen(function(s)
+   awful.screen.connect_for_each_screen(function(s)
 
-        -- awful.tag({ "一", "二", "三", "四", "五", "六", "七" }, s, awful.layout.suit.spiral)
-        awful.tag({ "1", "2", "3", "4", "5", "6", "7" }, s, awful.layout.suit.spiral)
-       -- for i = 1, 7, 1
-       -- do
-       --    awful.tag.add(i, {
-       --       -- icon = icon_dir .. i .. ".png",
-       --       icon_only = false,
-       --       layout = awful.layout.suit.spiral,
-       --       screen = s,
-       --       selected = i == 1
-       --    })
-       -- end
-   
-       -- Only add the left panel on the primary screen
-       -- if s.index == 1 then
-       --    left_panel.create(s)
-       -- end
-   
-       -- Add the top panel to every screen
-       top_panel.create(s)
-    end)
-   
-    -- set initally selected tag to be active
-    local initial_tag = awful.screen.focused().selected_tag
-    -- awful.tag.seticon(icon_dir .. initial_tag.name .. ".png", initial_tag)
-   
-    -- updates tag icons
-    -- local function update_tag_icons()
-    --    -- get a list of all tags
-    --    local atags = awful.screen.focused().tags
-    --
-    --    -- update each tag icon
-    --    for i, t in ipairs(atags) do
-    --       -- don't update active tag icon
-    --       if t == awful.screen.focused().selected_tag then
-    --          goto continue
-    --       end
-    --       -- if the tag has clients use busy icon
-    --       for _ in pairs(t:clients()) do
-    --          awful.tag.seticon(icon_dir .. t.name .. "-busy.png", t)
-    --          goto continue
-    --       end
-    --       -- if the tag has no clients use regular inactive icon
-    --       awful.tag.seticon(icon_dir .. t.name .. "-inactive.png", t)
-    --
-    --       ::continue::
-    --    end
-    -- end
-   
-    -- Update tag icons when tag is switched
-    tag.connect_signal("property::selected", function(t)
-       -- set newly selected tag icon as active
-       -- awful.tag.seticon(icon_dir .. t.name .. ".png", t)
-       -- update_tag_icons()
-    end)
-    -- Update tag icons when a client is moved to a new tag
-    tag.connect_signal("tagged", function(c)
-       -- update_tag_icons()
-    end)
+      awful.tag({ "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" }, s, awful.layout.suit.spiral)
+      for i = 1, 10, 1
+      do
+         awful.tag.add(i, {
+               -- icon = icon_dir .. i .. ".png",
+               icon_only = false,
+               layout = awful.layout.suit.spiral,
+               screen = s,
+               selected = i == 1
+            })
+      end
+
+      -- Only add the left panel on the primary screen
+      -- if s.index == 1 then
+      --    left_panel.create(s)
+      -- end
+
+      -- Add the top panel to every screen
+      top_panel.create(s)
+   end)
+
+   -- set initally selected tag to be active
+   local initial_tag = awful.screen.focused().selected_tag
+   -- awful.tag.seticon(icon_dir .. initial_tag.name .. ".png", initial_tag)
+
+   -- updates tag icons
+   -- local function update_tag_icons()
+   --    -- get a list of all tags
+   --    local atags = awful.screen.focused().tags
+   --
+   --    -- update each tag icon
+   --    for i, t in ipairs(atags) do
+   --       -- don't update active tag icon
+   --       if t == awful.screen.focused().selected_tag then
+   --          goto continue
+   --       end
+   --       -- if the tag has clients use busy icon
+   --       for _ in pairs(t:clients()) do
+   --          awful.tag.seticon(icon_dir .. t.name .. "-busy.png", t)
+   --          goto continue
+   --       end
+   --       -- if the tag has no clients use regular inactive icon
+   --       awful.tag.seticon(icon_dir .. t.name .. "-inactive.png", t)
+   --
+   --       ::continue::
+   --    end
+   -- end
+
+   -- Update tag icons when tag is switched
+   tag.connect_signal("property::selected", function(t)
+      -- set newly selected tag icon as active
+      -- awful.tag.seticon(icon_dir .. t.name .. ".png", t)
+      -- update_tag_icons()
+   end)
+   -- Update tag icons when a client is moved to a new tag
+   tag.connect_signal("tagged", function(c)
+      -- update_tag_icons()
+   end)
 end
 
 return fireworks
