@@ -48,7 +48,7 @@ abbr 5.. '../../../../..'
 abbr pd 'prevd'
 abbr awm 'cd ~/.config/awesome'
 # abbr sl 'cd ~/school'
-abbr sem 'cd ~/school/fall20'
+abbr sem 'cd ~/school/spring21'
 
 # environment variables
 # set -Ux PATH="$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/root/.gem/ruby/2.6.0/bin"
