@@ -33,6 +33,10 @@ set info 'size'
 set number on
 set relativenumber on
 
+# remap space toggle
+map <space>
+map <space> toggle
+
 # delete
 map D delete
 
