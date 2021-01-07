@@ -3,11 +3,14 @@
 dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Pause
 mpc pause
 
-i3lock --nofork --blur=10 \
-    --insidecolor=373445cc --ringcolor=ffffffcc --line-uses-inside \
+i3lock -k --timestr="%I:%M" --datestr="%A, %B %d" --bar-indicator --timesize=150 --datesize=28 --datepos="960:600" \
+    --time-font="SF Pro Display Light" --date-font="SF Pro Display Light" \
+    --nofork --blur=10 \
+    --insidecolor=000000cc --ringcolor=ffffffcc --line-uses-inside \
     --keyhlcolor=61AFEFcc --bshlcolor=C678DDcc --separatorcolor=00000000 \
     --insidevercolor=71eeb8cc --insidewrongcolor=E06C75cc \
     --ringvercolor=ffffffcc --ringwrongcolor=ffffffcc \
-    --radius=100 --veriftext="" --wrongtext="" --noinputtext="" \
-    --ring-width=13 --timecolor=FDFDFDFF --datecolor=FDFDFDFF
+    --radius=150 --veriftext="" --wrongtext="" --noinputtext="" \
+    --ring-width=7 --timecolor=FDFDFDFF --datecolor=FDFDFDFF \
+    --pass-volume-keys
 
