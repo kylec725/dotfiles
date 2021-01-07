@@ -2,7 +2,7 @@
 This is my collection of configuration files.
 
 ## Key Details
-- Distro: Arch Linu
+- Distro: Arch Linux
 - WM: [AwesomeWM](https://github.com/awesomeWM/awesome/)
 - Editor: [Neovim](https://github.com/neovim/neovim)
 - Terminal: [kitty](https://github.com/kovidgoyal/kitty)
