@@ -214,21 +214,21 @@ keys.globalkeys = gears.table.join(
    awful.key({}, "XF86AudioRaiseVolume",
       function()
          awful.spawn("amixer -D pulse sset Master 10%+", false)
-         -- awesome.emit_signal("volume_change")
+         awesome.emit_signal("volume_update")
       end,
       {description = "volume up", group = "hotkeys"}
       ),
    awful.key({}, "XF86AudioLowerVolume",
       function()
          awful.spawn("amixer -D pulse sset Master 10%-", false)
-         -- awesome.emit_signal("volume_change")
+         awesome.emit_signal("volume_update")
       end,
       {description = "volume down", group = "hotkeys"}
       ),
    awful.key({}, "XF86AudioMute",
       function()
          awful.spawn("amixer -D pulse set Master 1+ toggle", false)
-         -- awesome.emit_signal("volume_change")
+         awesome.emit_signal("volume_update")
       end,
       {description = "toggle mute", group = "hotkeys"}
       ),

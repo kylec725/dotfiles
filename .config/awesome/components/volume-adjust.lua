@@ -140,6 +140,12 @@ local function update_widget()
     end
 end
 
+awesome.connect_signal("volume_update",
+   function()
+      update_widget()
+   end
+   )
+
 -- Sleeps until pactl detects an event (volume up/down/toggle mute)
 local volume_script = [[
   bash -c '
