@@ -1,8 +1,11 @@
 #!/usr/bin/fish
 
+# Bash is still the system's default shell so that bash scripts remain compatible
+
 function fish_prompt
     set_color d7ffff
-    printf "┌─[ "
+    # printf "┌─[ "
+    printf "[ "
     set_color 5fafd7
     printf "加油 "
     set_color 5f87ff
@@ -10,8 +13,18 @@ function fish_prompt
     set_color 5fafd7
     printf (pwd | sed 's,^/home/kyle,~,')
     set_color d7ffff
-    printf " ]\n└──❯ "
+    # printf " ]\n└──❯ "
+    # printf " ]\n ⏺ "
+    printf " ]\n ❯ "
 end
+
+# environment variables
+set -Ux GOPATH "$HOME/.go"
+set PATH $PATH "$HOME/.bin:/home/kyle/.cargo/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.local/bin:$GOPATH/bin"
+set -Ux FZF_DEFAULT_COMMAND "rg --files --hidden $HOME"
+set -Ux FZF_DEFAULT_OPTS "--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,gutter:-1"
+set -Ux EDITOR nvim
+set -Ux VISUAL nvim
 
 # remove greeting message when fish starts
 set fish_greeting
@@ -30,6 +43,7 @@ abbr hdmi 'hdmi-toggle'
 abbr um 'usb-mount'
 alias vlc 'devour vlc'
 alias ls 'exa --group-directories-first'
+alias lst 'exa --group-directories-first -T'
 # git
 abbr ga 'git add'
 abbr gc 'git commit'
@@ -49,10 +63,3 @@ abbr pd 'prevd'
 abbr awm 'cd ~/.config/awesome'
 # abbr sl 'cd ~/school'
 abbr sem 'cd ~/school/spring21'
-
-# environment variables
-# set -Ux PATH="$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/root/.gem/ruby/2.6.0/bin"
-set -Ux FZF_DEFAULT_COMMAND 'rg --files --hidden $HOME'
-set -Ux FZF_DEFAULT_OPTS '--no-mouse --bind=tab:up,btab:down --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,gutter:-1'
-set -Ux VISUAL nvim
-set -Ux EDITOR nvim
