@@ -12,4 +12,4 @@ This is my collection of configuration files.
 
 ### Screenshots
 ![Wallpaper](https://raw.githubusercontent.com/kylec725/dotfiles/master/.assets/wallpaper.png)
-![Tiled](https://raw.githubusercontent.com/kylec725/dotfiles/master/.assets/tiled.png)
+![Tiled](.assets/tiled.png)
