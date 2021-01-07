@@ -255,12 +255,28 @@ keys.globalkeys = gears.table.join(
    awful.key({}, "Print",
       function()
          awful.spawn.with_shell(apps.screenshot)
-         scrot_not = naughty.notify({
+         maim_not = naughty.notify({
                text = "Screenshot Taken",
                title = "Maim",
                icon = "/home/kyle/.config/awesome/icons/screenshot.png",
                position = "bottom_middle",
             })
+      end
+      ),
+
+   -- Selected screenshot to clipboard
+   awful.key({modkey}, "Print",
+      function()
+         awful.spawn.easy_async_with_shell(apps.selected_screenshot, function(_, __, ___, exit_code)
+            if exit_code == 0 then
+               maim_not = naughty.notify({
+                     text = "Copied to Clipboard",
+                     title = "Maim",
+                     icon = "/home/kyle/.config/awesome/icons/screenshot.png",
+                     position = "bottom_middle",
+                  })
+            end
+         end)
       end
       ),
 

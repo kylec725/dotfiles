@@ -32,6 +32,7 @@ apps = {
    launcher = "rofi -normal-window -modi drun -show drun -theme " .. theme_config_dir .. "rofi.rasi",
    lock = "fade-lock",
    screenshot = "maim -u ~/pictures/screenshots/$(date +%s)-screenshot.png",
+   selected_screenshot = "maim -so /tmp/maim_clipboard && xclip -selection clipboard -t image/png /tmp/maim_clipboard &> /dev/null && rm /tmp/maim_clipboard",
    browser = "firefox",
    filebrowser = "kitty lf",
    spotify = "spotify --force-device-scale-factor=1.5",
