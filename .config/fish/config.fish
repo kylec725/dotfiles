@@ -13,9 +13,13 @@ function fish_prompt
     set_color 5fafd7
     printf (pwd | sed 's,^/home/kyle,~,')
     set_color d7ffff
+    printf " ] "
+    set_color ffffff
+    _pure_prompt_git_pending_commits
+    set_color d7ffff
     # printf " ]\n└──❯ "
     # printf " ]\n ⏺ "
-    printf " ]\n ❯ "
+    printf "\n ❯ "
 end
 
 # environment variables
