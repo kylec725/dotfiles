@@ -47,7 +47,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'fatih/vim-go'
+" Plug 'fatih/vim-go'
 
 " Git
 Plug 'tpope/vim-fugitive'
