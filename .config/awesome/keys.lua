@@ -304,7 +304,7 @@ keys.globalkeys = gears.table.join(
             awful.spawn.with_shell("killall xss-lock")
             lock_notification = naughty.notify({
                   text = "Lock Off",
-                  icon = "/home/kyle/.config/awesome/awesome-backup/themes/skyfall/icons/lock.png",
+                  icon = "/home/kyle/.config/awesome/icons/lock.png",
                   position = "bottom_middle",
                   replaces_id = lock_id
                })
