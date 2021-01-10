@@ -37,6 +37,9 @@ set relativenumber on
 # map <space>
 # map <space> toggle
 
+# unmap w from exiting lf
+map w
+
 # delete
 map D delete
 
