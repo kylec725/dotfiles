@@ -130,19 +130,17 @@ local function update_widget()
                 volume_bar.color = "#efefef"
             end
         end)
-
-    -- make volume_adjust component visible
-    if volume_adjust.visible then
-        hide_volume_adjust:again()
-    else
-        volume_adjust.visible = true
-        hide_volume_adjust:start()
-    end
 end
 
 awesome.connect_signal("volume_update",
    function()
-      update_widget()
+      -- make volume_adjust component visible
+      if volume_adjust.visible then
+         hide_volume_adjust:again()
+      else
+         volume_adjust.visible = true
+         hide_volume_adjust:start()
+      end
    end
    )
 
