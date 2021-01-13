@@ -143,7 +143,7 @@ require("awful.autofocus")
 
 
 -- Reload config when screen geometry changes
--- screen.connect_signal("property::geometry", awesome.restart)
+screen.connect_signal("property::geometry", awesome.restart)
 
 
 -- ===================================================================
