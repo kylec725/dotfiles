@@ -48,6 +48,7 @@ Plug 'w0rp/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'octol/vim-cpp-enhanced-highlight'
 " Plug 'fatih/vim-go'
+Plug 'sebdah/vim-delve'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -135,6 +136,10 @@ highlight IncSearch ctermbg=blue ctermfg=black guibg=blue guifg=black
 " matched parentheses color
 highlight clear MatchParen
 highlight MatchParen ctermbg=yellow ctermfg=black guibg=yellow guifg=black
+
+" Warning message and Error
+highlight WarningMsg ctermbg=NONE ctermfg=yellow
+highlight ErrorMsg ctermbg=NONE ctermfg=red
 
 " Set folding to indent
 set foldmethod=indent
