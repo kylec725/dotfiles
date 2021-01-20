@@ -37,7 +37,8 @@ apps = {
    filebrowser = "kitty lf",
    spotify = "spotify --force-device-scale-factor=1.5",
    mpd = "kitty -o window_padding_width=40 -o color3=#ffff8a -e ncmpcpp",
-   zathura = "kitty -e pdf"
+   zathura = "kitty -e pdf",
+   top = "kitty -e gotop"
 }
 
 -- define wireless and ethernet interface names for the network widget

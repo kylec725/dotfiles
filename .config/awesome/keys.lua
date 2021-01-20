@@ -184,6 +184,13 @@ keys.globalkeys = gears.table.join(
       end,
       {description = "application launcher", group = "launcher"}
       ),
+   -- launch system monitor
+   awful.key({modkey}, "t",
+      function()
+         awful.spawn(apps.top)
+      end,
+      {description = "application launcher", group = "launcher"}
+      ),
    -- lock
    awful.key({modkey}, ";",
       function()
