@@ -1,6 +1,7 @@
 nnoremap <silent> <leader>db :DlvToggleBreakpoint<CR>
 nnoremap <silent> <leader>dm :DlvDebug<CR>
 nnoremap <silent> <leader>dt :DlvTest<CR>
+nnoremap <silent> <leader>dc :DlvClearAll<CR>
 
 highlight DlvBreakpoint ctermbg=NONE ctermfg=lightgreen
 " highlight DlvTracepoint ctermbg=NONE ctermfg=lightgreen
