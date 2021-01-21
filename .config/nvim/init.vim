@@ -156,6 +156,9 @@ highlight clear SignColumn
 set fillchars+=vert:│
 highlight VertSplit cterm=NONE ctermfg=12 guifg=12 ctermbg=NONE guibg=NONE
 
+" Remove line numbers in terminals (especially for debugging"
+autocmd TermOpen * setlocal nonumber norelativenumber
+
 " remove latex concealment
 let g:tex_conceal = ""
 
