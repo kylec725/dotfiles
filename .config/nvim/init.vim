@@ -135,7 +135,7 @@ highlight IncSearch ctermbg=blue ctermfg=black guibg=blue guifg=black
 
 " matched parentheses color
 highlight clear MatchParen
-highlight MatchParen ctermbg=yellow ctermfg=black guibg=yellow guifg=black
+highlight MatchParen ctermbg=magenta ctermfg=black guibg=yellow guifg=black
 
 " Warning message and Error
 highlight WarningMsg ctermbg=NONE ctermfg=yellow
