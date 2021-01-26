@@ -1,7 +1,0 @@
-[Default Applications]
-x-scheme-handler/mailto=userapp-Thunderbird-W910VZ.desktop
-message/rfc822=userapp-Thunderbird-W910VZ.desktop
-
-[Added Associations]
-x-scheme-handler/mailto=userapp-Thunderbird-W910VZ.desktop;
-message/rfc822=userapp-Thunderbird-W910VZ.desktop;
