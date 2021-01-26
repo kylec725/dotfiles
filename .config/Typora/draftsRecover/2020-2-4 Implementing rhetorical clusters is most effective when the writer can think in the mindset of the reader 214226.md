@@ -1,3 +1,0 @@
-Implementing rhetorical clusters is most effective when the writer can think in the mindset of the reader. Using the same structure or cluster to present information all the time may not always be effective. Certain readers may be predisposed to approach the content in a specific way, requiring the writer to be more thoughtful in their approach. For example, using the iceberg approach may be effective in breaking down a complicated concept. However, it may not be in displaying news articles, for which the inverted pyramid may be better. Finding the right fit for the reader is just as important as executing the approach correctly.
-
- 
