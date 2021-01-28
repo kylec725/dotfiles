@@ -210,7 +210,7 @@ autocmd FileType markdown setlocal spell shiftwidth=4
 autocmd FileType ocaml setlocal shiftwidth=2
 autocmd FileType c setlocal shiftwidth=4 cindent
 autocmd FileType cpp setlocal shiftwidth=4 cindent cinoptions=g0+N-sw
-autocmd FileType go setlocal shiftwidth=4 tabstop=4 expandtab
+autocmd FileType go setlocal shiftwidth=4 tabstop=4 noexpandtab
 autocmd FileType java setlocal shiftwidth=4
 autocmd FileType javascript setlocal shiftwidth=2
 autocmd FileType python setlocal shiftwidth=4
@@ -380,6 +380,7 @@ let g:go_highlight_operators = 1
 let g:go_highlight_trailing_whitespace_error = 0
 let g:go_fmt_autosave = 0
 let g:go_doc_keywordprg_enabled = 0
+let g:go_imports_autosave = 1
 
 " minimap
 let g:minimap_auto_start = 1
