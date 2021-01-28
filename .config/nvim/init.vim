@@ -47,7 +47,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'octol/vim-cpp-enhanced-highlight'
-" Plug 'fatih/vim-go'
+Plug 'fatih/vim-go'
 Plug 'sebdah/vim-delve'
 
 " Git
@@ -379,6 +379,7 @@ let g:go_highlight_fields = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_trailing_whitespace_error = 0
 let g:go_fmt_autosave = 0
+let g:go_doc_keywordprg_enabled = 0
 
 " minimap
 let g:minimap_auto_start = 1
