@@ -24,6 +24,7 @@ Plug 'gcavallanti/vim-noscrollbar'
 Plug 'junegunn/fzf.vim'
 Plug 'romainl/vim-cool'
 " Plug 'wfxr/minimap.vim'
+Plug 'Xuyuanp/scrollbar.nvim'
 
 " Visual Changes
 Plug 'Yggdroot/indentLine'
@@ -386,3 +387,11 @@ let g:go_fmt_fail_silently = 1
 " minimap
 let g:minimap_auto_start = 1
 let g:minimap_width = 20
+
+" scrollbar
+augroup ScrollbarInit
+    autocmd!
+    autocmd CursorMoved,VimResized,QuitPre * silent! lua require('scrollbar').show()
+    autocmd WinEnter,FocusGained           * silent! lua require('scrollbar').show()
+    autocmd WinLeave,BufLeave,BufWinLeave,FocusLost            * silent! lua require('scrollbar').clear()
+augroup end
