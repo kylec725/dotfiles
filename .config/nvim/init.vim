@@ -389,6 +389,12 @@ let g:minimap_auto_start = 1
 let g:minimap_width = 20
 
 " scrollbar
+let g:scrollbar_right_offset = 0
+let g:scrollbar_shape = {
+            \ 'head': '█',
+            \ 'body': '█',
+            \ 'tail': '█',
+            \ }
 augroup ScrollbarInit
     autocmd!
     autocmd CursorMoved,VimResized,QuitPre * silent! lua require('scrollbar').show()
