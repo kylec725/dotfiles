@@ -323,9 +323,9 @@ let g:highlightedyank_highlight_duration = 500
 
 " Git Commands and Settings - Fugitive and Gitgutter !!!!!
 
-nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gs :Git<CR>
 nnoremap <leader>ga :Gwrite<CR>
-nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gc :Git commit<CR>
 nnoremap <leader>gr :Git restore %<CR>
 nmap <leader>gj <Plug>(GitGutterNextHunk)
 nmap <leader>gk <Plug>(GitGutterPrevHunk)
