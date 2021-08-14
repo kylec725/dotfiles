@@ -1,6 +1,12 @@
 nnoremap <silent> <leader>n :Fern . -drawer -width=38 -toggle<CR>
 
 let g:fern#disable_default_mappings = 1
+let g:fern#renderer = "nerdfont"
+
+augroup my-glyph-palette
+    autocmd! *
+    autocmd FileType fern call glyph_palette#apply()
+augroup END
 
 autocmd FileType fern nmap <buffer> <S-j> jjj
 autocmd FileType fern nmap <buffer> <S-k> kkk

@@ -18,6 +18,8 @@ Plug 'antoinemadec/FixCursorHold.nvim'
 Plug 'lambdalisue/fern.vim'
 " Plug 'lambdalisue/fern-git-status.vim'
 Plug 'lambdalisue/nerdfont.vim'
+Plug 'lambdalisue/fern-renderer-nerdfont.vim'
+Plug 'lambdalisue/glyph-palette.vim'
 Plug 'majutsushi/tagbar'
 " Plug 'ryanoasis/vim-devicons'
 Plug 'gcavallanti/vim-noscrollbar'
@@ -36,7 +38,8 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'rakr/vim-one'
 Plug 'junegunn/seoul256.vim'
 Plug 'mhinz/vim-janah'
-" Plug 'ghifarit53/tokyonight-vim'
+Plug 'bluz71/vim-moonfly-colors'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 " Plug 'psliwka/vim-smoothie'
 
 " Statusline
@@ -65,7 +68,7 @@ call plug#end()
 "----------------------"
 
 " colorscheme
-colorscheme janah
+colorscheme tokyonight
 set background=dark
 " set termguicolors
 let g:one_allow_italics = 1
