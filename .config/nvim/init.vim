@@ -38,8 +38,8 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'rakr/vim-one'
 Plug 'junegunn/seoul256.vim'
 Plug 'mhinz/vim-janah'
-Plug 'bluz71/vim-moonfly-colors'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'mhartington/oceanic-next'
 " Plug 'psliwka/vim-smoothie'
 
 " Statusline
@@ -68,6 +68,9 @@ call plug#end()
 "----------------------"
 
 " colorscheme
+let g:tokyonight_style="storm"
+let g:tokyonight_transparent=1
+let g:tokyonight_color={ "CursorLineNR": "magenta" }
 colorscheme tokyonight
 set background=dark
 " set termguicolors
@@ -105,8 +108,8 @@ set splitright
 " Line numbers
 set number relativenumber
 " Current line number color
-highlight LineNr ctermfg=12 ctermbg=NONE guibg=NONE
-highlight CursorLineNR ctermfg=11 ctermbg=NONE guibg=NONE
+highlight LineNr ctermfg=12 guifg=12 ctermbg=NONE guibg=NONE
+highlight CursorLineNR ctermfg=9 guifg=yellow ctermbg=NONE guibg=NONE
 
 " Always show at least one line above/below the cursor.
 set scrolloff=3
@@ -134,14 +137,15 @@ set guicursor=a:blinkon100
 
 " set background color to be transparent
 highlight Normal guibg=NONE ctermbg=NONE
+highlight EndOfBuffer guibg=NONE ctermbg=NONE
 
 " comment color
 highlight Comment ctermfg=102
 
 " search match color
-highlight Search ctermbg=magenta ctermfg=black guibg=magenta guifg=black
+" highlight Search ctermbg=magenta ctermfg=black guibg=magenta guifg=black
 " highlight current search match in different color
-highlight IncSearch ctermbg=blue ctermfg=black guibg=blue guifg=black
+" highlight IncSearch ctermbg=blue ctermfg=black guibg=blue guifg=black
 
 " matched parentheses color
 highlight clear MatchParen
