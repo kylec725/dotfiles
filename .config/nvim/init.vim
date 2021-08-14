@@ -27,7 +27,7 @@ Plug 'romainl/vim-cool'
 Plug 'Xuyuanp/scrollbar.nvim'
 
 " Visual Changes
-Plug 'Yggdroot/indentLine'
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'gregsexton/MatchTag'
 Plug 'mustache/vim-mustache-handlebars'
 " Plug 'miyakogi/conoline.vim'
@@ -401,3 +401,6 @@ augroup ScrollbarInit
     autocmd WinEnter,FocusGained           * silent! lua require('scrollbar').show()
     autocmd WinLeave,BufLeave,BufWinLeave,FocusLost            * silent! lua require('scrollbar').clear()
 augroup end
+
+" indent_blankline
+let g:indent_blankline_char_highlight_list = ['Comment']
