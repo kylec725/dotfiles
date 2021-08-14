@@ -15,7 +15,7 @@ Plug 'voldikss/vim-floaterm'
 Plug 'antoinemadec/FixCursorHold.nvim'
 
 " File Navigation
-" Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/fern.vim'
 " Plug 'lambdalisue/fern-git-status.vim'
 Plug 'lambdalisue/nerdfont.vim'
 Plug 'majutsushi/tagbar'
@@ -36,6 +36,8 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'rakr/vim-one'
 Plug 'junegunn/seoul256.vim'
 Plug 'mhinz/vim-janah'
+" Plug 'ghifarit53/tokyonight-vim'
+" Plug 'psliwka/vim-smoothie'
 
 " Statusline
 Plug 'itchyny/lightline.vim'
@@ -44,12 +46,13 @@ Plug 'sinetoami/lightline-hunks'
 Plug 'maximbaz/lightline-ale'
 
 " Language Syntax/Suggestions
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'fatih/vim-go'
-Plug 'sebdah/vim-delve'
+Plug 'fatih/vim-go', {'for': 'go'}
+Plug 'sebdah/vim-delve', {'for': 'go'}
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'branch': '0.5-compat'}  " We recommend updating the parsers on update
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -66,6 +69,9 @@ colorscheme janah
 set background=dark
 " set termguicolors
 let g:one_allow_italics = 1
+
+" font
+set guifont=JetBrainsMono\ Nerd\ Font:h8
 
 " Change clipboard register for vim
 set clipboard=unnamedplus
@@ -370,14 +376,14 @@ let delimitMate_matchpairs = "(:),[:],{:}"
 xmap s <Plug>VSurround
 
 " go settings
-let g:go_highlight_functions = 1
-let g:go_highlight_function_calls = 1
 let g:go_gopls_enabled = 0
 let g:go_template_use_pkg = 1
-let g:go_highlight_types = 1
-let g:go_highlight_extra_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_operators = 1
+" let g:go_highlight_functions = 1
+" let g:go_highlight_function_calls = 1
+" let g:go_highlight_types = 1
+" let g:go_highlight_extra_types = 1
+" let g:go_highlight_fields = 1
+" let g:go_highlight_operators = 1
 let g:go_highlight_trailing_whitespace_error = 0
 let g:go_doc_keywordprg_enabled = 0
 let g:go_fmt_autosave = 1
@@ -404,3 +410,27 @@ augroup end
 
 " indent_blankline
 let g:indent_blankline_char_highlight_list = ['Comment']
+
+" neovide
+let neovide_remember_window_size = v:true
+let g:neovide_cursor_antialiasing=v:false
+let g:neovide_cursor_vfx_mode = "pixiedust"
+let g:neovide_cursor_vfx_opacity=255.0
+let g:neovide_cursor_vfx_particle_density=9.0
+
+" treesitter
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+    ensure_installed = "all", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+    ignore_install = {}, -- List of parsers to ignore installing
+    highlight = {
+    enable = true,              -- false will disable the whole extension
+    disable = {},  -- list of language that will be disabled
+    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+    -- Using this option may slow down your editor, and you may see some duplicate highlights.
+    -- Instead of true it can also be a list of languages
+    additional_vim_regex_highlighting = false,
+},
+}
+EOF
