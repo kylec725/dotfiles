@@ -16,7 +16,6 @@ Plug 'antoinemadec/FixCursorHold.nvim'
 
 " File Navigation
 Plug 'lambdalisue/fern.vim'
-" Plug 'lambdalisue/fern-git-status.vim'
 Plug 'lambdalisue/nerdfont.vim'
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 Plug 'lambdalisue/glyph-palette.vim'
@@ -33,14 +32,11 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'gregsexton/MatchTag'
 Plug 'mustache/vim-mustache-handlebars'
 " Plug 'miyakogi/conoline.vim'
-" Plug 'RRethy/vim-illuminate'
 Plug 'machakann/vim-highlightedyank'
-Plug 'rakr/vim-one'
-Plug 'junegunn/seoul256.vim'
 Plug 'mhinz/vim-janah'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'mhartington/oceanic-next'
-" Plug 'psliwka/vim-smoothie'
+Plug 'psliwka/vim-smoothie'
 
 " Statusline
 Plug 'itchyny/lightline.vim'
@@ -355,11 +351,6 @@ highlight GitGutterDelete ctermfg=7
 let g:indentLine_char = '▏'
 " let g:indentLine_color_term = 7
 " let g:indentLine_conceallevel = 0
-
-" highlight word under cursor
-highlight link illuminatedWord Visual
-let g:Illuminate_ftblacklist = [ 'help', 'defx', 'vista_kind', 'vim', 'markdown', 'tex', 'vimwiki' ]
-" nnoremap <leader>hl :IlluminationToggle<CR>
 
 " Tabularize binding
 nnoremap <leader><Tab> :Tabularize /
