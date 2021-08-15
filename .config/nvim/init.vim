@@ -70,7 +70,6 @@ call plug#end()
 " colorscheme
 let g:tokyonight_style="storm"
 let g:tokyonight_transparent=1
-let g:tokyonight_color={ "CursorLineNR": "magenta" }
 colorscheme tokyonight
 set background=dark
 " set termguicolors
@@ -149,7 +148,7 @@ highlight Comment ctermfg=102
 
 " matched parentheses color
 highlight clear MatchParen
-highlight MatchParen ctermbg=magenta ctermfg=black guibg=yellow guifg=black
+highlight MatchParen ctermbg=NONE ctermfg=magenta guibg=NONE guifg=magenta
 
 " Warning message and Error
 highlight WarningMsg ctermbg=NONE ctermfg=yellow
@@ -184,7 +183,7 @@ highlight OverLength ctermbg=darkgray ctermfg=black guibg=darkgray guifg=black
 " match OverLength /\%81v.\+/
 
 " darken tildes at EOF
-highlight EndOfBuffer ctermfg=16 guifg=16
+" highlight EndOfBuffer ctermfg=16 guifg=16
 
 " whitespace highlight
 highlight ExtraWhitespace ctermbg=white guibg=white
