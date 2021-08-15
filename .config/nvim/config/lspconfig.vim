@@ -47,3 +47,63 @@ vim.lsp.diagnostic.on_publish_diagnostics, {
     }
 )
 EOF
+
+" signature support
+lua << EOF
+require "lsp_signature".setup({
+    bind = true,
+    handler_opts = {
+        border = "rounded",
+        }
+})
+EOF
+lua require "lsp_signature".on_attach()
+nnoremap <silent> gs :lua vim.lsp.buf.signature_help()<CR>
+
+" lspkind (icons)
+lua << EOF
+require('lspkind').init({
+-- enables text annotations
+--
+-- default: true
+with_text = true,
+
+-- default symbol map
+-- can be either 'default' or
+-- 'codicons' for codicon preset (requires vscode-codicons font installed)
+--
+-- default: 'default'
+preset = 'codicons',
+
+-- override preset symbols
+--
+-- default: {}
+symbol_map = {
+    Text = "",
+    Method = "",
+    Function = "",
+    Constructor = "",
+    Field = "ﰠ",
+    Variable = "",
+    Class = "ﴯ",
+    Interface = "",
+    Module = "",
+    Property = "ﰠ",
+    Unit = "塞",
+    Value = "",
+    Enum = "",
+    Keyword = "",
+    Snippet = "",
+    Color = "",
+    File = "",
+    Reference = "",
+    Folder = "",
+    EnumMember = "",
+    Constant = "",
+    Struct = "פּ",
+    Event = "",
+    Operator = "",
+    TypeParameter = ""
+    },
+})
+EOF

@@ -32,7 +32,7 @@ let g:fzf_colors =
 
 " Floating Window Settings
 
-let $FZF_DEFAULT_OPTS='--no-mouse --bind=tab:down,btab:up --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,info:0,bg+:0,fg+:#FFFFFF,gutter:-1'
+let $FZF_DEFAULT_OPTS='--no-mouse --bind=tab:down,btab:up --color=prompt:195,pointer:#5ADECD,hl+:#5ADECD,hl:#C574DD,info:#152238,bg+:#152238,fg+:#FFFFFF,gutter:-1'
 let g:fzf_layout = { 'window': 'call FloatingFZF()' }
 function! FloatingFZF()
   " creates a scratch, unlisted, new, empty, unnamed buffer
@@ -58,5 +58,6 @@ function! FloatingFZF()
         \ }
 
   " open the new window, floating, and enter to it
-  call nvim_open_win(buf, v:true, opts)
+  let win = nvim_open_win(buf, v:true, opts)
+  call setwinvar(win, '&winhighlight', 'NormalFloat:FZFFloat') " FZFFloat is set in init.vim
 endfunction

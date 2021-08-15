@@ -51,7 +51,9 @@ Plug 'nathunsmitty/nvim-ale-diagnostic'
 Plug 'neovim/nvim-lspconfig'
 Plug 'kabouzeid/nvim-lspinstall'
 Plug 'hrsh7th/nvim-compe'
-Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'ray-x/lsp_signature.nvim'
+Plug 'onsails/lspkind-nvim'
+" Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'sebdah/vim-delve', {'for': 'go'}
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'branch': '0.5-compat'}  " We recommend updating the parsers on update
@@ -193,6 +195,12 @@ highlight Pmenu ctermbg=0 ctermfg=7 guibg=0 guifg=gray
 highlight PmenuSel ctermbg=7 ctermfg=0 guibg=gray guifg=0
 highlight PmenuSbar ctermbg=grey guibg=grey
 highlight PmenuThumb ctermbg=white guibg=white
+
+" floating window colors
+highlight NormalFloat ctermbg=NONE guibg=NONE
+" match FZF guibg to bg+ and info
+highlight FZFFloat ctermbg=black guibg=#152238
+highlight FloatBorder ctermbg=NONE guibg=NONE ctermfg=white guifg=white
 
 " set tex flavor
 let g:tex_flavor = "latex"
