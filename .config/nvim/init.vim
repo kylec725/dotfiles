@@ -47,6 +47,7 @@ Plug 'maximbaz/lightline-ale'
 " Language Syntax/Suggestions
 " Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
+Plug 'nathunsmitty/nvim-ale-diagnostic'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'kabouzeid/nvim-lspinstall'

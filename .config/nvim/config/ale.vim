@@ -1,5 +1,8 @@
 " ale
 
+" disable lsp if using nvim-lsp
+let g:ale_disable_lsp = 1
+
 nnoremap <LEADER>ad :ALEDetail<CR>
 nmap <leader>aj <Plug>(ale_next_wrap)
 nmap <leader>ak <Plug>(ale_previous_wrap)
