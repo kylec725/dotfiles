@@ -20,3 +20,7 @@ autocmd FileType fern nmap <buffer> <CR> <Plug>(fern-action-open-or-enter)
 autocmd FileType fern nmap <buffer> N <Plug>(fern-action-new-path)
 autocmd FileType fern nmap <buffer> s <Plug>(fern-action-mark:toggle)
 autocmd FileType fern nmap <buffer> C <Plug>(fern-action-rename)
+
+" unmap buffer keys
+autocmd FileType fern nmap <buffer> - <C-W> <Esc>
+autocmd FileType fern nmap <buffer> = <C-W> <Esc>
