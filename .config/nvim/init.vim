@@ -48,8 +48,8 @@ Plug 'maximbaz/lightline-ale'
 " Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'neovim/nvim-lspconfig'
-" Plug 'kabouzeid/nvim-lspinstall'
+Plug 'neovim/nvim-lspconfig'
+Plug 'kabouzeid/nvim-lspinstall'
 Plug 'hrsh7th/nvim-compe'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'fatih/vim-go', {'for': 'go'}
@@ -189,10 +189,10 @@ highlight ExtraWhitespace ctermbg=white guibg=white
 highlight pythonSpaceError ctermbg=white guibg=white
 
 " pop-up menu colors
-highlight Pmenu ctermbg=0 ctermfg=7 guibg=0 guifg=7
-highlight PmenuSel ctermbg=7 ctermfg=0 guibg=7 guifg=0
+highlight Pmenu ctermbg=0 ctermfg=7 guibg=0 guifg=gray
+highlight PmenuSel ctermbg=7 ctermfg=0 guibg=gray guifg=0
 highlight PmenuSbar ctermbg=grey guibg=grey
-highlight PmenuThumb ctermbg=blue guibg=blue
+highlight PmenuThumb ctermbg=white guibg=white
 
 " set tex flavor
 let g:tex_flavor = "latex"
@@ -390,6 +390,7 @@ let g:go_fmt_autosave = 1
 let g:go_imports_autosave = 1
 let g:go_fmt_fail_silently = 1
 let g:go_def_mapping_enabled = 0
+let g:go_code_completion_enabled = 0
 
 " minimap
 let g:minimap_auto_start = 1
