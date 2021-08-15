@@ -36,7 +36,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'mhinz/vim-janah'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'mhartington/oceanic-next'
-Plug 'psliwka/vim-smoothie'
+" Plug 'psliwka/vim-smoothie'
 
 " Statusline
 Plug 'itchyny/lightline.vim'
@@ -46,8 +46,11 @@ Plug 'maximbaz/lightline-ale'
 
 " Language Syntax/Suggestions
 " Plug 'sheerun/vim-polyglot'
-Plug 'w0rp/ale'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dense-analysis/ale'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neovim/nvim-lspconfig'
+" Plug 'kabouzeid/nvim-lspinstall'
+Plug 'hrsh7th/nvim-compe'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'sebdah/vim-delve', {'for': 'go'}
@@ -386,6 +389,7 @@ let g:go_doc_keywordprg_enabled = 0
 let g:go_fmt_autosave = 1
 let g:go_imports_autosave = 1
 let g:go_fmt_fail_silently = 1
+let g:go_def_mapping_enabled = 0
 
 " minimap
 let g:minimap_auto_start = 1

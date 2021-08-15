@@ -3,6 +3,7 @@
 nnoremap <LEADER>ad :ALEDetail<CR>
 nmap <leader>aj <Plug>(ale_next_wrap)
 nmap <leader>ak <Plug>(ale_previous_wrap)
+nnoremap gd :ALEGoToDefinition<CR>
 
 " lint after exiting insert mode
 let g:ale_lint_on_text_changed = 'normal'
