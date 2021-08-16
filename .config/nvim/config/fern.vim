@@ -24,3 +24,5 @@ autocmd FileType fern nmap <buffer> C <Plug>(fern-action-rename)
 " unmap buffer keys
 autocmd FileType fern nmap <buffer> - <C-W> <Esc>
 autocmd FileType fern nmap <buffer> = <C-W> <Esc>
+autocmd FileType fern nmap <buffer> _ <C-W> <Esc>
+autocmd FileType fern nmap <buffer> + <C-W> <Esc>

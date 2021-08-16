@@ -40,9 +40,10 @@ Plug 'mhartington/oceanic-next'
 
 " Statusline
 Plug 'itchyny/lightline.vim'
-Plug 'mengelbrecht/lightline-bufferline'
+" Plug 'mengelbrecht/lightline-bufferline'
 Plug 'sinetoami/lightline-hunks'
 Plug 'maximbaz/lightline-ale'
+Plug 'akinsho/nvim-bufferline.lua'
 
 " Language Syntax/Suggestions
 " Plug 'sheerun/vim-polyglot'

@@ -14,7 +14,7 @@ let g:lightline.active = {
             \           [ 'filetype' ] ],
             \ 'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ],
             \            [ 'lineinfo' ],
-            \            [ 'tagbar' ] ],
+            \            [ 'gitsigns' ] ],
             \ }
 
 let g:lightline.inactive = {
@@ -37,6 +37,7 @@ let g:lightline.component_function = {
             \   'readonly': 'LightlineReadonly',
             \   'noscrollbar': 'Noscrollbar',
             \   'tagbar': 'LightlineTagbar',
+            \   'gitsigns': 'GitSigns',
             \ }
 
 let g:lightline.component_expand = {
@@ -127,4 +128,9 @@ let g:lightline#ale#indicator_ok = "  "
 function! Noscrollbar(...)
     return winwidth(0) > 80 ? (' ' . noscrollbar#statusline()) : ''
     return ' ' . noscrollbar#statusline()
+endfunction
+
+" gitsigns
+function! GitSigns(...)
+    return winwidth(0) > 80 ? (get(b:, 'gitsigns_status') . '  ' . get(b:, 'gitsigns_head')) : ''
 endfunction
