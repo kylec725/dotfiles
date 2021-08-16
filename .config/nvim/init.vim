@@ -36,6 +36,7 @@ Plug 'mhinz/vim-janah'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'mhartington/oceanic-next'
 " Plug 'psliwka/vim-smoothie'
+" Plug 'joeytwiddle/sexy_scroller.vim'
 
 " Statusline
 Plug 'itchyny/lightline.vim'
@@ -444,3 +445,6 @@ require'nvim-treesitter.configs'.setup {
 },
 }
 EOF
+
+" sexy scroll
+let g:SexyScroller_EasingStyle = 2
