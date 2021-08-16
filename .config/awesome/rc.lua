@@ -34,6 +34,7 @@ apps = {
    screenshot = "maim -u ~/pictures/screenshots/$(date +%s)-screenshot.png",
    selected_screenshot = "maim -so /tmp/maim_clipboard && xclip -selection clipboard -t image/png /tmp/maim_clipboard &> /dev/null && rm /tmp/maim_clipboard",
    browser = "firefox",
+   private_browser = "firefox --private-window",
    filebrowser = "kitty lf",
    spotify = "spotify --force-device-scale-factor=1.5",
    mpd = "kitty -o window_padding_width=40 -o color3=#ffff8a -e ncmpcpp",

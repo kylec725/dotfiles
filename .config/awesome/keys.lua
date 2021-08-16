@@ -156,6 +156,13 @@ keys.globalkeys = gears.table.join(
       end,
       {description = "application launcher", group = "launcher"}
       ),
+   -- launch firefox
+   awful.key({modkey, "Shift"}, "w",
+      function()
+         awful.spawn(apps.private_browser)
+      end,
+      {description = "application launcher", group = "launcher"}
+      ),
    -- launch lf
    awful.key({modkey}, "r",
       function()
