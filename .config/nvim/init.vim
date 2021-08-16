@@ -62,7 +62,6 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'branch': '0.5-compa
 
 " Git
 Plug 'tpope/vim-fugitive'
-" Plug 'airblade/vim-gitgutter'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'nvim-lua/plenary.nvim'
 
