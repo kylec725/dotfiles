@@ -76,7 +76,7 @@ let g:tokyonight_style="storm"
 let g:tokyonight_transparent=1
 colorscheme tokyonight
 set background=dark
-" set termguicolors
+set termguicolors
 let g:one_allow_italics = 1
 
 " font
