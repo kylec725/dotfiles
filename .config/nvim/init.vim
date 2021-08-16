@@ -19,7 +19,7 @@ Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/nerdfont.vim'
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 Plug 'lambdalisue/glyph-palette.vim'
-Plug 'majutsushi/tagbar' " needed for lightline
+" Plug 'majutsushi/tagbar' " needed for lightline
 " Plug 'ryanoasis/vim-devicons'
 Plug 'gcavallanti/vim-noscrollbar'
 Plug 'junegunn/fzf.vim'
@@ -61,7 +61,9 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'branch': '0.5-compa
 
 " Git
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'nvim-lua/plenary.nvim'
 
 call plug#end()
 
@@ -346,18 +348,7 @@ let g:highlightedyank_highlight_duration = 500
 nnoremap <leader>gs :Git<CR>
 nnoremap <leader>ga :Gwrite<CR>
 nnoremap <leader>gc :Git commit<CR>
-nnoremap <leader>gr :Git restore %<CR>
-nmap <leader>gj <Plug>(GitGutterNextHunk)
-nmap <leader>gk <Plug>(GitGutterPrevHunk)
-" nnoremap <leader>gu :Gpush<CR>
-" nnoremap <leader>gd :Gpull<CR>
-
-highlight GitGutterAdd    ctermfg=7
-highlight GitGutterChange ctermfg=7
-highlight GitGutterDelete ctermfg=7
-" let g:gitgutter_sign_added = '++'
-" let g:gitgutter_sign_modified = '~~'
-" let g:gitgutter_sign_removed = '--'
+" nnoremap <leader>gr :Git restore %<CR>
 
 " indent line
 let g:indentLine_char = '▏'
