@@ -137,6 +137,8 @@ set guicursor=a:blinkon100
 " Cursor as block in insert mode
 " set guicursor=
 
+" disable mouse
+set mouse=
 
 " set background color to be transparent
 highlight Normal guibg=NONE ctermbg=NONE
