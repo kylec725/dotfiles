@@ -374,8 +374,8 @@ def_key "t"
 #def_key "w"
 #  toggle_find_mode
 #
-#def_key "e"
-#  edit_song
+def_key "e"
+ edit_song
 #
 #def_key "e"
 #  edit_library_tag

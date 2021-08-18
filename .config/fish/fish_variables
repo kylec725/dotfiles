@@ -1,13 +1,16 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
-SETUVAR --export FZF_DEFAULT_COMMAND:rg\x20\x2d\x2dfiles\x20\x2d\x2dhidden\x20\x24HOME
+SETUVAR --export FZF_DEFAULT_COMMAND:rg\x20\x2d\x2dfiles\x20\x2d\x2dhidden\x20/home/kyle
 SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dno\x2dmouse\x20\x2d\x2dbind\x3dtab\x3aup\x2cbtab\x3adown\x20\x2d\x2dcolor\x3dprompt\x3a195\x2cpointer\x3a\x235ADECD\x2chl\x2b\x3a\x235ADECD\x2chl\x3a\x23C574DD\x2cgutter\x3a\x2d1
+SETUVAR --export --path GOPATH:/home/kyle/\x2ego
+SETUVAR --export --path PATH:/home/kyle/\x2eopam/4\x2e07\x2e0/bin\x1e/usr/local/bin\x1e/usr/bin\x1e/bin\x1e/usr/local/sbin\x1e/usr/lib/jvm/default/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/home/kyle/\x2ebin\x1e/home/kyle/\x2egem/ruby/2\x2e7\x2e0/bin\x1e/home/kyle/\x2ecargo/bin\x1e/home/kyle/\x2eopam/4\x2e07\x2e0/bin\x1e/usr/local/bin\x1e/usr/bin\x1e/bin\x1e/usr/local/sbin\x1e/usr/lib/jvm/default/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/home/kyle/\x2ebin\x1e/home/kyle/\x2egem/ruby/2\x2e7\x2e0/bin\x1e/home/kyle/\x2ecargo/bin\x1e/home/kyle/\x2ebin\x1e/home/kyle/\x2ecargo/bin\x1e/home/kyle/\x2eyarn/bin\x1e/home/kyle/\x2econfig/yarn/global/node_modules/\x2ebin\x1e/root/\x2egem/ruby/2\x2e6\x2e0/bin\x1e/home/kyle/\x2elocal/bin\x1e/home/kyle/\x2ego/bin
 SETUVAR --export SHELL:/usr/bin/fish
 SETUVAR --export VISUAL:nvim
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
+SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_2_2E_2E_:\x2e\x2e/\x2e\x2e
 SETUVAR _fish_abbr_3_2E_2E_:\x2e\x2e/\x2e\x2e/\x2e\x2e
 SETUVAR _fish_abbr_4_2E_2E_:\x2e\x2e/\x2e\x2e/\x2e\x2e/\x2e\x2e
@@ -15,43 +18,45 @@ SETUVAR _fish_abbr_5_2E_2E_:\x2e\x2e/\x2e\x2e/\x2e\x2e/\x2e\x2e/\x2e\x2e
 SETUVAR _fish_abbr_at:audio\x2dtoggle
 SETUVAR _fish_abbr_awm:cd\x20\x7e/\x2econfig/awesome
 SETUVAR _fish_abbr_ga:git\x20add
+SETUVAR _fish_abbr_gb:git\x20branch
 SETUVAR _fish_abbr_gc:git\x20commit
 SETUVAR _fish_abbr_gco:git\x20checkout
-SETUVAR _fish_abbr_gp:git\x20pull
 SETUVAR _fish_abbr_gph:git\x20push
+SETUVAR _fish_abbr_gpl:git\x20pull
 SETUVAR _fish_abbr_gs:git\x20status
+SETUVAR _fish_abbr_hdmi:hdmi\x2dtoggle
 SETUVAR _fish_abbr_ka:killall
-SETUVAR _fish_abbr_pd:prevd
 SETUVAR _fish_abbr_school:cd\x20\x7e/school
-SETUVAR _fish_abbr_sem:cd\x20\x7e/school/fall19
+SETUVAR _fish_abbr_sem:cd\x20\x7e/school/spring21
 SETUVAR _fish_abbr_tvim:tmux\x20new\x2dsession\x20\x5c\x3b\x20split\x2dwindow\x20\x2dh\x20\x2dp\x2030
 SETUVAR _fish_abbr_um:usb\x2dmount
 SETUVAR _fish_abbr_vim:nvim
-SETUVAR fish_color_autosuggestion:black
-SETUVAR fish_color_cancel:b48ead
-SETUVAR fish_color_command:81a1c1
-SETUVAR fish_color_comment:4c566a
-SETUVAR fish_color_cwd:88c0d0
+SETUVAR fish_color_autosuggestion:585858
+SETUVAR fish_color_cancel:\x2dr
+SETUVAR fish_color_command:a1b56c
+SETUVAR fish_color_comment:f7ca88
+SETUVAR fish_color_cwd:green
 SETUVAR fish_color_cwd_root:red
-SETUVAR fish_color_end:eceff4
-SETUVAR fish_color_error:bf616a
-SETUVAR fish_color_escape:ebcb8b
+SETUVAR fish_color_end:ba8baf
+SETUVAR fish_color_error:ab4642
+SETUVAR fish_color_escape:86c1b9
 SETUVAR fish_color_history_current:\x2d\x2dbold
-SETUVAR fish_color_host:81a1c1
-SETUVAR fish_color_match:88c0d0
-SETUVAR fish_color_normal:d8dee9
-SETUVAR fish_color_operator:81a1c1
-SETUVAR fish_color_param:d8dee9
-SETUVAR fish_color_quote:a3be8c
-SETUVAR fish_color_redirection:81a1c1
+SETUVAR fish_color_host:normal
+SETUVAR fish_color_host_remote:yellow
+SETUVAR fish_color_match:7cafc2
+SETUVAR fish_color_normal:normal
+SETUVAR fish_color_operator:7cafc2
+SETUVAR fish_color_param:d8d8d8
+SETUVAR fish_color_quote:f7ca88
+SETUVAR fish_color_redirection:d8d8d8
 SETUVAR fish_color_search_match:\x2d\x2dbackground\x3dblack
 SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_status:red
-SETUVAR fish_color_user:d8dee9
+SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:\x1d
 SETUVAR fish_greeting:\x1d
 SETUVAR fish_key_bindings:fish_default_key_bindings
-SETUVAR fish_pager_color_completion:eceff4
-SETUVAR fish_pager_color_description:5e81ac
-SETUVAR fish_pager_color_prefix:ebcb8b
-SETUVAR fish_pager_color_progress:d08770
+SETUVAR fish_pager_color_completion:normal
+SETUVAR fish_pager_color_description:B3A06D\x1eyellow
+SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
+SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
