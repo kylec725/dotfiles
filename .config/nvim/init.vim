@@ -34,7 +34,8 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'machakann/vim-highlightedyank'
 Plug 'mhinz/vim-janah'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-Plug 'mhartington/oceanic-next'
+Plug 'EdenEast/nightfox.nvim'
+" Plug 'mhartington/oceanic-next'
 " Plug 'psliwka/vim-smoothie'
 " Plug 'joeytwiddle/sexy_scroller.vim'
 
@@ -73,7 +74,8 @@ call plug#end()
 " colorscheme
 let g:tokyonight_style="storm"
 let g:tokyonight_transparent=1
-colorscheme tokyonight
+let g:nightfox_transparent=1
+colorscheme nightfox
 set background=dark
 set termguicolors
 let g:one_allow_italics = 1
