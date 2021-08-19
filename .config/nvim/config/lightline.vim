@@ -4,7 +4,7 @@ set laststatus=2
 set showtabline=2
 set noshowmode
 
-let g:lightline = {'colorscheme': 'tokyonight'}
+let g:lightline = {'colorscheme': 'nightfox'}
 
 let g:lightline.active = {
             \ 'left': [ [ 'mode' ],
