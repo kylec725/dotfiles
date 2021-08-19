@@ -18,8 +18,8 @@ let g:ale_lint_on_insert_leave = 1
 let g:ale_sign_error = "▌"
 let g:ale_sign_warning = "▌"
 
-highlight ALEErrorSign ctermbg=NONE ctermfg=red
-highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+highlight ALEErrorSign ctermbg=NONE ctermfg=red guibg=NONE guifg=#c94f6d
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow guibg=NONE guifg=#dbc074
 
 " highlighting
 hi ALEWarning ctermbg=yellow ctermfg=0
