@@ -59,7 +59,7 @@ require('bufferline').setup {
         return true
     end
 end,
-offsets = {{filetype = "NvimTree", text = "File Explorer" , text_align = "center"}},
+offsets = {{filetype = "fern", text = "File Explorer" , text_align = "center"}},
     show_buffer_icons = false, -- disable filetype icons for buffers
     show_buffer_close_icons = false,
     show_close_icon = false,
