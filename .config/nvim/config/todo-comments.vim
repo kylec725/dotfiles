@@ -55,3 +55,5 @@ require("todo-comments").setup {
         },
     }
 EOF
+
+nnoremap <silent> <leader>xc :TroubleToggle todo<CR>

@@ -44,3 +44,5 @@ require("trouble").setup {
     use_lsp_diagnostic_signs = false -- enabling this will use the signs defined in your lsp client
 }
 EOF
+
+nnoremap <silent> <leader>xd :TroubleToggle lsp_workspace_diagnostics<CR>
