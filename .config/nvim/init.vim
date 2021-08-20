@@ -114,7 +114,7 @@ set splitright
 set number relativenumber
 " Current line number color
 highlight LineNr ctermfg=12 guifg=gray ctermbg=NONE guibg=NONE
-highlight CursorLineNR ctermfg=9 guifg=yellow ctermbg=NONE guibg=NONE
+highlight CursorLineNR ctermfg=9 guifg=#dbc074 ctermbg=NONE guibg=NONE
 
 " Always show at least one line above/below the cursor.
 set scrolloff=3
