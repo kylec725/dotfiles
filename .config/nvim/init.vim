@@ -13,6 +13,7 @@ Plug 'SirVer/ultisnips'
 Plug 'lervag/vimtex'
 Plug 'voldikss/vim-floaterm'
 Plug 'antoinemadec/FixCursorHold.nvim'
+Plug 'folke/todo-comments.nvim'
 
 " File Navigation
 Plug 'lambdalisue/fern.vim'
@@ -131,7 +132,7 @@ set ignorecase
 set smartcase
 
 " terminal cursor
-highlight TermCursor ctermfg=NONE guibg=#d8dee9 ctermbg=195 gui=NONE cterm=NONE
+highlight TermCursor ctermfg=NONE guibg=#d7ffff ctermbg=195 gui=NONE cterm=NONE
 highlight TermCursorNC ctermfg=NONE guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 " Cursor blinking
 set guicursor=a:blinkon100
