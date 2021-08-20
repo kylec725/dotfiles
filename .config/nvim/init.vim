@@ -7,13 +7,14 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
 Plug 'Raimondi/delimitMate'
-Plug 'alvan/vim-closetag'
+Plug 'alvan/vim-closetag', {'for': 'html'}
 Plug 'tpope/vim-repeat'
-Plug 'SirVer/ultisnips'
-Plug 'lervag/vimtex'
+Plug 'SirVer/ultisnips', {'for': 'tex'}
+Plug 'lervag/vimtex', {'for': 'tex'}
 Plug 'voldikss/vim-floaterm'
 Plug 'antoinemadec/FixCursorHold.nvim'
 Plug 'folke/todo-comments.nvim'
+Plug 'folke/trouble.nvim'
 
 " File Navigation
 Plug 'lambdalisue/fern.vim'
@@ -30,11 +31,10 @@ Plug 'Xuyuanp/scrollbar.nvim'
 
 " Visual Changes
 Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'gregsexton/MatchTag'
-Plug 'mustache/vim-mustache-handlebars'
+Plug 'gregsexton/MatchTag', {'for': 'html'}
 Plug 'machakann/vim-highlightedyank'
-Plug 'mhinz/vim-janah'
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+" Plug 'mhinz/vim-janah'
+" Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'EdenEast/nightfox.nvim'
 " Plug 'mhartington/oceanic-next'
 " Plug 'psliwka/vim-smoothie'
@@ -43,7 +43,7 @@ Plug 'EdenEast/nightfox.nvim'
 " Statusline
 Plug 'itchyny/lightline.vim'
 " Plug 'mengelbrecht/lightline-bufferline'
-Plug 'sinetoami/lightline-hunks'
+" Plug 'sinetoami/lightline-hunks'
 Plug 'maximbaz/lightline-ale'
 Plug 'akinsho/nvim-bufferline.lua'
 
@@ -113,7 +113,7 @@ set splitright
 " Line numbers
 set number relativenumber
 " Current line number color
-highlight LineNr ctermfg=12 guifg=12 ctermbg=NONE guibg=NONE
+highlight LineNr ctermfg=12 guifg=gray ctermbg=NONE guibg=NONE
 highlight CursorLineNR ctermfg=9 guifg=yellow ctermbg=NONE guibg=NONE
 
 " Always show at least one line above/below the cursor.
