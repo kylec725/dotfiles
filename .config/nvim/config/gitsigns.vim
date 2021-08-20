@@ -1,5 +1,9 @@
 lua require('gitsigns').setup()
 
+highlight GitSignsAdd ctermfg=white guifg=white
+highlight GitSignsChange ctermfg=white guifg=white
+highlight GitSignsDelete ctermfg=white guifg=white
+
 lua << EOF
 require('gitsigns').setup {
     signs = {
