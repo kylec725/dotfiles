@@ -76,6 +76,7 @@ set fish_color_search_match --background=black
 
 # aliases
 abbr vim 'nvim'
+abbr lg 'lazygit'
 abbr ka 'killall'
 abbr at 'audio-toggle'
 abbr hdmi 'hdmi-toggle'
