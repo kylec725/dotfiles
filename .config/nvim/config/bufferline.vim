@@ -73,6 +73,11 @@ offsets = {{filetype = "fern", text = "File Explorer" , text_align = "center"}},
     enforce_regular_tabs = false,
     always_show_bufferline = true,
     sort_by = 'id',
+    },
+highlights = {
+    indicator_selected = {
+        guifg = '#719cd6',
+        }
     }
 }
 EOF
