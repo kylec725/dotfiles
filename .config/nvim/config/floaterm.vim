@@ -1,6 +1,7 @@
 nnoremap <silent> <leader>t :FloatermToggle main<CR>
 nnoremap <silent> <leader>gg :FloatermToggle lazygit<CR>
-tnoremap <silent> <leader>t <C-\><C-n>:FloatermToggle<CR>
+tnoremap <silent> <leader>t <C-\><C-n>:FloatermToggle main<CR>
+tnoremap <silent> <leader>gg <C-\><C-n>:FloatermToggle lazygit<CR>
 autocmd BufWinEnter,WinEnter term://* startinsert
 autocmd VimEnter * :FloatermNew --name=lazygit --silent lazygit
 
