@@ -3,14 +3,14 @@
 dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Pause
 mpc pause
 
-i3lock -k --timestr="%l:%M" --datestr="%A, %B %d" --bar-indicator --timesize=150 --datesize=28 --datepos="960:600" \
+i3lock -k --time-str="%l:%M" --date-str="%A, %B %d" --bar-indicator --time-size=150 --date-size=28 --date-pos="960:600" \
     --time-font="SF Pro Display Light" --date-font="SF Pro Display Light" \
     --nofork --blur=10 \
-    --insidecolor=000000cc --ringcolor=ffffffcc --line-uses-inside \
-    --keyhlcolor=61AFEFcc --bshlcolor=C678DDcc --separatorcolor=00000000 \
-    --insidevercolor=71eeb8cc --insidewrongcolor=E06C75cc \
-    --ringvercolor=ffffffcc --ringwrongcolor=ffffffcc \
-    --radius=150 --veriftext="" --wrongtext="" --noinputtext="" \
-    --ring-width=7 --timecolor=FDFDFDFF --datecolor=FDFDFDFF \
+    --inside-color=000000cc --ring-color=ffffffcc --line-uses-inside \
+    --keyhl-color=61AFEFcc --bshl-color=C678DDcc --separator-color=00000000 \
+    --insidever-color=71eeb8cc --insidewrong-color=E06C75cc \
+    --ringver-color=ffffffcc --ringwrong-color=ffffffcc \
+    --radius=150 --verif-text="" --wrong-text="" --noinput-text="" \
+    --ring-width=7 --time-color=FDFDFDFF --date-color=FDFDFDFF \
     --pass-volume-keys
 
