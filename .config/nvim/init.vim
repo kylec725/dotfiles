@@ -254,12 +254,12 @@ autocmd FileType sh setlocal shiftwidth=8
 "-------------------------"
 
 " map the leader key
-let mapleader=','
+let mapleader=';'
 " remove leader timeout
 set notimeout
 set ttimeout
 " cancel leader command
-nnoremap <leader>, jk
+nnoremap <leader><leader> jk
 
 " map :up and :q
 noremap <silent> <leader>w :up<CR>
