@@ -1,9 +1,8 @@
 nnoremap <silent> <leader>t :FloatermToggle main<CR>
-nnoremap <silent> <leader>gg :FloatermToggle lazygit<CR>
+nnoremap <silent> <leader>gg :FloatermNew --name=lazygit --disposable lazygit<CR>
 tnoremap <silent> <leader>t <C-\><C-n>:FloatermToggle main<CR>
-tnoremap <silent> <leader>gg <C-\><C-n>:FloatermToggle lazygit<CR>
+tnoremap <silent> <leader>gg <C-\><C-n>:FloatermHide lazygit<CR>
 autocmd BufWinEnter,WinEnter term://* startinsert
-autocmd VimEnter * :FloatermNew --name=lazygit --silent lazygit
 
 let g:floaterm_width = 0.8
 let g:floaterm_height = 0.85
