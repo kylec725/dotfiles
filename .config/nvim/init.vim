@@ -21,8 +21,6 @@ Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/nerdfont.vim'
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 Plug 'lambdalisue/glyph-palette.vim'
-" Plug 'majutsushi/tagbar' " needed for lightline
-" Plug 'ryanoasis/vim-devicons'
 Plug 'gcavallanti/vim-noscrollbar'
 Plug 'junegunn/fzf.vim'
 Plug 'romainl/vim-cool'
@@ -37,22 +35,16 @@ Plug 'machakann/vim-highlightedyank'
 " Plug 'mhinz/vim-janah'
 " Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'EdenEast/nightfox.nvim'
-" Plug 'mhartington/oceanic-next'
-" Plug 'psliwka/vim-smoothie'
 " Plug 'joeytwiddle/sexy_scroller.vim'
 
 " Statusline
 Plug 'itchyny/lightline.vim'
-" Plug 'mengelbrecht/lightline-bufferline'
-" Plug 'sinetoami/lightline-hunks'
 Plug 'maximbaz/lightline-ale'
 Plug 'akinsho/nvim-bufferline.lua'
 
 " Language Syntax/Suggestions
-" Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
 Plug 'nathunsmitty/nvim-ale-diagnostic'
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 Plug 'ray-x/lsp_signature.nvim'
