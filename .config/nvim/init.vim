@@ -68,7 +68,6 @@ call plug#end()
 " colorscheme
 let g:tokyonight_style="storm"
 let g:tokyonight_transparent=1
-let g:nightfox_transparent=1
 colorscheme nightfox
 set background=dark
 set termguicolors
@@ -200,7 +199,7 @@ highlight PmenuThumb ctermbg=white guibg=white
 highlight NormalFloat ctermbg=NONE guibg=NONE
 " match FZF guibg to bg+ and info
 highlight FZFFloat ctermbg=black guibg=#152238
-highlight FloatBorder ctermbg=NONE guibg=NONE ctermfg=white guifg=white
+highlight FloatBorder ctermbg=NONE guibg=NONE ctermfg=white guifg=#dfdfe0
 
 " set tex flavor
 let g:tex_flavor = "latex"
