@@ -10,8 +10,8 @@ require("trouble").setup {
     action_keys = { -- key mappings for actions in the trouble list
     -- map to {} to remove a mapping, for example:
     -- close = {},
-    close = "q", -- close the list
-    cancel = "<esc>", -- cancel the preview and get back to your last window / buffer / cursor
+    close = {"q", "<esc>"}, -- close the list
+    -- cancel = "<esc>", -- cancel the preview and get back to your last window / buffer / cursor
     refresh = "r", -- manually refresh
     -- jump = {"<cr>", "<tab>"}, -- jump to the diagnostic or open / close folds
     jump = {"<tab>"}, -- jump to the diagnostic or open / close folds
@@ -22,7 +22,8 @@ require("trouble").setup {
     jump_close = {"<cr>"}, -- jump to the diagnostic and close the list
     toggle_mode = "m", -- toggle between "workspace" and "document" diagnostics mode
     toggle_preview = "P", -- toggle auto_preview
-    hover = "K", -- opens a small popup with the full multiline message
+    -- hover = "K", -- opens a small popup with the full multiline message
+    hover = {},
     preview = "p", -- preview the diagnostic location
     close_folds = {"zM", "zm"}, -- close all folds
     open_folds = {"zR", "zr"}, -- open all folds
@@ -49,3 +50,5 @@ EOF
 
 nnoremap <silent> <leader>xd :TroubleToggle lsp_workspace_diagnostics<CR>
 nnoremap <silent> <leader>xr :TroubleToggle lsp_references<CR>
+autocmd FileType Trouble nmap <buffer> <S-j> jjj
+autocmd FileType Trouble nmap <buffer> <S-k> kkk
