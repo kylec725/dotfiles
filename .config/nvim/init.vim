@@ -26,7 +26,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'romainl/vim-cool'
 " Plug 'wfxr/minimap.vim'
 Plug 'Xuyuanp/scrollbar.nvim'
-Plug 'moll/vim-bbye'
+" Plug 'moll/vim-bbye'
 
 " Visual Changes
 Plug 'lukas-reineke/indent-blankline.nvim'
@@ -290,8 +290,8 @@ noremap <leader>r :edit!<CR>
 " map buffer navigation keys
 nnoremap <silent> - :bprevious<CR>
 nnoremap <silent> = :bnext<CR>
-" nnoremap <silent> <leader>bd :bd<CR>
-nnoremap <silent> <leader>bd :Bdelete<CR>
+nnoremap <silent> <leader>bd :bd<CR>
+" nnoremap <silent> <leader>bd :Bdelete<CR>
 
 " remap paste to adjust indentation
 nnoremap p p`[v`]=
