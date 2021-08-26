@@ -27,3 +27,4 @@ EOF
 
 " trying to overwrite using lua config does not work
 highlight FloatBorder ctermbg=NONE guibg=NONE ctermfg=white guifg=#dfdfe0
+highlight FZFFloat ctermbg=black guibg=#152238
