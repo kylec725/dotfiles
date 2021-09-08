@@ -34,3 +34,7 @@ let g:ale_java_javac_classpath = "/home/kyle/school/fall19/420/MeeshQuest-Skelet
 
 " ignore line too long in python
 let g:ale_python_flake8_options = '--ignore=E501'
+
+let g:ale_linters = {
+            \   'json': [],
+            \}
