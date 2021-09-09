@@ -51,7 +51,7 @@ Plug 'hrsh7th/nvim-compe'
 " Plug 'hrsh7th/cmp-buffer'
 " Plug 'hrsh7th/cmp-nvim-lsp'
 " Plug 'hrsh7th/cmp-path'
-Plug 'ray-x/lsp_signature.nvim'
+" Plug 'ray-x/lsp_signature.nvim'
 " Plug 'onsails/lspkind-nvim'
 " Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'fatih/vim-go', {'for': 'go'}
@@ -217,7 +217,7 @@ highlight ExtraWhitespace ctermbg=white guibg=white
 highlight pythonSpaceError ctermbg=white guibg=white
 
 " pop-up menu colors
-highlight Pmenu ctermbg=0 ctermfg=7 guibg=0 guifg=gray
+highlight Pmenu ctermbg=0 ctermfg=7 guibg=#192330 guifg=gray
 highlight PmenuSel ctermbg=7 ctermfg=0 guibg=gray guifg=0
 highlight PmenuSbar ctermbg=grey guibg=grey
 highlight PmenuThumb ctermbg=white guibg=white
