@@ -26,3 +26,4 @@ autocmd FileType fern nmap <buffer> - <C-W> <Esc>
 autocmd FileType fern nmap <buffer> = <C-W> <Esc>
 autocmd FileType fern nmap <buffer> _ <C-W> <Esc>
 autocmd FileType fern nmap <buffer> + <C-W> <Esc>
+autocmd FileType fern setlocal shiftwidth=1 
