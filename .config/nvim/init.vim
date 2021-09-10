@@ -348,7 +348,7 @@ nnoremap <silent><Space> o<Esc>k
 nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 
 " spell check fast correction
-nnoremap <leader>sp <Esc>[s1z=``
+" nnoremap <leader>sp <Esc>[s1z=``
 
 "-----------------"
 " Plugin Settings "
