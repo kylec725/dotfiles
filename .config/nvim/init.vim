@@ -246,25 +246,25 @@ set softtabstop=-1
 " auto indent command
 command Indent :normal! MmQgg=G'Qzz
 " filetype indent settings
-autocmd FileType html setlocal shiftwidth=2
-autocmd FileType css setlocal shiftwidth=2
-autocmd FileType json setlocal shiftwidth=2
-autocmd FileType ruby setlocal shiftwidth=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType css setlocal shiftwidth=2 tabstop=2
+autocmd FileType json setlocal shiftwidth=2 tabstop=2
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 " autocmd FileType tex setlocal shiftwidth=2 spell | nnoremap <leader>p :cd %:p:h<CR>:!pdflatex %<CR>
-autocmd FileType tex setlocal shiftwidth=2 spell | ALEDisable | let delimitMate_quotes = "\" ' ` $"
-autocmd FileType markdown setlocal spell shiftwidth=4
-autocmd FileType ocaml setlocal shiftwidth=2
-autocmd FileType c setlocal shiftwidth=4 cindent
-autocmd FileType cpp setlocal shiftwidth=4 cindent cinoptions=g0+N-sw
+autocmd FileType tex setlocal shiftwidth=2 tabstop=2 spell | ALEDisable | let delimitMate_quotes = "\" ' ` $"
+autocmd FileType markdown setlocal spell shiftwidth=4 tabstop=4
+autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2
+autocmd FileType c setlocal shiftwidth=4 tabstop=4 cindent
+autocmd FileType cpp setlocal shiftwidth=4 tabstop=4 cindent cinoptions=g0+N-sw
 autocmd FileType go setlocal shiftwidth=4 tabstop=4 noexpandtab
-autocmd FileType java setlocal shiftwidth=4
-autocmd FileType javascript setlocal shiftwidth=2
-autocmd FileType python setlocal shiftwidth=4
-autocmd FileType vim setlocal shiftwidth=4
-autocmd FileType sql setlocal shiftwidth=4
-autocmd FileType lua setlocal shiftwidth=3
-autocmd FileType fish setlocal shiftwidth=4 | ALEDisable
-autocmd FileType sh setlocal shiftwidth=8
+autocmd FileType java setlocal shiftwidth=4 tabstop=4
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+autocmd FileType python setlocal shiftwidth=4 tabstop=4
+autocmd FileType vim setlocal shiftwidth=4 tabstop=4
+autocmd FileType sql setlocal shiftwidth=4 tabstop=4
+autocmd FileType lua setlocal shiftwidth=3 tabstop=3
+autocmd FileType fish setlocal shiftwidth=4 tabstop=4 | ALEDisable
+autocmd FileType sh setlocal shiftwidth=8 tabstop=8
 " add to gray out text after column 80
 " | match OverLength /\%81v.\+/
 
