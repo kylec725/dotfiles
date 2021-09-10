@@ -100,16 +100,6 @@ function! LightlineReadonly()
     return &readonly ? '' : ''
 endfunction
 
-" Tagbar
-function! LightlineTagbar()
-    return winwidth(0) > 120 ? tagbar#currenttag("%s", "") : ''
-endfunction
-
-" Vista
-function! NearestMethodOrFunction() abort
-    return winwidth(0) > 120 ? get(b:, 'vista_nearest_method_or_function', '') : ''
-endfunction
-
 let g:unite_force_overwrite_statusline = 0
 let g:vimfiler_force_overwrite_statusline = 0
 
