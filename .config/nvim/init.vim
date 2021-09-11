@@ -265,6 +265,7 @@ autocmd FileType sql setlocal shiftwidth=4 tabstop=4
 autocmd FileType lua setlocal shiftwidth=3 tabstop=3
 autocmd FileType fish setlocal shiftwidth=4 tabstop=4 | ALEDisable
 autocmd FileType sh setlocal shiftwidth=8 tabstop=8
+autocmd FileType proto setlocal shiftwidth=2 tabstop=2
 " add to gray out text after column 80
 " | match OverLength /\%81v.\+/
 
