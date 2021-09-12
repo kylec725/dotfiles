@@ -436,6 +436,12 @@ augroup ScrollbarInit
 augroup end
 
 " indent_blankline
+lua << EOF
+require("indent_blankline").setup {
+    char = "▏",
+    buftype_exclude = {"terminal"}
+}
+EOF
 let g:indent_blankline_char_highlight_list = ['Comment']
 
 " treesitter
