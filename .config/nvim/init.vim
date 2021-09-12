@@ -375,15 +375,6 @@ nnoremap <leader>ga :Gwrite<CR>
 nnoremap <leader>gc :Git commit<CR>
 " nnoremap <leader>gr :Git restore %<CR>
 
-" indent line
-let g:indentLine_char = '▏'
-" let g:indentLine_color_term = 7
-" let g:indentLine_conceallevel = 0
-
-" Tabularize binding
-nnoremap <leader><Tab> :Tabularize /
-vnoremap <leader><Tab> :Tabularize /
-
 " Snippets !!!!!
 let g:UltiSnipsUsePythonVersion = 3
 let g:UltiSnipsExpandTrigger = "<c-l>"
@@ -436,6 +427,7 @@ augroup ScrollbarInit
 augroup end
 
 " indent_blankline
+" let g:indentLine_char = '▏'
 lua << EOF
 require("indent_blankline").setup {
     char = "▏",
