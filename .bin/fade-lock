@@ -7,10 +7,11 @@ i3lock -k --time-str="%l:%M" --date-str="%A, %B %d" --bar-indicator --time-size=
     --time-font="SF Pro Display Light" --date-font="SF Pro Display Light" \
     --nofork --blur=10 \
     --inside-color=000000cc --ring-color=ffffffcc --line-uses-inside \
-    --keyhl-color=fffd6ecc --bshl-color=C678DDcc --separator-color=00000000 \
+    --keyhl-color=ffffffcc --bshl-color=C678DDcc --separator-color=00000000 \
     --insidever-color=71eeb8cc --insidewrong-color=E06C75cc \
     --ringver-color=ffffffcc --ringwrong-color=ffffffcc \
     --radius=70 --verif-text="" --wrong-text="" --noinput-text="" \
     --ring-width=7 --time-color=FDFDFDFF --date-color=FDFDFDFF \
     --pass-volume-keys --ind-pos="w/2:h/2 + h/6" --time-pos="w/2:h/2" \
     --date-pos="w/2:h/2 + h/15" --bar-pos="h - 10"
+    # --keyhl-color=fffd6ecc --bshl-color=C678DDcc --separator-color=00000000 \
