@@ -13,7 +13,7 @@ configuration {
 * {
   background-color:            rgb(40, 42, 54, 0.65);
   text-color:                  #f8f8f299;
-selbg:                       rgb(80, 250, 123);
+selbg:                       rgb(255, 253, 110);
 urgbg:                       rgb(98, 114, 164);
 actbg:                       rgb(68, 71, 90, 0.2);
 winbg:		    	         #f8f8f2;
