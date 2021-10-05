@@ -103,3 +103,10 @@ abbr 5.. '../../../../..'
 abbr awm 'cd ~/.config/awesome'
 # abbr sl 'cd ~/school'
 abbr sem 'cd ~/school/spring21'
+
+# start X at login
+if status is-interactive
+    if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
+        exec startx -- -keeptty
+    end
+end
