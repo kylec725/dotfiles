@@ -87,7 +87,7 @@ let g:lightline#bufferline#enable_devicons = 0
 function! LightlineFilename()
     let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
     let modified = &modified ? ' •' : ''
-    return filename . modified
+    return winwidth(0) > 50 ? filename . modified : ''
 endfunction
 
 " Filetype
