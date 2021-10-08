@@ -166,7 +166,7 @@ highlight Normal guibg=NONE ctermbg=NONE
 highlight EndOfBuffer guibg=NONE ctermbg=NONE
 
 " comment color
-highlight Comment ctermfg=102
+highlight Comment ctermfg=102 guifg=#9ec0f7
 
 " search match color
 " highlight Search ctermbg=magenta ctermfg=black guibg=magenta guifg=black
