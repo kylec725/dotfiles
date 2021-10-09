@@ -79,6 +79,9 @@ offsets = {{filetype = "fern", text = "File Explorer" , text_align = "center"}},
 highlights = {
     indicator_selected = {
         guifg = '#719cd6',
+        },
+    buffer_selected = {
+        gui = "bold"
         }
     }
 }
