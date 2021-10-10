@@ -51,7 +51,7 @@ Plug 'hrsh7th/nvim-compe'
 " Plug 'hrsh7th/cmp-buffer'
 " Plug 'hrsh7th/cmp-nvim-lsp'
 " Plug 'hrsh7th/cmp-path'
-Plug 'ray-x/lsp_signature.nvim'
+" Plug 'ray-x/lsp_signature.nvim'
 " Plug 'onsails/lspkind-nvim'
 " Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'fatih/vim-go', {'for': 'go'}
@@ -305,8 +305,10 @@ noremap ' `
 
 " map shift + hjkl
 noremap <S-h> ^
-noremap <S-j> L
-noremap <S-k> H
+" noremap <S-j> L
+" noremap <S-k> H
+noremap <S-j> 3j
+noremap <S-k> 3k
 noremap <S-L> g_
 " autocmd FileType fern nnoremap <buffer> <S-j> 3j | nnoremap <buffer> <S-k> 3k
 autocmd FileType vista_kind nnoremap <buffer> <S-j> 3j | nnoremap <buffer> <S-k> 3k
