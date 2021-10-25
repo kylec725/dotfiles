@@ -18,10 +18,11 @@ local awful = require("awful")
 
 local themes = {
    "fireworks", -- 1
+   "spiritedaway", -- 2
 }
 
 -- change this number to use the corresponding theme
-local theme = themes[1]
+local theme = themes[2]
 local theme_config_dir = gears.filesystem.get_configuration_dir() .. "/configuration/" .. theme .. "/"
 
 -- define default apps (global variable so other components can access it)
@@ -54,7 +55,6 @@ local run_on_start_up = {
    -- "picom --experimental-backends --backend 'glx' --config " .. theme_config_dir .. "picom.conf",
    "picom --experimental-backends --backend 'glx'",
    "redshift -c ~/.config/redshift/redshift.conf",
-   "run x-on-resize -c ~/.bin/hdmi-toggle",
    "mpd",
    "libinput-gestures-setup start",
    "x-on-resize -c ~/.bin/hdmi-toggle",
