@@ -1,11 +1,13 @@
 " lua require('bufferline').setup{}
 
-" nnoremap <silent>- :BufferLineCyclePrev<CR>
-" nnoremap <silent>= :BufferLineCycleNext<CR>
+nnoremap <silent>- :BufferLineCyclePrev<CR>
+nnoremap <silent>= :BufferLineCycleNext<CR>
+" use vim-bbye
+nnoremap <silent> <leader>bd :Bdelete<CR>
 
 " These commands will move the current buffer backwards or forwards in the bufferline
-" nnoremap <silent>_ :BufferLineMovePrev<CR>
-" nnoremap <silent>+ :BufferLineMoveNext<CR>
+nnoremap <silent>_ :BufferLineMovePrev<CR>
+nnoremap <silent>+ :BufferLineMoveNext<CR>
 
 lua << EOF
 require('bufferline').setup {

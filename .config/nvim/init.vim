@@ -24,7 +24,6 @@ Plug 'lambdalisue/glyph-palette.vim'
 Plug 'gcavallanti/vim-noscrollbar'
 Plug 'junegunn/fzf.vim'
 Plug 'romainl/vim-cool'
-" Plug 'wfxr/minimap.vim'
 Plug 'Xuyuanp/scrollbar.nvim'
 Plug 'moll/vim-bbye'
 
@@ -289,10 +288,9 @@ noremap <leader>q :q<CR>
 noremap <leader>r :edit!<CR>
 
 " map buffer navigation keys
-" nnoremap <silent> - :bprevious<CR>
-" nnoremap <silent> = :bnext<CR>
-" nnoremap <silent> <leader>bd :bd<CR> // Can't close buffers when using lazygit because it makes those buffer unhidden
-nnoremap <silent> <leader>bd :Bdelete<CR>
+nnoremap <silent> - :bprevious<CR>
+nnoremap <silent> = :bnext<CR>
+nnoremap <silent> <leader>bd :bd<CR> // Can't close buffers when using lazygit because it makes those buffer unhidden
 
 " remap paste to adjust indentation
 nnoremap p p`[v`]=
@@ -305,13 +303,9 @@ noremap ' `
 
 " map shift + hjkl
 noremap <S-h> ^
-" noremap <S-j> L
-" noremap <S-k> H
 noremap <S-j> 3j
 noremap <S-k> 3k
 noremap <S-L> g_
-" autocmd FileType fern nnoremap <buffer> <S-j> 3j | nnoremap <buffer> <S-k> 3k
-autocmd FileType vista_kind nnoremap <buffer> <S-j> 3j | nnoremap <buffer> <S-k> 3k
 
 " window navigation keys
 noremap <C-h> <C-w>h
@@ -429,7 +423,6 @@ augroup ScrollbarInit
 augroup end
 
 " indent_blankline
-" let g:indentLine_char = '▏'
 lua << EOF
 require("indent_blankline").setup {
     char = "▏",
