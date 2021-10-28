@@ -26,6 +26,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'romainl/vim-cool'
 Plug 'Xuyuanp/scrollbar.nvim'
 Plug 'moll/vim-bbye'
+Plug 'SmiteshP/nvim-gps'
 
 " Visual Changes
 Plug 'lukas-reineke/indent-blankline.nvim'

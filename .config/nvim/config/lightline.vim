@@ -8,8 +8,8 @@ let g:lightline = {'colorscheme': 'nightfox'}
 
 let g:lightline.active = {
             \ 'left': [ [ 'mode' ],
-            \           [ 'spell', 'readonly', 'filename' ],
-            \           [ 'filetype' ] ],
+            \           [ 'spell', 'readonly', 'filename', 'filetype' ],
+            \           [ 'gps' ] ],
             \ 'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ],
             \            [ 'lineinfo' ],
             \            [ 'gitsigns' ] ],
@@ -36,6 +36,7 @@ let g:lightline.component_function = {
             \   'noscrollbar': 'Noscrollbar',
             \   'tagbar': 'LightlineTagbar',
             \   'gitsigns': 'GitSigns',
+            \   'gps': 'NvimGps',
             \ }
 
 let g:lightline.component_expand = {
@@ -122,3 +123,9 @@ endfunction
 function! GitSigns(...)
     return winwidth(0) > 80 ? (get(b:, 'gitsigns_status') . '  ' . get(b:, 'gitsigns_head')) : ''
 endfunction
+
+" nvim-gps
+func! NvimGps() abort
+    return luaeval("require'nvim-gps'.is_available()") ?
+                \ luaeval("require'nvim-gps'.get_location()") : ''
+endf
