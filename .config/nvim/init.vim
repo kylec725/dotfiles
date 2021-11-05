@@ -16,6 +16,10 @@ Plug 'antoinemadec/FixCursorHold.nvim'
 Plug 'folke/todo-comments.nvim'
 Plug 'folke/trouble.nvim'
 
+" startup time
+Plug 'nathom/filetype.nvim'
+Plug 'lewis6991/impatient.nvim'
+
 " File Navigation
 Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/nerdfont.vim'
@@ -68,6 +72,8 @@ call plug#end()
 "----------------------"
 " General Vim Settings "
 "----------------------"
+
+lua require('impatient')
 
 " colorscheme
 lua << EOF
@@ -451,3 +457,6 @@ EOF
 
 " sexy scroll
 let g:SexyScroller_EasingStyle = 2
+
+" filetype.nvim
+lua vim.g.did_load_filetypes = 1
