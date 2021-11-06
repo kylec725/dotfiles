@@ -55,8 +55,6 @@ Plug 'hrsh7th/nvim-compe'
 " Plug 'hrsh7th/cmp-buffer'
 " Plug 'hrsh7th/cmp-nvim-lsp'
 " Plug 'hrsh7th/cmp-path'
-" Plug 'ray-x/lsp_signature.nvim'
-" Plug 'onsails/lspkind-nvim'
 " Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'sebdah/vim-delve', {'for': 'go'}
@@ -405,10 +403,6 @@ let g:go_fmt_fail_silently = 1
 let g:go_def_mapping_enabled = 0
 let g:go_code_completion_enabled = 0
 
-" minimap
-let g:minimap_auto_start = 1
-let g:minimap_width = 20
-
 " scrollbar
 let g:scrollbar_right_offset = 0
 let g:scrollbar_shape = {
@@ -433,7 +427,7 @@ EOF
 let g:indent_blankline_char_highlight_list = ['Comment']
 
 " treesitter
-lua <<EOF
+lua << EOF
 require'nvim-treesitter.configs'.setup {
     ensure_installed = "all", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
     ignore_install = {}, -- List of parsers to ignore installing
