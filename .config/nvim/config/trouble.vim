@@ -49,6 +49,4 @@ require("trouble").setup {
 EOF
 
 nnoremap <silent> <leader>xd :TroubleToggle lsp_workspace_diagnostics<CR>
-nnoremap <silent> <leader>xr :TroubleToggle lsp_references<CR>
-autocmd FileType Trouble nmap <buffer> <S-j> jjj
-autocmd FileType Trouble nmap <buffer> <S-k> kkk
+" nnoremap <silent> <leader>xr :TroubleToggle lsp_references<CR>
