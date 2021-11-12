@@ -158,7 +158,7 @@ set smartcase
 highlight TermCursor ctermfg=NONE guibg=#d7ffff ctermbg=195 gui=NONE cterm=NONE
 highlight TermCursorNC ctermfg=NONE guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 " Cursor blinking
-set guicursor=a:blinkon100
+" set guicursor=a:blinkon100
 " Cursor as block in insert mode
 " set guicursor=
 
