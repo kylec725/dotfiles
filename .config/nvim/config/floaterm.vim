@@ -6,6 +6,7 @@ tnoremap <silent> <leader>t <C-\><C-n>:FloatermToggle main<CR>
 " tnoremap <silent> <leader>gg <C-\><C-n>:FloatermHide lazygit<CR>
 nnoremap <silent> <leader>gg :terminal<CR>ilazygit<CR>
 tnoremap <silent> <leader>gg <C-\><C-n>:bd!<CR>
+tnoremap <silent> <leader>q <C-\><C-n>:bd!<CR>
 autocmd BufWinEnter,WinEnter term://* startinsert
 
 let g:floaterm_width = 0.8
