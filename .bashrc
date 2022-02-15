@@ -25,3 +25,7 @@ PS1='\[\e[38;5;195m\]\342\224\214\342\224\200[\[\e[0m\] \[\e[38;5;74m\]加油\[\
 
 # startup fish
 exec fish
+
+# BEGIN_KITTY_SHELL_INTEGRATION
+if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
+# END_KITTY_SHELL_INTEGRATION

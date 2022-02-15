@@ -1,42 +1,46 @@
 " set completeopt=menuone,noselect
 "
-" " Setup global configuration. More on configuration below.
-" lua <<EOF
-" local cmp = require('cmp')
-" cmp.setup {
-"     snippet = {
-"         expand = function(args)
-"         -- You must install `vim-vsnip` if you use the following as-is.
-"         vim.fn['vsnip#anonymous'](args.body)
-"     end
-"     },
+" lua << EOF
+" -- Setup nvim-cmp.
+" local cmp = require'cmp'
 "
-" -- You must set mapping if you want.
+" cmp.setup({
 " mapping = {
 "     ['<S-Tab>'] = cmp.mapping.select_prev_item(),
 "     ['<Tab>'] = cmp.mapping.select_next_item(),
-"     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-"     ['<C-u>'] = cmp.mapping.scroll_docs(4),
-"     -- ['<C-Space>'] = cmp.mapping.complete(),
-"     -- ['<C-e>'] = cmp.mapping.close(),
-"     -- ['<CR>'] = cmp.mapping.confirm({
-"     -- behavior = cmp.ConfirmBehavior.Insert,
-"     -- select = true,
-"     -- })
-" },
+"     ['<C-Space>'] = cmp.mapping.complete(),
+"     ['<C-e>'] = cmp.mapping.close(),
+"     -- ['<C-d>'] = cmp.mapping.scroll_docs(-4),
+"     -- ['<C-f>'] = cmp.mapping.scroll_docs(4),
+"     -- ['<CR>'] = cmp.mapping.confirm({ select = true }),
+"     },
+" sources = {
+"     { name = 'nvim_lsp' },
+"     { name = 'buffer' },
+"     { name = 'path' },
 "
-"     -- You should specify your *installed* sources.
-"     sources = {
-"         { name = 'buffer' },
-"         { name = 'nvim_lsp' },
-"         },
+"     -- For luasnip user.
+"     -- { name = 'luasnip' },
+"
+"     -- For ultisnips user.
+"     -- { name = 'ultisnips' },
+"
+"     },
+" documentation = {
+"     border = { '╭', '─' ,'╮', '│', '╯', '─', '╰', '│' }, -- the border option is the same as `|help nvim_open_win|`
+"     winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder",
+"     max_width = 120,
+"     min_width = 60,
+"     max_height = math.floor(vim.o.lines * 0.3),
+"     min_height = 1,
+"     },
+" completion = {
+"     completeopt = 'menu,noinsert',
+"     preselect = false
 "     }
+" })
 " EOF
-"
-" " Setup buffer configuration (nvim-lua source only enables in Lua filetype).
-" " autocmd FileType lua lua require'cmp'.setup.buffer {
-" "             \   sources = {
-" "                 \     { name = 'buffer' },
-" "                 \     { name = 'nvim_lua' },
-" "                 \   },
-" "                 \ }
+" highlight CmpItemAbbr ctermbg=0 ctermfg=7 guibg=#192330 guifg=gray
+" highlight PmenuSel ctermbg=7 ctermfg=0 guibg=gray guifg=0
+" highlight PmenuSbar ctermbg=grey guibg=grey
+" highlight PmenuThumb ctermbg=white guibg=white

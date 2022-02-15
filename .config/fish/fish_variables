@@ -26,6 +26,7 @@ SETUVAR _fish_abbr_gpl:git\x20pull
 SETUVAR _fish_abbr_gs:git\x20status
 SETUVAR _fish_abbr_hdmi:hdmi\x2dtoggle
 SETUVAR _fish_abbr_ka:killall
+SETUVAR _fish_abbr_lg:lazygit
 SETUVAR _fish_abbr_school:cd\x20\x7e/school
 SETUVAR _fish_abbr_sem:cd\x20\x7e/school/spring21
 SETUVAR _fish_abbr_tvim:tmux\x20new\x2dsession\x20\x5c\x3b\x20split\x2dwindow\x20\x2dh\x20\x2dp\x2030

@@ -1,5 +1,5 @@
 ﻿###
-###  vlc 3.0.6
+###  vlc 3.0.16
 ###
 
 ###
@@ -242,6 +242,9 @@
 # Advanced options (string)
 #sout-avformat-options=
 
+# Reset timestamps (boolean)
+#sout-avformat-reset-ts=0
+
 [mkv] # Matroska stream demuxer
 
 # Respect ordered chapters (boolean)
@@ -394,6 +397,15 @@
 # Use regular HTTP modules (boolean)
 #adaptive-use-access=0
 
+# Live Playback delay (ms) (integer)
+#adaptive-livedelay=15000
+
+# Max buffering (ms) (integer)
+#adaptive-maxbuffer=30000
+
+# Low latency (integer)
+#adaptive-lowlatency=-1
+
 [rawdv] # DV (Digital Video) demuxer
 
 # Hurry up (boolean)
@@ -428,7 +440,7 @@
 #sout-avi-subject=
 
 # Encoder (string)
-#sout-avi-encoder=VLC Media Player - 3.0.6 Vetinari
+#sout-avi-encoder=VLC Media Player - 3.0.16 Vetinari
 
 # Keywords (string)
 #sout-avi-keywords=
@@ -697,6 +709,35 @@
 # List special files (boolean)
 #list-special-files=0
 
+[rist] # RIST input
+
+# RIST maximum packet size (bytes) (integer)
+#packet-size=1472
+
+# RIST demux/decode maximum jitter (default is 5ms) (integer)
+#maximum-jitter=5
+
+# RIST latency (ms) (integer)
+#latency=1000
+
+# RIST nack retry interval (ms) (integer)
+#retry-interval=132
+
+# RIST reorder buffer (ms) (integer)
+#reorder-buffer=70
+
+# RIST maximum retry count (integer)
+#max-retries=10
+
+# RIST nack type, 0 = range, 1 = bitmask. Default is range (integer)
+#nack-type=0
+
+# Disable NACK output packets (boolean)
+#disable-nacks=0
+
+# Do not check for a valid rtcp message from the encoder (boolean)
+#mcast-blind-nacks=0
+
 [access_mms] # Microsoft Media Server (MMS) input
 
 # TCP/UDP timeout (ms) (integer)
@@ -729,6 +770,23 @@
 
 # Frame buffer height (integer)
 #shm-height=480
+
+[access_srt] # SRT input
+
+# SRT chunk size (bytes) (integer)
+#chunk-size=1316
+
+# Return poll wait after timeout milliseconds (-1 = infinite) (integer)
+#poll-timeout=-1
+
+# SRT latency (ms) (integer)
+#latency=125
+
+# Password for stream encryption (string)
+#passphrase=
+
+# Crypto key length in bytes (integer)
+#key-length=16
 
 [sftp] # SFTP input
 
@@ -868,6 +926,11 @@
 # CDDB port (integer)
 #cddb-port=80
 
+[dvdread] # DVDRead Input (no menu support)
+
+# DVD angle (integer)
+#dvdread-angle=1
+
 [access_jack] # JACK audio input
 
 # Pace (boolean)
@@ -975,7 +1038,7 @@
 #prefetch-buffer-size=16384
 
 # Read size (integer)
-#prefetch-read-size=16384
+#prefetch-read-size=16777216
 
 # Seek threshold (integer)
 #prefetch-seek-threshold=16384
@@ -1029,6 +1092,14 @@
 
 # Discontinuous Transmission (boolean)
 #sout-speex-dtx=0
+
+[dav1d] # Dav1d video decoder
+
+# Frames Threads (integer)
+#dav1d-thread-frames=0
+
+# Tiles Threads (integer)
+#dav1d-thread-tiles=0
 
 [x26410b] # H.264/MPEG-4 Part 10/AVC encoder (x264 10-bit)
 
@@ -1543,6 +1614,68 @@
 # DTS dynamic range compression (boolean)
 #dts-dynrng=1
 
+[qsv] # Intel QuickSync Video encoder for MPEG4-Part10/MPEG2 (aka H.264/H.262)
+
+# Enable software mode (boolean)
+#sout-qsv-software=0
+
+# Codec Profile (string)
+#sout-qsv-h264-profile=unspecified
+
+# Codec Level (string)
+#sout-qsv-h264-level=unspecified
+
+# Codec Profile (string)
+#sout-qsv-mpeg2-profile=unspecified
+
+# Codec Level (string)
+#sout-qsv-mpeg2-level=unspecified
+
+# Group of Picture size (integer)
+#sout-qsv-gop-size=32
+
+# Group of Picture Reference Distance (integer)
+#sout-qsv-gop-refdist=4
+
+# IDR interval (integer)
+#sout-qsv-idr-interval=0
+
+# Target Usage (string)
+#sout-qsv-target-usage=quality
+
+# Rate Control Method (string)
+#sout-qsv-rc-method=vbr
+
+# Quantization parameter (integer)
+#sout-qsv-qp=0
+
+# Quantization parameter for I-frames (integer)
+#sout-qsv-qpi=0
+
+# Quantization parameter for P-frames (integer)
+#sout-qsv-qpp=0
+
+# Quantization parameter for B-frames (integer)
+#sout-qsv-qpb=0
+
+# Maximum Bitrate (integer)
+#sout-qsv-bitrate-max=0
+
+# Accuracy of RateControl (integer)
+#sout-qsv-accuracy=0
+
+# Convergence time of 'avbr' RateControl (integer)
+#sout-qsv-convergence=0
+
+# Number of slices per frame (integer)
+#sout-qsv-num-slice=0
+
+# Number of reference frames (integer)
+#sout-qsv-num-ref-frame=0
+
+# Number of parallel operations (integer)
+#sout-qsv-async-depth=4
+
 [ttml] # TTML subtitles decoder
 
 # Subtitle justification (integer)
@@ -1557,6 +1690,11 @@
 
 # Use DecodeBin (boolean)
 #use-decodebin=1
+
+[libass] # Subtitle renderers using libass
+
+# Additional fonts directory (string)
+#ssa-fontsdir=
 
 [vorbis] # Vorbis audio decoder
 
@@ -2226,6 +2364,40 @@ skins2-config=["aboutwin" "aboutwinwin-main" 795 454 330 171 0]["eqwin" "eqwin-m
 
 # Metacube (boolean)
 #sout-http-metacube=0
+
+[access_output_rist] # RIST stream output
+
+# RIST target packet size (bytes) (integer)
+#sout-rist-packet-size=1328
+
+# RIST data output caching size (ms) (integer)
+#sout-rist-caching=50
+
+# RIST retry-buffer queue size (ms) (integer)
+#sout-rist-buffer-size=0
+
+# SSRC used in RTP output (default is random, i.e. 0) (integer)
+#sout-rist-ssrc=0
+
+# Stream name (string)
+#sout-rist-stream-name=
+
+[access_output_srt] # SRT stream output
+
+# SRT chunk size (bytes) (integer)
+#chunk-size=1316
+
+# Return poll wait after timeout milliseconds (-1 = infinite) (integer)
+#poll-timeout=100
+
+# SRT latency (ms) (integer)
+#latency=125
+
+# Password for stream encryption (string)
+#passphrase=
+
+# Crypto key length in bytes (integer)
+#key-length=16
 
 [udp] # UDP stream output
 
@@ -3054,6 +3226,11 @@ alsa-gain=0.068921
 # Time Synchronized output (boolean)
 #sout-smem-time-sync=1
 
+[stream_out_chromaprint] # Chromaprint stream output
+
+# Duration of the fingerprinting (integer)
+#duration=90
+
 [setid] # Change the id of an elementary stream
 
 # Elementary Stream ID (integer)
@@ -3407,9 +3584,6 @@ alsa-gain=0.068921
 # Tone-mapping parameter (float)
 #tone-mapping-param=0.000000
 
-# Tone-mapping desaturation coefficient (float)
-#tone-mapping-desat=0.500000
-
 # Highlight clipped pixels (boolean)
 #tone-mapping-warn=0
 
@@ -3418,6 +3592,18 @@ alsa-gain=0.068921
 
 # Dither depth override (0 = framebuffer depth) (integer)
 #dither-depth=0
+
+# Desaturation strength (float)
+#desat-strength=0.750000
+
+# Desaturation exponent (float)
+#desat-exponent=1.500000
+
+# Desaturation base (float)
+#desat-base=0.180000
+
+# Maximum brightness boost (float)
+#max-boost=0.000000
 
 [vmem] # Video memory output
 
@@ -3821,7 +4007,7 @@ alsa-gain=0.068921
 #meta-url=
 
 # File caching (ms) (integer)
-#file-caching=300
+#file-caching=1000
 
 # Live capture caching (ms) (integer)
 #live-caching=300
@@ -3947,7 +4133,7 @@ alsa-gain=0.068921
 #rt-offset=0
 
 # Play files randomly forever (boolean)
-random=1
+#random=0
 
 # Repeat all (boolean)
 #loop=0
