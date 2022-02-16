@@ -58,7 +58,7 @@ Plug 'hrsh7th/nvim-compe'
 " Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'sebdah/vim-delve', {'for': 'go'}
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'branch': '0.5-compat'}  " We recommend updating the parsers on update
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -168,6 +168,8 @@ set mouse=
 " set background color to be transparent
 highlight Normal guibg=NONE ctermbg=NONE
 highlight EndOfBuffer guibg=NONE ctermbg=NONE
+" get rid of end of file ~
+set fillchars+=eob:\ 
 
 " comment color
 " highlight Comment ctermfg=102 guifg=#9ec0f7
@@ -445,6 +447,3 @@ EOF
 
 " sexy scroll
 let g:SexyScroller_EasingStyle = 2
-
-" filetype.nvim
-lua vim.g.did_load_filetypes = 1
